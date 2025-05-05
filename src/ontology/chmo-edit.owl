@@ -3006,10 +3006,13 @@ Declaration(AnnotationProperty(obo:BFO_0000179))
 Declaration(AnnotationProperty(obo:BFO_0000180))
 Declaration(AnnotationProperty(chmo:isDefinedBy))
 Declaration(AnnotationProperty(chmo:non-mining_synonym))
+Declaration(AnnotationProperty(dcterms:bibliographicCitation))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(dcterms:rightsHolder))
 Declaration(AnnotationProperty(dcterms:title))
 Declaration(AnnotationProperty(oboInOwl:hasScope))
+Declaration(AnnotationProperty(<http://www.w3.org/ns/prov#hadPrimarySource>))
 ############################
 #   Annotation Properties
 ############################
@@ -3023,14 +3026,6 @@ SubAnnotationPropertyOf(chmo:non-mining_synonym oboInOwl:SynonymTypeProperty)
 # Annotation Property: dcterms:description (description)
 
 AnnotationAssertion(rdfs:label dcterms:description "description")
-
-# Annotation Property: dcterms:license (license)
-
-AnnotationAssertion(rdfs:label dcterms:license "license")
-
-# Annotation Property: dcterms:title (title)
-
-AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 ############################
