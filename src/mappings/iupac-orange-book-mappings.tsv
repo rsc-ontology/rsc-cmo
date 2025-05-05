@@ -1,0 +1,9 @@
+#curie_map:
+#  HP: http://purl.obolibrary.org/obo/HP_
+#  MONDO: http://purl.obolibrary.org/obo/MONDO_
+#  MP: http://purl.obolibrary.org/obo/MP_
+#  SCHEMA: http://example.org/schema
+#mapping_set_id: https://w3id.org/sssom/commons/examples/composite-entities.sssom.tsv
+#license: https://creativecommons.org/publicdomain/zero/1.0/
+#comment: This is an example file for the SSSOM for illustration only. Its contents are entirely fabricated.
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_id	confidence	comment
