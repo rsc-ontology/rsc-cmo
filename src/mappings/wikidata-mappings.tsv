@@ -1,9 +1,19 @@
 #curie_map:
-#  HP: http://purl.obolibrary.org/obo/HP_
-#  MONDO: http://purl.obolibrary.org/obo/MONDO_
-#  MP: http://purl.obolibrary.org/obo/MP_
-#  SCHEMA: http://example.org/schema
-#mapping_set_id: https://w3id.org/sssom/commons/examples/composite-entities.sssom.tsv
+#  CHMO: http://purl.obolibrary.org/obo/CHMO_
+#  WIKIDATA: https://www.wikidata.org/wiki/
+#mapping_set_id: https://github.com/NFDI4Chem/rsc-cmo/blob/Add-definition-sources-and-mappings/src/mappings/wikidata-mappings.tsv
+#mapping_set_version:	1.0
+#mapping_set_title: Mapping CHMO to Wikidata
+#mapping_set_description: This file contains the mappings between the Chemical Methods Ontology (CHMO) and Wikidata. These mappings were manually created/curated by Ambika Gupta and reviewed by Philip Strömert & Colin Batchelor. The intended use case of this mapping set is the data integration of RDF knowledge graphs (KGs) that use Wikidata and are to be transformed into RDF KGs that use CHMO or vice versa. 
+#creator_id:
+#	- https://orcid.org/
+#	- https://orcid.org/0000-0002-1595-3213
+#	- https://orcid.org/0000-0001-5985-7429
+#subject_source:	http://purl.obolibrary.org/obo/chmo.owl
+#subject_source_version:	
+#object_source:	https://www.wikidata.org/wiki
+#mapping_provider: http://purl.obolibrary.org/obo/chmo.owl
+#mapping_date: 05-2025
+#issue_tracker: 
 #license: https://creativecommons.org/publicdomain/zero/1.0/
-#comment: This is an example file for the SSSOM for illustration only. Its contents are entirely fabricated.
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_id	confidence	comment
