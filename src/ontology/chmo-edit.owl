@@ -31027,7 +31027,7 @@ SubClassOf(obo:CHMO_0002466 obo:CHMO_0001688)
 
 # Class: obo:CHMO_0002467 (analyte)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.A00331") obo:IAO_0000115 obo:CHMO_0002467 "The component of a system to be analysed.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'analyte' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00331>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/ >) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00331>) obo:IAO_0000115 obo:CHMO_0002467 "The component of a system to be analysed.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002467 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002467 "2009-09-29T11:58:40Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002467 "CHMO:0002467")
