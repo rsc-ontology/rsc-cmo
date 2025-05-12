@@ -35051,7 +35051,7 @@ SubClassOf(obo:CHMO_0002817 obo:BFO_0000016)
 
 # Class: obo:CHMO_0002818 (angle of optical rotation)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.A00348") obo:IAO_0000115 obo:CHMO_0002818 "An experimental method output that consists of the angle through which plane polarized light is rotated clockwise, as seen when facing the light source, in passing through an optically active medium.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'angle of optical rotation' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00348>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/ >) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00348>) dcterms:description obo:CHMO_0002818 "An experimental method output that consists of the \"angle through which plane polarized light is rotated clockwise, as seen when facing the light source, in passing through an optically active medium.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002818 "CHMO:0002818")
 AnnotationAssertion(rdfs:label obo:CHMO_0002818 "angle of optical rotation")
 SubClassOf(obo:CHMO_0002818 obo:CHMO_0000793)
