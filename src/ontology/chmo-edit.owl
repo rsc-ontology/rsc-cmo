@@ -12597,7 +12597,7 @@ SubClassOf(obo:CHMO_0000800 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_000022
 
 # Class: obo:CHMO_0000801 (absorption spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000801 "A plot of absorbance vs. wavelength obtained by measuring the amount of radiation absorbed by a sample as a function of the wavelength of incident radiation.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(rdfs:comment <https://doi.org/10.1351/goldbook.A00043>) obo:IAO_0000115 obo:CHMO_0000801 "A plot of absorbance vs. wavelength obtained by measuring the amount of radiation absorbed by a sample as a function of the wavelength of incident radiation.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000801 "absorbance spectra")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000801 "absorbance spectrum")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000801 "absorption spectra")
