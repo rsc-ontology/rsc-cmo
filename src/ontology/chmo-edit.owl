@@ -35909,14 +35909,14 @@ SubClassOf(obo:CHMO_0002930 obo:CHMO_0002351)
 
 # Class: obo:CHMO_0002931 (anode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.C00905") obo:IAO_0000115 obo:CHMO_0002931 "Electrode at which reduction takes place.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'anode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00370>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00370>) obo:IAO_0000115 obo:CHMO_0002931 "\"Electrode at which oxidation takes place.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002931 "CHMO:0002931")
 AnnotationAssertion(rdfs:label obo:CHMO_0002931 "anode")
 SubClassOf(obo:CHMO_0002931 obo:CHMO_0002344)
 
 # Class: obo:CHMO_0002932 (cathode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.A00370") obo:IAO_0000115 obo:CHMO_0002932 "Electrode at which oxidation takes place.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'cathode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C00905 >) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.C00905>) obo:IAO_0000115 obo:CHMO_0002932 "\"Electrode at which reduction takes place.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002932 "CHMO:0002932")
 AnnotationAssertion(rdfs:label obo:CHMO_0002932 "cathode")
 SubClassOf(obo:CHMO_0002932 obo:CHMO_0002344)
