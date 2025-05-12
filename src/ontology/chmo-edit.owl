@@ -35084,7 +35084,7 @@ SubClassOf(obo:CHMO_0002821 obo:CHMO_0002820)
 
 # Class: obo:CHMO_0002822 (amount concentration)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002822 "Experimental method output expressing a concentration in terms of the amount of a constituent divided by the volume of the mixture.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.A00295>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.A00298>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S06072>) obo:IAO_0000115 obo:CHMO_0002822 "Experimental method output expressing a concentration in terms of the amount of a constituent divided by the volume of the mixture.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002822 "amount-of-substance concentration")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002822 "molarity")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002822 "substance concentration")
