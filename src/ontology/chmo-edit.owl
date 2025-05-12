@@ -12903,7 +12903,7 @@ SubClassOf(obo:CHMO_0000830 obo:CHMO_0000800)
 
 # Class: obo:CHMO_0000831 (action spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.00088") obo:IAO_0000115 obo:CHMO_0000831 "A plot of a relative biological or chemical photoresponse per number of incident photons against wavelength or energy of radiation under the same radiant power of light.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'absorption spectrum' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00043>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20  >) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00043>) obo:IAO_0000115 obo:CHMO_0000831 "\"A plot of a relative biological or chemical photoresponse per number of incident photons against wavelength or energy of radiation under the same radiant power of light.\"")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000831 "action spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000831 "CHMO:0000831")
 AnnotationAssertion(rdfs:label obo:CHMO_0000831 "action spectrum")
