@@ -30085,7 +30085,7 @@ SubClassOf(obo:CHMO_0002386 obo:OBI_0000070)
 
 # Class: obo:CHMO_0002387 (chromatogram)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002387 "A plot of detector signal (e.g. ion count or  absorbance) vs. retention time obtained from a chromatography experiment. Different peaks in the chromatogram correspond to different components of the separated mixture.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C01071>) obo:IAO_0000115 obo:CHMO_0002387 "A plot of detector signal (e.g. ion count or  absorbance) vs. retention time obtained from a chromatography experiment. Different peaks in the chromatogram correspond to different components of the separated mixture.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002387 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002387 "2009-09-16T08:53:50Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002387 "CHMO:0002387")
