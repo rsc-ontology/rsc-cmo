@@ -12740,7 +12740,7 @@ SubClassOf(obo:CHMO_0000813 obo:CHMO_0000800)
 
 # Class: obo:CHMO_0000814 (corrected emission spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.C01343") obo:IAO_0000115 obo:CHMO_0000814 "A plot of emission against wavelength  obtained by measuring the emitted spectral radiant power against a quantity related to photon energy such as frequency, wavenumber or wavelength and corrected for wavelength-dependent instrumental and sample effects.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C01343>) obo:IAO_0000115 obo:CHMO_0000814 "A plot of emission against wavelength  obtained by measuring the emitted spectral radiant power against a quantity related to photon energy such as frequency, wavenumber or wavelength and corrected for wavelength-dependent instrumental and sample effects.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000814 "corrected emission spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000814 "CHMO:0000814")
 AnnotationAssertion(rdfs:label obo:CHMO_0000814 "corrected emission spectrum")
