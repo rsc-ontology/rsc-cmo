@@ -6947,7 +6947,7 @@ SubClassOf(obo:CHMO_0000338 obo:CHMO_0000332)
 
 # Class: obo:CHMO_0000339 (Auger electron spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0-471-96523-5") obo:IAO_0000115 obo:CHMO_0000339 "Spectroscopy where a high energy photon ionises a core electron and an electron from a higher energy level descends to take its place, releasing sufficient energy to eject a second so-called 'Auger' electron and the energy of the Auger electron is detected as a function of incident photon energy.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0-471-96523-5") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.A00522>) obo:IAO_0000115 obo:CHMO_0000339 "Spectroscopy where a high energy photon ionises a core electron and an electron from a higher energy level descends to take its place, releasing sufficient energy to eject a second so-called 'Auger' electron and the energy of the Auger electron is detected as a function of incident photon energy.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000339 "AEES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000339 "Auger electron emission spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000339 "Auger electron spectrometry")
