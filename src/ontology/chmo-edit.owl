@@ -11328,7 +11328,7 @@ SubClassOf(obo:CHMO_0000686 obo:CHMO_0000684)
 
 # Class: obo:CHMO_0000687 (differential thermal analysis)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:5.2.2") obo:IAO_0000115 obo:CHMO_0000687 "The measurement of the temperature difference between the sample and a reference material.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'differential thermal analysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.D01709>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.D01709>) Annotation(rdfs:seeAlso <https://books.rsc.org/view-large/6381138, 11.7 	differential thermal analysis, (DTA)  Measurement method where the temperature difference between a sample and a reference material is measured as a function of time or temperature. >) obo:IAO_0000115 obo:CHMO_0000687 "The measurement of the temperature difference between the sample and a reference material.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000687 "DTA")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000687 "CHMO:0000687")
 AnnotationAssertion(rdfs:label obo:CHMO_0000687 "differential thermal analysis")
