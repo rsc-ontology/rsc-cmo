@@ -11283,7 +11283,7 @@ SubClassOf(obo:CHMO_0000681 obo:OBI_0000070)
 
 # Class: obo:CHMO_0000682 (calorimetry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000682 "The measurement of thermodynamic parameters (e.g. enthalpy) during a chemical or biochemical reaction.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C00786>) obo:IAO_0000115 obo:CHMO_0000682 "The measurement of thermodynamic parameters (e.g. enthalpy) during a chemical or biochemical reaction.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000682 "enthalpimetric analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000682 "enthalpimetry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000682 "CHMO:0000682")
