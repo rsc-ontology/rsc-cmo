@@ -11302,7 +11302,7 @@ SubClassOf(obo:CHMO_0000683 obo:CHMO_0002076)
 
 # Class: obo:CHMO_0000684 (differential scanning calorimetry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000387") Annotation(oboInOwl:hasDbXref "OrangeBook:5.2.2") obo:IAO_0000115 obo:CHMO_0000684 "The measurement of thermodynamic parameters (e.g. enthalpy) during a chemical or biochemical reaction of both a sample and a reference, by the known variation (step-wise or linear) of one variable, whilst a second is kept constant.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000387") Annotation(rdfs:seeAlso <https://books.rsc.org/view-large/6381143, 11.12 heat-flow differential scanning calorimetry  differential scanning calorimetry, (DSC).  Measurement method where the difference between heat-flow rates into a sample and a reference material is measured as a function of temperature.   >) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.D01708>) obo:IAO_0000115 obo:CHMO_0000684 "The measurement of thermodynamic parameters (e.g. enthalpy) during a chemical or biochemical reaction of both a sample and a reference, by the known variation (step-wise or linear) of one variable, whilst a second is kept constant.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000684 "DSC")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000684 "differential scanning calorimetric (DSC) analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000684 "differential scanning calorimetric analysis")
