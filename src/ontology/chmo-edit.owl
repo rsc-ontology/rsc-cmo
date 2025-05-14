@@ -35067,7 +35067,7 @@ SubClassOf(obo:CHMO_0002819 obo:CHMO_0002770)
 
 # Class: obo:CHMO_0002820 (concentration)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002820 "Experimental method output expressing the contribution of one constituent to the composition of a mixture.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C01222>) obo:IAO_0000115 obo:CHMO_0002820 "Experimental method output expressing the contribution of one constituent to the composition of a mixture.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002820 "CHMO:0002820")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002820 "based heavily on https://doi.org/10.1351/goldbook.C01222")
 AnnotationAssertion(rdfs:label obo:CHMO_0002820 "concentration")
