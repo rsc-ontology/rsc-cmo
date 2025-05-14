@@ -34868,7 +34868,7 @@ SubClassOf(obo:CHMO_0002794 obo:CHMO_0002793)
 
 # Class: obo:CHMO_0002795 (biosensor)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002795 "A sensor that recognises the analyte under study by interaction with a given biological system.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.B00663>) obo:IAO_0000115 obo:CHMO_0002795 "A sensor that recognises the analyte under study by interaction with a given biological system.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002795 "CHMO:0002795")
 AnnotationAssertion(rdfs:label obo:CHMO_0002795 "biosensor")
 SubClassOf(obo:CHMO_0002795 obo:CHMO_0002794)
