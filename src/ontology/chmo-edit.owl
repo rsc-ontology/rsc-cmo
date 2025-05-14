@@ -12732,7 +12732,7 @@ SubClassOf(obo:CHMO_0000812 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_000048
 
 # Class: obo:CHMO_0000813 (emission spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.E02060") obo:IAO_0000115 obo:CHMO_0000813 "A plot of emission against wavelength obtained by measuring the emitted spectral radiant power against a quantity related to photon energy such as frequency, wavenumber or wavelength.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E02060>) obo:IAO_0000115 obo:CHMO_0000813 "A plot of emission against wavelength obtained by measuring the emitted spectral radiant power against a quantity related to photon energy such as frequency, wavenumber or wavelength.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000813 "emission spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000813 "CHMO:0000813")
 AnnotationAssertion(rdfs:label obo:CHMO_0000813 "emission spectrum")
