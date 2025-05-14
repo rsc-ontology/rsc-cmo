@@ -35094,7 +35094,7 @@ SubClassOf(obo:CHMO_0002822 obo:CHMO_0002820)
 
 # Class: obo:CHMO_0002823 (volume concentration)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002823 "Experimental method output expressing a concentration in terms of the volume of a constituent divided by the volume of the mixture.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C01222>) obo:IAO_0000115 obo:CHMO_0002823 "Experimental method output expressing a concentration in terms of the volume of a constituent divided by the volume of the mixture.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002823 "CHMO:0002823")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002823 "based heavily on https://doi.org/10.1351/goldbook.C01222")
 AnnotationAssertion(rdfs:label obo:CHMO_0002823 "volume concentration")
