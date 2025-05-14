@@ -12911,7 +12911,7 @@ SubClassOf(obo:CHMO_0000831 obo:CHMO_0000800)
 
 # Class: obo:CHMO_0000832 (conversion spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.C01319") obo:IAO_0000115 obo:CHMO_0000832 "A plot of a quantity related to the absorption, for example absorbance or cross section, multiplied by the quantum yield for the process considered against a measure of photon energy such as frequency, wavenumber or wavelength.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'conversion spectrum' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C01319>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.C01319>) obo:IAO_0000115 obo:CHMO_0000832 "\"A plot of a quantity related to the absorption, for example absorbance or cross section, multiplied by the quantum yield for the process considered against a measure of photon energy such as frequency, wavenumber or wavelength.\"")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000832 "conversion spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000832 "CHMO:0000832")
 AnnotationAssertion(rdfs:label obo:CHMO_0000832 "conversion spectrum")
