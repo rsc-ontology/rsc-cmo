@@ -14513,7 +14513,7 @@ SubClassOf(obo:CHMO_0000986 obo:CHMO_0000994)
 
 # Class: obo:CHMO_0000987 (capillary column)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000987 "A piece of apparatus that has the form of a tube with a diameter of less than a millimetre and hosts the stationary bed in chromatography.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C00793>) obo:IAO_0000115 obo:CHMO_0000987 "A piece of apparatus that has the form of a tube with a diameter of less than a millimetre and hosts the stationary bed in chromatography.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000987 "CHMO:0000987")
 AnnotationAssertion(rdfs:label obo:CHMO_0000987 "capillary column")
 SubClassOf(obo:CHMO_0000987 obo:OBI_0000968)
