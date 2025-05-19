@@ -17007,7 +17007,7 @@ SubClassOf(obo:CHMO_0001225 obo:CHMO_0001224)
 
 # Class: obo:CHMO_0001226 (analytical solution calorimetry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.E02131") obo:IAO_0000115 obo:CHMO_0001226 "The measurement of the enthalpy change during chemical reaction in order to determine quantitative values of a reactant or catalyst. In general, at least one reactant is a liquid or solution.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E02131>) obo:IAO_0000115 obo:CHMO_0001226 "The measurement of the enthalpy change during chemical reaction in order to determine quantitative values of a reactant or catalyst. In general, at least one reactant is a liquid or solution.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001226 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001226 "2009-03-25T12:09:47Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001226 "CHMO:0001226")
@@ -35367,7 +35367,7 @@ SubClassOf(obo:CHMO_0002858 obo:CHMO_0000793)
 
 # Class: obo:CHMO_0002859 (enantiomeric ratio)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002859 "The ratio of the percentage of one enantiomer in a mixture to that of the other.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'enantiomeric ratio' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.E02075>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02070>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) obo:IAO_0000115 obo:CHMO_0002859 "\"The ratio of the percentage of one enantiomer in a mixture to that of the other.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002859 "CHMO:0002859")
 AnnotationAssertion(rdfs:label obo:CHMO_0002859 "enantiomeric ratio")
 SubClassOf(obo:CHMO_0002859 obo:CHMO_0000793)
