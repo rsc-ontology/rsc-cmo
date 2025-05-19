@@ -15129,7 +15129,7 @@ SubClassOf(obo:CHMO_0001054 obo:OBI_0000968)
 
 # Class: obo:CHMO_0001055 (double-focusing mass spectrometer)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0001055 "A mass spectrometer that applies an electric field in order to select ions that have the same kinetic energy from an ion beam and uses a wedge-shaped magnetic field to separate the total ion beam into discrete ion beams according to the mass-to-charge ratio of the ions.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.D01845>) obo:IAO_0000115 obo:CHMO_0001055 "A mass spectrometer that applies an electric field in order to select ions that have the same kinetic energy from an ion beam and uses a wedge-shaped magnetic field to separate the total ion beam into discrete ion beams according to the mass-to-charge ratio of the ions.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001055 "double-focusing magnetic sector mass spectrometer")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001055 "double-focussing magnetic sector mass spectrometer")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001055 "double-focussing mass spectrometer")
