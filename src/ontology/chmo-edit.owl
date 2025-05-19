@@ -8766,7 +8766,7 @@ SubClassOf(obo:CHMO_0000490 obo:CHMO_0000482)
 
 # Class: obo:CHMO_0000491 (field ionisation mass spectrometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.F02360") obo:IAO_0000115 obo:CHMO_0000491 "Mass spectrometry where the sample is ionised by interaction with a high electric field.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.F02360>) obo:IAO_0000115 obo:CHMO_0000491 "Mass spectrometry where the sample is ionised by interaction with a high electric field.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000491 "FIX:0000913")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000491 "FI-MS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000491 "FI/MS")
