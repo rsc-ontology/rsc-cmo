@@ -32558,7 +32558,7 @@ SubClassOf(obo:CHMO_0002592 obo:CHMO_0002344)
 
 # Class: obo:CHMO_0002593 (graphite electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.C00829") obo:IAO_0000115 obo:CHMO_0002593 "A carbon electrode that has been fired at a temperature around 2800 K, resulting in a largely graphitic composition.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.G02685>) obo:IAO_0000115 obo:CHMO_0002593 "A carbon electrode that has been fired at a temperature around 2800 K, resulting in a largely graphitic composition.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002593 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002593 "2009-11-10T12:21:55Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002593 "CHMO:0002593")
