@@ -15122,7 +15122,7 @@ SubClassOf(obo:CHMO_0001053 obo:OBI_0000968)
 
 # Class: obo:CHMO_0001054 (electric sector)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0001054 "A piece of apparatus which applies an electric field in order to select ions that have the same kinetic energy from an ion beam.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E01938>) obo:IAO_0000115 obo:CHMO_0001054 "A piece of apparatus which applies an electric field in order to select ions that have the same kinetic energy from an ion beam.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001054 "CHMO:0001054")
 AnnotationAssertion(rdfs:label obo:CHMO_0001054 "electric sector")
 SubClassOf(obo:CHMO_0001054 obo:OBI_0000968)
