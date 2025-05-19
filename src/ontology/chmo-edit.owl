@@ -35345,7 +35345,7 @@ SubClassOf(obo:CHMO_0002855 obo:CHMO_0000793)
 
 # Class: obo:CHMO_0002856 (enantiomer excess)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1359/goldbook.E02070") obo:IAO_0000115 obo:CHMO_0002856 "The absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E02070>) obo:IAO_0000115 obo:CHMO_0002856 "The absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002856 "CHMO:0002856")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002856 "most people quote percentage enantiomer excess, CHMO:0002857")
 AnnotationAssertion(rdfs:label obo:CHMO_0002856 "enantiomer excess")
