@@ -30161,7 +30161,7 @@ SubClassOf(obo:CHMO_0002392 obo:CHMO_0000806)
 
 # Class: obo:CHMO_0002393 (ion-selective electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:978-3-540-74597-6") obo:IAO_0000115 obo:CHMO_0002393 "An electrode which responds to the activity of a primary ion in presence of various other (interfering) ions in the sample solution. Ion-selective electrodes contain a selective membrane which contains fixed or mobile sites that interact with ions in solution.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:978-3-540-74597-6") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.I03244>) obo:IAO_0000115 obo:CHMO_0002393 "An electrode which responds to the activity of a primary ion in presence of various other (interfering) ions in the sample solution. Ion-selective electrodes contain a selective membrane which contains fixed or mobile sites that interact with ions in solution.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002393 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002393 "2009-09-16T11:06:31Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002393 "ISE")
