@@ -7304,7 +7304,7 @@ SubClassOf(obo:CHMO_0000369 obo:CHMO_0000368)
 
 # Class: obo:CHMO_0000370 (high-resolution energy loss spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000646") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.H02826") obo:IAO_0000115 obo:CHMO_0000370 "Spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is reflected by a surface and the small energy loss (0.02–1 eV) the electrons suffer upon reflection is measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000646") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.H02826>) obo:IAO_0000115 obo:CHMO_0000370 "Spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is reflected by a surface and the small energy loss (0.02–1 eV) the electrons suffer upon reflection is measured.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "HEELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "HR-EELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "HREELS")
