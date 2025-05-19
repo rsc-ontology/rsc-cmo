@@ -8779,7 +8779,7 @@ SubClassOf(obo:CHMO_0000491 obo:CHMO_0000470)
 
 # Class: obo:CHMO_0000492 (field desorption mass spectrometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000087") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.F02357") obo:IAO_0000115 obo:CHMO_0000492 "Mass spectrometry where the sample is deposited on a solid surface known as an 'emitter' and ionised by interaction with a high electric field.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000087") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.F02357>) obo:IAO_0000115 obo:CHMO_0000492 "Mass spectrometry where the sample is deposited on a solid surface known as an 'emitter' and ionised by interaction with a high electric field.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000492 "FD mass spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000492 "FD-MS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000492 "FDMS")
