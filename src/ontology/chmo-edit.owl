@@ -29586,7 +29586,7 @@ SubClassOf(obo:CHMO_0002347 obo:CHMO_0002344)
 
 # Class: obo:CHMO_0002348 (hydrogen gas electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:3.4.12") obo:IAO_0000115 obo:CHMO_0002348 "A reference electrode based on the equilibrium between aqueous protons and electrons on one side and hydrogen gas on the other, in solutions saturated with hydrogen gas. Typically it is made of a thin foil of platinum electrolytically coated with a finely divided deposit of platinum or palladium metal.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:3.4.12") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.H02900>) obo:IAO_0000115 obo:CHMO_0002348 "A reference electrode based on the equilibrium between aqueous protons and electrons on one side and hydrogen gas on the other, in solutions saturated with hydrogen gas. Typically it is made of a thin foil of platinum electrolytically coated with a finely divided deposit of platinum or palladium metal.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002348 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002348 "2009-09-11T11:04:46Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002348 "NHE")
