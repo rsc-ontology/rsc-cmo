@@ -35323,7 +35323,7 @@ SubClassOf(obo:CHMO_0002852 obo:OBI_0000094)
 
 # Class: obo:CHMO_0002853 (fraction extracted)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://iupac.org/publications/analytical_compendium/Cha09sec43.pdf") obo:IAO_0000115 obo:CHMO_0002853 "The fraction of the total quantity of a substance extracted in a separation experiment under specified conditions.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'fraction extracted' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.F02503>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02503>) Annotation(oboInOwl:hasDbXref "http://iupac.org/publications/analytical_compendium/Cha09sec43.pdf") obo:IAO_0000115 obo:CHMO_0002853 "\"The fraction of the total quantity of a substance extracted\" in a separation experiment \"under specified conditions\".")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002853 "recovery factor")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002853 "CHMO:0002853")
 AnnotationAssertion(rdfs:label obo:CHMO_0002853 "fraction extracted")
