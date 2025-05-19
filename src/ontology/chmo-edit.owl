@@ -29566,7 +29566,7 @@ SubClassOf(obo:CHMO_0002345 obo:CHMO_0002344)
 
 # Class: obo:CHMO_0002346 (indicator electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002346 "An electrode at which the potential is measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.I03006>) obo:IAO_0000115 obo:CHMO_0002346 "An electrode at which the potential is measured.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002346 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002346 "2009-09-11T10:57:31Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002346 "test electrode")
