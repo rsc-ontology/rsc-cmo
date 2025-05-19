@@ -14276,7 +14276,7 @@ SubClassOf(obo:CHMO_0000959 obo:CHMO_0000960)
 
 # Class: obo:CHMO_0000960 (ion source)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0000960 "A piece of apparatus that takes an analyte and generates ions which are passed to the rest of a mass spectrometer for analysis.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.I03247>) obo:IAO_0000115 obo:CHMO_0000960 "A piece of apparatus that takes an analyte and generates ions which are passed to the rest of a mass spectrometer for analysis.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000960 "CHMO:0000960")
 AnnotationAssertion(rdfs:label obo:CHMO_0000960 "ion source")
 SubClassOf(obo:CHMO_0000960 obo:OBI_0000968)
