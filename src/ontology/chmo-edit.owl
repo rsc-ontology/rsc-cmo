@@ -29759,7 +29759,7 @@ SubClassOf(obo:CHMO_0002361 obo:CHMO_0000812)
 
 # Class: obo:CHMO_0002362 (Zimm plot)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1063/1.1746740") obo:IAO_0000115 obo:CHMO_0002362 "A plot obtained from a scattering experiment on large particles which is used to determine the average molecular weight of the (polymer) sample. The plot typically consists of a grid.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1063/1.1746740") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.Z06748>) obo:IAO_0000115 obo:CHMO_0002362 "A plot obtained from a scattering experiment on large particles which is used to determine the average molecular weight of the (polymer) sample. The plot typically consists of a grid.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002362 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002362 "2009-09-15T10:57:58Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002362 "CHMO:0002362")
