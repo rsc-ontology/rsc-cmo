@@ -11425,7 +11425,10 @@ SubClassOf(obo:CHMO_0000696 obo:CHMO_0000695)
 
 # Class: obo:CHMO_0000697 (thermosonimetry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:5.2.2") obo:IAO_0000115 obo:CHMO_0000697 "The measurement of the sound emitted by a sample as a function of temperature.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <https://goldbook.iupac.org/terms/view/T06337>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06337>) Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381175
+11.44
+thermosonimetry 
+Measurement method where sound emitted by the sample is measured as a function of temperature.") obo:IAO_0000115 obo:CHMO_0000697 "The measurement of the sound emitted by a sample as a function of temperature.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000697 "CHMO:0000697")
 AnnotationAssertion(rdfs:label obo:CHMO_0000697 "thermosonimetry")
 SubClassOf(obo:CHMO_0000697 obo:CHMO_0000681)
