@@ -29646,7 +29646,7 @@ SubClassOf(obo:CHMO_0002352 obo:CHMO_0002351)
 
 # Class: obo:CHMO_0002353 (pH glass electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "OrangeBook:3.4.12") obo:IAO_0000115 obo:CHMO_0002353 "A hydrogen-ion-responsive electrode consisting of a piece, usually a bulb, of special glass attached to a stem of high-resistance glass complete with internal reference electrode and internal filling solution system.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'pH glass electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.P04545>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.P04545>) Annotation(rdfs:seeAlso <https://books.rsc.org/view-large/6384493;  8.75 	glass pH-sensitive electrode;  	pH electrode;   	glass electrode;  pH-sensitive electrode usually consisting of a bulb, or other suitable form, of special glass attached to a stem of high-resistance glass complete with internal reference electrode and internal filling solution system. >) obo:IAO_0000115 obo:CHMO_0002353 "\"A hydrogen-ion-responsive electrode consisting of a piece, usually a bulb, of special glass attached to a stem of high-resistance glass complete with internal reference electrode and internal filling solution system\".")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002353 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002353 "2009-09-11T11:28:36Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002353 "CHMO:0002353")
