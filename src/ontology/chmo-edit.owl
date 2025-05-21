@@ -4689,7 +4689,7 @@ SubClassOf(obo:CHMO_0000146 obo:CHMO_0000144)
 
 # Class: obo:CHMO_0000147 (low energy electron diffraction)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:90190280031-0") Annotation(oboInOwl:hasDbXref "Orange:17.3") obo:IAO_0000115 obo:CHMO_0000147 "A method for determining structure by directing a beam of low energy (<500 eV) electrons at the sample and recording the resulting diffraction pattern.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:90190280031-0") Annotation(oboInOwl:hasDbXref "Orange:17.3") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.L03631>) obo:IAO_0000115 obo:CHMO_0000147 "A method for determining structure by directing a beam of low energy (<500 eV) electrons at the sample and recording the resulting diffraction pattern.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000147 "LEED")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000147 "CHMO:0000147")
 AnnotationAssertion(rdfs:label obo:CHMO_0000147 "low energy electron diffraction")
