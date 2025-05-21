@@ -11282,7 +11282,7 @@ SubClassOf(obo:CHMO_0000680 obo:CHMO_0002515)
 
 # Class: obo:CHMO_0000681 (thermal analysis)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:5.2.1") obo:IAO_0000115 obo:CHMO_0000681 "Any measurement technique in which a physical property of the sample is measured as a function of temperature.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'thermal analysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06295>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06295>) Annotation(rdfs:seeAlso <https://books.rsc.org/view-large/6381128;   11.1 	thermal analysis, (TA);     Study of the relationship between a sample property and its temperature as the sample is heated or cooled in a controlled manner. >) obo:IAO_0000115 obo:CHMO_0000681 "Any measurement technique in which a physical property of the sample is measured as a function of temperature.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000681 "CHMO:0000681")
 AnnotationAssertion(rdfs:label obo:CHMO_0000681 "thermal analysis")
 SubClassOf(obo:CHMO_0000681 obo:OBI_0000070)
