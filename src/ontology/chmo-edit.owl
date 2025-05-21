@@ -12655,7 +12655,7 @@ SubClassOf(obo:CHMO_0000805 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_000032
 
 # Class: obo:CHMO_0000806 (mass spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000806 "A plot of relative abundance (%) vs. mass-to-charge ratio obtained from a mass spectrometry experiment.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.M03749>) obo:IAO_0000115 obo:CHMO_0000806 "A plot of relative abundance (%) vs. mass-to-charge ratio obtained from a mass spectrometry experiment.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000806 "mass spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000806 "CHMO:0000806")
 AnnotationAssertion(rdfs:label obo:CHMO_0000806 "mass spectrum")
