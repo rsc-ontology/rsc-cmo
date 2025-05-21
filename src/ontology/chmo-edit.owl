@@ -35053,7 +35053,7 @@ SubClassOf(obo:CHMO_0002816 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHMO_000282
 
 # Class: obo:CHMO_0002817 (optical activity)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.O04303") obo:IAO_0000115 obo:CHMO_0002817 "The disposition of a sample to rotate the plane of polarization of a beam of transmitted plane-polarized light.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'optical activity' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.O04303>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.O04303>) obo:IAO_0000115 obo:CHMO_0002817 "The disposition of a sample to \"rotate the plane of polarization of a beam of transmitted plane-polarized light\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002817 "CHMO:0002817")
 AnnotationAssertion(rdfs:label obo:CHMO_0002817 "optical activity")
 SubClassOf(obo:CHMO_0002817 obo:BFO_0000016)
