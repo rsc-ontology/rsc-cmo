@@ -4680,7 +4680,7 @@ SubClassOf(obo:CHMO_0000145 obo:CHMO_0000144)
 
 # Class: obo:CHMO_0000146 (reflection high energy electron diffraction)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.T06483") obo:IAO_0000115 obo:CHMO_0000146 "A method for determining structure by directing a beam of high energy (10–200 keV) electrons at the sample and recording the resulting diffraction pattern produced by any reflected or elastically scattered electrons.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <http://dx.doi.org/10.1351/goldbook.R05230>) obo:IAO_0000115 obo:CHMO_0000146 "A method for determining structure by directing a beam of high energy (10–200 keV) electrons at the sample and recording the resulting diffraction pattern produced by any reflected or elastically scattered electrons.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000146 "RHEED")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000146 "reflection high-energy electron diffraction")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000146 "CHMO:0000146")
