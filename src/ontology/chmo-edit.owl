@@ -8492,7 +8492,7 @@ SubClassOf(obo:CHMO_0000469 obo:CHMO_0000228)
 
 # Class: obo:CHMO_0000470 (mass spectrometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000047") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.M03746") obo:IAO_0000115 obo:CHMO_0000470 "Spectrometry where the sample is converted into gaseous ions which are characterised by their mass-to-charge ratio and relative abundance.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'mass spectroscopy' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M03748>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.M03748>) Annotation(oboInOwl:hasDbXref "FIX:0000047") obo:IAO_0000115 obo:CHMO_0000470 "Spectrometry where the sample is \"converted into gaseous ions which are characterised by their mass-to-charge ratio and relative abundanceÄ.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000470 "MS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000470 "mass spectroscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000470 "CHMO:0000470")
