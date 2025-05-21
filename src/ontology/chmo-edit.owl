@@ -29566,7 +29566,7 @@ SubClassOf(obo:CHMO_0002344 obo:OBI_0000968)
 
 # Class: obo:CHMO_0002345 (reference electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "OrangeBook:8.3") obo:IAO_0000115 obo:CHMO_0002345 "An electrode through which no appreciable current is allowed to flow and is used to observe or control the potential at a working electrode.")
+AnnotationAssertion(Annotation(rdfs:seeAlso <https://books.rsc.org/view-large/6384475;       8.59 reference electrode reference half-cell; 	Electrode that maintains an essentially constant potential under the conditions prevailing in an electrochemical measurement, and that serves for observation, measurement, or control of the potential of the indicator or working electrode. 	>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.R05229>) obo:IAO_0000115 obo:CHMO_0002345 "An electrode through which no appreciable current is allowed to flow and is used to observe or control the potential at a working electrode.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002345 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002345 "2009-09-11T10:56:03Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002345 "CHMO:0002345")
