@@ -11376,7 +11376,7 @@ SubClassOf(obo:CHMO_0000690 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000691 (thermomagnetometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000691 "The measurement of the magnetic susceptibility of a sample as a function of temperature.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermomagnetometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06327") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/ >) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06327>) Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000691 "\"The measurement of the magnetic susceptibility of a sample as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000691 "CHMO:0000691")
 AnnotationAssertion(rdfs:label obo:CHMO_0000691 "thermomagnetometry")
 SubClassOf(obo:CHMO_0000691 obo:CHMO_0000681)
