@@ -14415,7 +14415,7 @@ SubClassOf(obo:CHMO_0000973 obo:CHMO_0000974)
 
 # Class: obo:CHMO_0000974 (open-tubular column)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.3.2") obo:IAO_0000115 obo:CHMO_0000974 "A chromatography column in which either the inner tube wall or a liquid or active solid held stationary on the tube wall acts as the stationary phase and there is an open, unrestricted path for the mobile phase.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'open-tubular column' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.O04297>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.O04297>) Annotation(rdfs:seeAlso <https://books.rsc.org/view-large/6383638    5.68 	open-tubular column  Column, usually having a small diameter, in which either the inner tube wall, or a liquid or active solid held stationary on the tube wall acts as the stationary phase and there is an open, unrestricted path for the mobile phase. >) obo:IAO_0000115 obo:CHMO_0000974 "A chromatography column in which either the \"inner tube wall or a liquid or active solid held stationary on the tube wall acts as the stationary phase and there is an open, unrestricted path for the mobile phase\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000974 "CHMO:0000974")
 AnnotationAssertion(rdfs:label obo:CHMO_0000974 "open-tubular column")
 SubClassOf(obo:CHMO_0000974 obo:CHMO_0000997)
