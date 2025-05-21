@@ -6394,7 +6394,7 @@ SubClassOf(obo:CHMO_0000296 obo:CHMO_0001253)
 
 # Class: obo:CHMO_0000297 (X-ray spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000019") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.X06718") obo:IAO_0000115 obo:CHMO_0000297 "Spectroscopy where the absorption or emission of X-rays is detected.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000019") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> "https://doi.org/10.1351/goldbook.X06718") obo:IAO_0000115 obo:CHMO_0000297 "Spectroscopy where the absorption or emission of X-rays is detected.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000297 "X-ray spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000297 "CHMO:0000297")
 AnnotationAssertion(rdfs:label obo:CHMO_0000297 "X-ray spectroscopy")
