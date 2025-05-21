@@ -14422,7 +14422,7 @@ SubClassOf(obo:CHMO_0000974 obo:CHMO_0000997)
 
 # Class: obo:CHMO_0000975 (packed column)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.3.2") obo:IAO_0000115 obo:CHMO_0000975 "A chromatography column that contains a solid packing.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'packed column' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.P04393>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.P04393>) Annotation(rdfs:seeAlso <https://books.rsc.org/view-large/6383640;  5.70 	packed column  Column containing solid packing. >) obo:IAO_0000115 obo:CHMO_0000975 "A chromatography column that \"contains a solid packing\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000975 "CHMO:0000975")
 AnnotationAssertion(rdfs:label obo:CHMO_0000975 "packed column")
 SubClassOf(obo:CHMO_0000975 obo:CHMO_0000997)
