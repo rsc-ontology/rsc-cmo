@@ -15548,7 +15548,7 @@ SubClassOf(obo:CHMO_0001096 obo:CHMO_0001095)
 
 # Class: obo:CHMO_0001097 (thermocouple)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001097 "A piece of apparatus that generates electrical current when it experiences a thermal gradient.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.T06313>) obo:IAO_0000115 obo:CHMO_0001097 "A piece of apparatus that generates electrical current when it experiences a thermal gradient.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001097 "CHMO:0001097")
 AnnotationAssertion(rdfs:label obo:CHMO_0001097 "thermocouple")
 SubClassOf(obo:CHMO_0001097 obo:OBI_0000968)
