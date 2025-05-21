@@ -14484,7 +14484,7 @@ SubClassOf(obo:CHMO_0000981 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_000098
 
 # Class: obo:CHMO_0000982 (mass spectrometer)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000982 "A piece of apparatus that consists of at least an ion source, a mass-to-charge analyser, a detector and a vacuum system and is used to measure mass spectra.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.M03732>) obo:IAO_0000115 obo:CHMO_0000982 "A piece of apparatus that consists of at least an ion source, a mass-to-charge analyser, a detector and a vacuum system and is used to measure mass spectra.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000982 "CHMO:0000982")
 AnnotationAssertion(rdfs:label obo:CHMO_0000982 "mass spectrometer")
 SubClassOf(obo:CHMO_0000982 obo:CHMO_0001234)
