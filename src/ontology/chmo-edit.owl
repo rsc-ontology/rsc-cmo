@@ -11342,7 +11342,7 @@ SubClassOf(obo:CHMO_0000687 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000688 (thermoacoustimetry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:5.2.2") obo:IAO_0000115 obo:CHMO_0000688 "Thermal analysis where the characteristics of imposed acoustic wave passing through the sample are measured.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'thermoacoustimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06309>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06309>) Annotation(rdfs:seeAlso <https://books.rsc.org/view-large/6381164;   11.33 	thermoacoustimetry;    Measurement method whereby the characteristics of sound waves passing through the sample are measured as a function of temperature. >) obo:IAO_0000115 obo:CHMO_0000688 "\"Thermal analysis where the characteristics of imposed acoustic wave passing through the sample are measured\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000688 "CHMO:0000688")
 AnnotationAssertion(rdfs:label obo:CHMO_0000688 "thermoacoustimetry")
 SubClassOf(obo:CHMO_0000688 obo:CHMO_0000681)
