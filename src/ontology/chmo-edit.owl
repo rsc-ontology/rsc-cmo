@@ -35769,7 +35769,7 @@ SubClassOf(obo:CHMO_0002912 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHMO_000280
 
 # Class: obo:CHMO_0002913 (reference material)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://dx.doi.org/10.1351/goldbook.R05230") obo:IAO_0000115 obo:CHMO_0002913 "A substance or mixture of substances, the composition of which is known within specified limits, and one or more of the properties of which is sufficiently well established to be used for the calibration of an apparatus, the assessment of a measuring method or for assigning values to materials.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'reference material' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.R05230>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20 >) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05230>) obo:IAO_0000115 obo:CHMO_0002913 "\"A substance or mixture of substances, the composition of which is known within specified limits, and one or more of the properties of which is sufficiently well established to be used for the calibration of an apparatus, the assessment of a measuring method or for assigning values to materials\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002913 "CHMO:0002913")
 AnnotationAssertion(rdfs:label obo:CHMO_0002913 "reference material")
 SubClassOf(obo:CHMO_0002913 obo:CHMO_0000993)
