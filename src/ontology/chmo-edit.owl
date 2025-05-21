@@ -8086,7 +8086,7 @@ SubClassOf(obo:CHMO_0000433 obo:CHMO_0000160)
 
 # Class: obo:CHMO_0000434 (Rutherford backscattering spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:3527296344") obo:IAO_0000115 obo:CHMO_0000434 "Spectroscopy where the sample is bombarded with He+ or H+ ions (500–1500 eV) and the energies and positions of any backscattered ions are detected.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:3527296344") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.R05429>) obo:IAO_0000115 obo:CHMO_0000434 "Spectroscopy where the sample is bombarded with He+ or H+ ions (500–1500 eV) and the energies and positions of any backscattered ions are detected.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "HE IS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "HE ISS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "HE-IS")
