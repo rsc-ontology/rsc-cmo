@@ -7669,7 +7669,7 @@ SubClassOf(obo:CHMO_0000400 obo:CHMO_0000394)
 
 # Class: obo:CHMO_0000401 (ultraviolet photoelectron spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000042") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.U06583") obo:IAO_0000115 obo:CHMO_0000401 "Spectroscopy where the sample is illuminated with ultraviolet (10–400 nm) photons causing ionisation and the emission of photoelectrons, the energies of which are measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000042") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.U06583>) obo:IAO_0000115 obo:CHMO_0000401 "Spectroscopy where the sample is illuminated with ultraviolet (10–400 nm) photons causing ionisation and the emission of photoelectrons, the energies of which are measured.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000401 "UPES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000401 "UPS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000401 "UVPES")
