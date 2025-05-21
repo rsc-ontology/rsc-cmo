@@ -29637,7 +29637,7 @@ SubClassOf(obo:CHMO_0002351 obo:OBI_0000968)
 
 # Class: obo:CHMO_0002352 (operational pH cell)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "OrangeBook:3.4.12") obo:IAO_0000115 obo:CHMO_0002352 "An electrochemical cell which is used for practical pH measurements, consisting of a hydrogen ion-responsive electrode and a reference electrode immersed in the test solution.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'operational pH cell' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.O04298>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.O04298>) Annotation(oboInOwl:hasDbXref "OrangeBook:3.4.12") obo:IAO_0000115 obo:CHMO_0002352 "\"An electrochemical cell which is used for practical pH measurements, consisting of a hydrogen ion-responsive electrode and a reference electrode immersed in the test solution\".")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002352 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002352 "2009-09-11T11:25:26Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002352 "CHMO:0002352")
