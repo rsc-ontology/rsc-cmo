@@ -7512,7 +7512,7 @@ SubClassOf(obo:CHMO_0000386 obo:CHMO_0000385)
 
 # Class: obo:CHMO_0000387 (photoelectron spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000040") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.P04609") obo:IAO_0000115 obo:CHMO_0000387 "Spectroscopy where the sample is illuminated with photons causing ionisation and the emission of photoelectrons, the energies of which are measured. The energy of the incident photons is usually greater than the ionisation energy of the sample and the photoelectrons are emitted with the excess in the form of kinetic energy.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000040") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.P04609>) obo:IAO_0000115 obo:CHMO_0000387 "Spectroscopy where the sample is illuminated with photons causing ionisation and the emission of photoelectrons, the energies of which are measured. The energy of the incident photons is usually greater than the ionisation energy of the sample and the photoelectrons are emitted with the excess in the form of kinetic energy.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000387 "PES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000387 "photo emission spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000387 "photo emission spectroscopy")
