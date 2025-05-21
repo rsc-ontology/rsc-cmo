@@ -4873,7 +4873,7 @@ SubClassOf(obo:CHMO_0000165 obo:CHMO_0000164)
 
 # Class: obo:CHMO_0000166 (light scattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000402") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.L03525") obo:IAO_0000115 obo:CHMO_0000166 "A method for determining structure by measuring the change in direction or energy of scattered visible light. Light is scattered by the electrons surrounding the atomic nuclei in the sample.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000402") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.L03525>) obo:IAO_0000115 obo:CHMO_0000166 "A method for determining structure by measuring the change in direction or energy of scattered visible light. Light is scattered by the electrons surrounding the atomic nuclei in the sample.")
 AnnotationAssertion(Annotation(oboInOwl:hasSynonymType "EXACT") chmo:non-mining_synonym obo:CHMO_0000166 "LS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000166 "LSS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000166 "LiSSP")
