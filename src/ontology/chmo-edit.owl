@@ -14512,7 +14512,7 @@ SubClassOf(obo:CHMO_0000985 obo:CHMO_0000986)
 
 # Class: obo:CHMO_0000986 (stationary phase)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.1.1") obo:IAO_0000115 obo:CHMO_0000986 "A solid, gel or liquid that plays the role of the stationary component in chromatography.")
+AnnotationAssertion(Annotation(rdfs:seeAlso <https://books.rsc.org/view-large/6383571;   5.12 	stationary phase (in chromatography);    Part of a chromatographic system responsible for the retention of the analytes, which are being carried through the system by the mobile phase. >) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S05949>) obo:IAO_0000115 obo:CHMO_0000986 "A solid, gel or liquid that plays the role of the stationary component in chromatography.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000986 "CHMO:0000986")
 AnnotationAssertion(rdfs:label obo:CHMO_0000986 "stationary phase")
 SubClassOf(obo:CHMO_0000986 obo:CHMO_0000994)
