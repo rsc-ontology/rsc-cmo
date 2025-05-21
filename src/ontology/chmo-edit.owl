@@ -34517,8 +34517,8 @@ SubClassOf(obo:CHMO_0002747 ObjectSomeValuesFrom(obo:CHMO_0002748 obo:CHEBI_2337
 
 # Class: obo:CHMO_0002749 (retention index)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002749 "An experimental method output that consists of a number relating the adjusted retention volume or retention factor of the sample component to the adjusted retention volumes or retention factors of standards eluted before and after the peak of the sample component.")
-AnnotationAssertion(oboInOwl:hasDbXref obo:CHMO_0002749 "goldbook:R05360")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'retention index' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.R05360>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05360>) Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002749 "An experimental method output that consists of a number \"relating the adjusted retention volume or retention factor of the sample component to the adjusted retention volumes or retention factors of standards eluted before and after the peak of the sample component\".")
+AnnotationAssertion(oboInOwl:hasDbXref obo:CHMO_0002749 "http://goldbook.iupac.org/R05360.html")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002749 "CHMO:0002749")
 AnnotationAssertion(rdfs:label obo:CHMO_0002749 "retention index")
 SubClassOf(obo:CHMO_0002749 obo:CHMO_0000793)
