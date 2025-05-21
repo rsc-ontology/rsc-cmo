@@ -11349,7 +11349,10 @@ SubClassOf(obo:CHMO_0000688 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000689 (thermodilatometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:5.2.2") obo:IAO_0000115 obo:CHMO_0000689 "The measurement of a dimension of the sample under negligible load as a function of temperature.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'thermodilatometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06314>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/ >) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06314>) Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381167
+11.36 
+thermodilatometry, (TD) 
+Measurement method where one or more dimensions of the sample are measured under negligible load as a function of temperature.") obo:IAO_0000115 obo:CHMO_0000689 "\"The measurement of a dimension of the sample under negligible load as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000689 "CHMO:0000689")
 AnnotationAssertion(rdfs:label obo:CHMO_0000689 "thermodilatometry")
 SubClassOf(obo:CHMO_0000689 obo:CHMO_0000681)
