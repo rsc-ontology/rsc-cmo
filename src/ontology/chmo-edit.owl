@@ -35109,7 +35109,7 @@ SubClassOf(obo:CHMO_0002823 obo:CHMO_0002820)
 
 # Class: obo:CHMO_0002824 (number concentration)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002824 "Experimental method output expressing a concentration in terms of the number of entities of a constituent divided by the volume of the mixture.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'number concentration' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.N04260>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.N04260>) Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002824 "Experimental method output expressing a concentration in \"terms of the number of entities of a constituent divided by the volume of the mixture\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002824 "CHMO:0002824")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002824 "based heavily on https://doi.org/10.1351/goldbook.N04260")
 AnnotationAssertion(rdfs:label obo:CHMO_0002824 "number concentration")
