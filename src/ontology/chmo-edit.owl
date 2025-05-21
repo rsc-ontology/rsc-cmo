@@ -35037,7 +35037,7 @@ SubClassOf(obo:CHMO_0002814 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHMO_000282
 
 # Class: obo:CHMO_0002815 (solubility)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.S05740") obo:IAO_0000115 obo:CHMO_0002815 "The concentration of a solute in a saturated solution.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S05740>) obo:IAO_0000115 obo:CHMO_0002815 "The concentration of a solute in a saturated solution.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002815 "CHMO:0002815")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002815 "We will probably need to add solubility expressed as a mass concentration and so forth for the different cases.")
 AnnotationAssertion(rdfs:label obo:CHMO_0002815 "solubility")
