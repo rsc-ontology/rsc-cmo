@@ -34475,7 +34475,7 @@ SubClassOf(obo:CHMO_0002742 obo:CHMO_0001577)
 
 # Class: obo:CHMO_0002743 (matrix)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002743 "Those components of a sample that are not measured by an experiment.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.M03758>) obo:IAO_0000115 obo:CHMO_0002743 "Those components of a sample that are not measured by an experiment.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002743 "CHMO:0002743")
 AnnotationAssertion(rdfs:label obo:CHMO_0002743 "matrix")
 EquivalentClasses(obo:CHMO_0002743 ObjectIntersectionOf(obo:CHMO_0000993 ObjectSomeValuesFrom(obo:BFO_0000087 obo:CHMO_0002744)))
