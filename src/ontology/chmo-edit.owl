@@ -10487,7 +10487,7 @@ SubClassOf(obo:CHMO_0000618 obo:CHMO_0000615)
 
 # Class: obo:CHMO_0000619 (photoacoustic spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000619 "Spectroscopy where the sound emitted when a gaseous sample is exposed to an intense laser beam, which is rapidly interrupted by a rotating slotted disk, is measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.P04576>) obo:IAO_0000115 obo:CHMO_0000619 "Spectroscopy where the sound emitted when a gaseous sample is exposed to an intense laser beam, which is rapidly interrupted by a rotating slotted disk, is measured.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000619 "FIX:0000700")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000619 "LIOAS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000619 "laser-induced optoacoustic spectrometry")
