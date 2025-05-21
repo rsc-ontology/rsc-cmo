@@ -34968,7 +34968,7 @@ SubClassOf(obo:CHMO_0002806 obo:CHMO_0001577)
 
 # Class: obo:CHMO_0002807 (linear range)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002807 "The working range over which the response is linearly proportional to the measure.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.L03558>) obo:IAO_0000115 obo:CHMO_0002807 "The working range over which the response is linearly proportional to the measure.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002807 "CHMO:0002807")
 AnnotationAssertion(rdfs:label obo:CHMO_0002807 "linear range")
 SubClassOf(obo:CHMO_0002807 obo:CHMO_0002805)
