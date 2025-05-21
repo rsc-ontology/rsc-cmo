@@ -7726,7 +7726,7 @@ SubClassOf(obo:CHMO_0000403 obo:CHMO_0000387)
 
 # Class: obo:CHMO_0000404 (X-ray photoelectron spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.X06716") obo:IAO_0000115 obo:CHMO_0000404 "Spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'X-ray photoelectron spectroscopy' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.X06716>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.X06716>) obo:IAO_0000115 obo:CHMO_0000404 "\"Spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured\".")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000404 "FIX:0000041")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "ESCA")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "PESIS")
