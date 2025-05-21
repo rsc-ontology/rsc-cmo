@@ -16910,7 +16910,7 @@ SubClassOf(obo:CHMO_0001215 obo:OBI_0000070)
 
 # Class: obo:CHMO_0001216 (optically detected magnetic resonance)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.O04278") obo:IAO_0000115 obo:CHMO_0001216 "A double resonance technique in which transitions between spin sublevels are detected by optical means (i.e. the polarisation or the intensity of light emitted or absorbed by the sample depends on the population distribution in the spin levels). Usually these are sublevels of a triplet and the transitions are induced by microwaves.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'optically detected magnetic resonance' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.O04278>) Annotation(dcterms:rightsHolder <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.O04278>) Annotation(dcterms:source <https://ror.org/03ne2zw20>) obo:IAO_0000115 obo:CHMO_0001216 "\"A double resonance technique in which transitions between spin sublevels are detected by optical means\" (i.e. the polarisation or the intensity of light emitted or absorbed by the sample depends on the population distribution in the spin levels). \"Usually these are sublevels of a triplet and the transitions are induced by microwaves\".")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001216 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001216 "2009-03-25T11:38:35Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001216 "ODMR")
