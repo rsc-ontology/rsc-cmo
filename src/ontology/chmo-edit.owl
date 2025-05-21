@@ -5579,7 +5579,7 @@ SubClassOf(obo:CHMO_0000227 obo:CHMO_0000226)
 
 # Class: obo:CHMO_0000228 (spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.S05848") obo:IAO_0000115 obo:CHMO_0000228 "The study of the interaction of a sample with radiation or particles for measurement or detection.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S05848>) obo:IAO_0000115 obo:CHMO_0000228 "The study of the interaction of a sample with radiation or particles for measurement or detection.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000228 "spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000228 "CHMO:0000228")
 AnnotationAssertion(rdfs:label obo:CHMO_0000228 "spectroscopy")
