@@ -26860,7 +26860,7 @@ SubClassOf(obo:CHMO_0002119 obo:OBI_0000070)
 
 # Class: obo:CHMO_0002120 (monochromator)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002120 "A piece of apparatus that transmits a narrow band of wavelengths of light or other radiation (e.g. X-rays) chosen from a wider range of wavelengths available at the input.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'monochromator' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M04009>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://doi.org/10.1351/goldbook.M04009>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002120 "A piece of apparatus that \"transmits a narrow band of wavelengths of light or other radiation (e.g. X-rays) chosen from a wider range of wavelengths available at the input\".")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002120 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002120 "2009-07-08T10:17:24Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002120 "CHMO:0002120")
