@@ -27376,7 +27376,7 @@ SubClassOf(obo:CHMO_0002161 obo:CHMO_0002154)
 
 # Class: obo:CHMO_0002162 (titration curve)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002162 "A plot of volume of titrant vs. an independent variable (e.g., pH or enthalpy) obtained from a titration experiment.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.T06388>) obo:IAO_0000115 obo:CHMO_0002162 "A plot of volume of titrant vs. an independent variable (e.g., pH or enthalpy) obtained from a titration experiment.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002162 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002162 "2009-07-13T04:23:05Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002162 "titration data")
