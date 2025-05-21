@@ -34922,7 +34922,7 @@ SubClassOf(obo:CHMO_0002800 obo:OBI_0000968)
 
 # Class: obo:CHMO_0002801 (limit of detection)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.L03540") obo:IAO_0000115 obo:CHMO_0002801 "The smallest measure that can be detected with reasonable certainty for a given analytical procedure.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'limit of detection' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.L03540>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.L03540>) obo:IAO_0000115 obo:CHMO_0002801 "\"The smallest measure that can be detected with reasonable certainty for a given analytical procedure\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002801 "CHMO:0002801")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002801 "xL = <x> + ks where <x> is the mean of the blank measures, s is the standard deviation and k is a numerical factor chosen according to the desired confidence level.")
 AnnotationAssertion(rdfs:label obo:CHMO_0002801 "limit of detection")
