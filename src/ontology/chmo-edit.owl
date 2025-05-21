@@ -7357,7 +7357,7 @@ SubClassOf(obo:CHMO_0000372 obo:CHMO_0000366)
 
 # Class: obo:CHMO_0000373 (transmission electron energy loss spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.T06480") obo:IAO_0000115 obo:CHMO_0000373 "Spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is transmitted through a sample and the energy distribution of the transmitted electrons is measured.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'transmission electron energy loss spectroscopy' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06480>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06480>) obo:IAO_0000115 obo:CHMO_0000373 "Spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is transmitted through a sample and the energy distribution of the transmitted electrons is measured.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000373 "CHMO:0002296")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000373 "ETS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000373 "TEELS")
