@@ -28355,7 +28355,9 @@ SubClassOf(obo:CHMO_0002243 obo:CHMO_0000445)
 
 # Class: obo:CHMO_0002244 (detector)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002244 "Any piece of apparatus used to detect an analyte.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381939
+1.69 detector 
+Device or substance that indicates the presence of a phenomenon, body, or substance when a threshold value of an associated quantity is exceeded. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381851/Fundamental-and-Metrological-Concepts-in)") obo:IAO_0000115 obo:CHMO_0002244 "Any piece of apparatus used to detect an analyte.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002244 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002244 "2009-08-05T11:58:48Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002244 "CHMO:0002244")
