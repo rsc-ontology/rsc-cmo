@@ -14332,7 +14332,9 @@ SubClassOf(obo:CHMO_0000964 obo:OBI_0000968)
 
 # Class: obo:CHMO_0000965 (Fourier transform ion cyclotron resonance mass spectrometer)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0000965 "A mass spectrometer that uses an ion cyclotron resonance cell (a piece of apparatus that measures the frequency at which ions precesses in a fixed magnetic field and subjects the frequency output to a Fourier transform) as a mass-to-charge analyser and detector.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6383177
+7.142 Fourier transform-ion cyclotron resonance-mass spectrometer, (FT-ICR-MS) 
+Mass spectrometer based on the principle of ion cyclotron resonance in which an ion in a magnetic field moves in a circular orbit at the cyclotron frequency that is characteristic of its m/z value. Ions are coherently excited to a larger radius orbit using a pulse of radio frequency electric field, and their image charge is detected on receiver plates as a time domain signal. Fourier transformation of the time domain signal results in a frequency domain signal that is converted to a mass spectrum based on the inverse relationship between cyclotron frequency and m/z. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6383030/Mass-Spectrometry1-2)") obo:IAO_0000115 obo:CHMO_0000965 "A mass spectrometer that uses an ion cyclotron resonance cell (a piece of apparatus that measures the frequency at which ions precesses in a fixed magnetic field and subjects the frequency output to a Fourier transform) as a mass-to-charge analyser and detector.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000965 "FTICR spectrometer")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0000965 "FT-ICR MS")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0000965 "FTICR MS")
