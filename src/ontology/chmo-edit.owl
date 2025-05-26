@@ -14417,7 +14417,9 @@ SubClassOf(obo:CHMO_0000972 obo:CHMO_0000974)
 
 # Class: obo:CHMO_0000973 (wall-coated open-tubular column)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.3.2") obo:IAO_0000115 obo:CHMO_0000973 "An open-tubular column in which the liquid stationary phase is coated on the unmodified smooth inner wall of the tube.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.3.2") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6383646
+5.76 wall-coated open-tubular (WCOT) column 
+Open-tubular column in which the liquid stationary phase is coated on the essentially unmodified smooth inner wall of the tube. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6383551/Separation-in-Analytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000973 "An open-tubular column in which the liquid stationary phase is coated on the unmodified smooth inner wall of the tube.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000973 "WCOT column")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000973 "CHMO:0000973")
 AnnotationAssertion(rdfs:label obo:CHMO_0000973 "wall-coated open-tubular column")
