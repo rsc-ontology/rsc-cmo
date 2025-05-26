@@ -29642,7 +29642,9 @@ SubClassOf(obo:CHMO_0002350 obo:CHMO_0002349)
 
 # Class: obo:CHMO_0002351 (electrochemical cell)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002351 "A piece of apparatus in which a current causes chemical reactions or chemical reactions cause a current to flow.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384430
+8.24 electrochemical cell 
+System that consists of at least two electron conductors (electrodes) in contact with ionic conductors (electrolytes). (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384413/Electroanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0002351 "A piece of apparatus in which a current causes chemical reactions or chemical reactions cause a current to flow.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002351 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002351 "2009-09-11T11:22:34Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002351 "CHMO:0002351")
