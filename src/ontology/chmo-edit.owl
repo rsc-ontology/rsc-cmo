@@ -30583,7 +30583,9 @@ SubClassOf(obo:CHMO_0002426 obo:OBI_0000968)
 
 # Class: obo:CHMO_0002427 (potentiostat)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002427 "A piece of apparatus that maintains the potential through an electrochemical cell at a preset value.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384462
+8.52 potentiostat 
+Electronic amplifier which controls the potential difference between a working electrode and a reference electrode. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384413/Electroanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0002427 "A piece of apparatus that maintains the potential through an electrochemical cell at a preset value.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002427 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002427 "2009-09-21T04:31:40Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002427 "CHMO:0002427")
