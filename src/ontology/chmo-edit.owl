@@ -14110,7 +14110,7 @@ SubClassOf(obo:CHMO_0000940 obo:CHMO_0000114)
 
 # Class: obo:CHMO_0000941 (scanning electron microscope)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.S05484") obo:IAO_0000115 obo:CHMO_0000941 "A piece of apparatus which is used to produce an enlarged image of a specimen by scanning a finely focused (<10 nm diameter) electron beam with an acceleration voltage of 50–150 kV across the specimen under vacuum and measuring the interaction of the electrons with the specimen.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S05484>) obo:IAO_0000115 obo:CHMO_0000941 "A piece of apparatus which is used to produce an enlarged image of a specimen by scanning a finely focused (<10 nm diameter) electron beam with an acceleration voltage of 50–150 kV across the specimen under vacuum and measuring the interaction of the electrons with the specimen.")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0000941 "SEM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000941 "CHMO:0000941")
 AnnotationAssertion(rdfs:label obo:CHMO_0000941 "scanning electron microscope")
