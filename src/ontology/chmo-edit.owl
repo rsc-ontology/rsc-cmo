@@ -15167,7 +15167,9 @@ SubClassOf(obo:CHMO_0001057 obo:CHMO_0001055)
 
 # Class: obo:CHMO_0001058 (Faraday cup)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0001058 "An ion detector consisting of a collector electrode connected to a high-ohmic resistor and surrounded by a Faraday cage. The voltage drop across the resistor is a measure of the ion current.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6383163
+7.128 Faraday cup 
+Conducting cup or chamber that intercepts a charged particle beam and is electrically connected to a current measuring device. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6383030/Mass-Spectrometry1-2)") obo:IAO_0000115 obo:CHMO_0001058 "An ion detector consisting of a collector electrode connected to a high-ohmic resistor and surrounded by a Faraday cage. The voltage drop across the resistor is a measure of the ion current.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001058 "Faraday cup detector")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001058 "Faraday cup ion detector")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001058 "CHMO:0001058")
