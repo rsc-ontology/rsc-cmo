@@ -29568,7 +29568,10 @@ SubClassOf(obo:CHMO_0002343 obo:CHMO_0001215)
 
 # Class: obo:CHMO_0002344 (electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002344 "An electrically-conducting piece of apparatus that exchanges electrons with an electrolyte as part of an electrical circuit.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384432
+8.25 electrode 
+1. Electron conductor in an electrochemical cell connected to the external circuit. 
+2. Half-cell consisting of at least one electron conductor and at least one ionic conductor.(from: https://books.rsc.org/books/edited-volume/2059/chapter/6384413/Electroanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0002344 "An electrically-conducting piece of apparatus that exchanges electrons with an electrolyte as part of an electrical circuit.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002344 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002344 "2009-09-11T10:48:45Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002344 "CHMO:0002344")
