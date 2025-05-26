@@ -12595,7 +12595,9 @@ SubClassOf(obo:CHMO_0000799 obo:CHMO_0000811)
 
 # Class: obo:CHMO_0000800 (spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000800 "A plot of a measured quantity against some experimental parameter.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384716
+6.110 spectrum 
+Graph of a quantity derived from the radiant power at each wavelength (frequency or wavenumber) as ordinate plotted against the wavelength (frequency or wavenumber) of electromagnetic radiation as abscissa. (from: https://books.rsc.org/view-large/6384716)") obo:IAO_0000115 obo:CHMO_0000800 "A plot of a measured quantity against some experimental parameter.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000800 "spectra")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000800 "spectrum plot")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000800 "CHMO:0000800")
