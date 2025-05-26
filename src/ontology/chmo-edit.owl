@@ -14397,7 +14397,9 @@ SubClassOf(obo:CHMO_0000970 obo:CHMO_0000966)
 
 # Class: obo:CHMO_0000971 (support-coated open-tubular column)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.3.2") obo:IAO_0000115 obo:CHMO_0000971 "An open-tubular column in which a layer of porous particles deposited from a suspension coats the inner wall and serves as a support for a liquid stationary phase.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.3.2") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6383645
+5.75 support-coated open-tubular (SCOT) column 
+A type of porous-layer open-tubular column in which the porous layer consists of support particles deposited from a suspension. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6383551/Separation-in-Analytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000971 "An open-tubular column in which a layer of porous particles deposited from a suspension coats the inner wall and serves as a support for a liquid stationary phase.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000971 "SCOT column")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000971 "CHMO:0000971")
 AnnotationAssertion(rdfs:label obo:CHMO_0000971 "support-coated open-tubular column")
