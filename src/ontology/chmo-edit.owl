@@ -15133,7 +15133,9 @@ SubClassOf(obo:CHMO_0001052 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_000105
 
 # Class: obo:CHMO_0001053 (magnetic sector)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0001053 "A piece of apparatus consisting of a magnet which is used to separate an ion beam into discrete ion beams according to the mass-to-charge ratio of the ions.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6383272
+7.237 magnetic sector 
+Device that produces a magnetic field perpendicular to a charged particle beam that deflects the beam to an extent that is proportional to the ratio of particle momentum and charge. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6383030/Mass-Spectrometry1-2)") obo:IAO_0000115 obo:CHMO_0001053 "A piece of apparatus consisting of a magnet which is used to separate an ion beam into discrete ion beams according to the mass-to-charge ratio of the ions.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001053 "CHMO:0001053")
 AnnotationAssertion(rdfs:label obo:CHMO_0001053 "magnetic sector")
 SubClassOf(obo:CHMO_0001053 obo:OBI_0000968)
