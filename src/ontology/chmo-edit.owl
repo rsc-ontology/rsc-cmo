@@ -22946,7 +22946,10 @@ SubClassOf(obo:CHMO_0001814 obo:CHMO_0001235)
 
 # Class: obo:CHMO_0001815 (electrochemical quartz crystal microbalance)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001815 "A piece of apparatus consisting of  a quartz crystal resonator,  which is used to measure the current efficiency (mass-to-charge ratio) during an electrochemical reaction, by measuring the change in resonance frequency of the crystal.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384582
+8.140 electrochemical quartz crystal microbalance, (EQCM) 
+electrochemical quartz crystal nanobalance, (EQCN) 
+Electrochemical cell in which the working electrode is located on one surface of a piezoelectric quartz crystal the oscillation frequency of which is measured. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384413/Electroanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0001815 "A piece of apparatus consisting of  a quartz crystal resonator,  which is used to measure the current efficiency (mass-to-charge ratio) during an electrochemical reaction, by measuring the change in resonance frequency of the crystal.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001815 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001815 "2009-05-26T01:25:01Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001815 "EQCM")
