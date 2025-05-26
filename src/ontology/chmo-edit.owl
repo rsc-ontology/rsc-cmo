@@ -34935,7 +34935,7 @@ SubClassOf(obo:CHMO_0002798 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_000279
 
 # Class: obo:CHMO_0002799 (chemodosimeter)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/9781847559753-00013") obo:IAO_0000115 obo:CHMO_0002799 "A sensor that is used to measure the dose of ions or small molecules taken by up an object.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/9781847559753-00013") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C01021>) obo:IAO_0000115 obo:CHMO_0002799 "A sensor that is used to measure the dose of ions or small molecules taken by up an object.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002799 "CHMO:0002799")
 AnnotationAssertion(rdfs:label obo:CHMO_0002799 "chemodosimeter")
 SubClassOf(obo:CHMO_0002799 obo:CHMO_0002797)
