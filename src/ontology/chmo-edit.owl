@@ -35538,7 +35538,9 @@ SubClassOf(obo:CHMO_0002878 obo:CHMO_0002742)
 
 # Class: obo:CHMO_0002879 (certified reference material)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002879 "A reference material that has been certified by an appropriate authority.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382164
+13.41 certified reference material, (CRM) 
+Reference material, accompanied by documentation issued by an authoritative body and providing one or more specified property values with associated uncertainties and traceabilities, using valid procedures.") obo:IAO_0000115 obo:CHMO_0002879 "A reference material that has been certified by an appropriate authority. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382111/Quality-in-Analytical-Chemistry1-2 )")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002879 "CHMO:0002879")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002879 "For example NIST in the USA or the Comμnity Bureau of Reference.")
 AnnotationAssertion(rdfs:label obo:CHMO_0002879 "certified reference material")
