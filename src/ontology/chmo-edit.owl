@@ -14405,7 +14405,9 @@ SubClassOf(obo:CHMO_0000971 obo:CHMO_0000972)
 
 # Class: obo:CHMO_0000972 (porous-layer open-tubular column)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.3.2") obo:IAO_0000115 obo:CHMO_0000972 "An open-tubular column in which a porous layer, achieved by either etching a non-porous layer or by deposition of porous particles from a suspension, coats the inner wall and may serve as a support for a liquid stationary phase or as the stationary phase itself.")
+AnnotationAssertion(Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6383643
+5.73 porous-layer open-tubular (PLOT) column 
+Open-tubular column with a porous layer on the inner wall. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6383551/Separation-in-Analytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000972 "An open-tubular column in which a porous layer, achieved by either etching a non-porous layer or by deposition of porous particles from a suspension, coats the inner wall and may serve as a support for a liquid stationary phase or as the stationary phase itself.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000972 "PLOT column")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000972 "CHMO:0000972")
 AnnotationAssertion(rdfs:label obo:CHMO_0000972 "porous-layer open-tubular column")
