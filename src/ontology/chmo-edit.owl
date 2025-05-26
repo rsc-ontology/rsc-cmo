@@ -30571,7 +30571,9 @@ SubClassOf(obo:CHMO_0002425 obo:CHMO_0001313)
 
 # Class: obo:CHMO_0002426 (galvanostat)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002426 "A piece of apparatus that maintains the current through an electrochemical cell at a preset value.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384459
+8.49 galvanostat 
+Instrument which controls the electric current between the working electrode and the auxiliary electrode.  (from: https://books.rsc.org/view-large/6384459)") obo:IAO_0000115 obo:CHMO_0002426 "A piece of apparatus that maintains the current through an electrochemical cell at a preset value.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002426 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002426 "2009-09-21T04:28:28Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002426 "amperostat")
