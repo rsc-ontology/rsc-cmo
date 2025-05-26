@@ -34883,7 +34883,9 @@ SubClassOf(obo:CHMO_0002792 obo:IAO_0000140)
 
 # Class: obo:CHMO_0002793 (sensor)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002793 "A piece of apparatus that is used to measure a physical quantity.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381967
+1.97 sensor 
+Element of a measuring system that is directly affected by a phenomenon, body, or substance carrying a quantity to be measured. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381851/Fundamental-and-Metrological-Concepts-in)") obo:IAO_0000115 obo:CHMO_0002793 "A piece of apparatus that is used to measure a physical quantity.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002793 "CHMO:0002793")
 AnnotationAssertion(rdfs:label obo:CHMO_0002793 "sensor")
 SubClassOf(obo:CHMO_0002793 obo:OBI_0000968)
