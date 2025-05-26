@@ -15183,7 +15183,7 @@ SubClassOf(obo:CHMO_0001059 obo:CHMO_0002244)
 
 # Class: obo:CHMO_0001060 (electron multiplier)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001060 "A piece of apparatus that on contact with a charged particle of sufficient energy emits a greater number electrons.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S05517>) obo:IAO_0000115 obo:CHMO_0001060 "A piece of apparatus that on contact with a charged particle of sufficient energy emits a greater number electrons.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001060 "CHMO:0001060")
 AnnotationAssertion(rdfs:label obo:CHMO_0001060 "electron multiplier")
 SubClassOf(obo:CHMO_0001060 obo:OBI_0000968)
