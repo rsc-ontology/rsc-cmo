@@ -5664,7 +5664,9 @@ SubClassOf(obo:CHMO_0000233 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHMO_000080
 
 # Class: obo:CHMO_0000234 (atomic absorption spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0-19-280031-0") obo:IAO_0000115 obo:CHMO_0000234 "A type of atomic spectroscopy where the sample is illuminated with ultraviolet or visible light which is absorbed by the non-excited atoms at characteristic wavelengths.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0-19-280031-0") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384924
+6.296 atomic absorption spectroscopy, (AAS) 
+Measurement method of atomic spectroscopy for measuring the amount of a chemical element based on the measurement of the absorption of characteristic electromagnetic radiation by atoms in the vapour phase. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000234 "A type of atomic spectroscopy where the sample is illuminated with ultraviolet or visible light which is absorbed by the non-excited atoms at characteristic wavelengths.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000234 "FIX:0000926")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000234 "AAS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000234 "atomic absorption spectrometry")
