@@ -23406,7 +23406,9 @@ SubClassOf(obo:CHMO_0001845 obo:CHMO_0001844)
 
 # Class: obo:CHMO_0001846 (decoupling in the presence of scalar interactions)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "rsc:pr") obo:IAO_0000115 obo:CHMO_0001846 "A sequence of composite pulses designed to remove signal splitting due to heteronuclear J-couplings in multinuclear liquid NMR experiments. Also used to allow transfer of magnetisation between nuclei (by making the spins precess with at the same chemical shift and thus enjoy strong coupling–-isotropic mixing). For the pulse sequence see J. Magn. Reson., (1988), 77, pg 274.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "rsc:pr") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384871
+6.248 decoupling in the presence of scalar interactions, (DIPSI) 
+Pulse sequence in nuclear magnetic resonance spectroscopy often used for isotropic mixing in total correlation spectroscopy (TOCSY) experiments due to its efficiency over large spectral bandwidths. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0001846 "A sequence of composite pulses designed to remove signal splitting due to heteronuclear J-couplings in multinuclear liquid NMR experiments. Also used to allow transfer of magnetisation between nuclei (by making the spins precess with at the same chemical shift and thus enjoy strong coupling–-isotropic mixing). For the pulse sequence see J. Magn. Reson., (1988), 77, pg 274.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001846 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001846 "2009-05-29T12:00:00Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001846 "DIPSI")
