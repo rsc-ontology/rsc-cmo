@@ -35790,7 +35790,7 @@ SubClassOf(obo:CHMO_0002913 obo:CHMO_0000993)
 
 # Class: obo:CHMO_0002914 (absorption of material)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://dx.doi.org/10.1351/goldbook.A00036") obo:IAO_0000115 obo:CHMO_0002914 "The process of one material (absorbate) being retained by another (absorption).")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'absorption' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00036>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00036>) obo:IAO_0000115 obo:CHMO_0002914 "\"The process of one material (absorbate) being retained by another (absorption).\"")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0002914 "REX:0000188")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002914 "CHMO:0002914")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002914 "Gold Book, somewhat modified. It goes on \"The process of one material (absorbate) being retained by another (absorbent); this may be the physical solution of a gas, liquid, or solid in a liquid, attachment of molecules of a gas, vapour, liquid, or dissolved substance to a solid surface by physical forces, etc.\"")
