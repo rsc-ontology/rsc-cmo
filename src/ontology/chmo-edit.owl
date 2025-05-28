@@ -14160,7 +14160,10 @@ SubClassOf(obo:CHMO_0000938 obo:CHMO_0000228)
 
 # Class: obo:CHMO_0000939 (transmission spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000939 "A plot of transmittance vs. wavelength.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384718
+6.112 transmission spectrum 
+transmittance spectrum 
+General term for the spectrum of transmitted electromagnetic radiation. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000939 "A plot of transmittance vs. wavelength.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000939 "transmission spectra")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000939 "transmittance spectrum")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000939 "CHMO:0000939")
