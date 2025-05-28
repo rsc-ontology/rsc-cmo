@@ -4829,7 +4829,7 @@ SubClassOf(obo:CHMO_0000159 obo:CHMO_0000156)
 
 # Class: obo:CHMO_0000160 (scattering method)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.S05487") obo:IAO_0000115 obo:CHMO_0000160 "Any detection or measurement method where reciprocal space structure can be determined by measuring the change in direction or energy of incident particles or radiation scattered by a sample.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> "https://doi.org/10.1351/goldbook.S05487") obo:IAO_0000115 obo:CHMO_0000160 "Any detection or measurement method where reciprocal space structure can be determined by measuring the change in direction or energy of incident particles or radiation scattered by a sample.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000160 "CHMO:0000160")
 AnnotationAssertion(rdfs:label obo:CHMO_0000160 "scattering method")
 SubClassOf(obo:CHMO_0000160 obo:CHMO_0000140)
