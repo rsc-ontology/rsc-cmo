@@ -13009,7 +13009,10 @@ SubClassOf(obo:CHMO_0000834 obo:CHMO_0000800)
 
 # Class: obo:CHMO_0000835 (nuclear magnetic resonance spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "rsc:pr") obo:IAO_0000115 obo:CHMO_0000835 "Any spectrum that shows the response of spin-active nuclei to radio frequency radiation in an applied magnetic field.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "rsc:pr") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384785
+6.169 nuclear magnetic resonance spectrum 
+NMR spectrum 
+Representation of nuclear magnetic resonance spectroscopy data with at least one dimension a frequency domain. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000835 "Any spectrum that shows the response of spin-active nuclei to radio frequency radiation in an applied magnetic field.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000835 "NMR spectra")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000835 "NMR spectrum")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000835 "nuclear magnetic resonance spectra")
