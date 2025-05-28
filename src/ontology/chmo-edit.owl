@@ -5349,7 +5349,9 @@ SubClassOf(obo:CHMO_0000203 obo:CHMO_0000202)
 
 # Class: obo:CHMO_0000204 (small-angle X-ray scattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000223") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000204 "A method for determining structure by measuring the change in direction or energy of X-rays scattered by a sample at low angles (0–10°).")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000223") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382310
+10.49 small-angle X-ray scattering 
+Measurement method in which the elastically scattered intensity of X-rays is measured for small-angle deflections. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000204 "A method for determining structure by measuring the change in direction or energy of X-rays scattered by a sample at low angles (0–10°).")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000204 "SAXS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000204 "small angle X-ray scattering")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000204 "CHMO:0000204")
