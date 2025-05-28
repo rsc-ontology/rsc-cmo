@@ -4778,7 +4778,10 @@ SubClassOf(obo:CHMO_0000155 obo:CHMO_0000152)
 
 # Class: obo:CHMO_0000156 (X-ray diffraction)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000007") Annotation(oboInOwl:hasDbXref "ISBN:90190280031-0") obo:IAO_0000115 obo:CHMO_0000156 "A method for determining structure by directing a beam of X-rays at the sample and detecting the positions and intensities of the diffracted X-rays as a pattern of spots on a photographic plate.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000007") Annotation(oboInOwl:hasDbXref "ISBN:90190280031-0") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381382
+9.174 X-ray diffraction analysis 
+X-ray diffraction, (XRD) 
+Measurement method using diffraction of X-radiation to obtain the spatial arrangement of atoms in a crystalline sample. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381192/Radioanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000156 "A method for determining structure by directing a beam of X-rays at the sample and detecting the positions and intensities of the diffracted X-rays as a pattern of spots on a photographic plate.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000156 "X-Ray crystallographic analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000156 "X-ray analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000156 "X-ray crystallography")
