@@ -6611,7 +6611,10 @@ SubClassOf(obo:CHMO_0000308 obo:CHMO_0000307)
 
 # Class: obo:CHMO_0000309 (energy-dispersive X-ray emission spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "OrangeBook:16.2") obo:IAO_0000115 obo:CHMO_0000309 "X-ray emission spectroscopy where the energy spectrum of the X-rays emitted due to core-to-core transitions is measured using a semiconductor detector.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "OrangeBook:16.2") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381364
+9.156 energy-dispersive X-ray fluorescence analysis, (EDX) 
+energy-dispersive X-ray analysis, (EDXA) 
+energy-dispersive X-ray spectroscopy, (EDS, EDXS) (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381192/Radioanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000309 "X-ray emission spectroscopy where the energy spectrum of the X-rays emitted due to core-to-core transitions is measured using a semiconductor detector.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000309 "FIX:0000104")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000309 "FIX:0000677")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000309 "EDAX")
