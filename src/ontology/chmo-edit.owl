@@ -5854,7 +5854,9 @@ SubClassOf(obo:CHMO_0000250 obo:CHMO_0000234)
 
 # Class: obo:CHMO_0000251 (atomic emission spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0-19-280031-0") obo:IAO_0000115 obo:CHMO_0000251 "A type of atomic spectroscopy where the atoms in the sample are excited and the emission of electromagnetic radiation at characteristic wavelengths is detected.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0-19-280031-0") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384925
+6.297 atomic emission spectroscopy, (AES) 
+Measurement method of atomic spectroscopy for measuring the amount of a chemical element based on the measurement of the intensity of characteristic electromagnetic radiation emitted by atoms or molecules. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000251 "A type of atomic spectroscopy where the atoms in the sample are excited and the emission of electromagnetic radiation at characteristic wavelengths is detected.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000251 "FIX:0000927")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000251 "AES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000251 "OES")
