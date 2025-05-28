@@ -5360,7 +5360,9 @@ SubClassOf(obo:CHMO_0000204 obo:CHMO_0000200)
 
 # Class: obo:CHMO_0000205 (grazing-incidence X-ray scattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000205 "A method for determining structure by measuring the change in direction or energy of X-rays scattered by a sample. The incident X-ray beam strikes the sample under a small angle close to the critical angle of total external X-ray reflection.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382305
+10.44 grazing-incidence small-angle X-ray scattering analysis, (GISAXS) 
+Measurement method in which the elastically scattered intensity of X-rays from a reflecting surface is measured for small-angle deflections at grazing incidence. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000205 "A method for determining structure by measuring the change in direction or energy of X-rays scattered by a sample. The incident X-ray beam strikes the sample under a small angle close to the critical angle of total external X-ray reflection.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000205 "GISAXS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000205 "GIXS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000205 "grazing incidence X-ray scattering")
