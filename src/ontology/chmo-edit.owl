@@ -35799,7 +35799,7 @@ SubClassOf(obo:CHMO_0002914 obo:BFO_0000015)
 
 # Class: obo:CHMO_0002915 (absorption of radiation)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://dx.doi.org/10.1351/goldbook.A00036") obo:IAO_0000115 obo:CHMO_0002915 "A phenomenon in which radiation transfers to matter which it traverses some or all of its energy.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> "http://dx.doi.org/10.1351/goldbook.A00036") obo:IAO_0000115 obo:CHMO_0002915 "A phenomenon in which radiation transfers to matter which it traverses some or all of its energy.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002915 "CHMO:0002915")
 AnnotationAssertion(rdfs:label obo:CHMO_0002915 "absorption of radiation")
 SubClassOf(obo:CHMO_0002915 obo:BFO_0000015)
