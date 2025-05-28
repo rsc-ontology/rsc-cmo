@@ -35770,7 +35770,9 @@ SubClassOf(obo:CHMO_0002910 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_000290
 
 # Class: obo:CHMO_0002911 (magic angle spinning)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780192800310") obo:IAO_0000115 obo:CHMO_0002911 "Spinning a sample very rapidly at the magic angle (54.74 deg with respect to the direction of the magnetic field) in order to average anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, to zero.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780192800310") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384824
+6.205 magic angle spinning, (MAS) 
+Technique in solid-state nuclear magnetic resonance spectroscopy to remove or reduce the influence of anisotropic interactions by rapid sample rotation about the magic angle. See Figure 6.5. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0002911 "Spinning a sample very rapidly at the magic angle (54.74 deg with respect to the direction of the magnetic field) in order to average anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, to zero.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002911 "CHMO:0002911")
 AnnotationAssertion(rdfs:label obo:CHMO_0002911 "magic angle spinning")
 SubClassOf(obo:CHMO_0002911 obo:OBI_0000011)
