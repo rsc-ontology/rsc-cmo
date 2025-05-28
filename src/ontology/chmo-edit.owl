@@ -34939,7 +34939,10 @@ SubClassOf(obo:CHMO_0002801 obo:CHMO_0002803)
 
 # Class: obo:CHMO_0002802 (limit of quantification)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1021/ac50064a004") obo:IAO_0000115 obo:CHMO_0002802 "The smallest measure that can be quantified with reasonable certainty for a given analytical procedure.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1021/ac50064a004") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381989
+1.117 limit of quantification, (LOQ) 
+quantification limit 
+Smallest or largest measured quantity value, obtained by a given measurement procedure, which fulfils a requirement of fitness for purpose. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381851/Fundamental-and-Metrological-Concepts-in)") obo:IAO_0000115 obo:CHMO_0002802 "The smallest measure that can be quantified with reasonable certainty for a given analytical procedure.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002802 "CHMO:0002802")
 AnnotationAssertion(rdfs:label obo:CHMO_0002802 "limit of quantification")
 SubClassOf(obo:CHMO_0002802 obo:CHMO_0002803)
