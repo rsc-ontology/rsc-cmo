@@ -5319,7 +5319,11 @@ SubClassOf(obo:CHMO_0000201 obo:CHMO_0000200)
 
 # Class: obo:CHMO_0000202 (resonant inelastic X-ray scattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000202 "A method for determining structure by measuring the energy loss of X-rays scattered by a sample where the incident X-ray energy is chosen to coincide with an electronic transition in the sample.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384938
+6.310 resonant inelastic X-ray scattering, (RIXS) 
+resonant X-ray emission 
+resonant X-ray Raman 
+Measurement method of inelastic X-ray spectroscopy that uses a hard or soft X-ray beam to excite transitions of core-level electrons into empty energy levels. The subsequent transition of an electron into the core state is accompanied by X-ray emission with characteristic momentum and energy. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000202 "A method for determining structure by measuring the energy loss of X-rays scattered by a sample where the incident X-ray energy is chosen to coincide with an electronic transition in the sample.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000202 "RIXES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000202 "RIXS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000202 "resonant inelastic X-ray emission spectrometry")
