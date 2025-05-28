@@ -6189,7 +6189,9 @@ SubClassOf(obo:CHMO_0000278 obo:CHMO_0000251)
 
 # Class: obo:CHMO_0000279 (atomic fluorescence spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000279 "Atomic spectroscopy where an atom absorbs then spontaneously emits a photon.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384926
+6.298 atomic fluorescence spectroscopy, (AFS) 
+Measurement method of atomic spectroscopy for measuring the amount of a chemical element based on the measurement of the re-emission of characteristic electromagnetic radiation by atoms, following the absorption of radiation in the vapour phase. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000279 "Atomic spectroscopy where an atom absorbs then spontaneously emits a photon.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000279 "FIX:0000290")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000279 "AFS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000279 "atomic fluorescence spectrometry")
