@@ -5531,7 +5531,10 @@ SubClassOf(obo:CHMO_0000219 obo:CHMO_0000209)
 
 # Class: obo:CHMO_0000220 (diffuse X-ray reflectometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000220 "A method for determining structure by directing a beam of X-rays at an extremely flat surface (at angle theta minus omega to the surface) and measuring the intensity of the X-rays which undergo diffuse reflection (and are emitted at angle theta plus omega from the surface).")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382306
+10.45 off-specular X-ray reflectometry 
+diffuse X-ray reflectometry 
+X-ray reflectometry in which significant scattered intensity arises from imperfections of the specimen, the scattered intensity falling outside the specular condition (see specular X-ray reflectometry). (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000220 "A method for determining structure by directing a beam of X-rays at an extremely flat surface (at angle theta minus omega to the surface) and measuring the intensity of the X-rays which undergo diffuse reflection (and are emitted at angle theta plus omega from the surface).")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000220 "diffuse X-ray reflectance")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000220 "diffuse XRR")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000220 "off-specular X-ray reflectivity")
