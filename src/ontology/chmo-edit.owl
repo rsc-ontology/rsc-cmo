@@ -3256,7 +3256,9 @@ SubClassOf(obo:CHMO_0000009 obo:CHMO_0000004)
 
 # Class: obo:CHMO_0000010 (conductometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:8.5.4") obo:IAO_0000115 obo:CHMO_0000010 "The measurement of the conductance of a solution as a function of concentration. Measurements are made indirectly across the resistance of the solution with alternating current.")
+AnnotationAssertion(Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384588
+8.143 conductometry 
+Measurement principle in which the electric conductivity of a solution is measured. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384413/Electroanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000010 "The measurement of the conductance of a solution as a function of concentration. Measurements are made indirectly across the resistance of the solution with alternating current.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000010 "FIX:0000768")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000010 "FIX:0000770")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000010 "conductimetry")
