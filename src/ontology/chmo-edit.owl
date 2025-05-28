@@ -11430,7 +11430,9 @@ SubClassOf(obo:CHMO_0000697 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000698 (neutron diffraction)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000008") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000698 "A method for determining structure by directing a beam of cold or thermal neutrons at a sample and recording the resulting diffraction pattern.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000008") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381344
+9.140 neutron diffraction analysis 
+Measurement method in which the diffraction of neutrons is applied to measure parameters of the atomic and/or magnetic structure of a material. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381192/Radioanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000698 "A method for determining structure by directing a beam of cold or thermal neutrons at a sample and recording the resulting diffraction pattern.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000698 "neutron crystallography")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000698 "neutron diffraction analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000698 "neutron diffractometry")
