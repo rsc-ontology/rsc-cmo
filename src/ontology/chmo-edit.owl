@@ -6540,7 +6540,10 @@ SubClassOf(obo:CHMO_0000304 obo:CHMO_0000299)
 
 # Class: obo:CHMO_0000305 (near-edge X-ray absorption fine structure spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000025") Annotation(oboInOwl:hasDbXref "FIX:0000376") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000305 "X-ray absorption spectroscopy where changes in the X-ray absorption coefficient measured within 40 eV of the absorption edge (the part of the spectrum where the incident X-ray energy matches the binding energy of an electron) are determined as a function of incident X-ray energy.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000025") Annotation(oboInOwl:hasDbXref "FIX:0000376") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382325
+10.64 X-ray absorption near-edge spectroscopy, (XANES) 
+Near-edge extended X-ray absorption fine structure spectroscopy, (NEXAFS) 
+X-ray absorption fine structure spectroscopy in the energy region near (within approximately 100 eV) an absorption edge.  https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000305 "X-ray absorption spectroscopy where changes in the X-ray absorption coefficient measured within 40 eV of the absorption edge (the part of the spectrum where the incident X-ray energy matches the binding energy of an electron) are determined as a function of incident X-ray energy.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "NEXAF spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "NEXAFS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "NEXAFS spectrometry")
