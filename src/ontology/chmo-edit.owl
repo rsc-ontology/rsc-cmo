@@ -5107,7 +5107,9 @@ SubClassOf(obo:CHMO_0000180 obo:CHMO_0000166)
 
 # Class: obo:CHMO_0000181 (neutron scattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0824719948") obo:IAO_0000115 obo:CHMO_0000181 "A method for determining structure by measuring the change in direction or energy of scattered neutrons. Neutrons are scattered by the atomic nuclei in the sample and the intensity of the scattering is given by the scattering vector Q = (4/)sin(pi/2).")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0824719948") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381345
+9.141 neutron scattering analysis 
+Measurement method in which elastic or inelastic scattering of neutrons by the target nuclei is applied to study the composition and structure of a material. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381192/Radioanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000181 "A method for determining structure by measuring the change in direction or energy of scattered neutrons. Neutrons are scattered by the atomic nuclei in the sample and the intensity of the scattering is given by the scattering vector Q = (4/)sin(pi/2).")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000181 "FIX:0000400")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000181 "neutron scattering spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000181 "neutron scattering spectroscopy")
