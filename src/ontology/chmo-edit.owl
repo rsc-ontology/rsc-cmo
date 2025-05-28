@@ -24025,7 +24025,9 @@ SubClassOf(obo:CHMO_0001890 obo:CHMO_0001806)
 
 # Class: obo:CHMO_0001891 (chemical map)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://www.spectroscopyeurope.com/NIR_14_3.pdf") obo:IAO_0000115 obo:CHMO_0001891 "A data set derived from microspectroscopy consisting of a three-dimensional image where two axes describe the x and y spatial dimensions and the third dimension represents spectral wavelength. The image is obtained by stacking one image per spectral wavelength sequentially.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://www.spectroscopyeurope.com/NIR_14_3.pdf") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382369
+10.106 chemical map 
+Surface map using signals proportional to the amount of an element in a particular chemical state in the sample. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0001891 "A data set derived from microspectroscopy consisting of a three-dimensional image where two axes describe the x and y spatial dimensions and the third dimension represents spectral wavelength. The image is obtained by stacking one image per spectral wavelength sequentially.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001891 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001891 "2009-06-01T10:34:07Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001891 "CHMO:0001891")
