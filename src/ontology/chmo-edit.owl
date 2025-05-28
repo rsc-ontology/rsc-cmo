@@ -5336,7 +5336,10 @@ SubClassOf(obo:CHMO_0000202 obo:CHMO_0000201)
 
 # Class: obo:CHMO_0000203 (angle-resolved resonant X-ray scattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000203 "A method for determining structure by measuring the energy loss of X-rays scattered by a sample as a function of emission angle, where the incident X-ray energy is chosen to coincide with an electronic transition in the sample.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382258
+10.3 angle resolved X-ray photoelectron spectroscopy, (ARXPS) 
+angle dependent X-ray photoelectron spectroscopy 
+Measurement method in which X-ray photoelectron intensities are measured as a function of angle of emission. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000203 "A method for determining structure by measuring the energy loss of X-rays scattered by a sample as a function of emission angle, where the incident X-ray energy is chosen to coincide with an electronic transition in the sample.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000203 "angle-resolved resonant X-ray emission spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000203 "angle-resolved resonant X-ray emission spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000203 "angular-resolved resonant X-ray emission spectroscopy")
