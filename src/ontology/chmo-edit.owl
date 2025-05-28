@@ -5905,7 +5905,10 @@ SubClassOf(obo:CHMO_0000254 obo:CHMO_0000253)
 
 # Class: obo:CHMO_0000255 (flame atomic emission spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000928") Annotation(oboInOwl:hasDbXref "FIX:0000935") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/ja9870200573") obo:IAO_0000115 obo:CHMO_0000255 "A type of atomic emission spectrometry where the sample is excited using an N2/oxide–acetylene flame.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000928") Annotation(oboInOwl:hasDbXref "FIX:0000935") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/ja9870200573") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384930
+6.302 flame atomic spectroscopy 
+flame atomic spectrometry 
+Measurement method of atomic spectroscopy that uses a flame to excite atoms. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000255 "A type of atomic emission spectrometry where the sample is excited using an N2/oxide–acetylene flame.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000255 "F-AES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000255 "FAES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000255 "flame atomic emission spectroscopy")
