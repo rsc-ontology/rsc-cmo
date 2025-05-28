@@ -12900,7 +12900,9 @@ SubClassOf(obo:CHMO_0000822 obo:CHMO_0000800)
 
 # Class: obo:CHMO_0000823 (Raman spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1021/jp001661l") obo:IAO_0000115 obo:CHMO_0000823 "A plot of intensity vs. Raman shift (cm-1) obtained by measuring the Raman scattering of monochromatic light from a sample.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1021/jp001661l") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6385207
+6.573 Raman spectrum 
+Graph of the intensity of scattered electromagnetic radiation in Raman spectroscopy against Raman shift. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000823 "A plot of intensity vs. Raman shift (cm-1) obtained by measuring the Raman scattering of monochromatic light from a sample.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000823 "Raman spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000823 "CHMO:0000823")
 AnnotationAssertion(rdfs:label obo:CHMO_0000823 "Raman spectrum")
