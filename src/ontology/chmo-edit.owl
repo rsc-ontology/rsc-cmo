@@ -5768,7 +5768,10 @@ SubClassOf(obo:CHMO_0000242 obo:CHMO_0000237)
 
 # Class: obo:CHMO_0000243 (flame atomic absorption spectrometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000929") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000243 "A type of atomic absorption spectrometry where the sample is  aspirated, aerosolised, and mixed with combustible gases, such as acetylene and air or acetylene and nitrous oxide. The mixture is then ignited and atomised in a flame whose temperature ranges from 2100–2800 \\degC. During combustion, atoms of the element of interest in the sample absorb light at characteristic wavelengths.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000929") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384930
+6.302 flame atomic spectroscopy 
+flame atomic spectrometry 
+Measurement method of atomic spectroscopy that uses a flame to excite atoms.(from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000243 "A type of atomic absorption spectrometry where the sample is  aspirated, aerosolised, and mixed with combustible gases, such as acetylene and air or acetylene and nitrous oxide. The mixture is then ignited and atomised in a flame whose temperature ranges from 2100–2800 \\degC. During combustion, atoms of the element of interest in the sample absorb light at characteristic wavelengths.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000243 "F-AAS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000243 "FAAS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000243 "flame atomic absorption spectroscopy")
