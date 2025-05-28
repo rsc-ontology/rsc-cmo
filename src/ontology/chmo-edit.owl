@@ -5401,7 +5401,9 @@ SubClassOf(obo:CHMO_0000208 obo:OBI_0000070)
 
 # Class: obo:CHMO_0000209 (reflectometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000209 "Any method for determining structure by directing a beam of particles or X-rays onto an extremely flat surface and measuring the intensity of the reflected radiation as a function of angle.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382327
+10.66  X-ray reflectometry, (XRR) 
+Measurement method for surface and interface roughness and density, layer thickness of thin layers, and electron density profile by reflecting X-rays from a flat sample and analysing the reflected intensity as a function of angle. (See also specular X-ray reflectometry). (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000209 "Any method for determining structure by directing a beam of particles or X-rays onto an extremely flat surface and measuring the intensity of the reflected radiation as a function of angle.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000209 "reflectivity")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000209 "CHMO:0000209")
 AnnotationAssertion(rdfs:label obo:CHMO_0000209 "reflectometry")
