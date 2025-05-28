@@ -5565,7 +5565,9 @@ SubClassOf(obo:CHMO_0000222 obo:CHMO_0000219)
 
 # Class: obo:CHMO_0000223 (ellipsometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0412581604") obo:IAO_0000115 obo:CHMO_0000223 "Any method for determining structure where the sample is illuminated with light and the intensity and change in polarisation of the reflected light are measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0412581604") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382303
+10.42 ellipsometry 
+Measurement method for the thickness of transparent surface films and layers and for complex refractive index of a reflecting material. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000223 "Any method for determining structure where the sample is illuminated with light and the intensity and change in polarisation of the reflected light are measured.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000223 "optical ellipsometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000223 "CHMO:0000223")
 AnnotationAssertion(rdfs:label obo:CHMO_0000223 "ellipsometry")
