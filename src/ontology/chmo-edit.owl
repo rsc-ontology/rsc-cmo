@@ -34965,7 +34965,10 @@ SubClassOf(obo:CHMO_0002804 obo:CHMO_0002751)
 
 # Class: obo:CHMO_0002805 (working range)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002805 "The range of measures which can be quantified with reasonable certainty for a given analytical procedure.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382034
+1.160 working interval 
+working range 
+Set of quantity values over which a measuring instrument or measuring system provides results with acceptable measurement uncertainty, under defined conditions. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381851/Fundamental-and-Metrological-Concepts-in)") obo:IAO_0000115 obo:CHMO_0002805 "The range of measures which can be quantified with reasonable certainty for a given analytical procedure.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002805 "CHMO:0002805")
 AnnotationAssertion(rdfs:label obo:CHMO_0002805 "working range")
 SubClassOf(obo:CHMO_0002805 obo:CHMO_0002803)
