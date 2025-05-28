@@ -6448,7 +6448,10 @@ SubClassOf(obo:CHMO_0000297 obo:CHMO_0000228)
 
 # Class: obo:CHMO_0000298 (X-ray absorption spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000107") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000298 "Spectroscopy where the sample is bombarded with X-rays and the X-ray absorption coefficient of the sample is measured. When the incident X-ray energy matches the binding energy of an electron in an atom there is a decrease in the intensity of transmitted X-rays resulting in an absorption edge.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000107") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381377
+9.169 X-ray absorption analysis 
+X-ray absorption spectroscopy, (XAS) 
+Measurement principle of X-ray analysis in which the absorption spectrum is used to measure the number of atoms, species and other parameters of chemical elements. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381192/Radioanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000298 "Spectroscopy where the sample is bombarded with X-rays and the X-ray absorption coefficient of the sample is measured. When the incident X-ray energy matches the binding energy of an electron in an atom there is a decrease in the intensity of transmitted X-rays resulting in an absorption edge.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000298 "X-ray absorption spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000298 "XAS")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000298 "CHMO:0000298")
