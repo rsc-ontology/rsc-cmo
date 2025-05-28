@@ -17205,7 +17205,11 @@ SubClassOf(obo:CHMO_0001240 obo:CHMO_0000287)
 
 # Class: obo:CHMO_0001241 (elastic recoil detection analysis)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001241 "A technique for measuring elemental concentration depth profiles in thin films by directing an ion beam at the sample and detecting recoiled atoms.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382268
+10.11 direct recoil spectroscopy, (DRS) 
+elastic recoil detection, (ERD) 
+elastic recoil detection analysis, (ERDA) 
+Measurement method to elucidate composition and structure of the outermost atomic layers of a solid material, in which principally monoenergetic neutral atoms or singly charged probe ions are used to sputter atoms or ions out of the solid surface, their energy being recorded at one or more angle of scattering. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0001241 "A technique for measuring elemental concentration depth profiles in thin films by directing an ion beam at the sample and detecting recoiled atoms.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001241 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001241 "2009-03-25T02:46:12Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001241 "ERDA")
