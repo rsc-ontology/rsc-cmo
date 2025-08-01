@@ -35925,13 +35925,17 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0002932 "CHMO:0002932")
 AnnotationAssertion(rdfs:label obo:CHMO_0002932 "cathode")
 SubClassOf(obo:CHMO_0002932 obo:CHMO_0002344)
 
-# Class: obo:CHMO_0002933 (open circuit voltage)
-
 AnnotationAssertion(obo:IAO_0000112 obo:CHMO_0002933 "As an electrochemical technique for measuring and characterizing batteries and E-chem cells.")
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1016/j.jpowsour.2014.06.152") obo:IAO_0000115 obo:CHMO_0002933 "An electrochemical technique where the potential difference between two electrodes (typically a working and a reference electrode) is measured under open-circuit conditions, ensuring that no significant current flows and the system remains in thermodynamic equilibrium.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002933 "OCV")
+# Class: obo:CHMO_0002933 (open circuit voltage potentiometry)
+
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002933 "OCP measurement"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002933 "OCV measurement"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002933 "OCV potentiometry"@en)
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:CHMO_0002933 "OCP")
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:CHMO_0002933 "OCV")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002933 "CHMO:0002933")
-AnnotationAssertion(rdfs:label obo:CHMO_0002933 "open circuit voltage")
+AnnotationAssertion(rdfs:label obo:CHMO_0002933 "open circuit voltage potentiometry"@en)
 SubClassOf(obo:CHMO_0002933 obo:CHMO_0000016)
 
 # Class: obo:CHMO_0010000 (risk management planning process)
