@@ -35929,6 +35929,7 @@ SubClassOf(obo:CHMO_0002932 obo:CHMO_0002344)
 
 AnnotationAssertion(obo:IAO_0000112 obo:CHMO_0002934 "As an electrochemical technique for measuring and characterizing batteries and E-chem cells.")
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1021/acsmeasuresciau.2c00070") obo:IAO_0000115 obo:CHMO_0002934 "A potentiometry where the change in impedance of an electrochemical cell is measured while maintaining a constant applied potential and the impedance is determined over a range of frequencies by analyzing the voltage-to-current ratio and the phase shift of the AC response.")
+AnnotationAssertion(obo:IAO_0000233 obo:CHMO_0002934 <https://github.com/rsc-ontologies/rsc-cmo/issues/36>)
 AnnotationAssertion(dcterms:contributor obo:CHMO_0002934 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(dcterms:contributor obo:CHMO_0002934 <https://orcid.org/0000-0002-4378-6061>)
 AnnotationAssertion(dcterms:contributor obo:CHMO_0002934 <https://orcid.org/0009-0008-1636-0875>)
