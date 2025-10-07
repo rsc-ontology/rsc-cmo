@@ -1,0 +1,19 @@
+#curie_map:
+#  CHMO: http://purl.obolibrary.org/obo/CHMO_
+#  AFR: http://purl.allotrope.org/ontologies/result#AFR_
+#mapping_set_id: https://github.com/NFDI4Chem/rsc-cmo/blob/Add-definition-sources-and-mappings/src/mappings/afo-mappings.tsv
+#mapping_set_version:	1.0
+#mapping_set_title: Mapping CHMO to the Allotrope Foundation Ontology Suite (AFO)
+#mapping_set_description: This file contains the mappings between the Chemical Methods Ontology (CHMO) and the Allotrope Foundation Ontology Suite (AFO). These mappings were manually created/curated by Ambika Gupta and reviewed by Philip Strömert & Colin Batchelor. The intended use case of this mapping set is the data integration of RDF knowledge graphs (KGs) that use AFO and are to be transformed into RDF KGs that use CHMO or vice versa. 
+#creator_id:
+#	- https://orcid.org/
+#	- https://orcid.org/0000-0002-1595-3213
+#	- https://orcid.org/0000-0001-5985-7429
+#subject_source:	http://purl.obolibrary.org/obo/chmo.owl
+#subject_source_version:	
+#object_source_version:	http://purl.allotrope.org/voc/afo/merged/REC/2024/06/merged-without-qudt-and-inferred
+#mapping_provider: http://purl.obolibrary.org/obo/chmo.owl
+#mapping_date: 05-2025
+#issue_tracker: 
+#license: https://creativecommons.org/publicdomain/zero/1.0/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_id	confidence	comment
