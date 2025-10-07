@@ -12597,7 +12597,7 @@ SubClassOf(obo:CHMO_0000800 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_000022
 
 # Class: obo:CHMO_0000801 (absorption spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(rdfs:comment <https://doi.org/10.1351/goldbook.A00043>) obo:IAO_0000115 obo:CHMO_0000801 "A plot of absorbance vs. wavelength obtained by measuring the amount of radiation absorbed by a sample as a function of the wavelength of incident radiation.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.A00043>) obo:IAO_0000115 obo:CHMO_0000801 "A spectrum plotting absorbance vs. wavelength obtained by measuring the amount of radiation absorbed by a sample as a function of the wavelength of incident radiation.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000801 "absorbance spectra")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000801 "absorbance spectrum")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000801 "absorption spectra")
@@ -12903,7 +12903,7 @@ SubClassOf(obo:CHMO_0000830 obo:CHMO_0000800)
 
 # Class: obo:CHMO_0000831 (action spectrum)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'absorption spectrum' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00043>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20  >) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00043>) obo:IAO_0000115 obo:CHMO_0000831 "\"A plot of a relative biological or chemical photoresponse per number of incident photons against wavelength or energy of radiation under the same radiant power of light.\"")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'absorption spectrum' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00043") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00043>) obo:IAO_0000115 obo:CHMO_0000831 "A spectrum plotting \"relative biological or chemical photoresponse per number of incident photons against wavelength or energy of radiation under the same radiant power of light.\"")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000831 "action spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000831 "CHMO:0000831")
 AnnotationAssertion(rdfs:label obo:CHMO_0000831 "action spectrum")
@@ -30085,7 +30085,7 @@ SubClassOf(obo:CHMO_0002386 obo:OBI_0000070)
 
 # Class: obo:CHMO_0002387 (chromatogram)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C01071>) obo:IAO_0000115 obo:CHMO_0002387 "A plot of detector signal (e.g. ion count or  absorbance) vs. retention time obtained from a chromatography experiment. Different peaks in the chromatogram correspond to different components of the separated mixture.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C01071>) obo:IAO_0000115 obo:CHMO_0002387 "A spectrum plotting the detector signal (e.g. ion count or  absorbance) vs. retention time obtained from a chromatography experiment. Different peaks in the chromatogram correspond to different components of the separated mixture.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002387 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002387 "2009-09-16T08:53:50Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002387 "CHMO:0002387")
@@ -31027,7 +31027,7 @@ SubClassOf(obo:CHMO_0002466 obo:CHMO_0001688)
 
 # Class: obo:CHMO_0002467 (analyte)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'analyte' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00331>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/ >) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00331>) obo:IAO_0000115 obo:CHMO_0002467 "The component of a system to be analysed.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'analyte' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00331") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00331>) obo:IAO_0000115 obo:CHMO_0002467 "A portion of material representing \"the component of a system to be analysed\".")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002467 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002467 "2009-09-29T11:58:40Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002467 "CHMO:0002467")
@@ -35051,7 +35051,7 @@ SubClassOf(obo:CHMO_0002817 obo:BFO_0000016)
 
 # Class: obo:CHMO_0002818 (angle of optical rotation)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'angle of optical rotation' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00348>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/ >) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00348>) dcterms:description obo:CHMO_0002818 "An experimental method output that consists of the \"angle through which plane polarized light is rotated clockwise, as seen when facing the light source, in passing through an optically active medium.\"")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'angle of optical rotation' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00348") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00348>) dcterms:description obo:CHMO_0002818 "An assay output expressing the \"angle through which plane polarized light is rotated clockwise, as seen when facing the light source, in passing through an optically active medium.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002818 "CHMO:0002818")
 AnnotationAssertion(rdfs:label obo:CHMO_0002818 "angle of optical rotation")
 SubClassOf(obo:CHMO_0002818 obo:CHMO_0000793)
@@ -35084,12 +35084,11 @@ SubClassOf(obo:CHMO_0002821 obo:CHMO_0002820)
 
 # Class: obo:CHMO_0002822 (amount concentration)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.A00295>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.A00298>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S06072>) obo:IAO_0000115 obo:CHMO_0002822 "Experimental method output expressing a concentration in terms of the amount of a constituent divided by the volume of the mixture.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002822 "amount-of-substance concentration")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002822 "molarity")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002822 "substance concentration")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'analyte' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00331") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00295>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) obo:IAO_0000115 obo:CHMO_0002822 "A concentration expressed as the \"amount of a constituent divided by the volume of the mixture\".")
+AnnotationAssertion(Annotation(dcterms:source <https://goldbook.iupac.org/terms/view/A00298>) oboInOwl:hasExactSynonym obo:CHMO_0002822 "amount-of-substance concentration")
+AnnotationAssertion(Annotation(dcterms:source <https://goldbook.iupac.org/terms/view/M03977>) oboInOwl:hasExactSynonym obo:CHMO_0002822 "molarity")
+AnnotationAssertion(Annotation(dcterms:source <https://goldbook.iupac.org/terms/view/A00295>) oboInOwl:hasExactSynonym obo:CHMO_0002822 "substance concentration")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002822 "CHMO:0002822")
-AnnotationAssertion(rdfs:comment obo:CHMO_0002822 "based heavily on https://doi.org/10.1351/goldbook.A00295")
 AnnotationAssertion(rdfs:label obo:CHMO_0002822 "amount concentration")
 SubClassOf(obo:CHMO_0002822 obo:CHMO_0002820)
 
@@ -35909,14 +35908,14 @@ SubClassOf(obo:CHMO_0002930 obo:CHMO_0002351)
 
 # Class: obo:CHMO_0002931 (anode)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'anode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00370>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00370>) obo:IAO_0000115 obo:CHMO_0002931 "\"Electrode at which oxidation takes place.\"")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'anode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00370") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00370>) obo:IAO_0000115 obo:CHMO_0002931 "\"Electrode at which oxidation takes place.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002931 "CHMO:0002931")
 AnnotationAssertion(rdfs:label obo:CHMO_0002931 "anode")
 SubClassOf(obo:CHMO_0002931 obo:CHMO_0002344)
 
 # Class: obo:CHMO_0002932 (cathode)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'cathode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C00905 >) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.C00905>) obo:IAO_0000115 obo:CHMO_0002932 "\"Electrode at which reduction takes place.\"")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'cathode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C00905") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.C00905>) obo:IAO_0000115 obo:CHMO_0002932 "\"Electrode at which reduction takes place.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002932 "CHMO:0002932")
 AnnotationAssertion(rdfs:label obo:CHMO_0002932 "cathode")
 SubClassOf(obo:CHMO_0002932 obo:CHMO_0002344)
