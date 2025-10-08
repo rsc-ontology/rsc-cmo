@@ -6947,7 +6947,7 @@ SubClassOf(obo:CHMO_0000338 obo:CHMO_0000332)
 
 # Class: obo:CHMO_0000339 (Auger electron spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref <ISBN:0-471-96523-5>) Annotation(oboInOwl:hasDbXref <https://doi.org/10.1351/goldbook.A00522>) obo:IAO_0000115 obo:CHMO_0000339 "Electron spectroscopy where a high energy photon ionises a core electron and an electron from a higher energy level descends to take its place, releasing sufficient energy to eject a second so-called 'Auger' electron and the energy of the Auger electron is detected as a function of incident photon energy.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <ISBN:0-471-96523-5>) Annotation(oboInOwl:hasDbXref <https://doi.org/10.1351/goldbook.A00522>) obo:IAO_0000115 obo:CHMO_0000339 "An electron spectroscopy where a high energy photon ionises a core electron and an electron from a higher energy level descends to take its place, releasing sufficient energy to eject a second so-called 'Auger' electron and the energy of the Auger electron is detected as a function of incident photon energy.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000339 "AEES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000339 "Auger electron emission spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000339 "Auger electron spectrometry")
@@ -11283,7 +11283,7 @@ SubClassOf(obo:CHMO_0000681 obo:OBI_0000070)
 
 # Class: obo:CHMO_0000682 (calorimetry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C00786>) obo:IAO_0000115 obo:CHMO_0000682 "The thermal analysis of thermodynamic parameters (e.g. enthalpy) during a chemical or biochemical reaction.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C00786>) obo:IAO_0000115 obo:CHMO_0000682 "A thermal analysis of thermodynamic parameters (e.g. enthalpy) during a chemical or biochemical reaction.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000682 "enthalpimetric analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000682 "enthalpimetry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000682 "CHMO:0000682")
@@ -32549,7 +32549,7 @@ SubClassOf(obo:CHMO_0002591 obo:OBI_0000968)
 
 # Class: obo:CHMO_0002592 (carbon electrode)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'carbon electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C00829") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.C00829>) obo:IAO_0000115 obo:CHMO_0002592 "An electrode that comprises granular carbon material that has been bound with pitch and has been fired at high temperature.In its green state it")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'carbon electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C00829") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.C00829>) obo:IAO_0000115 obo:CHMO_0002592 "An electrode that comprises granular carbon material that has been bound with pitch and has been fired at high temperature.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002592 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002592 "2009-11-10T12:19:34Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002592 "CHMO:0002592")
