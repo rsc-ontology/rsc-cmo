@@ -22,9 +22,9 @@
         "val" : "Chemical Methods Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-01-22"
+        "val" : "2025-10-21"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/chmo/releases/2025-01-22/chmo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/chmo/releases/2025-10-21/chmo-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000015",
@@ -2693,7 +2693,7 @@
       "meta" : {
         "definition" : {
           "val" : "Microscopy where the specimen is illuminated with a near-field of photons. An image of the surface is obtained by mechanically moving an optical fibre probe in a raster scan over the specimen, line by line, and detecting any photons which tunnel from the specimen to the probe as a function of position. A feedback loop is used to maintain a fixed relationship between the optical fibre probe and surface during scanning.",
-          "xrefs" : [ "USPatent:5018865" ]
+          "xrefs" : [ "google.patent:US5018865" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -5403,7 +5403,7 @@
       "meta" : {
         "definition" : {
           "val" : "A type of atomic absorption spectrometry where a solid sample is atomised by placing it in a small quartz tube which is rapidly heated by passing a current through it.",
-          "xrefs" : [ "https://doi.org/JA9900500225" ]
+          "xrefs" : [ "https://doi.org/10.1039/JA9900500225" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -7542,7 +7542,7 @@
       "meta" : {
         "definition" : {
           "val" : "X-ray spectroscopy where the sample is bombarded with ultra-low energy (<1 keV) X-rays and the energies and intensities of the X-rays emitted due to valence-to-core transitions are detected.",
-          "xrefs" : [ "10.1051/jphyscol:19879119" ]
+          "xrefs" : [ "https://doi.org/10.1051/jphyscol:19879119" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -8702,7 +8702,7 @@
       "meta" : {
         "definition" : {
           "val" : "Spectroscopy where the sample is bombarded with high-energy photons resulting in the emission of a photoelectron and its corresponding ion which are detected as a function of energy.",
-          "xrefs" : [ "https://doi.org/a909621c" ]
+          "xrefs" : [ "https://doi.org/10.1039/A909621C" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -19374,7 +19374,7 @@
       "meta" : {
         "definition" : {
           "val" : "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample emitted at supercritical angles are measured and correlated within a very small detection volume. Ultra-violet light is used to stimulate fluorescence.",
-          "xrefs" : [ "rsc:b718132a" ]
+          "xrefs" : [ "https://doi.org/10.1039/B718132A" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -19391,7 +19391,7 @@
       "meta" : {
         "definition" : {
           "val" : "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured at several different points in parallel and correlated within very small detection volumes. Ultra-violet light is used to stimulate fluorescence.",
-          "xrefs" : [ "https://doi.org/10.1039/b718132a" ]
+          "xrefs" : [ "https://doi.org/10.1039/B718132A" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -25484,7 +25484,7 @@
       "meta" : {
         "definition" : {
           "val" : "A method for separating microscopic particles suspended in a stream of fluid. The particles are forced individually through a vibrating nozzle, then exposed to a laser beam and the resulting fluorescence and scattered light is detected. Finally the cells are sorted by applying an electrical charge to droplets of the fluid and deflecting it to the left or right using charged electrodes.",
-          "xrefs" : [ "rsc:10.1039/b902504a" ]
+          "xrefs" : [ "doi:10.1039/b902504a" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -28916,7 +28916,7 @@
       "meta" : {
         "definition" : {
           "val" : "The process of determining the quantity of a sample (metal cation) by adding measured increments of a titrant (a chelating agent) until the end-point, at which essentially all of the sample has reacted, is reached.",
-          "xrefs" : [ "USPatent:3878059" ]
+          "xrefs" : [ "google.patent:US3878059" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
@@ -32744,7 +32744,7 @@
       "meta" : {
         "definition" : {
           "val" : "A synthesis method where a solid material is dissolved in a supercritical fluid (at elevated pressure) which is forced through a small orifice into a region of relatively low pressure. This produces a molecular spray which is directed against a substrate where it deposits as a thin film.",
-          "xrefs" : [ "USPatent:4582731" ]
+          "xrefs" : [ "google.patent:US4582731" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -34960,7 +34960,7 @@
       "meta" : {
         "definition" : {
           "val" : "The chemical degradation of a sample caused by heating it, as a vapour, with steam.",
-          "xrefs" : [ "USPatent:5780518" ]
+          "xrefs" : [ "google.patent:US5780518" ]
         }
       }
     }, {
@@ -36377,7 +36377,7 @@
       "meta" : {
         "definition" : {
           "val" : "The transfer of a solute from one phase (the 'donor' or 'feed' phase) to another (organic) phase (the 'acceptor' or 'strip' phase) across a porous hydrophobic membrane the pores of which are filled with the same acceptor phase.",
-          "xrefs" : [ "ISBN: 0824705092" ]
+          "xrefs" : [ "ISBN:0824705092" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -39541,7 +39541,7 @@
       "meta" : {
         "definition" : {
           "val" : "An NMR experiment used for 23Na nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse.",
-          "xrefs" : [ "ISBN:3540221689", "https://doi.org/1021/ja00124a023" ]
+          "xrefs" : [ "ISBN:3540221689", "https://doi.org/10.1021/ja00124a023" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -39565,7 +39565,7 @@
       "meta" : {
         "definition" : {
           "val" : "An NMR experiment used for 27Al nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse.",
-          "xrefs" : [ "ISBN:3540221689", "https://doi.org/1021/ja00124a023" ]
+          "xrefs" : [ "ISBN:3540221689", "https://doi.org/10.1021/ja00124a023" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -39589,7 +39589,7 @@
       "meta" : {
         "definition" : {
           "val" : "An NMR experiment used for 45Sc nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse.",
-          "xrefs" : [ "ISBN:3540221689", "https://doi.org/1021/ja00124a023" ]
+          "xrefs" : [ "ISBN:3540221689", "https://doi.org/10.1021/ja00124a023" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -54849,7 +54849,7 @@
       "meta" : {
         "definition" : {
           "val" : "A synthesis method for carbon nanotubes that involves mixing high pressure (e.g. 30 atmospheres) CO that has been preheated (1000 °C) and a catalyst precursor gas (metal carbonyl or metallocene). Under these conditions the precursor decomposes forming metal particle clusters on which carbon nanotubes nucleate and grow. The carbon nanotubes are 99% single-walled carbon nanotubes with small diameters (e.g., (5,5) tubes).",
-          "xrefs" : [ "USPatent:7204970" ]
+          "xrefs" : [ "google.patent:US7204970" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -66487,7 +66487,7 @@
           "xrefs" : [ "https://orcid.org/0000-0001-5985-7429" ]
         },
         "xrefs" : [ {
-          "val" : "http://goldbook.iupac.org/R05360.html"
+          "val" : "goldbook:R05360"
         } ]
       }
     }, {
@@ -68481,6 +68481,153 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0002933",
+      "lbl" : "open circuit voltage potentiometry",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A potentiometry where the potential difference between two electrodes (typically a working and a reference electrode) is measured under open circuit conditions, ensuring that no significant current flows and the system remains in thermodynamic equilibrium. The measured characteristic is the Open Circuit Voltage (OCV) also called Open Circuit Potential (OCP)."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "OCP measurement"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "OCV measurement"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "OCV potentiometry"
+        }, {
+          "pred" : "hasNarrowSynonym",
+          "val" : "OCP"
+        }, {
+          "pred" : "hasNarrowSynonym",
+          "val" : "OCV"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "As an electrochemical technique for measuring and characterizing batteries and E-chem cells."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/rsc-ontologies/rsc-cmo/issues/35"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1595-3213"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-4378-6061"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0008-1636-0875"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0002934",
+      "lbl" : "open circuit voltage",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A measurement datum that is a specified output of an open circuit voltage potentiometry. It represents the potential difference (voltage) measured between two electrodes in a circuit where no current is allowed to flow and is typically used to determine the electromotive force (EMF) of an electrochemical cell."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-5985-7429"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1595-3213"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-08-26T12:32:56Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0002935",
+      "lbl" : "galvanostatic analysis",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An electrochemical analysis in which a constant current is applied to an electrochemical system while monitoring the resulting potential changes over time. This method is used to study charge storage, reaction kinetics, and material stability by maintaining a fixed current flow and observing the system’s electrochemical response."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/rsc-ontologies/rsc-cmo/issues/37"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1595-3213"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-4378-6061"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0008-1636-0875"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0002936",
+      "lbl" : "galvanostatic cycling with potential limitation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A galvanostatic analysis in which the constant current is reversed or stopped when predefined upper or lower potential limits are reached. This method is commonly used to evaluate charge storage capacity, cycling stability, and electrochemical performance of batteries, supercapacitors, and other energy storage devices."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "GCPL"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "As an electrochemical technique for measuring and characterizing batteries and E-chem cells."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/rsc-ontologies/rsc-cmo/issues/38"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1595-3213"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-4378-6061"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0008-1636-0875"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0002937",
+      "lbl" : "potentiostatic electrochemical impedance spectroscopy",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A potentiometry where the change in impedance of an electrochemical cell is measured while maintaining a constant applied potential and the impedance is determined over a range of frequencies by analyzing the voltage-to-current ratio and the phase shift of the AC response.",
+          "xrefs" : [ "https://doi.org/10.1021/acsmeasuresciau.2c00070" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "PEIS"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "impedance spectroscopy with constant applied potential"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "potentiostatic EIS"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "As an electrochemical technique for measuring and characterizing batteries and E-chem cells."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/rsc-ontologies/rsc-cmo/issues/36"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1595-3213"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-4378-6061"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0008-1636-0875"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/CHMO_0010000",
       "lbl" : "risk management planning process",
       "type" : "CLASS"
@@ -68659,6 +68806,9 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000104",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000109",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000140",
@@ -68844,6 +68994,10 @@
       "type" : "PROPERTY",
       "propertyType" : "OBJECT"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000112",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -68857,6 +69011,10 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000231",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000233",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -68880,11 +69038,19 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
+      "id" : "http://purl.org/dc/terms/created",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.org/dc/terms/description",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/license",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/source",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -81853,6 +82019,34 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHMO_0002344"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002933",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002934",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0000793"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002934",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000109"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002934",
+      "pred" : "http://purl.obolibrary.org/obo/OBI_0000312",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0002933"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002935",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002936",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0002935"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002937",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0000016"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHMO_0010000",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHMO_0002828"
@@ -82699,6 +82893,13 @@
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/OBI_0000312",
         "fillerId" : "http://purl.obolibrary.org/obo/CHMO_0002899"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CHMO_0002934",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/IAO_0000109" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/OBI_0000312",
+        "fillerId" : "http://purl.obolibrary.org/obo/CHMO_0002933"
       } ]
     } ],
     "domainRangeAxioms" : [ {

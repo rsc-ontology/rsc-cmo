@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: chmo/releases/2025-01-22/chmo-base.owl
+data-version: chmo/releases/2025-10-21/chmo-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -10,7 +10,7 @@ property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
 property_value: dcterms:description "CHMO, the chemical methods ontology, describes methods used to collect data in chemical experiments, such as mass spectrometry and electron microscopy prepare and separate material for further analysis, such as sample ionisation, chromatography, and electrophoresis synthesise materials, such as epitaxy and continuous vapour deposition It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns. It is intended to be complementary to the Ontology for Biomedical Investigations (OBI)." xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/by/4.0/
 property_value: dcterms:title "Chemical Methods Ontology" xsd:string
-property_value: owl:versionInfo "2025-01-22" xsd:string
+property_value: owl:versionInfo "2025-10-21" xsd:string
 
 [Term]
 id: CHMO:0000001
@@ -1150,7 +1150,7 @@ is_a: CHMO:0000112 ! scanning probe microscopy
 [Term]
 id: CHMO:0000119
 name: photon scanning tunnelling microscopy
-def: "Microscopy where the specimen is illuminated with a near-field of photons. An image of the surface is obtained by mechanically moving an optical fibre probe in a raster scan over the specimen, line by line, and detecting any photons which tunnel from the specimen to the probe as a function of position. A feedback loop is used to maintain a fixed relationship between the optical fibre probe and surface during scanning." [USPatent:5018865]
+def: "Microscopy where the specimen is illuminated with a near-field of photons. An image of the surface is obtained by mechanically moving an optical fibre probe in a raster scan over the specimen, line by line, and detecting any photons which tunnel from the specimen to the probe as a function of position. A feedback loop is used to maintain a fixed relationship between the optical fibre probe and surface during scanning." [google.patent:US5018865]
 synonym: "photon scanning tunneling microscopy" EXACT []
 synonym: "photon-scanning tunneling microscopy" EXACT []
 synonym: "photon-scanning tunnelling microscopy" EXACT []
@@ -2343,7 +2343,7 @@ is_a: CHMO:0000239 ! graphite furnace atomic absorption spectrometry
 [Term]
 id: CHMO:0000242
 name: quartz tube atomic absorption spectroscopy
-def: "A type of atomic absorption spectrometry where a solid sample is atomised by placing it in a small quartz tube which is rapidly heated by passing a current through it." [https://doi.org/JA9900500225]
+def: "A type of atomic absorption spectrometry where a solid sample is atomised by placing it in a small quartz tube which is rapidly heated by passing a current through it." [https://doi.org/10.1039/JA9900500225]
 synonym: "QT-AAS" EXACT []
 synonym: "QTAAS" EXACT []
 synonym: "quartz tube atomic absorption spectrometry" EXACT []
@@ -3238,7 +3238,7 @@ is_a: CHMO:0000307 ! X-ray emission spectroscopy
 [Term]
 id: CHMO:0000317
 name: ultra soft X-ray emission spectroscopy
-def: "X-ray spectroscopy where the sample is bombarded with ultra-low energy (<1 keV) X-rays and the energies and intensities of the X-rays emitted due to valence-to-core transitions are detected." [10.1051/jphyscol:19879119]
+def: "X-ray spectroscopy where the sample is bombarded with ultra-low energy (<1 keV) X-rays and the energies and intensities of the X-rays emitted due to valence-to-core transitions are detected." [https://doi.org/10.1051/jphyscol\:19879119]
 synonym: "ultra soft X-ray emission spectrometry" EXACT []
 synonym: "ultra soft X-ray fluorescence spectrometry" EXACT []
 synonym: "ultra soft X-ray fluorescence spectroscopy" EXACT []
@@ -3738,7 +3738,7 @@ is_a: CHMO:0000362 ! metastable-quenched electron spectroscopy
 [Term]
 id: CHMO:0000365
 name: photoion-photoelectron coincidence spectroscopy
-def: "Spectroscopy where the sample is bombarded with high-energy photons resulting in the emission of a photoelectron and its corresponding ion which are detected as a function of energy." [https://doi.org/a909621c]
+def: "Spectroscopy where the sample is bombarded with high-energy photons resulting in the emission of a photoelectron and its corresponding ion which are detected as a function of energy." [https://doi.org/10.1039/A909621C]
 synonym: "photoion photoelectron coincidence spectrometry" EXACT []
 synonym: "photoion photoelectron coincidence spectroscopy" EXACT []
 synonym: "photoion-photoelectron coincidence spectrometry" EXACT []
@@ -8323,7 +8323,7 @@ is_a: CHMO:0000288 ! fluorescence correlation spectroscopy
 [Term]
 id: CHMO:0000766
 name: supercritical angle fluorescence correlation spectroscopy
-def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample emitted at supercritical angles are measured and correlated within a very small detection volume. Ultra-violet light is used to stimulate fluorescence." [rsc:b718132a]
+def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample emitted at supercritical angles are measured and correlated within a very small detection volume. Ultra-violet light is used to stimulate fluorescence." [https://doi.org/10.1039/B718132A]
 synonym: "SA-FCS" EXACT []
 synonym: "supercritical angle FCS" EXACT []
 is_a: CHMO:0000288 ! fluorescence correlation spectroscopy
@@ -8331,7 +8331,7 @@ is_a: CHMO:0000288 ! fluorescence correlation spectroscopy
 [Term]
 id: CHMO:0000767
 name: image correlation spectroscopy
-def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured at several different points in parallel and correlated within very small detection volumes. Ultra-violet light is used to stimulate fluorescence." [https://doi.org/10.1039/b718132a]
+def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured at several different points in parallel and correlated within very small detection volumes. Ultra-violet light is used to stimulate fluorescence." [https://doi.org/10.1039/B718132A]
 synonym: "ICS" EXACT []
 is_a: CHMO:0000288 ! fluorescence correlation spectroscopy
 
@@ -11231,7 +11231,7 @@ is_a: CHMO:0001074 ! time-lapse microscopy
 [Term]
 id: CHMO:0001085
 name: fluorescence-activated cell sorting
-def: "A method for separating microscopic particles suspended in a stream of fluid. The particles are forced individually through a vibrating nozzle, then exposed to a laser beam and the resulting fluorescence and scattered light is detected. Finally the cells are sorted by applying an electrical charge to droplets of the fluid and deflecting it to the left or right using charged electrodes." [rsc:10.1039/b902504a]
+def: "A method for separating microscopic particles suspended in a stream of fluid. The particles are forced individually through a vibrating nozzle, then exposed to a laser beam and the resulting fluorescence and scattered light is detected. Finally the cells are sorted by applying an electrical charge to droplets of the fluid and deflecting it to the left or right using charged electrodes." [doi:10.1039/b902504a]
 synonym: "FACS" EXACT []
 synonym: "fluorescence activated cell sorting" EXACT []
 is_a: CHMO:0000061 ! flow cytometry
@@ -12695,7 +12695,7 @@ creation_date: 2009-03-25T01:22:48Z
 [Term]
 id: CHMO:0001230
 name: chelatometric titration
-def: "The process of determining the quantity of a sample (metal cation) by adding measured increments of a titrant (a chelating agent) until the end-point, at which essentially all of the sample has reacted, is reached." [USPatent:3878059]
+def: "The process of determining the quantity of a sample (metal cation) by adding measured increments of a titrant (a chelating agent) until the end-point, at which essentially all of the sample has reacted, is reached." [google.patent:US3878059]
 is_a: CHMO:0001211 ! titration
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-03-25T01:25:08Z
@@ -14300,7 +14300,7 @@ is_a: CHMO:0001310 ! sample deposition
 [Term]
 id: CHMO:0001375
 name: supercritical spray deposition
-def: "A synthesis method where a solid material is dissolved in a supercritical fluid (at elevated pressure) which is forced through a small orifice into a region of relatively low pressure. This produces a molecular spray which is directed against a substrate where it deposits as a thin film." [USPatent:4582731]
+def: "A synthesis method where a solid material is dissolved in a supercritical fluid (at elevated pressure) which is forced through a small orifice into a region of relatively low pressure. This produces a molecular spray which is directed against a substrate where it deposits as a thin film." [google.patent:US4582731]
 synonym: "supercritical fluid molecular spray film deposition" EXACT []
 is_a: CHMO:0001310 ! sample deposition
 
@@ -15372,7 +15372,7 @@ is_a: CHMO:0001502 ! pyrolysis
 [Term]
 id: CHMO:0001517
 name: steam pyrolysis
-def: "The chemical degradation of a sample caused by heating it, as a vapour, with steam." [USPatent:5780518]
+def: "The chemical degradation of a sample caused by heating it, as a vapour, with steam." [google.patent:US5780518]
 is_a: CHMO:0001502 ! pyrolysis
 
 [Term]
@@ -16057,7 +16057,7 @@ is_a: CHMO:0001600 ! liquid–liquid extraction
 [Term]
 id: CHMO:0001605
 name: microporous membrane liquid–liquid extraction
-def: "The transfer of a solute from one phase (the 'donor' or 'feed' phase) to another (organic) phase (the 'acceptor' or 'strip' phase) across a porous hydrophobic membrane the pores of which are filled with the same acceptor phase." [ISBN: 0824705092]
+def: "The transfer of a solute from one phase (the 'donor' or 'feed' phase) to another (organic) phase (the 'acceptor' or 'strip' phase) across a porous hydrophobic membrane the pores of which are filled with the same acceptor phase." [ISBN:0824705092]
 synonym: "microporous membrane liquid-liquid extraction" EXACT []
 synonym: "microporous membrane solvent extraction" EXACT []
 synonym: "MMLLE" EXACT []
@@ -17546,7 +17546,7 @@ creation_date: 2009-05-20T11:55:32Z
 [Term]
 id: CHMO:0001779
 name: 23Na triple-quantum excitation in combination with magic angle spinning
-def: "An NMR experiment used for 23Na nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse." [https://doi.org/1021/ja00124a023, ISBN:3540221689]
+def: "An NMR experiment used for 23Na nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse." [https://doi.org/10.1021/ja00124a023, ISBN:3540221689]
 synonym: "23Na TQMAS" EXACT []
 synonym: "23Na TQMAS-NMR" EXACT []
 is_a: CHMO:0001204 ! triple-quantum excitation in combination with magic angle spinning
@@ -17556,7 +17556,7 @@ creation_date: 2009-05-20T12:47:22Z
 [Term]
 id: CHMO:0001780
 name: 27Al triple-quantum excitation in combination with magic angle spinning
-def: "An NMR experiment used for 27Al nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse." [https://doi.org/1021/ja00124a023, ISBN:3540221689]
+def: "An NMR experiment used for 27Al nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse." [https://doi.org/10.1021/ja00124a023, ISBN:3540221689]
 synonym: "27Al TQMAS" EXACT []
 synonym: "27Al TQMAS-NMR" EXACT []
 is_a: CHMO:0001204 ! triple-quantum excitation in combination with magic angle spinning
@@ -17566,7 +17566,7 @@ creation_date: 2009-05-20T12:49:47Z
 [Term]
 id: CHMO:0001781
 name: 45Sc triple-quantum excitation in combination with magic angle spinning
-def: "An NMR experiment used for 45Sc nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse." [https://doi.org/1021/ja00124a023, ISBN:3540221689]
+def: "An NMR experiment used for 45Sc nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse." [https://doi.org/10.1021/ja00124a023, ISBN:3540221689]
 synonym: "45Sc TQMAS" EXACT []
 synonym: "45Sc TQMAS-NMR" EXACT []
 is_a: CHMO:0001204 ! triple-quantum excitation in combination with magic angle spinning
@@ -23758,7 +23758,7 @@ creation_date: 2009-08-28T06:38:27Z
 [Term]
 id: CHMO:0002321
 name: high-pressure carbon monoxide method
-def: "A synthesis method for carbon nanotubes that involves mixing high pressure (e.g. 30 atmospheres) CO that has been preheated (1000 °C) and a catalyst precursor gas (metal carbonyl or metallocene). Under these conditions the precursor decomposes forming metal particle clusters on which carbon nanotubes nucleate and grow. The carbon nanotubes are 99% single-walled carbon nanotubes with small diameters (e.g., (5,5) tubes)." [USPatent:7204970]
+def: "A synthesis method for carbon nanotubes that involves mixing high pressure (e.g. 30 atmospheres) CO that has been preheated (1000 °C) and a catalyst precursor gas (metal carbonyl or metallocene). Under these conditions the precursor decomposes forming metal particle clusters on which carbon nanotubes nucleate and grow. The carbon nanotubes are 99% single-walled carbon nanotubes with small diameters (e.g., (5,5) tubes)." [google.patent:US7204970]
 synonym: "high-pressure CO conversion" EXACT []
 synonym: "HiPCO" EXACT []
 synonym: "HiPco" EXACT []
@@ -28557,7 +28557,7 @@ relationship: CHMO:0002748 CHEBI:23377 ! has analyte
 id: CHMO:0002749
 name: retention index
 def: "An experimental method output that consists of a number relating the adjusted retention volume or retention factor of the sample component to the adjusted retention volumes or retention factors of standards eluted before and after the peak of the sample component." [https://orcid.org/0000-0001-5985-7429]
-xref: http://goldbook.iupac.org/R05360.html
+xref: goldbook:R05360
 is_a: CHMO:0000793 ! assay output
 relationship: OBI:0000312 CHMO:0001001 ! column chromatography
 
@@ -29793,6 +29793,71 @@ id: CHMO:0002932
 name: cathode
 def: "Electrode at which oxidation takes place." [https://doi.org/10.1351/goldbook.A00370]
 is_a: CHMO:0002344 ! electrode
+
+[Term]
+id: CHMO:0002933
+name: open circuit voltage potentiometry
+def: "A potentiometry where the potential difference between two electrodes (typically a working and a reference electrode) is measured under open circuit conditions, ensuring that no significant current flows and the system remains in thermodynamic equilibrium. The measured characteristic is the Open Circuit Voltage (OCV) also called Open Circuit Potential (OCP)." [] {dcterms:source="https://doi.org/10.1016/j.jpowsour.2014.06.152"}
+synonym: "OCP" NARROW []
+synonym: "OCP measurement" EXACT []
+synonym: "OCV" NARROW []
+synonym: "OCV measurement" EXACT []
+synonym: "OCV potentiometry" EXACT []
+is_a: CHMO:0000016 ! potentiometry
+property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
+property_value: dcterms:contributor https://orcid.org/0000-0002-4378-6061
+property_value: dcterms:contributor https://orcid.org/0009-0008-1636-0875
+property_value: IAO:0000112 "As an electrochemical technique for measuring and characterizing batteries and E-chem cells." xsd:string
+property_value: IAO:0000233 https://github.com/rsc-ontologies/rsc-cmo/issues/35
+
+[Term]
+id: CHMO:0002934
+name: open circuit voltage
+def: "A measurement datum that is a specified output of an open circuit voltage potentiometry. It represents the potential difference (voltage) measured between two electrodes in a circuit where no current is allowed to flow and is typically used to determine the electromotive force (EMF) of an electrochemical cell." [] {dcterms:source="https://doi.org/10.1016/j.jpowsour.2014.06.152"}
+is_a: CHMO:0000793 ! assay output
+is_a: IAO:0000109
+intersection_of: IAO:0000109
+intersection_of: OBI:0000312 CHMO:0002933 ! open circuit voltage potentiometry
+relationship: OBI:0000312 CHMO:0002933 ! open circuit voltage potentiometry
+property_value: dcterms:contributor https://orcid.org/0000-0001-5985-7429
+property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
+property_value: dcterms:created "2025-08-26T12:32:56Z" xsd:dateTime
+
+[Term]
+id: CHMO:0002935
+name: galvanostatic analysis
+def: "An electrochemical analysis in which a constant current is applied to an electrochemical system while monitoring the resulting potential changes over time. This method is used to study charge storage, reaction kinetics, and material stability by maintaining a fixed current flow and observing the system’s electrochemical response." []
+is_a: CHMO:0000003 ! electrochemical analysis
+property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
+property_value: dcterms:contributor https://orcid.org/0000-0002-4378-6061
+property_value: dcterms:contributor https://orcid.org/0009-0008-1636-0875
+property_value: IAO:0000233 https://github.com/rsc-ontologies/rsc-cmo/issues/37
+
+[Term]
+id: CHMO:0002936
+name: galvanostatic cycling with potential limitation
+def: "A galvanostatic analysis in which the constant current is reversed or stopped when predefined upper or lower potential limits are reached. This method is commonly used to evaluate charge storage capacity, cycling stability, and electrochemical performance of batteries, supercapacitors, and other energy storage devices." [] {dcterms:source="https://doi.org/10.1016/j.jelechem.2019.05.052"}
+synonym: "GCPL" EXACT []
+is_a: CHMO:0002935 ! galvanostatic analysis
+property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
+property_value: dcterms:contributor https://orcid.org/0000-0002-4378-6061
+property_value: dcterms:contributor https://orcid.org/0009-0008-1636-0875
+property_value: IAO:0000112 "As an electrochemical technique for measuring and characterizing batteries and E-chem cells." xsd:string
+property_value: IAO:0000233 https://github.com/rsc-ontologies/rsc-cmo/issues/38
+
+[Term]
+id: CHMO:0002937
+name: potentiostatic electrochemical impedance spectroscopy
+def: "A potentiometry where the change in impedance of an electrochemical cell is measured while maintaining a constant applied potential and the impedance is determined over a range of frequencies by analyzing the voltage-to-current ratio and the phase shift of the AC response." [https://doi.org/10.1021/acsmeasuresciau.2c00070]
+synonym: "impedance spectroscopy with constant applied potential" EXACT []
+synonym: "PEIS" EXACT []
+synonym: "potentiostatic EIS" EXACT []
+is_a: CHMO:0000016 ! potentiometry
+property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
+property_value: dcterms:contributor https://orcid.org/0000-0002-4378-6061
+property_value: dcterms:contributor https://orcid.org/0009-0008-1636-0875
+property_value: IAO:0000112 "As an electrochemical technique for measuring and characterizing batteries and E-chem cells." xsd:string
+property_value: IAO:0000233 https://github.com/rsc-ontologies/rsc-cmo/issues/36
 
 [Term]
 id: CHMO:0010000

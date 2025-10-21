@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/chmo/imports/iao_import.owl>
-<http://purl.obolibrary.org/obo/chmo/releases/2025-01-22/imports/iao_import.owl>
+<http://purl.obolibrary.org/obo/chmo/releases/2025-10-21/imports/iao_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl>)
-Annotation(owl:versionInfo "2025-01-22")
+Annotation(owl:versionInfo "2025-10-21")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
@@ -25,6 +25,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000102>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))
@@ -62,6 +63,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000231>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000233>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0100001>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
@@ -72,6 +74,16 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 ############################
 #   Annotation Properties
 ############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (example of usage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000112> "example of usage"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000112> "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000112> "PERSON:Daniel Schober"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000112> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000112> "example of usage"@en)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
 
@@ -110,6 +122,17 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000231> "PERSON:Alan Ruttenberg"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000231> "PERSON:Melanie Courtot"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000231> "has obsolescence reason"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000233> (term tracker item)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000233> "term tracker item"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000233> "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000233> "An IRI or similar locator for a request or discussion of an ontology term."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000233> "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000233> "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0000233> "The 'tracker item' can associate a tracker with a specific ontology term."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000233> "term tracker item"@en)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0100001> (term replaced by)
 
@@ -277,6 +300,19 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/IAO_0000104> "h
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> <http://purl.obolibrary.org/obo/IAO_0000033>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000005>))
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000007>))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000109> (measurement datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000109> "measurement datum"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000109> "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000109> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000109> "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000109> "2/2/2009 is_specified_output of some assay?"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000109> "person:Chris Stoeckert"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000109> "OBI_0000305"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000109> "group:OBI"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000109> "measurement datum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000109> <http://purl.obolibrary.org/obo/IAO_0000027>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000140> (setting datum)
 
