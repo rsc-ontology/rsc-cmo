@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/chmo/imports/omo_import.owl>
-<http://purl.obolibrary.org/obo/chmo/releases/2025-01-22/imports/omo_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/omo/releases/2024-11-13/omo.owl>)
-Annotation(owl:versionInfo "2025-01-22")
+<http://purl.obolibrary.org/obo/chmo/releases/2025-10-21/imports/omo_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/omo/releases/2025-06-18/omo.owl>)
+Annotation(owl:versionInfo "2025-10-21")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
@@ -94,6 +94,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0100001>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0001001>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0002000>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0002001>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003001>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003002>))
@@ -507,6 +508,15 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMO_0002000> <https://orcid.org/0000-0002-7356-1779>)
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMO_0002000> <https://orcid.org/0000-0002-8688-6599>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0002000> "defined by construct")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/OMO_0002001> (preferred label for community)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OMO_0002001> "The property is intended to be used exclusively on synonym assertions, to express that the synonym in question is the preference of a specific community. For example, one community may prefer to say call a disease \"A\" and another one \"B\" (but they are the same thing).")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMO_0002001> "A provenance property that denotes a synonym to be the preferred one for a specific community.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/OMO_0002001> <https://github.com/information-artifact-ontology/ontology-metadata/issues/185>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/OMO_0002001> <https://orcid.org/0000-0002-7356-1779>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OMO_0002001> "2025-06-02"^^xsd:date)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0002001> "preferred label for community")
 
 # Annotation Property: <http://purl.obolibrary.org/obo/OMO_0003000> (abbreviation)
 
@@ -946,8 +956,11 @@ ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibr
 # Individual: <http://purl.obolibrary.org/obo/IAO_0000103> (failed exploratory term)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000103> "failed exploratory term"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000103> "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000103> "The term was initially used in an attempt to structure part of the ontology, but in retrospect failed to do a good job."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000103> "Terms created as placeholders with the expectation of being permanent should instead be deprecated using the \"placeholder removed\" (obo:IAO_0000226) justification."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000103> "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/IAO_0000103> <https://orcid.org/0000-0001-6875-5360>)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/IAO_0000103> <https://orcid.org/0000-0002-7356-1779>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000103> "failed exploratory term"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibrary.org/obo/IAO_0000103>)
 
@@ -961,7 +974,7 @@ ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibr
 # Individual: <http://purl.obolibrary.org/obo/IAO_0000121> (organizational term)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000121> "organizational term"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000121> "Term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000121> "The term was created to ease viewing/sorting terms for development purposes, but will not be included in a release."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000121> "organizational term"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000121>)
 
@@ -1005,27 +1018,40 @@ AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/IAO_0000224> 
 # Individual: <http://purl.obolibrary.org/obo/IAO_0000226> (placeholder removed)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000226> "placeholder removed"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000226> "The term was created to temporarily stand in for a semantic purpose, but is no longer needed, typically due to another permanent term being defined."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000226> "This reason is appropriate for a temporary term even if no permanent term is defined; for example if the need for the term no longer exists. If a permanent (replacement) term is defined, the deprecated term should reference the replacement with IAO:0100001. If no replacement is defined, it may be appropriate to reference alternative terms with oboInOwl:consider."@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/IAO_0000226> <https://orcid.org/0000-0001-6875-5360>)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/IAO_0000226> <https://orcid.org/0000-0002-7356-1779>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000226> "placeholder removed"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibrary.org/obo/IAO_0000226>)
 
 # Individual: <http://purl.obolibrary.org/obo/IAO_0000227> (terms merged)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000227> "terms merged"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000227> "An editor note should explain what were the merged terms and the reason for the merge."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000227> "The term has been combined with one or more other terms to create a more encompassing (merged) term."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000227> "The deprecated term should reference the merged term with obo:IAO_0100001. The replacement term should reference the original terms as sources using obo:RO_0001000 (derives_from). An editor note should explain what were the merged terms and the reason for the merge."@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/IAO_0000227> <https://orcid.org/0000-0001-6875-5360>)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/IAO_0000227> <https://orcid.org/0000-0002-7356-1779>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000227> "terms merged"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibrary.org/obo/IAO_0000227>)
 
 # Individual: <http://purl.obolibrary.org/obo/IAO_0000228> (term imported)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000228> "term imported"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000228> "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000228> "The term has been replaced by a term imported from another ontology."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000228> "This is to be used when the original term has been replaced by a term imported from an other ontology. The deprecated term should reference the imported term with obo:IAO_0100001."@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/IAO_0000228> <https://orcid.org/0000-0001-6875-5360>)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/IAO_0000228> <https://orcid.org/0000-0002-7356-1779>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000228> "term imported"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibrary.org/obo/IAO_0000228>)
 
 # Individual: <http://purl.obolibrary.org/obo/IAO_0000229> (term split)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000229> "term split"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000229> "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000229> "The term has been split into two or more new terms."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000229> "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split. The deprecated term should reference the replacement terms with obo:IAO_0100001."@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/IAO_0000229> <https://orcid.org/0000-0001-6875-5360>)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/IAO_0000229> <https://orcid.org/0000-0002-7356-1779>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000229> "term split"@en)
 ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibrary.org/obo/IAO_0000229>)
 
@@ -1077,10 +1103,12 @@ ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibr
 # Individual: <http://purl.obolibrary.org/obo/OMO_0001000> (out of scope)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMO_0001000> "The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OMO_0001000> "This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OMO_0001000> "This obsolesence reason should be used conservatively. Typical valid examples in disease ontologies are: unnecessary class grouping; mistaked creation of a disease associated to a phenotype."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMO_0001000> <http://orcid.org/0000-0001-5208-3432>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/OMO_0001000> "https://github.com/information-artifact-ontology/ontology-metadata/issues/77")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000234> <http://purl.obolibrary.org/obo/OMO_0001000> "https://orcid.org/0000-0001-5208-3432")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMO_0001000> <https://orcid.org/0000-0001-6875-5360>)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMO_0001000> <https://orcid.org/0000-0002-7356-1779>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0001000> "out of scope")
 ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibrary.org/obo/OMO_0001000>)
 
