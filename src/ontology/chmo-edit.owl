@@ -15123,7 +15123,7 @@ SubClassOf(obo:CHMO_0001053 obo:OBI_0000968)
 
 # Class: obo:CHMO_0001054 (electric sector)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E01938>) obo:IAO_0000115 obo:CHMO_0001054 "A piece of apparatus which applies an electric field in order to select ions that have the same kinetic energy from an ion beam.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E01938>) obo:IAO_0000115 obo:CHMO_0001054 "A device which applies an electric field in order to select ions that have the same kinetic energy from an ion beam.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001054 "CHMO:0001054")
 AnnotationAssertion(rdfs:label obo:CHMO_0001054 "electric sector")
 SubClassOf(obo:CHMO_0001054 obo:OBI_0000968)
@@ -17008,9 +17008,12 @@ SubClassOf(obo:CHMO_0001225 obo:CHMO_0001224)
 
 # Class: obo:CHMO_0001226 (analytical solution calorimetry)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E02131>) obo:IAO_0000115 obo:CHMO_0001226 "The measurement of the enthalpy change during chemical reaction in order to determine quantitative values of a reactant or catalyst. In general, at least one reactant is a liquid or solution.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'enthalpimetric analysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.E02131") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02131>) obo:IAO_0000115 obo:CHMO_0001226 "A calorimetry in which \"the enthalpy change of a chemical reaction is measured, directly or indirectly, in order to perform a quantitative determination ofa reactant or catalyst. In general, at least one reactant is a liquid or solution.\"")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001226 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001226 "2009-03-25T12:09:47Z")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02131>) oboInOwl:hasExactSynonym obo:CHMO_0001226 "enthalpimetric analysis")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02131>) oboInOwl:hasExactSynonym obo:CHMO_0001226 "enthalpimetry")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02131>) oboInOwl:hasExactSynonym obo:CHMO_0001226 "thermochemical analysis")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001226 "CHMO:0001226")
 AnnotationAssertion(rdfs:label obo:CHMO_0001226 "analytical solution calorimetry")
 SubClassOf(obo:CHMO_0001226 obo:CHMO_0000682)
