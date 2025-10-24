@@ -7304,7 +7304,7 @@ SubClassOf(obo:CHMO_0000369 obo:CHMO_0000368)
 
 # Class: obo:CHMO_0000370 (high-resolution energy loss spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000646>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.H02826>) obo:IAO_0000115 obo:CHMO_0000370 "An electron energy loss spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is reflected by a surface and the small energy loss (0.02–1 eV) the electrons suffer upon reflection is measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000646>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.R05236>) obo:IAO_0000115 obo:CHMO_0000370 "An electron energy loss spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is reflected by a surface and the small energy loss (0.02–1 eV) the electrons suffer upon reflection is measured.")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05236>) obo:OMO_0003012 obo:CHMO_0000370 "HRELS")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05236>) obo:OMO_0003012 obo:CHMO_0000370 "REELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "HEELS")
@@ -7312,7 +7312,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "HR-EELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "HREELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "VELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "high resolution energy loss spectrometry")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "high resolution energy loss spectroscopy")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05236>) oboInOwl:hasExactSynonym obo:CHMO_0000370 "high resolution energy loss spectroscopy")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05236>) oboInOwl:hasExactSynonym obo:CHMO_0000370 "reflection electron energy loss spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "vibrational ELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "vibrational energy loss spectroscopy")
@@ -8377,7 +8377,7 @@ SubClassOf(obo:CHMO_0000460 obo:CHMO_0000435)
 
 # Class: obo:CHMO_0000461 (laser micro emission spectroscopy)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'laser micro emission spectroscopy' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.L03473") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.L03473>) obo:IAO_0000115 obo:CHMO_0000461 "A laser emission spectroscopy where a thermally-excited vapour sample is illuminated with a \"finely focused\" \"(diameter less than 10 μm)\" \"ultraviolet or visible\" laser and \"the photon emission spectrum is observed\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'laser micro emission spectroscopy' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.L03473") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.L03473>) obo:IAO_0000115 obo:CHMO_0000461 "A laser emission spectroscopy where a thermally-excited vapour sample is illuminated with a \"finely focused laser beam (diameter less than 10 μm) in the ultraviolet or visible range\" and \"the photon emission spectrum is observed\".")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.L03473>) obo:OMO_0003012 obo:CHMO_0000461 "LAMES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000461 "laser micro emission spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000461 "CHMO:0000461")
@@ -8780,7 +8780,7 @@ SubClassOf(obo:CHMO_0000491 obo:CHMO_0000470)
 
 # Class: obo:CHMO_0000492 (field desorption mass spectrometry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'field ionization' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.F02360") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/ >) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02357>) Annotation(oboInOwl:hasDbXref <FIX:0000087>) obo:IAO_0000115 obo:CHMO_0000492 "A field ionisation mass spectrometry where the sample is deposited on a \"solid surface (known as an 'emitter') \" and ionised by interaction with \"a high electrical field\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'field ionization' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.F02357") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02357>) Annotation(oboInOwl:hasDbXref <FIX:0000087>) obo:IAO_0000115 obo:CHMO_0000492 "A field ionisation mass spectrometry where the sample is deposited on a \"solid surface (known as an 'emitter') \" and ionised by interaction with \"a high electrical field\".")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000492 "FD mass spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000492 "FD-MS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000492 "FDMS")
@@ -17008,7 +17008,7 @@ SubClassOf(obo:CHMO_0001225 obo:CHMO_0001224)
 
 # Class: obo:CHMO_0001226 (analytical solution calorimetry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'enthalpimetric analysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.E02131") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02131>) obo:IAO_0000115 obo:CHMO_0001226 "A calorimetry in which \"the enthalpy change of a chemical reaction is measured, directly or indirectly, in order to perform a quantitative determination ofa reactant or catalyst. In general, at least one reactant is a liquid or solution.\"")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'enthalpimetric analysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.E02131") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02131>) obo:IAO_0000115 obo:CHMO_0001226 "A calorimetry in which \"the enthalpy change of a chemical reaction is measured, directly or indirectly, in order to perform a quantitative determination of a reactant or catalyst. In general, at least one reactant is a liquid or solution.\"")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001226 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001226 "2009-03-25T12:09:47Z")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02131>) oboInOwl:hasExactSynonym obo:CHMO_0001226 "enthalpimetric analysis")
@@ -32562,7 +32562,7 @@ SubClassOf(obo:CHMO_0002592 obo:CHMO_0002344)
 
 # Class: obo:CHMO_0002593 (graphite electrode)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'carbon electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C00829") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/ >) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.G02685>) obo:IAO_0000115 obo:CHMO_0002593 "A carbon electrode that \"are fired at a temperature around 2800 K  to produce highly graphite\" composition.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'carbon electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C00829") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/ >) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.G02685>) obo:IAO_0000115 obo:CHMO_0002593 "A carbon electrode that has been \"fired at a temperature around 2800 K\", resulting in a largely graphitic composition.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002593 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002593 "2009-11-10T12:21:55Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002593 "CHMO:0002593")
