@@ -19,9 +19,9 @@
         "val" : "Chemical Methods Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-01-22"
+        "val" : "2025-10-21"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/chmo/releases/2025-01-22/chmo-full.json"
+      "version" : "http://purl.obolibrary.org/obo/chmo/releases/2025-10-21/chmo-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
@@ -34,9 +34,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/BFO_0000180",
           "val" : "Entity"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "entity"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "Julius Caesar"
@@ -55,9 +52,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/iao.owl"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
           "val" : "An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])"
@@ -81,17 +75,11 @@
           "pred" : "http://purl.obolibrary.org/obo/BFO_0000180",
           "val" : "Continuant"
         }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "continuant"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/iao.owl"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
           "val" : "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])"
@@ -175,6 +163,7 @@
         "definition" : {
           "val" : "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"
         },
+        "comments" : [ "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
           "val" : "ic"
@@ -396,6 +385,7 @@
         "definition" : {
           "val" : "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"
         },
+        "comments" : [ "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
           "val" : "process"
@@ -557,9 +547,6 @@
           "pred" : "http://purl.obolibrary.org/obo/BFO_0000180",
           "val" : "Quality"
         }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "quality"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "the ambient temperature of this portion of air"
         }, {
@@ -577,9 +564,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "the shape of your nostril"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/iao.owl"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
           "val" : "a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])"
@@ -605,15 +589,13 @@
         "definition" : {
           "val" : "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"
         },
+        "comments" : [ "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
           "val" : "sdc"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/BFO_0000180",
           "val" : "SpecificallyDependentContinuant"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "specifically dependent continuant"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key"
@@ -652,7 +634,7 @@
           "val" : "Specifically dependent continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. We're not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc."
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+          "val" : "http://purl.obolibrary.org/obo/pato.owl"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
           "val" : "(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] "
@@ -1027,6 +1009,7 @@
         "definition" : {
           "val" : "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"
         },
+        "comments" : [ "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
           "val" : "gdc"
@@ -1525,32 +1508,37 @@
         "definition" : {
           "val" : "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "molecular entity",
           "xrefs" : [ "IUPAC" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "entidad molecular",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "entidades moleculares",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "entite moleculaire",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "molecular entities",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "molecular entity",
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "molekulare Entitaet",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
@@ -1571,19 +1559,19 @@
       "lbl" : "copper molecular entity",
       "type" : "CLASS",
       "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "copper molecular entity",
-          "xrefs" : [ "ChEBI" ]
-        }, {
           "pred" : "hasRelatedSynonym",
           "val" : "copper compounds",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "copper molecular entities",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "copper molecular entity",
+          "xrefs" : [ "chebi" ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -1598,9 +1586,9 @@
         "definition" : {
           "val" : "A 2-carbon sulfoxide in which the sulfur atom has two methyl substituents."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "(methanesulfinyl)methane",
           "xrefs" : [ "IUPAC" ]
@@ -1613,194 +1601,187 @@
           "val" : "Dimethyl sulfoxide",
           "xrefs" : [ "KEGG_COMPOUND" ]
         }, {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "dimethyl sulfoxide",
           "xrefs" : [ "IUPAC" ]
-        }, {
-          "pred" : "hasExactSynonym",
-          "val" : "dimethyl sulfoxide",
-          "xrefs" : [ "UniProt" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(CH3)2SO",
-          "xrefs" : [ "NIST_Chemistry_WebBook" ]
+          "xrefs" : [ "nist" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "(methanesulfinyl)methane",
+          "xrefs" : [ "iupac" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "DIMETHYL SULFOXIDE",
+          "xrefs" : [ "pdb-ccd" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "DMSO",
-          "xrefs" : [ "KEGG_COMPOUND" ]
+          "xrefs" : [ "kegg.compound" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Dimethyl sulfoxide",
+          "xrefs" : [ "kegg.compound" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Dimethylsulfoxid",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "S(O)Me2",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#INN",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/INN",
           "pred" : "hasRelatedSynonym",
           "val" : "dimethyl sulfoxide",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "dimethyl sulfoxide",
+          "xrefs" : [ "iupac" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "dimethyl sulfoxide",
+          "xrefs" : [ "uniprot_ft" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "dimethyl sulfur oxide",
-          "xrefs" : [ "NIST_Chemistry_WebBook" ]
+          "xrefs" : [ "nist" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "dimethyl sulphoxide",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
         }, {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#INN",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/INN",
           "pred" : "hasRelatedSynonym",
           "val" : "dimethyli sulfoxidum",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
         }, {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#INN",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/INN",
           "pred" : "hasRelatedSynonym",
           "val" : "dimethylsulfoxyde",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
         }, {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#INN",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/INN",
           "pred" : "hasRelatedSynonym",
           "val" : "dimetil sulfoxido",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "dmso",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "methylsulfinylmethane",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "sulfinylbis(methane)",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
         } ],
         "xrefs" : [ {
-          "val" : "CAS:67-68-5"
+          "val" : "cas:67-68-5"
         }, {
-          "val" : "CAS:67-68-5"
+          "val" : "chemspider:659"
         }, {
-          "val" : "CAS:67-68-5"
+          "val" : "drugbank:DB01093"
         }, {
-          "val" : "Chemspider:659"
+          "val" : "drugcentral:906"
         }, {
-          "val" : "DrugBank:DB01093"
+          "val" : "foodb.food:FDB000764"
         }, {
-          "val" : "Drug_Central:906"
+          "val" : "gmelin:1556"
         }, {
-          "val" : "FooDB:FDB000764"
+          "val" : "hmdb:HMDB0002151"
         }, {
-          "val" : "Gmelin:1556"
+          "val" : "kegg.compound:C11143"
         }, {
-          "val" : "HMDB:HMDB0002151"
+          "val" : "kegg.drug:D01043"
         }, {
-          "val" : "KEGG:C11143"
+          "val" : "knapsack:C00053120"
         }, {
-          "val" : "KEGG:D01043"
+          "val" : "lincs.smallmolecule:LSM-36361"
         }, {
-          "val" : "KNApSAcK:C00053120"
+          "val" : "metacyc.compound:DMSO"
         }, {
-          "val" : "LINCS:LSM-36361"
+          "val" : "pdb-ccd:DMS"
         }, {
-          "val" : "MetaCyc:DMSO"
+          "val" : "pubmed:10298633"
         }, {
-          "val" : "PDBeChem:DMS"
+          "val" : "pubmed:11162043"
         }, {
-          "val" : "PMID:10298633"
+          "val" : "pubmed:11350866"
         }, {
-          "val" : "PMID:11162043"
+          "val" : "pubmed:11474739"
         }, {
-          "val" : "PMID:11350866"
+          "val" : "pubmed:12663039"
         }, {
-          "val" : "PMID:11474739"
+          "val" : "pubmed:15237653"
         }, {
-          "val" : "PMID:12663039"
+          "val" : "pubmed:15588915"
         }, {
-          "val" : "PMID:15237653"
+          "val" : "pubmed:15868171"
         }, {
-          "val" : "PMID:15588915"
+          "val" : "pubmed:16434015"
         }, {
-          "val" : "PMID:15868171"
+          "val" : "pubmed:16522014"
         }, {
-          "val" : "PMID:16434015"
+          "val" : "pubmed:19096138"
         }, {
-          "val" : "PMID:16522014"
+          "val" : "pubmed:19382398"
         }, {
-          "val" : "PMID:19096138"
+          "val" : "pubmed:19443933"
         }, {
-          "val" : "PMID:19382398"
+          "val" : "pubmed:20828537"
         }, {
-          "val" : "PMID:19443933"
+          "val" : "pubmed:21426213"
         }, {
-          "val" : "PMID:20828537"
+          "val" : "pubmed:22030943"
         }, {
-          "val" : "PMID:21426213"
+          "val" : "pubmed:22722716"
         }, {
-          "val" : "PMID:22030943"
+          "val" : "pubmed:22768202"
         }, {
-          "val" : "PMID:22722716"
+          "val" : "pubmed:22814967"
         }, {
-          "val" : "PMID:22768202"
+          "val" : "pubmed:23050031"
         }, {
-          "val" : "PMID:22814967"
+          "val" : "pubmed:23313473"
         }, {
-          "val" : "PMID:23050031"
+          "val" : "pubmed:28220525"
         }, {
-          "val" : "PMID:23313473"
+          "val" : "pubmed:29938311"
         }, {
-          "val" : "PMID:28220525"
+          "val" : "pubmed:31489176"
         }, {
-          "val" : "PMID:29938311"
+          "val" : "pubmed:3510103"
         }, {
-          "val" : "PMID:31489176"
+          "val" : "pubmed:3898376"
         }, {
-          "val" : "PMID:3510103"
+          "val" : "pubmed:3916302"
         }, {
-          "val" : "PMID:3898376"
+          "val" : "pubmed:4223708"
         }, {
-          "val" : "PMID:3916302"
+          "val" : "pubmed:4556944"
         }, {
-          "val" : "PMID:4223708"
+          "val" : "pubmed:4963226"
         }, {
-          "val" : "PMID:4556944"
+          "val" : "pubmed:6309056"
         }, {
-          "val" : "PMID:4963226"
+          "val" : "pubmed:6379027"
         }, {
-          "val" : "PMID:6309056"
+          "val" : "reaxys:506008"
         }, {
-          "val" : "PMID:6379027"
+          "val" : "umbbd.compound:c0236"
         }, {
-          "val" : "Reaxys:506008"
-        }, {
-          "val" : "UM-BBD_compID:c0236"
-        }, {
-          "val" : "Wikipedia:Dimethyl_sulfoxide"
+          "val" : "wikipedia.en:Dimethyl_sulfoxide"
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "C2H6OS"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchi",
-          "val" : "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchikey",
-          "val" : "IAZDPXIOMUYVGZ-UHFFFAOYSA-N"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "78.13444"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "78.01394"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/smiles",
-          "val" : "CS(C)=O"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
           "val" : "CHEBI:23801"
         }, {
@@ -1812,6 +1793,27 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "C2H6OS"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_key_string",
+          "val" : "IAZDPXIOMUYVGZ-UHFFFAOYSA-N"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_string",
+          "val" : "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "78.136"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "78.01394"
+        }, {
+          "pred" : "https://w3id.org/chemrof/smiles_string",
+          "val" : "CS(C)=O"
         } ]
       }
     }, {
@@ -1819,82 +1821,68 @@
       "lbl" : "copper atom",
       "type" : "CLASS",
       "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "pred" : "hasExactSynonym",
+          "val" : "Copper",
+          "xrefs" : [ "KEGG_COMPOUND" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "copper",
           "xrefs" : [ "IUPAC" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "29Cu",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Copper",
-          "xrefs" : [ "KEGG_COMPOUND" ]
+          "xrefs" : [ "kegg.compound" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Cu",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Cu",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Kupfer",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "cobre",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "copper",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "copper",
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "cuivre",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "cuprum",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         } ],
         "xrefs" : [ {
-          "val" : "CAS:7440-50-8"
+          "val" : "cas:7440-50-8"
         }, {
-          "val" : "CAS:7440-50-8"
+          "val" : "gmelin:16269"
         }, {
-          "val" : "Gmelin:16269"
+          "val" : "kegg.compound:C00070"
         }, {
-          "val" : "KEGG:C00070"
-        }, {
-          "val" : "WebElements:Cu"
+          "val" : "webelements:Cu"
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "Cu"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchi",
-          "val" : "InChI=1S/Cu"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchikey",
-          "val" : "RYGMFSIKBFXOCR-UHFFFAOYSA-N"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "63.54600"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "62.92960"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/smiles",
-          "val" : "[Cu]"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
           "val" : "CHEBI:23376"
         }, {
@@ -1903,6 +1891,27 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "Cu"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_key_string",
+          "val" : "RYGMFSIKBFXOCR-UHFFFAOYSA-N"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_string",
+          "val" : "InChI=1S/Cu"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "63.546"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "62.9296"
+        }, {
+          "pred" : "https://w3id.org/chemrof/smiles_string",
+          "val" : "[Cu]"
         } ]
       }
     }, {
@@ -1913,36 +1922,41 @@
         "definition" : {
           "val" : "A chemical entity constituting the smallest component of an element having the chemical properties of the element."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "atom",
           "xrefs" : [ "IUPAC" ]
         }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "atom",
+          "xrefs" : [ "iupac" ]
+        }, {
           "pred" : "hasRelatedSynonym",
           "val" : "atome",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "atomo",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "atoms",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "atomus",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "element",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "elements",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
@@ -1967,66 +1981,66 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An allotropic form of the element carbon consisting of layers of hexagonally arranged carbon atoms in a planar condensed ring system (graphene layers). The layers are stacked parallel to each other in a three-dimensional crystalline long-range order. There are two allotropic forms with different stacking arrangements, hexagonal and rhombohedral. The chemical bonds within the layers are covalent with sp(2) hybridization and with a C--C distance of 141.7 pm. The weak bonds between the layers are metallic with a strength comparable to van der Waals bonding only."
+          "val" : "An allotropic form of the element carbon consisting of layers of hexagonally arranged carbon atoms in a planar condensed ring system (graphene layers). The layers are stacked parallel to each other in a three-dimensional crystalline long-range order. There are two allotropic forms with different stacking arrangements, hexagonal and rhombohedral. The chemical bonds within the layers are covalent with sp<small><sup>2</small></sup> hybridization and with a C—C distance of 141.7 pm. The weak bonds between the layers are metallic with a strength comparable to van der Waals bonding only."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "graphite",
           "xrefs" : [ "IUPAC" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Cn",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Graphit",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "black lead",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "grafito",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "graphite",
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "mineral carbon",
-          "xrefs" : [ "NIST_Chemistry_WebBook" ]
+          "xrefs" : [ "nist" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "plumbago",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
         } ],
         "xrefs" : [ {
-          "val" : "CAS:12751-41-6"
+          "val" : "cas:12751-41-6"
         }, {
-          "val" : "CAS:7782-42-5"
+          "val" : "cas:7782-42-5"
         }, {
-          "val" : "CAS:7782-42-5"
-        }, {
-          "val" : "Gmelin:22250"
+          "val" : "gmelin:22250"
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "C"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "1056.968"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "1056.00000"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/smiles",
-          "val" : "*:c1c(:*)c2c(:*)c(:*)c3c(:*)c4c(:*)c(:*)c(:*)c5c(:*)c(:*)c6c(:*)c(c1:*)c2c3c6c45.*:c1c(:*)c2c(:*)c(:*)c3c(:*)c4c(:*)c(:*)c(:*)c5c(:*)c(:*)c6c(:*)c(c1:*)c2c3c6c45.*:c1c(:*)c2c(:*)c(:*)c3c(:*)c4c(:*)c(:*)c(:*)c5c(:*)c(:*)c6c(:*)c(c1:*)c2c3c6c45.*:c1c(:*)c2c(:*)c(:*)c3c(:*)c4c(:*)c(:*)c(:*)c5c(:*)c(:*)c6c(:*)c(c1:*)c2c3c6c45"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "C"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "1056.968"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "1056.0"
         } ]
       }
     }, {
@@ -2069,58 +2083,63 @@
         "definition" : {
           "val" : "The stable isotope of oxygen with relative atomic mass 16.999131. The least abundant (0.038 atom percent) isotope of naturally occurring oxygen."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "oxygen-17",
           "xrefs" : [ "IUPAC" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(17)8O",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(17)O",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "oxygen, isotope of mass 17",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "oxygen-17",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "oxygen-17",
+          "xrefs" : [ "iupac" ]
         } ],
         "xrefs" : [ {
-          "val" : "CAS:13968-48-4"
+          "val" : "cas:13968-48-4"
         }, {
-          "val" : "Gmelin:17561"
+          "val" : "gmelin:17561"
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "[17O]"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchi",
-          "val" : "InChI=1S/O/i1+1"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchikey",
-          "val" : "QVGXLLKOCUKJST-OUBTZVSYSA-N"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "16.999"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "16.99913"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/smiles",
-          "val" : "[17O]"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "[17O]"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_key_string",
+          "val" : "QVGXLLKOCUKJST-OUBTZVSYSA-N"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_string",
+          "val" : "InChI=1S/O/i1+1"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "16.999"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "16.99913"
+        }, {
+          "pred" : "https://w3id.org/chemrof/smiles_string",
+          "val" : "[17O]"
         } ]
       }
     }, {
@@ -2131,31 +2150,36 @@
         "definition" : {
           "val" : "A macromolecule is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "macromolecule",
           "xrefs" : [ "IUPAC" ]
         }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "macromolecule",
+          "xrefs" : [ "iupac" ]
+        }, {
           "pred" : "hasRelatedSynonym",
           "val" : "macromolecules",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "polymer",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "polymer molecule",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "polymers",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         } ],
         "xrefs" : [ {
-          "val" : "Wikipedia:Macromolecule"
+          "val" : "wikipedia.en:Macromolecule"
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
@@ -2179,108 +2203,92 @@
         "definition" : {
           "val" : "A one-carbon compound that is methane in which three of the hydrogens are replaced by chlorines."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "Chloroform",
           "xrefs" : [ "KEGG_COMPOUND" ]
         }, {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "chloroform",
           "xrefs" : [ "IUPAC" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "1,1,1-trichloromethane",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "CHCl3",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Chloroform",
+          "xrefs" : [ "kegg.compound" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Trichlormethan",
-          "xrefs" : [ "NIST_Chemistry_WebBook" ]
+          "xrefs" : [ "nist" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "chloroform",
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "chloroforme",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "chloroformium pro narcosi",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "trichloromethane",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "trichloromethane",
-          "xrefs" : [ "NIST_Chemistry_WebBook" ]
+          "xrefs" : [ "nist" ]
         } ],
         "xrefs" : [ {
-          "val" : "CAS:67-66-3"
+          "val" : "cas:67-66-3"
         }, {
-          "val" : "CAS:67-66-3"
+          "val" : "drugcentral:4363"
         }, {
-          "val" : "CAS:67-66-3"
+          "val" : "gmelin:1837"
         }, {
-          "val" : "Drug_Central:4363"
+          "val" : "hmdb:HMDB0029596"
         }, {
-          "val" : "Gmelin:1837"
+          "val" : "kegg.compound:C13827"
         }, {
-          "val" : "HMDB:HMDB0029596"
+          "val" : "lincs.smallmolecule:LSM-37229"
         }, {
-          "val" : "KEGG:C13827"
+          "val" : "metacyc.compound:CPD-843"
         }, {
-          "val" : "LINCS:LSM-37229"
+          "val" : "pdb-ccd:MCH"
         }, {
-          "val" : "MetaCyc:CPD-843"
+          "val" : "pubmed:10379014"
         }, {
-          "val" : "PDBeChem:MCH"
+          "val" : "pubmed:15583552"
         }, {
-          "val" : "PMID:10379014"
+          "val" : "pubmed:20051454"
         }, {
-          "val" : "PMID:15583552"
+          "val" : "pubmed:21850127"
         }, {
-          "val" : "PMID:20051454"
+          "val" : "pubmed:23093177"
         }, {
-          "val" : "PMID:21850127"
+          "val" : "pubmed:8476536"
         }, {
-          "val" : "PMID:23093177"
+          "val" : "pubmed:8625290"
         }, {
-          "val" : "PMID:8476536"
+          "val" : "reaxys:1731042"
         }, {
-          "val" : "PMID:8625290"
+          "val" : "umbbd.compound:c0595"
         }, {
-          "val" : "Reaxys:1731042"
-        }, {
-          "val" : "UM-BBD_compID:c0595"
-        }, {
-          "val" : "Wikipedia:Chloroform"
+          "val" : "wikipedia.en:Chloroform"
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "CHCl3"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchi",
-          "val" : "InChI=1S/CHCl3/c2-1(3)4/h1H"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchikey",
-          "val" : "HEDRZPFGACZZDS-UHFFFAOYSA-N"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "119.37674"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "117.91438"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/smiles",
-          "val" : "[H]C(Cl)(Cl)Cl"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
           "val" : "CHEBI:23143"
         }, {
@@ -2289,6 +2297,27 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "CHCl3"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_key_string",
+          "val" : "HEDRZPFGACZZDS-UHFFFAOYSA-N"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_string",
+          "val" : "InChI=1S/CHCl3/c2-1(3)4/h1H"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "119.378"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "117.91438"
+        }, {
+          "pred" : "https://w3id.org/chemrof/smiles_string",
+          "val" : "[H]C(Cl)(Cl)Cl"
         } ]
       }
     }, {
@@ -2296,60 +2325,65 @@
       "lbl" : "carbon-13 atom",
       "type" : "CLASS",
       "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "carbon-13",
           "xrefs" : [ "IUPAC" ]
-        }, {
-          "pred" : "hasExactSynonym",
-          "val" : "carbon-13 atom",
-          "xrefs" : [ "ChemIDplus" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(13)6C",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(13)C",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "carbon, isotope of mass 13",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "carbon-13",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "carbon-13",
+          "xrefs" : [ "iupac" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "carbon-13 atom",
+          "xrefs" : [ "chemidplus" ]
         } ],
         "xrefs" : [ {
-          "val" : "CAS:14762-74-4"
+          "val" : "cas:14762-74-4"
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "[13C]"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchi",
-          "val" : "InChI=1S/C/i1+1"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchikey",
-          "val" : "OKTJSMMVPCPJKN-OUBTZVSYSA-N"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "13.003"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "13.00335"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/smiles",
-          "val" : "[13C]"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "[13C]"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_key_string",
+          "val" : "OKTJSMMVPCPJKN-OUBTZVSYSA-N"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_string",
+          "val" : "InChI=1S/C/i1+1"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "13.003"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "13.00335"
+        }, {
+          "pred" : "https://w3id.org/chemrof/smiles_string",
+          "val" : "[13C]"
         } ]
       }
     }, {
@@ -2358,51 +2392,56 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The stable isotope of fluorine with relative atomic mass 18.998403 and nuclear spin (1)/2."
+          "val" : "The stable isotope of fluorine with relative atomic mass 18.998403 and nuclear spin <small><sup>1</small></sup>/<small><sub>2</sub></small>."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "fluorine-19",
           "xrefs" : [ "IUPAC" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(19)9F",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(19)F",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "fluorine-19",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "fluorine-19",
+          "xrefs" : [ "iupac" ]
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "[19F]"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchi",
-          "val" : "InChI=1S/F/i1+0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchikey",
-          "val" : "YCKRFDGAMUMZLT-IGMARMGPSA-N"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "18.998"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "18.99840"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/smiles",
-          "val" : "[19F]"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "[19F]"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_key_string",
+          "val" : "YCKRFDGAMUMZLT-IGMARMGPSA-N"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_string",
+          "val" : "InChI=1S/F/i1+0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "18.998"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "18.9984"
+        }, {
+          "pred" : "https://w3id.org/chemrof/smiles_string",
+          "val" : "[19F]"
         } ]
       }
     }, {
@@ -2410,40 +2449,38 @@
       "lbl" : "vitreous silica",
       "type" : "CLASS",
       "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "amorphous silica",
-          "xrefs" : [ "ChemIDplus" ]
+          "xrefs" : [ "chemidplus" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "fused silica",
-          "xrefs" : [ "NIST_Chemistry_WebBook" ]
+          "xrefs" : [ "nist" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "silica glass",
-          "xrefs" : [ "NIST_Chemistry_WebBook" ]
+          "xrefs" : [ "nist" ]
         } ],
         "xrefs" : [ {
-          "val" : "CAS:60676-86-0"
-        }, {
-          "val" : "CAS:60676-86-0"
+          "val" : "cas:60676-86-0"
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "O2Si"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "60.084"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "59.96676"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "O2Si"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "60.084"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "59.96676"
         } ]
       }
     }, {
@@ -2454,39 +2491,39 @@
         "definition" : {
           "val" : "A molecule consisting of a graphene cylinder or two or more concentric graphene cylinders."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CNT",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Kohlenstoffnanoroehre",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Kohlenstoffnanoroehren",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "carbon nanotubes",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "nanotube de carbone",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "nanotubes de carbone",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "nanotubo de carbono",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "nanotubos de carbono",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -2501,11 +2538,11 @@
         "definition" : {
           "val" : "A nanometre sized object."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "nanoestructura",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -2520,27 +2557,27 @@
         "definition" : {
           "val" : "A nanosized spherical or capsule-shaped structure."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "NP",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Nanoteilchen",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "nanoparticles",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "nanoparticula",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "nanoparticule",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -2555,27 +2592,27 @@
         "definition" : {
           "val" : "A nanoparticle consisting of gold atoms."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "AuNP",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "Au"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "196.967"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "196.96657"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "Au"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "196.967"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "196.96657"
         } ]
       }
     }, {
@@ -2584,51 +2621,56 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The stable isotope of tin with relative atomic mass 118.903311, 8.59 atom percent natural abundance and nuclear spin (1)/2."
+          "val" : "The stable isotope of tin with relative atomic mass 118.903311, 8.59 atom percent natural abundance and nuclear spin <small><sup>1</small></sup>/<small><sub>2</sub></small>."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "tin-119",
           "xrefs" : [ "IUPAC" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(119)50Sn",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(119)Sn",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "tin-119",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "tin-119",
+          "xrefs" : [ "iupac" ]
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "[119Sn]"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchi",
-          "val" : "InChI=1S/Sn/i1+0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchikey",
-          "val" : "ATJFFYVFTNAWJD-IGMARMGPSA-N"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "118.903"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "118.90331"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/smiles",
-          "val" : "[119Sn]"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "[119Sn]"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_key_string",
+          "val" : "ATJFFYVFTNAWJD-IGMARMGPSA-N"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_string",
+          "val" : "InChI=1S/Sn/i1+0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "118.903"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "118.90331"
+        }, {
+          "pred" : "https://w3id.org/chemrof/smiles_string",
+          "val" : "[119Sn]"
         } ]
       }
     }, {
@@ -2636,45 +2678,50 @@
       "lbl" : "lead-207",
       "type" : "CLASS",
       "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "lead-207",
           "xrefs" : [ "IUPAC" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(207)82Pb",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(207)Pb",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "lead-207",
+          "xrefs" : [ "iupac" ]
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "[207Pb]"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchi",
-          "val" : "InChI=1S/Pb/i1+0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchikey",
-          "val" : "WABPQHHGFIMREM-IGMARMGPSA-N"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "206.976"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "206.97590"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/smiles",
-          "val" : "[207Pb]"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "[207Pb]"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_key_string",
+          "val" : "WABPQHHGFIMREM-IGMARMGPSA-N"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_string",
+          "val" : "InChI=1S/Pb/i1+0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "206.976"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "206.9759"
+        }, {
+          "pred" : "https://w3id.org/chemrof/smiles_string",
+          "val" : "[207Pb]"
         } ]
       }
     }, {
@@ -2685,40 +2732,40 @@
         "definition" : {
           "val" : "The stable isotope of vanadium with relative atomic mass 50.943964, 99.8 atom percent natural abundance and nuclear spin 7/2."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "(51)23V",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(51)V",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "[51V]"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchi",
-          "val" : "InChI=1S/V/i1+0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchikey",
-          "val" : "LEONUFNNVUYDNQ-IGMARMGPSA-N"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "50.944"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "50.94396"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/smiles",
-          "val" : "[51V]"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "[51V]"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_key_string",
+          "val" : "LEONUFNNVUYDNQ-IGMARMGPSA-N"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_string",
+          "val" : "InChI=1S/V/i1+0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "50.944"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "50.94396"
+        }, {
+          "pred" : "https://w3id.org/chemrof/smiles_string",
+          "val" : "[51V]"
         } ]
       }
     }, {
@@ -2729,49 +2776,54 @@
         "definition" : {
           "val" : "The stable isotope of lithium with relative atomic mass 7.016004, 92.5 atom percent natural abundance and nuclear spin 3/2."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "lithium-7",
           "xrefs" : [ "IUPAC" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(7)3Li",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(7)Li",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "lithium-7",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "lithium-7",
+          "xrefs" : [ "iupac" ]
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "[7Li]"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchi",
-          "val" : "InChI=1S/Li/i1+0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchikey",
-          "val" : "WHXSMMKQMYFTQS-IGMARMGPSA-N"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "7.016"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "7.01600"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/smiles",
-          "val" : "[7Li]"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "[7Li]"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_key_string",
+          "val" : "WHXSMMKQMYFTQS-IGMARMGPSA-N"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_string",
+          "val" : "InChI=1S/Li/i1+0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "7.016"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "7.016"
+        }, {
+          "pred" : "https://w3id.org/chemrof/smiles_string",
+          "val" : "[7Li]"
         } ]
       }
     }, {
@@ -2782,45 +2834,50 @@
         "definition" : {
           "val" : "The stable isotope of niobium with relative atomic mass 182.950225, 14.3 atom percent natural abundance and nuclear spin 1/2."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
           "pred" : "hasExactSynonym",
           "val" : "tungsten-183",
           "xrefs" : [ "IUPAC" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(183)74W",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
         }, {
           "pred" : "hasRelatedSynonym",
           "val" : "(183)W",
-          "xrefs" : [ "IUPAC" ]
+          "xrefs" : [ "iupac" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
+          "pred" : "hasRelatedSynonym",
+          "val" : "tungsten-183",
+          "xrefs" : [ "iupac" ]
         } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/charge",
-          "val" : "0"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
-          "val" : "[183W]"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchi",
-          "val" : "InChI=1S/W/i1-1"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/inchikey",
-          "val" : "WFKWXMTUELFFGS-BJUDXGSMSA-N"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/mass",
-          "val" : "182.950"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-          "val" : "182.95022"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/chebi/smiles",
-          "val" : "[183W]"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
+        }, {
+          "pred" : "https://w3id.org/chemrof/charge",
+          "val" : "0"
+        }, {
+          "pred" : "https://w3id.org/chemrof/generalized_empirical_formula",
+          "val" : "[183W]"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_key_string",
+          "val" : "WFKWXMTUELFFGS-BJUDXGSMSA-N"
+        }, {
+          "pred" : "https://w3id.org/chemrof/inchi_string",
+          "val" : "InChI=1S/W/i1-1"
+        }, {
+          "pred" : "https://w3id.org/chemrof/mass",
+          "val" : "182.95"
+        }, {
+          "pred" : "https://w3id.org/chemrof/monoisotopic_mass",
+          "val" : "182.95022"
+        }, {
+          "pred" : "https://w3id.org/chemrof/smiles_string",
+          "val" : "[183W]"
         } ]
       }
     }, {
@@ -2831,11 +2888,11 @@
         "definition" : {
           "val" : "A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "Chemische Substanz",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -2850,11 +2907,11 @@
         "definition" : {
           "val" : "A mixture is a chemical substance composed of multiple molecules, at least two of which are of a different kind."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "Mischung",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -2869,18 +2926,18 @@
         "definition" : {
           "val" : "A polymer is a mixture, which is composed of macromolecules of different kinds and which may be differentiated by composition, length, degree of branching etc.."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "Polymer",
-          "xrefs" : [ "ChEBI" ]
-        }, {
           "pred" : "hasRelatedSynonym",
           "val" : "Kunststoff",
-          "xrefs" : [ "ChEBI" ]
+          "xrefs" : [ "chebi" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Polymer",
+          "xrefs" : [ "chebi" ]
         } ],
         "xrefs" : [ {
-          "val" : "Wikipedia:Polymer"
+          "val" : "wikipedia.en:Polymer"
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -5479,7 +5536,7 @@
       "meta" : {
         "definition" : {
           "val" : "Microscopy where the specimen is illuminated with a near-field of photons. An image of the surface is obtained by mechanically moving an optical fibre probe in a raster scan over the specimen, line by line, and detecting any photons which tunnel from the specimen to the probe as a function of position. A feedback loop is used to maintain a fixed relationship between the optical fibre probe and surface during scanning.",
-          "xrefs" : [ "USPatent:5018865" ]
+          "xrefs" : [ "google.patent:US5018865" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -8189,7 +8246,7 @@
       "meta" : {
         "definition" : {
           "val" : "A type of atomic absorption spectrometry where a solid sample is atomised by placing it in a small quartz tube which is rapidly heated by passing a current through it.",
-          "xrefs" : [ "https://doi.org/JA9900500225" ]
+          "xrefs" : [ "https://doi.org/10.1039/JA9900500225" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -10328,7 +10385,7 @@
       "meta" : {
         "definition" : {
           "val" : "X-ray spectroscopy where the sample is bombarded with ultra-low energy (<1 keV) X-rays and the energies and intensities of the X-rays emitted due to valence-to-core transitions are detected.",
-          "xrefs" : [ "10.1051/jphyscol:19879119" ]
+          "xrefs" : [ "https://doi.org/10.1051/jphyscol:19879119" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -11488,7 +11545,7 @@
       "meta" : {
         "definition" : {
           "val" : "Spectroscopy where the sample is bombarded with high-energy photons resulting in the emission of a photoelectron and its corresponding ion which are detected as a function of energy.",
-          "xrefs" : [ "https://doi.org/a909621c" ]
+          "xrefs" : [ "https://doi.org/10.1039/A909621C" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -22160,7 +22217,7 @@
       "meta" : {
         "definition" : {
           "val" : "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample emitted at supercritical angles are measured and correlated within a very small detection volume. Ultra-violet light is used to stimulate fluorescence.",
-          "xrefs" : [ "rsc:b718132a" ]
+          "xrefs" : [ "https://doi.org/10.1039/B718132A" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -22177,7 +22234,7 @@
       "meta" : {
         "definition" : {
           "val" : "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured at several different points in parallel and correlated within very small detection volumes. Ultra-violet light is used to stimulate fluorescence.",
-          "xrefs" : [ "https://doi.org/10.1039/b718132a" ]
+          "xrefs" : [ "https://doi.org/10.1039/B718132A" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -28270,7 +28327,7 @@
       "meta" : {
         "definition" : {
           "val" : "A method for separating microscopic particles suspended in a stream of fluid. The particles are forced individually through a vibrating nozzle, then exposed to a laser beam and the resulting fluorescence and scattered light is detected. Finally the cells are sorted by applying an electrical charge to droplets of the fluid and deflecting it to the left or right using charged electrodes.",
-          "xrefs" : [ "rsc:10.1039/b902504a" ]
+          "xrefs" : [ "doi:10.1039/b902504a" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -31702,7 +31759,7 @@
       "meta" : {
         "definition" : {
           "val" : "The process of determining the quantity of a sample (metal cation) by adding measured increments of a titrant (a chelating agent) until the end-point, at which essentially all of the sample has reacted, is reached.",
-          "xrefs" : [ "USPatent:3878059" ]
+          "xrefs" : [ "google.patent:US3878059" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
@@ -35530,7 +35587,7 @@
       "meta" : {
         "definition" : {
           "val" : "A synthesis method where a solid material is dissolved in a supercritical fluid (at elevated pressure) which is forced through a small orifice into a region of relatively low pressure. This produces a molecular spray which is directed against a substrate where it deposits as a thin film.",
-          "xrefs" : [ "USPatent:4582731" ]
+          "xrefs" : [ "google.patent:US4582731" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -37746,7 +37803,7 @@
       "meta" : {
         "definition" : {
           "val" : "The chemical degradation of a sample caused by heating it, as a vapour, with steam.",
-          "xrefs" : [ "USPatent:5780518" ]
+          "xrefs" : [ "google.patent:US5780518" ]
         }
       }
     }, {
@@ -39163,7 +39220,7 @@
       "meta" : {
         "definition" : {
           "val" : "The transfer of a solute from one phase (the 'donor' or 'feed' phase) to another (organic) phase (the 'acceptor' or 'strip' phase) across a porous hydrophobic membrane the pores of which are filled with the same acceptor phase.",
-          "xrefs" : [ "ISBN: 0824705092" ]
+          "xrefs" : [ "ISBN:0824705092" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -42327,7 +42384,7 @@
       "meta" : {
         "definition" : {
           "val" : "An NMR experiment used for 23Na nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse.",
-          "xrefs" : [ "ISBN:3540221689", "https://doi.org/1021/ja00124a023" ]
+          "xrefs" : [ "ISBN:3540221689", "https://doi.org/10.1021/ja00124a023" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -42351,7 +42408,7 @@
       "meta" : {
         "definition" : {
           "val" : "An NMR experiment used for 27Al nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse.",
-          "xrefs" : [ "ISBN:3540221689", "https://doi.org/1021/ja00124a023" ]
+          "xrefs" : [ "ISBN:3540221689", "https://doi.org/10.1021/ja00124a023" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -42375,7 +42432,7 @@
       "meta" : {
         "definition" : {
           "val" : "An NMR experiment used for 45Sc nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse.",
-          "xrefs" : [ "ISBN:3540221689", "https://doi.org/1021/ja00124a023" ]
+          "xrefs" : [ "ISBN:3540221689", "https://doi.org/10.1021/ja00124a023" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -57635,7 +57692,7 @@
       "meta" : {
         "definition" : {
           "val" : "A synthesis method for carbon nanotubes that involves mixing high pressure (e.g. 30 atmospheres) CO that has been preheated (1000 °C) and a catalyst precursor gas (metal carbonyl or metallocene). Under these conditions the precursor decomposes forming metal particle clusters on which carbon nanotubes nucleate and grow. The carbon nanotubes are 99% single-walled carbon nanotubes with small diameters (e.g., (5,5) tubes).",
-          "xrefs" : [ "USPatent:7204970" ]
+          "xrefs" : [ "google.patent:US7204970" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -69273,7 +69330,7 @@
           "xrefs" : [ "https://orcid.org/0000-0001-5985-7429" ]
         },
         "xrefs" : [ {
-          "val" : "http://goldbook.iupac.org/R05360.html"
+          "val" : "goldbook:R05360"
         } ]
       }
     }, {
@@ -71267,6 +71324,153 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0002933",
+      "lbl" : "open circuit voltage potentiometry",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A potentiometry where the potential difference between two electrodes (typically a working and a reference electrode) is measured under open circuit conditions, ensuring that no significant current flows and the system remains in thermodynamic equilibrium. The measured characteristic is the Open Circuit Voltage (OCV) also called Open Circuit Potential (OCP)."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "OCP measurement"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "OCV measurement"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "OCV potentiometry"
+        }, {
+          "pred" : "hasNarrowSynonym",
+          "val" : "OCP"
+        }, {
+          "pred" : "hasNarrowSynonym",
+          "val" : "OCV"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "As an electrochemical technique for measuring and characterizing batteries and E-chem cells."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/rsc-ontologies/rsc-cmo/issues/35"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1595-3213"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-4378-6061"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0008-1636-0875"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0002934",
+      "lbl" : "open circuit voltage",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A measurement datum that is a specified output of an open circuit voltage potentiometry. It represents the potential difference (voltage) measured between two electrodes in a circuit where no current is allowed to flow and is typically used to determine the electromotive force (EMF) of an electrochemical cell."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-5985-7429"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1595-3213"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-08-26T12:32:56Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0002935",
+      "lbl" : "galvanostatic analysis",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An electrochemical analysis in which a constant current is applied to an electrochemical system while monitoring the resulting potential changes over time. This method is used to study charge storage, reaction kinetics, and material stability by maintaining a fixed current flow and observing the system’s electrochemical response."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/rsc-ontologies/rsc-cmo/issues/37"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1595-3213"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-4378-6061"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0008-1636-0875"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0002936",
+      "lbl" : "galvanostatic cycling with potential limitation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A galvanostatic analysis in which the constant current is reversed or stopped when predefined upper or lower potential limits are reached. This method is commonly used to evaluate charge storage capacity, cycling stability, and electrochemical performance of batteries, supercapacitors, and other energy storage devices."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "GCPL"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "As an electrochemical technique for measuring and characterizing batteries and E-chem cells."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/rsc-ontologies/rsc-cmo/issues/38"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1595-3213"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-4378-6061"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0008-1636-0875"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHMO_0002937",
+      "lbl" : "potentiostatic electrochemical impedance spectroscopy",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A potentiometry where the change in impedance of an electrochemical cell is measured while maintaining a constant applied potential and the impedance is determined over a range of frequencies by analyzing the voltage-to-current ratio and the phase shift of the AC response.",
+          "xrefs" : [ "https://doi.org/10.1021/acsmeasuresciau.2c00070" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "PEIS"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "impedance spectroscopy with constant applied potential"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "potentiostatic EIS"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "As an electrochemical technique for measuring and characterizing batteries and E-chem cells."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/rsc-ontologies/rsc-cmo/issues/36"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1595-3213"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-4378-6061"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0008-1636-0875"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/CHMO_0010000",
       "lbl" : "risk management planning process",
       "type" : "CLASS"
@@ -71937,9 +72141,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Person:Alan Ruttenberg"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/iao.owl"
         } ]
       }
     }, {
@@ -72003,6 +72204,24 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "measurement datum"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2/2/2009 is_specified_output of some assay?"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "person:Chris Stoeckert"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "OBI_0000305"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "group:OBI"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
           "val" : "http://purl.obolibrary.org/obo/iao.owl"
@@ -72127,22 +72346,6 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "figure"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/iao.owl"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000309",
-      "lbl" : "diagram",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A figure that expresses one or more propositions"
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "diagram"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
           "val" : "http://purl.obolibrary.org/obo/iao.owl"
@@ -75141,7 +75344,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0002089",
-      "lbl" : "physical store",
+      "lbl" : "container with environmental control",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -75149,7 +75352,7 @@
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "physical store"
+          "val" : "container with environmental control"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "a freezer. a humidity controlled box."
@@ -76495,7 +76698,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof."
+          "val" : "An amino acid chain that is canonically produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
@@ -76696,7 +76899,7 @@
           "val" : "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other."
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
+          "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'."
@@ -76740,7 +76943,7 @@
           "val" : "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part."
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
+          "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."
@@ -76759,9 +76962,6 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#is_cyclic",
           "val" : "false"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "has_part"
         } ]
       }
     }, {
@@ -76808,6 +77008,9 @@
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
+        "definition" : {
+          "val" : "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process"
+        },
         "comments" : [ "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
@@ -77012,16 +77215,16 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0000293",
-      "lbl" : "has_specified_input",
+      "lbl" : "has specified input",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
-          "val" : "The inverse property of is_specified_input_of"
+          "val" : "The inverse property of is specified input of"
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "has_specified_input"
+          "val" : "has specified input"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "see is_input_of example_of_usage"
@@ -77047,7 +77250,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0000295",
-      "lbl" : "is_specified_input_of",
+      "lbl" : "is specified input of",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
@@ -77056,7 +77259,7 @@
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "is_specified_input_of"
+          "val" : "is specified input of"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay"
@@ -77073,16 +77276,16 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0000299",
-      "lbl" : "has_specified_output",
+      "lbl" : "has specified output",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
-          "val" : "The inverse property of is_specified_output_of"
+          "val" : "The inverse property of is specified output of"
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "has_specified_output"
+          "val" : "has specified output"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
           "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
@@ -77102,7 +77305,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0000312",
-      "lbl" : "is_specified_output_of",
+      "lbl" : "is specified output of",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
@@ -77111,7 +77314,7 @@
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "is_specified_output_of"
+          "val" : "is specified output of"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
           "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
@@ -77226,12 +77429,12 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "lbl" : "inheres in",
+      "lbl" : "characteristic of",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
-          "val" : "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence"
+          "val" : "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence."
         },
         "comments" : [ "Note that this relation was previously called \"inheres in\", but was changed to be called \"characteristic of\" because BFO2 uses \"inheres in\" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing." ],
         "basicPropertyValues" : [ {
@@ -77239,19 +77442,10 @@
           "val" : "inheres in"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "this fragility inheres in this vase"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "this fragility is a characteristic of this vase"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "this red color inheres in this apple"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "this red color is a characteristic of this apple"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "A dependent inheres in its bearer at all times for which the dependent exists."
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "inheres_in"
@@ -77267,7 +77461,7 @@
       "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
-          "val" : "a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence"
+          "val" : "Inverse of characteristic_of"
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
@@ -77346,9 +77540,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "has_participant"
         }, {
-          "pred" : "http://purl.org/dc/elements/1.1/source",
-          "val" : "http://www.obofoundry.org/ro/#OBO_REL:has_participant"
-        }, {
           "pred" : "http://purl.org/dc/terms/source",
           "val" : "http://www.obofoundry.org/ro/#OBO_REL:has_participant"
         } ]
@@ -77412,6 +77603,30 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000080",
+      "lbl" : "quality of",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence"
+        },
+        "comments" : [ "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this red color is a quality of this apple"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "A quality inheres in its bearer at all times for which the quality exists."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "is quality of"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "quality_of"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0000081",
       "lbl" : "role of",
       "type" : "PROPERTY",
@@ -77420,6 +77635,7 @@
         "definition" : {
           "val" : "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence"
         },
+        "comments" : [ "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "this investigator role is a role of this person"
@@ -77455,6 +77671,26 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000086",
+      "lbl" : "has quality",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this apple has quality this red color"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "has_quality"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0000087",
       "lbl" : "has role",
       "type" : "PROPERTY",
@@ -77475,6 +77711,24 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000091",
+      "lbl" : "has disposition",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000092",
+      "lbl" : "disposition of",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020." ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002086",
       "lbl" : "ends after",
       "type" : "PROPERTY",
@@ -77484,7 +77738,7 @@
         "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "David Osumi-Sutherland"
+          "val" : "https://orcid.org/0000-0002-7073-9172"
         } ]
       }
     }, {
@@ -77781,8 +78035,17 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "failed exploratory term"
         }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Terms created as placeholders with the expectation of being permanent should instead be deprecated using the \"placeholder removed\" (obo:IAO_0000226) justification."
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Person:Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0001-6875-5360"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-7356-1779"
         } ]
       }
     }, {
@@ -77804,7 +78067,7 @@
       "type" : "INDIVIDUAL",
       "meta" : {
         "definition" : {
-          "val" : "Term created to ease viewing/sort terms for development purpose, and will not be included in a release"
+          "val" : "The term was created to ease viewing/sorting terms for development purposes, but will not be included in a release."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
@@ -77891,9 +78154,21 @@
       "lbl" : "placeholder removed",
       "type" : "INDIVIDUAL",
       "meta" : {
+        "definition" : {
+          "val" : "The term was created to temporarily stand in for a semantic purpose, but is no longer needed, typically due to another permanent term being defined."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "placeholder removed"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This reason is appropriate for a temporary term even if no permanent term is defined; for example if the need for the term no longer exists. If a permanent (replacement) term is defined, the deprecated term should reference the replacement with IAO:0100001. If no replacement is defined, it may be appropriate to reference alternative terms with oboInOwl:consider."
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0001-6875-5360"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-7356-1779"
         } ]
       }
     }, {
@@ -77901,12 +78176,24 @@
       "lbl" : "terms merged",
       "type" : "INDIVIDUAL",
       "meta" : {
+        "definition" : {
+          "val" : "The term has been combined with one or more other terms to create a more encompassing (merged) term."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "terms merged"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "An editor note should explain what were the merged terms and the reason for the merge."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "The deprecated term should reference the merged term with obo:IAO_0100001. The replacement term should reference the original terms as sources using obo:RO_0001000 (derives_from). An editor note should explain what were the merged terms and the reason for the merge."
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0001-6875-5360"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-7356-1779"
         } ]
       }
     }, {
@@ -77914,12 +78201,24 @@
       "lbl" : "term imported",
       "type" : "INDIVIDUAL",
       "meta" : {
+        "definition" : {
+          "val" : "The term has been replaced by a term imported from another ontology."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "term imported"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This is to be used when the original term has been replaced by a term imported from an other ontology. The deprecated term should reference the imported term with obo:IAO_0100001."
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0001-6875-5360"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-7356-1779"
         } ]
       }
     }, {
@@ -77927,12 +78226,24 @@
       "lbl" : "term split",
       "type" : "INDIVIDUAL",
       "meta" : {
+        "definition" : {
+          "val" : "The term has been split into two or more new terms."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "term split"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split. The deprecated term should reference the replacement terms with obo:IAO_0100001."
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0001-6875-5360"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-7356-1779"
         } ]
       }
     }, {
@@ -79175,6 +79486,9 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease."
         }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This obsolesence reason should be used conservatively. Typical valid examples in disease ontologies are: unnecessary class grouping; mistaked creation of a disease associated to a phenotype."
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "http://orcid.org/0000-0001-5208-3432"
         }, {
@@ -79183,6 +79497,12 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000234",
           "val" : "https://orcid.org/0000-0001-5208-3432"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0001-6875-5360"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-7356-1779"
         } ]
       }
     }, {
@@ -81085,6 +81405,29 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/OMO_0002001",
+      "lbl" : "preferred label for community",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "A provenance property that denotes a synonym to be the preferred one for a specific community."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "The property is intended to be used exclusively on synonym assertions, to express that the synonym in question is the preference of a specific community. For example, one community may prefer to say call a disease \"A\" and another one \"B\" (but they are the same thing)."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/information-artifact-ontology/ontology-metadata/issues/185"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-7356-1779"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-02"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/OMO_0003000",
       "lbl" : "abbreviation",
       "type" : "PROPERTY",
@@ -81415,43 +81758,15 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/chebi#INN",
+      "id" : "http://purl.obolibrary.org/obo/chebi/INN",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+      "id" : "http://purl.obolibrary.org/obo/chebi/IUPAC_NAME",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/chebi#3_STAR",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/chebi/charge",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/chebi/formula",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/chebi/inchi",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/chebi/inchikey",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/chebi/mass",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/chebi/smiles",
+      "id" : "http://purl.obolibrary.org/obo/chebi/3_STAR",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -81759,10 +82074,6 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#source",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -81784,6 +82095,34 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://xmlns.com/foaf/0.1/mbox",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://w3id.org/chemrof/charge",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://w3id.org/chemrof/generalized_empirical_formula",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://w3id.org/chemrof/inchi_key_string",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://w3id.org/chemrof/inchi_string",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://w3id.org/chemrof/mass",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://w3id.org/chemrof/monoisotopic_mass",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://w3id.org/chemrof/smiles_string",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     } ],
@@ -94972,6 +95311,34 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHMO_0002344"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002933",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002934",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0000793"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002934",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000109"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002934",
+      "pred" : "http://purl.obolibrary.org/obo/OBI_0000312",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0002933"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002935",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002936",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0002935"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHMO_0002937",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHMO_0000016"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHMO_0010000",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHMO_0002828"
@@ -95170,7 +95537,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000038",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0000309"
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000308"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000064",
       "pred" : "is_a",
@@ -95243,10 +95610,6 @@
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000308",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0000309",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0000308"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000310",
       "pred" : "is_a",
@@ -96920,6 +97283,10 @@
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000052"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0000080",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000052"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0000081",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000052"
@@ -96928,9 +97295,21 @@
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000053"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0000086",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000053"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0000087",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000053"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0000091",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000053"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0000092",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000052"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002086",
       "pred" : "subPropertyOf",
@@ -97020,9 +97399,17 @@
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000085"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0000080",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000086"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0000081",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000087"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0000091",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000092"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002350",
       "pred" : "inverseOf",
@@ -97756,6 +98143,13 @@
         "fillerId" : "http://purl.obolibrary.org/obo/CHMO_0002899"
       } ]
     }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/CHMO_0002934",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/IAO_0000109" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/OBI_0000312",
+        "fillerId" : "http://purl.obolibrary.org/obo/CHMO_0002933"
+      } ]
+    }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/OBCS_0000123",
       "genusIds" : [ "http://purl.obolibrary.org/obo/IAO_0000100" ],
       "restrictions" : [ {
@@ -98029,6 +98423,10 @@
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000004" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000023" ]
     }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0000091",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000004" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000016" ]
+    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002222",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ]
@@ -98049,6 +98447,9 @@
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0000053",
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000020" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0000086",
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000019" ]
     } ],
     "propertyChainAxioms" : [ {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0009501",

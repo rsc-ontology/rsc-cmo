@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/chmo/imports/obcs_import.owl>
-<http://purl.obolibrary.org/obo/chmo/releases/2025-01-22/imports/obcs_import.owl>
+<http://purl.obolibrary.org/obo/chmo/releases/2025-10-21/imports/obcs_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obcs/2023-12-08/obcs.owl>)
-Annotation(owl:versionInfo "2025-01-22")
+Annotation(owl:versionInfo "2025-10-21")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
@@ -17,6 +17,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000100>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000058>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBCS_0000059>))
@@ -43,6 +44,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000417>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBCS_0000228>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))

@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/chmo/imports/ro_import.owl>
-<http://purl.obolibrary.org/obo/chmo/releases/2025-01-22/imports/ro_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ro/releases/2024-04-24/ro-base.owl>)
-Annotation(owl:versionInfo "2025-01-22")
+<http://purl.obolibrary.org/obo/chmo/releases/2025-10-21/imports/ro_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ro/releases/2025-06-24/ro-base.owl>)
+Annotation(owl:versionInfo "2025-10-21")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -122,6 +122,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000055> "this disease course realizes this disease"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000055> "this investigation realizes this investigator role"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000055> "this shattering realizes this fragility"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000055> "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/BFO_0000055> "to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/BFO_0000055> "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process")
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/iao.owl>)
@@ -237,7 +238,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0000085> <http://purl.obo
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002086> (ends after)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002086> "David Osumi-Sutherland")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002086> <https://orcid.org/0000-0002-7073-9172>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002086> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002086> "X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002086> "ends after"@en)
@@ -369,6 +370,22 @@ ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0009501> <http://purl.ob
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0009501> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000002> (<http://purl.obolibrary.org/obo/BFO_0000002>)
+
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000004> (<http://purl.obolibrary.org/obo/BFO_0000004>)
+
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000016> (<http://purl.obolibrary.org/obo/BFO_0000016>)
+
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000016> <http://purl.obolibrary.org/obo/BFO_0000023>)
 
 
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/RO_0002404>) <http://purl.obolibrary.org/obo/RO_0009501>)

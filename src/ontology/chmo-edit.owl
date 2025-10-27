@@ -2957,6 +2957,11 @@ Declaration(Class(obo:CHMO_0002929))
 Declaration(Class(obo:CHMO_0002930))
 Declaration(Class(obo:CHMO_0002931))
 Declaration(Class(obo:CHMO_0002932))
+Declaration(Class(obo:CHMO_0002933))
+Declaration(Class(obo:CHMO_0002934))
+Declaration(Class(obo:CHMO_0002935))
+Declaration(Class(obo:CHMO_0002936))
+Declaration(Class(obo:CHMO_0002937))
 Declaration(Class(obo:CHMO_0010000))
 Declaration(Class(obo:CHMO_0010001))
 Declaration(Class(obo:CHMO_0010002))
@@ -4399,7 +4404,7 @@ SubClassOf(obo:CHMO_0000118 obo:CHMO_0000112)
 
 # Class: obo:CHMO_0000119 (photon scanning tunnelling microscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "USPatent:5018865") obo:IAO_0000115 obo:CHMO_0000119 "Microscopy where the specimen is illuminated with a near-field of photons. An image of the surface is obtained by mechanically moving an optical fibre probe in a raster scan over the specimen, line by line, and detecting any photons which tunnel from the specimen to the probe as a function of position. A feedback loop is used to maintain a fixed relationship between the optical fibre probe and surface during scanning.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "google.patent:US5018865") obo:IAO_0000115 obo:CHMO_0000119 "Microscopy where the specimen is illuminated with a near-field of photons. An image of the surface is obtained by mechanically moving an optical fibre probe in a raster scan over the specimen, line by line, and detecting any photons which tunnel from the specimen to the probe as a function of position. A feedback loop is used to maintain a fixed relationship between the optical fibre probe and surface during scanning.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000119 "PSTM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000119 "photon scanning tunneling microscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000119 "photon-scanning tunneling microscopy")
@@ -5719,7 +5724,7 @@ SubClassOf(obo:CHMO_0000241 obo:CHMO_0000239)
 
 # Class: obo:CHMO_0000242 (quartz tube atomic absorption spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/JA9900500225") obo:IAO_0000115 obo:CHMO_0000242 "A type of atomic absorption spectrometry where a solid sample is atomised by placing it in a small quartz tube which is rapidly heated by passing a current through it.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/JA9900500225") obo:IAO_0000115 obo:CHMO_0000242 "A type of atomic absorption spectrometry where a solid sample is atomised by placing it in a small quartz tube which is rapidly heated by passing a current through it.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000242 "QT-AAS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000242 "QTAAS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000242 "quartz tube atomic absorption spectrometry")
@@ -6687,7 +6692,7 @@ SubClassOf(obo:CHMO_0000316 obo:CHMO_0000307)
 
 # Class: obo:CHMO_0000317 (ultra soft X-ray emission spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "10.1051/jphyscol:19879119") obo:IAO_0000115 obo:CHMO_0000317 "X-ray spectroscopy where the sample is bombarded with ultra-low energy (<1 keV) X-rays and the energies and intensities of the X-rays emitted due to valence-to-core transitions are detected.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1051/jphyscol:19879119") obo:IAO_0000115 obo:CHMO_0000317 "X-ray spectroscopy where the sample is bombarded with ultra-low energy (<1 keV) X-rays and the energies and intensities of the X-rays emitted due to valence-to-core transitions are detected.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000317 "USX")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000317 "USX spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000317 "USX spectroscopy")
@@ -7235,7 +7240,7 @@ SubClassOf(obo:CHMO_0000364 obo:CHMO_0000362)
 
 # Class: obo:CHMO_0000365 (photoion-photoelectron coincidence spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/a909621c") obo:IAO_0000115 obo:CHMO_0000365 "Spectroscopy where the sample is bombarded with high-energy photons resulting in the emission of a photoelectron and its corresponding ion which are detected as a function of energy.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/A909621C") obo:IAO_0000115 obo:CHMO_0000365 "Spectroscopy where the sample is bombarded with high-energy photons resulting in the emission of a photoelectron and its corresponding ion which are detected as a function of energy.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000365 "PIPECO")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000365 "photoion photoelectron coincidence spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000365 "photoion photoelectron coincidence spectroscopy")
@@ -12212,7 +12217,7 @@ SubClassOf(obo:CHMO_0000765 obo:CHMO_0000288)
 
 # Class: obo:CHMO_0000766 (supercritical angle fluorescence correlation spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "rsc:b718132a") obo:IAO_0000115 obo:CHMO_0000766 "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample emitted at supercritical angles are measured and correlated within a very small detection volume. Ultra-violet light is used to stimulate fluorescence.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/B718132A") obo:IAO_0000115 obo:CHMO_0000766 "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample emitted at supercritical angles are measured and correlated within a very small detection volume. Ultra-violet light is used to stimulate fluorescence.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000766 "SA-FCS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000766 "supercritical angle FCS")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000766 "CHMO:0000766")
@@ -12221,7 +12226,7 @@ SubClassOf(obo:CHMO_0000766 obo:CHMO_0000288)
 
 # Class: obo:CHMO_0000767 (image correlation spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/b718132a") obo:IAO_0000115 obo:CHMO_0000767 "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured at several different points in parallel and correlated within very small detection volumes. Ultra-violet light is used to stimulate fluorescence.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/B718132A") obo:IAO_0000115 obo:CHMO_0000767 "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured at several different points in parallel and correlated within very small detection volumes. Ultra-violet light is used to stimulate fluorescence.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000767 "ICS")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000767 "CHMO:0000767")
 AnnotationAssertion(rdfs:label obo:CHMO_0000767 "image correlation spectroscopy")
@@ -15430,7 +15435,7 @@ SubClassOf(obo:CHMO_0001084 obo:CHMO_0001074)
 
 # Class: obo:CHMO_0001085 (fluorescence-activated cell sorting)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "rsc:10.1039/b902504a") obo:IAO_0000115 obo:CHMO_0001085 "A method for separating microscopic particles suspended in a stream of fluid. The particles are forced individually through a vibrating nozzle, then exposed to a laser beam and the resulting fluorescence and scattered light is detected. Finally the cells are sorted by applying an electrical charge to droplets of the fluid and deflecting it to the left or right using charged electrodes.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "doi:10.1039/b902504a") obo:IAO_0000115 obo:CHMO_0001085 "A method for separating microscopic particles suspended in a stream of fluid. The particles are forced individually through a vibrating nozzle, then exposed to a laser beam and the resulting fluorescence and scattered light is detected. Finally the cells are sorted by applying an electrical charge to droplets of the fluid and deflecting it to the left or right using charged electrodes.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001085 "FACS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001085 "fluorescence activated cell sorting")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001085 "CHMO:0001085")
@@ -17046,7 +17051,7 @@ SubClassOf(obo:CHMO_0001229 obo:CHMO_0001211)
 
 # Class: obo:CHMO_0001230 (chelatometric titration)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "USPatent:3878059") obo:IAO_0000115 obo:CHMO_0001230 "The process of determining the quantity of a sample (metal cation) by adding measured increments of a titrant (a chelating agent) until the end-point, at which essentially all of the sample has reacted, is reached.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "google.patent:US3878059") obo:IAO_0000115 obo:CHMO_0001230 "The process of determining the quantity of a sample (metal cation) by adding measured increments of a titrant (a chelating agent) until the end-point, at which essentially all of the sample has reacted, is reached.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001230 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001230 "2009-03-25T01:25:08Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001230 "CHMO:0001230")
@@ -18804,7 +18809,7 @@ SubClassOf(obo:CHMO_0001374 obo:CHMO_0001310)
 
 # Class: obo:CHMO_0001375 (supercritical spray deposition)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "USPatent:4582731") obo:IAO_0000115 obo:CHMO_0001375 "A synthesis method where a solid material is dissolved in a supercritical fluid (at elevated pressure) which is forced through a small orifice into a region of relatively low pressure. This produces a molecular spray which is directed against a substrate where it deposits as a thin film.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "google.patent:US4582731") obo:IAO_0000115 obo:CHMO_0001375 "A synthesis method where a solid material is dissolved in a supercritical fluid (at elevated pressure) which is forced through a small orifice into a region of relatively low pressure. This produces a molecular spray which is directed against a substrate where it deposits as a thin film.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001375 "supercritical fluid molecular spray film deposition")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001375 "CHMO:0001375")
 AnnotationAssertion(rdfs:label obo:CHMO_0001375 "supercritical spray deposition")
@@ -20028,7 +20033,7 @@ SubClassOf(obo:CHMO_0001516 obo:CHMO_0001502)
 
 # Class: obo:CHMO_0001517 (steam pyrolysis)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "USPatent:5780518") obo:IAO_0000115 obo:CHMO_0001517 "The chemical degradation of a sample caused by heating it, as a vapour, with steam.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "google.patent:US5780518") obo:IAO_0000115 obo:CHMO_0001517 "The chemical degradation of a sample caused by heating it, as a vapour, with steam.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001517 "CHMO:0001517")
 AnnotationAssertion(rdfs:label obo:CHMO_0001517 "steam pyrolysis")
 SubClassOf(obo:CHMO_0001517 obo:CHMO_0001502)
@@ -20806,7 +20811,7 @@ SubClassOf(obo:CHMO_0001604 obo:CHMO_0001600)
 
 # Class: obo:CHMO_0001605 (microporous membrane liquid–liquid extraction)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN: 0824705092") obo:IAO_0000115 obo:CHMO_0001605 "The transfer of a solute from one phase (the 'donor' or 'feed' phase) to another (organic) phase (the 'acceptor' or 'strip' phase) across a porous hydrophobic membrane the pores of which are filled with the same acceptor phase.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0824705092") obo:IAO_0000115 obo:CHMO_0001605 "The transfer of a solute from one phase (the 'donor' or 'feed' phase) to another (organic) phase (the 'acceptor' or 'strip' phase) across a porous hydrophobic membrane the pores of which are filled with the same acceptor phase.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001605 "MMLLE")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001605 "microporous membrane liquid-liquid extraction")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001605 "microporous membrane solvent extraction")
@@ -22466,7 +22471,7 @@ SubClassOf(obo:CHMO_0001778 obo:CHMO_0001777)
 
 # Class: obo:CHMO_0001779 (23Na triple-quantum excitation in combination with magic angle spinning)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:3540221689") Annotation(oboInOwl:hasDbXref "https://doi.org/1021/ja00124a023") obo:IAO_0000115 obo:CHMO_0001779 "An NMR experiment used for 23Na nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:3540221689") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1021/ja00124a023") obo:IAO_0000115 obo:CHMO_0001779 "An NMR experiment used for 23Na nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001779 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001779 "2009-05-20T12:47:22Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001779 "23Na TQMAS")
@@ -22477,7 +22482,7 @@ SubClassOf(obo:CHMO_0001779 obo:CHMO_0001204)
 
 # Class: obo:CHMO_0001780 (27Al triple-quantum excitation in combination with magic angle spinning)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:3540221689") Annotation(oboInOwl:hasDbXref "https://doi.org/1021/ja00124a023") obo:IAO_0000115 obo:CHMO_0001780 "An NMR experiment used for 27Al nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:3540221689") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1021/ja00124a023") obo:IAO_0000115 obo:CHMO_0001780 "An NMR experiment used for 27Al nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001780 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001780 "2009-05-20T12:49:47Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001780 "27Al TQMAS")
@@ -22488,7 +22493,7 @@ SubClassOf(obo:CHMO_0001780 obo:CHMO_0001204)
 
 # Class: obo:CHMO_0001781 (45Sc triple-quantum excitation in combination with magic angle spinning)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:3540221689") Annotation(oboInOwl:hasDbXref "https://doi.org/1021/ja00124a023") obo:IAO_0000115 obo:CHMO_0001781 "An NMR experiment used for 45Sc nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:3540221689") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1021/ja00124a023") obo:IAO_0000115 obo:CHMO_0001781 "An NMR experiment used for 45Sc nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001781 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001781 "2009-05-20T12:50:28Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001781 "45Sc TQMAS")
@@ -29263,7 +29268,7 @@ SubClassOf(obo:CHMO_0002320 obo:CHMO_0002239)
 
 # Class: obo:CHMO_0002321 (high-pressure carbon monoxide method)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "USPatent:7204970") obo:IAO_0000115 obo:CHMO_0002321 "A synthesis method for carbon nanotubes that involves mixing high pressure (e.g. 30 atmospheres) CO that has been preheated (1000 °C) and a catalyst precursor gas (metal carbonyl or metallocene). Under these conditions the precursor decomposes forming metal particle clusters on which carbon nanotubes nucleate and grow. The carbon nanotubes are 99% single-walled carbon nanotubes with small diameters (e.g., (5,5) tubes).")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "google.patent:US7204970") obo:IAO_0000115 obo:CHMO_0002321 "A synthesis method for carbon nanotubes that involves mixing high pressure (e.g. 30 atmospheres) CO that has been preheated (1000 °C) and a catalyst precursor gas (metal carbonyl or metallocene). Under these conditions the precursor decomposes forming metal particle clusters on which carbon nanotubes nucleate and grow. The carbon nanotubes are 99% single-walled carbon nanotubes with small diameters (e.g., (5,5) tubes).")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002321 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002321 "2009-08-28T06:39:43Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002321 "HiPCO")
@@ -34509,7 +34514,7 @@ SubClassOf(obo:CHMO_0002747 ObjectSomeValuesFrom(obo:CHMO_0002748 obo:CHEBI_2337
 # Class: obo:CHMO_0002749 (retention index)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002749 "An experimental method output that consists of a number relating the adjusted retention volume or retention factor of the sample component to the adjusted retention volumes or retention factors of standards eluted before and after the peak of the sample component.")
-AnnotationAssertion(oboInOwl:hasDbXref obo:CHMO_0002749 "http://goldbook.iupac.org/R05360.html")
+AnnotationAssertion(oboInOwl:hasDbXref obo:CHMO_0002749 "goldbook:R05360")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002749 "CHMO:0002749")
 AnnotationAssertion(rdfs:label obo:CHMO_0002749 "retention index")
 SubClassOf(obo:CHMO_0002749 obo:CHMO_0000793)
@@ -35917,6 +35922,72 @@ AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'cathode' in IUPAC
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002932 "CHMO:0002932")
 AnnotationAssertion(rdfs:label obo:CHMO_0002932 "cathode")
 SubClassOf(obo:CHMO_0002932 obo:CHMO_0002344)
+
+# Class: obo:CHMO_0002933 (open circuit voltage potentiometry)
+
+AnnotationAssertion(obo:IAO_0000112 obo:CHMO_0002933 "As an electrochemical technique for measuring and characterizing batteries and E-chem cells."@en)
+AnnotationAssertion(Annotation(dcterms:source "https://doi.org/10.1016/j.jpowsour.2014.06.152") obo:IAO_0000115 obo:CHMO_0002933 "A potentiometry where the potential difference between two electrodes (typically a working and a reference electrode) is measured under open circuit conditions, ensuring that no significant current flows and the system remains in thermodynamic equilibrium. The measured characteristic is the Open Circuit Voltage (OCV) also called Open Circuit Potential (OCP)."@en)
+AnnotationAssertion(obo:IAO_0000233 obo:CHMO_0002933 <https://github.com/rsc-ontologies/rsc-cmo/issues/35>)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002933 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002933 <https://orcid.org/0000-0002-4378-6061>)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002933 <https://orcid.org/0009-0008-1636-0875>)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002933 "OCP measurement"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002933 "OCV measurement"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002933 "OCV potentiometry"@en)
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:CHMO_0002933 "OCP")
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:CHMO_0002933 "OCV")
+AnnotationAssertion(oboInOwl:id obo:CHMO_0002933 "CHMO:0002933")
+AnnotationAssertion(rdfs:label obo:CHMO_0002933 "open circuit voltage potentiometry"@en)
+SubClassOf(obo:CHMO_0002933 obo:CHMO_0000016)
+
+# Class: obo:CHMO_0002934 (open circuit voltage)
+
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1016/j.jpowsour.2014.06.152>) obo:IAO_0000115 obo:CHMO_0002934 "A measurement datum that is a specified output of an open circuit voltage potentiometry. It represents the potential difference (voltage) measured between two electrodes in a circuit where no current is allowed to flow and is typically used to determine the electromotive force (EMF) of an electrochemical cell."@en)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002934 <https://orcid.org/0000-0001-5985-7429>)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002934 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dcterms:created obo:CHMO_0002934 "2025-08-26T12:32:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:CHMO_0002934 "open circuit voltage"@de)
+EquivalentClasses(obo:CHMO_0002934 ObjectIntersectionOf(obo:IAO_0000109 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_0002933)))
+SubClassOf(obo:CHMO_0002934 obo:IAO_0000109)
+
+# Class: obo:CHMO_0002935 (galvanostatic analysis)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHMO_0002935 "An electrochemical analysis in which a constant current is applied to an electrochemical system while monitoring the resulting potential changes over time. This method is used to study charge storage, reaction kinetics, and material stability by maintaining a fixed current flow and observing the system’s electrochemical response."@en)
+AnnotationAssertion(obo:IAO_0000233 obo:CHMO_0002935 <https://github.com/rsc-ontologies/rsc-cmo/issues/37>)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002935 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002935 <https://orcid.org/0000-0002-4378-6061>)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002935 <https://orcid.org/0009-0008-1636-0875>)
+AnnotationAssertion(oboInOwl:id obo:CHMO_0002935 "CHMO:0002935")
+AnnotationAssertion(rdfs:label obo:CHMO_0002935 "galvanostatic analysis"@en)
+SubClassOf(obo:CHMO_0002935 obo:CHMO_0000003)
+
+# Class: obo:CHMO_0002936 (galvanostatic cycling with potential limitation)
+
+AnnotationAssertion(obo:IAO_0000112 obo:CHMO_0002936 "As an electrochemical technique for measuring and characterizing batteries and E-chem cells.")
+AnnotationAssertion(Annotation(dcterms:source "https://doi.org/10.1016/j.jelechem.2019.05.052") obo:IAO_0000115 obo:CHMO_0002936 "A galvanostatic analysis in which the constant current is reversed or stopped when predefined upper or lower potential limits are reached. This method is commonly used to evaluate charge storage capacity, cycling stability, and electrochemical performance of batteries, supercapacitors, and other energy storage devices.")
+AnnotationAssertion(obo:IAO_0000233 obo:CHMO_0002936 <https://github.com/rsc-ontologies/rsc-cmo/issues/38>)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002936 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002936 <https://orcid.org/0000-0002-4378-6061>)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002936 <https://orcid.org/0009-0008-1636-0875>)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002936 "GCPL")
+AnnotationAssertion(oboInOwl:id obo:CHMO_0002936 "CHMO:0002936")
+AnnotationAssertion(rdfs:label obo:CHMO_0002936 "galvanostatic cycling with potential limitation")
+SubClassOf(obo:CHMO_0002936 obo:CHMO_0002935)
+
+# Class: obo:CHMO_0002937 (potentiostatic electrochemical impedance spectroscopy)
+
+AnnotationAssertion(obo:IAO_0000112 obo:CHMO_0002937 "As an electrochemical technique for measuring and characterizing batteries and E-chem cells.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1021/acsmeasuresciau.2c00070") obo:IAO_0000115 obo:CHMO_0002937 "A potentiometry where the change in impedance of an electrochemical cell is measured while maintaining a constant applied potential and the impedance is determined over a range of frequencies by analyzing the voltage-to-current ratio and the phase shift of the AC response.")
+AnnotationAssertion(obo:IAO_0000233 obo:CHMO_0002937 <https://github.com/rsc-ontologies/rsc-cmo/issues/36>)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002937 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002937 <https://orcid.org/0000-0002-4378-6061>)
+AnnotationAssertion(dcterms:contributor obo:CHMO_0002937 <https://orcid.org/0009-0008-1636-0875>)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002937 "PEIS")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002937 "impedance spectroscopy with constant applied potential")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002937 "potentiostatic EIS")
+AnnotationAssertion(oboInOwl:id obo:CHMO_0002937 "CHMO:0002934")
+AnnotationAssertion(rdfs:label obo:CHMO_0002937 "potentiostatic electrochemical impedance spectroscopy")
+SubClassOf(obo:CHMO_0002937 obo:CHMO_0000016)
 
 # Class: obo:CHMO_0010000 (risk management planning process)
 

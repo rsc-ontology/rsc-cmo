@@ -1,13 +1,13 @@
 format-version: 1.2
-data-version: chmo/releases/2025-01-22/chmo-full.owl
-subsetdef: 3_STAR ""
+data-version: chmo/releases/2025-10-21/chmo-full.owl
+subsetdef: 3:STAR ""
 subsetdef: attribute_slim ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
-synonymtypedef: INN ""
-synonymtypedef: IUPAC_NAME ""
+synonymtypedef: http://purl.obolibrary.org/obo/chebi/INN ""
+synonymtypedef: IUPAC:NAME ""
 synonymtypedef: non-mining_synonym "Non-mining synonym" EXACT
 synonymtypedef: OMO:0003000 "abbreviation"
 synonymtypedef: OMO:0003001 "ambiguous synonym"
@@ -22,32 +22,33 @@ synonymtypedef: OMO:0003009 "legal name"
 synonymtypedef: OMO:0003010 "International Nonproprietary Name"
 synonymtypedef: OMO:0003011 "latin term"
 synonymtypedef: OMO:0003012 "acronym"
+idspace: chemrof https://w3id.org/chemrof/ 
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: foaf http://xmlns.com/foaf/0.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
+idspace: swrl http://www.w3.org/2003/11/swrl# 
+idspace: swrlb http://www.w3.org/2003/11/swrlb# 
 ontology: chmo/chmo-full
 property_value: dce:creator "Royal Society of Chemistry" xsd:string
 property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
 property_value: dcterms:description "CHMO, the chemical methods ontology, describes methods used to collect data in chemical experiments, such as mass spectrometry and electron microscopy prepare and separate material for further analysis, such as sample ionisation, chromatography, and electrophoresis synthesise materials, such as epitaxy and continuous vapour deposition It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns. It is intended to be complementary to the Ontology for Biomedical Investigations (OBI)." xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/by/4.0/
 property_value: dcterms:title "Chemical Methods Ontology" xsd:string
-property_value: owl:versionInfo "2025-01-22" xsd:string
+property_value: owl:versionInfo "2025-10-21" xsd:string
 
 [Term]
 id: BFO:0000001
 name: entity
 property_value: BFO:0000179 "entity" xsd:string
 property_value: BFO:0000180 "Entity" xsd:string
-property_value: IAO:0000111 "entity" xsd:string
 property_value: IAO:0000112 "Julius Caesar" xsd:string
 property_value: IAO:0000112 "the Second World War" xsd:string
 property_value: IAO:0000112 "Verdi’s Requiem" xsd:string
 property_value: IAO:0000112 "your body mass index" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81" xsd:string
 property_value: IAO:0000116 "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000004", comment="per discussion with Barry Smith", seeAlso="http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"}
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000600 "An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/001-001"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
@@ -59,10 +60,8 @@ is_a: BFO:0000001 ! entity
 disjoint_from: BFO:0000003 ! occurrent
 property_value: BFO:0000179 "continuant" xsd:string
 property_value: BFO:0000180 "Continuant" xsd:string
-property_value: IAO:0000111 "continuant" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240" xsd:string
 property_value: IAO:0000116 "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000007"}
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000600 "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/008-002"}
 property_value: IAO:0000601 "if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/126-001"}
 property_value: IAO:0000601 "if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/009-002"}
@@ -94,8 +93,8 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 [Term]
 id: BFO:0000004
 name: independent continuant
-def: "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything." []
 def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/017-002"}
+comment: A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000020 ! specifically dependent continuant
 disjoint_from: BFO:0000020 ! specifically dependent continuant
@@ -191,8 +190,8 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 [Term]
 id: BFO:0000015
 name: process
-def: "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t." []
 def: "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/083-003"}
+comment: An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.
 is_a: BFO:0000003 ! occurrent
 property_value: BFO:0000179 "process" xsd:string
 property_value: BFO:0000180 "Process" xsd:string
@@ -261,14 +260,12 @@ name: quality
 is_a: BFO:0000020 ! specifically dependent continuant
 property_value: BFO:0000179 "quality" xsd:string
 property_value: BFO:0000180 "Quality" xsd:string
-property_value: IAO:0000111 "quality" xsd:string
 property_value: IAO:0000112 "the ambient temperature of this portion of air" xsd:string
 property_value: IAO:0000112 "the color of a tomato" xsd:string
 property_value: IAO:0000112 "the length of the circumference of your waist" xsd:string
 property_value: IAO:0000112 "the mass of this piece of gold." xsd:string
 property_value: IAO:0000112 "the shape of your nose" xsd:string
 property_value: IAO:0000112 "the shape of your nostril" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000600 "a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/055-001"}
 property_value: IAO:0000601 "If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
 property_value: IAO:0000602 "(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/105-001"}
@@ -278,14 +275,13 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 [Term]
 id: BFO:0000020
 name: specifically dependent continuant
-def: "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." []
 def: "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/131-004"}
 def: "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/050-003"}
+comment: A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000031 ! generically dependent continuant
 property_value: BFO:0000179 "sdc" xsd:string
 property_value: BFO:0000180 "SpecificallyDependentContinuant" xsd:string
-property_value: IAO:0000111 "specifically dependent continuant" xsd:string
 property_value: IAO:0000112 "of one-sided specifically dependent continuants: the mass of this tomato" xsd:string
 property_value: IAO:0000112 "of relational dependent continuants (multiple bearers): John’s love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates." xsd:string
 property_value: IAO:0000112 "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key" xsd:string
@@ -298,7 +294,7 @@ property_value: IAO:0000112 "the role of being a doctor" xsd:string
 property_value: IAO:0000112 "the shape of this hole." xsd:string
 property_value: IAO:0000112 "the smell of this portion of mozzarella" xsd:string
 property_value: IAO:0000116 "Specifically dependent continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. We're not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc." xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000005", comment="per discussion with Barry Smith"}
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 property_value: IAO:0000602 "(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/131-004"}
 property_value: IAO:0000602 "(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/050-003"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
@@ -444,8 +440,8 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 [Term]
 id: BFO:0000031
 name: generically dependent continuant
-def: "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." []
 def: "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/074-001"}
+comment: A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.
 is_a: BFO:0000002 ! continuant
 property_value: BFO:0000179 "gdc" xsd:string
 property_value: BFO:0000180 "GenericallyDependentContinuant" xsd:string
@@ -658,13 +654,14 @@ id: CHEBI:23367
 name: molecular entity
 namespace: chebi_ontology
 def: "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity." []
-subset: 3_STAR
-synonym: "entidad molecular" RELATED [IUPAC]
-synonym: "entidades moleculares" RELATED [IUPAC]
-synonym: "entite moleculaire" RELATED [IUPAC]
-synonym: "molecular entities" RELATED [IUPAC]
-synonym: "molecular entity" EXACT IUPAC_NAME [IUPAC]
-synonym: "molekulare Entitaet" RELATED [ChEBI]
+subset: 3:STAR
+synonym: "entidad molecular" RELATED [iupac]
+synonym: "entidades moleculares" RELATED [iupac]
+synonym: "entite moleculaire" RELATED [iupac]
+synonym: "molecular entities" RELATED [iupac]
+synonym: "molecular entity" EXACT IUPAC:NAME [IUPAC]
+synonym: "molecular entity" RELATED IUPAC:NAME [iupac]
+synonym: "molekulare Entitaet" RELATED [chebi]
 is_a: BFO:0000040 ! material entity
 property_value: IAO:0000111 "molecular entity" xsd:string
 property_value: IAO:0000116 "We are assuming that every molecular entity has to be completely connected by chemical bonds. This excludes protein complexes, which are comprised of minimally two separate molecular entities. We will follow up with Chebi to ensure this is their understanding as well" xsd:string
@@ -674,12 +671,12 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
 id: CHEBI:23377
 name: copper molecular entity
 namespace: chebi_ontology
-subset: 3_STAR
-synonym: "copper compounds" RELATED [ChEBI]
-synonym: "copper molecular entities" RELATED [ChEBI]
-synonym: "copper molecular entity" EXACT [ChEBI]
+subset: 3:STAR
+synonym: "copper compounds" RELATED [chebi]
+synonym: "copper molecular entities" RELATED [chebi]
+synonym: "copper molecular entity" RELATED [chebi]
 is_a: CHEBI:23367 ! molecular entity
-relationship: has_part CHEBI:28694 ! copper atom
+relationship: BFO:0000051 CHEBI:28694 ! has part copper atom
 
 [Term]
 id: CHEBI:28262
@@ -689,83 +686,85 @@ alt_id: CHEBI:23801
 alt_id: CHEBI:42138
 alt_id: CHEBI:4612
 def: "A 2-carbon sulfoxide in which the sulfur atom has two methyl substituents." []
-subset: 3_STAR
-synonym: "(CH3)2SO" RELATED [NIST_Chemistry_WebBook]
-synonym: "(methanesulfinyl)methane" EXACT IUPAC_NAME [IUPAC]
+subset: 3:STAR
+synonym: "(CH3)2SO" RELATED [nist]
+synonym: "(methanesulfinyl)methane" EXACT IUPAC:NAME [IUPAC]
+synonym: "(methanesulfinyl)methane" RELATED IUPAC:NAME [iupac]
 synonym: "DIMETHYL SULFOXIDE" EXACT [PDBeChem]
+synonym: "DIMETHYL SULFOXIDE" RELATED [pdb-ccd]
 synonym: "Dimethyl sulfoxide" EXACT [KEGG_COMPOUND]
-synonym: "dimethyl sulfoxide" EXACT [UniProt]
-synonym: "dimethyl sulfoxide" EXACT IUPAC_NAME [IUPAC]
-synonym: "dimethyl sulfoxide" RELATED INN [ChemIDplus]
-synonym: "dimethyl sulfur oxide" RELATED [NIST_Chemistry_WebBook]
-synonym: "dimethyl sulphoxide" RELATED [ChemIDplus]
-synonym: "dimethyli sulfoxidum" RELATED INN [ChemIDplus]
-synonym: "Dimethylsulfoxid" RELATED [ChEBI]
-synonym: "dimethylsulfoxyde" RELATED INN [ChemIDplus]
-synonym: "dimetil sulfoxido" RELATED INN [ChemIDplus]
-synonym: "DMSO" RELATED [KEGG_COMPOUND]
-synonym: "dmso" RELATED [IUPAC]
-synonym: "methylsulfinylmethane" RELATED [ChemIDplus]
-synonym: "S(O)Me2" RELATED [ChEBI]
-synonym: "sulfinylbis(methane)" RELATED [ChemIDplus]
-xref: CAS:67-68-5 {source="NIST Chemistry WebBook"}
-xref: CAS:67-68-5 {source="ChemIDplus"}
-xref: CAS:67-68-5 {source="KEGG COMPOUND"}
-xref: Chemspider:659
-xref: Drug_Central:906 {source="DrugCentral"}
-xref: DrugBank:DB01093
-xref: FooDB:FDB000764
-xref: Gmelin:1556 {source="Gmelin"}
-xref: HMDB:HMDB0002151
-xref: KEGG:C11143
-xref: KEGG:D01043
-xref: KNApSAcK:C00053120
-xref: LINCS:LSM-36361
-xref: MetaCyc:DMSO
-xref: PDBeChem:DMS
-xref: PMID:10298633 {source="Europe PMC"}
-xref: PMID:11162043 {source="Europe PMC"}
-xref: PMID:11350866 {source="Europe PMC"}
-xref: PMID:11474739 {source="Europe PMC"}
-xref: PMID:12663039 {source="Europe PMC"}
-xref: PMID:15237653 {source="Europe PMC"}
-xref: PMID:15588915 {source="Europe PMC"}
-xref: PMID:15868171 {source="Europe PMC"}
-xref: PMID:16434015 {source="Europe PMC"}
-xref: PMID:16522014 {source="Europe PMC"}
-xref: PMID:19096138 {source="Europe PMC"}
-xref: PMID:19382398 {source="Europe PMC"}
-xref: PMID:19443933 {source="Europe PMC"}
-xref: PMID:20828537 {source="Europe PMC"}
-xref: PMID:21426213 {source="Europe PMC"}
-xref: PMID:22030943 {source="Europe PMC"}
-xref: PMID:22722716 {source="Europe PMC"}
-xref: PMID:22768202 {source="Europe PMC"}
-xref: PMID:22814967 {source="Europe PMC"}
-xref: PMID:23050031 {source="Europe PMC"}
-xref: PMID:23313473 {source="Europe PMC"}
-xref: PMID:28220525 {source="Europe PMC"}
-xref: PMID:29938311 {source="Europe PMC"}
-xref: PMID:31489176 {source="Europe PMC"}
-xref: PMID:3510103 {source="Europe PMC"}
-xref: PMID:3898376 {source="Europe PMC"}
-xref: PMID:3916302 {source="Europe PMC"}
-xref: PMID:4223708 {source="Europe PMC"}
-xref: PMID:4556944 {source="Europe PMC"}
-xref: PMID:4963226 {source="Europe PMC"}
-xref: PMID:6309056 {source="Europe PMC"}
-xref: PMID:6379027 {source="Europe PMC"}
-xref: Reaxys:506008 {source="Reaxys"}
-xref: UM-BBD_compID:c0236 {source="UM-BBD"}
-xref: Wikipedia:Dimethyl_sulfoxide
+synonym: "Dimethyl sulfoxide" RELATED [kegg.compound]
+synonym: "dimethyl sulfoxide" EXACT IUPAC:NAME [IUPAC]
+synonym: "dimethyl sulfoxide" RELATED IUPAC:NAME [iupac]
+synonym: "dimethyl sulfoxide" RELATED http://purl.obolibrary.org/obo/chebi/INN [chemidplus]
+synonym: "dimethyl sulfoxide" RELATED [uniprot_ft]
+synonym: "dimethyl sulfur oxide" RELATED [nist]
+synonym: "dimethyl sulphoxide" RELATED [chemidplus]
+synonym: "dimethyli sulfoxidum" RELATED http://purl.obolibrary.org/obo/chebi/INN [chemidplus]
+synonym: "Dimethylsulfoxid" RELATED [chebi]
+synonym: "dimethylsulfoxyde" RELATED http://purl.obolibrary.org/obo/chebi/INN [chemidplus]
+synonym: "dimetil sulfoxido" RELATED http://purl.obolibrary.org/obo/chebi/INN [chemidplus]
+synonym: "DMSO" RELATED [kegg.compound]
+synonym: "dmso" RELATED [iupac]
+synonym: "methylsulfinylmethane" RELATED [chemidplus]
+synonym: "S(O)Me2" RELATED [chebi]
+synonym: "sulfinylbis(methane)" RELATED [chemidplus]
+xref: cas:67-68-5 {source="cas"}
+xref: chemspider:659 {source="chemspider"}
+xref: drugbank:DB01093 {source="drugbank"}
+xref: drugcentral:906 {source="drugcentral"}
+xref: foodb.food:FDB000764 {source="foodb.food"}
+xref: gmelin:1556 {source="gmelin"}
+xref: hmdb:HMDB0002151 {source="hmdb"}
+xref: kegg.compound:C11143 {source="kegg.compound"}
+xref: kegg.drug:D01043 {source="kegg.drug"}
+xref: knapsack:C00053120 {source="knapsack"}
+xref: lincs.smallmolecule:LSM-36361 {source="lincs.smallmolecule"}
+xref: metacyc.compound:DMSO {source="metacyc.compound"}
+xref: pdb-ccd:DMS {source="pdb-ccd"}
+xref: pubmed:10298633 {source="pubmed"}
+xref: pubmed:11162043 {source="pubmed"}
+xref: pubmed:11350866 {source="pubmed"}
+xref: pubmed:11474739 {source="pubmed"}
+xref: pubmed:12663039 {source="pubmed"}
+xref: pubmed:15237653 {source="pubmed"}
+xref: pubmed:15588915 {source="pubmed"}
+xref: pubmed:15868171 {source="pubmed"}
+xref: pubmed:16434015 {source="pubmed"}
+xref: pubmed:16522014 {source="pubmed"}
+xref: pubmed:19096138 {source="pubmed"}
+xref: pubmed:19382398 {source="pubmed"}
+xref: pubmed:19443933 {source="pubmed"}
+xref: pubmed:20828537 {source="pubmed"}
+xref: pubmed:21426213 {source="pubmed"}
+xref: pubmed:22030943 {source="pubmed"}
+xref: pubmed:22722716 {source="pubmed"}
+xref: pubmed:22768202 {source="pubmed"}
+xref: pubmed:22814967 {source="pubmed"}
+xref: pubmed:23050031 {source="pubmed"}
+xref: pubmed:23313473 {source="pubmed"}
+xref: pubmed:28220525 {source="pubmed"}
+xref: pubmed:29938311 {source="pubmed"}
+xref: pubmed:31489176 {source="pubmed"}
+xref: pubmed:3510103 {source="pubmed"}
+xref: pubmed:3898376 {source="pubmed"}
+xref: pubmed:3916302 {source="pubmed"}
+xref: pubmed:4223708 {source="pubmed"}
+xref: pubmed:4556944 {source="pubmed"}
+xref: pubmed:4963226 {source="pubmed"}
+xref: pubmed:6309056 {source="pubmed"}
+xref: pubmed:6379027 {source="pubmed"}
+xref: reaxys:506008 {source="reaxys"}
+xref: umbbd.compound:c0236 {source="umbbd.compound"}
+xref: wikipedia.en:Dimethyl_sulfoxide {source="wikipedia.en"}
 is_a: CHEBI:23367 ! molecular entity
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H6OS" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchikey "IAZDPXIOMUYVGZ-UHFFFAOYSA-N" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "78.13444" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "78.01394" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "CS(C)=O" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "C2H6OS" xsd:string
+property_value: chemrof:inchi_key_string "IAZDPXIOMUYVGZ-UHFFFAOYSA-N" xsd:string
+property_value: chemrof:inchi_string "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3" xsd:string
+property_value: chemrof:mass "78.136" xsd:decimal
+property_value: chemrof:monoisotopic_mass "78.01394" xsd:decimal
+property_value: chemrof:smiles_string "CS(C)=O" xsd:string
 
 [Term]
 id: CHEBI:28694
@@ -773,30 +772,31 @@ name: copper atom
 namespace: chebi_ontology
 alt_id: CHEBI:23376
 alt_id: CHEBI:3874
-subset: 3_STAR
-synonym: "29Cu" RELATED [IUPAC]
-synonym: "cobre" RELATED [ChEBI]
-synonym: "Copper" RELATED [KEGG_COMPOUND]
-synonym: "copper" EXACT IUPAC_NAME [IUPAC]
-synonym: "copper" RELATED [ChEBI]
-synonym: "Cu" RELATED [ChEBI]
-synonym: "Cu" RELATED [IUPAC]
-synonym: "cuivre" RELATED [ChEBI]
-synonym: "cuprum" RELATED [IUPAC]
-synonym: "Kupfer" RELATED [ChEBI]
-xref: CAS:7440-50-8 {source="ChemIDplus"}
-xref: CAS:7440-50-8 {source="KEGG COMPOUND"}
-xref: Gmelin:16269 {source="Gmelin"}
-xref: KEGG:C00070
-xref: WebElements:Cu
+subset: 3:STAR
+synonym: "29Cu" RELATED [iupac]
+synonym: "cobre" RELATED [chebi]
+synonym: "Copper" EXACT [KEGG_COMPOUND]
+synonym: "Copper" RELATED [kegg.compound]
+synonym: "copper" EXACT IUPAC:NAME [IUPAC]
+synonym: "copper" RELATED IUPAC:NAME [iupac]
+synonym: "copper" RELATED [chebi]
+synonym: "Cu" RELATED [iupac]
+synonym: "Cu" RELATED [chebi]
+synonym: "cuivre" RELATED [chebi]
+synonym: "cuprum" RELATED [iupac]
+synonym: "Kupfer" RELATED [chebi]
+xref: cas:7440-50-8 {source="cas"}
+xref: gmelin:16269 {source="gmelin"}
+xref: kegg.compound:C00070 {source="kegg.compound"}
+xref: webelements:Cu {source="webelements"}
 is_a: CHEBI:33250 ! atom
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "Cu" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Cu" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchikey "RYGMFSIKBFXOCR-UHFFFAOYSA-N" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "63.54600" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "62.92960" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "[Cu]" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "Cu" xsd:string
+property_value: chemrof:inchi_key_string "RYGMFSIKBFXOCR-UHFFFAOYSA-N" xsd:string
+property_value: chemrof:inchi_string "InChI=1S/Cu" xsd:string
+property_value: chemrof:mass "63.546" xsd:decimal
+property_value: chemrof:monoisotopic_mass "62.9296" xsd:decimal
+property_value: chemrof:smiles_string "[Cu]" xsd:string
 
 [Term]
 id: CHEBI:33250
@@ -805,14 +805,15 @@ namespace: chebi_ontology
 alt_id: CHEBI:22671
 alt_id: CHEBI:23907
 def: "A chemical entity constituting the smallest component of an element having the chemical properties of the element." []
-subset: 3_STAR
-synonym: "atom" EXACT IUPAC_NAME [IUPAC]
-synonym: "atome" RELATED [IUPAC]
-synonym: "atomo" RELATED [IUPAC]
-synonym: "atoms" RELATED [ChEBI]
-synonym: "atomus" RELATED [ChEBI]
-synonym: "element" RELATED [ChEBI]
-synonym: "elements" RELATED [ChEBI]
+subset: 3:STAR
+synonym: "atom" EXACT IUPAC:NAME [IUPAC]
+synonym: "atom" RELATED IUPAC:NAME [iupac]
+synonym: "atome" RELATED [iupac]
+synonym: "atomo" RELATED [iupac]
+synonym: "atoms" RELATED [chebi]
+synonym: "atomus" RELATED [chebi]
+synonym: "element" RELATED [chebi]
+synonym: "elements" RELATED [chebi]
 is_a: BFO:0000040 ! material entity
 property_value: IAO:0000111 "atom" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
@@ -821,26 +822,25 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
 id: CHEBI:33418
 name: graphite
 namespace: chebi_ontology
-def: "An allotropic form of the element carbon consisting of layers of hexagonally arranged carbon atoms in a planar condensed ring system (graphene layers). The layers are stacked parallel to each other in a three-dimensional crystalline long-range order. There are two allotropic forms with different stacking arrangements, hexagonal and rhombohedral. The chemical bonds within the layers are covalent with sp(2) hybridization and with a C--C distance of 141.7 pm. The weak bonds between the layers are metallic with a strength comparable to van der Waals bonding only." []
-subset: 3_STAR
-synonym: "black lead" RELATED [ChemIDplus]
-synonym: "Cn" RELATED [IUPAC]
-synonym: "grafito" RELATED [IUPAC]
-synonym: "Graphit" RELATED [ChEBI]
-synonym: "graphite" EXACT IUPAC_NAME [IUPAC]
-synonym: "mineral carbon" RELATED [NIST_Chemistry_WebBook]
-synonym: "plumbago" RELATED [ChemIDplus]
-xref: CAS:12751-41-6 {source="NIST Chemistry WebBook"}
-xref: CAS:7782-42-5 {source="NIST Chemistry WebBook"}
-xref: CAS:7782-42-5 {source="ChemIDplus"}
-xref: Gmelin:22250 {source="Gmelin"}
+def: "An allotropic form of the element carbon consisting of layers of hexagonally arranged carbon atoms in a planar condensed ring system (graphene layers). The layers are stacked parallel to each other in a three-dimensional crystalline long-range order. There are two allotropic forms with different stacking arrangements, hexagonal and rhombohedral. The chemical bonds within the layers are covalent with sp<small><sup>2</small></sup> hybridization and with a C—C distance of 141.7 pm. The weak bonds between the layers are metallic with a strength comparable to van der Waals bonding only." []
+subset: 3:STAR
+synonym: "black lead" RELATED [chemidplus]
+synonym: "Cn" RELATED [iupac]
+synonym: "grafito" RELATED [iupac]
+synonym: "Graphit" RELATED [chebi]
+synonym: "graphite" EXACT IUPAC:NAME [IUPAC]
+synonym: "graphite" RELATED IUPAC:NAME [iupac]
+synonym: "mineral carbon" RELATED [nist]
+synonym: "plumbago" RELATED [chemidplus]
+xref: cas:12751-41-6 {source="cas"}
+xref: cas:7782-42-5 {source="cas"}
+xref: gmelin:22250 {source="gmelin"}
 is_a: CHEBI:23367 ! molecular entity
 is_a: CHEBI:59999 ! chemical substance
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "C" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "1056.968" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "1056.00000" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "*:c1c(:*)c2c(:*)c(:*)c3c(:*)c4c(:*)c(:*)c(:*)c5c(:*)c(:*)c6c(:*)c(c1:*)c2c3c6c45.*:c1c(:*)c2c(:*)c(:*)c3c(:*)c4c(:*)c(:*)c(:*)c5c(:*)c(:*)c6c(:*)c(c1:*)c2c3c6c45.*:c1c(:*)c2c(:*)c(:*)c3c(:*)c4c(:*)c(:*)c(:*)c5c(:*)c(:*)c6c(:*)c(c1:*)c2c3c6c45.*:c1c(:*)c2c(:*)c(:*)c3c(:*)c4c(:*)c(:*)c(:*)c5c(:*)c(:*)c6c(:*)c(c1:*)c2c3c6c45" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "C" xsd:string
+property_value: chemrof:mass "1056.968" xsd:decimal
+property_value: chemrof:monoisotopic_mass "1056.0" xsd:decimal
 
 [Term]
 id: CHEBI:33696
@@ -863,35 +863,37 @@ id: CHEBI:33819
 name: oxygen-17 atom
 namespace: chebi_ontology
 def: "The stable isotope of oxygen with relative atomic mass 16.999131. The least abundant (0.038 atom percent) isotope of naturally occurring oxygen." []
-subset: 3_STAR
-synonym: "(17)8O" RELATED [IUPAC]
-synonym: "(17)O" RELATED [IUPAC]
-synonym: "oxygen, isotope of mass 17" RELATED [ChemIDplus]
-synonym: "oxygen-17" EXACT IUPAC_NAME [IUPAC]
-synonym: "oxygen-17" RELATED [ChEBI]
-xref: CAS:13968-48-4 {source="ChemIDplus"}
-xref: Gmelin:17561 {source="Gmelin"}
+subset: 3:STAR
+synonym: "(17)8O" RELATED [iupac]
+synonym: "(17)O" RELATED [iupac]
+synonym: "oxygen, isotope of mass 17" RELATED [chemidplus]
+synonym: "oxygen-17" EXACT IUPAC:NAME [IUPAC]
+synonym: "oxygen-17" RELATED IUPAC:NAME [iupac]
+synonym: "oxygen-17" RELATED [chebi]
+xref: cas:13968-48-4 {source="cas"}
+xref: gmelin:17561 {source="gmelin"}
 is_a: CHEBI:33250 ! atom
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "[17O]" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/O/i1+1" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchikey "QVGXLLKOCUKJST-OUBTZVSYSA-N" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "16.999" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "16.99913" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "[17O]" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "[17O]" xsd:string
+property_value: chemrof:inchi_key_string "QVGXLLKOCUKJST-OUBTZVSYSA-N" xsd:string
+property_value: chemrof:inchi_string "InChI=1S/O/i1+1" xsd:string
+property_value: chemrof:mass "16.999" xsd:decimal
+property_value: chemrof:monoisotopic_mass "16.99913" xsd:decimal
+property_value: chemrof:smiles_string "[17O]" xsd:string
 
 [Term]
 id: CHEBI:33839
 name: macromolecule
 namespace: chebi_ontology
 def: "A macromolecule is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." []
-subset: 3_STAR
-synonym: "macromolecule" EXACT IUPAC_NAME [IUPAC]
-synonym: "macromolecules" RELATED [ChEBI]
-synonym: "polymer" RELATED [ChEBI]
-synonym: "polymer molecule" RELATED [IUPAC]
-synonym: "polymers" RELATED [ChEBI]
-xref: Wikipedia:Macromolecule
+subset: 3:STAR
+synonym: "macromolecule" EXACT IUPAC:NAME [IUPAC]
+synonym: "macromolecule" RELATED IUPAC:NAME [iupac]
+synonym: "macromolecules" RELATED [chebi]
+synonym: "polymer" RELATED [chebi]
+synonym: "polymer molecule" RELATED [iupac]
+synonym: "polymers" RELATED [chebi]
+xref: wikipedia.en:Macromolecule {source="wikipedia.en"}
 is_a: CHEBI:23367 ! molecular entity
 property_value: IAO:0000111 "macromolecule" xsd:string
 property_value: IAO:0000118 "polymer" xsd:string
@@ -904,115 +906,116 @@ namespace: chebi_ontology
 alt_id: CHEBI:23143
 alt_id: CHEBI:34628
 def: "A one-carbon compound that is methane in which three of the hydrogens are replaced by chlorines." []
-subset: 3_STAR
-synonym: "1,1,1-trichloromethane" RELATED [ChemIDplus]
-synonym: "CHCl3" RELATED [IUPAC]
+subset: 3:STAR
+synonym: "1,1,1-trichloromethane" RELATED [chemidplus]
+synonym: "CHCl3" RELATED [iupac]
 synonym: "Chloroform" EXACT [KEGG_COMPOUND]
-synonym: "chloroform" EXACT IUPAC_NAME [IUPAC]
-synonym: "chloroforme" RELATED [ChemIDplus]
-synonym: "chloroformium pro narcosi" RELATED [ChEBI]
-synonym: "Trichlormethan" RELATED [NIST_Chemistry_WebBook]
-synonym: "trichloromethane" RELATED [ChEBI]
-synonym: "trichloromethane" RELATED [NIST_Chemistry_WebBook]
-xref: CAS:67-66-3 {source="KEGG COMPOUND"}
-xref: CAS:67-66-3 {source="ChemIDplus"}
-xref: CAS:67-66-3 {source="NIST Chemistry WebBook"}
-xref: Drug_Central:4363 {source="DrugCentral"}
-xref: Gmelin:1837 {source="Gmelin"}
-xref: HMDB:HMDB0029596
-xref: KEGG:C13827
-xref: LINCS:LSM-37229
-xref: MetaCyc:CPD-843
-xref: PDBeChem:MCH
-xref: PMID:10379014 {source="Europe PMC"}
-xref: PMID:15583552 {source="Europe PMC"}
-xref: PMID:20051454 {source="Europe PMC"}
-xref: PMID:21850127 {source="Europe PMC"}
-xref: PMID:23093177 {source="Europe PMC"}
-xref: PMID:8476536 {source="Europe PMC"}
-xref: PMID:8625290 {source="Europe PMC"}
-xref: Reaxys:1731042 {source="Reaxys"}
-xref: UM-BBD_compID:c0595 {source="UM-BBD"}
-xref: Wikipedia:Chloroform
+synonym: "Chloroform" RELATED [kegg.compound]
+synonym: "chloroform" EXACT IUPAC:NAME [IUPAC]
+synonym: "chloroform" RELATED IUPAC:NAME [iupac]
+synonym: "chloroforme" RELATED [chemidplus]
+synonym: "chloroformium pro narcosi" RELATED [chebi]
+synonym: "Trichlormethan" RELATED [nist]
+synonym: "trichloromethane" RELATED [chebi]
+synonym: "trichloromethane" RELATED [nist]
+xref: cas:67-66-3 {source="cas"}
+xref: drugcentral:4363 {source="drugcentral"}
+xref: gmelin:1837 {source="gmelin"}
+xref: hmdb:HMDB0029596 {source="hmdb"}
+xref: kegg.compound:C13827 {source="kegg.compound"}
+xref: lincs.smallmolecule:LSM-37229 {source="lincs.smallmolecule"}
+xref: metacyc.compound:CPD-843 {source="metacyc.compound"}
+xref: pdb-ccd:MCH {source="pdb-ccd"}
+xref: pubmed:10379014 {source="pubmed"}
+xref: pubmed:15583552 {source="pubmed"}
+xref: pubmed:20051454 {source="pubmed"}
+xref: pubmed:21850127 {source="pubmed"}
+xref: pubmed:23093177 {source="pubmed"}
+xref: pubmed:8476536 {source="pubmed"}
+xref: pubmed:8625290 {source="pubmed"}
+xref: reaxys:1731042 {source="reaxys"}
+xref: umbbd.compound:c0595 {source="umbbd.compound"}
+xref: wikipedia.en:Chloroform {source="wikipedia.en"}
 is_a: CHEBI:23367 ! molecular entity
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "CHCl3" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/CHCl3/c2-1(3)4/h1H" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchikey "HEDRZPFGACZZDS-UHFFFAOYSA-N" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "119.37674" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "117.91438" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "[H]C(Cl)(Cl)Cl" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "CHCl3" xsd:string
+property_value: chemrof:inchi_key_string "HEDRZPFGACZZDS-UHFFFAOYSA-N" xsd:string
+property_value: chemrof:inchi_string "InChI=1S/CHCl3/c2-1(3)4/h1H" xsd:string
+property_value: chemrof:mass "119.378" xsd:decimal
+property_value: chemrof:monoisotopic_mass "117.91438" xsd:decimal
+property_value: chemrof:smiles_string "[H]C(Cl)(Cl)Cl" xsd:string
 
 [Term]
 id: CHEBI:36928
 name: carbon-13 atom
 namespace: chebi_ontology
-subset: 3_STAR
-synonym: "(13)6C" RELATED [IUPAC]
-synonym: "(13)C" RELATED [IUPAC]
-synonym: "carbon, isotope of mass 13" RELATED [ChemIDplus]
-synonym: "carbon-13" EXACT IUPAC_NAME [IUPAC]
-synonym: "carbon-13" RELATED [ChEBI]
-synonym: "carbon-13 atom" EXACT [ChemIDplus]
-xref: CAS:14762-74-4 {source="ChemIDplus"}
+subset: 3:STAR
+synonym: "(13)6C" RELATED [iupac]
+synonym: "(13)C" RELATED [iupac]
+synonym: "carbon, isotope of mass 13" RELATED [chemidplus]
+synonym: "carbon-13" EXACT IUPAC:NAME [IUPAC]
+synonym: "carbon-13" RELATED IUPAC:NAME [iupac]
+synonym: "carbon-13" RELATED [chebi]
+synonym: "carbon-13 atom" RELATED [chemidplus]
+xref: cas:14762-74-4 {source="cas"}
 is_a: CHEBI:33250 ! atom
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "[13C]" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C/i1+1" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchikey "OKTJSMMVPCPJKN-OUBTZVSYSA-N" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "13.003" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "13.00335" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "[13C]" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "[13C]" xsd:string
+property_value: chemrof:inchi_key_string "OKTJSMMVPCPJKN-OUBTZVSYSA-N" xsd:string
+property_value: chemrof:inchi_string "InChI=1S/C/i1+1" xsd:string
+property_value: chemrof:mass "13.003" xsd:decimal
+property_value: chemrof:monoisotopic_mass "13.00335" xsd:decimal
+property_value: chemrof:smiles_string "[13C]" xsd:string
 
 [Term]
 id: CHEBI:36940
 name: fluorine-19 atom
 namespace: chebi_ontology
-def: "The stable isotope of fluorine with relative atomic mass 18.998403 and nuclear spin (1)/2." []
-subset: 3_STAR
-synonym: "(19)9F" RELATED [IUPAC]
-synonym: "(19)F" RELATED [ChEBI]
-synonym: "fluorine-19" EXACT IUPAC_NAME [IUPAC]
-synonym: "fluorine-19" RELATED [ChEBI]
+def: "The stable isotope of fluorine with relative atomic mass 18.998403 and nuclear spin <small><sup>1</small></sup>/<small><sub>2</sub></small>." []
+subset: 3:STAR
+synonym: "(19)9F" RELATED [iupac]
+synonym: "(19)F" RELATED [chebi]
+synonym: "fluorine-19" EXACT IUPAC:NAME [IUPAC]
+synonym: "fluorine-19" RELATED IUPAC:NAME [iupac]
+synonym: "fluorine-19" RELATED [chebi]
 is_a: CHEBI:33250 ! atom
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "[19F]" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/F/i1+0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchikey "YCKRFDGAMUMZLT-IGMARMGPSA-N" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "18.998" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "18.99840" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "[19F]" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "[19F]" xsd:string
+property_value: chemrof:inchi_key_string "YCKRFDGAMUMZLT-IGMARMGPSA-N" xsd:string
+property_value: chemrof:inchi_string "InChI=1S/F/i1+0" xsd:string
+property_value: chemrof:mass "18.998" xsd:decimal
+property_value: chemrof:monoisotopic_mass "18.9984" xsd:decimal
+property_value: chemrof:smiles_string "[19F]" xsd:string
 
 [Term]
 id: CHEBI:46729
 name: vitreous silica
 namespace: chebi_ontology
-subset: 3_STAR
-synonym: "amorphous silica" RELATED [ChemIDplus]
-synonym: "fused silica" RELATED [NIST_Chemistry_WebBook]
-synonym: "silica glass" RELATED [NIST_Chemistry_WebBook]
-xref: CAS:60676-86-0 {source="ChemIDplus"}
-xref: CAS:60676-86-0 {source="NIST Chemistry WebBook"}
+subset: 3:STAR
+synonym: "amorphous silica" RELATED [chemidplus]
+synonym: "fused silica" RELATED [nist]
+synonym: "silica glass" RELATED [nist]
+xref: cas:60676-86-0 {source="cas"}
 is_a: CHEBI:23367 ! molecular entity
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "O2Si" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "60.084" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "59.96676" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "O2Si" xsd:string
+property_value: chemrof:mass "60.084" xsd:decimal
+property_value: chemrof:monoisotopic_mass "59.96676" xsd:decimal
 
 [Term]
 id: CHEBI:50594
 name: carbon nanotube
 namespace: chebi_ontology
 def: "A molecule consisting of a graphene cylinder or two or more concentric graphene cylinders." []
-subset: 3_STAR
-synonym: "carbon nanotubes" RELATED [ChEBI]
-synonym: "CNT" RELATED [ChEBI]
-synonym: "Kohlenstoffnanoroehre" RELATED [ChEBI]
-synonym: "Kohlenstoffnanoroehren" RELATED [ChEBI]
-synonym: "nanotube de carbone" RELATED [ChEBI]
-synonym: "nanotubes de carbone" RELATED [ChEBI]
-synonym: "nanotubo de carbono" RELATED [ChEBI]
-synonym: "nanotubos de carbono" RELATED [ChEBI]
+subset: 3:STAR
+synonym: "carbon nanotubes" RELATED [chebi]
+synonym: "CNT" RELATED [chebi]
+synonym: "Kohlenstoffnanoroehre" RELATED [chebi]
+synonym: "Kohlenstoffnanoroehren" RELATED [chebi]
+synonym: "nanotube de carbone" RELATED [chebi]
+synonym: "nanotubes de carbone" RELATED [chebi]
+synonym: "nanotubo de carbono" RELATED [chebi]
+synonym: "nanotubos de carbono" RELATED [chebi]
 is_a: CHEBI:50795 ! nanostructure
 
 [Term]
@@ -1020,8 +1023,8 @@ id: CHEBI:50795
 name: nanostructure
 namespace: chebi_ontology
 def: "A nanometre sized object." []
-subset: 3_STAR
-synonym: "nanoestructura" RELATED [ChEBI]
+subset: 3:STAR
+synonym: "nanoestructura" RELATED [chebi]
 is_a: CHEBI:23367 ! molecular entity
 
 [Term]
@@ -1029,12 +1032,12 @@ id: CHEBI:50803
 name: nanoparticle
 namespace: chebi_ontology
 def: "A nanosized spherical or capsule-shaped structure." []
-subset: 3_STAR
-synonym: "nanoparticles" RELATED [ChEBI]
-synonym: "nanoparticula" RELATED [ChEBI]
-synonym: "nanoparticule" RELATED [ChEBI]
-synonym: "Nanoteilchen" RELATED [ChEBI]
-synonym: "NP" RELATED [ChEBI]
+subset: 3:STAR
+synonym: "nanoparticles" RELATED [chebi]
+synonym: "nanoparticula" RELATED [chebi]
+synonym: "nanoparticule" RELATED [chebi]
+synonym: "Nanoteilchen" RELATED [chebi]
+synonym: "NP" RELATED [chebi]
 is_a: CHEBI:50795 ! nanostructure
 
 [Term]
@@ -1042,111 +1045,115 @@ id: CHEBI:50825
 name: gold nanoparticle
 namespace: chebi_ontology
 def: "A nanoparticle consisting of gold atoms." []
-subset: 3_STAR
-synonym: "AuNP" RELATED [ChEBI]
+subset: 3:STAR
+synonym: "AuNP" RELATED [chebi]
 is_a: CHEBI:50803 ! nanoparticle
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "Au" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "196.967" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "196.96657" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "Au" xsd:string
+property_value: chemrof:mass "196.967" xsd:decimal
+property_value: chemrof:monoisotopic_mass "196.96657" xsd:decimal
 
 [Term]
 id: CHEBI:52230
 name: tin-119 atom
 namespace: chebi_ontology
-def: "The stable isotope of tin with relative atomic mass 118.903311, 8.59 atom percent natural abundance and nuclear spin (1)/2." []
-subset: 3_STAR
-synonym: "(119)50Sn" RELATED [IUPAC]
-synonym: "(119)Sn" RELATED [IUPAC]
-synonym: "tin-119" EXACT IUPAC_NAME [IUPAC]
-synonym: "tin-119" RELATED [ChEBI]
+def: "The stable isotope of tin with relative atomic mass 118.903311, 8.59 atom percent natural abundance and nuclear spin <small><sup>1</small></sup>/<small><sub>2</sub></small>." []
+subset: 3:STAR
+synonym: "(119)50Sn" RELATED [iupac]
+synonym: "(119)Sn" RELATED [iupac]
+synonym: "tin-119" EXACT IUPAC:NAME [IUPAC]
+synonym: "tin-119" RELATED [chebi]
+synonym: "tin-119" RELATED IUPAC:NAME [iupac]
 is_a: CHEBI:33250 ! atom
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "[119Sn]" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Sn/i1+0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchikey "ATJFFYVFTNAWJD-IGMARMGPSA-N" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "118.903" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "118.90331" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "[119Sn]" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "[119Sn]" xsd:string
+property_value: chemrof:inchi_key_string "ATJFFYVFTNAWJD-IGMARMGPSA-N" xsd:string
+property_value: chemrof:inchi_string "InChI=1S/Sn/i1+0" xsd:string
+property_value: chemrof:mass "118.903" xsd:decimal
+property_value: chemrof:monoisotopic_mass "118.90331" xsd:decimal
+property_value: chemrof:smiles_string "[119Sn]" xsd:string
 
 [Term]
 id: CHEBI:52455
 name: lead-207
 namespace: chebi_ontology
-subset: 3_STAR
-synonym: "(207)82Pb" RELATED [IUPAC]
-synonym: "(207)Pb" RELATED [IUPAC]
-synonym: "lead-207" EXACT IUPAC_NAME [IUPAC]
+subset: 3:STAR
+synonym: "(207)82Pb" RELATED [iupac]
+synonym: "(207)Pb" RELATED [iupac]
+synonym: "lead-207" EXACT IUPAC:NAME [IUPAC]
+synonym: "lead-207" RELATED IUPAC:NAME [iupac]
 is_a: CHEBI:23367 ! molecular entity
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "[207Pb]" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Pb/i1+0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchikey "WABPQHHGFIMREM-IGMARMGPSA-N" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "206.976" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "206.97590" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "[207Pb]" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "[207Pb]" xsd:string
+property_value: chemrof:inchi_key_string "WABPQHHGFIMREM-IGMARMGPSA-N" xsd:string
+property_value: chemrof:inchi_string "InChI=1S/Pb/i1+0" xsd:string
+property_value: chemrof:mass "206.976" xsd:decimal
+property_value: chemrof:monoisotopic_mass "206.9759" xsd:decimal
+property_value: chemrof:smiles_string "[207Pb]" xsd:string
 
 [Term]
 id: CHEBI:52456
 name: vanadium-51
 namespace: chebi_ontology
 def: "The stable isotope of vanadium with relative atomic mass 50.943964, 99.8 atom percent natural abundance and nuclear spin 7/2." []
-subset: 3_STAR
-synonym: "(51)23V" RELATED [IUPAC]
-synonym: "(51)V" RELATED [IUPAC]
+subset: 3:STAR
+synonym: "(51)23V" RELATED [iupac]
+synonym: "(51)V" RELATED [iupac]
 is_a: CHEBI:23367 ! molecular entity
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "[51V]" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/V/i1+0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchikey "LEONUFNNVUYDNQ-IGMARMGPSA-N" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "50.944" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "50.94396" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "[51V]" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "[51V]" xsd:string
+property_value: chemrof:inchi_key_string "LEONUFNNVUYDNQ-IGMARMGPSA-N" xsd:string
+property_value: chemrof:inchi_string "InChI=1S/V/i1+0" xsd:string
+property_value: chemrof:mass "50.944" xsd:decimal
+property_value: chemrof:monoisotopic_mass "50.94396" xsd:decimal
+property_value: chemrof:smiles_string "[51V]" xsd:string
 
 [Term]
 id: CHEBI:52458
 name: lithium-7 atom
 namespace: chebi_ontology
 def: "The stable isotope of lithium with relative atomic mass 7.016004, 92.5 atom percent natural abundance and nuclear spin 3/2." []
-subset: 3_STAR
-synonym: "(7)3Li" RELATED [IUPAC]
-synonym: "(7)Li" RELATED [IUPAC]
-synonym: "lithium-7" EXACT IUPAC_NAME [IUPAC]
-synonym: "lithium-7" RELATED [ChEBI]
+subset: 3:STAR
+synonym: "(7)3Li" RELATED [iupac]
+synonym: "(7)Li" RELATED [iupac]
+synonym: "lithium-7" EXACT IUPAC:NAME [IUPAC]
+synonym: "lithium-7" RELATED [chebi]
+synonym: "lithium-7" RELATED IUPAC:NAME [iupac]
 is_a: CHEBI:33250 ! atom
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "[7Li]" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Li/i1+0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchikey "WHXSMMKQMYFTQS-IGMARMGPSA-N" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "7.016" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "7.01600" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "[7Li]" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "[7Li]" xsd:string
+property_value: chemrof:inchi_key_string "WHXSMMKQMYFTQS-IGMARMGPSA-N" xsd:string
+property_value: chemrof:inchi_string "InChI=1S/Li/i1+0" xsd:string
+property_value: chemrof:mass "7.016" xsd:decimal
+property_value: chemrof:monoisotopic_mass "7.016" xsd:decimal
+property_value: chemrof:smiles_string "[7Li]" xsd:string
 
 [Term]
 id: CHEBI:52462
 name: tungsten-183
 namespace: chebi_ontology
 def: "The stable isotope of niobium with relative atomic mass 182.950225, 14.3 atom percent natural abundance and nuclear spin 1/2." []
-subset: 3_STAR
-synonym: "(183)74W" RELATED [IUPAC]
-synonym: "(183)W" RELATED [IUPAC]
-synonym: "tungsten-183" EXACT IUPAC_NAME [IUPAC]
+subset: 3:STAR
+synonym: "(183)74W" RELATED [iupac]
+synonym: "(183)W" RELATED [iupac]
+synonym: "tungsten-183" EXACT IUPAC:NAME [IUPAC]
+synonym: "tungsten-183" RELATED IUPAC:NAME [iupac]
 is_a: CHEBI:33250 ! atom
-property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/formula "[183W]" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/W/i1-1" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/inchikey "WFKWXMTUELFFGS-BJUDXGSMSA-N" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "182.950" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "182.95022" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "[183W]" xsd:string
+property_value: chemrof:charge "0" xsd:integer
+property_value: chemrof:generalized_empirical_formula "[183W]" xsd:string
+property_value: chemrof:inchi_key_string "WFKWXMTUELFFGS-BJUDXGSMSA-N" xsd:string
+property_value: chemrof:inchi_string "InChI=1S/W/i1-1" xsd:string
+property_value: chemrof:mass "182.95" xsd:decimal
+property_value: chemrof:monoisotopic_mass "182.95022" xsd:decimal
+property_value: chemrof:smiles_string "[183W]" xsd:string
 
 [Term]
 id: CHEBI:59999
 name: chemical substance
 namespace: chebi_ontology
 def: "A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types." []
-subset: 3_STAR
-synonym: "Chemische Substanz" RELATED [ChEBI]
+subset: 3:STAR
+synonym: "Chemische Substanz" RELATED [chebi]
 is_a: BFO:0000040 ! material entity
 
 [Term]
@@ -1154,8 +1161,8 @@ id: CHEBI:60004
 name: mixture
 namespace: chebi_ontology
 def: "A mixture is a chemical substance composed of multiple molecules, at least two of which are of a different kind." []
-subset: 3_STAR
-synonym: "Mischung" RELATED [ChEBI]
+subset: 3:STAR
+synonym: "Mischung" RELATED [chebi]
 is_a: CHEBI:59999 ! chemical substance
 
 [Term]
@@ -1163,12 +1170,12 @@ id: CHEBI:60027
 name: polymer
 namespace: chebi_ontology
 def: "A polymer is a mixture, which is composed of macromolecules of different kinds and which may be differentiated by composition, length, degree of branching etc.." []
-subset: 3_STAR
-synonym: "Kunststoff" RELATED [ChEBI]
-synonym: "Polymer" EXACT [ChEBI]
-xref: Wikipedia:Polymer
+subset: 3:STAR
+synonym: "Kunststoff" RELATED [chebi]
+synonym: "Polymer" RELATED [chebi]
+xref: wikipedia.en:Polymer {source="wikipedia.en"}
 is_a: CHEBI:60004 ! mixture
-relationship: has_part CHEBI:33839 ! macromolecule
+relationship: BFO:0000051 CHEBI:33839 ! has part macromolecule
 
 [Term]
 id: CHMO:0000001
@@ -2308,7 +2315,7 @@ is_a: CHMO:0000112 ! scanning probe microscopy
 [Term]
 id: CHMO:0000119
 name: photon scanning tunnelling microscopy
-def: "Microscopy where the specimen is illuminated with a near-field of photons. An image of the surface is obtained by mechanically moving an optical fibre probe in a raster scan over the specimen, line by line, and detecting any photons which tunnel from the specimen to the probe as a function of position. A feedback loop is used to maintain a fixed relationship between the optical fibre probe and surface during scanning." [USPatent:5018865]
+def: "Microscopy where the specimen is illuminated with a near-field of photons. An image of the surface is obtained by mechanically moving an optical fibre probe in a raster scan over the specimen, line by line, and detecting any photons which tunnel from the specimen to the probe as a function of position. A feedback loop is used to maintain a fixed relationship between the optical fibre probe and surface during scanning." [google.patent:US5018865]
 synonym: "photon scanning tunneling microscopy" EXACT []
 synonym: "photon-scanning tunneling microscopy" EXACT []
 synonym: "photon-scanning tunnelling microscopy" EXACT []
@@ -3377,7 +3384,7 @@ name: spectroscopy
 def: "The study of the interaction of a sample with radiation or particles for measurement or detection." [https://doi.org/10.1351/goldbook.S05848]
 synonym: "spectrometry" EXACT []
 is_a: OBI:0000070 ! assay
-relationship: OBI:0000299 CHMO:0000800 ! has_specified_output spectrum
+relationship: OBI:0000299 CHMO:0000800 ! has specified output spectrum
 
 [Term]
 id: CHMO:0000229
@@ -3385,7 +3392,7 @@ name: acoustic emission spectrometry
 def: "Spectrometry where the noise generated by the movement of bubbles or particles is detected." [ISBN:3527605029]
 synonym: "acoustic emission spectroscopy" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
-relationship: OBI:0000299 CHMO:0000802 ! has_specified_output acoustic emission spectrum
+relationship: OBI:0000299 CHMO:0000802 ! has specified output acoustic emission spectrum
 
 [Term]
 id: CHMO:0000230
@@ -3394,7 +3401,7 @@ def: "Spectrometry where the alpha-particles (or 4He nuclei) spontaneously emitt
 synonym: "alpha spectroscopy" EXACT []
 synonym: "alpha-particle spectrometry" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
-relationship: OBI:0000299 CHMO:0000803 ! has_specified_output alpha-particle spectrum
+relationship: OBI:0000299 CHMO:0000803 ! has specified output alpha-particle spectrum
 
 [Term]
 id: CHMO:0000232
@@ -3402,7 +3409,7 @@ name: electronic spectroscopy
 alt_id: FIX:0000032
 def: "Any spectroscopic method which probes the electronic degrees of freedom of an atom or molecule." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0000228 ! spectroscopy
-relationship: OBI:0000299 CHMO:0000811 ! has_specified_output electronic spectrum
+relationship: OBI:0000299 CHMO:0000811 ! has specified output electronic spectrum
 
 [Term]
 id: CHMO:0000233
@@ -3411,7 +3418,7 @@ alt_id: FIX:0000054
 def: "Any spectroscopic technique which is based upon the ability of atoms to absorb or emit electromagnetic radiation. In atomic spectroscopy the sample is vaporised and then atomised." [https://orcid.org/0000-0002-0640-0422]
 synonym: "atomic spectrometry" EXACT []
 is_a: CHMO:0000232 ! electronic spectroscopy
-relationship: OBI:0000299 CHMO:0000804 ! has_specified_output atomic spectrum
+relationship: OBI:0000299 CHMO:0000804 ! has specified output atomic spectrum
 
 [Term]
 id: CHMO:0000234
@@ -3501,7 +3508,7 @@ is_a: CHMO:0000239 ! graphite furnace atomic absorption spectrometry
 [Term]
 id: CHMO:0000242
 name: quartz tube atomic absorption spectroscopy
-def: "A type of atomic absorption spectrometry where a solid sample is atomised by placing it in a small quartz tube which is rapidly heated by passing a current through it." [https://doi.org/JA9900500225]
+def: "A type of atomic absorption spectrometry where a solid sample is atomised by placing it in a small quartz tube which is rapidly heated by passing a current through it." [https://doi.org/10.1039/JA9900500225]
 synonym: "QT-AAS" EXACT []
 synonym: "QTAAS" EXACT []
 synonym: "quartz tube atomic absorption spectrometry" EXACT []
@@ -3975,7 +3982,7 @@ synonym: "spectrofluorimetry" EXACT []
 synonym: "spectrofluorometry" EXACT []
 is_a: CHMO:0000060 ! fluorescence detection
 is_a: CHMO:0002415 ! luminescence spectroscopy
-relationship: OBI:0000299 CHMO:0000815 ! has_specified_output fluorescence spectrum
+relationship: OBI:0000299 CHMO:0000815 ! has specified output fluorescence spectrum
 
 [Term]
 id: CHMO:0000288
@@ -4396,7 +4403,7 @@ is_a: CHMO:0000307 ! X-ray emission spectroscopy
 [Term]
 id: CHMO:0000317
 name: ultra soft X-ray emission spectroscopy
-def: "X-ray spectroscopy where the sample is bombarded with ultra-low energy (<1 keV) X-rays and the energies and intensities of the X-rays emitted due to valence-to-core transitions are detected." [10.1051/jphyscol:19879119]
+def: "X-ray spectroscopy where the sample is bombarded with ultra-low energy (<1 keV) X-rays and the energies and intensities of the X-rays emitted due to valence-to-core transitions are detected." [https://doi.org/10.1051/jphyscol\:19879119]
 synonym: "ultra soft X-ray emission spectrometry" EXACT []
 synonym: "ultra soft X-ray fluorescence spectrometry" EXACT []
 synonym: "ultra soft X-ray fluorescence spectroscopy" EXACT []
@@ -4443,7 +4450,7 @@ synonym: "beta spectrometry" EXACT []
 synonym: "beta spectroscopy" EXACT []
 synonym: "beta-particle spectrometry" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
-relationship: OBI:0000299 CHMO:0000805 ! has_specified_output beta-particle spectrum
+relationship: OBI:0000299 CHMO:0000805 ! has specified output beta-particle spectrum
 
 [Term]
 id: CHMO:0000322
@@ -4460,7 +4467,7 @@ synonym: "CD spectroscopy" EXACT []
 synonym: "circular dichrosim spectrometry" EXACT []
 synonym: "direct transmittance circular dichroism" EXACT []
 is_a: CHMO:0000775 ! dichroism spectroscopy
-relationship: OBI:0000299 CHMO:0000808 ! has_specified_output circular dichroism spectrum
+relationship: OBI:0000299 CHMO:0000808 ! has specified output circular dichroism spectrum
 
 [Term]
 id: CHMO:0000324
@@ -4896,7 +4903,7 @@ is_a: CHMO:0000362 ! metastable-quenched electron spectroscopy
 [Term]
 id: CHMO:0000365
 name: photoion-photoelectron coincidence spectroscopy
-def: "Spectroscopy where the sample is bombarded with high-energy photons resulting in the emission of a photoelectron and its corresponding ion which are detected as a function of energy." [https://doi.org/a909621c]
+def: "Spectroscopy where the sample is bombarded with high-energy photons resulting in the emission of a photoelectron and its corresponding ion which are detected as a function of energy." [https://doi.org/10.1039/A909621C]
 synonym: "photoion photoelectron coincidence spectrometry" EXACT []
 synonym: "photoion photoelectron coincidence spectroscopy" EXACT []
 synonym: "photoion-photoelectron coincidence spectrometry" EXACT []
@@ -4921,7 +4928,7 @@ synonym: "REELS" EXACT []
 synonym: "reflection electron energy loss spectrometry" EXACT []
 synonym: "reflection electron energy loss spectroscopy" EXACT []
 is_a: CHMO:0000331 ! electron spectroscopy
-relationship: OBI:0000299 CHMO:0000810 ! has_specified_output electron energy-loss spectrum
+relationship: OBI:0000299 CHMO:0000810 ! has specified output electron energy-loss spectrum
 
 [Term]
 id: CHMO:0000367
@@ -5464,7 +5471,7 @@ synonym: "gamma-ray spectrometry" EXACT []
 synonym: "gamma-ray spectroscopy" EXACT []
 xref: FIX:0000049
 is_a: CHMO:0000228 ! spectroscopy
-relationship: OBI:0000299 CHMO:0000816 ! has_specified_output gamma-ray spectrum
+relationship: OBI:0000299 CHMO:0000816 ! has specified output gamma-ray spectrum
 
 [Term]
 id: CHMO:0000415
@@ -6046,7 +6053,7 @@ def: "Spectrometry where the sample is converted into gaseous ions which are cha
 synonym: "mass spectroscopy" EXACT []
 synonym: "MS" EXACT []
 is_a: CHMO:0000228 ! spectroscopy
-relationship: OBI:0000299 CHMO:0000806 ! has_specified_output mass spectrum
+relationship: OBI:0000299 CHMO:0000806 ! has specified output mass spectrum
 
 [Term]
 id: CHMO:0000471
@@ -6074,7 +6081,7 @@ synonym: "low pressure chemical ionization mass spectroscopy" EXACT []
 synonym: "LP-CI-MS" EXACT []
 synonym: "LPCI-MS" EXACT []
 is_a: CHMO:0000470 ! mass spectrometry
-relationship: OBI:0000299 CHMO:0000807 ! has_specified_output chemical ionisation mass spectrum
+relationship: OBI:0000299 CHMO:0000807 ! has specified output chemical ionisation mass spectrum
 
 [Term]
 id: CHMO:0000473
@@ -6194,7 +6201,7 @@ is_a: CHMO:0000470 ! mass spectrometry
 intersection_of: CHMO:0000470 ! mass spectrometry
 intersection_of: BFO:0000118 MS:1000073 ! has proper occurrent part electrospray ionization
 relationship: BFO:0000118 MS:1000073 ! has proper occurrent part electrospray ionization
-relationship: OBI:0000299 CHMO:0000812 ! has_specified_output electrospray ionisation mass spectrum
+relationship: OBI:0000299 CHMO:0000812 ! has specified output electrospray ionisation mass spectrum
 
 [Term]
 id: CHMO:0000483
@@ -9481,7 +9488,7 @@ is_a: CHMO:0000288 ! fluorescence correlation spectroscopy
 [Term]
 id: CHMO:0000766
 name: supercritical angle fluorescence correlation spectroscopy
-def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample emitted at supercritical angles are measured and correlated within a very small detection volume. Ultra-violet light is used to stimulate fluorescence." [rsc:b718132a]
+def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample emitted at supercritical angles are measured and correlated within a very small detection volume. Ultra-violet light is used to stimulate fluorescence." [https://doi.org/10.1039/B718132A]
 synonym: "SA-FCS" EXACT []
 synonym: "supercritical angle FCS" EXACT []
 is_a: CHMO:0000288 ! fluorescence correlation spectroscopy
@@ -9489,7 +9496,7 @@ is_a: CHMO:0000288 ! fluorescence correlation spectroscopy
 [Term]
 id: CHMO:0000767
 name: image correlation spectroscopy
-def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured at several different points in parallel and correlated within very small detection volumes. Ultra-violet light is used to stimulate fluorescence." [https://doi.org/10.1039/b718132a]
+def: "Spectroscopy where the spontaneous fluorescence intensity fluctuations of a sample are measured at several different points in parallel and correlated within very small detection volumes. Ultra-violet light is used to stimulate fluorescence." [https://doi.org/10.1039/B718132A]
 synonym: "ICS" EXACT []
 is_a: CHMO:0000288 ! fluorescence correlation spectroscopy
 
@@ -9617,7 +9624,7 @@ alt_id: FIX:0000230
 def: "The measurement of the extent to which a sample interacts with polarized electromagnetic radiation by transmission, reflection, refraction, or diffraction." [https://orcid.org/0000-0002-0640-0422]
 synonym: "optical rotation measurement" EXACT []
 is_a: CHMO:0000208 ! reflection method
-relationship: OBI:0000299 CHMO:0002897 ! has_specified_output polarimeter
+relationship: OBI:0000299 CHMO:0002897 ! has specified output polarimeter
 
 [Term]
 id: CHMO:0000780
@@ -9761,8 +9768,8 @@ def: "An information content entity that is output by an assay." [https://orcid.
 synonym: "experimental data" EXACT []
 is_a: IAO:0000027 ! data item
 intersection_of: IAO:0000027 ! data item
-intersection_of: OBI:0000312 OBI:0000070 ! is_specified_output_of assay
-relationship: OBI:0000312 OBI:0000070 ! is_specified_output_of assay
+intersection_of: OBI:0000312 OBI:0000070 ! is specified output of assay
+relationship: OBI:0000312 OBI:0000070 ! is specified output of assay
 
 [Term]
 id: CHMO:0000794
@@ -9829,7 +9836,7 @@ def: "A plot of a measured quantity against some experimental parameter." [https
 synonym: "spectra" EXACT []
 synonym: "spectrum plot" EXACT []
 is_a: CHMO:0000793 ! assay output
-relationship: OBI:0000312 CHMO:0000228 ! is_specified_output_of spectroscopy
+relationship: OBI:0000312 CHMO:0000228 ! is specified output of spectroscopy
 
 [Term]
 id: CHMO:0000801
@@ -9846,7 +9853,7 @@ name: acoustic emission spectrum
 def: "A plot of decibels  vs. frequency obtained by measuring the amount of noise generated by a sample as a function of frequency of incident radiation." [https://doi.org/10.1021/ja067960r]
 synonym: "acoustic emission spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000229 ! is_specified_output_of acoustic emission spectrometry
+relationship: OBI:0000312 CHMO:0000229 ! is specified output of acoustic emission spectrometry
 
 [Term]
 id: CHMO:0000803
@@ -9858,7 +9865,7 @@ synonym: "alpha-particle spectra" EXACT []
 synonym: "α-particle spectra" EXACT []
 synonym: "α-particle spectrum" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000230 ! is_specified_output_of alpha-particle spectroscopy
+relationship: OBI:0000312 CHMO:0000230 ! is specified output of alpha-particle spectroscopy
 
 [Term]
 id: CHMO:0000804
@@ -9866,7 +9873,7 @@ name: atomic spectrum
 def: "A plot of absorption or emission radiation vs. frequency that reflects the internal degrees of freedom of an atom, obtained in an experiment where the sample is vaporised and then atomised." [https://orcid.org/0000-0001-5985-7429]
 synonym: "atomic spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000223 ! is_specified_output_of ellipsometry
+relationship: OBI:0000312 CHMO:0000223 ! is specified output of ellipsometry
 
 [Term]
 id: CHMO:0000805
@@ -9876,7 +9883,7 @@ synonym: "beta particle spectra" EXACT []
 synonym: "beta particle spectrum" EXACT []
 synonym: "beta-particle spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000321 ! is_specified_output_of beta-particle spectroscopy
+relationship: OBI:0000312 CHMO:0000321 ! is specified output of beta-particle spectroscopy
 
 [Term]
 id: CHMO:0000806
@@ -9884,7 +9891,7 @@ name: mass spectrum
 def: "A plot of relative abundance (%) vs. mass-to-charge ratio obtained from a mass spectrometry experiment." [https://orcid.org/0000-0001-5985-7429]
 synonym: "mass spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000470 ! is_specified_output_of mass spectrometry
+relationship: OBI:0000312 CHMO:0000470 ! is specified output of mass spectrometry
 
 [Term]
 id: CHMO:0000807
@@ -9894,7 +9901,7 @@ synonym: "chemical ionisation mass spectra" EXACT []
 synonym: "chemical ionization mass spectra" EXACT []
 synonym: "chemical ionization mass spectrum" EXACT []
 is_a: CHMO:0000806 ! mass spectrum
-relationship: OBI:0000312 CHMO:0000472 ! is_specified_output_of chemical ionisation mass spectrometry
+relationship: OBI:0000312 CHMO:0000472 ! is specified output of chemical ionisation mass spectrometry
 
 [Term]
 id: CHMO:0000808
@@ -9907,7 +9914,7 @@ synonym: "circular dichroic spectrum" EXACT []
 synonym: "circular dichroism (CD) spectra" EXACT []
 synonym: "circular dichroism spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000323 ! is_specified_output_of circular dichroism spectroscopy
+relationship: OBI:0000312 CHMO:0000323 ! is specified output of circular dichroism spectroscopy
 
 [Term]
 id: CHMO:0000809
@@ -9930,7 +9937,7 @@ synonym: "electron energy loss spectroscopy (EELS) spectra" EXACT []
 synonym: "electron energy loss spectroscopy (EELS) spectrum" EXACT []
 synonym: "electron energy-loss spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000366 ! is_specified_output_of electron energy loss spectroscopy
+relationship: OBI:0000312 CHMO:0000366 ! is specified output of electron energy loss spectroscopy
 
 [Term]
 id: CHMO:0000811
@@ -9938,7 +9945,7 @@ name: electronic spectrum
 def: "A spectrum that reflects the electronic degrees of freedom of an atom or molecule." [https://orcid.org/0000-0001-5985-7429]
 synonym: "electronic spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000232 ! is_specified_output_of electronic spectroscopy
+relationship: OBI:0000312 CHMO:0000232 ! is specified output of electronic spectroscopy
 
 [Term]
 id: CHMO:0000812
@@ -9952,7 +9959,7 @@ synonym: "ESI mass spectrum" EXACT []
 synonym: "ESI-MS spectra" EXACT []
 synonym: "ESI-MS spectrum" EXACT []
 is_a: CHMO:0000806 ! mass spectrum
-relationship: OBI:0000312 CHMO:0000482 ! is_specified_output_of electrospray ionisation mass spectrometry
+relationship: OBI:0000312 CHMO:0000482 ! is specified output of electrospray ionisation mass spectrometry
 
 [Term]
 id: CHMO:0000813
@@ -9976,7 +9983,7 @@ synonym: "fluorescence emission spectra" EXACT []
 synonym: "fluorescence emission spectrum" EXACT []
 synonym: "fluorescence spectra" EXACT []
 is_a: CHMO:0000865 ! photoluminescence spectrum
-relationship: OBI:0000312 CHMO:0000287 ! is_specified_output_of fluorescence spectroscopy
+relationship: OBI:0000312 CHMO:0000287 ! is specified output of fluorescence spectroscopy
 
 [Term]
 id: CHMO:0000816
@@ -9988,7 +9995,7 @@ synonym: "gamma-ray spectra" EXACT []
 synonym: "γ-ray spectra" EXACT []
 synonym: "γ-ray spectrum" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0000414 ! is_specified_output_of gamma-ray spectroscopy
+relationship: OBI:0000312 CHMO:0000414 ! is specified output of gamma-ray spectroscopy
 
 [Term]
 id: CHMO:0000817
@@ -12389,7 +12396,7 @@ is_a: CHMO:0001074 ! time-lapse microscopy
 [Term]
 id: CHMO:0001085
 name: fluorescence-activated cell sorting
-def: "A method for separating microscopic particles suspended in a stream of fluid. The particles are forced individually through a vibrating nozzle, then exposed to a laser beam and the resulting fluorescence and scattered light is detected. Finally the cells are sorted by applying an electrical charge to droplets of the fluid and deflecting it to the left or right using charged electrodes." [rsc:10.1039/b902504a]
+def: "A method for separating microscopic particles suspended in a stream of fluid. The particles are forced individually through a vibrating nozzle, then exposed to a laser beam and the resulting fluorescence and scattered light is detected. Finally the cells are sorted by applying an electrical charge to droplets of the fluid and deflecting it to the left or right using charged electrodes." [doi:10.1039/b902504a]
 synonym: "FACS" EXACT []
 synonym: "fluorescence activated cell sorting" EXACT []
 is_a: CHMO:0000061 ! flow cytometry
@@ -13853,7 +13860,7 @@ creation_date: 2009-03-25T01:22:48Z
 [Term]
 id: CHMO:0001230
 name: chelatometric titration
-def: "The process of determining the quantity of a sample (metal cation) by adding measured increments of a titrant (a chelating agent) until the end-point, at which essentially all of the sample has reacted, is reached." [USPatent:3878059]
+def: "The process of determining the quantity of a sample (metal cation) by adding measured increments of a titrant (a chelating agent) until the end-point, at which essentially all of the sample has reacted, is reached." [google.patent:US3878059]
 is_a: CHMO:0001211 ! titration
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-03-25T01:25:08Z
@@ -15458,7 +15465,7 @@ is_a: CHMO:0001310 ! sample deposition
 [Term]
 id: CHMO:0001375
 name: supercritical spray deposition
-def: "A synthesis method where a solid material is dissolved in a supercritical fluid (at elevated pressure) which is forced through a small orifice into a region of relatively low pressure. This produces a molecular spray which is directed against a substrate where it deposits as a thin film." [USPatent:4582731]
+def: "A synthesis method where a solid material is dissolved in a supercritical fluid (at elevated pressure) which is forced through a small orifice into a region of relatively low pressure. This produces a molecular spray which is directed against a substrate where it deposits as a thin film." [google.patent:US4582731]
 synonym: "supercritical fluid molecular spray film deposition" EXACT []
 is_a: CHMO:0001310 ! sample deposition
 
@@ -16530,7 +16537,7 @@ is_a: CHMO:0001502 ! pyrolysis
 [Term]
 id: CHMO:0001517
 name: steam pyrolysis
-def: "The chemical degradation of a sample caused by heating it, as a vapour, with steam." [USPatent:5780518]
+def: "The chemical degradation of a sample caused by heating it, as a vapour, with steam." [google.patent:US5780518]
 is_a: CHMO:0001502 ! pyrolysis
 
 [Term]
@@ -17215,7 +17222,7 @@ is_a: CHMO:0001600 ! liquid–liquid extraction
 [Term]
 id: CHMO:0001605
 name: microporous membrane liquid–liquid extraction
-def: "The transfer of a solute from one phase (the 'donor' or 'feed' phase) to another (organic) phase (the 'acceptor' or 'strip' phase) across a porous hydrophobic membrane the pores of which are filled with the same acceptor phase." [ISBN: 0824705092]
+def: "The transfer of a solute from one phase (the 'donor' or 'feed' phase) to another (organic) phase (the 'acceptor' or 'strip' phase) across a porous hydrophobic membrane the pores of which are filled with the same acceptor phase." [ISBN:0824705092]
 synonym: "microporous membrane liquid-liquid extraction" EXACT []
 synonym: "microporous membrane solvent extraction" EXACT []
 synonym: "MMLLE" EXACT []
@@ -18704,7 +18711,7 @@ creation_date: 2009-05-20T11:55:32Z
 [Term]
 id: CHMO:0001779
 name: 23Na triple-quantum excitation in combination with magic angle spinning
-def: "An NMR experiment used for 23Na nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse." [https://doi.org/1021/ja00124a023, ISBN:3540221689]
+def: "An NMR experiment used for 23Na nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse." [https://doi.org/10.1021/ja00124a023, ISBN:3540221689]
 synonym: "23Na TQMAS" EXACT []
 synonym: "23Na TQMAS-NMR" EXACT []
 is_a: CHMO:0001204 ! triple-quantum excitation in combination with magic angle spinning
@@ -18714,7 +18721,7 @@ creation_date: 2009-05-20T12:47:22Z
 [Term]
 id: CHMO:0001780
 name: 27Al triple-quantum excitation in combination with magic angle spinning
-def: "An NMR experiment used for 27Al nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse." [https://doi.org/1021/ja00124a023, ISBN:3540221689]
+def: "An NMR experiment used for 27Al nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse." [https://doi.org/10.1021/ja00124a023, ISBN:3540221689]
 synonym: "27Al TQMAS" EXACT []
 synonym: "27Al TQMAS-NMR" EXACT []
 is_a: CHMO:0001204 ! triple-quantum excitation in combination with magic angle spinning
@@ -18724,7 +18731,7 @@ creation_date: 2009-05-20T12:49:47Z
 [Term]
 id: CHMO:0001781
 name: 45Sc triple-quantum excitation in combination with magic angle spinning
-def: "An NMR experiment used for 45Sc nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse." [https://doi.org/1021/ja00124a023, ISBN:3540221689]
+def: "An NMR experiment used for 45Sc nuclei, involving transitions between non-consecutive energy levels during the excitation of the spin system by the first rf pulse." [https://doi.org/10.1021/ja00124a023, ISBN:3540221689]
 synonym: "45Sc TQMAS" EXACT []
 synonym: "45Sc TQMAS-NMR" EXACT []
 is_a: CHMO:0001204 ! triple-quantum excitation in combination with magic angle spinning
@@ -20047,7 +20054,7 @@ id: CHMO:0001891
 name: chemical map
 def: "A data set derived from microspectroscopy consisting of a three-dimensional image where two axes describe the x and y spatial dimensions and the third dimension represents spectral wavelength. The image is obtained by stacking one image per spectral wavelength sequentially." [http://www.spectroscopyeurope.com/NIR_14_3.pdf]
 is_a: CHMO:0000793 ! assay output
-relationship: OBI:0000312 CHMO:0000581 ! is_specified_output_of microspectroscopy
+relationship: OBI:0000312 CHMO:0000581 ! is specified output of microspectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-01T10:34:07Z
 
@@ -20062,7 +20069,7 @@ synonym: "FTIR map" EXACT []
 synonym: "FTIR microspectroscopic image" EXACT []
 synonym: "FTIR spectral map" EXACT []
 is_a: CHMO:0001893 ! infrared map
-relationship: OBI:0000312 CHMO:0000051 ! is_specified_output_of Fourier transform infrared microscopy
+relationship: OBI:0000312 CHMO:0000051 ! is specified output of Fourier transform infrared microscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-01T10:41:13Z
 
@@ -20079,7 +20086,7 @@ synonym: "IR map" EXACT []
 synonym: "IR microspectroscopic image" EXACT []
 synonym: "IR spectral map" EXACT []
 is_a: CHMO:0001891 ! chemical map
-relationship: OBI:0000312 CHMO:0000050 ! is_specified_output_of infrared microscopy
+relationship: OBI:0000312 CHMO:0000050 ! is specified output of infrared microscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-01T10:47:29Z
 
@@ -21393,7 +21400,7 @@ def: "A plot of relative pressure vs. volume adsorbed obtained by measuring the 
 synonym: "adsorption-desorption isotherm" EXACT []
 synonym: "adsorption/desorption isotherm" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0001167 ! is_specified_output_of sorption-desorption measurement
+relationship: OBI:0000312 CHMO:0001167 ! is specified output of sorption-desorption measurement
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-18T02:10:30Z
 
@@ -21408,7 +21415,7 @@ synonym: "N2 adsorption/desorption isotherm" EXACT []
 synonym: "nitrogen adsorption-desorption isotherm" EXACT []
 synonym: "nitrogen adsorption-desorption isotherms" EXACT []
 is_a: CHMO:0001992 ! adsorption-desorption isotherm
-relationship: OBI:0000312 CHMO:0002583 ! is_specified_output_of nitrogen sorption-desorption measurements
+relationship: OBI:0000312 CHMO:0002583 ! is specified output of nitrogen sorption-desorption measurements
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-18T02:14:05Z
 
@@ -23618,7 +23625,7 @@ synonym: "MALDI spectrum" EXACT []
 synonym: "matrix assisted laser desorption-ionisation mass spectra" EXACT []
 synonym: "matrix assisted laser desorption-ionisation mass spectrum" EXACT []
 is_a: CHMO:0001289 ! laser desorption–ionisation mass spectrum
-relationship: OBI:0000312 CHMO:0000519 ! is_specified_output_of matrix-assisted laser desorption-ionisation mass spectrometry
+relationship: OBI:0000312 CHMO:0000519 ! is specified output of matrix-assisted laser desorption-ionisation mass spectrometry
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-23T03:39:09Z
 
@@ -23893,7 +23900,7 @@ synonym: "EDX spectra" EXACT []
 synonym: "EDX spectrum" EXACT []
 is_a: CHMO:0000830 ! X-ray spectrum
 relationship: BFO:0000057 CHMO:0001809 ! has participant energy dispersive X-ray spectrometer
-relationship: OBI:0000312 CHMO:0000309 ! is_specified_output_of energy-dispersive X-ray emission spectroscopy
+relationship: OBI:0000312 CHMO:0000309 ! is specified output of energy-dispersive X-ray emission spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-28T05:21:13Z
 
@@ -24013,8 +24020,8 @@ name: carbon nanotube synthesis method
 def: "Any method used to synthesise carbon nanotubes." [https://orcid.org/0000-0002-0640-0422]
 is_a: CHMO:0002838 ! nanostructure synthesis
 intersection_of: OBI:0000094 ! material processing
-intersection_of: OBI:0000299 CHEBI:50594 ! has_specified_output carbon nanotube
-relationship: OBI:0000299 CHEBI:50594 ! has_specified_output carbon nanotube
+intersection_of: OBI:0000299 CHEBI:50594 ! has specified output carbon nanotube
+relationship: OBI:0000299 CHEBI:50594 ! has specified output carbon nanotube
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-08-04T05:09:48Z
 
@@ -24916,7 +24923,7 @@ creation_date: 2009-08-28T06:38:27Z
 [Term]
 id: CHMO:0002321
 name: high-pressure carbon monoxide method
-def: "A synthesis method for carbon nanotubes that involves mixing high pressure (e.g. 30 atmospheres) CO that has been preheated (1000 °C) and a catalyst precursor gas (metal carbonyl or metallocene). Under these conditions the precursor decomposes forming metal particle clusters on which carbon nanotubes nucleate and grow. The carbon nanotubes are 99% single-walled carbon nanotubes with small diameters (e.g., (5,5) tubes)." [USPatent:7204970]
+def: "A synthesis method for carbon nanotubes that involves mixing high pressure (e.g. 30 atmospheres) CO that has been preheated (1000 °C) and a catalyst precursor gas (metal carbonyl or metallocene). Under these conditions the precursor decomposes forming metal particle clusters on which carbon nanotubes nucleate and grow. The carbon nanotubes are 99% single-walled carbon nanotubes with small diameters (e.g., (5,5) tubes)." [google.patent:US7204970]
 synonym: "high-pressure CO conversion" EXACT []
 synonym: "HiPCO" EXACT []
 synonym: "HiPco" EXACT []
@@ -26234,7 +26241,7 @@ synonym: "183W NMR spectrum" EXACT []
 synonym: "tungsten-183 NMR spectra" EXACT []
 synonym: "tungsten-183 NMR spectrum" EXACT []
 is_a: CHMO:0000835 ! nuclear magnetic resonance spectrum
-relationship: OBI:0000312 CHMO:0001252 ! is_specified_output_of 183W nuclear magnetic resonance spectroscopy
+relationship: OBI:0000312 CHMO:0001252 ! is specified output of 183W nuclear magnetic resonance spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-23T02:29:08Z
 
@@ -27452,8 +27459,8 @@ name: polymer preparation method
 def: "Any experimental method used to prepare polymer samples." [https://orcid.org/0000-0002-0640-0422]
 is_a: OBI:0000094 ! material processing
 intersection_of: OBI:0000094 ! material processing
-intersection_of: OBI:0000299 CHEBI:60027 ! has_specified_output polymer
-relationship: OBI:0000299 CHEBI:60027 ! has_specified_output polymer
+intersection_of: OBI:0000299 CHEBI:60027 ! has specified output polymer
+relationship: OBI:0000299 CHEBI:60027 ! has specified output polymer
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-10-23T02:18:04Z
 
@@ -28093,8 +28100,8 @@ def: "The conversion of an organic material in an inert atmosphere at temperatur
 synonym: "graphitization" EXACT []
 is_a: OBI:0000094 ! material processing
 intersection_of: OBI:0000094 ! material processing
-intersection_of: OBI:0000299 CHEBI:33418 ! has_specified_output graphite
-relationship: OBI:0000299 CHEBI:33418 ! has_specified_output graphite
+intersection_of: OBI:0000299 CHEBI:33418 ! has specified output graphite
+relationship: OBI:0000299 CHEBI:33418 ! has specified output graphite
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-11-19T02:07:20Z
 
@@ -28339,7 +28346,7 @@ def: "A method for synthesising gold nanoparticles from HAuCl4 in non-aqueous so
 synonym: "Brust nanoparticle synthesis" EXACT []
 synonym: "Brust synthesis" EXACT []
 is_a: CHMO:0002837 ! nanoparticle synthesis
-relationship: OBI:0000299 CHEBI:50825 ! has_specified_output gold nanoparticle
+relationship: OBI:0000299 CHEBI:50825 ! has specified output gold nanoparticle
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-12-01T04:48:20Z
 
@@ -28856,7 +28863,7 @@ synonym: "temperature programmed desorption" EXACT []
 synonym: "temperature-programmed desorption" EXACT []
 synonym: "TPD" EXACT []
 is_a: CHMO:0002672 ! desorption measurements
-relationship: OBI:0000299 CHMO:0002674 ! has_specified_output thermal desorption spectrum
+relationship: OBI:0000299 CHMO:0002674 ! has specified output thermal desorption spectrum
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2010-01-13T10:27:27Z
 
@@ -29715,9 +29722,9 @@ relationship: CHMO:0002748 CHEBI:23377 ! has analyte copper molecular entity
 id: CHMO:0002749
 name: retention index
 def: "An experimental method output that consists of a number relating the adjusted retention volume or retention factor of the sample component to the adjusted retention volumes or retention factors of standards eluted before and after the peak of the sample component." [https://orcid.org/0000-0001-5985-7429]
-xref: http://goldbook.iupac.org/R05360.html
+xref: goldbook:R05360
 is_a: CHMO:0000793 ! assay output
-relationship: OBI:0000312 CHMO:0001001 ! is_specified_output_of column chromatography
+relationship: OBI:0000312 CHMO:0001001 ! is specified output of column chromatography
 
 [Term]
 id: CHMO:0002750
@@ -29825,14 +29832,14 @@ id: CHMO:0002764
 name: APCI+ MS spectrum
 def: "A mass spectrum obtained from positive mode atmospheric pressure chemical ionization mass spectrometry." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0000807 ! chemical ionisation mass spectrum
-relationship: OBI:0000312 CHMO:0002763 ! is_specified_output_of positive mode atmospheric pressure chemical ionization mass spectrometry
+relationship: OBI:0000312 CHMO:0002763 ! is specified output of positive mode atmospheric pressure chemical ionization mass spectrometry
 
 [Term]
 id: CHMO:0002765
 name: APCI- MS spectrum
 def: "A mass spectrum obtained from negative mode atmospheric pressure chemical ionization mass spectrometry." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0000807 ! chemical ionisation mass spectrum
-relationship: OBI:0000312 CHMO:0002762 ! is_specified_output_of negative mode atmospheric pressure chemical ionization mass spectrometry
+relationship: OBI:0000312 CHMO:0002762 ! is specified output of negative mode atmospheric pressure chemical ionization mass spectrometry
 
 [Term]
 id: CHMO:0002766
@@ -29840,7 +29847,7 @@ name: heteronuclear correlation spectrum
 def: "A spectrum obtained from a heteronuclear correlation experiment." [https://orcid.org/0000-0001-5985-7429]
 synonym: "HETCOR spectrum" EXACT []
 is_a: CHMO:0000835 ! nuclear magnetic resonance spectrum
-relationship: OBI:0000312 CHMO:0000600 ! is_specified_output_of heteronuclear correlation spectroscopy
+relationship: OBI:0000312 CHMO:0000600 ! is specified output of heteronuclear correlation spectroscopy
 
 [Term]
 id: CHMO:0002767
@@ -30163,8 +30170,8 @@ name: measurement of concentration
 def: "A measurement method that determines the concentration of a constituent in some solution." [https://orcid.org/0000-0001-5985-7429]
 is_a: OBI:0000443 ! analyte assay
 intersection_of: OBI:0000443 ! analyte assay
-intersection_of: OBI:0000299 CHMO:0002820 ! has_specified_output concentration
-relationship: OBI:0000299 CHMO:0002820 ! has_specified_output concentration
+intersection_of: OBI:0000299 CHMO:0002820 ! has specified output concentration
+relationship: OBI:0000299 CHMO:0002820 ! has specified output concentration
 
 [Term]
 id: CHMO:0002815
@@ -30178,7 +30185,7 @@ id: CHMO:0002816
 name: measurement of solubility in water
 def: "Measurement of concentration of a solute in water." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0002814 ! measurement of concentration
-relationship: OBI:0000299 CHMO:0002825 ! has_specified_output solubility in water
+relationship: OBI:0000299 CHMO:0002825 ! has specified output solubility in water
 
 [Term]
 id: CHMO:0002817
@@ -30192,7 +30199,7 @@ name: angle of optical rotation
 def: "An experimental method output that consists of the angle through which plane polarized light is rotated clockwise, as seen when facing the light source, in passing through an optically active medium." [https://doi.org/10.1351/goldbook.A00348]
 is_a: CHMO:0000793 ! assay output
 relationship: IAO:0000136 CHMO:0002817 ! is about optical activity
-relationship: OBI:0000312 CHMO:0000779 ! is_specified_output_of polarimetry
+relationship: OBI:0000312 CHMO:0000779 ! is specified output of polarimetry
 
 [Term]
 id: CHMO:0002819
@@ -30279,8 +30286,8 @@ name: experimental plan revision
 def: "An experimental planning process in which a plan specification is modified, resulting in a new plan specification." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0002828 ! experimental planning process
 is_a: OBI:0000011 ! planned process
-relationship: OBI:0000293 IAO:0000104 ! has_specified_input plan specification
-relationship: OBI:0000299 IAO:0000104 ! has_specified_output plan specification
+relationship: OBI:0000293 IAO:0000104 ! has specified input plan specification
+relationship: OBI:0000299 IAO:0000104 ! has specified output plan specification
 
 [Term]
 id: CHMO:0002831
@@ -30301,7 +30308,7 @@ name: experimental plan creation
 def: "An experimental planning process in which a plan specification is created de novo." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0002828 ! experimental planning process
 is_a: OBI:0000011 ! planned process
-relationship: OBI:0000299 IAO:0000104 ! has_specified_output plan specification
+relationship: OBI:0000299 IAO:0000104 ! has specified output plan specification
 
 [Term]
 id: CHMO:0002834
@@ -30326,8 +30333,8 @@ name: nanoparticle synthesis
 def: "A material processing process that is intended to produce nanoparticles." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0002838 ! nanostructure synthesis
 intersection_of: OBI:0000094 ! material processing
-intersection_of: OBI:0000299 CHEBI:50803 ! has_specified_output nanoparticle
-relationship: OBI:0000299 CHEBI:50803 ! has_specified_output nanoparticle
+intersection_of: OBI:0000299 CHEBI:50803 ! has specified output nanoparticle
+relationship: OBI:0000299 CHEBI:50803 ! has specified output nanoparticle
 
 [Term]
 id: CHMO:0002838
@@ -30335,8 +30342,8 @@ name: nanostructure synthesis
 def: "A material processing process that is intended to produce nanostructures." [https://orcid.org/0000-0001-5985-7429]
 is_a: OBI:0000094 ! material processing
 intersection_of: OBI:0000094 ! material processing
-intersection_of: OBI:0000299 CHEBI:50795 ! has_specified_output nanostructure
-relationship: OBI:0000299 CHEBI:50795 ! has_specified_output nanostructure
+intersection_of: OBI:0000299 CHEBI:50795 ! has specified output nanostructure
+relationship: OBI:0000299 CHEBI:50795 ! has specified output nanostructure
 
 [Term]
 id: CHMO:0002839
@@ -30423,7 +30430,7 @@ name: spiked sample
 def: "An experimental sample that is produced by spiking test material that is essentially free of a given analyte." [http://iupac.org/publications/analytical_compendium/Cha18sec61.pdf]
 is_a: CHMO:0002746 ! experimental sample
 is_a: OBI:0000047 ! processed material
-relationship: OBI:0000312 CHMO:0002852 ! is_specified_output_of spiking
+relationship: OBI:0000312 CHMO:0002852 ! is specified output of spiking
 
 [Term]
 id: CHMO:0002852
@@ -30714,8 +30721,8 @@ name: angle of optical rotation in chloroform
 def: "Angle of optical rotation of a substance that has been obtained with it dissolved in chloroform." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0002818 ! angle of optical rotation
 intersection_of: CHMO:0002818 ! angle of optical rotation
-intersection_of: OBI:0000312 CHMO:0002898 ! is_specified_output_of polarimetry of sample dissolved in chloroform
-relationship: OBI:0000312 CHMO:0002898 ! is_specified_output_of polarimetry of sample dissolved in chloroform
+intersection_of: OBI:0000312 CHMO:0002898 ! is specified output of polarimetry of sample dissolved in chloroform
+relationship: OBI:0000312 CHMO:0002898 ! is specified output of polarimetry of sample dissolved in chloroform
 
 [Term]
 id: CHMO:0002901
@@ -30723,8 +30730,8 @@ name: angle of optical rotation in dimethyl sulfoxide
 def: "Angle of optical rotation of a substance that has been obtained with it dissolved in dimethyl sulfoxide." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0002818 ! angle of optical rotation
 intersection_of: CHMO:0002818 ! angle of optical rotation
-intersection_of: OBI:0000312 CHMO:0002899 ! is_specified_output_of polarimetry of sample dissolved in dimethyl sulfoxide
-relationship: OBI:0000312 CHMO:0002899 ! is_specified_output_of polarimetry of sample dissolved in dimethyl sulfoxide
+intersection_of: OBI:0000312 CHMO:0002899 ! is specified output of polarimetry of sample dissolved in dimethyl sulfoxide
+relationship: OBI:0000312 CHMO:0002899 ! is specified output of polarimetry of sample dissolved in dimethyl sulfoxide
 
 [Term]
 id: CHMO:0002902
@@ -30736,7 +30743,7 @@ synonym: "faradaic efficiency" EXACT []
 synonym: "faradaic yield" EXACT []
 xref: http://en.wikipedia.org/wiki/Faraday_efficiency
 is_a: CHMO:0000793 ! assay output
-relationship: OBI:0000312 CHMO:0001247 ! is_specified_output_of charge transport measurement method
+relationship: OBI:0000312 CHMO:0001247 ! is specified output of charge transport measurement method
 
 [Term]
 id: CHMO:0002903
@@ -30786,7 +30793,7 @@ name: temperature-programmed oxidation profile
 def: "A plot of the consumption of dioxygen in moles per second per gram of material against temperature obtained from a temperature-programmed oxidation experiment." [https://doi.org/10.1039/b105466j]
 synonym: "TPO profile" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0002907 ! is_specified_output_of temperature-programmed oxidation
+relationship: OBI:0000312 CHMO:0002907 ! is specified output of temperature-programmed oxidation
 
 [Term]
 id: CHMO:0002910
@@ -30794,7 +30801,7 @@ name: temperature-programmed reduction profile
 def: "A plot of the consumption of a reducing agent in moles per second per gram of material against temperature obtained from a temperature-programmed reduction experiment." [https://doi.org/10.1039/b105466j]
 synonym: "TPR profile" EXACT []
 is_a: CHMO:0000800 ! spectrum
-relationship: OBI:0000312 CHMO:0002908 ! is_specified_output_of temperature-programmed reduction
+relationship: OBI:0000312 CHMO:0002908 ! is specified output of temperature-programmed reduction
 
 [Term]
 id: CHMO:0002911
@@ -30809,7 +30816,7 @@ name: figure-of-merit determination
 def: "An assay that determines a figure of merit for a given technique, analyte and matrix. This will consist of multiple assays of a reference material." [https://orcid.org/0000-0001-5985-7429]
 is_a: OBI:0000070 ! assay
 relationship: BFO:0000057 CHMO:0002913 ! has participant reference material
-relationship: OBI:0000299 CHMO:0002803 ! has_specified_output figure of merit
+relationship: OBI:0000299 CHMO:0002803 ! has specified output figure of merit
 
 [Term]
 id: CHMO:0002913
@@ -30951,6 +30958,71 @@ id: CHMO:0002932
 name: cathode
 def: "Electrode at which oxidation takes place." [https://doi.org/10.1351/goldbook.A00370]
 is_a: CHMO:0002344 ! electrode
+
+[Term]
+id: CHMO:0002933
+name: open circuit voltage potentiometry
+def: "A potentiometry where the potential difference between two electrodes (typically a working and a reference electrode) is measured under open circuit conditions, ensuring that no significant current flows and the system remains in thermodynamic equilibrium. The measured characteristic is the Open Circuit Voltage (OCV) also called Open Circuit Potential (OCP)." [] {dcterms:source="https://doi.org/10.1016/j.jpowsour.2014.06.152"}
+synonym: "OCP" NARROW []
+synonym: "OCP measurement" EXACT []
+synonym: "OCV" NARROW []
+synonym: "OCV measurement" EXACT []
+synonym: "OCV potentiometry" EXACT []
+is_a: CHMO:0000016 ! potentiometry
+property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
+property_value: dcterms:contributor https://orcid.org/0000-0002-4378-6061
+property_value: dcterms:contributor https://orcid.org/0009-0008-1636-0875
+property_value: IAO:0000112 "As an electrochemical technique for measuring and characterizing batteries and E-chem cells." xsd:string
+property_value: IAO:0000233 https://github.com/rsc-ontologies/rsc-cmo/issues/35
+
+[Term]
+id: CHMO:0002934
+name: open circuit voltage
+def: "A measurement datum that is a specified output of an open circuit voltage potentiometry. It represents the potential difference (voltage) measured between two electrodes in a circuit where no current is allowed to flow and is typically used to determine the electromotive force (EMF) of an electrochemical cell." [] {dcterms:source="https://doi.org/10.1016/j.jpowsour.2014.06.152"}
+is_a: CHMO:0000793 ! assay output
+is_a: IAO:0000109 ! measurement datum
+intersection_of: IAO:0000109 ! measurement datum
+intersection_of: OBI:0000312 CHMO:0002933 ! is specified output of open circuit voltage potentiometry
+relationship: OBI:0000312 CHMO:0002933 ! is specified output of open circuit voltage potentiometry
+property_value: dcterms:contributor https://orcid.org/0000-0001-5985-7429
+property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
+property_value: dcterms:created "2025-08-26T12:32:56Z" xsd:dateTime
+
+[Term]
+id: CHMO:0002935
+name: galvanostatic analysis
+def: "An electrochemical analysis in which a constant current is applied to an electrochemical system while monitoring the resulting potential changes over time. This method is used to study charge storage, reaction kinetics, and material stability by maintaining a fixed current flow and observing the system’s electrochemical response." []
+is_a: CHMO:0000003 ! electrochemical analysis
+property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
+property_value: dcterms:contributor https://orcid.org/0000-0002-4378-6061
+property_value: dcterms:contributor https://orcid.org/0009-0008-1636-0875
+property_value: IAO:0000233 https://github.com/rsc-ontologies/rsc-cmo/issues/37
+
+[Term]
+id: CHMO:0002936
+name: galvanostatic cycling with potential limitation
+def: "A galvanostatic analysis in which the constant current is reversed or stopped when predefined upper or lower potential limits are reached. This method is commonly used to evaluate charge storage capacity, cycling stability, and electrochemical performance of batteries, supercapacitors, and other energy storage devices." [] {dcterms:source="https://doi.org/10.1016/j.jelechem.2019.05.052"}
+synonym: "GCPL" EXACT []
+is_a: CHMO:0002935 ! galvanostatic analysis
+property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
+property_value: dcterms:contributor https://orcid.org/0000-0002-4378-6061
+property_value: dcterms:contributor https://orcid.org/0009-0008-1636-0875
+property_value: IAO:0000112 "As an electrochemical technique for measuring and characterizing batteries and E-chem cells." xsd:string
+property_value: IAO:0000233 https://github.com/rsc-ontologies/rsc-cmo/issues/38
+
+[Term]
+id: CHMO:0002937
+name: potentiostatic electrochemical impedance spectroscopy
+def: "A potentiometry where the change in impedance of an electrochemical cell is measured while maintaining a constant applied potential and the impedance is determined over a range of frequencies by analyzing the voltage-to-current ratio and the phase shift of the AC response." [https://doi.org/10.1021/acsmeasuresciau.2c00070]
+synonym: "impedance spectroscopy with constant applied potential" EXACT []
+synonym: "PEIS" EXACT []
+synonym: "potentiostatic EIS" EXACT []
+is_a: CHMO:0000016 ! potentiometry
+property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
+property_value: dcterms:contributor https://orcid.org/0000-0002-4378-6061
+property_value: dcterms:contributor https://orcid.org/0009-0008-1636-0875
+property_value: IAO:0000112 "As an electrochemical technique for measuring and characterizing batteries and E-chem cells." xsd:string
+property_value: IAO:0000233 https://github.com/rsc-ontologies/rsc-cmo/issues/36
 
 [Term]
 id: CHMO:0010000
@@ -31118,7 +31190,7 @@ id: GO:0032991
 name: protein-containing complex
 def: "A stable assembly of two or more macromolecules, i.e. proteins, nucleic acids, carbohydrates or lipids, in which at least one component is a protein and the constituent parts function together." []
 is_a: BFO:0000040 ! material entity
-relationship: has_part PR:000000001 ! protein
+relationship: BFO:0000051 PR:000000001 ! has part protein
 property_value: IAO:0000111 "protein-containing complex" xsd:string
 property_value: IAO:0000112 "A ribosome is a protein complex." xsd:string
 property_value: IAO:0000118 "protein complex" xsd:string
@@ -31261,7 +31333,7 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 id: IAO:0000038
 name: graph
 def: "A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way." []
-is_a: IAO:0000309 ! diagram
+is_a: IAO:0000308 ! figure
 property_value: IAO:0000111 "graph" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
@@ -31317,7 +31389,6 @@ def: "Data about an ontology part is a data item about a part of an ontology, fo
 is_a: IAO:0000027 ! data item
 property_value: IAO:0000111 "data about an ontology part" xsd:string
 property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
 id: IAO:0000104
@@ -31325,8 +31396,8 @@ name: plan specification
 def: "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified." []
 comment: 2/3/2009 Comment from OBI review.\n\nAction specification not well enough specified.\nConditional specification not well enough specified.\nQuestion whether all plan specifications have objective specifications.\n\nRequest that IAO either clarify these or change definitions not to use them
 is_a: IAO:0000033 ! directive information entity
-relationship: has_part IAO:0000005 ! objective specification
-relationship: has_part IAO:0000007 ! action specification
+relationship: BFO:0000051 IAO:0000005 ! has part objective specification
+relationship: BFO:0000051 IAO:0000007 ! has part action specification
 property_value: IAO:0000111 "plan specification" xsd:string
 property_value: IAO:0000112 "PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -31348,6 +31419,12 @@ def: "A measurement datum is an information content entity that is a recording o
 is_a: IAO:0000027 ! data item
 relationship: OBI:0001938 OBI:0001933 ! has value specification value specification
 property_value: IAO:0000111 "measurement datum" xsd:string
+property_value: IAO:0000112 "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "2/2/2009 is_specified_output of some assay?" xsd:string
+property_value: IAO:0000117 "person:Chris Stoeckert" xsd:string
+property_value: IAO:0000119 "group:OBI" xsd:string
+property_value: IAO:0000119 "OBI_0000305" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -31408,14 +31485,6 @@ name: figure
 def: "An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something." []
 is_a: IAO:0000030 ! information content entity
 property_value: IAO:0000111 "figure" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
-
-[Term]
-id: IAO:0000309
-name: diagram
-def: "A figure that expresses one or more propositions" []
-is_a: IAO:0000308 ! figure
-property_value: IAO:0000111 "diagram" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -31676,7 +31745,7 @@ id: OBCS:0000121
 name: inferential statistical data analysis
 def: "A statistical data analysis that uses patterns in the sample data to draw inferences about the population represented, accounting for randomness." []
 is_a: OBCS:0000001 ! statistical data analysis
-relationship: OBI:0000293 IAO:0000100 ! has_specified_input data set
+relationship: OBI:0000293 IAO:0000100 ! has specified input data set
 relationship: OBI:0000417 OBCS:0000124 ! achieves_planned_objective inferential statistical data analysis objective
 property_value: IAO:0000117 "Jie Zheng, Oliver He" xsd:string
 property_value: IAO:0000118 "significantly statistical data analysis" xsd:string
@@ -31701,7 +31770,7 @@ def: "A data set that is produced as the output of a data transformation." []
 is_a: IAO:0000100 ! data set
 is_a: OBCS:0000233 ! transformed data item
 intersection_of: IAO:0000100 ! data set
-intersection_of: OBI:0000312 OBI:0200000 ! is_specified_output_of data transformation
+intersection_of: OBI:0000312 OBI:0200000 ! is specified output of data transformation
 relationship: RO:0002351 OBCS:0000233 ! has member transformed data item
 property_value: IAO:0000117 "Person: Jie Zheng, Oliver He" xsd:string
 
@@ -31728,8 +31797,8 @@ name: derived data from statistical analysis
 def: "A data item that is derived from a statistical data analysis." []
 is_a: OBCS:0000233 ! transformed data item
 intersection_of: IAO:0000027 ! data item
-intersection_of: OBI:0000312 OBCS:0000001 ! is_specified_output_of statistical data analysis
-relationship: OBI:0000312 OBCS:0000001 ! is_specified_output_of statistical data analysis
+intersection_of: OBI:0000312 OBCS:0000001 ! is specified output of statistical data analysis
+relationship: OBI:0000312 OBCS:0000001 ! is specified output of statistical data analysis
 property_value: IAO:0000117 "Jie Zheng, Yongqun He, Marcy Harris, Asiyah Yu Lin" xsd:string
 property_value: IAO:0000118 "statistic" xsd:string
 property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Statistic" xsd:string
@@ -31741,8 +31810,8 @@ name: derived data from inferential statistical analysis
 def: "A data item that is derived from an inferential statistical data analysis." []
 is_a: OBCS:0000218 ! derived data from statistical analysis
 intersection_of: IAO:0000027 ! data item
-intersection_of: OBI:0000312 OBCS:0000121 ! is_specified_output_of inferential statistical data analysis
-relationship: OBI:0000312 OBCS:0000121 ! is_specified_output_of inferential statistical data analysis
+intersection_of: OBI:0000312 OBCS:0000121 ! is specified output of inferential statistical data analysis
+relationship: OBI:0000312 OBCS:0000121 ! is specified output of inferential statistical data analysis
 property_value: IAO:0000117 "Jie Zheng, Yongqun He" xsd:string
 property_value: IAO:0000118 "inferential statistic" xsd:string
 property_value: IAO:0000119 "WEB: http://psc.dss.ucdavis.edu/sommerb/sommerdemo/stat_inf/intro.htm" xsd:string
@@ -31754,8 +31823,8 @@ name: transformed data item
 def: "A data item that is produced as the output of a data transformation." []
 is_a: IAO:0000027 ! data item
 intersection_of: IAO:0000027 ! data item
-intersection_of: OBI:0000312 OBI:0200000 ! is_specified_output_of data transformation
-relationship: OBI:0000312 OBI:0200000 ! is_specified_output_of data transformation
+intersection_of: OBI:0000312 OBI:0200000 ! is specified output of data transformation
+relationship: OBI:0000312 OBI:0200000 ! is specified output of data transformation
 property_value: IAO:0000117 "Person: Jie Zheng, Oliver He" xsd:string
 
 [Term]
@@ -31816,7 +31885,7 @@ id: OBI:0000038
 name: chromatography column
 def: "Chromatography column in chemistry is a tube and contents (typically glass) used to purify individual chemical compounds from mixtures of compounds. It is often used for preparative applications on scales from micrograms up to kilograms." []
 is_a: OBI:0000932 ! material separation device
-relationship: has_part OBI:0000967 ! container
+relationship: BFO:0000051 OBI:0000967 ! has part container
 property_value: IAO:0000111 "chromatography column" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Frank Gibson" xsd:string
@@ -31829,8 +31898,8 @@ name: processed material
 def: "Is a material entity that is created or changed during material processing." []
 is_a: BFO:0000040 ! material entity
 intersection_of: BFO:0000040 ! material entity
-intersection_of: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
-relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
+intersection_of: OBI:0000312 OBI:0000094 ! is specified output of material processing
+relationship: OBI:0000312 OBI:0000094 ! is specified output of material processing
 property_value: IAO:0000111 "processed material" xsd:string
 property_value: IAO:0000112 "Examples include gel matrices, filter paper, parafilm and buffer solutions, mass spectrometer, tissue samples" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -31842,7 +31911,7 @@ name: chromatography device
 def: "A device that facilitates the separation of mixtures. The function of a chromatography device involves passing a mixture dissolved in a \"mobile phase\" through a stationary phase, which separates the analyte to be measured from other molecules in the mixture and allows it to be isolated." []
 is_a: OBI:0000832 ! measurement device
 is_a: OBI:0000932 ! material separation device
-is_a: OBI:0002089 ! physical store
+is_a: OBI:0002089 ! container with environmental control
 property_value: IAO:0000111 "chromatography device" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Frank Gibson" xsd:string
@@ -31855,9 +31924,9 @@ id: OBI:0000049
 name: mass spectrometer
 def: "A mass spectrometer is an instrument which is used to measure the mass to charge ratio of ions. All mass spectrometers consist of three basic parts: an ion source, a mass analyzer, and a detector system. The stages within the mass spectrometer are: 1. Production of ions from the sample 2. Separation of ions with different masses 3. Detection of the number of ions of each mass produced 4.Collection of data to generate the mass spectrum" []
 is_a: OBI:0000832 ! measurement device
-relationship: has_part OBI:0000345 ! mass analyzer
-relationship: has_part OBI:0000361 ! ion source
-relationship: has_part OBI:0000364 ! ion detector
+relationship: BFO:0000051 OBI:0000345 ! has part mass analyzer
+relationship: BFO:0000051 OBI:0000361 ! has part ion source
+relationship: BFO:0000051 OBI:0000364 ! has part ion detector
 property_value: IAO:0000111 "mass spectrometer" xsd:string
 property_value: IAO:0000112 "LCQ Fleet Ion Trap MSn manufactured by thermo fisher scientific" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -31870,7 +31939,7 @@ name: evaluant role
 def: "a role that inheres in a material entity that is realized in an assay in which data is generated about the bearer of the evaluant role" []
 is_a: BFO:0000023 ! role
 relationship: BFO:0000054 OBI:0000070 {all_only="true"} ! realized in assay
-relationship: RO:0000052 BFO:0000040 ! inheres in material entity
+relationship: RO:0000052 BFO:0000040 ! characteristic of material entity
 property_value: IAO:0000111 "evaluant role" xsd:string
 property_value: IAO:0000112 "When a specimen of blood is assayed for glucose concentration, the blood has the evaluant role. When measuring the mass of a mouse, the evaluant is the mouse. When measuring the time of DNA replication, the evaluant is the DNA. When measuring the intensity of light on a surface, the evaluant is the light source." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -31945,8 +32014,8 @@ alt_id: CHMO:0001267
 alt_id: CHMO:0001461
 def: "A planned process which results in physical changes in a specified input material" []
 is_a: OBI:0000011 ! planned process
-relationship: OBI:0000293 BFO:0000040 {all_only="true"} ! has_specified_input material entity
-relationship: OBI:0000299 OBI:0000047 ! has_specified_output processed material
+relationship: OBI:0000293 BFO:0000040 {all_only="true"} ! has specified input material entity
+relationship: OBI:0000299 OBI:0000047 ! has specified output processed material
 relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
 property_value: IAO:0000111 "material processing" xsd:string
 property_value: IAO:0000112 "A cell lysis, production of a cloning vector, creating a buffer." xsd:string
@@ -31981,7 +32050,7 @@ name: imaging assay
 alt_id: CHMO:0000048
 def: "An assay that produces a picture of an entity." []
 is_a: OBI:0000070 ! assay
-relationship: OBI:0000299 IAO:0000101 ! has_specified_output image
+relationship: OBI:0000299 IAO:0000101 ! has specified output image
 property_value: IAO:0000111 "imaging assay" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
@@ -32007,7 +32076,7 @@ id: OBI:0000318
 name: eluate
 def: "a eluate is a material entity which results from an elution, e.g. from a chromatography column. it has as part a material entity with role mobile phase" []
 is_a: OBI:0000047 ! processed material
-relationship: OBI:0000312 OBI:0302905 ! is_specified_output_of elution
+relationship: OBI:0000312 OBI:0302905 ! is specified output of elution
 property_value: IAO:0000111 "eluate" xsd:string
 property_value: IAO:0000112 "Raman spectroscopic detection of haemoproteins in the eluate from high-performance liquid chromatography. J Chromatogr. 1983 Jan 7;254:285-8. PMID: 6298263" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -32202,7 +32271,7 @@ name: image acquisition function
 def: "An image acquisition function is a function to acquire an image of a material" []
 is_a: OBI:0000453 ! measure function
 relationship: BFO:0000054 OBI:0001007 {all_only="true"} ! realized in image creation
-relationship: RO:0000052 OBI:0000398 ! inheres in image creation device
+relationship: RO:0000052 OBI:0000398 ! characteristic of image creation device
 property_value: IAO:0000111 "image acquisition function" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Frank Gibson" xsd:string
@@ -32260,7 +32329,7 @@ id: OBI:0000443
 name: analyte assay
 def: "An assay with the objective to capture information about the presence, concentration, or amount of an analyte in an evaluant." []
 is_a: OBI:0000070 ! assay
-relationship: OBI:0000299 IAO:0000109 ! has_specified_output measurement datum
+relationship: OBI:0000299 IAO:0000109 ! has specified output measurement datum
 relationship: OBI:0000417 OBI:0000437 ! achieves_planned_objective analyte measurement objective
 property_value: IAO:0000111 "analyte assay" xsd:string
 property_value: IAO:0000112 "example of usage: In lab test for blood glucose, the test is the assay, the blood bears evaluant_role and glucose bears the analyte role. The evaluant is considered an input to the assay and the information entity that records the measurement of glucose concentration the output" xsd:string
@@ -32324,7 +32393,7 @@ id: OBI:0000457
 name: manufacturing
 def: "A planned process with the objective to produce a processed material which will have a function for future use." []
 is_a: OBI:0000094 ! material processing
-relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
+relationship: OBI:0000293 BFO:0000040 ! has specified input material entity
 relationship: OBI:0000417 OBI:0000458 ! achieves_planned_objective manufacturing objective
 property_value: IAO:0000111 "manufacturing" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -32358,8 +32427,8 @@ name: mass spectrometry assay
 def: "An assay that identifies the amount and type of material entities present in a sample by fragmenting the sample and measuring the mass-to-charge ratio of the resulting particles." []
 is_a: OBI:0000070 ! assay
 intersection_of: OBI:0000070 ! assay
-intersection_of: OBI:0000293 OBI:0000049 {all_some="true"} ! has_specified_input mass spectrometer
-relationship: OBI:0000293 OBI:0000049 ! has_specified_input mass spectrometer
+intersection_of: OBI:0000293 OBI:0000049 {all_some="true"} ! has specified input mass spectrometer
+relationship: OBI:0000293 OBI:0000049 ! has specified input mass spectrometer
 property_value: IAO:0000111 "mass spectrometry assay" xsd:string
 property_value: IAO:0000112 "Identification of a proteins cut out from a 2D gel by cleaving it into peptides using trypsin digestion using electrospray ionizatino to ensure the peptides are charged, and accelerating them with an electro magnetic field in which the flight path is determined by the mass / charge ratio of the peptides. Comparing the mass/charge ratio of peptides in the proteins with databases of protein sequences allows to identify which protein gave rise to the peptides." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -32410,7 +32479,7 @@ id: OBI:0000648
 name: clustered data set
 def: "A data set that is produced as the output of a class discovery data transformation and consists of a data set with assigned discovered class labels." []
 is_a: OBCS:0000123 ! transformed data set
-relationship: OBI:0000312 OBI:0200175 ! is_specified_output_of class discovery data transformation
+relationship: OBI:0000312 OBI:0200175 ! is specified output of class discovery data transformation
 property_value: IAO:0000111 "clustered data set" xsd:string
 property_value: IAO:0000112 "A clustered data set is the output of a K means clustering data transformation" xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -32424,7 +32493,7 @@ id: OBI:0000649
 name: data set of features
 def: "A data set that is produced as the output of a descriptive statistical calculation data transformation and consists of producing a data set that represents one or more features of interest about the input data set." []
 is_a: OBCS:0000123 ! transformed data set
-relationship: OBI:0000312 OBI:0200184 ! is_specified_output_of descriptive statistical calculation data transformation
+relationship: OBI:0000312 OBI:0200184 ! is specified output of descriptive statistical calculation data transformation
 property_value: IAO:0000111 "data set of features" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "PERSON: James Malone" xsd:string
@@ -32435,7 +32504,7 @@ id: OBI:0000652
 name: material combination
 def: "is a material processing with the objective to combine two or more material entities as input into a single material entity as output." []
 is_a: OBI:0000094 ! material processing
-relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
+relationship: OBI:0000293 BFO:0000040 ! has specified input material entity
 relationship: OBI:0000417 OBI:0000686 ! achieves_planned_objective material combination objective
 property_value: IAO:0000111 "material combination" xsd:string
 property_value: IAO:0000112 "Mixing two fluids. Adding salt into water. Injecting a mouse with PBS." xsd:string
@@ -32451,8 +32520,8 @@ def: "A planned process with the objective to obtain a material entity for poten
 is_a: OBI:0000011 ! planned process
 intersection_of: OBI:0000011 ! planned process
 intersection_of: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
-relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
-relationship: OBI:0000299 OBI:0100051 ! has_specified_output specimen
+relationship: OBI:0000293 BFO:0000040 ! has specified input material entity
+relationship: OBI:0000299 OBI:0100051 ! has specified output specimen
 relationship: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
 property_value: IAO:0000111 "specimen collection process" xsd:string
 property_value: IAO:0000112 "drawing blood from a patient for analysis, collecting a piece of a plant for depositing in a herbarium, buying meat from a butcher in order to measure its protein content in an investigation, collecting a stone from a site" xsd:string
@@ -32516,7 +32585,7 @@ id: OBI:0000685
 name: creating a mixture of molecules in solution
 def: "is a process with the objective to prepare a liquid solution of one or more chemicals at desired concentrations." []
 is_a: OBI:0000652 ! material combination
-relationship: OBI:0000299 OBI:0302729 ! has_specified_output chemical solution
+relationship: OBI:0000299 OBI:0302729 ! has specified output chemical solution
 property_value: IAO:0000111 "creating a mixture of molecules in solution" xsd:string
 property_value: IAO:0000112 "The production of PBS" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -32680,8 +32749,8 @@ id: OBI:0001007
 name: image creation
 def: "A planned process that captures an image of an object." []
 is_a: OBI:0000011 ! planned process
-relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
-relationship: OBI:0000299 IAO:0000101 ! has_specified_output image
+relationship: OBI:0000293 BFO:0000040 ! has specified input material entity
+relationship: OBI:0000299 IAO:0000101 ! has specified output image
 property_value: IAO:0000111 "image acquisition" xsd:string
 property_value: IAO:0000112 "Taking a polaroid picture of a patients skin lesion; Using a digital camera to take a picture of a gel" xsd:string
 property_value: IAO:0000114 IAO:0000123
@@ -32753,8 +32822,8 @@ name: cell specimen
 def: "A specimen primarily composed of a cell or cells collected from a multicellular organism or a cell culture." []
 is_a: OBI:0001479 ! specimen from organism
 intersection_of: OBI:0001479 ! specimen from organism
-intersection_of: has_part CL:0000000 ! cell
-relationship: has_part CL:0000000 ! cell
+intersection_of: BFO:0000051 CL:0000000 ! has part cell
+relationship: BFO:0000051 CL:0000000 ! has part cell
 property_value: IAO:0000111 "cell specimen" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000116 "Discussed on obi call Jan 23, 2017. To improve cell specimen that include single cell specimen. Details see tracker: https://sourceforge.net/p/obi/obi-terms/828" xsd:string
@@ -32810,8 +32879,8 @@ name: purified material
 def: "A material entity that is generated by a purification process in which an input material is separated to obtain a fraction with a higher concentration of a desired component" []
 is_a: OBI:0000047 ! processed material
 intersection_of: BFO:0000040 ! material entity
-intersection_of: OBI:0000312 OBI:0001505 ! is_specified_output_of purification
-relationship: OBI:0000312 OBI:0001505 ! is_specified_output_of purification
+intersection_of: OBI:0000312 OBI:0001505 ! is specified output of purification
+relationship: OBI:0000312 OBI:0001505 ! is specified output of purification
 property_value: IAO:0000111 "purified material" xsd:string
 property_value: IAO:0000112 "A mixture of peptide molecules that has been run through an HPLC column to remove 65" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -32870,14 +32939,14 @@ property_value: IAO:0000119 "OBIB, OBI" xsd:string
 
 [Term]
 id: OBI:0002089
-name: physical store
+name: container with environmental control
 def: "A container with an environmental control function." []
 is_a: OBI:0000967 ! container
 is_a: OBI:0001034 ! environmental control device
 intersection_of: OBI:0000967 ! container
 intersection_of: RO:0000085 OBI:0000401 ! has function environment control function
 relationship: RO:0000085 OBI:0000401 ! has function environment control function
-property_value: IAO:0000111 "physical store" xsd:string
+property_value: IAO:0000111 "container with environmental control" xsd:string
 property_value: IAO:0000112 "a freezer. a humidity controlled box." xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000116 "For details see tracker item: http://sourceforge.net/p/obi/obi-terms/793/" xsd:string
@@ -32890,8 +32959,8 @@ name: microscopy assay
 def: "An imaging assay that utilizes a microscope to magnify features of the visualized material of interest that are not visible to naked eye." []
 is_a: OBI:0000185 ! imaging assay
 intersection_of: OBI:0000185 ! imaging assay
-intersection_of: OBI:0000293 OBI:0400169 {all_some="true"} ! has_specified_input microscope
-relationship: OBI:0000293 OBI:0400169 ! has_specified_input microscope
+intersection_of: OBI:0000293 OBI:0400169 {all_some="true"} ! has specified input microscope
+relationship: OBI:0000293 OBI:0400169 ! has specified input microscope
 property_value: IAO:0000111 "microscopy assay" xsd:string
 property_value: IAO:0000112 "Lung, liver, and spleen tissue samples were collected from female BALB/c mice and fixed in 100% formalin solution, embedded in paraffin, sectioned, and stained with hematoxylin and eosin. The stained samples were examined for signs of pathological changes under light microscopy." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -32915,8 +32984,8 @@ name: liquid chromatography mass spectrometry assay
 def: "A mass spectrometry assay where a sample mixture is first separated by liquid chromatography before being converted into ions which are characterized by using mass spectrometry based on their mass-to-charge ratio and relative abundance." []
 is_a: OBI:0000470 ! mass spectrometry assay
 intersection_of: OBI:0000470 ! mass spectrometry assay
-intersection_of: has_part OBI:0003547 ! liquid chromatography
-relationship: has_part OBI:0003547 ! liquid chromatography
+intersection_of: BFO:0000051 OBI:0003547 ! has part liquid chromatography
+relationship: BFO:0000051 OBI:0003547 ! has part liquid chromatography
 property_value: IAO:0000111 "liquid chromatography mass spectrometry assay" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Michelle Giglio" xsd:string
@@ -32997,7 +33066,7 @@ id: OBI:0200000
 name: data transformation
 def: "A planned process that produces output data from input data." []
 is_a: OBI:0000011 ! planned process
-relationship: OBI:0000293 IAO:0000027 {all_only="true"} ! has_specified_input data item
+relationship: OBI:0000293 IAO:0000027 {all_only="true"} ! has specified input data item
 relationship: OBI:0000417 OBI:0200166 ! achieves_planned_objective data transformation objective
 property_value: IAO:0000111 "data transformation" xsd:string
 property_value: IAO:0000112 "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value." xsd:string
@@ -33019,7 +33088,7 @@ id: OBI:0200050
 name: dimensionality reduction
 def: "A dimensionality reduction is data partitioning which transforms each input m-dimensional vector (x_1, x_2, ..., x_m) into an output n-dimensional vector (y_1, y_2, ..., y_n), where n is smaller than m." []
 is_a: OBI:0200175 ! class discovery data transformation
-relationship: OBI:0000299 OBI:0000648 ! has_specified_output clustered data set
+relationship: OBI:0000299 OBI:0000648 ! has specified output clustered data set
 relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
 property_value: IAO:0000111 "dimensionality reduction" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -33069,8 +33138,8 @@ id: OBI:0200111
 name: data visualization
 def: "A planned process with the objective to graphically represent some data by inputing the data and outputting images, diagrams or animations." []
 is_a: OBI:0000011 ! planned process
-relationship: OBI:0000293 IAO:0000027 ! has_specified_input data item
-relationship: OBI:0000293 IAO:0000027 {all_only="true"} ! has_specified_input data item
+relationship: OBI:0000293 IAO:0000027 ! has specified input data item
+relationship: OBI:0000293 IAO:0000027 {all_only="true"} ! has specified input data item
 property_value: IAO:0000111 "data visualization" xsd:string
 property_value: IAO:0000112 "Generation of a heatmap from a microarray dataset" xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -33139,7 +33208,7 @@ id: OBI:0200190
 name: clustered data visualization
 def: "A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type." []
 is_a: OBI:0200111 ! data visualization
-relationship: OBI:0000293 OBI:0000648 {all_only="true"} ! has_specified_input clustered data set
+relationship: OBI:0000293 OBI:0000648 {all_only="true"} ! has specified input clustered data set
 property_value: IAO:0000111 "clustered data visualization" xsd:string
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "James Malone" xsd:string
@@ -33174,7 +33243,7 @@ name: solvent role
 def: "solvent role is a role which inheres in a molecular entity capable of ensuring the dissolution of another chemical entity and realized by the process of solvation" []
 is_a: OBI:0003610 ! reactant role
 relationship: BFO:0000054 OBI:0000685 {all_only="true"} ! realized in creating a mixture of molecules in solution
-relationship: RO:0000052 CHEBI:23367 ! inheres in molecular entity
+relationship: RO:0000052 CHEBI:23367 ! characteristic of molecular entity
 property_value: IAO:0000111 "solvent role" xsd:string
 property_value: IAO:0000112 "PMID: 18373502.Transfusion. 2008 Mar 25. Solvent/detergent treatment of platelet concentrates enhances the release of growth factors." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -33188,7 +33257,7 @@ name: solute role
 def: "solute role is a role played by a chemical entity which is dissolved by another chemical entity (the solvent) when creating a solution" []
 is_a: BFO:0000023 ! role
 relationship: BFO:0000054 OBI:0000685 {all_only="true"} ! realized in creating a mixture of molecules in solution
-relationship: RO:0000052 CHEBI:23367 ! inheres in molecular entity
+relationship: RO:0000052 CHEBI:23367 ! characteristic of molecular entity
 property_value: IAO:0000111 "solute role" xsd:string
 property_value: IAO:0000112 "PMID: 18380397.Pharmazie. 2008 Feb;63(2):113-21.Deviations of drug solubility in water-cosolvent mixtures from the Jouyban-Acree model--effect of solute structure." xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -33225,7 +33294,7 @@ id: OBI:0302888
 name: washing
 def: "washing is a process by which a material entity acting as  contaminant (e.g. excess staining reagent) is removed by application of one or more cycles of solution in flow." []
 is_a: OBI:0000094 ! material processing
-relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
+relationship: OBI:0000293 BFO:0000040 ! has specified input material entity
 property_value: IAO:0000111 "washing" xsd:string
 property_value: IAO:0000112 "PMID: 6874122. Dialysis leucopenia--no correction after prolonged washing of the membrane. Int J Artif Organs. 1983 May;6(3):113-4." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -33237,7 +33306,7 @@ id: OBI:0302893
 name: storage
 def: "A planned process with the objective to preserve and protect material entities by placing them in an identified location which may have a controlled environment." []
 is_a: OBI:0000838 ! material maintenance
-relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
+relationship: OBI:0000293 BFO:0000040 ! has specified input material entity
 property_value: IAO:0000111 "storage" xsd:string
 property_value: IAO:0000112 "PMID: 18550121.Total Prostate Specific Antigen Stability Confirmed After Long-Term Storage of Serum at -80C. J Urol. 2008 Jun 10." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -33249,7 +33318,7 @@ id: OBI:0302905
 name: elution
 def: "the process of extracting one material from another by washing with a solvent to remove adsorbed material from an adsorbent (as in washing of loaded ion-exchange resins to remove captured ions)" []
 is_a: OBI:0000094 ! material processing
-relationship: OBI:0000299 OBI:0000318 ! has_specified_output eluate
+relationship: OBI:0000299 OBI:0000318 ! has specified output eluate
 relationship: RO:0000057 OBI:0000038 ! has participant chromatography column
 property_value: IAO:0000111 "elution" xsd:string
 property_value: IAO:0000112 "PMID: 18549238.Theory and Application of the Two-Mode Gradient Elution in Liquid Chromatography Involving Simultaneous Changes in Temperature and Mobile-Phase Composition.Anal Chem. 2008 Jun 13." xsd:string
@@ -33345,7 +33414,7 @@ id: OBI:0600014
 name: material component separation
 def: "a material processing in which components of an input material become segregated in space" []
 is_a: OBI:0000094 ! material processing
-relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
+relationship: OBI:0000293 BFO:0000040 ! has specified input material entity
 relationship: OBI:0000417 OBI:0000639 ! achieves_planned_objective material separation objective
 property_value: IAO:0000111 "material component separation" xsd:string
 property_value: IAO:0000112 "Using a cell sorter to separate a mixture of T cells into two fractions; one with surface receptor CD8 and the other lacking the receptor, or purification" xsd:string
@@ -33358,8 +33427,8 @@ id: OBI:0600033
 name: cell permeabilization
 def: "A protocol application to permeabilize cell membranes, allowing molecules to more easily pass through the membrane than was possible prior to the protocol application" []
 is_a: OBI:0000094 ! material processing
-relationship: OBI:0000293 CL:0000000 ! has_specified_input cell
-relationship: OBI:0000299 CL:0000000 ! has_specified_output cell
+relationship: OBI:0000293 CL:0000000 ! has specified input cell
+relationship: OBI:0000299 CL:0000000 ! has specified output cell
 property_value: IAO:0000111 "cell permeabilization" xsd:string
 property_value: IAO:0000112 "Electroporation of HeLa cells to allow transfection with pUC19." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -33373,7 +33442,7 @@ id: OBI:0600046
 name: preparative chromatography
 def: "the use of a biomaterial's preferential affinity for either the mobile phase or the stationary phase to separate it from other materials of differing affinity" []
 is_a: OBI:0600014 ! material component separation
-relationship: OBI:0000299 OBI:0000318 ! has_specified_output eluate
+relationship: OBI:0000299 OBI:0000318 ! has specified output eluate
 relationship: OBI:0000417 OBI:0000681 ! achieves_planned_objective separation into different composition objective
 relationship: RO:0000057 OBI:0000038 ! has participant chromatography column
 relationship: RO:0000057 OBI:0000048 ! has participant chromatography device
@@ -33494,7 +33563,7 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 [Term]
 id: PR:000000001
 name: protein
-def: "An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof." []
+def: "An amino acid chain that is canonically produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof." []
 is_a: CHEBI:16670 ! peptide
 property_value: IAO:0000111 "protein" xsd:string
 property_value: IAO:0000112 "antithrombin III is a protein" xsd:string
@@ -33595,13 +33664,32 @@ property_value: IAO:0000112 "my brain is part of my body (continuant parthood, t
 property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
 property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
 property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
-property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
 property_value: IAO:0000118 "part_of" xsd:string
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" xsd:string
 is_transitive: true
-inverse_of: has_part ! has part
+inverse_of: BFO:0000051 ! has part
+
+[Typedef]
+id: BFO:0000051
+name: has part
+namespace: chebi_ontology
+def: "a core relation that holds between a whole and its part" []
+xref: BFO:0000051
+property_value: IAO:0000111 "has part" xsd:string
+property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
+property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
+property_value: IAO:0000112 "this year has part this day (occurrent parthood)" xsd:string
+property_value: IAO:0000116 "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part." xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
+property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
+property_value: IAO:0000118 "has_part" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+property_value: RO:0001900 RO:0001901
+is_cyclic: false
+is_transitive: true
 
 [Typedef]
 id: BFO:0000052
@@ -33626,6 +33714,7 @@ inverse_of: BFO:0000055 ! realizes
 [Typedef]
 id: BFO:0000055
 name: realizes
+def: "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" []
 comment: Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
 property_value: IAO:0000111 "realizes" xsd:string
 property_value: IAO:0000112 "this disease course realizes this disease" xsd:string
@@ -33765,9 +33854,9 @@ domain: IAO:0000030 ! information content entity
 
 [Typedef]
 id: OBI:0000293
-name: has_specified_input
-def: "The inverse property of is_specified_input_of" []
-property_value: IAO:0000111 "has_specified_input" xsd:string
+name: has specified input
+def: "The inverse property of is specified input of" []
+property_value: IAO:0000111 "has specified input" xsd:string
 property_value: IAO:0000112 "see is_input_of example_of_usage" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000116 "8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works." xsd:string
@@ -33777,13 +33866,13 @@ property_value: IAO:0000117 "PERSON: Larry Hunter" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Coutot" xsd:string
 domain: OBI:0000011 ! planned process
 is_a: RO:0000057 ! has participant
-inverse_of: OBI:0000295 ! is_specified_input_of
+inverse_of: OBI:0000295 ! is specified input of
 
 [Typedef]
 id: OBI:0000295
-name: is_specified_input_of
+name: is specified input of
 def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
-property_value: IAO:0000111 "is_specified_input_of" xsd:string
+property_value: IAO:0000111 "is specified input of" xsd:string
 property_value: IAO:0000112 "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
@@ -33793,9 +33882,9 @@ is_a: RO:0000056 ! participates in
 
 [Typedef]
 id: OBI:0000299
-name: has_specified_output
-def: "The inverse property of is_specified_output_of" []
-property_value: IAO:0000111 "has_specified_output" xsd:string
+name: has specified output
+def: "The inverse property of is specified output of" []
+property_value: IAO:0000111 "has specified output" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
@@ -33803,13 +33892,13 @@ property_value: IAO:0000117 "PERSON: Larry Hunter" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 domain: OBI:0000011 ! planned process
 is_a: RO:0000057 ! has participant
-inverse_of: OBI:0000312 ! is_specified_output_of
+inverse_of: OBI:0000312 ! is specified output of
 
 [Typedef]
 id: OBI:0000312
-name: is_specified_output_of
+name: is specified output of
 def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
-property_value: IAO:0000111 "is_specified_output_of" xsd:string
+property_value: IAO:0000111 "is specified output of" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
@@ -33839,7 +33928,7 @@ property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000116 "Discussion in Karslruhe with, among others, Alan Rector, Stefan Schulz, Marijke Keet, Melanie Courtot, and Alan Ruttenberg. Definition take from the definition of granular parthood in the cited paper. Needs work to put into standard form" xsd:string
 property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "PAPER: Granularity, scale and collectivity: When size does and does not matter, Alan Rector, Jeremy Rogers, Thomas Bittner, Journal of Biomedical Informatics 39 (2006) 333-349" xsd:string
-is_a: has_part ! has part
+is_a: BFO:0000051 ! has part
 
 [Typedef]
 id: OBI:0000833
@@ -33862,32 +33951,25 @@ property_value: IAO:0000117 "PERSON: James A. Overton" xsd:string
 property_value: IAO:0000119 "OBI" xsd:string
 domain: IAO:0000030 ! information content entity
 range: OBI:0001933 ! value specification
-is_a: has_part ! has part
+is_a: BFO:0000051 ! has part
 
 [Typedef]
 id: RO:0000052
 name: characteristic of
-name: inheres in
 def: "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence." []
-def: "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence" []
 comment: Note that this relation was previously called "inheres in", but was changed to be called "characteristic of" because BFO2 uses "inheres in" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.
 property_value: IAO:0000111 "inheres in" xsd:string
-property_value: IAO:0000112 "this fragility inheres in this vase" xsd:string
 property_value: IAO:0000112 "this fragility is a characteristic of this vase" xsd:string
-property_value: IAO:0000112 "this red color inheres in this apple" xsd:string
 property_value: IAO:0000112 "this red color is a characteristic of this apple" xsd:string
-property_value: IAO:0000116 "A dependent inheres in its bearer at all times for which the dependent exists." xsd:string
 property_value: IAO:0000118 "inheres_in" xsd:string
 property_value: RO:0001900 RO:0001901
 is_functional: true
 is_a: RO:0002314 ! characteristic of part of
-inverse_of: RO:0000053 ! bearer of
+inverse_of: RO:0000053 ! has characteristic
 
 [Typedef]
 id: RO:0000053
-name: bearer of
 name: has characteristic
-def: "a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence" []
 def: "Inverse of characteristic_of" []
 property_value: IAO:0000111 "bearer of" xsd:string
 property_value: IAO:0000112 "this apple is bearer of this red color" xsd:string
@@ -33916,7 +33998,6 @@ inverse_of: RO:0000057 ! has participant
 id: RO:0000057
 name: has participant
 def: "a relation between a process and a continuant, in which the continuant is somehow involved in the process" []
-property_value: dce:source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
 property_value: dcterms:source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
 property_value: IAO:0000111 "has participant" xsd:string
 property_value: IAO:0000112 "this blood coagulation has participant this blood clot" xsd:string
@@ -33956,18 +34037,31 @@ property_value: IAO:0000116 "A function inheres in its bearer at all times for w
 property_value: IAO:0000118 "function_of" xsd:string
 property_value: IAO:0000118 "is function of" xsd:string
 domain: BFO:0000034 ! function
-is_a: RO:0000052 ! inheres in
+is_a: RO:0000052 ! characteristic of
 inverse_of: RO:0000085 ! has function
+
+[Typedef]
+id: RO:0000080
+name: quality of
+def: "a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence" []
+comment: This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.
+property_value: IAO:0000112 "this red color is a quality of this apple" xsd:string
+property_value: IAO:0000116 "A quality inheres in its bearer at all times for which the quality exists." xsd:string
+property_value: IAO:0000118 "is quality of" xsd:string
+property_value: IAO:0000118 "quality_of" xsd:string
+is_a: RO:0000052 ! characteristic of
+inverse_of: RO:0000086 ! has quality
 
 [Typedef]
 id: RO:0000081
 name: role of
 def: "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence" []
+comment: This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.
 property_value: IAO:0000112 "this investigator role is a role of this person" xsd:string
 property_value: IAO:0000116 "A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists." xsd:string
 property_value: IAO:0000118 "is role of" xsd:string
 property_value: IAO:0000118 "role_of" xsd:string
-is_a: RO:0000052 ! inheres in
+is_a: RO:0000052 ! characteristic of
 inverse_of: RO:0000087 ! has role
 
 [Typedef]
@@ -33979,7 +34073,17 @@ property_value: IAO:0000116 "A bearer can have many functions, and its functions
 property_value: IAO:0000118 "has_function" xsd:string
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000034 ! function
-is_a: RO:0000053 ! bearer of
+is_a: RO:0000053 ! has characteristic
+
+[Typedef]
+id: RO:0000086
+name: has quality
+def: "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence" []
+property_value: IAO:0000112 "this apple has quality this red color" xsd:string
+property_value: IAO:0000116 "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist." xsd:string
+property_value: IAO:0000118 "has_quality" xsd:string
+range: BFO:0000019 ! quality
+is_a: RO:0000053 ! has characteristic
 
 [Typedef]
 id: RO:0000087
@@ -33990,14 +34094,29 @@ property_value: IAO:0000116 "A bearer can have many roles, and its roles can exi
 property_value: IAO:0000118 "has_role" xsd:string
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000023 ! role
-is_a: RO:0000053 ! bearer of
+is_a: RO:0000053 ! has characteristic
+
+[Typedef]
+id: RO:0000091
+name: has disposition
+def: "a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence" []
+domain: BFO:0000004 ! independent continuant
+range: BFO:0000016 ! disposition
+is_a: RO:0000053 ! has characteristic
+inverse_of: RO:0000092 ! disposition of
+
+[Typedef]
+id: RO:0000092
+name: disposition of
+comment: This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.
+is_a: RO:0000052 ! characteristic of
 
 [Typedef]
 id: RO:0002086
 name: ends after
 comment: X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)
 subset: ro-eco
-property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
 is_transitive: true
 is_a: RO:0002222 ! temporal relation
 
@@ -34047,7 +34166,7 @@ name: has member
 def: "has member is a mereological relation between a collection and an item." []
 property_value: IAO:0000119 "SIO" xsd:string
 property_value: RO:0001900 RO:0001901
-is_a: has_part ! has part
+is_a: BFO:0000051 ! has part
 
 [Typedef]
 id: RO:0002404
@@ -34134,23 +34253,4 @@ domain: BFO:0000017 ! realizable entity
 range: BFO:0000015 ! process
 holds_over_chain: BFO:0000054 RO:0002404
 is_a: RO:0002410 ! causally related to
-
-[Typedef]
-id: has_part
-name: has part
-namespace: chebi_ontology
-def: "a core relation that holds between a whole and its part" []
-xref: BFO:0000051
-property_value: IAO:0000111 "has part" xsd:string
-property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
-property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
-property_value: IAO:0000112 "this year has part this day (occurrent parthood)" xsd:string
-property_value: IAO:0000116 "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part." xsd:string
-property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
-property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
-property_value: IAO:0000118 "has_part" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
-property_value: RO:0001900 RO:0001901
-is_cyclic: false
-is_transitive: true
 
