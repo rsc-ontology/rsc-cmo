@@ -11348,7 +11348,8 @@ SubClassOf(obo:CHMO_0000688 obo:CHMO_0000681)
 # Class: obo:CHMO_0000689 (thermodilatometry)
 
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermodilatometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06314") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06314>) Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381167
-11.36 thermodilatometry") obo:IAO_0000115 obo:CHMO_0000689 "A thermal analysis \"in which a dimension\" of the sample \"under negligible load  is measured as a function of temperature\".")
+11.36 
+thermodilatometry") obo:IAO_0000115 obo:CHMO_0000689 "A thermal analysis \"in which a dimension\" of the sample \"under negligible load  is measured as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000689 "CHMO:0000689")
 AnnotationAssertion(rdfs:label obo:CHMO_0000689 "thermodilatometry")
 SubClassOf(obo:CHMO_0000689 obo:CHMO_0000681)
@@ -11379,8 +11380,10 @@ SubClassOf(obo:CHMO_0000691 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000692 (thermoptometry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoptometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06336") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06336>) Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381176 
-11.45 thermospectrometry") obo:IAO_0000115 obo:CHMO_0000692 "A thermal analysis \"in which an optical characteristic\" of a sample \"is measured as a function of temperature\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoptometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06336") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06336>) Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381176
+ 
+11.45
+ thermospectrometry") obo:IAO_0000115 obo:CHMO_0000692 "A thermal analysis \"in which an optical characteristic\" of a sample \"is measured as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000692 "CHMO:0000692")
 AnnotationAssertion(rdfs:label obo:CHMO_0000692 "thermoptometry")
 SubClassOf(obo:CHMO_0000692 obo:CHMO_0000681)
@@ -11388,7 +11391,8 @@ SubClassOf(obo:CHMO_0000692 obo:CHMO_0000681)
 # Class: obo:CHMO_0000693 (thermoluminescence)
 
 AnnotationAssertion(Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381169
-11.38 thermoluminescence") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.T06325>) obo:IAO_0000115 obo:CHMO_0000693 "A thermoptometry in which the luminescence of a sample is measured as a function of temperature.")
+11.38 
+thermoluminescence") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.T06325>) obo:IAO_0000115 obo:CHMO_0000693 "A thermoptometry in which the luminescence of a sample is measured as a function of temperature.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000693 "CHMO:0000693")
 AnnotationAssertion(rdfs:label obo:CHMO_0000693 "thermoluminescence")
 SubClassOf(obo:CHMO_0000693 obo:CHMO_0000692)
@@ -11418,7 +11422,8 @@ SubClassOf(obo:CHMO_0000696 obo:CHMO_0000695)
 # Class: obo:CHMO_0000697 (thermosonimetry)
 
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermosonimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06337") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06337>) Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381175
-11.44 thermosonimetry") obo:IAO_0000115 obo:CHMO_0000697 "A thermal analysis \"in which the sound emitted\" by a sample \"as a function of temperature\".")
+11.44
+ thermosonimetry") obo:IAO_0000115 obo:CHMO_0000697 "A thermal analysis \"in which the sound emitted\" by a sample \"as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000697 "CHMO:0000697")
 AnnotationAssertion(rdfs:label obo:CHMO_0000697 "thermosonimetry")
 SubClassOf(obo:CHMO_0000697 obo:CHMO_0000681)
