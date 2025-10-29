@@ -3018,6 +3018,7 @@ Declaration(AnnotationProperty(dcterms:rightsHolder))
 Declaration(AnnotationProperty(dcterms:title))
 Declaration(AnnotationProperty(oboInOwl:hasScope))
 Declaration(AnnotationProperty(<http://www.w3.org/ns/prov#hadPrimarySource>))
+Declaration(AnnotationProperty(<http://www.w3.org/ns/prov#wasInfluencedBy>))
 ############################
 #   Annotation Properties
 ############################
