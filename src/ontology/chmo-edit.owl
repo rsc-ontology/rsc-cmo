@@ -11282,7 +11282,7 @@ SubClassOf(obo:CHMO_0000680 obo:CHMO_0002515)
 
 # Class: obo:CHMO_0000681 (thermal analysis)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermal analysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06295") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06295>) Annotation(oboInOwl:hasDbXref <https://books.rsc.org/view-large/6381128>) obo:IAO_0000115 obo:CHMO_0000681 "An assay \"in which a physical property [of the sample] is measured as a function of temperature.\"")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermal analysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06295") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06295>) obo:IAO_0000115 obo:CHMO_0000681 "An assay \"in which a physical property [of the sample] is measured as a function of temperature.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000681 "CHMO:0000681")
 AnnotationAssertion(rdfs:label obo:CHMO_0000681 "thermal analysis")
 SubClassOf(obo:CHMO_0000681 obo:OBI_0000070)
@@ -11342,14 +11342,14 @@ SubClassOf(obo:CHMO_0000687 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000688 (thermoacoustimetry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoacoustimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06309") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06309>) Annotation(oboInOwl:hasDbXref <https://books.rsc.org/view-large/6381164>) obo:IAO_0000115 obo:CHMO_0000688 "A thermal analysis \"in which the characteristics of imposed acoustic waves [passing through the sample] are measured as a function of temperature\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoacoustimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06309") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06309>) obo:IAO_0000115 obo:CHMO_0000688 "A thermal analysis \"in which the characteristics of imposed acoustic waves [passing through the sample] are measured as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000688 "CHMO:0000688")
 AnnotationAssertion(rdfs:label obo:CHMO_0000688 "thermoacoustimetry")
 SubClassOf(obo:CHMO_0000688 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000689 (thermodilatometry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermodilatometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06314") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06314>) Annotation(oboInOwl:hasDbXref <https://books.rsc.org/view-large/6381167>) obo:IAO_0000115 obo:CHMO_0000689 "A thermal analysis \"in which a dimension [of the sample] under negligible load  is measured as a function of temperature\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermodilatometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06314") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06314>) obo:IAO_0000115 obo:CHMO_0000689 "A thermal analysis \"in which a dimension [of the sample] under negligible load  is measured as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000689 "CHMO:0000689")
 AnnotationAssertion(rdfs:label obo:CHMO_0000689 "thermodilatometry")
 SubClassOf(obo:CHMO_0000689 obo:CHMO_0000681)
@@ -11380,7 +11380,7 @@ SubClassOf(obo:CHMO_0000691 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000692 (thermoptometry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoptometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06336") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06336>) Annotation(oboInOwl:hasDbXref <https://books.rsc.org/view-large/6381176>) obo:IAO_0000115 obo:CHMO_0000692 "A thermal analysis \"in which an optical characteristic [of a sample] is measured as a function of temperature\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoptometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06336") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06336>) obo:IAO_0000115 obo:CHMO_0000692 "A thermal analysis \"in which an optical characteristic [of a sample] is measured as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000692 "CHMO:0000692")
 AnnotationAssertion(rdfs:label obo:CHMO_0000692 "thermoptometry")
 SubClassOf(obo:CHMO_0000692 obo:CHMO_0000681)
@@ -11416,7 +11416,7 @@ SubClassOf(obo:CHMO_0000696 obo:CHMO_0000695)
 
 # Class: obo:CHMO_0000697 (thermosonimetry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermosonimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06337") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06337>) Annotation(oboInOwl:hasDbXref <https://books.rsc.org/view-large/6381175>) obo:IAO_0000115 obo:CHMO_0000697 "A thermal analysis \"in which the sound emitted\" by a sample \"as a function of temperature\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermosonimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06337") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06337>) obo:IAO_0000115 obo:CHMO_0000697 "A thermal analysis \"in which the sound emitted\" by a sample \"as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000697 "CHMO:0000697")
 AnnotationAssertion(rdfs:label obo:CHMO_0000697 "thermosonimetry")
 SubClassOf(obo:CHMO_0000697 obo:CHMO_0000681)
@@ -14422,7 +14422,7 @@ SubClassOf(obo:CHMO_0000974 obo:CHMO_0000997)
 
 # Class: obo:CHMO_0000975 (packed column)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'packed column' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.P04393") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.P04393>) Annotation(oboInOwl:hasDbXref <https://books.rsc.org/view-large/6383640>) obo:IAO_0000115 obo:CHMO_0000975 "A chromatography column \"containing a solid packing\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'packed column' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.P04393") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.P04393>) obo:IAO_0000115 obo:CHMO_0000975 "A chromatography column \"containing a solid packing\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000975 "CHMO:0000975")
 AnnotationAssertion(rdfs:label obo:CHMO_0000975 "packed column")
 SubClassOf(obo:CHMO_0000975 obo:CHMO_0000997)
@@ -14512,7 +14512,7 @@ SubClassOf(obo:CHMO_0000985 obo:CHMO_0000986)
 
 # Class: obo:CHMO_0000986 (stationary phase)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'stationary phase' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.S05949") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.S05949>) Annotation(oboInOwl:hasDbXref <https://books.rsc.org/view-large/6383571>) obo:IAO_0000115 obo:CHMO_0000986 "A chromatographic phase which can be \"solid, gel or liquid\" that plays the role of the stationary component in chromatography.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'stationary phase' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.S05949") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.S05949>) obo:IAO_0000115 obo:CHMO_0000986 "A chromatographic phase which can be \"solid, gel or liquid\" that plays the role of the stationary component in chromatography.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000986 "CHMO:0000986")
 AnnotationAssertion(rdfs:label obo:CHMO_0000986 "stationary phase")
 SubClassOf(obo:CHMO_0000986 obo:CHMO_0000994)
@@ -14576,7 +14576,7 @@ SubClassOf(obo:CHMO_0000994 obo:CHMO_0000993)
 
 # Class: obo:CHMO_0000995 (mobile phase)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'mobile phase' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M03952") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.M03952>) Annotation(oboInOwl:hasDbXref <https://books.rsc.org/view-large/6383569>) obo:IAO_0000115 obo:CHMO_0000995 "A chromatographic phase as \"a fluid which percolates through or along the stationary bed\" in chromatography.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'mobile phase' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M03952") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.M03952>) obo:IAO_0000115 obo:CHMO_0000995 "A chromatographic phase as \"a fluid which percolates through or along the stationary bed\" in chromatography.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000995 "CHMO:0002468")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000995 "eluent")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000995 "CHMO:0000995")
@@ -29646,7 +29646,7 @@ SubClassOf(obo:CHMO_0002352 obo:CHMO_0002351)
 
 # Class: obo:CHMO_0002353 (pH glass electrode)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'pH glass electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.P04545") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.P04545>) Annotation(oboInOwl:hasDbXref <https://books.rsc.org/view-large/6384493>) obo:IAO_0000115 obo:CHMO_0002353 "A \"hydrogen-ion responsive electrode usually consisting of a bulb, or other suitable form, of special glass attached to a stem of high resistance glass complete with internal reference electrode and internal filling solution system.\"")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'pH glass electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.P04545") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.P04545>) obo:IAO_0000115 obo:CHMO_0002353 "A \"hydrogen-ion responsive electrode usually consisting of a bulb, or other suitable form, of special glass attached to a stem of high resistance glass complete with internal reference electrode and internal filling solution system.\"")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002353 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002353 "2009-09-11T11:28:36Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002353 "CHMO:0002353")
