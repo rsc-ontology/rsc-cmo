@@ -6952,7 +6952,7 @@ SubClassOf(obo:CHMO_0000338 obo:CHMO_0000332)
 
 # Class: obo:CHMO_0000339 (Auger electron spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref <ISBN:0-471-96523-5>) Annotation(oboInOwl:hasDbXref <https://doi.org/10.1351/goldbook.A00522>) obo:IAO_0000115 obo:CHMO_0000339 "An electron spectroscopy where a high energy photon ionises a core electron and an electron from a higher energy level descends to take its place, releasing sufficient energy to eject a second so-called 'Auger' electron and the energy of the Auger electron is detected as a function of incident photon energy.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:0-471-96523-5>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.A00522>) obo:IAO_0000115 obo:CHMO_0000339 "An electron spectroscopy where a high energy photon ionises a core electron and an electron from a higher energy level descends to take its place, releasing sufficient energy to eject a second so-called 'Auger' electron and the energy of the Auger electron is detected as a function of incident photon energy.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000339 "AEES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000339 "Auger electron emission spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000339 "Auger electron spectrometry")
@@ -11334,7 +11334,7 @@ SubClassOf(obo:CHMO_0000686 obo:CHMO_0000684)
 
 # Class: obo:CHMO_0000687 (differential thermal analysis)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'differential thermal analysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.D01709") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.D01709>) Annotation(oboInOwl:hasDbXref "https://books.rsc.org/view-large/6381138, 11.7 	differential thermal analysis, (DTA)  Measurement method where the temperature difference between a sample and a reference material is measured as a function of time or temperature.") obo:IAO_0000115 obo:CHMO_0000687 "A thermal analysis of \"the temperature difference between [the sample] and a reference material\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'differential thermal analysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.D01709") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.D01709>) obo:IAO_0000115 obo:CHMO_0000687 "A thermal analysis of \"the temperature difference between [the sample] and a reference material\".")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000687 "DTA")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000687 "CHMO:0000687")
 AnnotationAssertion(rdfs:label obo:CHMO_0000687 "differential thermal analysis")
@@ -14282,7 +14282,7 @@ SubClassOf(obo:CHMO_0000959 obo:CHMO_0000960)
 
 # Class: obo:CHMO_0000960 (ion source)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref <ISBN:9780470516348>) Annotation(oboInOwl:hasDbXref <https://doi.org/10.1351/goldbook.I03247>) obo:IAO_0000115 obo:CHMO_0000960 "A device that takes an analyte and generates ions which are passed to the rest of a mass spectrometer for analysis.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:9780470516348>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.I03247>) obo:IAO_0000115 obo:CHMO_0000960 "A device that takes an analyte and generates ions which are passed to the rest of a mass spectrometer for analysis.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000960 "CHMO:0000960")
 AnnotationAssertion(rdfs:label obo:CHMO_0000960 "ion source")
 SubClassOf(obo:CHMO_0000960 obo:OBI_0000968)
@@ -15128,14 +15128,14 @@ SubClassOf(obo:CHMO_0001053 obo:OBI_0000968)
 
 # Class: obo:CHMO_0001054 (electric sector)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E01938>) obo:IAO_0000115 obo:CHMO_0001054 "A device which applies an electric field in order to select ions that have the same kinetic energy from an ion beam.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E01938>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:9780470516348>) obo:IAO_0000115 obo:CHMO_0001054 "A device which applies an electric field in order to select ions that have the same kinetic energy from an ion beam.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001054 "CHMO:0001054")
 AnnotationAssertion(rdfs:label obo:CHMO_0001054 "electric sector")
 SubClassOf(obo:CHMO_0001054 obo:OBI_0000968)
 
 # Class: obo:CHMO_0001055 (double-focusing mass spectrometer)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref <ISBN:9780470516348>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.D01845>) obo:IAO_0000115 obo:CHMO_0001055 "A mass spectrometer that applies an electric field in order to select ions that have the same kinetic energy from an ion beam and uses a wedge-shaped magnetic field to separate the total ion beam into discrete ion beams according to the mass-to-charge ratio of the ions.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.D01845>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:9780470516348>) obo:IAO_0000115 obo:CHMO_0001055 "A mass spectrometer that applies an electric field in order to select ions that have the same kinetic energy from an ion beam and uses a wedge-shaped magnetic field to separate the total ion beam into discrete ion beams according to the mass-to-charge ratio of the ions.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001055 "double-focusing magnetic sector mass spectrometer")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001055 "double-focussing magnetic sector mass spectrometer")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001055 "double-focussing mass spectrometer")
@@ -29575,7 +29575,7 @@ SubClassOf(obo:CHMO_0002345 obo:CHMO_0002344)
 
 # Class: obo:CHMO_0002346 (indicator electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://doi.org/10.1351/goldbook.I03006>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) obo:IAO_0000115 obo:CHMO_0002346 "An electrode at which the potential is measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.I03006>) obo:IAO_0000115 obo:CHMO_0002346 "An electrode at which the potential is measured.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002346 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002346 "2009-09-11T10:57:31Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002346 "test electrode")
@@ -29595,7 +29595,7 @@ SubClassOf(obo:CHMO_0002347 obo:CHMO_0002344)
 
 # Class: obo:CHMO_0002348 (hydrogen gas electrode)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'hydrogen gas electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.H02900") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/ >) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.H02900>) Annotation(oboInOwl:hasDbXref "Orange:3.4.12") obo:IAO_0000115 obo:CHMO_0002348 "A reference gas electrode based on the equilibrium between aqueous protons and electrons on one side and hydrogen gas on the other, in solutions saturated with hydrogen gas. Typically it is made of \"a thin foil of platinum electrolytically coated with a finely divided deposit of platinum or palladium metal\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'hydrogen gas electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.H02900") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.H02900>) obo:IAO_0000115 obo:CHMO_0002348 "A reference gas electrode based on the equilibrium between aqueous protons and electrons on one side and hydrogen gas on the other, in solutions saturated with hydrogen gas. Typically it is made of \"a thin foil of platinum electrolytically coated with a finely divided deposit of platinum or palladium metal\".")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002348 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002348 "2009-09-11T11:04:46Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002348 "NHE")
@@ -29702,7 +29702,7 @@ SubClassOf(obo:CHMO_0002357 obo:CHMO_0002345)
 
 # Class: obo:CHMO_0002358 (auxiliary electrode)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'auxiliary electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00535") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/ >) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00535>) obo:IAO_0000115 obo:CHMO_0002358 "An electrode that \"serves merely to carry the current flowing through the cell, and at the surface of which no processes of interest occur.\"")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'auxiliary electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00535") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00535>) obo:IAO_0000115 obo:CHMO_0002358 "An electrode that \"serves merely to carry the current flowing through the cell, and at the surface of which no processes of interest occur.\"")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002358 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002358 "2009-09-11T01:32:58Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002358 "counter electrode")
@@ -30170,7 +30170,7 @@ SubClassOf(obo:CHMO_0002392 obo:CHMO_0000806)
 
 # Class: obo:CHMO_0002393 (ion-selective electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref <ISBN:978-3-540-74597-6>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.I03244>) obo:IAO_0000115 obo:CHMO_0002393 "An electrode which responds to the activity of a primary ion in presence of various other (interfering) ions in the sample solution. Ion-selective electrodes contain a selective membrane which contains fixed or mobile sites that interact with ions in solution.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.I03244>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:978-3-540-74597-6>) obo:IAO_0000115 obo:CHMO_0002393 "An electrode which responds to the activity of a primary ion in presence of various other (interfering) ions in the sample solution. Ion-selective electrodes contain a selective membrane which contains fixed or mobile sites that interact with ions in solution.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002393 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002393 "2009-09-16T11:06:31Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002393 "ISE")
@@ -32567,7 +32567,7 @@ SubClassOf(obo:CHMO_0002592 obo:CHMO_0002344)
 
 # Class: obo:CHMO_0002593 (graphite electrode)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'carbon electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C00829") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/ >) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.G02685>) obo:IAO_0000115 obo:CHMO_0002593 "A carbon electrode that has been \"fired at a temperature around 2800 K\", resulting in a largely graphitic composition.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'carbon electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C00829") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.G02685>) obo:IAO_0000115 obo:CHMO_0002593 "A carbon electrode that has been \"fired at a temperature around 2800 K\", resulting in a largely graphitic composition.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002593 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002593 "2009-11-10T12:21:55Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002593 "CHMO:0002593")
@@ -35290,7 +35290,7 @@ SubClassOf(obo:CHMO_0002847 obo:CHMO_0002803)
 
 # Class: obo:CHMO_0002848 (dynamic range)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref <http://iupac.org/publications/analytical_compendium/Cha09sec245.pdf>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.D01874>) obo:IAO_0000115 obo:CHMO_0002848 "A working range over which an incremental change in concentration or mass flow rate produces an incremental change in response.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "Compendium of Analytical Nomenclature; 3rd edition, edited by J Inczedy, Blackwell Scientific Publications, 1998. Chapter 9.2.4.5. ISBN 0-86542-615-5. https://media.iupac.org/publications/analytical_compendium/") Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <http://iupac.org/publications/analytical_compendium/Cha09sec245.pdf>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.D01874>) obo:IAO_0000115 obo:CHMO_0002848 "A working range \"over which an incremental change in concentration or mass flow-rate produces an incremental change\" in response.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002848 "CHMO:0002848")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002848 "The dynamic range is greater than the linear range.")
 AnnotationAssertion(rdfs:label obo:CHMO_0002848 "dynamic range")
@@ -35329,7 +35329,7 @@ SubClassOf(obo:CHMO_0002852 obo:OBI_0000094)
 
 # Class: obo:CHMO_0002853 (fraction extracted)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'fraction extracted' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.F02503") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02503>) Annotation(oboInOwl:hasDbXref "http://iupac.org/publications/analytical_compendium/Cha09sec43.pdf") obo:IAO_0000115 obo:CHMO_0002853 "An assay output expressing \"the fraction of the total quantity of a substance extracted [in a separation experiment] under specified conditions\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'fraction extracted' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.F02503") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02503>) obo:IAO_0000115 obo:CHMO_0002853 "An assay output expressing \"the fraction of the total quantity of a substance extracted [in a separation experiment] under specified conditions\".")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002853 "recovery factor")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002853 "CHMO:0002853")
 AnnotationAssertion(rdfs:label obo:CHMO_0002853 "fraction extracted")
