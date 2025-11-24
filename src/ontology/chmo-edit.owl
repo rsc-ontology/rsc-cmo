@@ -5581,6 +5581,7 @@ SubClassOf(obo:CHMO_0000227 obo:CHMO_0000226)
 # Class: obo:CHMO_0000228 (spectroscopy)
 
 AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S05848>) obo:IAO_0000115 obo:CHMO_0000228 "An assay studying the interaction of a sample with radiation or particles for measurement or detection.")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000228 "spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000228 "CHMO:0000228")
 AnnotationAssertion(rdfs:label obo:CHMO_0000228 "spectroscopy")
 SubClassOf(obo:CHMO_0000228 obo:OBI_0000070)
@@ -10488,7 +10489,8 @@ SubClassOf(obo:CHMO_0000618 obo:CHMO_0000615)
 
 # Class: obo:CHMO_0000619 (photoacoustic spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <FIX:0000700>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.P04576>) obo:IAO_0000115 obo:CHMO_0000619 "A spectroscopy where the sound emitted when a gaseous sample is exposed to an intense laser beam, which is rapidly interrupted by a rotating slotted disk, is measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.P04576>) obo:IAO_0000115 obo:CHMO_0000619 "A spectroscopy where the sound emitted when a gaseous sample is exposed to an intense laser beam, which is rapidly interrupted by a rotating slotted disk, is measured.")
+AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000619 "FIX:0000700")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000619 "LIOAS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000619 "laser-induced optoacoustic spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000619 "laser-induced optoacoustic spectroscopy")
