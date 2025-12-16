@@ -3256,9 +3256,7 @@ SubClassOf(obo:CHMO_0000009 obo:CHMO_0000004)
 
 # Class: obo:CHMO_0000010 (conductometry)
 
-AnnotationAssertion(Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384588
-8.143 conductometry 
-Measurement principle in which the electric conductivity of a solution is measured. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384413/Electroanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000010 "The measurement of the conductance of a solution as a function of concentration. Measurements are made indirectly across the resistance of the solution with alternating current.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'conductometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.09166") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09166>) obo:IAO_0000115 obo:CHMO_0000010 "An assay \"in which the electric conductivity of a solution is measured\" as a function of concentration. Measurements are made indirectly across the resistance of the solution with alternating current.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000010 "FIX:0000768")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000010 "FIX:0000770")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000010 "conductimetry")
@@ -4778,10 +4776,7 @@ SubClassOf(obo:CHMO_0000155 obo:CHMO_0000152)
 
 # Class: obo:CHMO_0000156 (X-ray diffraction)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000007") Annotation(oboInOwl:hasDbXref "ISBN:90190280031-0") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381382
-9.174 X-ray diffraction analysis 
-X-ray diffraction, (XRD) 
-Measurement method using diffraction of X-radiation to obtain the spatial arrangement of atoms in a crystalline sample. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381192/Radioanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000156 "A method for determining structure by directing a beam of X-rays at the sample and detecting the positions and intensities of the diffracted X-rays as a pattern of spots on a photographic plate.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000007") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08771>) obo:IAO_0000115 obo:CHMO_0000156 "A diffraction method for determining structure by directing a beam of X-rays at the sample and detecting the positions and intensities of the diffracted X-rays as a pattern of spots on a photographic plate.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000156 "X-Ray crystallographic analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000156 "X-ray analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000156 "X-ray crystallography")
@@ -4829,7 +4824,7 @@ SubClassOf(obo:CHMO_0000159 obo:CHMO_0000156)
 
 # Class: obo:CHMO_0000160 (scattering method)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> "https://doi.org/10.1351/goldbook.S05487") obo:IAO_0000115 obo:CHMO_0000160 "Any detection or measurement method where reciprocal space structure can be determined by measuring the change in direction or energy of incident particles or radiation scattered by a sample.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> "https://doi.org/10.1351/goldbook.S05487") obo:IAO_0000115 obo:CHMO_0000160 "A reciprocal-space method where reciprocal space structure can be determined by measuring the change in direction or energy of incident particles or radiation scattered by a sample.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000160 "CHMO:0000160")
 AnnotationAssertion(rdfs:label obo:CHMO_0000160 "scattering method")
 SubClassOf(obo:CHMO_0000160 obo:CHMO_0000140)
@@ -5107,9 +5102,7 @@ SubClassOf(obo:CHMO_0000180 obo:CHMO_0000166)
 
 # Class: obo:CHMO_0000181 (neutron scattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0824719948") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381345
-9.141 neutron scattering analysis 
-Measurement method in which elastic or inelastic scattering of neutrons by the target nuclei is applied to study the composition and structure of a material. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381192/Radioanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000181 "A method for determining structure by measuring the change in direction or energy of scattered neutrons. Neutrons are scattered by the atomic nuclei in the sample and the intensity of the scattering is given by the scattering vector Q = (4/)sin(pi/2).")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08743>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:0824719948>) obo:IAO_0000115 obo:CHMO_0000181 "A method for determining structure by measuring the change in direction or energy of scattered neutrons. Neutrons are scattered by the atomic nuclei in the sample and the intensity of the scattering is given by the scattering vector Q = (4/)sin(pi/2).")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000181 "FIX:0000400")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000181 "neutron scattering spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000181 "neutron scattering spectroscopy")
@@ -5221,9 +5214,7 @@ SubClassOf(obo:CHMO_0000192 obo:CHMO_0000181)
 
 # Class: obo:CHMO_0000193 (neutron backscattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381345
-9.141 neutron scattering analysis 
-Measurement method in which elastic or inelastic scattering of neutrons by the target nuclei is applied to study the composition and structure of a material. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381192/Radioanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000193 "A method for determining structure by measuring the change in direction or energy of backscattered neutrons. Neutrons are scattered by the atomic nuclei in the sample, and suffer a loss of kinetic energy during collisions.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000193 "An inelastic neutron scattering method measuring the change in direction or energy of backscattered neutrons.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000193 "neutron backscattering")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000193 "neutron backscattering spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000193 "neutron backscattering spectroscopy")
@@ -5319,13 +5310,11 @@ SubClassOf(obo:CHMO_0000201 obo:CHMO_0000200)
 
 # Class: obo:CHMO_0000202 (resonant inelastic X-ray scattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384938
-6.310 resonant inelastic X-ray scattering, (RIXS) 
-resonant X-ray emission 
-resonant X-ray Raman 
-Measurement method of inelastic X-ray spectroscopy that uses a hard or soft X-ray beam to excite transitions of core-level electrons into empty energy levels. The subsequent transition of an electron into the core state is accompanied by X-ray emission with characteristic momentum and energy. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000202 "A method for determining structure by measuring the energy loss of X-rays scattered by a sample where the incident X-ray energy is chosen to coincide with an electronic transition in the sample.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08541>) obo:IAO_0000115 obo:CHMO_0000202 "An inelastic X-ray scattering method where the incident X-ray energy is chosen to coincide with an electronic transition in the sample.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000202 "RIXES")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000202 "RIXS")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08541>) oboInOwl:hasExactSynonym obo:CHMO_0000202 "RIXS")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08541>) oboInOwl:hasExactSynonym obo:CHMO_0000202 "resonant X-ray Raman")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08541>) oboInOwl:hasExactSynonym obo:CHMO_0000202 "resonant X-ray emission")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000202 "resonant inelastic X-ray emission spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000202 "resonant inelastic X-ray emission spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000202 "resonant inelastic X-ray scattering spectrometry")
@@ -5336,10 +5325,9 @@ SubClassOf(obo:CHMO_0000202 obo:CHMO_0000201)
 
 # Class: obo:CHMO_0000203 (angle-resolved resonant X-ray scattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382258
-10.3 angle resolved X-ray photoelectron spectroscopy, (ARXPS) 
-angle dependent X-ray photoelectron spectroscopy 
-Measurement method in which X-ray photoelectron intensities are measured as a function of angle of emission. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000203 "A method for determining structure by measuring the energy loss of X-rays scattered by a sample as a function of emission angle, where the incident X-ray energy is chosen to coincide with an electronic transition in the sample.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://books.rsc.org/view-large/6382258>) obo:IAO_0000115 obo:CHMO_0000203 "A resonant inelastic X-ray scattering method measuring the energy loss of X-rays scattered by a sample as a function of emission angle.")
+AnnotationAssertion(Annotation(dcterms:source <https://books.rsc.org/view-large/6382258>) obo:OMO_0003012 obo:CHMO_0000203 "ARXPS")
+AnnotationAssertion(Annotation(dcterms:source <https://books.rsc.org/view-large/6382258>) oboInOwl:hasExactSynonym obo:CHMO_0000203 "angle dependent X-ray photoelectron spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000203 "angle-resolved resonant X-ray emission spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000203 "angle-resolved resonant X-ray emission spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000203 "angular-resolved resonant X-ray emission spectroscopy")
@@ -5349,9 +5337,7 @@ SubClassOf(obo:CHMO_0000203 obo:CHMO_0000202)
 
 # Class: obo:CHMO_0000204 (small-angle X-ray scattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000223") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382310
-10.49 small-angle X-ray scattering 
-Measurement method in which the elastically scattered intensity of X-rays is measured for small-angle deflections. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000204 "A method for determining structure by measuring the change in direction or energy of X-rays scattered by a sample at low angles (0–10°).")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000223") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09203>) obo:IAO_0000115 obo:CHMO_0000204 "An X-ray scattering method where the X-rays scatter by a sample at low angles (0–10°).")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000204 "SAXS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000204 "small angle X-ray scattering")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000204 "CHMO:0000204")
@@ -5360,14 +5346,13 @@ SubClassOf(obo:CHMO_0000204 obo:CHMO_0000200)
 
 # Class: obo:CHMO_0000205 (grazing-incidence X-ray scattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382305
-10.44 grazing-incidence small-angle X-ray scattering analysis, (GISAXS) 
-Measurement method in which the elastically scattered intensity of X-rays from a reflecting surface is measured for small-angle deflections at grazing incidence. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000205 "A method for determining structure by measuring the change in direction or energy of X-rays scattered by a sample. The incident X-ray beam strikes the sample under a small angle close to the critical angle of total external X-ray reflection.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000205 "GISAXS")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09199>) obo:IAO_0000115 obo:CHMO_0000205 "A small-angle X-ray scattering method where the incident X-ray beam strikes the sample under a small angle close to the critical angle of total external X-ray reflection.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09199>) oboInOwl:hasExactSynonym obo:CHMO_0000205 "GISAXS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000205 "GIXS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000205 "grazing incidence X-ray scattering")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000205 "grazing incidence small-angle X-ray scattering")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000205 "grazing-incidence small-angle X-ray scattering")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09199>) oboInOwl:hasExactSynonym obo:CHMO_0000205 "grazing-incidence small-angle X-ray scattering analysis")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000205 "CHMO:0000205")
 AnnotationAssertion(rdfs:label obo:CHMO_0000205 "grazing-incidence X-ray scattering")
 SubClassOf(obo:CHMO_0000205 obo:CHMO_0000204)
@@ -5401,9 +5386,7 @@ SubClassOf(obo:CHMO_0000208 obo:OBI_0000070)
 
 # Class: obo:CHMO_0000209 (reflectometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382327
-10.66  X-ray reflectometry, (XRR) 
-Measurement method for surface and interface roughness and density, layer thickness of thin layers, and electron density profile by reflecting X-rays from a flat sample and analysing the reflected intensity as a function of angle. (See also specular X-ray reflectometry). (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000209 "Any method for determining structure by directing a beam of particles or X-rays onto an extremely flat surface and measuring the intensity of the reflected radiation as a function of angle.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000209 "A reflection method that directs a beam of particles or X-rays onto an extremely flat surface and measures the intensity of the reflected radiation as a function of angle.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000209 "reflectivity")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000209 "CHMO:0000209")
 AnnotationAssertion(rdfs:label obo:CHMO_0000209 "reflectometry")
@@ -5520,25 +5503,20 @@ SubClassOf(obo:CHMO_0000218 obo:CHMO_0000211)
 
 # Class: obo:CHMO_0000219 (X-ray reflectometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382327
-10.66 X-ray reflectometry, (XRR) 
-Measurement method for surface and interface roughness and density, layer thickness of thin layers, and electron density profile by reflecting X-rays from a flat sample and analysing the reflected intensity as a function of angle. (See also specular X-ray reflectometry). (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000219 "A method for determining structure by directing a beam of X-rays at an extremely flat surface and measuring the intensity of the reflected X-rays as a function of angle. X-ray reflectometry is used to determine the structure of thin films.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09214>) obo:IAO_0000115 obo:CHMO_0000219 "A reflectometry method that uses a beam of X-rays. X-ray reflectometry is used to determine the structure of thin films.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09214>) obo:OMO_0003012 obo:CHMO_0000219 "XRR")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000219 "X-ray reflectivity")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000219 "XRR")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000219 "CHMO:0000219")
 AnnotationAssertion(rdfs:label obo:CHMO_0000219 "X-ray reflectometry")
 SubClassOf(obo:CHMO_0000219 obo:CHMO_0000209)
 
 # Class: obo:CHMO_0000220 (diffuse X-ray reflectometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382306
-10.45 off-specular X-ray reflectometry 
-diffuse X-ray reflectometry 
-X-ray reflectometry in which significant scattered intensity arises from imperfections of the specimen, the scattered intensity falling outside the specular condition (see specular X-ray reflectometry). (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000220 "A method for determining structure by directing a beam of X-rays at an extremely flat surface (at angle theta minus omega to the surface) and measuring the intensity of the X-rays which undergo diffuse reflection (and are emitted at angle theta plus omega from the surface).")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09200>) obo:IAO_0000115 obo:CHMO_0000220 "An X-ray reflectometry method that directs a beam of X-rays at an extremely flat surface (at angle theta minus omega to the surface) and measures the intensity of the X-rays which undergo diffuse reflection (and are emitted at angle theta plus omega from the surface).")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000220 "diffuse X-ray reflectance")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000220 "diffuse XRR")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000220 "off-specular X-ray reflectivity")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000220 "off-specular X-ray reflectometry")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09200>) oboInOwl:hasExactSynonym obo:CHMO_0000220 "off-specular X-ray reflectometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000220 "off-specular XRR")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000220 "CHMO:0000220")
 AnnotationAssertion(rdfs:label obo:CHMO_0000220 "diffuse X-ray reflectometry")
@@ -5565,9 +5543,7 @@ SubClassOf(obo:CHMO_0000222 obo:CHMO_0000219)
 
 # Class: obo:CHMO_0000223 (ellipsometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0412581604") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382303
-10.42 ellipsometry 
-Measurement method for the thickness of transparent surface films and layers and for complex refractive index of a reflecting material. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000223 "Any method for determining structure where the sample is illuminated with light and the intensity and change in polarisation of the reflected light are measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0412581604") Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.09197>) obo:IAO_0000115 obo:CHMO_0000223 "A polarimetry method for determining structure where the sample is illuminated with light and the intensity and change in polarisation of the reflected light are measured.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000223 "optical ellipsometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000223 "CHMO:0000223")
 AnnotationAssertion(rdfs:label obo:CHMO_0000223 "ellipsometry")
@@ -5652,9 +5628,7 @@ SubClassOf(obo:CHMO_0000232 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHMO_000081
 
 # Class: obo:CHMO_0000233 (atomic spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384613
-6.2 atomic spectroscopy 
-Measurement principle of spectroscopy for the study of electromagnetic radiation absorbed and emitted by atoms. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000233 "Any spectroscopic technique which is based upon the ability of atoms to absorb or emit electromagnetic radiation. In atomic spectroscopy the sample is vaporised and then atomised.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08216>) obo:IAO_0000115 obo:CHMO_0000233 "An electronic spectroscopy which is based upon the ability of atoms to absorb or emit electromagnetic radiation. In atomic spectroscopy the sample is vaporised and then atomised.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000233 "FIX:0000054")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000233 "atomic spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000233 "CHMO:0000233")
@@ -5664,11 +5638,9 @@ SubClassOf(obo:CHMO_0000233 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHMO_000080
 
 # Class: obo:CHMO_0000234 (atomic absorption spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0-19-280031-0") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384924
-6.296 atomic absorption spectroscopy, (AAS) 
-Measurement method of atomic spectroscopy for measuring the amount of a chemical element based on the measurement of the absorption of characteristic electromagnetic radiation by atoms in the vapour phase. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000234 "A type of atomic spectroscopy where the sample is illuminated with ultraviolet or visible light which is absorbed by the non-excited atoms at characteristic wavelengths.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08451>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:0-19-280031-0>) obo:IAO_0000115 obo:CHMO_0000234 "An atomic spectroscopy where the sample is illuminated with ultraviolet or visible light which is absorbed by the non-excited atoms at characteristic wavelengths.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08451>) obo:OMO_0003012 obo:CHMO_0000234 "AAS")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000234 "FIX:0000926")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000234 "AAS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000234 "atomic absorption spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000234 "atomic-absorption spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000234 "CHMO:0000234")
@@ -5766,17 +5738,14 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000242 "CHMO:0000242")
 AnnotationAssertion(rdfs:label obo:CHMO_0000242 "quartz tube atomic absorption spectroscopy")
 SubClassOf(obo:CHMO_0000242 obo:CHMO_0000237)
 
-# Class: obo:CHMO_0000243 (flame atomic absorption spectrometry)
+# Class: obo:CHMO_0000243 (flame atomic absorption spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000929") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384930
-6.302 flame atomic spectroscopy 
-flame atomic spectrometry 
-Measurement method of atomic spectroscopy that uses a flame to excite atoms.(from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000243 "A type of atomic absorption spectrometry where the sample is  aspirated, aerosolised, and mixed with combustible gases, such as acetylene and air or acetylene and nitrous oxide. The mixture is then ignited and atomised in a flame whose temperature ranges from 2100–2800 \\degC. During combustion, atoms of the element of interest in the sample absorb light at characteristic wavelengths.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000929") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.08475>) obo:IAO_0000115 obo:CHMO_0000243 "An atomic absorption spectroscopy where the sample is aspirated, aerosolised, and mixed with combustible gases, such as acetylene and air or acetylene and nitrous oxide. The mixture is then ignited and atomised in a flame whose temperature ranges from 2100–2800 \\degC. During combustion, atoms of the element of interest in the sample absorb light at characteristic wavelengths.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000243 "F-AAS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000243 "FAAS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000243 "flame atomic absorption spectroscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000243 "CHMO:0000243")
-AnnotationAssertion(rdfs:label obo:CHMO_0000243 "flame atomic absorption spectrometry")
+AnnotationAssertion(rdfs:label obo:CHMO_0000243 "flame atomic absorption spectroscopy")
 SubClassOf(obo:CHMO_0000243 obo:CHMO_0000234)
 
 # Class: obo:CHMO_0000244 (thermospray flame furnace atomic absorption spectrometry)
@@ -5854,11 +5823,9 @@ SubClassOf(obo:CHMO_0000250 obo:CHMO_0000234)
 
 # Class: obo:CHMO_0000251 (atomic emission spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0-19-280031-0") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384925
-6.297 atomic emission spectroscopy, (AES) 
-Measurement method of atomic spectroscopy for measuring the amount of a chemical element based on the measurement of the intensity of characteristic electromagnetic radiation emitted by atoms or molecules. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000251 "A type of atomic spectroscopy where the atoms in the sample are excited and the emission of electromagnetic radiation at characteristic wavelengths is detected.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08452>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:0-19-280031-0>) obo:IAO_0000115 obo:CHMO_0000251 "An atomic spectroscopy where the atoms in the sample are excited and the emission of electromagnetic radiation at characteristic wavelengths is detected.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08452>) obo:OMO_0003012 obo:CHMO_0000251 "AES")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000251 "FIX:0000927")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000251 "AES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000251 "OES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000251 "atomic emission spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000251 "atomic-emission spectrometry")
@@ -5905,10 +5872,7 @@ SubClassOf(obo:CHMO_0000254 obo:CHMO_0000253)
 
 # Class: obo:CHMO_0000255 (flame atomic emission spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000928") Annotation(oboInOwl:hasDbXref "FIX:0000935") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/ja9870200573") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384930
-6.302 flame atomic spectroscopy 
-flame atomic spectrometry 
-Measurement method of atomic spectroscopy that uses a flame to excite atoms. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000255 "A type of atomic emission spectrometry where the sample is excited using an N2/oxide–acetylene flame.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000928") Annotation(oboInOwl:hasDbXref "FIX:0000935") Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1039/ja9870200573>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.08475>) obo:IAO_0000115 obo:CHMO_0000255 "An atomic emission spectroscopy where the sample is excited using an N2/oxide–acetylene flame.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000255 "F-AES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000255 "FAES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000255 "flame atomic emission spectroscopy")
@@ -5942,9 +5906,7 @@ SubClassOf(obo:CHMO_0000257 obo:CHMO_0000251)
 
 # Class: obo:CHMO_0000258 (laser-induced breakdown spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384935
-6.307 laser-induced breakdown spectroscopy, (LIBS) 
-Measurement method of atomic spectroscopy that uses a focused laser beam to ablate, atomize and excite atoms from a sample surface with subsequent measurement of generated electromagnetic radiation. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000258 "A type of atomic emission spectrometry where a high energy laser pulse is used to generate a plasma which acts as the excitation source.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08475>) obo:IAO_0000115 obo:CHMO_0000258 "A laser-induced atomic emission spectroscopy where a high energy laser pulse is used to generate a plasma which acts as the excitation source.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000258 "LIBS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000258 "LIPS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000258 "laser induced plasma spectrometry")
@@ -6189,11 +6151,9 @@ SubClassOf(obo:CHMO_0000278 obo:CHMO_0000251)
 
 # Class: obo:CHMO_0000279 (atomic fluorescence spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384926
-6.298 atomic fluorescence spectroscopy, (AFS) 
-Measurement method of atomic spectroscopy for measuring the amount of a chemical element based on the measurement of the re-emission of characteristic electromagnetic radiation by atoms, following the absorption of radiation in the vapour phase. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000279 "Atomic spectroscopy where an atom absorbs then spontaneously emits a photon.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08454>) obo:IAO_0000115 obo:CHMO_0000279 "An atomic spectroscopy where an atom absorbs then spontaneously emits a photon.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08454>) obo:OMO_0003012 obo:CHMO_0000279 "AFS")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000279 "FIX:0000290")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000279 "AFS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000279 "atomic fluorescence spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000279 "atomic-fluorescence spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000279 "CHMO:0000279")
@@ -6448,35 +6408,29 @@ SubClassOf(obo:CHMO_0000297 obo:CHMO_0000228)
 
 # Class: obo:CHMO_0000298 (X-ray absorption spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000107") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381377
-9.169 X-ray absorption analysis 
-X-ray absorption spectroscopy, (XAS) 
-Measurement principle of X-ray analysis in which the absorption spectrum is used to measure the number of atoms, species and other parameters of chemical elements. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381192/Radioanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000298 "Spectroscopy where the sample is bombarded with X-rays and the X-ray absorption coefficient of the sample is measured. When the incident X-ray energy matches the binding energy of an electron in an atom there is a decrease in the intensity of transmitted X-rays resulting in an absorption edge.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000107") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08766>) obo:IAO_0000115 obo:CHMO_0000298 "An X-ray spectroscopy where the sample is bombarded with X-rays and the X-ray absorption coefficient of the sample is measured. When the incident X-ray energy matches the binding energy of an electron in an atom there is a decrease in the intensity of transmitted X-rays resulting in an absorption edge.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08766>) obo:OMO_0003012 obo:CHMO_0000298 "XAA")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08766>) obo:OMO_0003012 obo:CHMO_0000298 "XAS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000298 "X-ray absorption spectrometry")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000298 "XAS")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08766>) oboInOwl:hasExactSynonym obo:CHMO_0000298 "X-ray absorption analysis")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000298 "CHMO:0000298")
 AnnotationAssertion(rdfs:label obo:CHMO_0000298 "X-ray absorption spectroscopy")
 SubClassOf(obo:CHMO_0000298 obo:CHMO_0000297)
 
 # Class: obo:CHMO_0000299 (X-ray absorption fine structure spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381377
-9.169 X-ray absorption analysis 
-X-ray absorption spectroscopy, (XAS) 
-Measurement principle of X-ray analysis in which the absorption spectrum is used to measure the number of atoms, species and other parameters of chemical elements. (from:  https://books.rsc.org/books/edited-volume/2059/chapter/6381192/Radioanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000299 "X-ray absorption spectroscopy where changes in the X-ray absorption coefficient around the absorption edge (the part of the spectrum where the incident X-ray energy matches the binding energy of an electron) are measured as a function of incident X-ray energy.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09212>) obo:IAO_0000115 obo:CHMO_0000299 "An X-ray absorption spectroscopy where changes in the X-ray absorption coefficient around the absorption edge are measured as a function of incident X-ray energy.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09212>) obo:OMO_0003012 obo:CHMO_0000299 "XAFS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000299 "X-ray absorption fine structure (EXAFS) measurements")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000299 "X-ray absorption fine structure spectrometry")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000299 "XAFS")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000299 "CHMO:0000299")
 AnnotationAssertion(rdfs:label obo:CHMO_0000299 "X-ray absorption fine structure spectroscopy")
 SubClassOf(obo:CHMO_0000299 obo:CHMO_0000298)
 
 # Class: obo:CHMO_0000300 (extended X-ray absorption fine structure spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000106") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382304
-10.43 extended X-ray absorption fine structure spectroscopy, (EXAFS) 
-X-ray absorption fine structure spectroscopy in the energy region from the core-level edge to an energy several hundred eV greater. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000300 "X-ray absorption spectroscopy where changes in the X-ray absorption coefficient measured 500–1000 eV below the absorption edge (the part of the spectrum where the incident X-ray energy matches the binding energy of an electron) are determined as a function of incident X-ray energy.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000300 "EXAFS")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000106") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09198>) obo:IAO_0000115 obo:CHMO_0000300 "An X-ray absorption fine structure spectroscopy where changes in the X-ray absorption coefficient measured 500–1000 eV below the absorption edge are determined as a function of incident X-ray energy.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09198>) obo:OMO_0003012 obo:CHMO_0000300 "EXAFS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000300 "EXAFS spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000300 "EXAFS spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000300 "EXAFSS")
@@ -6515,10 +6469,8 @@ SubClassOf(obo:CHMO_0000302 obo:CHMO_0000300)
 
 # Class: obo:CHMO_0000303 (surface extended X-ray absorption fine structure spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000686") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382313
-10.52 surface extended X-ray absorption fine structure spectroscopy, (SEXAFS) 
-Extended X-ray absorption fine structure spectroscopy in which, instead of measuring X-ray absorption, electron emission arising from that absorption is measured. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000303 "X-ray absorption spectroscopy where changes in the X-ray absorption coefficient and the Auger emission of the sample are measured 500–1000 eV below the absorption edge (the part of the spectrum where the incident X-ray energy matches the binding energy of an electron) as a function of incident X-ray energy.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000303 "SEXAFS")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000686") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09206>) obo:IAO_0000115 obo:CHMO_0000303 "An extended X-ray absorption fine structure spectroscopy where changes are in both  in the X-ray absorption coefficient and the Auger emission of the sample.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09206>) obo:OMO_0003012 obo:CHMO_0000303 "SEXAFS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000303 "SEXAFS spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000303 "SEXAFS spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000303 "SEXAFSS")
@@ -6540,23 +6492,21 @@ SubClassOf(obo:CHMO_0000304 obo:CHMO_0000299)
 
 # Class: obo:CHMO_0000305 (near-edge X-ray absorption fine structure spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000025") Annotation(oboInOwl:hasDbXref "FIX:0000376") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382325
-10.64 X-ray absorption near-edge spectroscopy, (XANES) 
-Near-edge extended X-ray absorption fine structure spectroscopy, (NEXAFS) 
-X-ray absorption fine structure spectroscopy in the energy region near (within approximately 100 eV) an absorption edge.  https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0000305 "X-ray absorption spectroscopy where changes in the X-ray absorption coefficient measured within 40 eV of the absorption edge (the part of the spectrum where the incident X-ray energy matches the binding energy of an electron) are determined as a function of incident X-ray energy.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000025") Annotation(oboInOwl:hasDbXref "FIX:0000376") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09213>) obo:IAO_0000115 obo:CHMO_0000305 "An X-ray absorption fine structure spectroscopy where changes in the X-ray absorption coefficient measured within 40 eV of the absorption edge are determined as a function of incident X-ray energy.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09213>) obo:OMO_0003012 obo:CHMO_0000305 "NEXAFS")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09213>) obo:OMO_0003012 obo:CHMO_0000305 "XANES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "NEXAF spectroscopy")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "NEXAFS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "NEXAFS spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "NEXAFSS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "X-ray absorption near edge structure (XANES) spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "X-ray absorption near edge structure spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "X-ray absorption near edge structure spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "X-ray absorption near-edge structure")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "XANES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "XANES spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "XANES spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "near edge X-ray absorption spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000305 "near-edge X-ray absorption fine structure spectrometry")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09213>) oboInOwl:hasExactSynonym obo:CHMO_0000305 "near-edge extended X-ray absorption fine structure spectroscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000305 "CHMO:0000305")
 AnnotationAssertion(rdfs:label obo:CHMO_0000305 "near-edge X-ray absorption fine structure spectroscopy")
 SubClassOf(obo:CHMO_0000305 obo:CHMO_0000299)
@@ -6611,10 +6561,7 @@ SubClassOf(obo:CHMO_0000308 obo:CHMO_0000307)
 
 # Class: obo:CHMO_0000309 (energy-dispersive X-ray emission spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "OrangeBook:16.2") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381364
-9.156 energy-dispersive X-ray fluorescence analysis, (EDX) 
-energy-dispersive X-ray analysis, (EDXA) 
-energy-dispersive X-ray spectroscopy, (EDS, EDXS) (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381192/Radioanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000309 "X-ray emission spectroscopy where the energy spectrum of the X-rays emitted due to core-to-core transitions is measured using a semiconductor detector.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.E02105>) obo:IAO_0000115 obo:CHMO_0000309 "An X-ray emission spectroscopy where the energy spectrum of the X-rays emitted due to core-to-core transitions is measured using a semiconductor detector.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000309 "FIX:0000104")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000309 "FIX:0000677")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000309 "EDAX")
@@ -11486,9 +11433,7 @@ SubClassOf(obo:CHMO_0000697 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000698 (neutron diffraction)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000008") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381344
-9.140 neutron diffraction analysis 
-Measurement method in which the diffraction of neutrons is applied to measure parameters of the atomic and/or magnetic structure of a material. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381192/Radioanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000698 "A method for determining structure by directing a beam of cold or thermal neutrons at a sample and recording the resulting diffraction pattern.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000008") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08741>) obo:IAO_0000115 obo:CHMO_0000698 "A diffraction method for determining structure by directing a beam of cold or thermal neutrons at a sample and recording the resulting diffraction pattern.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000698 "neutron crystallography")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000698 "neutron diffraction analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000698 "neutron diffractometry")
@@ -12900,10 +12845,8 @@ SubClassOf(obo:CHMO_0000822 obo:CHMO_0000800)
 
 # Class: obo:CHMO_0000823 (Raman spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1021/jp001661l") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6385207
-6.573 Raman spectrum 
-Graph of the intensity of scattered electromagnetic radiation in Raman spectroscopy against Raman shift. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000823 "A plot of intensity vs. Raman shift (cm-1) obtained by measuring the Raman scattering of monochromatic light from a sample.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000823 "Raman spectra")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08670>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1021/jp001661l>) obo:IAO_0000115 obo:CHMO_0000823 "A spectrum plotting intensity vs. Raman shift (cm-1) obtained by measuring the Raman scattering of monochromatic light from a sample.")
+AnnotationAssertion(obo:OMO_0003004 obo:CHMO_0000823 "Raman spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000823 "CHMO:0000823")
 AnnotationAssertion(rdfs:label obo:CHMO_0000823 "Raman spectrum")
 SubClassOf(obo:CHMO_0000823 obo:CHMO_0000800)
@@ -13009,13 +12952,10 @@ SubClassOf(obo:CHMO_0000834 obo:CHMO_0000800)
 
 # Class: obo:CHMO_0000835 (nuclear magnetic resonance spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "rsc:pr") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384785
-6.169 nuclear magnetic resonance spectrum 
-NMR spectrum 
-Representation of nuclear magnetic resonance spectroscopy data with at least one dimension a frequency domain. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000835 "Any spectrum that shows the response of spin-active nuclei to radio frequency radiation in an applied magnetic field.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000835 "NMR spectra")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000835 "NMR spectrum")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000835 "nuclear magnetic resonance spectra")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08384>) obo:IAO_0000115 obo:CHMO_0000835 "A spectrum that shows the response of spin-active nuclei to radio frequency radiation in an applied magnetic field.")
+AnnotationAssertion(obo:OMO_0003004 obo:CHMO_0000835 "NMR spectra")
+AnnotationAssertion(obo:OMO_0003004 obo:CHMO_0000835 "nuclear magnetic resonance spectra")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08384>) oboInOwl:hasExactSynonym obo:CHMO_0000835 "NMR spectrum")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000835 "CHMO:0000835")
 AnnotationAssertion(rdfs:label obo:CHMO_0000835 "nuclear magnetic resonance spectrum")
 SubClassOf(obo:CHMO_0000835 obo:CHMO_0000800)
@@ -14001,9 +13941,7 @@ SubClassOf(obo:CHMO_0000921 obo:CHMO_0000040)
 
 # Class: obo:CHMO_0000922 (voltammogram)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384561
-8.126 voltammogram 
-Current–potential curve in a voltammetry experiment. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384413/Electroanalytical-Chemistry1-2)") obo:IAO_0000115 obo:CHMO_0000922 "A plot of cell current vs. the potential between the indicator and reference electrodes obtained from a voltammetry experiment.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09149>) obo:IAO_0000115 obo:CHMO_0000922 "A spectrum plotting cell current vs. the potential between the indicator and reference electrodes obtained from a voltammetry experiment.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000922 "voltammetric profile")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000922 "CHMO:0000922")
 AnnotationAssertion(rdfs:label obo:CHMO_0000922 "voltammogram")
@@ -14160,12 +14098,9 @@ SubClassOf(obo:CHMO_0000938 obo:CHMO_0000228)
 
 # Class: obo:CHMO_0000939 (transmission spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384718
-6.112 transmission spectrum 
-transmittance spectrum 
-General term for the spectrum of transmitted electromagnetic radiation. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0000939 "A plot of transmittance vs. wavelength.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000939 "transmission spectra")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000939 "transmittance spectrum")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08294>) obo:IAO_0000115 obo:CHMO_0000939 "A spectrum plotting transmittance vs. wavelength.")
+AnnotationAssertion(obo:OMO_0003004 obo:CHMO_0000939 "transmission spectra")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08294>) oboInOwl:hasExactSynonym obo:CHMO_0000939 "transmittance spectrum")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000939 "CHMO:0000939")
 AnnotationAssertion(rdfs:label obo:CHMO_0000939 "transmission spectrum")
 SubClassOf(obo:CHMO_0000939 obo:CHMO_0000800)
@@ -17256,19 +17191,17 @@ SubClassOf(obo:CHMO_0001240 obo:CHMO_0000287)
 
 # Class: obo:CHMO_0001241 (elastic recoil detection analysis)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382268
-10.11 direct recoil spectroscopy, (DRS) 
-elastic recoil detection, (ERD) 
-elastic recoil detection analysis, (ERDA) 
-Measurement method to elucidate composition and structure of the outermost atomic layers of a solid material, in which principally monoenergetic neutral atoms or singly charged probe ions are used to sputter atoms or ions out of the solid surface, their energy being recorded at one or more angle of scattering. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0001241 "A technique for measuring elemental concentration depth profiles in thin films by directing an ion beam at the sample and detecting recoiled atoms.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09175>) obo:IAO_0000115 obo:CHMO_0001241 "An ion scattering method for measuring elemental concentration depth profiles in thin films by directing an ion beam at the sample and detecting recoiled atoms.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09175>) obo:OMO_0003012 obo:CHMO_0001241 "DRS")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09175>) obo:OMO_0003012 obo:CHMO_0001241 "ERD")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09175>) obo:OMO_0003012 obo:CHMO_0001241 "ERDA")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001241 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001241 "2009-03-25T02:46:12Z")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001241 "ERDA")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001241 "HFS")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001241 "elastic recoil detection")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09175>) oboInOwl:hasExactSynonym obo:CHMO_0001241 "elastic recoil detection")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001241 "forward recoil scattering")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001241 "hydrogen forward scattering")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0001241 "ERD")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09175>) oboInOwl:hasExactSynonym obo:CHMO_0001241 "direct recoil spectroscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001241 "CHMO:0001241")
 AnnotationAssertion(rdfs:label obo:CHMO_0001241 "elastic recoil detection analysis")
 SubClassOf(obo:CHMO_0001241 obo:CHMO_0000433)
@@ -23483,30 +23416,28 @@ SubClassOf(obo:CHMO_0001845 obo:CHMO_0001844)
 
 # Class: obo:CHMO_0001846 (decoupling in the presence of scalar interactions)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "rsc:pr") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384871
-6.248 decoupling in the presence of scalar interactions, (DIPSI) 
-Pulse sequence in nuclear magnetic resonance spectroscopy often used for isotropic mixing in total correlation spectroscopy (TOCSY) experiments due to its efficiency over large spectral bandwidths. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0001846 "A sequence of composite pulses designed to remove signal splitting due to heteronuclear J-couplings in multinuclear liquid NMR experiments. Also used to allow transfer of magnetisation between nuclei (by making the spins precess with at the same chemical shift and thus enjoy strong coupling–-isotropic mixing). For the pulse sequence see J. Magn. Reson., (1988), 77, pg 274.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08328>) obo:IAO_0000115 obo:CHMO_0001846 "A composite pulse decoupling sequence designed to remove signal splitting due to heteronuclear J-couplings in multinuclear liquid NMR experiments. Also used to allow transfer of magnetisation between nuclei (by making the spins precess with at the same chemical shift and thus enjoy strong coupling–-isotropic mixing).")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08328>) obo:OMO_0003012 obo:CHMO_0001846 "DIPSI")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001846 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001846 "2009-05-29T12:00:00Z")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001846 "DIPSI")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001846 "DIPSI pulse sequence")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001846 "DIPSI sequence")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001846 "CHMO:0001846")
+AnnotationAssertion(rdfs:comment obo:CHMO_0001846 "For the pulse sequence see J. Magn. Reson., (1988), 77, pg 274.")
 AnnotationAssertion(rdfs:label obo:CHMO_0001846 "decoupling in the presence of scalar interactions")
 SubClassOf(obo:CHMO_0001846 obo:CHMO_0001845)
 
 # Class: obo:CHMO_0001847 (globally optimized alternating phase rectangular pulse)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "rsc:pr") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384878
-6.255 globally optimized alternating-phase rectangular pulses, (GARP) 
-Spin decoupling pulse sequence in nuclear magnetic resonance spectroscopy used to provide decoupling over a large frequency range. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0001847 "A sequence of composite pulses designed to remove signal splitting due to heteronuclear J-couplings in multinuclear liquid NMR experiments. For the pulse sequence see J. Magn. Reson., (1985), 64, pg 547.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08345>) obo:IAO_0000115 obo:CHMO_0001847 "A composite pulse decoupling sequence designed to remove signal splitting due to heteronuclear J-couplings in multinuclear liquid NMR experiments.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08345>) obo:OMO_0003012 obo:CHMO_0001847 "GARP")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001847 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001847 "2009-05-29T12:00:00Z")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001847 "GARP")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001847 "GARP pulse sequence")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001847 "GARP sequence")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001847 "globally-optimized alternating phase rectangular pulse")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001847 "CHMO:0001847")
+AnnotationAssertion(rdfs:comment obo:CHMO_0001847 "For the pulse sequence see J. Magn. Reson., (1985), 64, pg 547.")
 AnnotationAssertion(rdfs:label obo:CHMO_0001847 "globally optimized alternating phase rectangular pulse")
 SubClassOf(obo:CHMO_0001847 obo:CHMO_0001845)
 
@@ -24025,9 +23956,7 @@ SubClassOf(obo:CHMO_0001890 obo:CHMO_0001806)
 
 # Class: obo:CHMO_0001891 (chemical map)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://www.spectroscopyeurope.com/NIR_14_3.pdf") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382369
-10.106 chemical map 
-Surface map using signals proportional to the amount of an element in a particular chemical state in the sample. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6382245/Analytical-Chemistry-of-Surfaces1-2)") obo:IAO_0000115 obo:CHMO_0001891 "A data set derived from microspectroscopy consisting of a three-dimensional image where two axes describe the x and y spatial dimensions and the third dimension represents spectral wavelength. The image is obtained by stacking one image per spectral wavelength sequentially.")
+AnnotationAssertion(Annotation(dcterms:source <http://www.spectroscopyeurope.com/NIR_14_3.pdf>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.09236>) obo:IAO_0000115 obo:CHMO_0001891 "An assay output derived from microspectroscopy consisting of \"a three-dimensional [image] where two axes describe the [x and y] spatial dimensions and the third dimension represents spectral wavelength\". The image is obtained by stacking one image per spectral wavelength sequentially.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001891 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001891 "2009-06-01T10:34:07Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001891 "CHMO:0001891")
@@ -30205,11 +30134,7 @@ SubClassOf(obo:CHMO_0002388 obo:CHMO_0002387)
 
 # Class: obo:CHMO_0002389 (total ion chromatogram)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:comment "https://books.rsc.org/view-large/6383447
-7.412 total ion current chromatogram, (TICC) 
-reconstructed total ion current chromatogram 
-deprecated: total ion chromatogram 
-Chromatogram created by plotting the total ion current in a series of mass spectra recorded as a function of retention time. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6383030/Mass-Spectrometry1-2)") obo:IAO_0000115 obo:CHMO_0002389 "A plot of the total ion current vs. retention time obtained from a chromatography experiment with mass detection.  selectivity in the data. The total ion current chromatogram monitors a very large window often of several hundred mass-to-charge units.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://books.rsc.org/view-large/6383447>) obo:IAO_0000115 obo:CHMO_0002389 "An ion chromatogram plotting the total ion current vs. retention time. The total ion current chromatogram monitors a very large window often of several hundred mass-to-charge units.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002389 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002389 "2009-09-16T08:59:28Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002389 "TICs")
@@ -30222,10 +30147,7 @@ SubClassOf(obo:CHMO_0002389 obo:CHMO_0002388)
 
 # Class: obo:CHMO_0002390 (base peak intensity chromatogram)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6383069
-7.34 base peak chromatogram, (BPC) 
-base peak ion chromatogram 
-Chromatogram obtained by plotting the signal of the ions represented by the base peak detected in each of a series of mass spectra recorded as a function of retention time. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6383030/Mass-Spectrometry1-2)") obo:IAO_0000115 obo:CHMO_0002390 "A plot of ion current vs. retention time obtained from a chromatography experiment with mass detection. The base peak intensity chromatogram represents the intensity of the most intense peak at any one time.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.12344>) obo:IAO_0000115 obo:CHMO_0002390 "An ion chromatogram plotting ion current vs. retention time obtained from a chromatography experiment with mass detection. The base peak intensity chromatogram represents the intensity of the most intense peak at any one time.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002390 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002390 "2009-09-16T09:00:06Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002390 "BPI chromatogram")
@@ -35029,10 +34951,9 @@ SubClassOf(obo:CHMO_0002801 obo:CHMO_0002803)
 
 # Class: obo:CHMO_0002802 (limit of quantification)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1021/ac50064a004") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6381989
-1.117 limit of quantification, (LOQ) 
-quantification limit 
-Smallest or largest measured quantity value, obtained by a given measurement procedure, which fulfils a requirement of fitness for purpose. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381851/Fundamental-and-Metrological-Concepts-in)") obo:IAO_0000115 obo:CHMO_0002802 "The smallest measure that can be quantified with reasonable certainty for a given analytical procedure.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1021/ac50064a004>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.08022>) obo:IAO_0000115 obo:CHMO_0002802 "A figure of merit expressing the smallest measure that can be quantified with reasonable certainty for a given analytical procedure.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08022>) obo:OMO_0003012 obo:CHMO_0002802 "LOQ")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08022>) oboInOwl:hasExactSynonym obo:CHMO_0002802 "quantification limit")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002802 "CHMO:0002802")
 AnnotationAssertion(rdfs:label obo:CHMO_0002802 "limit of quantification")
 SubClassOf(obo:CHMO_0002802 obo:CHMO_0002803)
@@ -35055,10 +34976,7 @@ SubClassOf(obo:CHMO_0002804 obo:CHMO_0002751)
 
 # Class: obo:CHMO_0002805 (working range)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6382034
-1.160 working interval 
-working range 
-Set of quantity values over which a measuring instrument or measuring system provides results with acceptable measurement uncertainty, under defined conditions. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6381851/Fundamental-and-Metrological-Concepts-in)") obo:IAO_0000115 obo:CHMO_0002805 "The range of measures which can be quantified with reasonable certainty for a given analytical procedure.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(rdfs:seeAlso <https://books.rsc.org/view-large/6382034>) obo:IAO_0000115 obo:CHMO_0002805 "A figure of merit expressing the range of measures which can be quantified with reasonable certainty for a given analytical procedure.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002805 "CHMO:0002805")
 AnnotationAssertion(rdfs:label obo:CHMO_0002805 "working range")
 SubClassOf(obo:CHMO_0002805 obo:CHMO_0002803)
@@ -35856,9 +35774,8 @@ SubClassOf(obo:CHMO_0002910 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_000290
 
 # Class: obo:CHMO_0002911 (magic angle spinning)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780192800310") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6384824
-6.205 magic angle spinning, (MAS) 
-Technique in solid-state nuclear magnetic resonance spectroscopy to remove or reduce the influence of anisotropic interactions by rapid sample rotation about the magic angle. See Figure 6.5. (from: https://books.rsc.org/books/edited-volume/2059/chapter/6384600/Analytical-Spectroscopy1-2)") obo:IAO_0000115 obo:CHMO_0002911 "Spinning a sample very rapidly at the magic angle (54.74 deg with respect to the direction of the magnetic field) in order to average anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, to zero.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08377>) obo:IAO_0000115 obo:CHMO_0002911 "A planned process that includes spinning a sample very rapidly at the magic angle (54.74 deg with respect to the direction of the magnetic field) in order to average anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, to zero.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08377>) obo:OMO_0003012 obo:CHMO_0002911 "MAS")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002911 "CHMO:0002911")
 AnnotationAssertion(rdfs:label obo:CHMO_0002911 "magic angle spinning")
 SubClassOf(obo:CHMO_0002911 obo:OBI_0000011)
@@ -35882,7 +35799,7 @@ SubClassOf(obo:CHMO_0002913 obo:CHMO_0000993)
 
 # Class: obo:CHMO_0002914 (absorption of material)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation <'absorption' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00036>) Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00036>) obo:IAO_0000115 obo:CHMO_0002914 "\"The process of one material (absorbate) being retained by another (absorption).\"")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'absorption' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00036") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00036>) obo:IAO_0000115 obo:CHMO_0002914 "A \"process of one material (absorbate) being retained by another (absorption).\"")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0002914 "REX:0000188")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002914 "CHMO:0002914")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002914 "Gold Book, somewhat modified. It goes on \"The process of one material (absorbate) being retained by another (absorbent); this may be the physical solution of a gas, liquid, or solid in a liquid, attachment of molecules of a gas, vapour, liquid, or dissolved substance to a solid surface by physical forces, etc.\"")
@@ -35891,7 +35808,7 @@ SubClassOf(obo:CHMO_0002914 obo:BFO_0000015)
 
 # Class: obo:CHMO_0002915 (absorption of radiation)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> "http://dx.doi.org/10.1351/goldbook.A00036") obo:IAO_0000115 obo:CHMO_0002915 "A phenomenon in which radiation transfers to matter which it traverses some or all of its energy.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'absorption' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00036") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <http://dx.doi.org/10.1351/goldbook.A00036>) obo:IAO_0000115 obo:CHMO_0002915 "A process \"in which radiation transfers to matter which it traverses some or all of its energy.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002915 "CHMO:0002915")
 AnnotationAssertion(rdfs:label obo:CHMO_0002915 "absorption of radiation")
 SubClassOf(obo:CHMO_0002915 obo:BFO_0000015)
