@@ -4776,14 +4776,14 @@ SubClassOf(obo:CHMO_0000155 obo:CHMO_0000152)
 
 # Class: obo:CHMO_0000156 (X-ray diffraction)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000007") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08771>) obo:IAO_0000115 obo:CHMO_0000156 "A diffraction method for determining structure by directing a beam of X-rays at the sample and detecting the positions and intensities of the diffracted X-rays as a pattern of spots on a photographic plate.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000007") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08771>) obo:IAO_0000115 obo:CHMO_0000156 "A diffraction method that directs a beam of X-rays at the sample and detects the positions and intensities of the diffracted X-rays as a pattern of spots on a photographic plate.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08771>) obo:OMO_0003012 obo:CHMO_0000156 "XRD")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000156 "X-Ray crystallographic analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000156 "X-ray analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000156 "X-ray crystallography")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000156 "X-ray diffraction analysis")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08771>) oboInOwl:hasExactSynonym obo:CHMO_0000156 "X-ray diffraction analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000156 "X-ray diffractometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000156 "X-ray structure determination")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000156 "XRD")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000156 "CHMO:0000156")
 AnnotationAssertion(rdfs:label obo:CHMO_0000156 "X-ray diffraction")
 SubClassOf(obo:CHMO_0000156 obo:CHMO_0000141)
@@ -5102,10 +5102,11 @@ SubClassOf(obo:CHMO_0000180 obo:CHMO_0000166)
 
 # Class: obo:CHMO_0000181 (neutron scattering)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08743>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:0824719948>) obo:IAO_0000115 obo:CHMO_0000181 "A method for determining structure by measuring the change in direction or energy of scattered neutrons. Neutrons are scattered by the atomic nuclei in the sample and the intensity of the scattering is given by the scattering vector Q = (4/)sin(pi/2).")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08743>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:0824719948>) obo:IAO_0000115 obo:CHMO_0000181 "A scattering method for determining structure by measuring the change in direction or energy of scattered neutrons. Neutrons are scattered by the atomic nuclei in the sample and the intensity of the scattering is given by the scattering vector Q = (4/)sin(pi/2).")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000181 "FIX:0000400")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000181 "neutron scattering spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000181 "neutron scattering spectroscopy")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08743>) oboInOwl:hasExactSynonym obo:CHMO_0000181 "neutron scattering analysis")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000181 "CHMO:0000181")
 AnnotationAssertion(rdfs:label obo:CHMO_0000181 "neutron scattering")
 SubClassOf(obo:CHMO_0000181 obo:CHMO_0000160)
@@ -5311,8 +5312,8 @@ SubClassOf(obo:CHMO_0000201 obo:CHMO_0000200)
 # Class: obo:CHMO_0000202 (resonant inelastic X-ray scattering)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08541>) obo:IAO_0000115 obo:CHMO_0000202 "An inelastic X-ray scattering method where the incident X-ray energy is chosen to coincide with an electronic transition in the sample.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08541>) obo:OMO_0003012 obo:CHMO_0000202 "RIXS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000202 "RIXES")
-AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08541>) oboInOwl:hasExactSynonym obo:CHMO_0000202 "RIXS")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08541>) oboInOwl:hasExactSynonym obo:CHMO_0000202 "resonant X-ray Raman")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08541>) oboInOwl:hasExactSynonym obo:CHMO_0000202 "resonant X-ray emission")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000202 "resonant inelastic X-ray emission spectrometry")
@@ -5512,7 +5513,7 @@ SubClassOf(obo:CHMO_0000219 obo:CHMO_0000209)
 
 # Class: obo:CHMO_0000220 (diffuse X-ray reflectometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09200>) obo:IAO_0000115 obo:CHMO_0000220 "An X-ray reflectometry method that directs a beam of X-rays at an extremely flat surface (at angle theta minus omega to the surface) and measures the intensity of the X-rays which undergo diffuse reflection (and are emitted at angle theta plus omega from the surface).")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.09200>) obo:IAO_0000115 obo:CHMO_0000220 "An X-ray reflectometry method that directs a beam of X-rays at an extremely flat surface (at angle theta minus omega to the surface) and measures the intensity of the X-rays which undergo diffuse reflection (and are emitted at angle theta plus omega from the surface).")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000220 "diffuse X-ray reflectance")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000220 "diffuse XRR")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000220 "off-specular X-ray reflectivity")
@@ -5543,7 +5544,7 @@ SubClassOf(obo:CHMO_0000222 obo:CHMO_0000219)
 
 # Class: obo:CHMO_0000223 (ellipsometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0412581604") Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.09197>) obo:IAO_0000115 obo:CHMO_0000223 "A polarimetry method for determining structure where the sample is illuminated with light and the intensity and change in polarisation of the reflected light are measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0412581604") Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.09197>) obo:IAO_0000115 obo:CHMO_0000223 "A polarimetry method where the sample is illuminated with light and the intensity and change in polarisation of the reflected light are measured.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000223 "optical ellipsometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000223 "CHMO:0000223")
 AnnotationAssertion(rdfs:label obo:CHMO_0000223 "ellipsometry")
@@ -5628,7 +5629,7 @@ SubClassOf(obo:CHMO_0000232 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHMO_000081
 
 # Class: obo:CHMO_0000233 (atomic spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08216>) obo:IAO_0000115 obo:CHMO_0000233 "An electronic spectroscopy which is based upon the ability of atoms to absorb or emit electromagnetic radiation. In atomic spectroscopy the sample is vaporised and then atomised.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.08216>) obo:IAO_0000115 obo:CHMO_0000233 "An electronic spectroscopy which is based upon the ability of atoms to absorb or emit electromagnetic radiation. In atomic spectroscopy the sample is vaporised and then atomised.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000233 "FIX:0000054")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000233 "atomic spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000233 "CHMO:0000233")
@@ -5645,6 +5646,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000234 "atomic absorption
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000234 "atomic-absorption spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000234 "CHMO:0000234")
 AnnotationAssertion(rdfs:label obo:CHMO_0000234 "atomic absorption spectroscopy")
+EquivalentClasses(obo:CHMO_0000234 obo:CHMO_0000243)
 SubClassOf(obo:CHMO_0000234 obo:CHMO_0000233)
 
 # Class: obo:CHMO_0000235 (atomic absorption glow-discharge spectroscopy)
@@ -5746,7 +5748,6 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000243 "FAAS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000243 "flame atomic absorption spectroscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000243 "CHMO:0000243")
 AnnotationAssertion(rdfs:label obo:CHMO_0000243 "flame atomic absorption spectroscopy")
-SubClassOf(obo:CHMO_0000243 obo:CHMO_0000234)
 
 # Class: obo:CHMO_0000244 (thermospray flame furnace atomic absorption spectrometry)
 
@@ -5872,7 +5873,7 @@ SubClassOf(obo:CHMO_0000254 obo:CHMO_0000253)
 
 # Class: obo:CHMO_0000255 (flame atomic emission spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000928") Annotation(oboInOwl:hasDbXref "FIX:0000935") Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1039/ja9870200573>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.08475>) obo:IAO_0000115 obo:CHMO_0000255 "An atomic emission spectroscopy where the sample is excited using an N2/oxide–acetylene flame.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000928") Annotation(oboInOwl:hasDbXref "FIX:0000935") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08475>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1039/ja9870200573>) obo:IAO_0000115 obo:CHMO_0000255 "An atomic emission spectroscopy where the sample is excited using an N2/oxide–acetylene flame.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000255 "F-AES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000255 "FAES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000255 "flame atomic emission spectroscopy")
@@ -5906,8 +5907,8 @@ SubClassOf(obo:CHMO_0000257 obo:CHMO_0000251)
 
 # Class: obo:CHMO_0000258 (laser-induced breakdown spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08475>) obo:IAO_0000115 obo:CHMO_0000258 "A laser-induced atomic emission spectroscopy where a high energy laser pulse is used to generate a plasma which acts as the excitation source.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000258 "LIBS")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08500>) obo:IAO_0000115 obo:CHMO_0000258 "A laser-induced atomic emission spectroscopy where a high energy laser pulse is used to generate a plasma which acts as the excitation source.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08500>) obo:OMO_0003012 obo:CHMO_0000258 "LIBS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000258 "LIPS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000258 "laser induced plasma spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000258 "laser induced plasma spectroscopy")
