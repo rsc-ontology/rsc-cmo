@@ -4668,7 +4668,7 @@ SubClassOf(obo:CHMO_0000144 obo:CHMO_0000142)
 
 # Class: obo:CHMO_0000145 (transmission high energy electron diffraction)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.T06483>) obo:IAO_0000115 obo:CHMO_0000145 "A high energy electron diffraction method for determining structure by directing a beam of high energy (10–200 keV) electrons at the sample and recording the resulting diffraction pattern produced by any electrons transmitted through the sample.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.T06483>) obo:IAO_0000115 obo:CHMO_0000145 "A high energy electron diffraction method where the resulting diffraction pattern is produced by any electrons transmitted through the sample.")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06483>) obo:OMO_0003012 obo:CHMO_0000145 "THEED")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000145 "SADP")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000145 "SAED")
@@ -4681,7 +4681,7 @@ SubClassOf(obo:CHMO_0000145 obo:CHMO_0000144)
 
 # Class: obo:CHMO_0000146 (reflection high energy electron diffraction)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.R05238>) obo:IAO_0000115 obo:CHMO_0000146 "A  high energy electron diffraction method for determining structure by directing a beam of high energy (10–200 keV) electrons at the sample and recording the resulting diffraction pattern produced by any reflected or elastically scattered electrons.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.R05238>) obo:IAO_0000115 obo:CHMO_0000146 "A  high energy electron diffraction method where the resulting diffraction pattern is produced by any reflected or elastically scattered electrons.")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05238>) obo:OMO_0003012 obo:CHMO_0000146 "RHEED")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000146 "reflection high-energy electron diffraction")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000146 "CHMO:0000146")
@@ -6412,8 +6412,8 @@ SubClassOf(obo:CHMO_0000297 obo:CHMO_0000228)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000107") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.08766>) obo:IAO_0000115 obo:CHMO_0000298 "An X-ray spectroscopy where the sample is bombarded with X-rays and the X-ray absorption coefficient of the sample is measured. When the incident X-ray energy matches the binding energy of an electron in an atom there is a decrease in the intensity of transmitted X-rays resulting in an absorption edge.")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08766>) obo:OMO_0003012 obo:CHMO_0000298 "XAA")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08766>) obo:OMO_0003012 obo:CHMO_0000298 "XAS")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000298 "X-ray absorption spectrometry")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08766>) oboInOwl:hasExactSynonym obo:CHMO_0000298 "X-ray absorption analysis")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000298 "X-ray absorption spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000298 "CHMO:0000298")
 AnnotationAssertion(rdfs:label obo:CHMO_0000298 "X-ray absorption spectroscopy")
 SubClassOf(obo:CHMO_0000298 obo:CHMO_0000297)
@@ -7679,7 +7679,7 @@ SubClassOf(obo:CHMO_0000400 obo:CHMO_0000394)
 
 # Class: obo:CHMO_0000401 (ultraviolet photoelectron spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000042>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.P04609>) obo:IAO_0000115 obo:CHMO_0000401 "A photoelectron spectroscopy where the sample is illuminated with ultraviolet (10–400 nm) photons causing ionisation and the emission of photoelectrons, the energies of which are measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000042>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.P04609>) obo:IAO_0000115 obo:CHMO_0000401 "A photoelectron spectroscopy where the sample is illuminated with ultraviolet (10–400 nm) photons.")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.P04609>) obo:OMO_0003012 obo:CHMO_0000401 "UPS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000401 "UPES")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.P04609>) oboInOwl:hasExactSynonym obo:CHMO_0000401 "UV photoelectron spectroscopy")
@@ -7737,7 +7737,7 @@ SubClassOf(obo:CHMO_0000403 obo:CHMO_0000387)
 
 # Class: obo:CHMO_0000404 (X-ray photoelectron spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000041>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.X06716>) obo:IAO_0000115 obo:CHMO_0000404 "A photoelectron spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000041>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.X06716>) obo:IAO_0000115 obo:CHMO_0000404 "A photoelectron spectroscopy where the sample is illuminated with X-rays.")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.X06716>) obo:OMO_0003012 obo:CHMO_0000404 "XPS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "ESCA")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "PESIS")
@@ -11353,21 +11353,21 @@ SubClassOf(obo:CHMO_0000687 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000688 (thermoacoustimetry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoacoustimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06309") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06309>) obo:IAO_0000115 obo:CHMO_0000688 "A thermal analysis \"in which the characteristics of imposed acoustic waves [passing through the sample] are measured as a function of temperature\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoacoustimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06309") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06309>) obo:IAO_0000115 obo:CHMO_0000688 "A thermal analysis \"in which the characteristics of imposed acoustic waves [passing through the sample] are measured [...]\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000688 "CHMO:0000688")
 AnnotationAssertion(rdfs:label obo:CHMO_0000688 "thermoacoustimetry")
 SubClassOf(obo:CHMO_0000688 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000689 (thermodilatometry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermodilatometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06314") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06314>) obo:IAO_0000115 obo:CHMO_0000689 "A thermal analysis \"in which a dimension [of the sample] under negligible load  is measured as a function of temperature\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermodilatometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06314") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06314>) obo:IAO_0000115 obo:CHMO_0000689 "A thermal analysis \"in which a dimension [of the sample] under negligible load  is measured [...]\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000689 "CHMO:0000689")
 AnnotationAssertion(rdfs:label obo:CHMO_0000689 "thermodilatometry")
 SubClassOf(obo:CHMO_0000689 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000690 (thermogravimetry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermogravimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06324") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06324>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) obo:IAO_0000115 obo:CHMO_0000690 "A thermal analysis \"in which the mass [of a sample] is measured as a function of temperature\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermogravimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06324") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06324>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) obo:IAO_0000115 obo:CHMO_0000690 "A thermal analysis \"in which the mass [of a sample] is measured [...]\".")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06324>) obo:OMO_0003012 obo:CHMO_0000690 "TG")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000690 "TG analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000690 "TG measurements")
@@ -11384,21 +11384,21 @@ SubClassOf(obo:CHMO_0000690 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000691 (thermomagnetometry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermomagnetometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06327") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06327>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) obo:IAO_0000115 obo:CHMO_0000691 "A thermal analysis in which the magnetic susceptibility of a sample \"is measured as a function of temperature\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermomagnetometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06327") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06327>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) obo:IAO_0000115 obo:CHMO_0000691 "A thermal analysis in which the magnetic susceptibility of a sample \"is measured [...]\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000691 "CHMO:0000691")
 AnnotationAssertion(rdfs:label obo:CHMO_0000691 "thermomagnetometry")
 SubClassOf(obo:CHMO_0000691 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000692 (thermoptometry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoptometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06336") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06336>) obo:IAO_0000115 obo:CHMO_0000692 "A thermal analysis \"in which an optical characteristic [of a sample] is measured as a function of temperature\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoptometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06336") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06336>) obo:IAO_0000115 obo:CHMO_0000692 "A thermal analysis \"in which an optical characteristic [of a sample] is measured [...]\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000692 "CHMO:0000692")
 AnnotationAssertion(rdfs:label obo:CHMO_0000692 "thermoptometry")
 SubClassOf(obo:CHMO_0000692 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000693 (thermoluminescence)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.T06325>) obo:IAO_0000115 obo:CHMO_0000693 "A thermoptometry in which the luminescence of a sample is measured as a function of temperature.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.T06325>) obo:IAO_0000115 obo:CHMO_0000693 "A thermoptometry in which the luminescence of a sample is measured.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000693 "CHMO:0000693")
 AnnotationAssertion(rdfs:label obo:CHMO_0000693 "thermoluminescence")
 SubClassOf(obo:CHMO_0000693 obo:CHMO_0000692)
@@ -11427,7 +11427,7 @@ SubClassOf(obo:CHMO_0000696 obo:CHMO_0000695)
 
 # Class: obo:CHMO_0000697 (thermosonimetry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermosonimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06337") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06337>) obo:IAO_0000115 obo:CHMO_0000697 "A thermal analysis \"in which the sound emitted\" by a sample \"as a function of temperature\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermosonimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06337") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06337>) obo:IAO_0000115 obo:CHMO_0000697 "A thermal analysis \"in which the sound emitted\" by a sample \"is measured [...]\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000697 "CHMO:0000697")
 AnnotationAssertion(rdfs:label obo:CHMO_0000697 "thermosonimetry")
 SubClassOf(obo:CHMO_0000697 obo:CHMO_0000681)
@@ -15199,7 +15199,7 @@ SubClassOf(obo:CHMO_0001059 obo:CHMO_0002244)
 
 # Class: obo:CHMO_0001060 (electron multiplier)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001060 "A piece of apparatus that on contact with a charged particle of sufficient energy emits a greater number electrons.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001060 "A device that on contact with a charged particle of sufficient energy emits a greater number electrons.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001060 "CHMO:0001060")
 AnnotationAssertion(rdfs:label obo:CHMO_0001060 "electron multiplier")
 SubClassOf(obo:CHMO_0001060 obo:OBI_0000968)
