@@ -5338,7 +5338,7 @@ SubClassOf(obo:CHMO_0000203 obo:CHMO_0000202)
 
 # Class: obo:CHMO_0000204 (small-angle X-ray scattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000223") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09203>) obo:IAO_0000115 obo:CHMO_0000204 "An X-ray scattering method in which the X-rays scatter by a sample at low angles (0.1–10°).")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000223") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09203>) obo:IAO_0000115 obo:CHMO_0000204 "An X-ray scattering method in which the X-rays are scattered by a sample at low angles (0.1–10°).")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000204 "SAXS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000204 "small angle X-ray scattering")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000204 "CHMO:0000204")
@@ -5646,7 +5646,6 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000234 "atomic absorption
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000234 "atomic-absorption spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000234 "CHMO:0000234")
 AnnotationAssertion(rdfs:label obo:CHMO_0000234 "atomic absorption spectroscopy")
-EquivalentClasses(obo:CHMO_0000234 obo:CHMO_0000243)
 SubClassOf(obo:CHMO_0000234 obo:CHMO_0000233)
 
 # Class: obo:CHMO_0000235 (atomic absorption glow-discharge spectroscopy)
@@ -8096,7 +8095,7 @@ SubClassOf(obo:CHMO_0000433 obo:CHMO_0000160)
 
 # Class: obo:CHMO_0000434 (Rutherford backscattering spectroscopy)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.R05429>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:3527296344>) obo:IAO_0000115 obo:CHMO_0000434 "An ion scattering and an ion spectroscopy in which the sample is bombarded with He+ or H+ ions (500–1500 eV).")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.R05429>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:3527296344>) obo:IAO_0000115 obo:CHMO_0000434 "An ion scattering and an ion spectroscopy in which the sample is bombarded with He+ or H+ ions (500–1500 eV) and the energies and positions of any backscattered ions are detected.")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05429>) obo:OMO_0003012 obo:CHMO_0000434 "BSS")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05429>) obo:OMO_0003012 obo:CHMO_0000434 "RBS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "HE IS")
@@ -8783,7 +8782,7 @@ SubClassOf(obo:CHMO_0000490 obo:CHMO_0000482)
 
 # Class: obo:CHMO_0000491 (field ionisation mass spectrometry)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.F02360>) obo:IAO_0000115 obo:CHMO_0000491 "A mass spectrometry where the sample is ionised by interaction with a high electric field.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.F02360>) obo:IAO_0000115 obo:CHMO_0000491 "A mass spectrometry in which the sample is ionised by interaction with a high electric field.")
 AnnotationAssertion(obo:OMO_0003012 obo:CHMO_0000491 "FI-MS")
 AnnotationAssertion(obo:OMO_0003012 obo:CHMO_0000491 "FI/MS")
 AnnotationAssertion(obo:OMO_0003012 obo:CHMO_0000491 "FIMS")
@@ -8796,7 +8795,7 @@ SubClassOf(obo:CHMO_0000491 obo:CHMO_0000470)
 
 # Class: obo:CHMO_0000492 (field desorption mass spectrometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000087>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.F02357>) obo:IAO_0000115 obo:CHMO_0000492 "A field ionisation mass spectrometry in which the sample is \"deposited on a solid surface (known as an 'emitter')\".")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000087>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.F02357>) obo:IAO_0000115 obo:CHMO_0000492 "A field ionisation mass spectrometry in which the sample is deposited on a solid surface (known as an 'emitter').")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000492 "FD mass spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000492 "FD-MS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000492 "FDMS")
@@ -11391,7 +11390,7 @@ SubClassOf(obo:CHMO_0000691 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000692 (thermoptometry)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoptometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06336") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06336>) obo:IAO_0000115 obo:CHMO_0000692 "A thermal analysis \"in which an optical characteristic [of a sample] is measuredas a function of temperature\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoptometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06336") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06336>) obo:IAO_0000115 obo:CHMO_0000692 "A thermal analysis \"in which an optical characteristic [of a sample] is measured as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000692 "CHMO:0000692")
 AnnotationAssertion(rdfs:label obo:CHMO_0000692 "thermoptometry")
 SubClassOf(obo:CHMO_0000692 obo:CHMO_0000681)
@@ -11434,7 +11433,7 @@ SubClassOf(obo:CHMO_0000697 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000698 (neutron diffraction)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000008") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08741>) obo:IAO_0000115 obo:CHMO_0000698 "A diffraction method that directis a beam of cold or thermal neutrons at a sample and records the resulting diffraction pattern.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000008") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08741>) obo:IAO_0000115 obo:CHMO_0000698 "A diffraction method in which a beam of cold or thermal neutrons is directed at a sample and the resulting diffraction pattern is recorded.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000698 "neutron crystallography")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000698 "neutron diffraction analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000698 "neutron diffractometry")
@@ -12757,7 +12756,7 @@ SubClassOf(obo:CHMO_0000813 obo:CHMO_0000800)
 
 # Class: obo:CHMO_0000814 (corrected emission spectrum)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C01343>) obo:IAO_0000115 obo:CHMO_0000814 "An emission spectrumcorrected for wavelength-dependent instrumental and sample effects.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C01343>) obo:IAO_0000115 obo:CHMO_0000814 "An emission spectrum corrected for wavelength-dependent instrumental and sample effects.")
 AnnotationAssertion(obo:OMO_0003004 obo:CHMO_0000814 "corrected emission spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000814 "CHMO:0000814")
 AnnotationAssertion(rdfs:label obo:CHMO_0000814 "corrected emission spectrum")
@@ -14530,7 +14529,7 @@ SubClassOf(obo:CHMO_0000985 obo:CHMO_0000986)
 
 # Class: obo:CHMO_0000986 (stationary phase)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'stationary phase' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.S05949") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.S05949>) obo:IAO_0000115 obo:CHMO_0000986 "A chromatographic phase, which can be \"solid, gel or liquid\", that plays the role of the stationary component in chromatography.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'stationary phase' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.S05949") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.S05949>) obo:IAO_0000115 obo:CHMO_0000986 "A chromatographic phase, which can be \"a solid, a gel or a liquid\", that plays the role of the stationary component in chromatography.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000986 "CHMO:0000986")
 AnnotationAssertion(rdfs:label obo:CHMO_0000986 "stationary phase")
 SubClassOf(obo:CHMO_0000986 obo:CHMO_0000994)
@@ -34970,7 +34969,7 @@ SubClassOf(obo:CHMO_0002803 obo:CHMO_0000793)
 
 # Class: obo:CHMO_0002804 (blank value)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'blank value' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.B00679") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.B00679>) obo:IAO_0000115 obo:CHMO_0002804 "A setting datum and an assay output \"originating from the matrix, reagents and any residual bias in the measurement device or process, which contributes to the value obtained for the quantity in the analytical procedure.\"")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'blank value' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.B00679") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.B00679>) obo:IAO_0000115 obo:CHMO_0002804 "A setting datum or an assay output \"originating from the matrix, reagents and any residual bias in the measurement device or process, which contributes to the value obtained for the quantity in the analytical procedure.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002804 "CHMO:0002804")
 AnnotationAssertion(rdfs:label obo:CHMO_0002804 "blank value")
 SubClassOf(obo:CHMO_0002804 obo:CHMO_0000793)
@@ -35085,7 +35084,7 @@ SubClassOf(obo:CHMO_0002817 obo:BFO_0000016)
 
 # Class: obo:CHMO_0002818 (angle of optical rotation)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'angle of optical rotation' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00348") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00348>) dcterms:description obo:CHMO_0002818 "An assay output that is the \"angle through which plane polarized light is rotated clockwise, as seen when facing the light source, in passing through an optically active medium.\"")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'angle of optical rotation' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00348") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00348>) dcterms:description obo:CHMO_0002818 "An assay output expressing  the \"angle through which plane polarized light is rotated clockwise, as seen when facing the light source, in passing through an optically active medium.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002818 "CHMO:0002818")
 AnnotationAssertion(rdfs:label obo:CHMO_0002818 "angle of optical rotation")
 SubClassOf(obo:CHMO_0002818 obo:CHMO_0000793)
@@ -35355,7 +35354,7 @@ SubClassOf(obo:CHMO_0002852 obo:OBI_0000094)
 
 # Class: obo:CHMO_0002853 (fraction extracted)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'fraction extracted' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.F02503") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02503>) obo:IAO_0000115 obo:CHMO_0002853 "An assay output that is \"the fraction of the total quantity of a substance extracted [in a separation experiment] under specified conditions\".")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'fraction extracted' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.F02503") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02503>) obo:IAO_0000115 obo:CHMO_0002853 "An assay output expressing \"the fraction of the total quantity of a substance extracted [in a separation experiment] under specified conditions\".")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02503>) oboInOwl:hasExactSynonym obo:CHMO_0002853 "recovery factor")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002853 "CHMO:0002853")
 AnnotationAssertion(rdfs:label obo:CHMO_0002853 "fraction extracted")
@@ -35377,7 +35376,7 @@ SubClassOf(obo:CHMO_0002855 obo:CHMO_0000793)
 
 # Class: obo:CHMO_0002856 (enantiomer excess)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E02070>) obo:IAO_0000115 obo:CHMO_0002856 "An assay output that is the absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E02070>) obo:IAO_0000115 obo:CHMO_0002856 "An assay output expressing the absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer.")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02070>) obo:OMO_0003000 obo:CHMO_0002856 "e.e.")
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02070>) oboInOwl:hasExactSynonym obo:CHMO_0002856 "enantiomeric excess")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002856 "CHMO:0002856")
@@ -35803,7 +35802,7 @@ SubClassOf(obo:CHMO_0002913 obo:CHMO_0000993)
 
 # Class: obo:CHMO_0002914 (absorption of material)
 
-AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'absorption' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00036") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00036>) obo:IAO_0000115 obo:CHMO_0002914 "A \"process of one material (absorbate) being retained by another (absorption).\"")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'absorption' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00036") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00036>) obo:IAO_0000115 obo:CHMO_0002914 "A \"process of one material (absorbate) being retained by another (absorbent).\"")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0002914 "REX:0000188")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002914 "CHMO:0002914")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002914 "Gold Book, somewhat modified. It goes on \"The process of one material (absorbate) being retained by another (absorbent); this may be the physical solution of a gas, liquid, or solid in a liquid, attachment of molecules of a gas, vapour, liquid, or dissolved substance to a solid surface by physical forces, etc.\"")
