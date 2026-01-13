@@ -3011,10 +3011,14 @@ Declaration(AnnotationProperty(obo:BFO_0000179))
 Declaration(AnnotationProperty(obo:BFO_0000180))
 Declaration(AnnotationProperty(chmo:isDefinedBy))
 Declaration(AnnotationProperty(chmo:non-mining_synonym))
+Declaration(AnnotationProperty(dcterms:bibliographicCitation))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(dcterms:rightsHolder))
 Declaration(AnnotationProperty(dcterms:title))
 Declaration(AnnotationProperty(oboInOwl:hasScope))
+Declaration(AnnotationProperty(<http://www.w3.org/ns/prov#hadPrimarySource>))
+Declaration(AnnotationProperty(<http://www.w3.org/ns/prov#wasInfluencedBy>))
 ############################
 #   Annotation Properties
 ############################
@@ -3028,14 +3032,6 @@ SubAnnotationPropertyOf(chmo:non-mining_synonym oboInOwl:SynonymTypeProperty)
 # Annotation Property: dcterms:description (description)
 
 AnnotationAssertion(rdfs:label dcterms:description "description")
-
-# Annotation Property: dcterms:license (license)
-
-AnnotationAssertion(rdfs:label dcterms:license "license")
-
-# Annotation Property: dcterms:title (title)
-
-AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 ############################
@@ -4672,11 +4668,11 @@ SubClassOf(obo:CHMO_0000144 obo:CHMO_0000142)
 
 # Class: obo:CHMO_0000145 (transmission high energy electron diffraction)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:17.3") obo:IAO_0000115 obo:CHMO_0000145 "A method for determining structure by directing a beam of high energy (10–200 keV) electrons at the sample and recording the resulting diffraction pattern produced by any electrons transmitted through the sample.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.T06483>) obo:IAO_0000115 obo:CHMO_0000145 "A high energy electron diffraction method for determining structure by directing a beam of high energy (10–200 keV) electrons at the sample and recording the resulting diffraction pattern produced by any electrons transmitted through the sample.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06483>) obo:OMO_0003012 obo:CHMO_0000145 "THEED")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000145 "SADP")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000145 "SAED")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000145 "THEED")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000145 "selected area electron diffraction")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06483>) oboInOwl:hasExactSynonym obo:CHMO_0000145 "selected area electron diffraction")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000145 "selected-area electron diffraction")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000145 "transmission high-energy electron diffraction")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000145 "CHMO:0000145")
@@ -4685,8 +4681,8 @@ SubClassOf(obo:CHMO_0000145 obo:CHMO_0000144)
 
 # Class: obo:CHMO_0000146 (reflection high energy electron diffraction)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.T06483") obo:IAO_0000115 obo:CHMO_0000146 "A method for determining structure by directing a beam of high energy (10–200 keV) electrons at the sample and recording the resulting diffraction pattern produced by any reflected or elastically scattered electrons.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000146 "RHEED")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.R05238>) obo:IAO_0000115 obo:CHMO_0000146 "A  high energy electron diffraction method for determining structure by directing a beam of high energy (10–200 keV) electrons at the sample and recording the resulting diffraction pattern produced by any reflected or elastically scattered electrons.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05238>) obo:OMO_0003012 obo:CHMO_0000146 "RHEED")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000146 "reflection high-energy electron diffraction")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000146 "CHMO:0000146")
 AnnotationAssertion(rdfs:label obo:CHMO_0000146 "reflection high energy electron diffraction")
@@ -4694,8 +4690,8 @@ SubClassOf(obo:CHMO_0000146 obo:CHMO_0000144)
 
 # Class: obo:CHMO_0000147 (low energy electron diffraction)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:90190280031-0") Annotation(oboInOwl:hasDbXref "Orange:17.3") obo:IAO_0000115 obo:CHMO_0000147 "A method for determining structure by directing a beam of low energy (<500 eV) electrons at the sample and recording the resulting diffraction pattern.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000147 "LEED")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.L03631>) obo:IAO_0000115 obo:CHMO_0000147 "An electron diffracation method for determining structure by directing a beam of low energy (<500 eV) electrons at the sample and recording the resulting diffraction pattern.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.L03631>) obo:OMO_0003012 obo:CHMO_0000147 "LEED")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000147 "CHMO:0000147")
 AnnotationAssertion(rdfs:label obo:CHMO_0000147 "low energy electron diffraction")
 SubClassOf(obo:CHMO_0000147 obo:CHMO_0000142)
@@ -4878,7 +4874,7 @@ SubClassOf(obo:CHMO_0000165 obo:CHMO_0000164)
 
 # Class: obo:CHMO_0000166 (light scattering)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000402") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.L03525") obo:IAO_0000115 obo:CHMO_0000166 "A method for determining structure by measuring the change in direction or energy of scattered visible light. Light is scattered by the electrons surrounding the atomic nuclei in the sample.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000402>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.L03525>) obo:IAO_0000115 obo:CHMO_0000166 "A scattering method for determining structure by measuring the change in direction or energy of scattered visible light. Light is scattered by the electrons surrounding the atomic nuclei in the sample.")
 AnnotationAssertion(Annotation(oboInOwl:hasSynonymType "EXACT") chmo:non-mining_synonym obo:CHMO_0000166 "LS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000166 "LSS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000166 "LiSSP")
@@ -5584,7 +5580,7 @@ SubClassOf(obo:CHMO_0000227 obo:CHMO_0000226)
 
 # Class: obo:CHMO_0000228 (spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.S05848") obo:IAO_0000115 obo:CHMO_0000228 "The study of the interaction of a sample with radiation or particles for measurement or detection.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S05848>) obo:IAO_0000115 obo:CHMO_0000228 "An assay studying the interaction of a sample with radiation or particles for measurement or detection.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000228 "spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000228 "CHMO:0000228")
 AnnotationAssertion(rdfs:label obo:CHMO_0000228 "spectroscopy")
@@ -6399,7 +6395,7 @@ SubClassOf(obo:CHMO_0000296 obo:CHMO_0001253)
 
 # Class: obo:CHMO_0000297 (X-ray spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000019") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.X06718") obo:IAO_0000115 obo:CHMO_0000297 "Spectroscopy where the absorption or emission of X-rays is detected.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000019>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> "https://doi.org/10.1351/goldbook.X06718") obo:IAO_0000115 obo:CHMO_0000297 "A Spectroscopy where the absorption or emission of X-rays is detected.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000297 "X-ray spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000297 "CHMO:0000297")
 AnnotationAssertion(rdfs:label obo:CHMO_0000297 "X-ray spectroscopy")
@@ -6618,7 +6614,7 @@ SubClassOf(obo:CHMO_0000312 obo:CHMO_0000311)
 
 # Class: obo:CHMO_0000313 (electron probe X-ray microanalysis)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000313 "X-ray emission spectroscopy where the X-rays are generated by bombarding a flat polished sample with a finely focused (<10 μm diameter) beam of electrons which results in the ionisation of the inner shells of sample atoms. The decay of the ionised states results in the emission of characteristic X-rays.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E02007>) obo:IAO_0000115 obo:CHMO_0000313 "A microbeam particle-induced X-ray emission spectroscopy where the X-rays are generated by bombarding a flat polished sample with a finely focused (<10 μm diameter) beam of electrons which results in the ionisation of the inner shells of sample atoms. The decay of the ionised states results in the emission of characteristic X-rays.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000313 "FIX:0000105")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000313 "FIX:0000674")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000313 "EMPA")
@@ -6957,7 +6953,7 @@ SubClassOf(obo:CHMO_0000338 obo:CHMO_0000332)
 
 # Class: obo:CHMO_0000339 (Auger electron spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0-471-96523-5") obo:IAO_0000115 obo:CHMO_0000339 "Spectroscopy where a high energy photon ionises a core electron and an electron from a higher energy level descends to take its place, releasing sufficient energy to eject a second so-called 'Auger' electron and the energy of the Auger electron is detected as a function of incident photon energy.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:0-471-96523-5>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.A00522>) obo:IAO_0000115 obo:CHMO_0000339 "An electron spectroscopy where a high energy photon ionises a core electron and an electron from a higher energy level descends to take its place, releasing sufficient energy to eject a second so-called 'Auger' electron and the energy of the Auger electron is detected as a function of incident photon energy.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000339 "AEES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000339 "Auger electron emission spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000339 "Auger electron spectrometry")
@@ -7314,15 +7310,16 @@ SubClassOf(obo:CHMO_0000369 obo:CHMO_0000368)
 
 # Class: obo:CHMO_0000370 (high-resolution energy loss spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000646") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.H02826") obo:IAO_0000115 obo:CHMO_0000370 "Spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is reflected by a surface and the small energy loss (0.02–1 eV) the electrons suffer upon reflection is measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000646>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.R05236>) obo:IAO_0000115 obo:CHMO_0000370 "An electron energy loss spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is reflected by a surface and the small energy loss (0.02–1 eV) the electrons suffer upon reflection is measured.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05236>) obo:OMO_0003012 obo:CHMO_0000370 "HRELS")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05236>) obo:OMO_0003012 obo:CHMO_0000370 "REELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "HEELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "HR-EELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "HREELS")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "HRELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "VELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "high resolution energy loss spectrometry")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "high resolution energy loss spectroscopy")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "high-resolution energy loss spectroscopy")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05236>) oboInOwl:hasExactSynonym obo:CHMO_0000370 "high resolution energy loss spectroscopy")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05236>) oboInOwl:hasExactSynonym obo:CHMO_0000370 "reflection electron energy loss spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "vibrational ELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000370 "vibrational energy loss spectroscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000370 "CHMO:0000370")
@@ -7361,10 +7358,10 @@ SubClassOf(obo:CHMO_0000372 obo:CHMO_0000366)
 
 # Class: obo:CHMO_0000373 (transmission electron energy loss spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.T06480") obo:IAO_0000115 obo:CHMO_0000373 "Spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is transmitted through a sample and the energy distribution of the transmitted electrons is measured.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'transmission electron energy loss spectroscopy' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06480") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06480>) obo:IAO_0000115 obo:CHMO_0000373 "An electron energy loss spectroscopy where a beam of electrons with a known, narrow range of kinetic energies is transmitted through a sample \"and the energy distribution of the transmitted electrons is measured.\"")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06480>) obo:OMO_0003012 obo:CHMO_0000373 "TEELS")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000373 "CHMO:0002296")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000373 "ETS")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000373 "TEELS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000373 "electron transmission spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000373 "electron transmission spectroscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000373 "CHMO:0000373")
@@ -7405,7 +7402,7 @@ SubClassOf(obo:CHMO_0000376 obo:CHMO_0000375)
 
 # Class: obo:CHMO_0000377 (inverse photoelectron spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000687") Annotation(oboInOwl:hasDbXref "OrangeBook:17.2.2.2") obo:IAO_0000115 obo:CHMO_0000377 "Spectroscopy where the sample is bombarded with electrons and the photons emitted are detected.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000687>) obo:IAO_0000115 obo:CHMO_0000377 "An electron spectroscopy where the sample is bombarded with electrons and the photons emitted are detected.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000377 "IPES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000377 "IPS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000377 "inverse photoelectron spectrometry")
@@ -7516,8 +7513,8 @@ SubClassOf(obo:CHMO_0000386 obo:CHMO_0000385)
 
 # Class: obo:CHMO_0000387 (photoelectron spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000040") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.P04609") obo:IAO_0000115 obo:CHMO_0000387 "Spectroscopy where the sample is illuminated with photons causing ionisation and the emission of photoelectrons, the energies of which are measured. The energy of the incident photons is usually greater than the ionisation energy of the sample and the photoelectrons are emitted with the excess in the form of kinetic energy.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000387 "PES")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000040>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.P04609>) obo:IAO_0000115 obo:CHMO_0000387 "An electron spectroscopy where the sample is illuminated with photons causing ionisation and the emission of photoelectrons, the energies of which are measured. The energy of the incident photons is usually greater than the ionisation energy of the sample and the photoelectrons are emitted with the excess in the form of kinetic energy.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.P04609>) obo:OMO_0003012 obo:CHMO_0000387 "PES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000387 "photo emission spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000387 "photo emission spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000387 "photoelectron emission spectroscopy")
@@ -7673,9 +7670,10 @@ SubClassOf(obo:CHMO_0000400 obo:CHMO_0000394)
 
 # Class: obo:CHMO_0000401 (ultraviolet photoelectron spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000042") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.U06583") obo:IAO_0000115 obo:CHMO_0000401 "Spectroscopy where the sample is illuminated with ultraviolet (10–400 nm) photons causing ionisation and the emission of photoelectrons, the energies of which are measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000042>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.P04609>) obo:IAO_0000115 obo:CHMO_0000401 "A photoelectron spectroscopy where the sample is illuminated with ultraviolet (10–400 nm) photons causing ionisation and the emission of photoelectrons, the energies of which are measured.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.P04609>) obo:OMO_0003012 obo:CHMO_0000401 "UPS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000401 "UPES")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000401 "UPS")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.P04609>) oboInOwl:hasExactSynonym obo:CHMO_0000401 "UV photoelectron spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000401 "UVPES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000401 "UVPS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000401 "ultra-violet photoelectron spectrometry")
@@ -7730,8 +7728,8 @@ SubClassOf(obo:CHMO_0000403 obo:CHMO_0000387)
 
 # Class: obo:CHMO_0000404 (X-ray photoelectron spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.X06716") obo:IAO_0000115 obo:CHMO_0000404 "Spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.")
-AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000404 "FIX:0000041")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000041>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.X06716>) obo:IAO_0000115 obo:CHMO_0000404 "A photoelectron spectroscopy where the sample is illuminated with X-rays causing ionisation and the emission of photoelectrons, the energies of which are measured.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.X06716>) obo:OMO_0003012 obo:CHMO_0000404 "XPS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "ESCA")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "PESIS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "X-ray photoelectron emission spectroscopy")
@@ -7740,7 +7738,6 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "X-ray photoelectr
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "X-ray photoelectron spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "X-ray photoemission spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "XPES")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "XPS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "electron spectrometry for chemical analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "electron spectrometry for chemical applications")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000404 "electron spectroscopy for chemical analysis")
@@ -8090,18 +8087,19 @@ SubClassOf(obo:CHMO_0000433 obo:CHMO_0000160)
 
 # Class: obo:CHMO_0000434 (Rutherford backscattering spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:3527296344") obo:IAO_0000115 obo:CHMO_0000434 "Spectroscopy where the sample is bombarded with He+ or H+ ions (500–1500 eV) and the energies and positions of any backscattered ions are detected.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.R05429>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:3527296344>) obo:IAO_0000115 obo:CHMO_0000434 "An ion scattering where the sample is bombarded with He+ or H+ ions (500–1500 eV) and the energies and positions of any backscattered ions are detected.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05429>) obo:OMO_0003012 obo:CHMO_0000434 "BSS")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05429>) obo:OMO_0003012 obo:CHMO_0000434 "RBS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "HE IS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "HE ISS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "HE-IS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "HE-ISS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "HEIS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "HEISS")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "RBS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "Rutherford backscattering spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "Rutherford scattering spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "Rutherford scattering spectroscopy")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "backscattering spectroscopy")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05429>) oboInOwl:hasExactSynonym obo:CHMO_0000434 "backscattering spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "heavy ion scattering spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "heavy ion scattering spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000434 "heavy-ion scattering spectrometry")
@@ -8386,8 +8384,8 @@ SubClassOf(obo:CHMO_0000460 obo:CHMO_0000435)
 
 # Class: obo:CHMO_0000461 (laser micro emission spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.L03473") obo:IAO_0000115 obo:CHMO_0000461 "Spectroscopy where a thermally-excited vapour sample is illuminated with a finely focused (<10 m diameter) ultraviolet or visible laser and the photon emission spectrum of the sample is observed.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000461 "LAMES")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'laser micro emission spectroscopy' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.L03473") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.L03473>) obo:IAO_0000115 obo:CHMO_0000461 "A laser emission spectroscopy where a thermally-excited vapour sample is illuminated \"with a finely focused laser beam (diameter less than 10 μm) in the ultraviolet or visible range [and] the photon emission spectrum is observed\".")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.L03473>) obo:OMO_0003012 obo:CHMO_0000461 "LAMES")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000461 "laser micro emission spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000461 "CHMO:0000461")
 AnnotationAssertion(rdfs:label obo:CHMO_0000461 "laser micro emission spectroscopy")
@@ -8496,9 +8494,9 @@ SubClassOf(obo:CHMO_0000469 obo:CHMO_0000228)
 
 # Class: obo:CHMO_0000470 (mass spectrometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000047") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.M03746") obo:IAO_0000115 obo:CHMO_0000470 "Spectrometry where the sample is converted into gaseous ions which are characterised by their mass-to-charge ratio and relative abundance.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'mass spectroscopy' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M03748") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.M03748>) Annotation(oboInOwl:hasDbXref <FIX:0000047>) obo:IAO_0000115 obo:CHMO_0000470 "A spectroscopy where the sample is converted into \"gaseous ions [...] which are then characterized by their mass-to-charge ratios and relative abundances\"")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000470 "MS")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000470 "mass spectroscopy")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.M03748>) oboInOwl:hasExactSynonym obo:CHMO_0000470 "mass spectroscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000470 "CHMO:0000470")
 AnnotationAssertion(rdfs:label obo:CHMO_0000470 "mass spectrometry")
 SubClassOf(obo:CHMO_0000470 obo:CHMO_0000228)
@@ -8776,7 +8774,7 @@ SubClassOf(obo:CHMO_0000490 obo:CHMO_0000482)
 
 # Class: obo:CHMO_0000491 (field ionisation mass spectrometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.F02360") obo:IAO_0000115 obo:CHMO_0000491 "Mass spectrometry where the sample is ionised by interaction with a high electric field.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.F02360>) obo:IAO_0000115 obo:CHMO_0000491 "A mass spectrometry where the sample is ionised by interaction with a high electric field.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000491 "FIX:0000913")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000491 "FI-MS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000491 "FI/MS")
@@ -8789,7 +8787,7 @@ SubClassOf(obo:CHMO_0000491 obo:CHMO_0000470)
 
 # Class: obo:CHMO_0000492 (field desorption mass spectrometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000087") Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.F02357") obo:IAO_0000115 obo:CHMO_0000492 "Mass spectrometry where the sample is deposited on a solid surface known as an 'emitter' and ionised by interaction with a high electric field.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'field ionization' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.F02357") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02357>) Annotation(oboInOwl:hasDbXref <FIX:0000087>) obo:IAO_0000115 obo:CHMO_0000492 "A field ionisation mass spectrometry where the sample is \"deposited on a solid surface (known as an 'emitter') [and ionised by interaction with] a high electrical field\".")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000492 "FD mass spectrometry")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000492 "FD-MS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000492 "FDMS")
@@ -10491,7 +10489,7 @@ SubClassOf(obo:CHMO_0000618 obo:CHMO_0000615)
 
 # Class: obo:CHMO_0000619 (photoacoustic spectroscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000619 "Spectroscopy where the sound emitted when a gaseous sample is exposed to an intense laser beam, which is rapidly interrupted by a rotating slotted disk, is measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.P04576>) obo:IAO_0000115 obo:CHMO_0000619 "A spectroscopy where the sound emitted when a gaseous sample is exposed to an intense laser beam, which is rapidly interrupted by a rotating slotted disk, is measured.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000619 "FIX:0000700")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000619 "LIOAS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000619 "laser-induced optoacoustic spectrometry")
@@ -11286,14 +11284,14 @@ SubClassOf(obo:CHMO_0000680 obo:CHMO_0002515)
 
 # Class: obo:CHMO_0000681 (thermal analysis)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:5.2.1") obo:IAO_0000115 obo:CHMO_0000681 "Any measurement technique in which a physical property of the sample is measured as a function of temperature.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermal analysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06295") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06295>) obo:IAO_0000115 obo:CHMO_0000681 "An assay \"in which a physical property [of the sample] is measured as a function of temperature.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000681 "CHMO:0000681")
 AnnotationAssertion(rdfs:label obo:CHMO_0000681 "thermal analysis")
 SubClassOf(obo:CHMO_0000681 obo:OBI_0000070)
 
 # Class: obo:CHMO_0000682 (calorimetry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000682 "The measurement of thermodynamic parameters (e.g. enthalpy) during a chemical or biochemical reaction.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C00786>) obo:IAO_0000115 obo:CHMO_0000682 "A thermal analysis of thermodynamic parameters (e.g. enthalpy) during a chemical or biochemical reaction.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000682 "enthalpimetric analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000682 "enthalpimetry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000682 "CHMO:0000682")
@@ -11312,7 +11310,7 @@ SubClassOf(obo:CHMO_0000683 obo:CHMO_0002076)
 
 # Class: obo:CHMO_0000684 (differential scanning calorimetry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000387") Annotation(oboInOwl:hasDbXref "OrangeBook:5.2.2") obo:IAO_0000115 obo:CHMO_0000684 "The measurement of thermodynamic parameters (e.g. enthalpy) during a chemical or biochemical reaction of both a sample and a reference, by the known variation (step-wise or linear) of one variable, whilst a second is kept constant.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000387") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.D01708>) obo:IAO_0000115 obo:CHMO_0000684 "A scanning calorimetry measuring thermodynamic parameters (e.g. enthalpy) during a chemical or biochemical reaction of both a sample and a reference, by the known variation (step-wise or linear) of one variable, whilst a second is kept constant.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000684 "DSC")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000684 "differential scanning calorimetric (DSC) analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000684 "differential scanning calorimetric analysis")
@@ -11338,7 +11336,7 @@ SubClassOf(obo:CHMO_0000686 obo:CHMO_0000684)
 
 # Class: obo:CHMO_0000687 (differential thermal analysis)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:5.2.2") obo:IAO_0000115 obo:CHMO_0000687 "The measurement of the temperature difference between the sample and a reference material.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'differential thermal analysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.D01709") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.D01709>) obo:IAO_0000115 obo:CHMO_0000687 "A thermal analysis of \"the temperature difference between [the sample] and a reference material\".")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000687 "DTA")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000687 "CHMO:0000687")
 AnnotationAssertion(rdfs:label obo:CHMO_0000687 "differential thermal analysis")
@@ -11346,22 +11344,22 @@ SubClassOf(obo:CHMO_0000687 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000688 (thermoacoustimetry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:5.2.2") obo:IAO_0000115 obo:CHMO_0000688 "Thermal analysis where the characteristics of imposed acoustic wave passing through the sample are measured.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoacoustimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06309") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06309>) obo:IAO_0000115 obo:CHMO_0000688 "A thermal analysis \"in which the characteristics of imposed acoustic waves [passing through the sample] are measured as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000688 "CHMO:0000688")
 AnnotationAssertion(rdfs:label obo:CHMO_0000688 "thermoacoustimetry")
 SubClassOf(obo:CHMO_0000688 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000689 (thermodilatometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:5.2.2") obo:IAO_0000115 obo:CHMO_0000689 "The measurement of a dimension of the sample under negligible load as a function of temperature.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermodilatometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06314") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06314>) obo:IAO_0000115 obo:CHMO_0000689 "A thermal analysis \"in which a dimension [of the sample] under negligible load  is measured as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000689 "CHMO:0000689")
 AnnotationAssertion(rdfs:label obo:CHMO_0000689 "thermodilatometry")
 SubClassOf(obo:CHMO_0000689 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000690 (thermogravimetry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000690 "The measurement of the mass of a sample as a function of temperature.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000690 "TG")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermogravimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06324") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06324>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) obo:IAO_0000115 obo:CHMO_0000690 "A thermal analysis \"in which the mass [of a sample] is measured as a function of temperature\".")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06324>) obo:OMO_0003012 obo:CHMO_0000690 "TG")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000690 "TG analysis")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000690 "TG measurements")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000690 "TGA")
@@ -11377,21 +11375,21 @@ SubClassOf(obo:CHMO_0000690 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000691 (thermomagnetometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000691 "The measurement of the magnetic susceptibility of a sample as a function of temperature.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermomagnetometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06327") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06327>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) obo:IAO_0000115 obo:CHMO_0000691 "A thermal analysis in which the magnetic susceptibility of a sample \"is measured as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000691 "CHMO:0000691")
 AnnotationAssertion(rdfs:label obo:CHMO_0000691 "thermomagnetometry")
 SubClassOf(obo:CHMO_0000691 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000692 (thermoptometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:5.2.2") obo:IAO_0000115 obo:CHMO_0000692 "The measurement of an optical characteristic of a sample as a function of temperature.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermoptometry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06336") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06336>) obo:IAO_0000115 obo:CHMO_0000692 "A thermal analysis \"in which an optical characteristic [of a sample] is measured as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000692 "CHMO:0000692")
 AnnotationAssertion(rdfs:label obo:CHMO_0000692 "thermoptometry")
 SubClassOf(obo:CHMO_0000692 obo:CHMO_0000681)
 
 # Class: obo:CHMO_0000693 (thermoluminescence)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:5.2.2") obo:IAO_0000115 obo:CHMO_0000693 "The measurement of the luminescence of a sample as a function of temperature.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.T06325>) obo:IAO_0000115 obo:CHMO_0000693 "A thermoptometry in which the luminescence of a sample is measured as a function of temperature.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000693 "CHMO:0000693")
 AnnotationAssertion(rdfs:label obo:CHMO_0000693 "thermoluminescence")
 SubClassOf(obo:CHMO_0000693 obo:CHMO_0000692)
@@ -11420,7 +11418,7 @@ SubClassOf(obo:CHMO_0000696 obo:CHMO_0000695)
 
 # Class: obo:CHMO_0000697 (thermosonimetry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:5.2.2") obo:IAO_0000115 obo:CHMO_0000697 "The measurement of the sound emitted by a sample as a function of temperature.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'thermosonimetry' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.T06337") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.T06337>) obo:IAO_0000115 obo:CHMO_0000697 "A thermal analysis \"in which the sound emitted\" by a sample \"as a function of temperature\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000697 "CHMO:0000697")
 AnnotationAssertion(rdfs:label obo:CHMO_0000697 "thermosonimetry")
 SubClassOf(obo:CHMO_0000697 obo:CHMO_0000681)
@@ -12597,8 +12595,8 @@ SubClassOf(obo:CHMO_0000799 obo:CHMO_0000811)
 
 # Class: obo:CHMO_0000800 (spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000800 "A plot of a measured quantity against some experimental parameter.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000800 "spectra")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.08291>) obo:IAO_0000115 obo:CHMO_0000800 "An assay output plotting a measured quantity against some experimental parameter.")
+AnnotationAssertion(obo:OMO_0003004 obo:CHMO_0000800 "spectra")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000800 "spectrum plot")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000800 "CHMO:0000800")
 AnnotationAssertion(rdfs:label obo:CHMO_0000800 "spectrum")
@@ -12607,7 +12605,7 @@ SubClassOf(obo:CHMO_0000800 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_000022
 
 # Class: obo:CHMO_0000801 (absorption spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000801 "A plot of absorbance vs. wavelength obtained by measuring the amount of radiation absorbed by a sample as a function of the wavelength of incident radiation.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.A00043>) obo:IAO_0000115 obo:CHMO_0000801 "A spectrum plotting absorbance vs. wavelength obtained by measuring the amount of radiation absorbed by a sample as a function of the wavelength of incident radiation.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000801 "absorbance spectra")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000801 "absorbance spectrum")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000801 "absorption spectra")
@@ -12659,7 +12657,7 @@ SubClassOf(obo:CHMO_0000805 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_000032
 
 # Class: obo:CHMO_0000806 (mass spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000806 "A plot of relative abundance (%) vs. mass-to-charge ratio obtained from a mass spectrometry experiment.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.M03749>) obo:IAO_0000115 obo:CHMO_0000806 "A spectrum plotting relative abundance (%) vs. mass-to-charge ratio obtained from a mass spectrometry experiment.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000806 "mass spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000806 "CHMO:0000806")
 AnnotationAssertion(rdfs:label obo:CHMO_0000806 "mass spectrum")
@@ -12742,7 +12740,7 @@ SubClassOf(obo:CHMO_0000812 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_000048
 
 # Class: obo:CHMO_0000813 (emission spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.E02060") obo:IAO_0000115 obo:CHMO_0000813 "A plot of emission against wavelength obtained by measuring the emitted spectral radiant power against a quantity related to photon energy such as frequency, wavenumber or wavelength.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'emission spectrum' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.E02060") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02060>) obo:IAO_0000115 obo:CHMO_0000813 "A spectrum plotting emission against wavelength obtained by measuring the emitted spectral radiant power \"against a quantity related to photon energy, such as frequency, ν, wavenumber, σ, or wavelength, λ\".")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000813 "emission spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000813 "CHMO:0000813")
 AnnotationAssertion(rdfs:label obo:CHMO_0000813 "emission spectrum")
@@ -12750,7 +12748,7 @@ SubClassOf(obo:CHMO_0000813 obo:CHMO_0000800)
 
 # Class: obo:CHMO_0000814 (corrected emission spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.C01343") obo:IAO_0000115 obo:CHMO_0000814 "A plot of emission against wavelength  obtained by measuring the emitted spectral radiant power against a quantity related to photon energy such as frequency, wavenumber or wavelength and corrected for wavelength-dependent instrumental and sample effects.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C01343>) obo:IAO_0000115 obo:CHMO_0000814 "An emission spectrum plotting emission against wavelength  obtained by measuring the emitted spectral radiant power against a quantity related to photon energy such as frequency, wavenumber or wavelength and corrected for wavelength-dependent instrumental and sample effects.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000814 "corrected emission spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000814 "CHMO:0000814")
 AnnotationAssertion(rdfs:label obo:CHMO_0000814 "corrected emission spectrum")
@@ -12913,7 +12911,7 @@ SubClassOf(obo:CHMO_0000830 obo:CHMO_0000800)
 
 # Class: obo:CHMO_0000831 (action spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.00088") obo:IAO_0000115 obo:CHMO_0000831 "A plot of a relative biological or chemical photoresponse per number of incident photons against wavelength or energy of radiation under the same radiant power of light.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'action spectrum' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00088") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00088>) obo:IAO_0000115 obo:CHMO_0000831 "A spectrum plotting \"relative biological or chemical photoresponse per number of incident photons against wavelength or energy of radiation under the same radiant power of light.\"")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000831 "action spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000831 "CHMO:0000831")
 AnnotationAssertion(rdfs:label obo:CHMO_0000831 "action spectrum")
@@ -12921,7 +12919,7 @@ SubClassOf(obo:CHMO_0000831 obo:CHMO_0000800)
 
 # Class: obo:CHMO_0000832 (conversion spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.C01319") obo:IAO_0000115 obo:CHMO_0000832 "A plot of a quantity related to the absorption, for example absorbance or cross section, multiplied by the quantum yield for the process considered against a measure of photon energy such as frequency, wavenumber or wavelength.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'conversion spectrum' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C01319") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.C01319>) obo:IAO_0000115 obo:CHMO_0000832 "A spectrum plotting \"a quantity related to the absorption (absorbance, cross section, etc.) multiplied by the quantum yield for the considered process against a suitable measure of photon energy, such as frequency, ν, wavenumber, σ, or wavelength, λ.\"")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000832 "conversion spectra")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000832 "CHMO:0000832")
 AnnotationAssertion(rdfs:label obo:CHMO_0000832 "conversion spectrum")
@@ -12937,7 +12935,7 @@ SubClassOf(obo:CHMO_0000833 obo:CHMO_0000800)
 
 # Class: obo:CHMO_0000834 (excitation-emission spectrum)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.E02249") obo:IAO_0000115 obo:CHMO_0000834 "A three-dimensional spectrum generated by scanning the emission spectrum at incremental steps of excitation wavelength.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'excitation-emission spectrum' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.E02249") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02249>) obo:IAO_0000115 obo:CHMO_0000834 "A spectrum that is \"three-dimensional\" and \"generated by scanning the emission spectrum at incremental steps of excitation wavelength\".")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000834 "excitation-emission spectra")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000834 "excitation-emission spectrum")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000834 "CHMO:0000834")
@@ -14110,8 +14108,8 @@ SubClassOf(obo:CHMO_0000940 obo:CHMO_0000114)
 
 # Class: obo:CHMO_0000941 (scanning electron microscope)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.S05484") obo:IAO_0000115 obo:CHMO_0000941 "A piece of apparatus which is used to produce an enlarged image of a specimen by scanning a finely focused (<10 nm diameter) electron beam with an acceleration voltage of 50–150 kV across the specimen under vacuum and measuring the interaction of the electrons with the specimen.")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0000941 "SEM")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.S05484>) obo:IAO_0000115 obo:CHMO_0000941 "An electron microscope used to produce an enlarged image of a specimen by scanning a finely focused (<10 nm diameter) electron beam with an acceleration voltage of 50–150 kV across the specimen under vacuum and measuring the interaction of the electrons with the specimen.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.S05484>) obo:OMO_0003012 obo:CHMO_0000941 "SEM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000941 "CHMO:0000941")
 AnnotationAssertion(rdfs:label obo:CHMO_0000941 "scanning electron microscope")
 SubClassOf(obo:CHMO_0000941 obo:CHMO_0001088)
@@ -14286,7 +14284,7 @@ SubClassOf(obo:CHMO_0000959 obo:CHMO_0000960)
 
 # Class: obo:CHMO_0000960 (ion source)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0000960 "A piece of apparatus that takes an analyte and generates ions which are passed to the rest of a mass spectrometer for analysis.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:9780470516348>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.I03247>) obo:IAO_0000115 obo:CHMO_0000960 "A device that takes an analyte and generates ions which are passed to the rest of a mass spectrometer for analysis.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000960 "CHMO:0000960")
 AnnotationAssertion(rdfs:label obo:CHMO_0000960 "ion source")
 SubClassOf(obo:CHMO_0000960 obo:OBI_0000968)
@@ -14314,8 +14312,9 @@ SubClassOf(obo:CHMO_0000962 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_000096
 
 # Class: obo:CHMO_0000963 (quadrupole mass spectrometer)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000963 "A piece of apparatus that consists of an ion source, a mass-to-charge analyser, a detector and a vacuum system and is used to measure mass spectra. The detector is a quadrupole mass-to-charge analyser, which holds the ions in a stable orbit by an electric field generated by four parallel electrodes.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.12602>) obo:IAO_0000115 obo:CHMO_0000963 "A mass spectrometer where the detector is a quadrupole mass-to-charge analyser, which holds the ions in a stable orbit by an electric field generated by four parallel electrodes.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000963 "quadrapole mass spectrometer")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.12602>) oboInOwl:hasExactSynonym obo:CHMO_0000963 "transmission quadrupole mass spectrometer")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0000963 "QMS")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000963 "CHMO:0000963")
 AnnotationAssertion(rdfs:label obo:CHMO_0000963 "quadrupole mass spectrometer")
@@ -14332,7 +14331,11 @@ SubClassOf(obo:CHMO_0000964 obo:OBI_0000968)
 
 # Class: obo:CHMO_0000965 (Fourier transform ion cyclotron resonance mass spectrometer)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0000965 "A mass spectrometer that uses an ion cyclotron resonance cell (a piece of apparatus that measures the frequency at which ions precesses in a fixed magnetic field and subjects the frequency output to a Fourier transform) as a mass-to-charge analyser and detector.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.F02492>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:9780470516348>) obo:IAO_0000115 obo:CHMO_0000965 "An ion trap mass spectrometer that uses an ion cyclotron resonance cell (a piece of apparatus that measures the frequency at which ions precesses in a fixed magnetic field and subjects the frequency output to a Fourier transform) as a mass-to-charge analyser and detector.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02492>) obo:OMO_0003012 obo:CHMO_0000965 "FT-ICR")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02492>) obo:OMO_0003012 obo:CHMO_0000965 "FT-MS")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02492>) obo:OMO_0003012 obo:CHMO_0000965 "ICR")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02492>) oboInOwl:hasExactSynonym obo:CHMO_0000965 "FT-ICR mass spectrometer")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000965 "FTICR spectrometer")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0000965 "FT-ICR MS")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0000965 "FTICR MS")
@@ -14344,7 +14347,7 @@ SubClassOf(obo:CHMO_0000965 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_000096
 
 # Class: obo:CHMO_0000966 (quadrupole mass-to-charge analyser)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.Q04971") obo:IAO_0000115 obo:CHMO_0000966 "A mass-to-charge analyser that uses a quadrupolar potential (generated by four parallel electrodes) to constrain the trajectories of ions according to their mass-to-charge ratio.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.Q04971>) obo:IAO_0000115 obo:CHMO_0000966 "A mass-to-charge analyser that uses a quadrupolar potential (generated by four parallel electrodes) to constrain the trajectories of ions according to their mass-to-charge ratio.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000966 "QIT")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000966 "quadrapole mass analyser")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000966 "quadrapole mass-to-charge analyser")
@@ -14395,15 +14398,16 @@ SubClassOf(obo:CHMO_0000970 obo:CHMO_0000966)
 
 # Class: obo:CHMO_0000971 (support-coated open-tubular column)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.3.2") obo:IAO_0000115 obo:CHMO_0000971 "An open-tubular column in which a layer of porous particles deposited from a suspension coats the inner wall and serves as a support for a liquid stationary phase.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000971 "SCOT column")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S06148>) obo:IAO_0000115 obo:CHMO_0000971 "A porous-layer open-tabular (PLOT) column in which a layer of porous particles deposited from a suspension coats the inner wall and serves as a support for a liquid stationary phase.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.S06148>) obo:OMO_0003012 obo:CHMO_0000971 "SCOT")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.S06148>) oboInOwl:hasExactSynonym obo:CHMO_0000971 "SCOT column")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000971 "CHMO:0000971")
 AnnotationAssertion(rdfs:label obo:CHMO_0000971 "support-coated open-tubular column")
 SubClassOf(obo:CHMO_0000971 obo:CHMO_0000972)
 
 # Class: obo:CHMO_0000972 (porous-layer open-tubular column)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.3.2") obo:IAO_0000115 obo:CHMO_0000972 "An open-tubular column in which a porous layer, achieved by either etching a non-porous layer or by deposition of porous particles from a suspension, coats the inner wall and may serve as a support for a liquid stationary phase or as the stationary phase itself.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "Compendium of Terminology in Analytical Chemistry; 4rth edition, edited by B Hibbert, Royal Society of Chemistry, 2023. Chapter 5.2.7. ISBN  978-1-78262-947-4. https://books.rsc.org/view-large/6383643") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://books.rsc.org/view-large/6383643>) obo:IAO_0000115 obo:CHMO_0000972 "An \"open-tubular column [in which] a porous layer [, achieved by either etching a non-porous layer or by deposition of porous particles from a suspension, coats] the inner wall\" and may serve as a support for a liquid stationary phase or as the stationary phase itself.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000972 "PLOT column")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000972 "CHMO:0000972")
 AnnotationAssertion(rdfs:label obo:CHMO_0000972 "porous-layer open-tubular column")
@@ -14411,22 +14415,23 @@ SubClassOf(obo:CHMO_0000972 obo:CHMO_0000974)
 
 # Class: obo:CHMO_0000973 (wall-coated open-tubular column)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.3.2") obo:IAO_0000115 obo:CHMO_0000973 "An open-tubular column in which the liquid stationary phase is coated on the unmodified smooth inner wall of the tube.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000973 "WCOT column")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'wall-coated open-tubular column' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.W06654") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.W06654>) obo:IAO_0000115 obo:CHMO_0000973 "An open-tubular column \"in which the liquid stationary phase is coated on the [...] unmodified smooth inner wall of the tube.\"")
+AnnotationAssertion(Annotation(rdfs:comment <https://doi.org/10.1351/goldbook.W06654>) obo:OMO_0003012 obo:CHMO_0000973 "WCOT")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.W06654>) oboInOwl:hasExactSynonym obo:CHMO_0000973 "WCOT column")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000973 "CHMO:0000973")
 AnnotationAssertion(rdfs:label obo:CHMO_0000973 "wall-coated open-tubular column")
 SubClassOf(obo:CHMO_0000973 obo:CHMO_0000974)
 
 # Class: obo:CHMO_0000974 (open-tubular column)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.3.2") obo:IAO_0000115 obo:CHMO_0000974 "A chromatography column in which either the inner tube wall or a liquid or active solid held stationary on the tube wall acts as the stationary phase and there is an open, unrestricted path for the mobile phase.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'open-tubular column' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.O04297") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.O04297>) obo:IAO_0000115 obo:CHMO_0000974 "A chromatography column \"in which either the inner tube wall, or a liquid or active solid held stationary on the tube wall acts as the stationary phase and there is an open, unrestricted path for the mobile phase.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000974 "CHMO:0000974")
 AnnotationAssertion(rdfs:label obo:CHMO_0000974 "open-tubular column")
 SubClassOf(obo:CHMO_0000974 obo:CHMO_0000997)
 
 # Class: obo:CHMO_0000975 (packed column)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.3.2") obo:IAO_0000115 obo:CHMO_0000975 "A chromatography column that contains a solid packing.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'packed column' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.P04393") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.P04393>) obo:IAO_0000115 obo:CHMO_0000975 "A chromatography column \"containing a solid packing\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000975 "CHMO:0000975")
 AnnotationAssertion(rdfs:label obo:CHMO_0000975 "packed column")
 SubClassOf(obo:CHMO_0000975 obo:CHMO_0000997)
@@ -14461,7 +14466,9 @@ SubClassOf(obo:CHMO_0000978 obo:OBI_0000968)
 
 # Class: obo:CHMO_0000979 (reflectron)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0000979 "A piece of apparatus which produces an electric field that accelerates ions in a mass-to-charge analyser in a direction opposite to their direction of travel, acting as an ion mirror to separate ions of the same mass-to-charge ratio that have different kinetic energy.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") Annotation(rdfs:seeAlso "https://books.rsc.org/view-large/6383387
+7.352 	reflectron 
+\"Component of a time-of-flight mass spectrometer that uses a static electric field to reverse the direction of travel of the ions and improves mass resolution by assuring that ions of the same m/z but different translational energy arrive at the detector at the same time.\" (from: https://doi.org/10.1039/BK9781788012881-00281 )") obo:IAO_0000115 obo:CHMO_0000979 "A piece of apparatus which produces an electric field that accelerates ions in a mass-to-charge analyser in a direction opposite to their direction of travel, acting as an ion mirror to separate ions of the same mass-to-charge ratio that have different kinetic energy.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000979 "CHMO:0000979")
 AnnotationAssertion(rdfs:label obo:CHMO_0000979 "reflectron")
 SubClassOf(obo:CHMO_0000979 obo:OBI_0000968)
@@ -14486,7 +14493,7 @@ SubClassOf(obo:CHMO_0000981 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_000098
 
 # Class: obo:CHMO_0000982 (mass spectrometer)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000982 "A piece of apparatus that consists of at least an ion source, a mass-to-charge analyser, a detector and a vacuum system and is used to measure mass spectra.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.M03732>) obo:IAO_0000115 obo:CHMO_0000982 "A spectrometer that consists of at least an ion source, a mass-to-charge analyser, a detector and a vacuum system and is used to measure mass spectra.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000982 "CHMO:0000982")
 AnnotationAssertion(rdfs:label obo:CHMO_0000982 "mass spectrometer")
 SubClassOf(obo:CHMO_0000982 obo:CHMO_0001234)
@@ -14514,14 +14521,14 @@ SubClassOf(obo:CHMO_0000985 obo:CHMO_0000986)
 
 # Class: obo:CHMO_0000986 (stationary phase)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.1.1") obo:IAO_0000115 obo:CHMO_0000986 "A solid, gel or liquid that plays the role of the stationary component in chromatography.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'stationary phase' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.S05949") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.S05949>) obo:IAO_0000115 obo:CHMO_0000986 "A chromatographic phase which can be \"solid, gel or liquid\" that plays the role of the stationary component in chromatography.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000986 "CHMO:0000986")
 AnnotationAssertion(rdfs:label obo:CHMO_0000986 "stationary phase")
 SubClassOf(obo:CHMO_0000986 obo:CHMO_0000994)
 
 # Class: obo:CHMO_0000987 (capillary column)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000987 "A piece of apparatus that has the form of a tube with a diameter of less than a millimetre and hosts the stationary bed in chromatography.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C00793>) obo:IAO_0000115 obo:CHMO_0000987 "A piece of apparatus that has the form of a tube with a diameter of less than a millimetre and hosts the stationary bed in chromatography.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000987 "CHMO:0000987")
 AnnotationAssertion(rdfs:label obo:CHMO_0000987 "capillary column")
 SubClassOf(obo:CHMO_0000987 obo:OBI_0000968)
@@ -14578,7 +14585,7 @@ SubClassOf(obo:CHMO_0000994 obo:CHMO_0000993)
 
 # Class: obo:CHMO_0000995 (mobile phase)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:9.2.1.1") obo:IAO_0000115 obo:CHMO_0000995 "A fluid that percolates through or along the stationary bed in chromatography.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'mobile phase' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M03952") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.M03952>) obo:IAO_0000115 obo:CHMO_0000995 "A chromatographic phase as \"a fluid which percolates through or along the stationary bed\" in chromatography.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000995 "CHMO:0002468")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000995 "eluent")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000995 "CHMO:0000995")
@@ -15123,21 +15130,21 @@ SubClassOf(obo:CHMO_0001052 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_000105
 
 # Class: obo:CHMO_0001053 (magnetic sector)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0001053 "A piece of apparatus consisting of a magnet which is used to separate an ion beam into discrete ion beams according to the mass-to-charge ratio of the ions.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.12473>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:9780470516348>) obo:IAO_0000115 obo:CHMO_0001053 "A device consisting of a magnet which is used to separate an ion beam into discrete ion beams according to the mass-to-charge ratio of the ions.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001053 "CHMO:0001053")
 AnnotationAssertion(rdfs:label obo:CHMO_0001053 "magnetic sector")
 SubClassOf(obo:CHMO_0001053 obo:OBI_0000968)
 
 # Class: obo:CHMO_0001054 (electric sector)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0001054 "A piece of apparatus which applies an electric field in order to select ions that have the same kinetic energy from an ion beam.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E01938>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:9780470516348>) obo:IAO_0000115 obo:CHMO_0001054 "A device which applies an electric field in order to select ions that have the same kinetic energy from an ion beam.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001054 "CHMO:0001054")
 AnnotationAssertion(rdfs:label obo:CHMO_0001054 "electric sector")
 SubClassOf(obo:CHMO_0001054 obo:OBI_0000968)
 
 # Class: obo:CHMO_0001055 (double-focusing mass spectrometer)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0001055 "A mass spectrometer that applies an electric field in order to select ions that have the same kinetic energy from an ion beam and uses a wedge-shaped magnetic field to separate the total ion beam into discrete ion beams according to the mass-to-charge ratio of the ions.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.D01845>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:9780470516348>) obo:IAO_0000115 obo:CHMO_0001055 "A mass spectrometer that applies an electric field in order to select ions that have the same kinetic energy from an ion beam and uses a wedge-shaped magnetic field to separate the total ion beam into discrete ion beams according to the mass-to-charge ratio of the ions.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001055 "double-focusing magnetic sector mass spectrometer")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001055 "double-focussing magnetic sector mass spectrometer")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001055 "double-focussing mass spectrometer")
@@ -15167,7 +15174,7 @@ SubClassOf(obo:CHMO_0001057 obo:CHMO_0001055)
 
 # Class: obo:CHMO_0001058 (Faraday cup)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0001058 "An ion detector consisting of a collector electrode connected to a high-ohmic resistor and surrounded by a Faraday cage. The voltage drop across the resistor is a measure of the ion current.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://books.rsc.org/view-large/6383163>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:9780470516348>) obo:IAO_0000115 obo:CHMO_0001058 "An ion detector consisting of a collector electrode connected to a high-ohmic resistor and surrounded by a Faraday cage. The voltage drop across the resistor is a measure of the ion current.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001058 "Faraday cup detector")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001058 "Faraday cup ion detector")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001058 "CHMO:0001058")
@@ -15550,7 +15557,7 @@ SubClassOf(obo:CHMO_0001096 obo:CHMO_0001095)
 
 # Class: obo:CHMO_0001097 (thermocouple)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001097 "A piece of apparatus that generates electrical current when it experiences a thermal gradient.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.T06313>) obo:IAO_0000115 obo:CHMO_0001097 "A device that generates electrical current when it experiences a thermal gradient.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001097 "CHMO:0001097")
 AnnotationAssertion(rdfs:label obo:CHMO_0001097 "thermocouple")
 SubClassOf(obo:CHMO_0001097 obo:OBI_0000968)
@@ -16912,10 +16919,10 @@ SubClassOf(obo:CHMO_0001215 obo:OBI_0000070)
 
 # Class: obo:CHMO_0001216 (optically detected magnetic resonance)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.O04278") obo:IAO_0000115 obo:CHMO_0001216 "A double resonance technique in which transitions between spin sublevels are detected by optical means (i.e. the polarisation or the intensity of light emitted or absorbed by the sample depends on the population distribution in the spin levels). Usually these are sublevels of a triplet and the transitions are induced by microwaves.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'optically detected magnetic resonance' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.O04278") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.O04278>) obo:IAO_0000115 obo:CHMO_0001216 "A magnetic resonance method that is \"a double resonance technique in which transitions between spin sublevels are detected by optical means [(i.e. the polarisation or the intensity of light emitted or absorbed by the sample depends on the population distribution in the spin levels).] Usually these are sublevels of a triplet and the transitions are induced by microwaves\".")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.O04278>) obo:OMO_0003012 obo:CHMO_0001216 "ODMR")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001216 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001216 "2009-03-25T11:38:35Z")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001216 "ODMR")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001216 "CHMO:0001216")
 AnnotationAssertion(rdfs:label obo:CHMO_0001216 "optically detected magnetic resonance")
 SubClassOf(obo:CHMO_0001216 obo:CHMO_0001215)
@@ -17015,9 +17022,12 @@ SubClassOf(obo:CHMO_0001225 obo:CHMO_0001224)
 
 # Class: obo:CHMO_0001226 (analytical solution calorimetry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.E02131") obo:IAO_0000115 obo:CHMO_0001226 "The measurement of the enthalpy change during chemical reaction in order to determine quantitative values of a reactant or catalyst. In general, at least one reactant is a liquid or solution.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'enthalpimetric analysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.E02131") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02131>) obo:IAO_0000115 obo:CHMO_0001226 "A calorimetry in which \"the enthalpy change of a chemical reaction is measured, directly or indirectly, in order to perform a quantitative determination of a reactant or catalyst. In general, at least one reactant is a liquid or solution.\"")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001226 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001226 "2009-03-25T12:09:47Z")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02131>) oboInOwl:hasExactSynonym obo:CHMO_0001226 "enthalpimetric analysis")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02131>) oboInOwl:hasExactSynonym obo:CHMO_0001226 "enthalpimetry")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02131>) oboInOwl:hasExactSynonym obo:CHMO_0001226 "thermochemical analysis")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001226 "CHMO:0001226")
 AnnotationAssertion(rdfs:label obo:CHMO_0001226 "analytical solution calorimetry")
 SubClassOf(obo:CHMO_0001226 obo:CHMO_0000682)
@@ -17102,7 +17112,7 @@ SubClassOf(obo:CHMO_0001233 obo:CHMO_0000018)
 
 # Class: obo:CHMO_0001234 (spectrometer)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001234 "A piece of apparatus used to measure a spectrum.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S05837>) obo:IAO_0000115 obo:CHMO_0001234 "A sensor used to measure a spectrum.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001234 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001234 "2009-03-25T01:54:09Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001234 "spectrograph")
@@ -22943,10 +22953,11 @@ SubClassOf(obo:CHMO_0001814 obo:CHMO_0001235)
 
 # Class: obo:CHMO_0001815 (electrochemical quartz crystal microbalance)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001815 "A piece of apparatus consisting of  a quartz crystal resonator,  which is used to measure the current efficiency (mass-to-charge ratio) during an electrochemical reaction, by measuring the change in resonance frequency of the crystal.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09163>) obo:IAO_0000115 obo:CHMO_0001815 "A quartz crystal microbalance consisting of a quartz crystal resonator, which is used to measure the current efficiency (mass-to-charge ratio) during an electrochemical reaction, by measuring the change in resonance frequency of the crystal.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09163>) obo:OMO_0003012 obo:CHMO_0001815 "EQCM")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001815 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001815 "2009-05-26T01:25:01Z")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001815 "EQCM")
+AnnotationAssertion(Annotation(rdfs:comment <https://doi.org/10.1351/goldbook.09163>) oboInOwl:hasExactSynonym obo:CHMO_0001815 "electrochemical quartz crystal nanobalance (EQCN)")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001815 "CHMO:0001815")
 AnnotationAssertion(rdfs:label obo:CHMO_0001815 "electrochemical quartz crystal microbalance")
 SubClassOf(obo:CHMO_0001815 obo:CHMO_0001077)
@@ -25684,7 +25695,7 @@ SubClassOf(obo:CHMO_0002020 obo:CHMO_0001685)
 
 # Class: obo:CHMO_0002021 (triple quadrupole mass spectrometer)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002021 "A piece of apparatus that consists of an ion source, a mass-to-charge analyser, a detector and a vacuum system and is used to measure mass spectra. The detector is a linear sequence of three quadrupole mass-to-charge analysers, which hold the ions in a stable orbit by an electric field generated by four parallel electrodes.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.12604>) obo:IAO_0000115 obo:CHMO_0002021 "A quadrupole mass spectrometer where the detector is a linear sequence of three quadrupole mass-to-charge analysers.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002021 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002021 "2009-06-19T02:31:09Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002021 "triple quadrapole mass spectrometer")
@@ -26859,7 +26870,7 @@ SubClassOf(obo:CHMO_0002119 obo:OBI_0000070)
 
 # Class: obo:CHMO_0002120 (monochromator)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002120 "A piece of apparatus that transmits a narrow band of wavelengths of light or other radiation (e.g. X-rays) chosen from a wider range of wavelengths available at the input.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'monochromator' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M04009") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) obo:IAO_0000115 obo:CHMO_0002120 "A device that transmits a \"narrow band of wavelengths [of light or other radiation (e.g. X-rays)] chosen from a wider range of wavelengths available at the input\".")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002120 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002120 "2009-07-08T10:17:24Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002120 "CHMO:0002120")
@@ -27363,7 +27374,7 @@ SubClassOf(obo:CHMO_0002161 obo:CHMO_0002154)
 
 # Class: obo:CHMO_0002162 (titration curve)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002162 "A plot of volume of titrant vs. an independent variable (e.g., pH or enthalpy) obtained from a titration experiment.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.T06388>) obo:IAO_0000115 obo:CHMO_0002162 "A spectrum plotting the volume of titrant vs. an independent variable (e.g., pH or enthalpy) obtained from a titration experiment.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002162 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002162 "2009-07-13T04:23:05Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002162 "titration data")
@@ -28347,7 +28358,7 @@ SubClassOf(obo:CHMO_0002243 obo:CHMO_0000445)
 
 # Class: obo:CHMO_0002244 (detector)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002244 "Any piece of apparatus used to detect an analyte.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://books.rsc.org/view-large/6381939>) obo:IAO_0000115 obo:CHMO_0002244 "A device used to detect an analyte.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002244 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002244 "2009-08-05T11:58:48Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002244 "CHMO:0002244")
@@ -29124,7 +29135,7 @@ SubClassOf(obo:CHMO_0002308 obo:CHMO_0001234)
 
 # Class: obo:CHMO_0002309 (quadrupole time-of-flight mass spectrometer)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0002309 "A time-of-flight mass spectrometer that uses an orthogonal-acceleration ion source. The detector is a quadrupole mass-to-charge analyser, which holds the ions in a stable orbit using an electric field generated by four parallel electrodes.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://books.rsc.org/view-large/6383372>) obo:IAO_0000115 obo:CHMO_0002309 "A quadrupole orthogonal-acceleration time-of-flight mass spectrometer.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002309 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002309 "2009-08-26T04:54:47Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002309 "QTOF mass spectrometer")
@@ -29502,7 +29513,7 @@ SubClassOf(obo:CHMO_0002339 obo:CHMO_0002174)
 
 # Class: obo:CHMO_0002340 (lock-in amplifier)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002340 "A piece of apparatus that can increase the power of a signal with a known carrier wave from an extremely noisy environment. A lock-in amplifier uses a frequency mixer to convert the signal's phase and amplitude into a DC voltage signal.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08267>) obo:IAO_0000115 obo:CHMO_0002340 "An amplifier that can increase the power of a signal with a known carrier wave from an extremely noisy environment. A lock-in amplifier uses a frequency mixer to convert the signal's phase and amplitude into a DC voltage signal.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002340 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002340 "2009-09-03T03:37:30Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002340 "lock in amplifier")
@@ -29556,7 +29567,7 @@ SubClassOf(obo:CHMO_0002343 obo:CHMO_0001215)
 
 # Class: obo:CHMO_0002344 (electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002344 "An electrically-conducting piece of apparatus that exchanges electrons with an electrolyte as part of an electrical circuit.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09060>) obo:IAO_0000115 obo:CHMO_0002344 "An electrically-conducting device that exchanges electrons with an electrolyte as part of an electrical circuit.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002344 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002344 "2009-09-11T10:48:45Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002344 "CHMO:0002344")
@@ -29565,7 +29576,7 @@ SubClassOf(obo:CHMO_0002344 obo:OBI_0000968)
 
 # Class: obo:CHMO_0002345 (reference electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "OrangeBook:8.3") obo:IAO_0000115 obo:CHMO_0002345 "An electrode through which no appreciable current is allowed to flow and is used to observe or control the potential at a working electrode.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'reference electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.R05229") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05229>) obo:IAO_0000115 obo:CHMO_0002345 "An electrode through which no appreciable current is allowed to flow \"that serves to permit the observation, measurement, or control of the potential of the indicator (or test) or working electrode.\"")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002345 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002345 "2009-09-11T10:56:03Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002345 "CHMO:0002345")
@@ -29574,7 +29585,7 @@ SubClassOf(obo:CHMO_0002345 obo:CHMO_0002344)
 
 # Class: obo:CHMO_0002346 (indicator electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002346 "An electrode at which the potential is measured.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.I03006>) obo:IAO_0000115 obo:CHMO_0002346 "An electrode at which the potential is measured.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002346 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002346 "2009-09-11T10:57:31Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002346 "test electrode")
@@ -29594,7 +29605,7 @@ SubClassOf(obo:CHMO_0002347 obo:CHMO_0002344)
 
 # Class: obo:CHMO_0002348 (hydrogen gas electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Orange:3.4.12") obo:IAO_0000115 obo:CHMO_0002348 "A reference electrode based on the equilibrium between aqueous protons and electrons on one side and hydrogen gas on the other, in solutions saturated with hydrogen gas. Typically it is made of a thin foil of platinum electrolytically coated with a finely divided deposit of platinum or palladium metal.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'hydrogen gas electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.H02900") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.H02900>) obo:IAO_0000115 obo:CHMO_0002348 "A reference gas electrode based on the equilibrium between aqueous protons and electrons on one side and hydrogen gas on the other, in solutions saturated with hydrogen gas. Typically it is made of \"a thin foil of platinum electrolytically coated with a finely divided deposit of platinum or palladium metal\".")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002348 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002348 "2009-09-11T11:04:46Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002348 "NHE")
@@ -29618,7 +29629,7 @@ SubClassOf(obo:CHMO_0002349 obo:BFO_0000140)
 
 # Class: obo:CHMO_0002350 (liquid junction)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002350 "A boundary between two electrolyte solutions of different composition, across which arises a potential difference, called the liquid junction potential. In an operational pH cell, the junction is between the test solution and the filling solution or bridge solution of the reference electrode.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'liquid junction' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.L03584") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.L03584>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) obo:IAO_0000115 obo:CHMO_0002350 "A boundary between portions of materials that is \"any junction between two electrolyte solutions of different composition. Across such a junction there arises a potential difference, called the liquid junction potential. In the operational pH cell the junction is between the test, or pH standard, solution and the filling solution or the bridge solution of the reference electrode.\"")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002350 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002350 "2009-09-11T11:16:35Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002350 "CHMO:0002350")
@@ -29627,7 +29638,7 @@ SubClassOf(obo:CHMO_0002350 obo:CHMO_0002349)
 
 # Class: obo:CHMO_0002351 (electrochemical cell)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002351 "A piece of apparatus in which a current causes chemical reactions or chemical reactions cause a current to flow.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.09058>) obo:IAO_0000115 obo:CHMO_0002351 "A device in which a current causes chemical reactions or chemical reactions cause a current to flow.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002351 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002351 "2009-09-11T11:22:34Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002351 "CHMO:0002351")
@@ -29636,7 +29647,7 @@ SubClassOf(obo:CHMO_0002351 obo:OBI_0000968)
 
 # Class: obo:CHMO_0002352 (operational pH cell)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "OrangeBook:3.4.12") obo:IAO_0000115 obo:CHMO_0002352 "An electrochemical cell which is used for practical pH measurements, consisting of a hydrogen ion-responsive electrode and a reference electrode immersed in the test solution.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'operational pH cell' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.O04298") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.O04298>) obo:IAO_0000115 obo:CHMO_0002352 "\"An electrochemical cell which is the basis of practical pH measurement consisting of a hydrogen ion-responsive electrode [...] and a reference electrode immersed in the test solution.\"")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002352 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002352 "2009-09-11T11:25:26Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002352 "CHMO:0002352")
@@ -29645,7 +29656,7 @@ SubClassOf(obo:CHMO_0002352 obo:CHMO_0002351)
 
 # Class: obo:CHMO_0002353 (pH glass electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "OrangeBook:3.4.12") obo:IAO_0000115 obo:CHMO_0002353 "A hydrogen-ion-responsive electrode consisting of a piece, usually a bulb, of special glass attached to a stem of high-resistance glass complete with internal reference electrode and internal filling solution system.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'pH glass electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.P04545") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.P04545>) obo:IAO_0000115 obo:CHMO_0002353 "A \"hydrogen-ion responsive electrode usually consisting of a bulb, or other suitable form, of special glass attached to a stem of high resistance glass complete with internal reference electrode and internal filling solution system.\"")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002353 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002353 "2009-09-11T11:28:36Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002353 "CHMO:0002353")
@@ -29701,7 +29712,7 @@ SubClassOf(obo:CHMO_0002357 obo:CHMO_0002345)
 
 # Class: obo:CHMO_0002358 (auxiliary electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.A00535") obo:IAO_0000115 obo:CHMO_0002358 "An electrode that serves merely to carry the current flowing through an electrochemical cell.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'auxiliary electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00535") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00535>) obo:IAO_0000115 obo:CHMO_0002358 "An electrode that \"serves merely to carry the current flowing through the cell, and at the surface of which no processes of interest occur.\"")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002358 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002358 "2009-09-11T01:32:58Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002358 "counter electrode")
@@ -29746,7 +29757,7 @@ SubClassOf(obo:CHMO_0002361 obo:CHMO_0000812)
 
 # Class: obo:CHMO_0002362 (Zimm plot)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1063/1.1746740") obo:IAO_0000115 obo:CHMO_0002362 "A plot obtained from a scattering experiment on large particles which is used to determine the average molecular weight of the (polymer) sample. The plot typically consists of a grid.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://doi.org/10.1063/1.1746740>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.Z06748>) obo:IAO_0000115 obo:CHMO_0002362 "Scattering data as a plot obtained from a scattering experiment on large particles which is used to determine the average molecular weight of the (polymer) sample. The plot typically consists of a grid.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002362 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002362 "2009-09-15T10:57:58Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002362 "CHMO:0002362")
@@ -30093,7 +30104,7 @@ SubClassOf(obo:CHMO_0002386 obo:OBI_0000070)
 
 # Class: obo:CHMO_0002387 (chromatogram)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002387 "A plot of detector signal (e.g. ion count or  absorbance) vs. retention time obtained from a chromatography experiment. Different peaks in the chromatogram correspond to different components of the separated mixture.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C01071>) obo:IAO_0000115 obo:CHMO_0002387 "A spectrum plotting the detector signal (e.g. ion count or  absorbance) vs. retention time obtained from a chromatography experiment. Different peaks in the chromatogram correspond to different components of the separated mixture.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002387 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002387 "2009-09-16T08:53:50Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002387 "CHMO:0002387")
@@ -30169,7 +30180,7 @@ SubClassOf(obo:CHMO_0002392 obo:CHMO_0000806)
 
 # Class: obo:CHMO_0002393 (ion-selective electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:978-3-540-74597-6") obo:IAO_0000115 obo:CHMO_0002393 "An electrode which responds to the activity of a primary ion in presence of various other (interfering) ions in the sample solution. Ion-selective electrodes contain a selective membrane which contains fixed or mobile sites that interact with ions in solution.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.I03244>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:978-3-540-74597-6>) obo:IAO_0000115 obo:CHMO_0002393 "An electrode which responds to the activity of a primary ion in presence of various other (interfering) ions in the sample solution. Ion-selective electrodes contain a selective membrane which contains fixed or mobile sites that interact with ions in solution.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002393 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002393 "2009-09-16T11:06:31Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002393 "ISE")
@@ -30554,7 +30565,7 @@ SubClassOf(obo:CHMO_0002425 obo:CHMO_0001313)
 
 # Class: obo:CHMO_0002426 (galvanostat)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002426 "A piece of apparatus that maintains the current through an electrochemical cell at a preset value.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09076>) obo:IAO_0000115 obo:CHMO_0002426 "A device that maintains the current through an electrochemical cell at a preset value.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002426 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002426 "2009-09-21T04:28:28Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002426 "amperostat")
@@ -30564,7 +30575,7 @@ SubClassOf(obo:CHMO_0002426 obo:OBI_0000968)
 
 # Class: obo:CHMO_0002427 (potentiostat)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002427 "A piece of apparatus that maintains the potential through an electrochemical cell at a preset value.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09079>) obo:IAO_0000115 obo:CHMO_0002427 "A device that maintains the potential through an electrochemical cell at a preset value.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002427 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002427 "2009-09-21T04:31:40Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002427 "CHMO:0002427")
@@ -30573,10 +30584,10 @@ SubClassOf(obo:CHMO_0002427 obo:OBI_0000968)
 
 # Class: obo:CHMO_0002428 (quasi-reference electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002428 "An electrode based on a ferrocene or cobaltocene redox couple internal standard through which no appreciable current is allowed to flow and is used to observe or control the potential at a working electrode.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09087>) obo:IAO_0000115 obo:CHMO_0002428 "A reference electrode based on a ferrocene or cobaltocene redox couple internal standard through which no appreciable current is allowed to flow and is used to observe or control the potential at a working electrode.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09087>) obo:OMO_0003012 obo:CHMO_0002428 "QRE")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002428 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002428 "2009-09-21T04:36:12Z")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002428 "QRE")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002428 "quasireference electrode")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:CHMO_0002428 "quasi-reference electrodes")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002428 "CHMO:0002428")
@@ -31035,7 +31046,7 @@ SubClassOf(obo:CHMO_0002466 obo:CHMO_0001688)
 
 # Class: obo:CHMO_0002467 (analyte)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.A00331") obo:IAO_0000115 obo:CHMO_0002467 "The component of a system to be analysed.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'analyte' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00331") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00331>) obo:IAO_0000115 obo:CHMO_0002467 "A portion of material representing \"the component of a system to be analysed\".")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002467 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002467 "2009-09-29T11:58:40Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002467 "CHMO:0002467")
@@ -31052,7 +31063,7 @@ AnnotationAssertion(owl:deprecated obo:CHMO_0002468 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0002469 (column eluent)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.E02040") obo:IAO_0000115 obo:CHMO_0002469 "The liquid or gas entering a chromatographic column and used to effect a separation by elution.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'eluent' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.E02040") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02040>) obo:IAO_0000115 obo:CHMO_0002469 "A mobile phase that is \"the liquid or gas entering a chromatographic [column] and used to effect a separation by elution\".")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002469 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002469 "2009-09-29T12:01:03Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002469 "CHMO:0002469")
@@ -31138,7 +31149,7 @@ SubClassOf(obo:CHMO_0002476 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_50803
 
 # Class: obo:CHMO_0002477 (chromatograph)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002477 "A piece of apparatus, consisting of a mobile phase supply system, an injection or sampling system, a column, detector and a data acquisition/ processing system, that is used to carry out chromatographic separations.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'chromatograph (n.)' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C01072") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.C01072>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) obo:IAO_0000115 obo:CHMO_0002477 "A sensor consisting of an \"assembly of apparatus [,which are a mobile phase supply system, an injection or sampling system, a column, detector and a data acquisition/ processing system, that is used] for carrying out chromatographic separation\".")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002477 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002477 "2009-09-30T11:48:43Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002477 "CHMO:0002477")
@@ -31566,7 +31577,7 @@ SubClassOf(obo:CHMO_0002508 obo:CHMO_0002016)
 
 # Class: obo:CHMO_0002509 (flash photolysis)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000370") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002509 "A technique in which a sample is first excited by a strong pulse (the 'pump' pulse) of light from a laser or flash lamp. This first pulse starts a chemical reaction or leads to an increased population of energy levels other than the ground state within the sample. The absorption of light by the sample is recorded within a short time intervals (by a 'test' or 'probe' pulse) to monitor relaxation or reaction processes initiated by the pump pulse.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <FIX:0000370>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-0640-0422>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.F02418>) obo:IAO_0000115 obo:CHMO_0002509 "A pump-probe spectroscopy in which a sample is first excited by a strong pulse (the 'pump' pulse) of light from a laser or flash lamp. This first pulse starts a chemical reaction or leads to an increased population of energy levels other than the ground state within the sample. The absorption of light by the sample is recorded within a short time intervals (by a 'test' or 'probe' pulse) to monitor relaxation or reaction processes initiated by the pump pulse.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002509 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002509 "2009-10-09T11:23:44Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002509 "FP")
@@ -32557,7 +32568,7 @@ SubClassOf(obo:CHMO_0002591 obo:OBI_0000968)
 
 # Class: obo:CHMO_0002592 (carbon electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.C00829") obo:IAO_0000115 obo:CHMO_0002592 "An electrode that consists of a sample of granular carbon material that has been bound with pitch and has been fired at high temperature.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'carbon electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C00829") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.C00829>) obo:IAO_0000115 obo:CHMO_0002592 "An electrode that \"comprises granular carbon material bound with pitch\" and has been fired at high temperature.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002592 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002592 "2009-11-10T12:19:34Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002592 "CHMO:0002592")
@@ -32566,7 +32577,7 @@ SubClassOf(obo:CHMO_0002592 obo:CHMO_0002344)
 
 # Class: obo:CHMO_0002593 (graphite electrode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.C00829") obo:IAO_0000115 obo:CHMO_0002593 "A carbon electrode that has been fired at a temperature around 2800 K, resulting in a largely graphitic composition.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'carbon electrode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C00829") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.G02685>) obo:IAO_0000115 obo:CHMO_0002593 "A carbon electrode that has been \"fired at a temperature around 2800 K\", resulting in a largely graphitic composition.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002593 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002593 "2009-11-10T12:21:55Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002593 "CHMO:0002593")
@@ -33633,7 +33644,7 @@ SubClassOf(obo:CHMO_0002676 obo:CHMO_0001123)
 
 # Class: obo:CHMO_0002677 (coulometer)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002677 "Any piece of apparatus used to measure electric charge.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.09157>) obo:IAO_0000115 obo:CHMO_0002677 "A sensor used to measure electric charge.")
 AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002677 "https://orcid.org/0000-0001-5985-7429")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002677 "2010-01-16T02:58:13Z")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002677 "voltameter")
@@ -34474,7 +34485,7 @@ SubClassOf(obo:CHMO_0002742 obo:CHMO_0001577)
 
 # Class: obo:CHMO_0002743 (matrix)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002743 "Those components of a sample that are not measured by an experiment.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'matrix' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M03758") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.M03758>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) obo:IAO_0000115 obo:CHMO_0002743 "A portion of material representing \"those components of a sample\" that are not measured by an experiment.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002743 "CHMO:0002743")
 AnnotationAssertion(rdfs:label obo:CHMO_0002743 "matrix")
 EquivalentClasses(obo:CHMO_0002743 ObjectIntersectionOf(obo:CHMO_0000993 ObjectSomeValuesFrom(obo:BFO_0000087 obo:CHMO_0002744)))
@@ -34516,8 +34527,7 @@ SubClassOf(obo:CHMO_0002747 ObjectSomeValuesFrom(obo:CHMO_0002748 obo:CHEBI_2337
 
 # Class: obo:CHMO_0002749 (retention index)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002749 "An experimental method output that consists of a number relating the adjusted retention volume or retention factor of the sample component to the adjusted retention volumes or retention factors of standards eluted before and after the peak of the sample component.")
-AnnotationAssertion(oboInOwl:hasDbXref obo:CHMO_0002749 "goldbook:R05360")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'retention index' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.R05360") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05360>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) obo:IAO_0000115 obo:CHMO_0002749 "An assay output that consists of a number \"relating the adjusted retention volume [...] or the retention factor of the sample component to the adjusted retention volumes [or retention factors of standards] eluted before and after the peak of the sample component\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002749 "CHMO:0002749")
 AnnotationAssertion(rdfs:label obo:CHMO_0002749 "retention index")
 SubClassOf(obo:CHMO_0002749 obo:CHMO_0000793)
@@ -34862,7 +34872,7 @@ SubClassOf(obo:CHMO_0002792 obo:IAO_0000140)
 
 # Class: obo:CHMO_0002793 (sensor)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002793 "A piece of apparatus that is used to measure a physical quantity.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08872>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://books.rsc.org/view-large/6381967>) obo:IAO_0000115 obo:CHMO_0002793 "A device that is used to measure a physical quantity.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002793 "CHMO:0002793")
 AnnotationAssertion(rdfs:label obo:CHMO_0002793 "sensor")
 SubClassOf(obo:CHMO_0002793 obo:OBI_0000968)
@@ -34876,7 +34886,7 @@ SubClassOf(obo:CHMO_0002794 obo:CHMO_0002793)
 
 # Class: obo:CHMO_0002795 (biosensor)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002795 "A sensor that recognises the analyte under study by interaction with a given biological system.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.B00663>) obo:IAO_0000115 obo:CHMO_0002795 "A sensor that recognises the analyte under study by interaction with a given biological system.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002795 "CHMO:0002795")
 AnnotationAssertion(rdfs:label obo:CHMO_0002795 "biosensor")
 SubClassOf(obo:CHMO_0002795 obo:CHMO_0002794)
@@ -34891,7 +34901,7 @@ SubClassOf(obo:CHMO_0002796 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_000279
 
 # Class: obo:CHMO_0002797 (dosimeter)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/9781847559753-00013") obo:IAO_0000115 obo:CHMO_0002797 "A sensor that is used to measure the dose of a substance taken by up an object.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1039/9781847559753-00013>) obo:IAO_0000115 obo:CHMO_0002797 "A sensor that is used to measure the dose of a substance taken up by an object.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002797 "CHMO:0002797")
 AnnotationAssertion(rdfs:label obo:CHMO_0002797 "dosimeter")
 SubClassOf(obo:CHMO_0002797 obo:CHMO_0002793)
@@ -34906,7 +34916,7 @@ SubClassOf(obo:CHMO_0002798 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_000279
 
 # Class: obo:CHMO_0002799 (chemodosimeter)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/9781847559753-00013") obo:IAO_0000115 obo:CHMO_0002799 "A sensor that is used to measure the dose of ions or small molecules taken by up an object.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C01021>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1039/9781847559753-00013>) obo:IAO_0000115 obo:CHMO_0002799 "A dosimeter that is used to measure the dose of ions or small molecules.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002799 "CHMO:0002799")
 AnnotationAssertion(rdfs:label obo:CHMO_0002799 "chemodosimeter")
 SubClassOf(obo:CHMO_0002799 obo:CHMO_0002797)
@@ -34921,7 +34931,7 @@ SubClassOf(obo:CHMO_0002800 obo:OBI_0000968)
 
 # Class: obo:CHMO_0002801 (limit of detection)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.L03540") obo:IAO_0000115 obo:CHMO_0002801 "The smallest measure that can be detected with reasonable certainty for a given analytical procedure.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'limit of detection' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.L03540") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.L03540>) obo:IAO_0000115 obo:CHMO_0002801 "A figure of merit expressing \"the smallest measure, 𝒙L, that can be detected with reasonable certainty for a given analytical procedure.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002801 "CHMO:0002801")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002801 "xL = <x> + ks where <x> is the mean of the blank measures, s is the standard deviation and k is a numerical factor chosen according to the desired confidence level.")
 AnnotationAssertion(rdfs:label obo:CHMO_0002801 "limit of detection")
@@ -34945,7 +34955,7 @@ SubClassOf(obo:CHMO_0002803 obo:CHMO_0000793)
 
 # Class: obo:CHMO_0002804 (blank value)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.B00679") obo:IAO_0000115 obo:CHMO_0002804 "An experimental method output originating from the matrix, reagents and any residual bias in the measurement device or process, which contributes to the value obtained for the quantity in the analytical procedure.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'blank value' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.B00679") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.B00679>) obo:IAO_0000115 obo:CHMO_0002804 "An experimental method output \"originating from the matrix, reagents and any residual bias in the measurement device or process, which contributes to the value obtained for the quantity in the analytical procedure.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002804 "CHMO:0002804")
 AnnotationAssertion(rdfs:label obo:CHMO_0002804 "blank value")
 SubClassOf(obo:CHMO_0002804 obo:CHMO_0002751)
@@ -34967,7 +34977,7 @@ SubClassOf(obo:CHMO_0002806 obo:CHMO_0001577)
 
 # Class: obo:CHMO_0002807 (linear range)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002807 "The working range over which the response is linearly proportional to the measure.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.L03558>) obo:IAO_0000115 obo:CHMO_0002807 "A working range over which the response is linearly proportional to the measure.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002807 "CHMO:0002807")
 AnnotationAssertion(rdfs:label obo:CHMO_0002807 "linear range")
 SubClassOf(obo:CHMO_0002807 obo:CHMO_0002805)
@@ -35036,7 +35046,7 @@ SubClassOf(obo:CHMO_0002814 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHMO_000282
 
 # Class: obo:CHMO_0002815 (solubility)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.S05740") obo:IAO_0000115 obo:CHMO_0002815 "The concentration of a solute in a saturated solution.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S05740>) obo:IAO_0000115 obo:CHMO_0002815 "The concentration of a solute in a saturated solution.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002815 "CHMO:0002815")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002815 "We will probably need to add solubility expressed as a mass concentration and so forth for the different cases.")
 AnnotationAssertion(rdfs:label obo:CHMO_0002815 "solubility")
@@ -35052,14 +35062,14 @@ SubClassOf(obo:CHMO_0002816 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHMO_000282
 
 # Class: obo:CHMO_0002817 (optical activity)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.O04303") obo:IAO_0000115 obo:CHMO_0002817 "The disposition of a sample to rotate the plane of polarization of a beam of transmitted plane-polarized light.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'optical activity' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.O04303") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.O04303>) obo:IAO_0000115 obo:CHMO_0002817 "A disposition of a sample able to \"rotate the plane of polarization of a beam of transmitted plane-polarized light\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002817 "CHMO:0002817")
 AnnotationAssertion(rdfs:label obo:CHMO_0002817 "optical activity")
 SubClassOf(obo:CHMO_0002817 obo:BFO_0000016)
 
 # Class: obo:CHMO_0002818 (angle of optical rotation)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.A00348") obo:IAO_0000115 obo:CHMO_0002818 "An experimental method output that consists of the angle through which plane polarized light is rotated clockwise, as seen when facing the light source, in passing through an optically active medium.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'angle of optical rotation' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00348") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00348>) dcterms:description obo:CHMO_0002818 "An assay output expressing the \"angle through which plane polarized light is rotated clockwise, as seen when facing the light source, in passing through an optically active medium.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002818 "CHMO:0002818")
 AnnotationAssertion(rdfs:label obo:CHMO_0002818 "angle of optical rotation")
 SubClassOf(obo:CHMO_0002818 obo:CHMO_0000793)
@@ -35075,45 +35085,40 @@ SubClassOf(obo:CHMO_0002819 obo:CHMO_0002770)
 
 # Class: obo:CHMO_0002820 (concentration)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002820 "Experimental method output expressing the contribution of one constituent to the composition of a mixture.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C01222>) obo:IAO_0000115 obo:CHMO_0002820 "An assay output expressing the contribution of one constituent to the composition of a mixture.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002820 "CHMO:0002820")
-AnnotationAssertion(rdfs:comment obo:CHMO_0002820 "based heavily on https://doi.org/10.1351/goldbook.C01222")
 AnnotationAssertion(rdfs:label obo:CHMO_0002820 "concentration")
 SubClassOf(obo:CHMO_0002820 obo:CHMO_0000793)
 SubClassOf(obo:CHMO_0002820 ObjectSomeValuesFrom(obo:IAO_0000136 obo:CHEBI_60004))
 
 # Class: obo:CHMO_0002821 (mass concentration)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002821 "Experimental method output expressing a concentration in terms of the mass of a constituent divided by the volume of the mixture.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'mass concentration' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M03713") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.M03713>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) obo:IAO_0000115 obo:CHMO_0002821 "A concentration in terms of the \"mass of a constituent divided by the volume of the mixture\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002821 "CHMO:0002821")
-AnnotationAssertion(rdfs:comment obo:CHMO_0002821 "based heavily on https://doi.org/10.1351/goldbook.M03713")
 AnnotationAssertion(rdfs:label obo:CHMO_0002821 "mass concentration")
 SubClassOf(obo:CHMO_0002821 obo:CHMO_0002820)
 
 # Class: obo:CHMO_0002822 (amount concentration)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002822 "Experimental method output expressing a concentration in terms of the amount of a constituent divided by the volume of the mixture.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002822 "amount-of-substance concentration")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002822 "molarity")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002822 "substance concentration")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'analyte' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00331") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00295>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) obo:IAO_0000115 obo:CHMO_0002822 "A concentration expressed as the \"amount of a constituent divided by the volume of the mixture\".")
+AnnotationAssertion(Annotation(dcterms:source <https://goldbook.iupac.org/terms/view/A00298>) oboInOwl:hasExactSynonym obo:CHMO_0002822 "amount-of-substance concentration")
+AnnotationAssertion(Annotation(dcterms:source <https://goldbook.iupac.org/terms/view/M03977>) oboInOwl:hasExactSynonym obo:CHMO_0002822 "molarity")
+AnnotationAssertion(Annotation(dcterms:source <https://goldbook.iupac.org/terms/view/A00295>) oboInOwl:hasExactSynonym obo:CHMO_0002822 "substance concentration")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002822 "CHMO:0002822")
-AnnotationAssertion(rdfs:comment obo:CHMO_0002822 "based heavily on https://doi.org/10.1351/goldbook.A00295")
 AnnotationAssertion(rdfs:label obo:CHMO_0002822 "amount concentration")
 SubClassOf(obo:CHMO_0002822 obo:CHMO_0002820)
 
 # Class: obo:CHMO_0002823 (volume concentration)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002823 "Experimental method output expressing a concentration in terms of the volume of a constituent divided by the volume of the mixture.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) obo:IAO_0000115 obo:CHMO_0002823 "A concentration expressed in terms of the volume of a constituent divided by the volume of the mixture.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002823 "CHMO:0002823")
-AnnotationAssertion(rdfs:comment obo:CHMO_0002823 "based heavily on https://doi.org/10.1351/goldbook.C01222")
 AnnotationAssertion(rdfs:label obo:CHMO_0002823 "volume concentration")
 SubClassOf(obo:CHMO_0002823 obo:CHMO_0002820)
 
 # Class: obo:CHMO_0002824 (number concentration)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002824 "Experimental method output expressing a concentration in terms of the number of entities of a constituent divided by the volume of the mixture.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'number concentration' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.N04260") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.N04260>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) obo:IAO_0000115 obo:CHMO_0002824 "A concentration in terms of the \"number of entities of a constituent in a mixture divided by the volume of the mixture.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002824 "CHMO:0002824")
-AnnotationAssertion(rdfs:comment obo:CHMO_0002824 "based heavily on https://doi.org/10.1351/goldbook.N04260")
 AnnotationAssertion(rdfs:label obo:CHMO_0002824 "number concentration")
 SubClassOf(obo:CHMO_0002824 obo:CHMO_0002820)
 
@@ -35295,7 +35300,7 @@ SubClassOf(obo:CHMO_0002847 obo:CHMO_0002803)
 
 # Class: obo:CHMO_0002848 (dynamic range)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://iupac.org/publications/analytical_compendium/Cha09sec245.pdf") obo:IAO_0000115 obo:CHMO_0002848 "The working range over which an incremental change in concentration or mass flow rate produces an incremental change in response.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "Compendium of Analytical Nomenclature; 3rd edition, edited by J Inczedy, Blackwell Scientific Publications, 1998. Chapter 9.2.4.5. ISBN 0-86542-615-5. https://media.iupac.org/publications/analytical_compendium/") Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <http://iupac.org/publications/analytical_compendium/Cha09sec245.pdf>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.D01874>) obo:IAO_0000115 obo:CHMO_0002848 "A working range \"over which an incremental change in concentration or mass flow-rate produces an incremental change\" in response.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002848 "CHMO:0002848")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002848 "The dynamic range is greater than the linear range.")
 AnnotationAssertion(rdfs:label obo:CHMO_0002848 "dynamic range")
@@ -35334,7 +35339,7 @@ SubClassOf(obo:CHMO_0002852 obo:OBI_0000094)
 
 # Class: obo:CHMO_0002853 (fraction extracted)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://iupac.org/publications/analytical_compendium/Cha09sec43.pdf") obo:IAO_0000115 obo:CHMO_0002853 "The fraction of the total quantity of a substance extracted in a separation experiment under specified conditions.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'fraction extracted' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.F02503") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02503>) obo:IAO_0000115 obo:CHMO_0002853 "An assay output expressing \"the fraction of the total quantity of a substance extracted [in a separation experiment] under specified conditions\".")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002853 "recovery factor")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002853 "CHMO:0002853")
 AnnotationAssertion(rdfs:label obo:CHMO_0002853 "fraction extracted")
@@ -35356,7 +35361,7 @@ SubClassOf(obo:CHMO_0002855 obo:CHMO_0000793)
 
 # Class: obo:CHMO_0002856 (enantiomer excess)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1359/goldbook.E02070") obo:IAO_0000115 obo:CHMO_0002856 "The absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E02070>) obo:IAO_0000115 obo:CHMO_0002856 "An assay output expressing the absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002856 "CHMO:0002856")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002856 "most people quote percentage enantiomer excess, CHMO:0002857")
 AnnotationAssertion(rdfs:label obo:CHMO_0002856 "enantiomer excess")
@@ -35371,14 +35376,14 @@ SubClassOf(obo:CHMO_0002857 obo:CHMO_0000793)
 
 # Class: obo:CHMO_0002858 (diastereomeric ratio)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1359/goldbook.D01681") obo:IAO_0000115 obo:CHMO_0002858 "The ratio of the percentage of one diastereomer in a mixture to that of the other.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'diastereomeric ratio' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.D01681") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.D01681>) obo:IAO_0000115 obo:CHMO_0002858 "An assay output representing \"the ratio of the percentage of one diastereomer in a mixture to that of the other.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002858 "CHMO:0002858")
 AnnotationAssertion(rdfs:label obo:CHMO_0002858 "diastereomeric ratio")
 SubClassOf(obo:CHMO_0002858 obo:CHMO_0000793)
 
 # Class: obo:CHMO_0002859 (enantiomeric ratio)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002859 "The ratio of the percentage of one enantiomer in a mixture to that of the other.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'enantiomeric ratio' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.E02075") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02070>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) obo:IAO_0000115 obo:CHMO_0002859 "An assay output expressing \"the ratio of the percentage of one enantiomer in a mixture to that of the other.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002859 "CHMO:0002859")
 AnnotationAssertion(rdfs:label obo:CHMO_0002859 "enantiomeric ratio")
 SubClassOf(obo:CHMO_0002859 obo:CHMO_0000793)
@@ -35510,7 +35515,8 @@ SubClassOf(obo:CHMO_0002878 obo:CHMO_0002742)
 
 # Class: obo:CHMO_0002879 (certified reference material)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002879 "A reference material that has been certified by an appropriate authority.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.15546>) obo:IAO_0000115 obo:CHMO_0002879 "A reference material that has been certified by an appropriate authority.")
+AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.15546>) obo:OMO_0003012 obo:CHMO_0002879 "CRM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002879 "CHMO:0002879")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002879 "For example NIST in the USA or the Comμnity Bureau of Reference.")
 AnnotationAssertion(rdfs:label obo:CHMO_0002879 "certified reference material")
@@ -35771,7 +35777,7 @@ SubClassOf(obo:CHMO_0002912 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHMO_000280
 
 # Class: obo:CHMO_0002913 (reference material)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://dx.doi.org/10.1351/goldbook.R05230") obo:IAO_0000115 obo:CHMO_0002913 "A substance or mixture of substances, the composition of which is known within specified limits, and one or more of the properties of which is sufficiently well established to be used for the calibration of an apparatus, the assessment of a measuring method or for assigning values to materials.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'reference material' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.R05230") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05230>) obo:IAO_0000115 obo:CHMO_0002913 "A portion of material that is \"a substance or mixture of substances, the composition of which is known within specified limits, and one or more of the properties of which is sufficiently well established to be used for the calibration of an apparatus, the assessment of a measuring method or for assigning values to materials\".")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002913 "CHMO:0002913")
 AnnotationAssertion(rdfs:label obo:CHMO_0002913 "reference material")
 SubClassOf(obo:CHMO_0002913 obo:CHMO_0000993)
@@ -35917,14 +35923,14 @@ SubClassOf(obo:CHMO_0002930 obo:CHMO_0002351)
 
 # Class: obo:CHMO_0002931 (anode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.C00905") obo:IAO_0000115 obo:CHMO_0002931 "Electrode at which reduction takes place.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'anode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00370") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.A00370>) obo:IAO_0000115 obo:CHMO_0002931 "\"Electrode at which oxidation takes place.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002931 "CHMO:0002931")
 AnnotationAssertion(rdfs:label obo:CHMO_0002931 "anode")
 SubClassOf(obo:CHMO_0002931 obo:CHMO_0002344)
 
 # Class: obo:CHMO_0002932 (cathode)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1351/goldbook.A00370") obo:IAO_0000115 obo:CHMO_0002932 "Electrode at which oxidation takes place.")
+AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'cathode' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C00905") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.C00905>) obo:IAO_0000115 obo:CHMO_0002932 "\"Electrode at which reduction takes place.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002932 "CHMO:0002932")
 AnnotationAssertion(rdfs:label obo:CHMO_0002932 "cathode")
 SubClassOf(obo:CHMO_0002932 obo:CHMO_0002344)
