@@ -4075,7 +4075,7 @@ AnnotationAssertion(rdfs:label obo:CHMO_0000086 "scanning transmission electron 
 SubClassOf(obo:CHMO_0000086 obo:CHMO_0000073)
 SubClassOf(obo:CHMO_0000086 obo:CHMO_0000080)
 
-# Class: obo:CHMO_0000087 (fluorescence microscopy)
+# Class: obo:CHMO_0000087 (fluorescence microscopy assay)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000087 "Any type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with light of specific wavelengths. These specimens are called fluorophores.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000087 "FIX:0000123")
@@ -4097,7 +4097,7 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000088 "CHMO:0000088")
 AnnotationAssertion(rdfs:label obo:CHMO_0000088 "fluorescence laser scanning microscopy")
 SubClassOf(obo:CHMO_0000088 obo:CHMO_0000087)
 
-# Class: obo:CHMO_0000089 (confocal laser scanning microscopy)
+# Class: obo:CHMO_0000089 (confocal fluorescence microscopy assay)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/b807581f") obo:IAO_0000115 obo:CHMO_0000089 "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a gas (Ar or Kr) laser spot of specific wavelength over its surface and using a spatial pinhole to eliminate out-of-focus fluorescence.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000089 "CLSM")
@@ -4242,7 +4242,7 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000101 "CHMO:0000101")
 AnnotationAssertion(rdfs:label obo:CHMO_0000101 "scanning ion microscopy")
 SubClassOf(obo:CHMO_0000101 obo:CHMO_0000097)
 
-# Class: obo:CHMO_0000102 (optical microscopy)
+# Class: obo:CHMO_0000102 (light microscopy assay)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000102 "Microscopy where the specimen is illuminated with visible light and a system of lenses is used to produce an image.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000102 "FIX:0000113")
