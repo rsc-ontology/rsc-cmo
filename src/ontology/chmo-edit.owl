@@ -22418,7 +22418,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001768 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001768 "2009-05-20T10:29:44Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001768 "CHMO:0001768")
 AnnotationAssertion(rdfs:label obo:CHMO_0001768 "trapping method")
-SubClassOf(obo:CHMO_0001768 obo:OBI_0000011)
+SubClassOf(obo:CHMO_0001768 obo:COB_0000082)
 
 # Class: obo:CHMO_0001769 (laser trapping)
 
@@ -23438,7 +23438,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001841 "NMR pulse sequenc
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001841 "pulse sequence")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001841 "CHMO:0001841")
 AnnotationAssertion(rdfs:label obo:CHMO_0001841 "nuclear magnetic resonance pulse sequence")
-SubClassOf(obo:CHMO_0001841 obo:OBI_0000011)
+SubClassOf(obo:CHMO_0001841 obo:COB_0000082)
 SubClassOf(obo:CHMO_0001841 ObjectSomeValuesFrom(obo:BFO_0000118 obo:CHMO_0001842))
 
 # Class: obo:CHMO_0001842 (radio frequency pulse)
@@ -23448,7 +23448,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001842 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001842 "2009-05-29T01:44:50Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001842 "CHMO:0001842")
 AnnotationAssertion(rdfs:label obo:CHMO_0001842 "radio frequency pulse")
-SubClassOf(obo:CHMO_0001842 obo:OBI_0000011)
+SubClassOf(obo:CHMO_0001842 obo:COB_0000082)
 
 # Class: obo:CHMO_0001843 (bilinear rotation decoupling pulse sequence)
 
@@ -35268,7 +35268,7 @@ SubClassOf(obo:CHMO_0002830 ObjectSomeValuesFrom(obo:OBI_0000299 obo:IAO_0000104
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002831 "A planned process in which materials for an experiment are acquired from an external supplier.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002831 "CHMO:0002831")
 AnnotationAssertion(rdfs:label obo:CHMO_0002831 "material acquisition")
-SubClassOf(obo:CHMO_0002831 obo:OBI_0000011)
+SubClassOf(obo:CHMO_0002831 obo:COB_0000082)
 
 # Class: obo:CHMO_0002832 (material disposal)
 
@@ -35329,14 +35329,14 @@ SubClassOf(obo:CHMO_0002838 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_50795
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002839 "A planned process involving setting up the equipment for another planned process.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002839 "CHMO:0002839")
 AnnotationAssertion(rdfs:label obo:CHMO_0002839 "planned process setup")
-SubClassOf(obo:CHMO_0002839 obo:OBI_0000011)
+SubClassOf(obo:CHMO_0002839 obo:COB_0000082)
 
 # Class: obo:CHMO_0002840 (planned process startup)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002840 "Part of a planned process where the equipment has been set up and human intervention is required to set the subprocesses going.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002840 "CHMO:0002840")
 AnnotationAssertion(rdfs:label obo:CHMO_0002840 "planned process startup")
-SubClassOf(obo:CHMO_0002840 obo:OBI_0000011)
+SubClassOf(obo:CHMO_0002840 obo:COB_0000082)
 
 # Class: obo:CHMO_0002841 (planned process adjustment)
 
@@ -35373,7 +35373,7 @@ SubClassOf(obo:CHMO_0002844 obo:CHMO_0002830)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.13964>) obo:IAO_0000115 obo:CHMO_0002845 "A planned process that involves all aspects of dealing with the waste produced in experiments.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002845 "CHMO:0002845")
 AnnotationAssertion(rdfs:label obo:CHMO_0002845 "waste management")
-SubClassOf(obo:CHMO_0002845 obo:OBI_0000011)
+SubClassOf(obo:CHMO_0002845 obo:COB_0000082)
 
 # Class: obo:CHMO_0002846 (autoclaving)
 
@@ -35870,7 +35870,7 @@ AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <htt
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.08377>) obo:OMO_0003012 obo:CHMO_0002911 "MAS")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002911 "CHMO:0002911")
 AnnotationAssertion(rdfs:label obo:CHMO_0002911 "magic angle spinning")
-SubClassOf(obo:CHMO_0002911 obo:OBI_0000011)
+SubClassOf(obo:CHMO_0002911 obo:COB_0000082)
 SubClassOf(obo:CHMO_0002911 ObjectSomeValuesFrom(obo:OBI_0000417 obo:CHMO_0002884))
 
 # Class: obo:CHMO_0002912 (figure-of-merit determination)
@@ -36128,7 +36128,7 @@ SubClassOf(obo:CHMO_0010001 ObjectSomeValuesFrom(obo:CHMO_0010017 obo:CHMO_00100
 
 AnnotationAssertion(oboInOwl:id obo:CHMO_0010002 "CHMO:0010002")
 AnnotationAssertion(rdfs:label obo:CHMO_0010002 "material handling technique")
-SubClassOf(obo:CHMO_0010002 obo:OBI_0000011)
+SubClassOf(obo:CHMO_0010002 obo:COB_0000082)
 
 # Class: obo:CHMO_0010003 (protective clothing)
 
@@ -36271,7 +36271,7 @@ SubClassOf(obo:CHMO_0010025 obo:CHMO_0010000)
 
 # Class: obo:MS_1000073 (electrospray ionization)
 
-SubClassOf(obo:MS_1000073 obo:OBI_0000011)
+SubClassOf(obo:MS_1000073 obo:COB_0000082)
 
 
 )
