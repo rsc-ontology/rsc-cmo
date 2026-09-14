@@ -62,3 +62,5 @@ import_group:
       module_type: custom
     - id: pato
       use_base: true
+    - id: cob
+      use_base: true

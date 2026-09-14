@@ -1,0 +1,2 @@
+http://purl.obolibrary.org/obo/COB_0000110 # material processing
+http://purl.obolibrary.org/obo/COB_0001300 # device
