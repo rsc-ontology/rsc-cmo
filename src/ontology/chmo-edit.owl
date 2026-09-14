@@ -14199,7 +14199,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://rock.esc.cam.ac.uk/icp
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000945 "DRC")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000945 "CHMO:0000945")
 AnnotationAssertion(rdfs:label obo:CHMO_0000945 "dynamic reaction cell")
-SubClassOf(obo:CHMO_0000945 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000945 obo:COB_0001300)
 SubClassOf(obo:CHMO_0000945 ObjectSomeValuesFrom(obo:BFO_0000175 obo:CHMO_0000955))
 
 # Class: obo:CHMO_0000946 (optical tweezers)
@@ -14210,7 +14210,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000946 "optical tweezer")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000946 "single-beam gradient force optical trap")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000946 "CHMO:0000946")
 AnnotationAssertion(rdfs:label obo:CHMO_0000946 "optical tweezers")
-SubClassOf(obo:CHMO_0000946 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000946 obo:COB_0001300)
 
 # Class: obo:CHMO_0000947 (optical microscope)
 
@@ -14228,7 +14228,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000948 "CCD array")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000948 "charge coupled device")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000948 "CHMO:0000948")
 AnnotationAssertion(rdfs:label obo:CHMO_0000948 "charge-coupled device")
-SubClassOf(obo:CHMO_0000948 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000948 obo:COB_0001300)
 SubClassOf(obo:CHMO_0000948 ObjectSomeValuesFrom(obo:BFO_0000175 obo:CHMO_0002181))
 
 # Class: obo:CHMO_0000949 (charge-coupled device diffractometer)
@@ -14256,7 +14256,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000951 "atomic force micr
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000951 "atomic force microscope tip")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000951 "CHMO:0000951")
 AnnotationAssertion(rdfs:label obo:CHMO_0000951 "atomic force microscopy tip")
-SubClassOf(obo:CHMO_0000951 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000951 obo:COB_0001300)
 
 # Class: obo:CHMO_0000952 (atomic force microscopy cantilever)
 
@@ -14266,14 +14266,14 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000952 "AFM lever")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000952 "atomic force microscope cantilever")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000952 "CHMO:0000952")
 AnnotationAssertion(rdfs:label obo:CHMO_0000952 "atomic force microscopy cantilever")
-SubClassOf(obo:CHMO_0000952 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000952 obo:COB_0001300)
 
 # Class: obo:CHMO_0000953 (microscope)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000953 "A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000953 "CHMO:0000953")
 AnnotationAssertion(rdfs:label obo:CHMO_0000953 "microscope")
-SubClassOf(obo:CHMO_0000953 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000953 obo:COB_0001300)
 
 # Class: obo:CHMO_0000954 (atomic force microscope)
 
@@ -14340,7 +14340,7 @@ SubClassOf(obo:CHMO_0000959 obo:CHMO_0000960)
 AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:9780470516348>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.I03247>) obo:IAO_0000115 obo:CHMO_0000960 "A device that takes an analyte and generates ions which are passed to the rest of a mass spectrometer for analysis.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000960 "CHMO:0000960")
 AnnotationAssertion(rdfs:label obo:CHMO_0000960 "ion source")
-SubClassOf(obo:CHMO_0000960 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000960 obo:COB_0001300)
 
 # Class: obo:CHMO_0000961 (orthogonal-acceleration ion source)
 
@@ -14380,7 +14380,7 @@ SubClassOf(obo:CHMO_0000963 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_000096
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:9780470516348") obo:IAO_0000115 obo:CHMO_0000964 "A piece of apparatus consisting of paired trapping plates, receiver plates and transmitter plates which provides a magnetic field that coherently excites ions according to their cyclotron frequencies which depend on their mass-to-charge ratio.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000964 "CHMO:0000964")
 AnnotationAssertion(rdfs:label obo:CHMO_0000964 "ion cyclotron resonance cell")
-SubClassOf(obo:CHMO_0000964 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000964 obo:COB_0001300)
 
 # Class: obo:CHMO_0000965 (Fourier transform ion cyclotron resonance mass spectrometer)
 
@@ -14515,14 +14515,14 @@ SubClassOf(obo:CHMO_0000977 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_000098
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000978 "A piece of apparatus which separates ions according to their mass-to-charge ratio.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000978 "CHMO:0000978")
 AnnotationAssertion(rdfs:label obo:CHMO_0000978 "mass-to-charge analyser")
-SubClassOf(obo:CHMO_0000978 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000978 obo:COB_0001300)
 
 # Class: obo:CHMO_0000979 (reflectron)
 
 AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.11544>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:9780470516348>) obo:IAO_0000115 obo:CHMO_0000979 "A device that produces an electric field that accelerates ions in a mass-to-charge analyser in a direction opposite to their direction of travel, acting as an ion mirror to separate ions of the same mass-to-charge ratio that have different kinetic energy.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000979 "CHMO:0000979")
 AnnotationAssertion(rdfs:label obo:CHMO_0000979 "reflectron")
-SubClassOf(obo:CHMO_0000979 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000979 obo:COB_0001300)
 
 # Class: obo:CHMO_0000980 (time-of-flight mass-to-charge analyser)
 
@@ -14554,7 +14554,7 @@ SubClassOf(obo:CHMO_0000982 obo:CHMO_0001234)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000983 "A piece of apparatus that has the form of a tube with an internal diameter of 20–100 micrometres and hosts the separation medium in capillary electrophoresis.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000983 "CHMO:0000983")
 AnnotationAssertion(rdfs:label obo:CHMO_0000983 "separation capillary")
-SubClassOf(obo:CHMO_0000983 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000983 obo:COB_0001300)
 
 # Class: obo:CHMO_0000984 (liquid stationary phase)
 
@@ -14582,7 +14582,7 @@ SubClassOf(obo:CHMO_0000986 obo:CHMO_0000994)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.C00793>) obo:IAO_0000115 obo:CHMO_0000987 "A device that has the form of a tube with a diameter of less than a millimetre and hosts the stationary bed in chromatography.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000987 "CHMO:0000987")
 AnnotationAssertion(rdfs:label obo:CHMO_0000987 "capillary column")
-SubClassOf(obo:CHMO_0000987 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000987 obo:COB_0001300)
 
 # Class: obo:CHMO_0000988 (chromatography paper)
 
@@ -14604,7 +14604,7 @@ SubClassOf(obo:CHMO_0000989 obo:CHMO_0000990)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000990 "A piece of apparatus that is planar and is or hosts the stationary bed in chromatography.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000990 "CHMO:0000990")
 AnnotationAssertion(rdfs:label obo:CHMO_0000990 "open chromatographic bed")
-SubClassOf(obo:CHMO_0000990 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000990 obo:COB_0001300)
 
 # Class: obo:CHMO_0000991 (liquid mobile phase)
 
@@ -14657,7 +14657,7 @@ SubClassOf(obo:CHMO_0000996 obo:CHMO_0000995)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000997 "A piece of apparatus that has the form of a tube with a diameter between 5 to 50 mm and hosts the stationary bed in chromatography.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000997 "CHMO:0000997")
 AnnotationAssertion(rdfs:label obo:CHMO_0000997 "chromatography column")
-SubClassOf(obo:CHMO_0000997 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0000997 obo:COB_0001300)
 
 # Class: obo:CHMO_0000998 (obo:CHMO_0000998)
 
@@ -15192,14 +15192,14 @@ SubClassOf(obo:CHMO_0001052 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_000105
 AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.12473>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:9780470516348>) obo:IAO_0000115 obo:CHMO_0001053 "A device consisting of a magnet that is used to separate an ion beam into discrete ion beams according to the mass-to-charge ratio of the ions.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001053 "CHMO:0001053")
 AnnotationAssertion(rdfs:label obo:CHMO_0001053 "magnetic sector")
-SubClassOf(obo:CHMO_0001053 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0001053 obo:COB_0001300)
 
 # Class: obo:CHMO_0001054 (electric sector)
 
 AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E01938>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <ISBN:9780470516348>) obo:IAO_0000115 obo:CHMO_0001054 "A device that applies an electric field in order to select ions that have the same kinetic energy from an ion beam.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001054 "CHMO:0001054")
 AnnotationAssertion(rdfs:label obo:CHMO_0001054 "electric sector")
-SubClassOf(obo:CHMO_0001054 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0001054 obo:COB_0001300)
 
 # Class: obo:CHMO_0001055 (double-focusing mass spectrometer)
 
@@ -15252,7 +15252,7 @@ SubClassOf(obo:CHMO_0001059 obo:CHMO_0002244)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001060 "A device that on contact with a charged particle of sufficient energy emits a greater number electrons.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001060 "CHMO:0001060")
 AnnotationAssertion(rdfs:label obo:CHMO_0001060 "electron multiplier")
-SubClassOf(obo:CHMO_0001060 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0001060 obo:COB_0001300)
 
 # Class: obo:CHMO_0001061 (discrete-dynode electron multiplier)
 
@@ -15296,7 +15296,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001065 "AFM probe")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001065 "atomic force microscope probe")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001065 "CHMO:0001065")
 AnnotationAssertion(rdfs:label obo:CHMO_0001065 "atomic force microscopy probe")
-SubClassOf(obo:CHMO_0001065 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0001065 obo:COB_0001300)
 
 # Class: obo:CHMO_0001066 (incident photon conversion efficiency spectrum)
 
@@ -15433,7 +15433,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001077 "QCM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001077 "CHMO:0001077")
 AnnotationAssertion(rdfs:label obo:CHMO_0001077 "quartz crystal microbalance")
-SubClassOf(obo:CHMO_0001077 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0001077 obo:COB_0001300)
 
 # Class: obo:CHMO_0001078 (polarization modulation infrared reflection–adsorption spectroscopy)
 
@@ -15620,14 +15620,14 @@ SubClassOf(obo:CHMO_0001096 obo:CHMO_0001095)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.T06313>) obo:IAO_0000115 obo:CHMO_0001097 "A device that generates electrical current when it experiences a thermal gradient.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001097 "CHMO:0001097")
 AnnotationAssertion(rdfs:label obo:CHMO_0001097 "thermocouple")
-SubClassOf(obo:CHMO_0001097 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0001097 obo:COB_0001300)
 
 # Class: obo:CHMO_0001098 (Wollaston wire)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001098 "A composite wire consisting of a fine platinum core with a silver coating.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001098 "CHMO:0001098")
 AnnotationAssertion(rdfs:label obo:CHMO_0001098 "Wollaston wire")
-SubClassOf(obo:CHMO_0001098 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0001098 obo:COB_0001300)
 
 # Class: obo:CHMO_0001099 (transmission electron microscope)
 
@@ -22984,7 +22984,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001810 "2009-05-26T10:20:04
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001810 "synchrotrons")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001810 "CHMO:0001810")
 AnnotationAssertion(rdfs:label obo:CHMO_0001810 "synchrotron")
-SubClassOf(obo:CHMO_0001810 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0001810 obo:COB_0001300)
 
 # Class: obo:CHMO_0001811 (pole figure measurement)
 
@@ -24301,7 +24301,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001909 "staring plane arr
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001909 "staring-plane array")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001909 "CHMO:0001909")
 AnnotationAssertion(rdfs:label obo:CHMO_0001909 "focal-plane array")
-SubClassOf(obo:CHMO_0001909 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0001909 obo:COB_0001300)
 
 # Class: obo:CHMO_0001910 (structure data)
 
@@ -24990,7 +24990,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001957 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001957 "2009-06-11T02:20:37Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001957 "CHMO:0001957")
 AnnotationAssertion(rdfs:label obo:CHMO_0001957 "flow cytometer")
-SubClassOf(obo:CHMO_0001957 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0001957 obo:COB_0001300)
 
 # Class: obo:CHMO_0001958 (field-emission scanning electron micrograph)
 
@@ -25505,7 +25505,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001994 "stylus profilomet
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001994 "surface profilometer")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001994 "CHMO:0001994")
 AnnotationAssertion(rdfs:label obo:CHMO_0001994 "profilometer")
-SubClassOf(obo:CHMO_0001994 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0001994 obo:COB_0001300)
 
 # Class: obo:CHMO_0001995 (atomic mass spectrometry)
 
@@ -26955,7 +26955,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002120 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002120 "2009-07-08T10:17:24Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002120 "CHMO:0002120")
 AnnotationAssertion(rdfs:label obo:CHMO_0002120 "monochromator")
-SubClassOf(obo:CHMO_0002120 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002120 obo:COB_0001300)
 
 # Class: obo:CHMO_0002121 (thermogravimetric analyser)
 
@@ -26981,7 +26981,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002122 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002122 "2009-07-08T10:37:10Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002122 "CHMO:0002122")
 AnnotationAssertion(rdfs:label obo:CHMO_0002122 "sputter coater")
-SubClassOf(obo:CHMO_0002122 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002122 obo:COB_0001300)
 
 # Class: obo:CHMO_0002123 (zeta-potential measurement)
 
@@ -27035,7 +27035,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002126 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002126 "2009-07-08T04:13:06Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002126 "CHMO:0002126")
 AnnotationAssertion(rdfs:label obo:CHMO_0002126 "amplifier")
-SubClassOf(obo:CHMO_0002126 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002126 obo:COB_0001300)
 
 # Class: obo:CHMO_0002127 (patch-clamp amplifier)
 
@@ -27506,7 +27506,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002166 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002166 "2009-07-15T01:19:11Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002166 "CHMO:0002166")
 AnnotationAssertion(rdfs:label obo:CHMO_0002166 "autoclave")
-SubClassOf(obo:CHMO_0002166 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002166 obo:COB_0001300)
 
 # Class: obo:CHMO_0002167 (polyol method)
 
@@ -27708,7 +27708,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002181 "charge coupled de
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002181 "charge-coupled device (CCD) digital camera")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002181 "CHMO:0002181")
 AnnotationAssertion(rdfs:label obo:CHMO_0002181 "charge-coupled-device camera")
-SubClassOf(obo:CHMO_0002181 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002181 obo:COB_0001300)
 
 # Class: obo:CHMO_0002182 (electron-multiplying charge-coupled device)
 
@@ -27918,7 +27918,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002199 "Rotavapor")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002199 "rotavap")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002199 "CHMO:0002199")
 AnnotationAssertion(rdfs:label obo:CHMO_0002199 "rotary evaporator")
-SubClassOf(obo:CHMO_0002199 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002199 obo:COB_0001300)
 
 # Class: obo:CHMO_0002200 (differential scanning calorimeter)
 
@@ -27966,7 +27966,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002203 "2009-07-23T03:48:32
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002203 "MALDI plate")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002203 "CHMO:0002203")
 AnnotationAssertion(rdfs:label obo:CHMO_0002203 "matrix assisted laser desorption-ionisation plate")
-SubClassOf(obo:CHMO_0002203 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002203 obo:COB_0001300)
 
 # Class: obo:CHMO_0002204 (solvent casting)
 
@@ -28445,7 +28445,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002244 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002244 "2009-08-05T11:58:48Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002244 "CHMO:0002244")
 AnnotationAssertion(rdfs:label obo:CHMO_0002244 "detector")
-SubClassOf(obo:CHMO_0002244 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002244 obo:COB_0001300)
 
 # Class: obo:CHMO_0002245 (charge-coupled-device detector)
 
@@ -29658,7 +29658,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002344 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002344 "2009-09-11T10:48:45Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002344 "CHMO:0002344")
 AnnotationAssertion(rdfs:label obo:CHMO_0002344 "electrode")
-SubClassOf(obo:CHMO_0002344 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002344 obo:COB_0001300)
 
 # Class: obo:CHMO_0002345 (reference electrode)
 
@@ -29729,7 +29729,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002351 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002351 "2009-09-11T11:22:34Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002351 "CHMO:0002351")
 AnnotationAssertion(rdfs:label obo:CHMO_0002351 "electrochemical cell")
-SubClassOf(obo:CHMO_0002351 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002351 obo:COB_0001300)
 
 # Class: obo:CHMO_0002352 (operational pH cell)
 
@@ -30305,7 +30305,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002396 "2009-09-16T11:14:24
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002396 "ESDA")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002396 "CHMO:0002396")
 AnnotationAssertion(rdfs:label obo:CHMO_0002396 "electrostatic detection apparatus")
-SubClassOf(obo:CHMO_0002396 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002396 obo:COB_0001300)
 
 # Class: obo:CHMO_0002397 (solution-state nuclear magnetic resonance spectroscopy)
 
@@ -30658,7 +30658,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002426 "2009-09-21T04:28:28
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002426 "amperostat")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002426 "CHMO:0002426")
 AnnotationAssertion(rdfs:label obo:CHMO_0002426 "galvanostat")
-SubClassOf(obo:CHMO_0002426 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002426 obo:COB_0001300)
 
 # Class: obo:CHMO_0002427 (potentiostat)
 
@@ -30667,7 +30667,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002427 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002427 "2009-09-21T04:31:40Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002427 "CHMO:0002427")
 AnnotationAssertion(rdfs:label obo:CHMO_0002427 "potentiostat")
-SubClassOf(obo:CHMO_0002427 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002427 obo:COB_0001300)
 
 # Class: obo:CHMO_0002428 (quasi-reference electrode)
 
@@ -30847,7 +30847,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002444 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002444 "2009-09-23T02:43:52Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002444 "CHMO:0002444")
 AnnotationAssertion(rdfs:label obo:CHMO_0002444 "microwave oven")
-SubClassOf(obo:CHMO_0002444 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002444 obo:COB_0001300)
 
 # Class: obo:CHMO_0002445 (pump-probe spectroscopy)
 
@@ -31198,7 +31198,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002473 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002473 "2009-09-29T06:39:36Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002473 "CHMO:0002473")
 AnnotationAssertion(rdfs:label obo:CHMO_0002473 "Knudsen cell")
-SubClassOf(obo:CHMO_0002473 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002473 obo:COB_0001300)
 
 # Class: obo:CHMO_0002474 (magnetic tweezers)
 
@@ -31207,7 +31207,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002474 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002474 "2009-09-29T06:44:09Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002474 "CHMO:0002474")
 AnnotationAssertion(rdfs:label obo:CHMO_0002474 "magnetic tweezers")
-SubClassOf(obo:CHMO_0002474 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002474 obo:COB_0001300)
 
 # Class: obo:CHMO_0002475 (magnetic trapping)
 
@@ -32417,7 +32417,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002570 "Sieverts' apparat
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002570 "volumetric hydrogen storage capacity apparatus")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002570 "CHMO:0002570")
 AnnotationAssertion(rdfs:label obo:CHMO_0002570 "Sievert's apparatus")
-SubClassOf(obo:CHMO_0002570 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002570 obo:COB_0001300)
 
 # Class: obo:CHMO_0002571 (gel filtration chromatograph)
 
@@ -32438,7 +32438,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002572 "2009-10-28T09:17:43
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002572 "Schlenk flask")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002572 "CHMO:0002572")
 AnnotationAssertion(rdfs:label obo:CHMO_0002572 "Schlenk tube")
-SubClassOf(obo:CHMO_0002572 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002572 obo:COB_0001300)
 
 # Class: obo:CHMO_0002573 (size-exclusion chromatogram)
 
@@ -32518,7 +32518,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002579 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002579 "2009-11-03T05:37:59Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002579 "CHMO:0002579")
 AnnotationAssertion(rdfs:label obo:CHMO_0002579 "autosampler")
-SubClassOf(obo:CHMO_0002579 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002579 obo:COB_0001300)
 
 # Class: obo:CHMO_0002580 (colorimetric test)
 
@@ -32652,7 +32652,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002591 "2009-11-10T12:09:23
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002591 "SMPS")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002591 "CHMO:0002591")
 AnnotationAssertion(rdfs:label obo:CHMO_0002591 "scanning mobility particle sizer")
-SubClassOf(obo:CHMO_0002591 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002591 obo:COB_0001300)
 
 # Class: obo:CHMO_0002592 (carbon electrode)
 
@@ -32832,7 +32832,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002607 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002607 "2009-11-19T02:01:02Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002607 "CHMO:0002607")
 AnnotationAssertion(rdfs:label obo:CHMO_0002607 "micromanipulator")
-SubClassOf(obo:CHMO_0002607 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002607 obo:COB_0001300)
 
 # Class: obo:CHMO_0002608 (piezo-driven micromanipulator)
 
@@ -32866,7 +32866,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002610 "TEM microgrid")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002610 "transmission electron microscope microgrid")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002610 "CHMO:0002610")
 AnnotationAssertion(rdfs:label obo:CHMO_0002610 "transmission electron microscope grid")
-SubClassOf(obo:CHMO_0002610 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002610 obo:COB_0001300)
 
 # Class: obo:CHMO_0002611 (field-emission transmission electron microscopy)
 
@@ -33186,7 +33186,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002635 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002635 "2009-12-07T06:13:43Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002635 "CHMO:0002635")
 AnnotationAssertion(rdfs:label obo:CHMO_0002635 "magnetometer")
-SubClassOf(obo:CHMO_0002635 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002635 obo:COB_0001300)
 
 # Class: obo:CHMO_0002636 (superconducting quantum interference device)
 
@@ -34777,7 +34777,7 @@ SubClassOf(obo:CHMO_0002767 obo:CHMO_0000976)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002768 "A piece of apparatus connecting a gas chromatograph to a mass spectrometer.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002768 "CHMO:0002768")
 AnnotationAssertion(rdfs:label obo:CHMO_0002768 "gas chromatograph-mass spectrometer transfer line")
-SubClassOf(obo:CHMO_0002768 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002768 obo:COB_0001300)
 
 # Class: obo:CHMO_0002769 (gas chromatograph-mass spectrometer transfer line temperature setting)
 
@@ -34837,7 +34837,7 @@ SubClassOf(obo:CHMO_0002775 obo:CHMO_0002774)
 
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002776 "CHMO:0002776")
 AnnotationAssertion(rdfs:label obo:CHMO_0002776 "stir bar")
-SubClassOf(obo:CHMO_0002776 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002776 obo:COB_0001300)
 SubClassOf(obo:CHMO_0002776 ObjectSomeValuesFrom(obo:BFO_0000056 obo:CHMO_0002774))
 
 # Class: obo:CHMO_0002777 (Kugelrohr condenser)
@@ -34846,7 +34846,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://en.wikipedia.org/wiki/
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002777 "Kugelrohr apparatus")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002777 "CHMO:0002777")
 AnnotationAssertion(rdfs:label obo:CHMO_0002777 "Kugelrohr condenser")
-SubClassOf(obo:CHMO_0002777 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002777 obo:COB_0001300)
 SubClassOf(obo:CHMO_0002777 ObjectSomeValuesFrom(obo:BFO_0000056 obo:CHMO_0001540))
 
 # Class: obo:CHMO_0002778 (copper K-alpha source)
@@ -34920,7 +34920,7 @@ SubClassOf(obo:CHMO_0002786 ObjectSomeValuesFrom(obo:BFO_0000068 obo:CHMO_000164
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002787 "A syringe which has the function of pumping material into an experiment.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002787 "CHMO:0002787")
 AnnotationAssertion(rdfs:label obo:CHMO_0002787 "syringe pump")
-SubClassOf(obo:CHMO_0002787 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002787 obo:COB_0001300)
 SubClassOf(obo:CHMO_0002787 ObjectSomeValuesFrom(obo:BFO_0000085 obo:OBI_0001042))
 
 # Class: obo:CHMO_0002788 (hydrogen atmosphere)
@@ -34936,7 +34936,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002789 "CHMO:0002789")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002789 "See for example http://www.parrinst.com/products/hydrogenation/3926-hydrogenator/")
 AnnotationAssertion(rdfs:label obo:CHMO_0002789 "hydrogenator")
-SubClassOf(obo:CHMO_0002789 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002789 obo:COB_0001300)
 SubClassOf(obo:CHMO_0002789 ObjectSomeValuesFrom(obo:BFO_0000178 obo:CHMO_0002788))
 
 # Class: obo:CHMO_0002790 (fragmentor voltage)
@@ -34965,7 +34965,7 @@ SubClassOf(obo:CHMO_0002792 obo:IAO_0000140)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.08872>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://books.rsc.org/view-large/6381967>) obo:IAO_0000115 obo:CHMO_0002793 "A device that is used to measure a physical quantity.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002793 "CHMO:0002793")
 AnnotationAssertion(rdfs:label obo:CHMO_0002793 "sensor")
-SubClassOf(obo:CHMO_0002793 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002793 obo:COB_0001300)
 
 # Class: obo:CHMO_0002794 (chemosensor)
 
@@ -35017,7 +35017,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://en.wikipedia.org/wiki/
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002800 "retort furnace")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002800 "CHMO:0002800")
 AnnotationAssertion(rdfs:label obo:CHMO_0002800 "muffle furnace")
-SubClassOf(obo:CHMO_0002800 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002800 obo:COB_0001300)
 
 # Class: obo:CHMO_0002801 (limit of detection)
 
@@ -35087,7 +35087,7 @@ SubClassOf(obo:CHMO_0002808 obo:CHMO_0002809)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002809 "A piece of apparatus that is used to raise the temperature of a sample.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002809 "CHMO:0002809")
 AnnotationAssertion(rdfs:label obo:CHMO_0002809 "piece of heating apparatus")
-SubClassOf(obo:CHMO_0002809 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002809 obo:COB_0001300)
 
 # Class: obo:CHMO_0002810 (flame ionisation detector)
 
@@ -35097,7 +35097,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002810 "FID detector")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002810 "flame ionization detector")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002810 "CHMO:0002810")
 AnnotationAssertion(rdfs:label obo:CHMO_0002810 "flame ionisation detector")
-SubClassOf(obo:CHMO_0002810 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002810 obo:COB_0001300)
 
 # Class: obo:CHMO_0002811 (magnesium K-alpha source)
 
@@ -35228,7 +35228,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002826 "Dean-Stark conden
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002826 "Dean-Stark trap")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002826 "CHMO:0002826")
 AnnotationAssertion(rdfs:label obo:CHMO_0002826 "Dean-Stark apparatus")
-SubClassOf(obo:CHMO_0002826 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002826 obo:COB_0001300)
 
 # Class: obo:CHMO_0002827 (weighing)
 
@@ -35660,7 +35660,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002885 "slotted disk")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002885 "CHMO:0002885")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002885 "This is used in photoacoustic spectroscopy to break a continuous laser beam into a pulsed one.")
 AnnotationAssertion(rdfs:label obo:CHMO_0002885 "slotted disc")
-SubClassOf(obo:CHMO_0002885 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002885 obo:COB_0001300)
 
 # Class: obo:CHMO_0002886 (two-dimensional gas chromatography)
 
@@ -35741,14 +35741,14 @@ SubClassOf(obo:CHMO_0002895 ObjectSomeValuesFrom(obo:BFO_0000085 obo:CHMO_000289
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0002896 "A device that uses electrical and magnetic fields to generate heat.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002896 "CHMO:0002896")
 AnnotationAssertion(rdfs:label obo:CHMO_0002896 "magnetron")
-SubClassOf(obo:CHMO_0002896 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002896 obo:COB_0001300)
 
 # Class: obo:CHMO_0002897 (polarimeter)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002897 "A device that measures the angle of optical rotation of a sample.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002897 "CHMO:0002897")
 AnnotationAssertion(rdfs:label obo:CHMO_0002897 "polarimeter")
-SubClassOf(obo:CHMO_0002897 obo:OBI_0000968)
+SubClassOf(obo:CHMO_0002897 obo:COB_0001300)
 
 # Class: obo:CHMO_0002898 (polarimetry of sample dissolved in chloroform)
 
