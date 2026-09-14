@@ -14672,7 +14672,7 @@ AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000999 "FIX:0000002")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000999 "partition")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000999 "CHMO:0000999")
 AnnotationAssertion(rdfs:label obo:CHMO_0000999 "separation method")
-SubClassOf(obo:CHMO_0000999 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0000999 obo:COB_0000110)
 
 # Class: obo:CHMO_0001000 (chromatography)
 
@@ -15964,7 +15964,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001132 "batchelorc")
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001132 "2009-03-06T05:23:07Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001132 "CHMO:0001132")
 AnnotationAssertion(rdfs:label obo:CHMO_0001132 "laser ablation")
-SubClassOf(obo:CHMO_0001132 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001132 obo:COB_0000110)
 SubClassOf(obo:CHMO_0001132 ObjectSomeValuesFrom(obo:BFO_0000057 obo:OBI_0400064))
 
 # Class: obo:CHMO_0001133 (obo:CHMO_0001133)
@@ -18076,7 +18076,7 @@ SubClassOf(obo:CHMO_0001300 obo:CHMO_0001299)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001301 "A method used to synthesise a sample.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001301 "CHMO:0001301")
 AnnotationAssertion(rdfs:label obo:CHMO_0001301 "synthesis method")
-SubClassOf(obo:CHMO_0001301 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001301 obo:COB_0000110)
 
 # Class: obo:CHMO_0001302 (assembly)
 
@@ -19659,7 +19659,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001460 "deflocculation")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001460 "peptization")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001460 "CHMO:0001460")
 AnnotationAssertion(rdfs:label obo:CHMO_0001460 "peptisation")
-SubClassOf(obo:CHMO_0001460 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001460 obo:COB_0000110)
 
 # Class: obo:CHMO_0001461 (obo:CHMO_0001461)
 
@@ -19695,7 +19695,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001464 "precipitate agein
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001464 "precipitation hardening")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001464 "CHMO:0001464")
 AnnotationAssertion(rdfs:label obo:CHMO_0001464 "ageing of precipitate")
-SubClassOf(obo:CHMO_0001464 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001464 obo:COB_0000110)
 
 # Class: obo:CHMO_0001465 (annealing)
 
@@ -19710,7 +19710,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001466 "atomization")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001466 "CHMO:0001466")
 AnnotationAssertion(rdfs:label obo:CHMO_0001466 "atomisation")
-SubClassOf(obo:CHMO_0001466 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001466 obo:COB_0000110)
 
 # Class: obo:CHMO_0001467 (calcination)
 
@@ -19727,7 +19727,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001468 "carbo reduction")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001468 "carboreduction")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001468 "CHMO:0001468")
 AnnotationAssertion(rdfs:label obo:CHMO_0001468 "carbo-reduction")
-SubClassOf(obo:CHMO_0001468 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001468 obo:COB_0000110)
 
 # Class: obo:CHMO_0001469 (ceramisation)
 
@@ -19735,14 +19735,14 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001469 "ceramization")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001469 "CHMO:0001469")
 AnnotationAssertion(rdfs:label obo:CHMO_0001469 "ceramisation")
-SubClassOf(obo:CHMO_0001469 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001469 obo:COB_0000110)
 
 # Class: obo:CHMO_0001470 (coating method)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001470 "The application of a thin cover to a sample.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001470 "CHMO:0001470")
 AnnotationAssertion(rdfs:label obo:CHMO_0001470 "coating method")
-SubClassOf(obo:CHMO_0001470 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001470 obo:COB_0000110)
 
 # Class: obo:CHMO_0001471 (dip coating)
 
@@ -19768,14 +19768,14 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001473 "burning")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001473 "CHMO:0001473")
 AnnotationAssertion(rdfs:label obo:CHMO_0001473 "combustion")
-SubClassOf(obo:CHMO_0001473 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001473 obo:COB_0000110)
 
 # Class: obo:CHMO_0001474 (sample cooling)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001474 "The transfer of thermal energy from a sample to its surrounding environment.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001474 "CHMO:0001474")
 AnnotationAssertion(rdfs:label obo:CHMO_0001474 "sample cooling")
-SubClassOf(obo:CHMO_0001474 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001474 obo:COB_0000110)
 
 # Class: obo:CHMO_0001475 (laser cooling)
 
@@ -19826,7 +19826,7 @@ SubClassOf(obo:CHMO_0001479 obo:CHMO_0001477)
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'curing' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.CT07137") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.CT07137>) Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001480 "A chemical material processing that converts \"a prepolymer or polymer into a polymer of higher molar mass and then into a network.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001480 "CHMO:0001480")
 AnnotationAssertion(rdfs:label obo:CHMO_0001480 "curing")
-SubClassOf(obo:CHMO_0001480 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001480 obo:COB_0000110)
 
 # Class: obo:CHMO_0001481 (electron beam curing)
 
@@ -19862,7 +19862,7 @@ SubClassOf(obo:CHMO_0001483 obo:CHMO_0001480)
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'densification' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.DT07618") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.DT07618>) Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001484 "A material processing that is the \"the removal of impurities and the elimination of pores from a xerogel\" (a gel that has been dried with unhindered shrinkage).")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001484 "CHMO:0001484")
 AnnotationAssertion(rdfs:label obo:CHMO_0001484 "densification")
-SubClassOf(obo:CHMO_0001484 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001484 obo:COB_0000110)
 
 # Class: obo:CHMO_0001485 (derivatisation)
 
@@ -19870,7 +19870,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001485 "derivatization")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001485 "CHMO:0001485")
 AnnotationAssertion(rdfs:label obo:CHMO_0001485 "derivatisation")
-SubClassOf(obo:CHMO_0001485 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001485 obo:COB_0000110)
 
 # Class: obo:CHMO_0001486 (post-column derivatisation)
 
@@ -19887,7 +19887,7 @@ SubClassOf(obo:CHMO_0001486 obo:CHMO_0001485)
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'decomposition' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.D01547") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.D01547>) obo:IAO_0000115 obo:CHMO_0001487 "A material processing that is the \"breakdown of a single phase into two or more phases\" by heating or treatment with acid, alkali or enzymes.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001487 "CHMO:0001487")
 AnnotationAssertion(rdfs:label obo:CHMO_0001487 "decomposition")
-SubClassOf(obo:CHMO_0001487 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001487 obo:COB_0000110)
 
 # Class: obo:CHMO_0001488 (chemical decomposition)
 
@@ -20158,7 +20158,7 @@ SubClassOf(obo:CHMO_0001521 obo:CHMO_0001500)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.D01666>) obo:IAO_0000115 obo:CHMO_0001522 "A material processing in which molecules in solution are separated by the difference in their rates of diffusion through a semipermeable membrane.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001522 "CHMO:0001522")
 AnnotationAssertion(rdfs:label obo:CHMO_0001522 "dialysis")
-SubClassOf(obo:CHMO_0001522 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001522 obo:COB_0000110)
 
 # Class: obo:CHMO_0001523 (electrodialysis)
 
@@ -20181,7 +20181,7 @@ SubClassOf(obo:CHMO_0001524 obo:CHMO_0001522)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001525 "The distribution of particles of one phase in a continuous phase of a different nature.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001525 "CHMO:0001525")
 AnnotationAssertion(rdfs:label obo:CHMO_0001525 "sample dispersion")
-SubClassOf(obo:CHMO_0001525 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001525 obo:COB_0000110)
 
 # Class: obo:CHMO_0001526 (colloidal dispersion)
 
@@ -20204,7 +20204,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001528 "anatomization")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001528 "CHMO:0001528")
 AnnotationAssertion(rdfs:label obo:CHMO_0001528 "dissection")
-SubClassOf(obo:CHMO_0001528 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001528 obo:COB_0000110)
 
 # Class: obo:CHMO_0001529 (micro-dissection)
 
@@ -20239,7 +20239,7 @@ SubClassOf(obo:CHMO_0001531 obo:CHMO_0001530)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001532 "A method of separating mixtures based on differences in their volatilities in a boiling liquid mixture. The components in a sample mixture are vaporised by the application of heat and then cooled by the action of cold water in a condenser.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001532 "CHMO:0001532")
 AnnotationAssertion(rdfs:label obo:CHMO_0001532 "distillation")
-SubClassOf(obo:CHMO_0001532 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001532 obo:COB_0000110)
 
 # Class: obo:CHMO_0001533 (batch distillation)
 
@@ -20327,7 +20327,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001544 "drop dispensing")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001544 "CHMO:0001544")
 AnnotationAssertion(rdfs:label obo:CHMO_0001544 "droplet dispensing")
-SubClassOf(obo:CHMO_0001544 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001544 obo:COB_0000110)
 
 # Class: obo:CHMO_0001545 (acoustic droplet dispensing)
 
@@ -20370,7 +20370,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0
 AnnotationAssertion(Annotation(oboInOwl:hasSynonymType chmo:non-mining_synonym) oboInOwl:hasRelatedSynonym obo:CHMO_0001549 "drying")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001549 "CHMO:0001549")
 AnnotationAssertion(rdfs:label obo:CHMO_0001549 "sample drying")
-SubClassOf(obo:CHMO_0001549 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001549 obo:COB_0000110)
 
 # Class: obo:CHMO_0001550 (dielectric drying)
 
@@ -20440,7 +20440,7 @@ SubClassOf(obo:CHMO_0001557 obo:CHMO_0001549)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001558 "The process of chemically removing a thin layer from a sample surface, usually to leave behind a pattern.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001558 "CHMO:0001558")
 AnnotationAssertion(rdfs:label obo:CHMO_0001558 "etching")
-SubClassOf(obo:CHMO_0001558 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001558 obo:COB_0000110)
 
 # Class: obo:CHMO_0001559 (dry etching)
 
@@ -20574,7 +20574,7 @@ AnnotationAssertion(owl:deprecated obo:CHMO_0001573 "true"^^xsd:boolean)
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'evaporation' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.E02227") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.E02227>) obo:IAO_0000115 obo:CHMO_0001574 "A material processing \"by which a liquid substance is converted to a gas or vapour. This may occur at or below the normal boiling point of the liquid (the temperature at which a liquid boils at 1 atmosphere pressure) and the process is endothermic.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001574 "CHMO:0001574")
 AnnotationAssertion(rdfs:label obo:CHMO_0001574 "evaporation")
-SubClassOf(obo:CHMO_0001574 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001574 obo:COB_0000110)
 
 # Class: obo:CHMO_0001575 (centrifugal evaporation)
 
@@ -20595,7 +20595,7 @@ SubClassOf(obo:CHMO_0001576 obo:CHMO_0002208)
 AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.E02302>) obo:IAO_0000115 obo:CHMO_0001577 "A material processing in which a solute is transferred from a liquid phase to another immiscible or partially-miscible liquid phase in contact with it.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001577 "CHMO:0001577")
 AnnotationAssertion(rdfs:label obo:CHMO_0001577 "extraction")
-SubClassOf(obo:CHMO_0001577 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001577 obo:COB_0000110)
 
 # Class: obo:CHMO_0001578 (coextraction)
 
@@ -20976,7 +20976,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001613 "extrusion molding
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001613 "extrusion moulding")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001613 "CHMO:0001613")
 AnnotationAssertion(rdfs:label obo:CHMO_0001613 "extrusion")
-SubClassOf(obo:CHMO_0001613 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001613 obo:COB_0000110)
 
 # Class: obo:CHMO_0001614 (cold extrusion)
 
@@ -21058,14 +21058,14 @@ SubClassOf(obo:CHMO_0001623 obo:CHMO_0001618)
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'fermentation' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.F02337") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.F02337>) obo:IAO_0000115 obo:CHMO_0001624 "A material processing \"in which cells (microorganisms, plant or animal cells) are cultured in a bioreactor in liquid or solid medium to convert organic substances into biomass (growth) or into products.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001624 "CHMO:0001624")
 AnnotationAssertion(rdfs:label obo:CHMO_0001624 "fermentation")
-SubClassOf(obo:CHMO_0001624 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001624 obo:COB_0000110)
 
 # Class: obo:CHMO_0001625 (fractionation)
 
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'fractionation' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.FT06825") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.FT06825>) Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001625 "A material processing in which a sample mixture is divided up into smaller quantities \"according to physical (e.g. size, solubility) or chemical (e.g. bonding, reactivity) properties.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001625 "CHMO:0001625")
 AnnotationAssertion(rdfs:label obo:CHMO_0001625 "fractionation")
-SubClassOf(obo:CHMO_0001625 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001625 obo:COB_0000110)
 
 # Class: obo:CHMO_0001626 (field-flow fractionation)
 
@@ -21260,7 +21260,7 @@ SubClassOf(obo:CHMO_0001645 obo:CHMO_0001640)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001646 "The formation of a gel or solidification of a gelatin solution caused by a change in conditions (such as temperature or pH).")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001646 "CHMO:0001646")
 AnnotationAssertion(rdfs:label obo:CHMO_0001646 "gelation")
-SubClassOf(obo:CHMO_0001646 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001646 obo:COB_0000110)
 
 # Class: obo:CHMO_0001647 (electrochemical gelation)
 
@@ -21307,7 +21307,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001652 "solid-state grind
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001652 "solvent-free grinding")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001652 "CHMO:0001652")
 AnnotationAssertion(rdfs:label obo:CHMO_0001652 "grinding")
-SubClassOf(obo:CHMO_0001652 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001652 obo:COB_0000110)
 
 # Class: obo:CHMO_0001653 (liquid-assisted grinding)
 
@@ -21356,7 +21356,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001658 "ionization method")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001658 "CHMO:0001658")
 AnnotationAssertion(rdfs:label obo:CHMO_0001658 "ionisation method")
-SubClassOf(obo:CHMO_0001658 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001658 obo:COB_0000110)
 
 # Class: obo:CHMO_0001659 (electrospray ionisation)
 
@@ -21497,7 +21497,7 @@ SubClassOf(obo:CHMO_0001672 obo:CHMO_0001669)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.IT07625>) obo:IAO_0000115 obo:CHMO_0001673 "A material processing in which a powder is pressed under a gas or liquid so that pressure is transmitted equally in all directions.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001673 "CHMO:0001673")
 AnnotationAssertion(rdfs:label obo:CHMO_0001673 "isostatic pressing")
-SubClassOf(obo:CHMO_0001673 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001673 obo:COB_0000110)
 
 # Class: obo:CHMO_0001674 (hot isostatic pressing)
 
@@ -21515,7 +21515,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001675 "labeling")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001675 "CHMO:0001675")
 AnnotationAssertion(rdfs:label obo:CHMO_0001675 "labelling")
-SubClassOf(obo:CHMO_0001675 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001675 obo:COB_0000110)
 
 # Class: obo:CHMO_0001676 (fluorescent labelling)
 
@@ -21572,14 +21572,14 @@ SubClassOf(obo:CHMO_0001680 obo:CHMO_0001675)
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'leaching' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.10179") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.10179>) obo:IAO_0000115 obo:CHMO_0001681 "A material processing dissoluting material \"from a solid [phase into] a liquid in which  the solid phase is not wholly soluble.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001681 "CHMO:0001681")
 AnnotationAssertion(rdfs:label obo:CHMO_0001681 "leaching")
-SubClassOf(obo:CHMO_0001681 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001681 obo:COB_0000110)
 
 # Class: obo:CHMO_0001682 (sample melting)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001682 "The process of heating a substance to cause the solid–liquid phase change.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001682 "CHMO:0001682")
 AnnotationAssertion(rdfs:label obo:CHMO_0001682 "sample melting")
-SubClassOf(obo:CHMO_0001682 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001682 obo:COB_0000110)
 
 # Class: obo:CHMO_0001683 (skull melting)
 
@@ -21603,7 +21603,7 @@ SubClassOf(obo:CHMO_0001684 obo:CHMO_0001683)
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'mixing' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M03945") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.M03945>) obo:IAO_0000115 obo:CHMO_0001685 "A material processing in which \"components, particles or layers [are combined] into a more homogeneous state. The mixing may be achieved manually or mechanically by shifting the material with stirrers or pumps or by revolving or shaking the container. The process must not permit segregation of particles of different size or properties. Homogeneity may be considered to have been achieved in a practical sense when the sampling error of the processed portion is negligible compared to the total error of the measurement system.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001685 "CHMO:0001685")
 AnnotationAssertion(rdfs:label obo:CHMO_0001685 "mixing")
-SubClassOf(obo:CHMO_0001685 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001685 obo:COB_0000110)
 
 # Class: obo:CHMO_0001686 (Ostwald ripening)
 
@@ -21611,7 +21611,7 @@ AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <htt
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001686 "Ostwald-ripening")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001686 "CHMO:0001686")
 AnnotationAssertion(rdfs:label obo:CHMO_0001686 "Ostwald ripening")
-SubClassOf(obo:CHMO_0001686 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001686 obo:COB_0000110)
 
 # Class: obo:CHMO_0001687 (photodegradation)
 
@@ -21619,7 +21619,7 @@ AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'photodegradation'
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001687 "photo-degradation")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001687 "CHMO:0001687")
 AnnotationAssertion(rdfs:label obo:CHMO_0001687 "photodegradation")
-SubClassOf(obo:CHMO_0001687 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001687 obo:COB_0000110)
 
 # Class: obo:CHMO_0001688 (precipitation)
 
@@ -21702,7 +21702,7 @@ SubClassOf(obo:CHMO_0001697 obo:CHMO_0001688)
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'radiolysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.R05112") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.R05112>) obo:IAO_0000115 obo:CHMO_0001698 "A material processing that is \"the cleavage of one or several bonds resulting from exposure to high-energy radiation.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001698 "CHMO:0001698")
 AnnotationAssertion(rdfs:label obo:CHMO_0001698 "radiolysis")
-SubClassOf(obo:CHMO_0001698 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001698 obo:COB_0000110)
 
 # Class: obo:CHMO_0001699 (autoradiolysis)
 
@@ -21723,7 +21723,7 @@ SubClassOf(obo:CHMO_0001700 obo:CHMO_0001698)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S05704>) obo:IAO_0000115 obo:CHMO_0001701 "A material processing in which small particles are fused together by heating the sample below its melting point until its particles adhere to each other.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001701 "CHMO:0001701")
 AnnotationAssertion(rdfs:label obo:CHMO_0001701 "sintering")
-SubClassOf(obo:CHMO_0001701 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001701 obo:COB_0000110)
 
 # Class: obo:CHMO_0001702 (liquid-state sintering)
 
@@ -21775,7 +21775,7 @@ SubClassOf(obo:CHMO_0001706 obo:CHMO_0001703)
 AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <https://doi.org/10.1351/goldbook.S05766>) obo:IAO_0000115 obo:CHMO_0001707 "A material processing in which a liquid sample is irradiated with sound (20 Hz-20 kHz) waves resulting in agitation. Sound waves propagate into the liquid media result in alternating high-pressure (compression) and low-pressure (rarefaction) cycles. During rarefaction, high-intensity sonic waves create small vacuum bubbles or voids in the liquid, which then collapse violently (cavitation) during compression, creating very high local temperatures.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001707 "CHMO:0001707")
 AnnotationAssertion(rdfs:label obo:CHMO_0001707 "sonication")
-SubClassOf(obo:CHMO_0001707 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001707 obo:COB_0000110)
 
 # Class: obo:CHMO_0001708 (ultrasonication)
 
@@ -24226,7 +24226,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0001904 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001904 "2009-06-03T09:36:47Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001904 "CHMO:0001904")
 AnnotationAssertion(rdfs:label obo:CHMO_0001904 "supercritical fluid method")
-SubClassOf(obo:CHMO_0001904 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001904 obo:COB_0000110)
 
 # Class: obo:CHMO_0001905 (supercritical antisolvent technique)
 
@@ -24743,7 +24743,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001938 "collisionally act
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001938 "collisionally-activated dissociation")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001938 "CHMO:0001938")
 AnnotationAssertion(rdfs:label obo:CHMO_0001938 "collision-induced dissociation")
-SubClassOf(obo:CHMO_0001938 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0001938 obo:COB_0000110)
 
 # Class: obo:CHMO_0001939 (stimulated Raman gain spectroscopy)
 
@@ -27343,7 +27343,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002151 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002151 "2009-07-11T04:28:44Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002151 "CHMO:0002151")
 AnnotationAssertion(rdfs:label obo:CHMO_0002151 "passivation")
-SubClassOf(obo:CHMO_0002151 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002151 obo:COB_0000110)
 
 # Class: obo:CHMO_0002152 (anodisation)
 
@@ -27410,7 +27410,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002157 "2009-07-13T01:17:32
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002157 "deionization")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002157 "CHMO:0002157")
 AnnotationAssertion(rdfs:label obo:CHMO_0002157 "deionisation method")
-SubClassOf(obo:CHMO_0002157 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002157 obo:COB_0000110)
 
 # Class: obo:CHMO_0002158 (Czochralski process)
 
@@ -27884,7 +27884,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002196 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002196 "2009-07-21T03:00:23Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002196 "CHMO:0002196")
 AnnotationAssertion(rdfs:label obo:CHMO_0002196 "activation")
-SubClassOf(obo:CHMO_0002196 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002196 obo:COB_0000110)
 
 # Class: obo:CHMO_0002197 (plasma activation)
 
@@ -28374,7 +28374,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002239 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002239 "2009-08-04T05:09:48Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002239 "CHMO:0002239")
 AnnotationAssertion(rdfs:label obo:CHMO_0002239 "carbon nanotube synthesis method")
-EquivalentClasses(obo:CHMO_0002239 ObjectIntersectionOf(obo:OBI_0000094 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_50594)))
+EquivalentClasses(obo:CHMO_0002239 ObjectIntersectionOf(obo:COB_0000110 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_50594)))
 SubClassOf(obo:CHMO_0002239 obo:CHMO_0002838)
 SubClassOf(obo:CHMO_0002239 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_50594))
 
@@ -32046,7 +32046,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002540 "programmed-temper
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0002540 "PTV")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002540 "CHMO:0002540")
 AnnotationAssertion(rdfs:label obo:CHMO_0002540 "programmed temperature vaporisation")
-SubClassOf(obo:CHMO_0002540 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002540 obo:COB_0000110)
 
 # Class: obo:CHMO_0002541 (high-resolution electrospray ionisation time-of-flight mass spectrometry)
 
@@ -32150,8 +32150,8 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002548 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002548 "2009-10-23T02:18:04Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002548 "CHMO:0002548")
 AnnotationAssertion(rdfs:label obo:CHMO_0002548 "polymer preparation method")
-EquivalentClasses(obo:CHMO_0002548 ObjectIntersectionOf(obo:OBI_0000094 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_60027)))
-SubClassOf(obo:CHMO_0002548 obo:OBI_0000094)
+EquivalentClasses(obo:CHMO_0002548 ObjectIntersectionOf(obo:COB_0000110 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_60027)))
+SubClassOf(obo:CHMO_0002548 obo:COB_0000110)
 SubClassOf(obo:CHMO_0002548 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_60027))
 
 # Class: obo:CHMO_0002549 (miniemulsion polymerisation)
@@ -32719,7 +32719,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002598 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002598 "2009-11-14T11:00:18Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002598 "CHMO:0002598")
 AnnotationAssertion(rdfs:label obo:CHMO_0002598 "glow discharge synthesis")
-SubClassOf(obo:CHMO_0002598 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002598 obo:COB_0000110)
 
 # Class: obo:CHMO_0002599 (double-cathode glow discharge synthesis)
 
@@ -32852,8 +32852,8 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002609 "2009-11-19T02:07:20
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002609 "graphitization")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002609 "CHMO:0002609")
 AnnotationAssertion(rdfs:label obo:CHMO_0002609 "graphitisation")
-EquivalentClasses(obo:CHMO_0002609 ObjectIntersectionOf(obo:OBI_0000094 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_33418)))
-SubClassOf(obo:CHMO_0002609 obo:OBI_0000094)
+EquivalentClasses(obo:CHMO_0002609 ObjectIntersectionOf(obo:COB_0000110 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_33418)))
+SubClassOf(obo:CHMO_0002609 obo:COB_0000110)
 SubClassOf(obo:CHMO_0002609 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_33418))
 
 # Class: obo:CHMO_0002610 (transmission electron microscope grid)
@@ -34794,14 +34794,14 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002770 "CHMO:0002770")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002770 "ought to be in OBI. Will put here pro tem.")
 AnnotationAssertion(rdfs:label obo:CHMO_0002770 "sample heating")
-SubClassOf(obo:CHMO_0002770 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002770 obo:COB_0000110)
 
 # Class: obo:CHMO_0002771 (concentrating)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002771 "A preparative step where the concentration of one component is increased.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002771 "CHMO:0002771")
 AnnotationAssertion(rdfs:label obo:CHMO_0002771 "concentrating")
-SubClassOf(obo:CHMO_0002771 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002771 obo:COB_0000110)
 
 # Class: obo:CHMO_0002772 (degassing)
 
@@ -34810,7 +34810,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:CHMO_0002772 "http://en.wikipedia.org
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002772 "degasification")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002772 "CHMO:0002772")
 AnnotationAssertion(rdfs:label obo:CHMO_0002772 "degassing")
-SubClassOf(obo:CHMO_0002772 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002772 obo:COB_0000110)
 
 # Class: obo:CHMO_0002773 (dissolving)
 
@@ -35304,14 +35304,14 @@ SubClassOf(obo:CHMO_0002835 obo:CHMO_0002739)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://en.wikipedia.org/wiki/St%C3%B6ber_process") obo:IAO_0000115 obo:CHMO_0002836 "A material processing process that produces monodisperse particles of silica by adding tetraethyl silicate to an excess of water containing a low-molar-mass alcohol and stirring.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002836 "CHMO:0002836")
 AnnotationAssertion(rdfs:label obo:CHMO_0002836 "Stöber process")
-SubClassOf(obo:CHMO_0002836 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002836 obo:COB_0000110)
 
 # Class: obo:CHMO_0002837 (nanoparticle synthesis)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002837 "A material processing process that is intended to produce nanoparticles.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002837 "CHMO:0002837")
 AnnotationAssertion(rdfs:label obo:CHMO_0002837 "nanoparticle synthesis")
-EquivalentClasses(obo:CHMO_0002837 ObjectIntersectionOf(obo:OBI_0000094 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_50803)))
+EquivalentClasses(obo:CHMO_0002837 ObjectIntersectionOf(obo:COB_0000110 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_50803)))
 SubClassOf(obo:CHMO_0002837 obo:CHMO_0002838)
 SubClassOf(obo:CHMO_0002837 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_50803))
 
@@ -35320,8 +35320,8 @@ SubClassOf(obo:CHMO_0002837 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_50803
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0002838 "A material processing process that is intended to produce nanostructures.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002838 "CHMO:0002838")
 AnnotationAssertion(rdfs:label obo:CHMO_0002838 "nanostructure synthesis")
-EquivalentClasses(obo:CHMO_0002838 ObjectIntersectionOf(obo:OBI_0000094 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_50795)))
-SubClassOf(obo:CHMO_0002838 obo:OBI_0000094)
+EquivalentClasses(obo:CHMO_0002838 ObjectIntersectionOf(obo:COB_0000110 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_50795)))
+SubClassOf(obo:CHMO_0002838 obo:COB_0000110)
 SubClassOf(obo:CHMO_0002838 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHEBI_50795))
 
 # Class: obo:CHMO_0002839 (planned process setup)
@@ -35381,7 +35381,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002846 "CHMO:0002846")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002846 "does every autoclaving happen as part of waste management?")
 AnnotationAssertion(rdfs:label obo:CHMO_0002846 "autoclaving")
-SubClassOf(obo:CHMO_0002846 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002846 obo:COB_0000110)
 SubClassOf(obo:CHMO_0002846 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002166))
 
 # Class: obo:CHMO_0002847 (limit of linearity)
@@ -35428,7 +35428,7 @@ SubClassOf(obo:CHMO_0002851 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_000285
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://iupac.org/publications/analytical_compendium/Cha18sec61.pdf") obo:IAO_0000115 obo:CHMO_0002852 "A material processing step that involves taking a test material with an adequately low background level of the intended analyte and mixing it with a known amount of analyte.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002852 "CHMO:0002852")
 AnnotationAssertion(rdfs:label obo:CHMO_0002852 "spiking")
-SubClassOf(obo:CHMO_0002852 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002852 obo:COB_0000110)
 
 # Class: obo:CHMO_0002853 (fraction extracted)
 
@@ -35910,21 +35910,21 @@ SubClassOf(obo:CHMO_0002915 obo:BFO_0000015)
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'solidification' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.S05733") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.S05733>) obo:IAO_0000115 obo:CHMO_0002916 "A material processing that transitions \"a liquid or gas into a solid.\"")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002916 "CHMO:0002916")
 AnnotationAssertion(rdfs:label obo:CHMO_0002916 "sample solidification")
-SubClassOf(obo:CHMO_0002916 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002916 obo:COB_0000110)
 
 # Class: obo:CHMO_0002917 (sample quenching)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://www.britannica.com/technology/quenching-materials-processing") obo:IAO_0000115 obo:CHMO_0002917 "Material processing in which a sample is cooled by immersion in a fluid.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002917 "CHMO:0002917")
 AnnotationAssertion(rdfs:label obo:CHMO_0002917 "sample quenching")
-SubClassOf(obo:CHMO_0002917 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002917 obo:COB_0000110)
 
 # Class: obo:CHMO_0002918 (Smith degradation)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-5865-8994") obo:IAO_0000115 obo:CHMO_0002918 "Selective degradation of polysaccharides by periodate oxidation.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002918 "CHMO:0002918")
 AnnotationAssertion(rdfs:label obo:CHMO_0002918 "Smith degradation")
-SubClassOf(obo:CHMO_0002918 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002918 obo:COB_0000110)
 
 # Class: obo:CHMO_0002919 (hydrazine treatment)
 
@@ -35932,7 +35932,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-5
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002919 "hydrazinolysis")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002919 "CHMO:0002919")
 AnnotationAssertion(rdfs:label obo:CHMO_0002919 "hydrazine treatment")
-SubClassOf(obo:CHMO_0002919 obo:OBI_0000094)
+SubClassOf(obo:CHMO_0002919 obo:COB_0000110)
 
 # Class: obo:CHMO_0002920 (PNGase A digestion)
 
