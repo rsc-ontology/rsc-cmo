@@ -7,11 +7,12 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/chmo/imports/chebi_import.owl>
-<http://purl.obolibrary.org/obo/chmo/releases/2026-09-12/imports/chebi_import.owl>
-Annotation(owl:versionInfo "2026-09-12")
+<http://purl.obolibrary.org/obo/chmo/releases/2026-09-15/imports/chebi_import.owl>
+Annotation(owl:versionInfo "2026-09-15")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_23367>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_23377>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_24431>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_28262>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_28694>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33250>))
@@ -108,6 +109,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_23367> "CHEBI:23367")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_23367> <http://purl.obolibrary.org/obo/chebi/3_STAR>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_23367> "molecular entity")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_23367> <http://purl.obolibrary.org/obo/CHEBI_24431>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_23377> (copper molecular entity)
 
@@ -120,6 +122,15 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_23377> "copper molecular entity")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_23377> <http://purl.obolibrary.org/obo/CHEBI_23367>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_23377> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_28694>))
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_24431> (chemical entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_24431> "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/CHEBI_24431> "chebi_ontology")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "uniprot_ft") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_24431> "chemical entity")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_24431> "CHEBI:24431")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_24431> <http://purl.obolibrary.org/obo/chebi/3_STAR>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_24431> "chemical entity")
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_28262> (dimethyl sulfoxide)
 
@@ -260,6 +271,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_33250> "CHEBI:33250")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_33250> <http://purl.obolibrary.org/obo/chebi/3_STAR>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33250> "atom")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33250> <http://purl.obolibrary.org/obo/CHEBI_24431>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_33418> (graphite)
 
@@ -597,6 +609,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_59999> "CHEBI:59999")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_59999> <http://purl.obolibrary.org/obo/chebi/3_STAR>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_59999> "chemical substance")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_59999> <http://purl.obolibrary.org/obo/CHEBI_24431>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_60004> (mixture)
 
