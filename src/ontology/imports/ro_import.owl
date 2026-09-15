@@ -46,6 +46,10 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002410>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002411>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002418>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002427>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002487>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002488>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002490>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002496>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002501>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002502>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0009501>))
@@ -276,6 +280,31 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002427> "caus
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002427> <http://purl.obolibrary.org/obo/RO_0002501>)
 TransitiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0002427>)
 
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002487> (relation between physical entity and a process or stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002487> "relation between physical entity and a process or stage")
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002487> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002487> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002488> (existence starts during)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002488> "x existence starts during y if and only if the time point at which x starts is after or equivalent to the time point at which y starts and before or equivalent to the time point at which y ends. Formally: x existence starts during y iff α(x) >= α(y) & α(x) <= ω(y).")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002488> "existence starts during")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002488> <http://purl.obolibrary.org/obo/RO_0002490>)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002488> <http://purl.obolibrary.org/obo/RO_0002496>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002490> (existence overlaps)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002490> "x existence overlaps y if and only if either (a) the start of x is part of y or (b) the end of x is part of y. Formally: x existence starts and ends during y iff (α(x) >= α(y) & α(x) <= ω(y)) OR (ω(x) <= ω(y) & ω(x) >= α(y))")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002490> "existence overlaps")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002490> <http://purl.obolibrary.org/obo/RO_0002487>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002496> (existence starts during or after)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002496> "x existence starts during or after y if and only if the time point at which x starts is after or equivalent to the time point at which y starts. Formally: x existence starts during or after y iff α (x) >= α (y).")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002496> "existence starts during or after")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002496> <http://purl.obolibrary.org/obo/RO_0002487>)
+
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002501> (causal relation between processes)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002501> "p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream, downstream, part of, or a container of q.")
@@ -342,6 +371,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000020> ObjectAllValuesFrom(<htt
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0002131>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000062>) <http://purl.obolibrary.org/obo/BFO_0000062>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000063>) <http://purl.obolibrary.org/obo/BFO_0000063>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/RO_0002496>) <http://purl.obolibrary.org/obo/RO_0002496>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/RO_0000052>) <http://purl.obolibrary.org/obo/RO_0000057>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/RO_0000057>) <http://purl.obolibrary.org/obo/RO_0000057>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/RO_0002131>) <http://purl.obolibrary.org/obo/RO_0002131>)
@@ -349,4 +379,7 @@ SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0002131>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002314> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0002314>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002418> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0002418>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002488> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0002488>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002496> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0002496>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002496> <http://purl.obolibrary.org/obo/BFO_0000062>) <http://purl.obolibrary.org/obo/RO_0002496>)
 )

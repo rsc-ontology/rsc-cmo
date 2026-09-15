@@ -6,7 +6,7 @@ http://purl.obolibrary.org/obo/RO_0000087  # has role
 http://purl.obolibrary.org/obo/RO_0000175  # proper part of continuant at some time
 http://purl.obolibrary.org/obo/RO_0002411  # casually upstream of
 http://purl.obolibrary.org/obo/RO_0002418  # casually upstream of or within
-
+http://purl.obolibrary.org/obo/RO_0002488  # existence starts during
 
 # Import BFO Object Properties not mirrored in bfo_import.owl:
 # For historic reasons, RO has made use of a small number of relations with BFO IDs. These are RO relations, not BFO relations - they are defined in the RO, and will be maintained in the RO. Note that the URIs for these classes resolve to RO, as per agreement with the BFO developers.For more details, see https://oborel.github.io/obo-relations/ro-and-bfo/
