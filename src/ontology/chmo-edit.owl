@@ -2989,7 +2989,6 @@ Declaration(Class(obo:CHMO_0010024))
 Declaration(Class(obo:CHMO_0010025))
 Declaration(Class(obo:OBCS_0000058))
 Declaration(Class(obo:OBCS_0000059))
-Declaration(ObjectProperty(obo:BFO_0000052))
 Declaration(ObjectProperty(obo:BFO_0000054))
 Declaration(ObjectProperty(obo:BFO_0000056))
 Declaration(ObjectProperty(obo:BFO_0000063))
@@ -3037,11 +3036,6 @@ AnnotationAssertion(rdfs:label dcterms:description "description")
 ############################
 #   Object Properties
 ############################
-
-# Object Property: obo:BFO_0000052 (inheres_in)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000052 "BFO:0000052")
-AnnotationAssertion(rdfs:label obo:BFO_0000052 "inheres_in")
 
 # Object Property: obo:BFO_0000054 (realized in)
 
@@ -35714,7 +35708,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002892 "CHMO:0002892")
 AnnotationAssertion(rdfs:label obo:CHMO_0002892 "excitation laser function")
 SubClassOf(obo:CHMO_0002892 obo:BFO_0000034)
-SubClassOf(obo:CHMO_0002892 ObjectSomeValuesFrom(obo:BFO_0000052 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0002892 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0400064))
 
 # Class: obo:CHMO_0002893 (probe laser function)
 
@@ -35722,7 +35716,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002893 "CHMO:0002893")
 AnnotationAssertion(rdfs:label obo:CHMO_0002893 "probe laser function")
 SubClassOf(obo:CHMO_0002893 obo:BFO_0000034)
-SubClassOf(obo:CHMO_0002893 ObjectSomeValuesFrom(obo:BFO_0000052 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0002893 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0400064))
 
 # Class: obo:CHMO_0002894 (excitation laser)
 
