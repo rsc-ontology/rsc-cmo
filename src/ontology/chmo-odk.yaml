@@ -33,7 +33,7 @@ robot_java_args: '-Xmx16G'  # max RAM to be used by Robot in ODK
 import_group:
   products:
     - id: bfo
-      module_type: mirror
+      module_type: custom
     - id: ro
       use_base: true
       slme_individuals: exclude
