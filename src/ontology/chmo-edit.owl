@@ -2992,8 +2992,6 @@ Declaration(Class(obo:OBCS_0000059))
 Declaration(ObjectProperty(obo:BFO_0000054))
 Declaration(ObjectProperty(obo:BFO_0000056))
 Declaration(ObjectProperty(obo:BFO_0000063))
-Declaration(ObjectProperty(obo:BFO_0000068))
-Declaration(ObjectProperty(obo:BFO_0000069))
 Declaration(ObjectProperty(obo:BFO_0000085))
 Declaration(ObjectProperty(obo:BFO_0000110))
 Declaration(ObjectProperty(obo:BFO_0000118))
@@ -3046,18 +3044,6 @@ AnnotationAssertion(rdfs:label obo:BFO_0000054 "realized in")
 
 AnnotationAssertion(oboInOwl:id obo:BFO_0000056 "BFO:0000056")
 AnnotationAssertion(rdfs:label obo:BFO_0000056 "participates in at some time")
-
-# Object Property: obo:BFO_0000068 (begins to exist during)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000068 "BFO:0000068")
-AnnotationAssertion(rdfs:label obo:BFO_0000068 "begins to exist during")
-SubObjectPropertyOf(obo:BFO_0000068 obo:BFO_0000056)
-
-# Object Property: obo:BFO_0000069 (ceases to exist during)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000069 "BFO:0000069")
-AnnotationAssertion(rdfs:label obo:BFO_0000069 "ceases to exist during")
-SubObjectPropertyOf(obo:BFO_0000069 obo:BFO_0000056)
 
 # Object Property: obo:BFO_0000085 (has function at some time)
 
@@ -34896,7 +34882,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002786 "CHMO:0002786")
 AnnotationAssertion(rdfs:label obo:CHMO_0002786 "filter cake")
 SubClassOf(obo:CHMO_0002786 obo:CHMO_0000993)
-SubClassOf(obo:CHMO_0002786 ObjectSomeValuesFrom(obo:BFO_0000068 obo:CHMO_0001640))
+SubClassOf(obo:CHMO_0002786 ObjectSomeValuesFrom(obo:RO_0002488 obo:CHMO_0001640))
 
 # Class: obo:CHMO_0002787 (syringe pump)
 
