@@ -2996,7 +2996,6 @@ Declaration(ObjectProperty(obo:BFO_0000063))
 Declaration(ObjectProperty(obo:BFO_0000068))
 Declaration(ObjectProperty(obo:BFO_0000069))
 Declaration(ObjectProperty(obo:BFO_0000085))
-Declaration(ObjectProperty(obo:BFO_0000087))
 Declaration(ObjectProperty(obo:BFO_0000110))
 Declaration(ObjectProperty(obo:BFO_0000118))
 Declaration(ObjectProperty(obo:BFO_0000137))
@@ -3070,11 +3069,6 @@ SubObjectPropertyOf(obo:BFO_0000069 obo:BFO_0000056)
 
 AnnotationAssertion(oboInOwl:id obo:BFO_0000085 "BFO:0000085")
 AnnotationAssertion(rdfs:label obo:BFO_0000085 "has function at some time")
-
-# Object Property: obo:BFO_0000087 (has role)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000087 "BFO:0000087")
-AnnotationAssertion(rdfs:label obo:BFO_0000087 "has role")
 
 # Object Property: obo:BFO_0000110 (has continuant part at all times)
 
@@ -31147,9 +31141,9 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002467 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002467 "2009-09-29T11:58:40Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002467 "CHMO:0002467")
 AnnotationAssertion(rdfs:label obo:CHMO_0002467 "analyte")
-EquivalentClasses(obo:CHMO_0002467 ObjectIntersectionOf(obo:CHMO_0000993 ObjectSomeValuesFrom(obo:BFO_0000087 obo:CHMO_0002740)))
+EquivalentClasses(obo:CHMO_0002467 ObjectIntersectionOf(obo:CHMO_0000993 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002740)))
 SubClassOf(obo:CHMO_0002467 obo:CHMO_0000993)
-SubClassOf(obo:CHMO_0002467 ObjectSomeValuesFrom(obo:BFO_0000087 obo:CHMO_0002740))
+SubClassOf(obo:CHMO_0002467 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002740))
 
 # Class: obo:CHMO_0002468 (obo:CHMO_0002468)
 
@@ -34588,9 +34582,9 @@ SubClassOf(obo:CHMO_0002742 obo:CHMO_0001577)
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'matrix' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M03758") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.M03758>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) obo:IAO_0000115 obo:CHMO_0002743 "A portion of material representing \"those components of a sample\" that are not measured by an experiment.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002743 "CHMO:0002743")
 AnnotationAssertion(rdfs:label obo:CHMO_0002743 "matrix")
-EquivalentClasses(obo:CHMO_0002743 ObjectIntersectionOf(obo:CHMO_0000993 ObjectSomeValuesFrom(obo:BFO_0000087 obo:CHMO_0002744)))
+EquivalentClasses(obo:CHMO_0002743 ObjectIntersectionOf(obo:CHMO_0000993 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002744)))
 SubClassOf(obo:CHMO_0002743 obo:CHMO_0000993)
-SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:BFO_0000087 obo:CHMO_0002744))
+SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002744))
 SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_0002746))
 SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002744))
 
