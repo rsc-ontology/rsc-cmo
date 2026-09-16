@@ -29,11 +29,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000087>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000089>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000102>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000701>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000013>))
-Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000021>))
-Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000080>))
@@ -66,16 +63,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000308>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000310>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_117571>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2759>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_314146>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_32523>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_32524>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33154>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33208>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33213>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_40674>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7742>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000017>))
@@ -205,10 +192,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002198>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0070060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PR_000000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PR_000018263>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000465>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000466>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000477>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000003>))
@@ -781,15 +764,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000701> <http://purl.obolibrary
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000701> <http://purl.obolibrary.org/obo/OBI_0003540>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHMO_0000701> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/OBI_0003547>))
 
-# Class: <http://purl.obolibrary.org/obo/CL_0000000> (cell)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/CL_0000000> "PMID:18089833.Cancer Res. 2007 Dec 15;67(24):12018-25. \"...Epithelial cells were harvested from histologically confirmed adenocarcinomas ..\""@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CL_0000000> "A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/CL_0000000> "CL and GO definitions of cell differ based on inclusive or exclusive of cell wall, etc."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/CL_0000000> "We struggled with this definition. We are worried about circularity. We also considered requiring the capability of metabolism."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000000> "cell")
-SubClassOf(<http://purl.obolibrary.org/obo/CL_0000000> <http://purl.obolibrary.org/obo/UBERON_0000465>)
-
 # Class: <http://purl.obolibrary.org/obo/COB_0000011> (atom)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0000011> "A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it."@en)
@@ -807,20 +781,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000013> "molecule"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/COB_0000013> <http://purl.obolibrary.org/obo/BFO_0000040>)
 SubClassOf(<http://purl.obolibrary.org/obo/COB_0000013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/COB_0000011>))
-
-# Class: <http://purl.obolibrary.org/obo/COB_0000021> (gross anatomical part)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0000021> "A part of a multicellular organism that is a collection of cell components that are not all contained in one cell."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000021> "gross anatomical part"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/COB_0000021> <http://purl.obolibrary.org/obo/UBERON_0000465>)
-
-# Class: <http://purl.obolibrary.org/obo/COB_0000022> (organism)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0000022> "A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/COB_0000022> "'Maximal functionally integrated unit' is intended to express unity, which Barry considers synonymous with BFO 'object'."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/COB_0000022> "Includes virus - we will later have a class for cellular organisms."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000022> "organism"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/COB_0000022> <http://purl.obolibrary.org/obo/UBERON_0000465>)
 
 # Class: <http://purl.obolibrary.org/obo/COB_0000026> (processed material entity)
 
@@ -1052,86 +1012,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000409> "den
 EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000409> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000410> <http://purl.obolibrary.org/obo/IAO_0000420> <http://purl.obolibrary.org/obo/IAO_0000421>))
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000409> <http://purl.obolibrary.org/obo/IAO_0000102>)
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_117571> (Euteleostomi)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/NCBITaxon_117571> "Euteleostomi")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_117571> "bony vertebrates")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/NCBITaxon_117571> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_117571> "Euteleostomi")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_117571> <http://purl.obolibrary.org/obo/NCBITaxon_7742>)
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2759> (Eukaryota)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/NCBITaxon_2759> "Eukaryota")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_2759> "eukaryotes")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/NCBITaxon_2759> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2759> "Eukaryota")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2759> <http://purl.obolibrary.org/obo/COB_0000022>)
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_314146> (Euarchontoglires)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/NCBITaxon_314146> "Euarchontoglires")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/NCBITaxon_314146> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_314146> "Euarchontoglires")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_314146> <http://purl.obolibrary.org/obo/NCBITaxon_40674>)
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_32523> (Tetrapoda)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/NCBITaxon_32523> "Tetrapoda")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_32523> "tetrapods")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/NCBITaxon_32523> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_32523> "Tetrapoda")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_32523> <http://purl.obolibrary.org/obo/NCBITaxon_117571>)
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_32524> (Amniota)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/NCBITaxon_32524> "Amniota")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_32524> "amniotes")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/NCBITaxon_32524> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_32524> "Amniota")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_32524> <http://purl.obolibrary.org/obo/NCBITaxon_32523>)
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33154> (Opisthokonta)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/NCBITaxon_33154> "Opisthokonta")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/NCBITaxon_33154> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_33154> "Opisthokonta")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_33154> <http://purl.obolibrary.org/obo/NCBITaxon_2759>)
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33208> (Metazoa)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/NCBITaxon_33208> "Metazoa")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_33208> "animals")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_33208> "metazoans")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_33208> "multicellular animals")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/NCBITaxon_33208> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_33208> "Metazoa")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_33208> <http://purl.obolibrary.org/obo/NCBITaxon_33154>)
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33213> (Bilateria)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/NCBITaxon_33213> "Bilateria")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/NCBITaxon_33213> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_33213> "Bilateria")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_33213> <http://purl.obolibrary.org/obo/NCBITaxon_33208>)
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_40674> (Mammalia)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/NCBITaxon_40674> "Mammalia")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_40674> "mammals")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/NCBITaxon_40674> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_40674> "Mammalia")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_40674> <http://purl.obolibrary.org/obo/NCBITaxon_32524>)
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7742> (Vertebrata <vertebrates>)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/NCBITaxon_7742> "Vertebrata <vertebrates>")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_7742> "Vertebrata")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_7742> "vertebrates")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/NCBITaxon_7742> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_7742> "Vertebrata <vertebrates>")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_7742> <http://purl.obolibrary.org/obo/NCBITaxon_33213>)
-
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
@@ -1139,7 +1019,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_9606> "human being")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/NCBITaxon_314146>)
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000014> (regulator role)
 
@@ -2128,7 +2008,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0001468> "PERSON: Chris Stoeckert, Jie Zheng, Alexander Diehl")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0001468> "MO_612 cell")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001468> "cell specimen")
-EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0001468> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0001479> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CL_0000000>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0001468> <http://purl.obolibrary.org/obo/OBI_0001479>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0001472> (specimen with known storage state)
@@ -2151,7 +2030,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0001479> "tissue specimen")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0001479> "MO_954 organism_part")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001479> "specimen from organism")
-EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0001479> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0100051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000659> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectUnionOf(<http://purl.obolibrary.org/obo/COB_0000022> <http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/UBERON_0000477>))))))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0001479> <http://purl.obolibrary.org/obo/OBI_0100051>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0001501> (fluorescence detection assay)
@@ -2622,7 +2500,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0302912> "WEB:http://en.wikipedia.org/wiki/Electroporation")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0302912> "electroporation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0302912> <http://purl.obolibrary.org/obo/OBI_0600033>)
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0302912> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/CL_0000000>))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0302912> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/OBI_0400142>))
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0400064> (laser)
@@ -2725,8 +2602,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OBI_0600033> "definition blessed by Jay, Alan, Randi"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0600033> "cell permeabilization"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0600033> <http://purl.obolibrary.org/obo/COB_0000035>)
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0600033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/CL_0000000>))
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0600033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/CL_0000000>))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0600033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000456>))
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0600046> (preparative chromatography)
@@ -2824,32 +2699,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PR_000000001> <http://purl.obolibrary
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PR_000018263> "An organic amino compound that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PR_000018263> "amino acid chain")
 SubClassOf(<http://purl.obolibrary.org/obo/PR_000018263> <http://purl.obolibrary.org/obo/COB_0000013>)
-
-# Class: <http://purl.obolibrary.org/obo/UBERON_0000465> (material anatomical entity)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000465> "Anatomical entity that has mass.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000465> "material anatomical entity")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/BFO_0000040>)
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/UBERON_0001062>)
-
-# Class: <http://purl.obolibrary.org/obo/UBERON_0000466> (immaterial anatomical entity)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000466> "Anatomical entity that has no mass.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000466> "immaterial anatomical entity")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000466> <http://purl.obolibrary.org/obo/BFO_0000141>)
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000466> <http://purl.obolibrary.org/obo/UBERON_0001062>)
-
-# Class: <http://purl.obolibrary.org/obo/UBERON_0000477> (anatomical cluster)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000477> "Anatomical group whose component anatomical structures lie in close proximity to each other.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000477> "anatomical cluster")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000477> <http://purl.obolibrary.org/obo/UBERON_0000465>)
-
-# Class: <http://purl.obolibrary.org/obo/UBERON_0001062> (anatomical entity)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0001062> "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001062> "anatomical entity")
-EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0001062> ObjectUnionOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/UBERON_0000466>))
 
 # Class: <http://purl.obolibrary.org/obo/UO_0000001> (length unit)
 

@@ -67,8 +67,8 @@ $(IMPORTDIR)/obi_import.owl: $(IMPORTDIR)/obi_terms.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query -i $(MIRRORDIR)/obi.owl --update ../sparql/preprocess-module.ru \
 		extract -T $(IMPORTDIR)/obi_terms.txt --copy-ontology-annotations true --force true \
 			--individuals include --method BOT \
-		remove --term OBI:0100026 --select "descendants" --exclude-term NCBITaxon:9606 \
 		remove -T $(IMPORTDIR)/obi_remove_list.txt --select "self instances descendants" \
+	    remove --term UBERON:0001062 --select "self descendants" --exclude-term NCBITaxon:9606 \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
