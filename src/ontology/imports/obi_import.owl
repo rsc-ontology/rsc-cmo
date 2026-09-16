@@ -41,14 +41,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000082>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000110>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0001300>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0005575>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019814>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019815>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032991>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0042101>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0042571>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0044423>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0110165>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000009>))
@@ -203,7 +195,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0400169>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0600014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0600033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0600046>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_1110022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
@@ -876,79 +867,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0001300> "dev
 SubClassOf(<http://purl.obolibrary.org/obo/COB_0001300> <http://purl.obolibrary.org/obo/COB_0000026>)
 SubClassOf(<http://purl.obolibrary.org/obo/COB_0001300> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/BFO_0000015>))
 
-# Class: <http://purl.obolibrary.org/obo/GO_0005575> (cellular_component)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/GO_0005575> "cellular_component")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0005575> "A location, relative to cellular compartments and structures, occupied by a macromolecular machine. There are three types of cellular components described in the gene ontology: (1) the cellular anatomical entity where a gene product carries out a molecular function (e.g., plasma membrane, cytoskeleton) or membrane-enclosed compartments (e.g., mitochondrion); (2) virion components, where viral proteins act, and (3) the stable macromolecular complexes of which gene product are parts (e.g., the clathrin complex).")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0005575> <http://purl.obolibrary.org/obo/go.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0005575> "cellular_component")
-EquivalentClasses(<http://purl.obolibrary.org/obo/GO_0005575> ObjectUnionOf(<http://purl.obolibrary.org/obo/GO_0032991> <http://purl.obolibrary.org/obo/GO_0044423> <http://purl.obolibrary.org/obo/GO_0110165>))
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0005575> <http://purl.obolibrary.org/obo/BFO_0000040>)
-
-# Class: <http://purl.obolibrary.org/obo/GO_0019814> (immunoglobulin complex)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/GO_0019814> "immunoglobulin complex")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0019814> "A protein complex that in its canonical form is composed of two identical immunoglobulin heavy chains and two identical immunoglobulin light chains, held together by disulfide bonds and sometimes complexed with additional proteins. An immunoglobulin complex may be embedded in the plasma membrane or present in the extracellular space, in mucosal areas or other tissues, or circulating in the blood or lymph.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0019814> <http://purl.obolibrary.org/obo/go.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0019814> "immunoglobulin complex")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0019814> <http://purl.obolibrary.org/obo/GO_0032991>)
-
-# Class: <http://purl.obolibrary.org/obo/GO_0019815> (B cell receptor complex)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/GO_0019815> "B cell receptor complex")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0019815> "An immunoglobulin complex that is present in the plasma membrane of B cells and that in its canonical form is composed of two identical immunoglobulin heavy chains and two identical immunoglobulin light chains and a signaling subunit, a heterodimer of the Ig-alpha and Ig-beta proteins.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0019815> <http://purl.obolibrary.org/obo/go.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0019815> "B cell receptor complex")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0019815> <http://purl.obolibrary.org/obo/OBI_1110022>)
-
-# Class: <http://purl.obolibrary.org/obo/GO_0032991> (protein-containing complex)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/GO_0032991> "protein-containing complex")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/GO_0032991> "A ribosome is a protein complex.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0032991> "A stable assembly of two or more macromolecules, i.e. proteins, nucleic acids, carbohydrates or lipids, in which at least one component is a protein and the constituent parts function together.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/GO_0032991> "This is not covalently bonded, which conflicts with changes to the parent definition."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GO_0032991> "protein complex")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0032991> <http://purl.obolibrary.org/obo/go.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0032991> "protein-containing complex")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0032991> <http://purl.obolibrary.org/obo/COB_0000080>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0032991> <http://purl.obolibrary.org/obo/GO_0005575>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0032991> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PR_000000001>))
-
-# Class: <http://purl.obolibrary.org/obo/GO_0042101> (T cell receptor complex)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/GO_0042101> "T cell receptor complex")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0042101> "A protein complex that contains a disulfide-linked heterodimer of T cell receptor (TCR) chains, which are members of the immunoglobulin superfamily, and mediates antigen recognition, ultimately resulting in T cell activation. The TCR heterodimer is associated with the CD3 complex, which consists of the nonpolymorphic polypeptides gamma, delta, epsilon, zeta, and, in some cases, eta (an RNA splice variant of zeta) or Fc epsilon chains.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0042101> <http://purl.obolibrary.org/obo/go.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0042101> "T cell receptor complex")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0042101> <http://purl.obolibrary.org/obo/OBI_1110022>)
-
-# Class: <http://purl.obolibrary.org/obo/GO_0042571> (immunoglobulin complex, circulating)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/GO_0042571> "immunoglobulin complex, circulating")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0042571> "An immunoglobulin complex that is secreted into extracellular space and found in mucosal areas or other tissues or circulating in the blood or lymph. In its canonical form, a circulating immunoglobulin complex is composed of two identical heavy chains and two identical light chains, held together by disulfide bonds. Some forms of are polymers of the basic structure and contain additional components such as J-chain and the secretory component.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GO_0042571> "antibody")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0042571> <http://purl.obolibrary.org/obo/go.owl>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/OBI_9991118> <http://purl.obolibrary.org/obo/GO_0042571> "antibody")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0042571> "immunoglobulin complex, circulating")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0042571> <http://purl.obolibrary.org/obo/GO_0019814>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0042571> <http://purl.obolibrary.org/obo/OBI_1110022>)
-
-# Class: <http://purl.obolibrary.org/obo/GO_0044423> (virion component)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0044423> "Any constituent part of a virion, a complete fully infectious extracellular virus particle.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0044423> "virion component")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0044423> <http://purl.obolibrary.org/obo/GO_0005575>)
-
-# Class: <http://purl.obolibrary.org/obo/GO_0110165> (cellular anatomical entity)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0110165> "A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex but below that of an anatomical system. Or, a substance produced by a cellular organism with granularity above the level of a protein complex.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/GO_0110165> "Components are larger than individual macromolecular entities. It is tricky to define distinction between 'cell component' and 'macromolecular entity', e.g. ribosome. We would like to exclude most protein complexes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/GO_0110165> "Overlaps with some cellular components from GO"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0110165> "cellular anatomical entity")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0110165> <http://purl.obolibrary.org/obo/GO_0005575>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0110165> <http://purl.obolibrary.org/obo/UBERON_0000465>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0110165> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/COB_0000013>))
-
 # Class: <http://purl.obolibrary.org/obo/IAO_0000003> (measurement unit label)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000003> "A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure."@en)
@@ -974,7 +892,7 @@ interpreted by or directly executed by a processing unit."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000010> "software"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000010> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data entity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000027> "data entity"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000027> "data item"@en)
@@ -1951,7 +1869,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000661> "IEDB")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000661> "enzyme-linked immunosorbent assay")
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000661> <http://purl.obolibrary.org/obo/OBI_0000443>)
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000661> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000086> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/GO_0042571>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/GO_0042571>)))
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000678> (portioning objective)
 
@@ -2827,17 +2744,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBI_0600046> ObjectSomeValuesFrom(<ht
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0600046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/OBI_0000038>))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0600046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/OBI_0000048>))
 
-# Class: <http://purl.obolibrary.org/obo/OBI_1110022> (adaptive immune receptor)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_1110022> "adaptive immune receptor")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_1110022> <http://purl.obolibrary.org/obo/IAO_0000123>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_1110022> "is a receptor produced by cells of the adaptive immune system with the purpose of binding epitopes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_1110022> "IEDB"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_1110022> "IEDB"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_1110022> "adaptive immune receptor"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_1110022> ObjectUnionOf(<http://purl.obolibrary.org/obo/GO_0019815> <http://purl.obolibrary.org/obo/GO_0042101> <http://purl.obolibrary.org/obo/GO_0042571>))
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_1110022> <http://purl.obolibrary.org/obo/GO_0032991>)
-
 # Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/PATO_0000001> "quality")
@@ -2923,7 +2829,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PR_000018263> <http://purl.obolibrary
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000465> "Anatomical entity that has mass.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000465> "material anatomical entity")
-EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0000465> ObjectUnionOf(<http://purl.obolibrary.org/obo/CL_0000000> <http://purl.obolibrary.org/obo/COB_0000021> <http://purl.obolibrary.org/obo/COB_0000022> <http://purl.obolibrary.org/obo/GO_0110165>))
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/BFO_0000040>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 

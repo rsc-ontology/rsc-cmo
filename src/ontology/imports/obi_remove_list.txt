@@ -30,8 +30,9 @@ http://purl.obolibrary.org/obo/OBI_0001977 # cytometry assay
 http://purl.obolibrary.org/obo/OBI_0000427 # enzyme
 http://purl.obolibrary.org/obo/OBI_0000713 # GenePattern software
 
-http://purl.obolibrary.org/obo/SO_0000001  #  region
+http://purl.obolibrary.org/obo/SO_0000001  # region
 http://purl.obolibrary.org/obo/GO_0003674  # molecular_function
+http://purl.obolibrary.org/obo/GO_0005575  # cellular_component
 
 # filtered out for now to have a slimmer diff in the ODK migration PR, but might be useful to have in the future
 http://purl.obolibrary.org/obo/OBI_0200042 # hierarchical clustering
