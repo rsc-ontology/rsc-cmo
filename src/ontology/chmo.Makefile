@@ -69,6 +69,7 @@ $(IMPORTDIR)/obi_import.owl: $(IMPORTDIR)/obi_terms.txt
 			--individuals include --method BOT \
 		remove -T $(IMPORTDIR)/obi_remove_list.txt --select "self instances descendants" \
 	    remove --term UBERON:0001062 --select "self descendants" --exclude-term NCBITaxon:9606 \
+		remove --term COB:0000502 --select "self" \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
