@@ -36240,7 +36240,7 @@ SubClassOf(obo:CHMO_0010025 obo:CHMO_0010000)
 
 # Class: obo:MS_1000073 (electrospray ionization)
 
-SubClassOf(obo:MS_1000073 obo:COB_0000082)
+SubClassOf(Annotation(obo:IAO_0000116 "This alignment was done in CHMO and is currently not present in the source ontology MS") obo:MS_1000073 obo:COB_0000082)
 
 
 )
