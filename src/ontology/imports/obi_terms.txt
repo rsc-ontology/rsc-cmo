@@ -1,9 +1,7 @@
 # OBI terms used directly by CHMO
 
-http://purl.obolibrary.org/obo/OBI_0000011   # planned process
 http://purl.obolibrary.org/obo/OBI_0000070   # assay
 http://purl.obolibrary.org/obo/OBI_0000073   # sample preparation for assay
-http://purl.obolibrary.org/obo/OBI_0000094   # material processing
 http://purl.obolibrary.org/obo/OBI_0000185   # imaging assay
 http://purl.obolibrary.org/obo/OBI_0000443   # analyte assay
 http://purl.obolibrary.org/obo/OBI_0302886   # centrifugation
@@ -13,7 +11,6 @@ http://purl.obolibrary.org/obo/OBI_0302912   # electroporation
 http://purl.obolibrary.org/obo/OBI_0000661   # enzyme-linked immunosorbent assay
 http://purl.obolibrary.org/obo/OBI_0000796   # purification objective
 http://purl.obolibrary.org/obo/OBI_0000838   # material maintenance
-http://purl.obolibrary.org/obo/OBI_0000968   # device
 http://purl.obolibrary.org/obo/OBI_0001032   # light emission device
 http://purl.obolibrary.org/obo/OBI_0001042   # pump function
 http://purl.obolibrary.org/obo/OBI_0001061   # microwave synthesis system
