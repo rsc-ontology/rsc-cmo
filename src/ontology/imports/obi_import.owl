@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/chmo/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/chmo/releases/2026-09-16/imports/obi_import.owl>
+<http://purl.obolibrary.org/obo/chmo/releases/2026-09-17/imports/obi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2026-07-27/obi.owl>)
-Annotation(owl:versionInfo "2026-09-16")
+Annotation(owl:versionInfo "2026-09-17")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
@@ -18,11 +18,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_16670>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_24636>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33252>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33696>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33697>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33839>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_36342>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000087>))
@@ -127,7 +124,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000838>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000932>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000947>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000953>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000963>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000967>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000971>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001007>))
@@ -189,8 +185,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001296>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002198>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0070060>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PR_000000001>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PR_000018263>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000003>))
@@ -269,9 +263,6 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000780>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000781>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000829>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000901>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000958>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000979>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000998>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0001213>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0001224>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0001287>))
@@ -647,14 +638,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "mat
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000141> "immaterial entity"@en)
 
-# Class: <http://purl.obolibrary.org/obo/CHEBI_16670> (peptide)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/CHEBI_16670> "peptide")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_16670> "Amide derived from two or more amino carboxylic acid molecules (the same or different) by formation of a covalent bond from the carbonyl carbon of one to the nitrogen atom of another with formal loss of water. The term is usually applied to structures formed from α-amino acids, but it includes those derived from any amino carboxylic acid. X = OH, OR, NH2, NHR, etc.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/CHEBI_16670> <http://purl.obolibrary.org/obo/chebi.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_16670> "peptide")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_16670> <http://purl.obolibrary.org/obo/CHEBI_33839>)
-
 # Class: <http://purl.obolibrary.org/obo/CHEBI_24636> (proton)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/CHEBI_24636> "proton")
@@ -673,22 +656,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33252> "atomic nucleus")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33252> <http://purl.obolibrary.org/obo/CHEBI_36342>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33252> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_24636>))
-
-# Class: <http://purl.obolibrary.org/obo/CHEBI_33696> (nucleic acid)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/CHEBI_33696> "nucleic acid")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_33696> "A macromolecule made up of nucleotide units and hydrolysable into certain pyrimidine or purine bases (usually adenine, cytosine, guanine, thymine, uracil), <small>D</small>-ribose or 2-deoxy-<small>D</small>-ribose and phosphoric acid.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/CHEBI_33696> <http://purl.obolibrary.org/obo/chebi.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33696> "nucleic acid")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33696> <http://purl.obolibrary.org/obo/CHEBI_33839>)
-
-# Class: <http://purl.obolibrary.org/obo/CHEBI_33697> (ribonucleic acid)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/CHEBI_33697> "ribonucleic acid")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_33697> "High molecular weight, linear polymers, composed of nucleotides containing ribose and linked by phosphodiester bonds; RNA is central to the synthesis of proteins.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/CHEBI_33697> <http://purl.obolibrary.org/obo/chebi.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33697> "ribonucleic acid")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33697> <http://purl.obolibrary.org/obo/CHEBI_33696>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_33839> (macromolecule)
 
@@ -1889,17 +1856,6 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000953> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000953> <http://purl.obolibrary.org/obo/COB_0000026>)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000953> <http://purl.obolibrary.org/obo/OBI_0100051>)
 
-# Class: <http://purl.obolibrary.org/obo/OBI_0000963> (categorical label)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000963> "categorical label")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000963> "The labels 'positive' vs. 'negative', or 'left handed', 'right handed', 'ambidexterous', or 'strongly binding', 'weakly binding' , 'not binding', or '+++', '++', '+', '-' etc. form scales of categorical labels.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000963> <http://purl.obolibrary.org/obo/IAO_0000120>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000963> "A label that is part of a categorical datum and that indicates the value of the data item on the categorical scale."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000963> "Bjoern Peters")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000963> "Bjoern Peters")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000963> "categorical label")
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000963> <http://purl.obolibrary.org/obo/IAO_0000009>)
-
 # Class: <http://purl.obolibrary.org/obo/OBI_0000967> (container)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000967> "container")
@@ -2676,23 +2632,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0070060> "quality of interaction of a substance with electromagnetic radiation")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0070060> <http://purl.obolibrary.org/obo/PATO_0002198>)
 
-# Class: <http://purl.obolibrary.org/obo/PR_000000001> (protein)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/PR_000000001> "protein")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/PR_000000001> "antithrombin III is a protein")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PR_000000001> "An amino acid chain that is canonically produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PR_000000001> "An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/PR_000000001> <http://purl.obolibrary.org/obo/pr.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PR_000000001> "protein")
-SubClassOf(<http://purl.obolibrary.org/obo/PR_000000001> <http://purl.obolibrary.org/obo/CHEBI_16670>)
-SubClassOf(<http://purl.obolibrary.org/obo/PR_000000001> <http://purl.obolibrary.org/obo/PR_000018263>)
-
-# Class: <http://purl.obolibrary.org/obo/PR_000018263> (amino acid chain)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PR_000018263> "An organic amino compound that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PR_000018263> "amino acid chain")
-SubClassOf(<http://purl.obolibrary.org/obo/PR_000018263> <http://purl.obolibrary.org/obo/COB_0000013>)
-
 # Class: <http://purl.obolibrary.org/obo/UO_0000001> (length unit)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/UO_0000001> "length unit")
@@ -3169,27 +3108,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0000901> "FDA")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000901> "U.S. Food and Drug Administration")
 ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000450> <http://purl.obolibrary.org/obo/OBI_0000901>)
-
-# Individual: <http://purl.obolibrary.org/obo/OBI_0000958> (right handed)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000958> "right handed")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000958> <http://purl.obolibrary.org/obo/IAO_0000123>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000958> "right handed")
-ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000963> <http://purl.obolibrary.org/obo/OBI_0000958>)
-
-# Individual: <http://purl.obolibrary.org/obo/OBI_0000979> (ambidexterous)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000979> "ambidexterous")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000979> <http://purl.obolibrary.org/obo/IAO_0000123>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000979> "ambidexterous")
-ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000963> <http://purl.obolibrary.org/obo/OBI_0000979>)
-
-# Individual: <http://purl.obolibrary.org/obo/OBI_0000998> (left handed)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000998> "left handed")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000998> <http://purl.obolibrary.org/obo/IAO_0000123>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000998> "left handed")
-ClassAssertion(<http://purl.obolibrary.org/obo/OBI_0000963> <http://purl.obolibrary.org/obo/OBI_0000998>)
 
 # Individual: <http://purl.obolibrary.org/obo/OBI_0001213> (eBioscience)
 
