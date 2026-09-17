@@ -18,10 +18,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_24636>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33252>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33839>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_36342>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000087>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000089>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHMO_0000102>))
@@ -628,25 +625,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "mat
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000141> "immaterial entity"@en)
 
-# Class: <http://purl.obolibrary.org/obo/CHEBI_24636> (proton)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/CHEBI_24636> "proton")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_24636> "Nuclear particle of charge number +1, spin 1/2 and rest mass of 1.007276470(12) u.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_24636> "Nuclear particle of charge number +1, spin ½ and rest mass of 1.007276470(12) u.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/CHEBI_24636> <http://purl.obolibrary.org/obo/chebi.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_24636> "proton")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_24636> <http://purl.obolibrary.org/obo/CHEBI_36342>)
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_24636> <http://purl.obolibrary.org/obo/COB_0000013>)
-
-# Class: <http://purl.obolibrary.org/obo/CHEBI_33252> (atomic nucleus)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_33252> "A nucleus is the positively charged central portion of an atom, excluding the orbital electrons.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/CHEBI_33252> "Some people may be uncomfortable calling every proton an atomic nucleus"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/CHEBI_33252> "This is equivalent to CHEBI:33252"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33252> "atomic nucleus")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33252> <http://purl.obolibrary.org/obo/CHEBI_36342>)
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33252> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_24636>))
-
 # Class: <http://purl.obolibrary.org/obo/CHEBI_33839> (macromolecule)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/CHEBI_33839> "macromolecule")
@@ -655,13 +633,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/CHEBI_33839> <http://purl.obolibrary.org/obo/chebi.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_33839> "macromolecule")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_33839> <http://purl.obolibrary.org/obo/COB_0000013>)
-
-# Class: <http://purl.obolibrary.org/obo/CHEBI_36342> (subatomic particle)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_36342> "A particle smaller than an atom.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_36342> "subatomic particle")
-SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_36342> <http://purl.obolibrary.org/obo/BFO_0000040>)
-DisjointClasses(<http://purl.obolibrary.org/obo/CHEBI_36342> <http://purl.obolibrary.org/obo/COB_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/CHMO_0000087> (fluorescence microscopy assay)
 
@@ -725,7 +696,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/COB_0000011> "This atom is closely related to ChEBI's atom, but not exactly equivalent to."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000011> "atom"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/COB_0000011> <http://purl.obolibrary.org/obo/BFO_0000040>)
-SubClassOf(<http://purl.obolibrary.org/obo/COB_0000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_33252>))
 DisjointClasses(<http://purl.obolibrary.org/obo/COB_0000011> <http://purl.obolibrary.org/obo/COB_0000013>)
 
 # Class: <http://purl.obolibrary.org/obo/COB_0000013> (molecule)
@@ -803,7 +773,7 @@ interpreted by or directly executed by a processing unit."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000010> "software"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000010> <http://purl.obolibrary.org/obo/IAO_0000104>)
 
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data entity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000027> "data entity"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000027> "data item"@en)

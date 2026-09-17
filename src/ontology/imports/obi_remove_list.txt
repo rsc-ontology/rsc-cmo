@@ -42,6 +42,7 @@ http://purl.obolibrary.org/obo/GO_0005575   # cellular_component
 http://purl.obolibrary.org/obo/PR_000018263 # amino acid chain
 http://purl.obolibrary.org/obo/CHEBI_33696  # nucleic acid
 http://purl.obolibrary.org/obo/CHEBI_16670  # peptide
+http://purl.obolibrary.org/obo/CHEBI_36342  # subatomic particle
 
 
 # filtered out for now to have a slimmer diff in the ODK migration PR, but might be useful to have in the future
