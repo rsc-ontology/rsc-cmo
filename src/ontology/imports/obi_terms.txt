@@ -18,7 +18,8 @@ http://purl.obolibrary.org/obo/OBI_0001138   # X-ray source
 http://purl.obolibrary.org/obo/OBI_0400064   # laser
 http://purl.obolibrary.org/obo/OBI_0400065   # light source
 http://purl.obolibrary.org/obo/OBI_0600014   # material component separation
-http://purl.obolibrary.org/obo/OBI_0003097   # liquid chromatography mass spectrometry assay --> uses as def source CHMO_0000524
+http://purl.obolibrary.org/obo/OBI_0003097   # liquid chromatography mass spectrometry assay --> uses as def source CHMO_0000524 
+http://purl.obolibrary.org/obo/OBI_0000011   # obsolete planned process 
 
 # terms needed as dependency for OBCS import module
 http://purl.obolibrary.org/obo/OBI_0000071   # quantitative confidence value

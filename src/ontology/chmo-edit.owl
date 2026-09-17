@@ -3127,6 +3127,10 @@ ObjectPropertyRange(obo:CHMO_0010017 obo:CHMO_0010009)
 #   Classes
 ############################
 
+# Class: obo:CHEBI_24431 (chemical entity)
+
+SubClassOf(obo:CHEBI_24431 obo:BFO_0000040)
+
 # Class: obo:CHEBI_33250 (atom)
 
 SubClassOf(obo:CHEBI_33250 obo:BFO_0000040)
