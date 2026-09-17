@@ -30,6 +30,11 @@ http://purl.obolibrary.org/obo/OBI_0001977 # cytometry assay
 http://purl.obolibrary.org/obo/OBI_0000427 # enzyme
 http://purl.obolibrary.org/obo/OBI_0000713 # GenePattern software
 http://purl.obolibrary.org/obo/OBI_0000963 # categorical label
+http://purl.obolibrary.org/obo/OBI_0100051 # specimen
+http://purl.obolibrary.org/obo/OBI_0002076 # collection of specimens
+http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
+http://purl.obolibrary.org/obo/OBI_0000112 # specimen role
+http://purl.obolibrary.org/obo/OBI_0000684 # specimen collection objective
 
 http://purl.obolibrary.org/obo/SO_0000001   # region
 http://purl.obolibrary.org/obo/GO_0003674   # molecular_function
