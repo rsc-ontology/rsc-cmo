@@ -3035,11 +3035,6 @@ AnnotationAssertion(rdfs:label dcterms:description "description")
 #   Object Properties
 ############################
 
-# Object Property: obo:BFO_0000054 (realized in)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000054 "BFO:0000054")
-AnnotationAssertion(rdfs:label obo:BFO_0000054 "realized in")
-
 # Object Property: obo:BFO_0000056 (participates in at some time)
 
 AnnotationAssertion(oboInOwl:id obo:BFO_0000056 "BFO:0000056")
