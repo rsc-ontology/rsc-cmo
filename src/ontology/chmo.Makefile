@@ -14,9 +14,6 @@ $(IMPORTDIR)/bfo_import.owl: $(IMPORTDIR)/bfo_terms.txt $(IMPORTSEED) | all_robo
 		         --individuals exclude \
 		         --method BOT \
 		 remove -T $(IMPORTDIR)/bfo_remove_list.txt --select "self descendants instances" --signature true \
-		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
-		        --term-file $(IMPORTDIR)/bfo_terms.txt $(T_IMPORTSEED) \
-		        --select complement --select annotation-properties \
 		 odk:normalize --base-iri http://purl.obolibrary.org/obo/bfo.owl \
                 --subset-decls true --synonym-decls true \
          repair --merge-axiom-annotations true \
