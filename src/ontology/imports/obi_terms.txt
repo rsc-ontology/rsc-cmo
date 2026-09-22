@@ -1,13 +1,10 @@
 # OBI terms used directly by CHMO
 
+http://purl.obolibrary.org/obo/OBI_0000011   # obsolete planned process 
 http://purl.obolibrary.org/obo/OBI_0000070   # assay
 http://purl.obolibrary.org/obo/OBI_0000073   # sample preparation for assay
 http://purl.obolibrary.org/obo/OBI_0000185   # imaging assay
 http://purl.obolibrary.org/obo/OBI_0000443   # analyte assay
-http://purl.obolibrary.org/obo/OBI_0302886   # centrifugation
-http://purl.obolibrary.org/obo/OBI_0302888   # washing
-http://purl.obolibrary.org/obo/OBI_0302893   # storage
-http://purl.obolibrary.org/obo/OBI_0302912   # electroporation
 http://purl.obolibrary.org/obo/OBI_0000661   # enzyme-linked immunosorbent assay
 http://purl.obolibrary.org/obo/OBI_0000796   # purification objective
 http://purl.obolibrary.org/obo/OBI_0000838   # material maintenance
@@ -15,21 +12,24 @@ http://purl.obolibrary.org/obo/OBI_0001032   # light emission device
 http://purl.obolibrary.org/obo/OBI_0001042   # pump function
 http://purl.obolibrary.org/obo/OBI_0001061   # microwave synthesis system
 http://purl.obolibrary.org/obo/OBI_0001138   # X-ray source
+http://purl.obolibrary.org/obo/OBI_0003097   # liquid chromatography mass spectrometry assay --> uses as def source CHMO_0000524 
+http://purl.obolibrary.org/obo/OBI_0302886   # centrifugation
+http://purl.obolibrary.org/obo/OBI_0302888   # washing
+http://purl.obolibrary.org/obo/OBI_0302893   # storage
+http://purl.obolibrary.org/obo/OBI_0302912   # electroporation
 http://purl.obolibrary.org/obo/OBI_0400064   # laser
 http://purl.obolibrary.org/obo/OBI_0400065   # light source
 http://purl.obolibrary.org/obo/OBI_0600014   # material component separation
-http://purl.obolibrary.org/obo/OBI_0003097   # liquid chromatography mass spectrometry assay --> uses as def source CHMO_0000524 
-http://purl.obolibrary.org/obo/OBI_0000011   # obsolete planned process 
 
 # terms needed as dependency for OBCS import module
 http://purl.obolibrary.org/obo/OBI_0000071   # quantitative confidence value
 http://purl.obolibrary.org/obo/OBI_0200078   # descriptive statistical calculation objective
 
 # terms also living in OBI, as they were "adopted" from CHMO
-http://purl.obolibrary.org/obo/CHMO_0000102  # light microscopy assay
 http://purl.obolibrary.org/obo/CHMO_0000087  # fluorescence microscopy assay
-http://purl.obolibrary.org/obo/CHMO_0000701  # liquid chromatography-tandem mass spectrometry
 http://purl.obolibrary.org/obo/CHMO_0000089  # confocal fluorescence microscopy assay
+http://purl.obolibrary.org/obo/CHMO_0000102  # light microscopy assay
+http://purl.obolibrary.org/obo/CHMO_0000701  # liquid chromatography-tandem mass spectrometry
 
 # annotation properties
 http://purl.obolibrary.org/obo/OBI_0001847  # ISA alternative term

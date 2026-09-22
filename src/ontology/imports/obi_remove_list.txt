@@ -1,63 +1,68 @@
 # The following terms were in the OBI module, due to the SLME methods "broad" specificity 
 
 # biology related terms considered out of scope for CHMO
+http://purl.obolibrary.org/obo/OBI_0000112 # specimen role
+http://purl.obolibrary.org/obo/OBI_0000427 # enzyme
+http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
+http://purl.obolibrary.org/obo/OBI_0000684 # specimen collection objective
+http://purl.obolibrary.org/obo/OBI_0000713 # GenePattern software
+http://purl.obolibrary.org/obo/OBI_0000963 # categorical label
 http://purl.obolibrary.org/obo/OBI_0001000 # questionnaire
-http://purl.obolibrary.org/obo/OBI_0002314 # clinical tumor stage group according to AJCC 7th edition
+http://purl.obolibrary.org/obo/OBI_0001977 # cytometry assay
+http://purl.obolibrary.org/obo/OBI_0002076 # collection of specimens
 http://purl.obolibrary.org/obo/OBI_0002205 # histologic grade according to AJCC 7th edition
 http://purl.obolibrary.org/obo/OBI_0002210 # histologic grade according to the Fuhrman Nuclear Grading System
 http://purl.obolibrary.org/obo/OBI_0002215 # histologic grade for ovarian tumor
-http://purl.obolibrary.org/obo/OBI_0002219 # histologic grade for ovarian tumor according to the World Health Organization
 http://purl.obolibrary.org/obo/OBI_0002216 # histologic grade for ovarian tumor according to a two-tier grading system
-http://purl.obolibrary.org/obo/OBI_0003600 # hypertension grade
+http://purl.obolibrary.org/obo/OBI_0002219 # histologic grade for ovarian tumor according to the World Health Organization
+http://purl.obolibrary.org/obo/OBI_0002224 # pathologic primary tumor stage for colon and rectum according to AJCC 7th edition
+http://purl.obolibrary.org/obo/OBI_0002232 # pathologic primary tumor stage for lung according to AJCC 7th edition
+http://purl.obolibrary.org/obo/OBI_0002243 # pathologic primary tumor stage for kidney according to AJCC 7th edition
+http://purl.obolibrary.org/obo/OBI_0002256 # pathologic primary tumor stage for ovary according to AJCC 7th edition
+http://purl.obolibrary.org/obo/OBI_0002270 # pathologic lymph node stage for colon and rectum according to AJCC 7th edition
+http://purl.obolibrary.org/obo/OBI_0002279 # pathologic lymph node stage for lung according to AJCC 7th edition
+http://purl.obolibrary.org/obo/OBI_0002284 # pathologic lymph node stage for kidney according to AJCC 7th edition
+http://purl.obolibrary.org/obo/OBI_0002287 # pathologic lymph node stage for ovary according to AJCC 7th edition
+http://purl.obolibrary.org/obo/OBI_0002290 # pathologic distant metastases stage for colon according to AJCC 7th edition
+http://purl.obolibrary.org/obo/OBI_0002298 # pathologic distant metastases stage for lung according to AJCC 7th edition
+http://purl.obolibrary.org/obo/OBI_0002306 # pathologic distant metastases stage for kidney according to AJCC 7th edition
+http://purl.obolibrary.org/obo/OBI_0002310 # pathologic distant metastases stage for ovary according to AJCC 7th edition
+http://purl.obolibrary.org/obo/OBI_0002314 # clinical tumor stage group according to AJCC 7th edition
 http://purl.obolibrary.org/obo/OBI_0002326 # International Federation of Gynecology and Obstetrics cervical cancer stage value specification
 http://purl.obolibrary.org/obo/OBI_0002341 # International Federation of Gynecology and Obstetrics ovarian cancer stage value specification
-http://purl.obolibrary.org/obo/OBI_0002290 # pathologic distant metastases stage for colon according to AJCC 7th edition
-http://purl.obolibrary.org/obo/OBI_0002306 # pathologic distant metastases stage for kidney according to AJCC 7th edition
-http://purl.obolibrary.org/obo/OBI_0002298 # pathologic distant metastases stage for lung according to AJCC 7th edition
-http://purl.obolibrary.org/obo/OBI_0002310 # pathologic distant metastases stage for ovary according to AJCC 7th edition
-http://purl.obolibrary.org/obo/OBI_0002270 # pathologic lymph node stage for colon and rectum according to AJCC 7th edition
-http://purl.obolibrary.org/obo/OBI_0002284 # pathologic lymph node stage for kidney according to AJCC 7th edition
-http://purl.obolibrary.org/obo/OBI_0002279 # pathologic lymph node stage for lung according to AJCC 7th edition
-http://purl.obolibrary.org/obo/OBI_0002287 # pathologic lymph node stage for ovary according to AJCC 7th edition
-http://purl.obolibrary.org/obo/OBI_0002224 # pathologic primary tumor stage for colon and rectum according to AJCC 7th edition
-http://purl.obolibrary.org/obo/OBI_0002243 # pathologic primary tumor stage for kidney according to AJCC 7th edition
-http://purl.obolibrary.org/obo/OBI_0002232 # pathologic primary tumor stage for lung according to AJCC 7th edition
-http://purl.obolibrary.org/obo/OBI_0002256 # pathologic primary tumor stage for ovary according to AJCC 7th edition
 http://purl.obolibrary.org/obo/OBI_0002356 # performance status value specification
 http://purl.obolibrary.org/obo/OBI_0002357 # Eastern Cooperative Oncology Group score value specification
 http://purl.obolibrary.org/obo/OBI_0002363 # Karnofsky score vaue specification
-http://purl.obolibrary.org/obo/OBI_0001977 # cytometry assay
-http://purl.obolibrary.org/obo/OBI_0000427 # enzyme
-http://purl.obolibrary.org/obo/OBI_0000713 # GenePattern software
-http://purl.obolibrary.org/obo/OBI_0000963 # categorical label
+http://purl.obolibrary.org/obo/OBI_0003600 # hypertension grade
 http://purl.obolibrary.org/obo/OBI_0100051 # specimen
-http://purl.obolibrary.org/obo/OBI_0002076 # collection of specimens
-http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
-http://purl.obolibrary.org/obo/OBI_0000112 # specimen role
-http://purl.obolibrary.org/obo/OBI_0000684 # specimen collection objective
+
+External ontologies terms used by OBI considered out of scope for CHMO
 
 http://purl.obolibrary.org/obo/SO_0000001   # region
+
 http://purl.obolibrary.org/obo/GO_0003674   # molecular_function
 http://purl.obolibrary.org/obo/GO_0005575   # cellular_component
+
 http://purl.obolibrary.org/obo/PR_000018263 # amino acid chain
-http://purl.obolibrary.org/obo/CHEBI_33696  # nucleic acid
+
 http://purl.obolibrary.org/obo/CHEBI_16670  # peptide
+http://purl.obolibrary.org/obo/CHEBI_33696  # nucleic acid
 http://purl.obolibrary.org/obo/CHEBI_36342  # subatomic particle
 
 
 # filtered out for now to have a slimmer diff in the ODK migration PR, but might be useful to have in the future
-http://purl.obolibrary.org/obo/OBI_0200042 # hierarchical clustering
-http://purl.obolibrary.org/obo/OBI_0200041 # k-means clustering
-http://purl.obolibrary.org/obo/OBI_0000727 # k-nearest neighbors
+http://purl.obolibrary.org/obo/OBI_0000023 # classified data set
+http://purl.obolibrary.org/obo/OBI_0000663 # class prediction data transformation
+http://purl.obolibrary.org/obo/OBI_0000700 # support vector machine
+http://purl.obolibrary.org/obo/OBI_0000704 # decision tree induction objective
+http://purl.obolibrary.org/obo/OBI_0000707 # decision tree building data transformation
 http://purl.obolibrary.org/obo/OBI_0000726 # peak matching
-http://purl.obolibrary.org/obo/OBI_0200171 # partitioning data transformation
+http://purl.obolibrary.org/obo/OBI_0000727 # k-nearest neighbors
+http://purl.obolibrary.org/obo/OBI_0000749 # CART
 http://purl.obolibrary.org/obo/OBI_0000792 # statistical model validation
 http://purl.obolibrary.org/obo/OBI_0200033 # leave one out cross validation method
-http://purl.obolibrary.org/obo/OBI_0000663 # class prediction data transformation
-http://purl.obolibrary.org/obo/OBI_0200179 # class prediction objective
-http://purl.obolibrary.org/obo/OBI_0000023 # classified data set
-http://purl.obolibrary.org/obo/OBI_0000700 # support vector machine
-http://purl.obolibrary.org/obo/OBI_0000707 # decision tree building data transformation
-http://purl.obolibrary.org/obo/OBI_0000704 # decision tree induction objective
-http://purl.obolibrary.org/obo/OBI_0000749 # CART
+http://purl.obolibrary.org/obo/OBI_0200041 # k-means clustering
+http://purl.obolibrary.org/obo/OBI_0200042 # hierarchical clustering
+http://purl.obolibrary.org/obo/OBI_0200171 # partitioning data transformation
 http://purl.obolibrary.org/obo/OBI_0200172 # partitioning objective
+http://purl.obolibrary.org/obo/OBI_0200179 # class prediction objective
