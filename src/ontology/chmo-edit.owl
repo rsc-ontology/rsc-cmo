@@ -3124,10 +3124,15 @@ ObjectPropertyRange(obo:CHMO_0010017 obo:CHMO_0010009)
 
 # Class: obo:CHEBI_23367 (molecular entity)
 
+AnnotationAssertion(obo:IAO_0000116 obo:CHEBI_23367 "COB:molecule is the union of CHEBI:molecule and CHEBI:polyatomic ion, which both fall under CHEBI:molecular entity beside many other classes. Therefore, we can say that COB:molecule should be subsumed under CHEBI:molecular entity. However, as COB bridging has gone with skos:closeMatch relation between the two classes, we have opted to standing with the community and avoiding the injection of axioms in CHMO.
+See https://obofoundry.org/COB/obo-bridge/")
 SubClassOf(obo:CHEBI_23367 obo:BFO_0000040)
 
 # Class: obo:CHEBI_33250 (atom)
 
+AnnotationAssertion(obo:IAO_0000116 obo:CHEBI_33250 "There are currently two \"atom\" classes in CHMO, namely COB:0000011 and CHEBI:33250.
+Looking at COB:atom definition, one sees how it encompasses the neutral atom along with its different ionic states (charge agnostic) while looking at class hierarchy in ChEBI, one sees that CHEBI:atom means strictly the one uncharged, suggesting that CHEBI:atom is actually a SubClassOf  COB:atom. However, as COB bridging has gone with skos:closeMatch relation between the two classes, we have opted to standing with the community and avoiding the injection of axioms in CHMO.
+See https://obofoundry.org/COB/obo-bridge/")
 SubClassOf(obo:CHEBI_33250 obo:BFO_0000040)
 
 # Class: obo:CHEBI_59999 (chemical substance)
@@ -36242,4 +36247,9 @@ SubClassOf(obo:CHMO_0010025 obo:CHMO_0010000)
 SubClassOf(Annotation(obo:IAO_0000116 "This alignment was done in CHMO and is currently not present in the source ontology MS") obo:MS_1000073 obo:COB_0000082)
 
 
+AnnotationAssertion(obo:IAO_0000116 obo:COB_0000011 "There are currently two \"atom\" classes in CHMO, namely COB:0000011 and CHEBI:33250.
+Looking at COB:atom definition, one sees how it encompasses the neutral atom along with its different ionic states (charge agnostic) while looking at class hierarchy in ChEBI, one sees that CHEBI:atom means strictly the one uncharged, suggesting that CHEBI:atom is actually a SubClassOf  COB:atom. However, as COB bridging has gone with skos:closeMatch relation between the two classes, we have opted to standing with the community and avoiding the injection of axioms in CHMO.
+See https://obofoundry.org/COB/obo-bridge/")
+AnnotationAssertion(obo:IAO_0000116 obo:COB_0000013 "COB:molecule is the union of CHEBI:molecule and CHEBI:polyatomic ion, which both fall under CHEBI:molecular entity beside many other classes. Therefore, we can say that COB:molecule should be subsumed under CHEBI:molecular entity. However, as COB bridging has gone with skos:closeMatch relation between the two classes, we have opted to standing with the community and avoiding the injection of axioms in CHMO.
+See https://obofoundry.org/COB/obo-bridge/")
 )
