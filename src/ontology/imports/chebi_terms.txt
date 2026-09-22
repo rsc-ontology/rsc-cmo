@@ -1,18 +1,17 @@
 # CHEBI terms used indirectly by CHMO
 
-http://purl.obolibrary.org/obo/CHEBI_23367  # molecular entity
-http://purl.obolibrary.org/obo/CHEBI_24431  # chemical entity  
-http://purl.obolibrary.org/obo/CHEBI_33250  # atom
 http://purl.obolibrary.org/obo/CHEBI_59999  # chemical substance
+http://purl.obolibrary.org/obo/CHEBI_33250  # atom
+http://purl.obolibrary.org/obo/CHEBI_23367  # molecular entity
+http://purl.obolibrary.org/obo/BFO_0000051  # has part
 
 # CHEBI terms used directly by CHMO
 
 http://purl.obolibrary.org/obo/CHEBI_23377  # copper molecular entity -> used to define  'determination of copper'
-http://purl.obolibrary.org/obo/CHEBI_28694  # copper atom -> needed for def of 'copper molecular entity'
+http://purl.obolibrary.org/obo/CHEBI_28694 # copper atom -> needed for def of 'copper molecular entity'
 http://purl.obolibrary.org/obo/CHEBI_28262  # dimethyl sulfoxide -> used to define 'storage in dimethyl sulfoxide' & polarimetry of sample dissolved in dimethyl sulfoxide
 http://purl.obolibrary.org/obo/CHEBI_33418  # graphite -> used to define 'graphitisation'
 http://purl.obolibrary.org/obo/CHEBI_33819  # oxygen-17 atom -> used to define ' 17O magic angle spinning nuclear magnetic resonance spectroscopy' & '17O nuclear magnetic resonance spectroscopy'
-http://purl.obolibrary.org/obo/CHEBI_33839  # macromolecule -> needed by polymer
 http://purl.obolibrary.org/obo/CHEBI_35255  # chloroform -> used to define 'polarimetry of sample dissolved in chloroform'
 http://purl.obolibrary.org/obo/CHEBI_36928  # carbon-13 atom -> used to define '13C nuclear magnetic resonance spectroscopy'
 http://purl.obolibrary.org/obo/CHEBI_36940  # fluorine-19 atom -> used to define '19F nuclear magnetic resonance spectroscopy'
@@ -28,7 +27,4 @@ http://purl.obolibrary.org/obo/CHEBI_52458  # lithium-7 atom -> used to define '
 http://purl.obolibrary.org/obo/CHEBI_52462  # tungsten-183 -> used to define '183W nuclear magnetic resonance spectroscopy'
 http://purl.obolibrary.org/obo/CHEBI_60004  # mixture -> used to define 'concentration'
 http://purl.obolibrary.org/obo/CHEBI_60027  # polymer -> used to define 'polymer preparation method'
-
-
-External ontologies terms used by CHEBI
-http://purl.obolibrary.org/obo/BFO_0000051  # has part
+http://purl.obolibrary.org/obo/CHEBI_33839  # macromolecule -> needed by polymer

@@ -19,6 +19,20 @@ $(IMPORTDIR)/bfo_import.owl: $(IMPORTDIR)/bfo_terms.txt $(IMPORTSEED) | all_robo
          repair --merge-axiom-annotations true \
          $(ANNOTATE_CONVERT_FILE); fi 
 
+
+
+## Module for ontology: ms
+# Using ROBOT extract MIREOT here, as CHMO only reuses one class from MS
+
+$(IMPORTDIR)/ms_import.owl: $(IMPORTDIR)/ms_terms.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $(MIRRORDIR)/ms.owl --update ../sparql/preprocess-module.ru \
+		extract -T $(IMPORTDIR)/ms_terms.txt --copy-ontology-annotations true --force true \
+		--upper-terms $(IMPORTDIR)/ms_terms.txt --lower-terms $(IMPORTDIR)/ms_terms.txt \
+		--individuals include --method MIREOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+
 ## Module for ontology: chebi
 
 # We use ROBOT filter instead of the default ODK ROBOT extract method because the latter pulls in too much from ChEBI.
@@ -33,26 +47,14 @@ $(IMPORTDIR)/bfo_import.owl: $(IMPORTDIR)/bfo_terms.txt $(IMPORTSEED) | all_robo
 # and classes used in these, which is quite a time consuming task, but needed, as ROBOT extract pulls in too much
 # and the CHEBI module would otherwise be too big to load.
 
-$(IMPORTDIR)/chebi_import.owl: $(IMPORTDIR)/chebi_terms.txt $(IMPORTSEED) | all_robot_plugins
+$(IMPORTDIR)/chebi_import.owl: $(IMPORTDIR)/chebi_terms.txt
 	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) \
 	    filter -i $(MIRRORDIR)/chebi.owl -T $(IMPORTDIR)/chebi_terms.txt --signature true --select "annotations self" \
+	        --exclude-term http://purl.obolibrary.org/obo/CHEBI_24431 \
 	        --exclude-term http://purl.obolibrary.org/obo/CHEBI_36342 \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru \
 		    --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
-
-
-## Module for ontology: ms
-# Using ROBOT extract MIREOT here, as CHMO only reuses one class from MS
-
-$(IMPORTDIR)/ms_import.owl: $(IMPORTDIR)/ms_terms.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query -i $(MIRRORDIR)/ms.owl --update ../sparql/preprocess-module.ru \
-		extract -T $(IMPORTDIR)/ms_terms.txt --copy-ontology-annotations true --force true \
-		--upper-terms $(IMPORTDIR)/ms_terms.txt --lower-terms $(IMPORTDIR)/ms_terms.txt \
-		--individuals include --method MIREOT \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-		$(ANNOTATE_CONVERT_FILE); fi
-
 
 
 ## Module for ontology: obi
