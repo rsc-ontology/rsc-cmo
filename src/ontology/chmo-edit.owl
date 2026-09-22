@@ -3122,9 +3122,17 @@ ObjectPropertyRange(obo:CHMO_0010017 obo:CHMO_0010009)
 #   Classes
 ############################
 
-# Class: obo:CHEBI_24431 (chemical entity)
+# Class: obo:CHEBI_23367 (molecular entity)
 
-SubClassOf(obo:CHEBI_24431 obo:BFO_0000040)
+SubClassOf(obo:CHEBI_23367 obo:BFO_0000040)
+
+# Class: obo:CHEBI_33250 (atom)
+
+SubClassOf(obo:CHEBI_33250 obo:BFO_0000040)
+
+# Class: obo:CHEBI_59999 (chemical substance)
+
+SubClassOf(obo:CHEBI_59999 obo:BFO_0000040)
 
 # Class: obo:CHMO_0000000 (obo:CHMO_0000000)
 
@@ -28204,8 +28212,8 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002227 "EDX spectrum")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002227 "CHMO:0002227")
 AnnotationAssertion(rdfs:label obo:CHMO_0002227 "energy-dispersive X-ray spectrum")
 SubClassOf(obo:CHMO_0002227 obo:CHMO_0000830)
-SubClassOf(obo:CHMO_0002227 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001809))
 SubClassOf(obo:CHMO_0002227 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_0000309))
+SubClassOf(obo:CHMO_0002227 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001809))
 
 # Class: obo:CHMO_0002228 (cone calorimetry)
 
@@ -34541,8 +34549,8 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0002743 "CHMO:0002743")
 AnnotationAssertion(rdfs:label obo:CHMO_0002743 "matrix")
 EquivalentClasses(obo:CHMO_0002743 ObjectIntersectionOf(obo:CHMO_0000993 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002744)))
 SubClassOf(obo:CHMO_0002743 obo:CHMO_0000993)
-SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002744))
 SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_0002746))
+SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002744))
 
 # Class: obo:CHMO_0002744 (matrix role)
 
@@ -35839,8 +35847,8 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002912 "CHMO:0002912")
 AnnotationAssertion(rdfs:label obo:CHMO_0002912 "figure-of-merit determination")
 SubClassOf(obo:CHMO_0002912 obo:OBI_0000070)
-SubClassOf(obo:CHMO_0002912 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002913))
 SubClassOf(obo:CHMO_0002912 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHMO_0002803))
+SubClassOf(obo:CHMO_0002912 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002913))
 
 # Class: obo:CHMO_0002913 (reference material)
 
