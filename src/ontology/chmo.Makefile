@@ -72,3 +72,18 @@ $(IMPORTDIR)/obi_import.owl: $(IMPORTDIR)/obi_terms.txt
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
+## Module for ontology: cob
+
+$(IMPORTDIR)/cob_import.owl: $(IMPORTDIR)/cob_terms.txt $(IMPORTSEED) | all_robot_plugins
+	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) \
+	annotate --input $(MIRRORDIR)/cob.owl --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/cob_terms.txt $(T_IMPORTSEED) \
+		         --force true --copy-ontology-annotations true \
+		         --individuals exclude \
+		         --method BOT \
+		 remove -T $(IMPORTDIR)/cob_remove_list.txt --select "self descendants instances" --signature true \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo/cob.owl \
+                --subset-decls true --synonym-decls true \
+         repair --merge-axiom-annotations true \
+         $(ANNOTATE_CONVERT_FILE); fi 

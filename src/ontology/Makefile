@@ -454,6 +454,12 @@ $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl
 	@false
 endif # IMP_LARGE=true
 
+## Module for ontology: cob (custom)
+$(IMPORTDIR)/cob_import.owl: $(MIRRORDIR)/cob.owl
+	@echo "ERROR: You have configured cob as a custom module;"
+	@echo "       This rule needs to be overwritten in chmo.Makefile!"
+	@false
+
 endif # IMP=true
 
 .PHONY: refresh-imports
