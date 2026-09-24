@@ -58,19 +58,23 @@ $(IMPORTDIR)/chebi_import.owl: $(IMPORTDIR)/chebi_terms.txt
 
 
 ## Module for ontology: obi
-## We need to use the ODK default ROBOT 'extract' method plus 'filter' in here to remove out-of-scope terms that
-## get also pulled in. And we remove the NCBITaxon intermediates between OBI:organism and NCBITaxon:Homo Sapiens.
+## We remove the NCBITaxon intermediates between UBERON:Anatomical entity and NCBITaxon:Homo Sapiens.
 
-
-$(IMPORTDIR)/obi_import.owl: $(IMPORTDIR)/obi_terms.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query -i $(MIRRORDIR)/obi.owl --update ../sparql/preprocess-module.ru \
-		extract -T $(IMPORTDIR)/obi_terms.txt --copy-ontology-annotations true --force true \
-			--individuals include --method BOT \
-		remove -T $(IMPORTDIR)/obi_remove_list.txt --select "self instances descendants" \
-	    remove --term UBERON:0001062 --select "self descendants" --exclude-term NCBITaxon:9606 \
-		remove --term COB:0000502 --select "self" \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-		$(ANNOTATE_CONVERT_FILE); fi
+$(IMPORTDIR)/obi_import.owl: $(IMPORTDIR)/obi_terms.txt $(IMPORTSEED) | all_robot_plugins
+	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) \
+    annotate --input $(MIRRORDIR)/obi.owl --remove-annotations \
+         odk:normalize --add-source true \
+         extract --term-file $(IMPORTDIR)/obi_terms.txt $(T_IMPORTSEED) \
+                 --force true --copy-ontology-annotations true \
+                 --individuals include \
+                 --method BOT \
+         remove -T $(IMPORTDIR)/obi_remove_list.txt --select "self descendants instances" --signature true \
+         remove --term UBERON:0001062 --select "self descendants" --exclude-term NCBITaxon:9606 \
+         remove --term COB:0000502 --select "self" \
+         odk:normalize --base-iri http://purl.obolibrary.org/obo/obi.owl \
+                --subset-decls true --synonym-decls true \
+         repair --merge-axiom-annotations true \
+         $(ANNOTATE_CONVERT_FILE); fi 
 
 ## Module for ontology: cob
 
