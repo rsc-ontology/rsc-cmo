@@ -20,8 +20,8 @@ $(IMPORTDIR)/bfo_import.owl: $(IMPORTDIR)/bfo_terms.txt $(IMPORTSEED) | all_robo
          $(ANNOTATE_CONVERT_FILE); fi 
 
 
-
 ## Module for ontology: ms
+
 # Using ROBOT extract MIREOT here, as CHMO only reuses one class from MS
 
 $(IMPORTDIR)/ms_import.owl: $(IMPORTDIR)/ms_terms.txt
@@ -58,7 +58,8 @@ $(IMPORTDIR)/chebi_import.owl: $(IMPORTDIR)/chebi_terms.txt
 
 
 ## Module for ontology: obi
-## We remove the NCBITaxon intermediates between UBERON:Anatomical entity and NCBITaxon:Homo Sapiens.
+
+# We remove the NCBITaxon intermediates between UBERON:Anatomical entity and NCBITaxon:Homo Sapiens.
 
 $(IMPORTDIR)/obi_import.owl: $(IMPORTDIR)/obi_terms.txt $(IMPORTSEED) | all_robot_plugins
 	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) \
