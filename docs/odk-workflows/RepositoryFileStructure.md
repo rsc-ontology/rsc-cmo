@@ -19,7 +19,7 @@ These are the current imports in CHMO
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | custom |
 | ro | http://purl.obolibrary.org/obo/ro.owl | slme |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
-| iao | http://purl.obolibrary.org/obo/iao.owl | slme |
+| iao | http://purl.obolibrary.org/obo/iao.owl | custom |
 | obi | http://purl.obolibrary.org/obo/obi.owl | custom |
 | obcs | http://purl.obolibrary.org/obo/obcs.owl | slme |
 | ms | http://purl.obolibrary.org/obo/ms.owl | custom |

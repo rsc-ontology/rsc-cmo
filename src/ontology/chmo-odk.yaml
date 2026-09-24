@@ -41,6 +41,7 @@ import_group:
       module_type: mirror
     - id: iao
       make_base: true
+      module_type: custom
     - id: obi
         # As yet, there is no reasoned base release (see: https://github.com/obi-ontology/obi/issues/1815). We currently 
         # refrain from using 'make_base: true' as it would cause alot of indirect dependencies 

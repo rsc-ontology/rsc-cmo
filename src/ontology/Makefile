@@ -434,6 +434,12 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl | all_robot_plugins
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
+## Module for ontology: iao (custom)
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl
+	@echo "ERROR: You have configured iao as a custom module;"
+	@echo "       This rule needs to be overwritten in chmo.Makefile!"
+	@false
+
 ## Module for ontology: obi (custom)
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
 	@echo "ERROR: You have configured obi as a custom module;"
