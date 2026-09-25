@@ -6576,6 +6576,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000309 "energy-dispersive
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000309 "CHMO:0000309")
 AnnotationAssertion(rdfs:label obo:CHMO_0000309 "energy-dispersive X-ray emission spectroscopy")
 SubClassOf(obo:CHMO_0000309 obo:CHMO_0000307)
+SubClassOf(obo:CHMO_0000309 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001809))
 
 # Class: obo:CHMO_0000310 (non-resonant X-ray emission spectroscopy)
 
@@ -27931,7 +27932,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002202 "matrix assisted l
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002202 "CHMO:0002202")
 AnnotationAssertion(rdfs:label obo:CHMO_0002202 "matrix assisted laser desorption-ionisation mass spectrometer")
 SubClassOf(obo:CHMO_0002202 obo:CHMO_0000982)
-SubClassOf(obo:CHMO_0002202 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002203))
+SubClassOf(obo:CHMO_0002202 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CHMO_0002203))
 
 # Class: obo:CHMO_0002203 (matrix assisted laser desorption-ionisation plate)
 
@@ -28219,9 +28220,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002227 "EDX spectrum")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002227 "CHMO:0002227")
 AnnotationAssertion(rdfs:label obo:CHMO_0002227 "energy-dispersive X-ray spectrum")
 SubClassOf(obo:CHMO_0002227 obo:CHMO_0000830)
-SubClassOf(obo:CHMO_0002227 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001809))
 SubClassOf(obo:CHMO_0002227 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_0000309))
-SubClassOf(obo:CHMO_0002227 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001809))
 
 # Class: obo:CHMO_0002228 (cone calorimetry)
 
@@ -34557,7 +34556,6 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0002743 "CHMO:0002743")
 AnnotationAssertion(rdfs:label obo:CHMO_0002743 "matrix")
 EquivalentClasses(obo:CHMO_0002743 ObjectIntersectionOf(obo:CHMO_0000993 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002744)))
 SubClassOf(obo:CHMO_0002743 obo:CHMO_0000993)
-SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002744))
 SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_0002746))
 SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002744))
 
@@ -35856,7 +35854,6 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002912 "CHMO:0002912")
 AnnotationAssertion(rdfs:label obo:CHMO_0002912 "figure-of-merit determination")
 SubClassOf(obo:CHMO_0002912 obo:OBI_0000070)
-SubClassOf(obo:CHMO_0002912 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002913))
 SubClassOf(obo:CHMO_0002912 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHMO_0002803))
 SubClassOf(obo:CHMO_0002912 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002913))
 
