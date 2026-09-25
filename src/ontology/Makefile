@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                afd196491326a6c4821c13420f9b6c5ab159739567fa4be1a1be2c605422302b
+CONFIG_HASH=                5c02c0481c3f629c020502f16394de6f17ed4b7d877550bbe6a18e4dce046cbd
 
 
 # ----------------------------------------
@@ -419,14 +419,11 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
-## Module for ontology: bfo (mirror)
-$(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl | all_robot_plugins
-	$(ROBOT) annotate --input $< --remove-annotations \
-		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
-		               --subset-decls true --synonym-decls true \
-		               --add-source true \
-		 repair --merge-axiom-annotations true \
-		 $(ANNOTATE_CONVERT_FILE)
+## Module for ontology: bfo (custom)
+$(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl
+	@echo "ERROR: You have configured bfo as a custom module;"
+	@echo "       This rule needs to be overwritten in chmo.Makefile!"
+	@false
 
 ## Module for ontology: omo (mirror)
 $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl | all_robot_plugins
@@ -436,6 +433,12 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl | all_robot_plugins
 		               --add-source true \
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
+
+## Module for ontology: iao (custom)
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl
+	@echo "ERROR: You have configured iao as a custom module;"
+	@echo "       This rule needs to be overwritten in chmo.Makefile!"
+	@false
 
 ## Module for ontology: obi (custom)
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
@@ -456,6 +459,12 @@ $(IMPORTDIR)/chebi_import.owl: $(MIRRORDIR)/chebi.owl
 	@echo "       This rule needs to be overwritten in chmo.Makefile!"
 	@false
 endif # IMP_LARGE=true
+
+## Module for ontology: cob (custom)
+$(IMPORTDIR)/cob_import.owl: $(MIRRORDIR)/cob.owl
+	@echo "ERROR: You have configured cob as a custom module;"
+	@echo "       This rule needs to be overwritten in chmo.Makefile!"
+	@false
 
 endif # IMP=true
 

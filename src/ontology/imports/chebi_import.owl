@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/chmo/imports/chebi_import.owl>
-<http://purl.obolibrary.org/obo/chmo/releases/2026-09-12/imports/chebi_import.owl>
-Annotation(owl:versionInfo "2026-09-12")
+<http://purl.obolibrary.org/obo/chmo/releases/2026-09-25/imports/chebi_import.owl>
+Annotation(owl:versionInfo "2026-09-25")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_23367>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_23377>))

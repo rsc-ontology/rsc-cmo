@@ -3,7 +3,25 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+## Module for ontology: bfo
+
+$(IMPORTDIR)/bfo_import.owl: $(IMPORTDIR)/bfo_terms.txt $(IMPORTSEED) | all_robot_plugins
+	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) \
+	annotate --input $(MIRRORDIR)/bfo.owl --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/bfo_terms.txt $(T_IMPORTSEED) \
+		         --force true --copy-ontology-annotations true \
+		         --individuals exclude \
+		         --method BOT \
+		 remove -T $(IMPORTDIR)/bfo_remove_list.txt --select "self descendants instances" --signature true \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo/bfo.owl \
+                --subset-decls true --synonym-decls true \
+         repair --merge-axiom-annotations true \
+         $(ANNOTATE_CONVERT_FILE); fi 
+
+
 ## Module for ontology: ms
+
 # Using ROBOT extract MIREOT here, as CHMO only reuses one class from MS
 
 $(IMPORTDIR)/ms_import.owl: $(IMPORTDIR)/ms_terms.txt
@@ -40,15 +58,59 @@ $(IMPORTDIR)/chebi_import.owl: $(IMPORTDIR)/chebi_terms.txt
 
 
 ## Module for ontology: obi
-## We need to use the ODK default ROBOT 'extract' method plus 'filter' in here to remove out-of-scope terms that
-## get also pulled in. And we remove the NCBITaxon intermediates between OBI:organism and NCBITaxon:Homo Sapiens.
 
-$(IMPORTDIR)/obi_import.owl: $(IMPORTDIR)/obi_terms.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query -i $(MIRRORDIR)/obi.owl --update ../sparql/preprocess-module.ru \
-		extract -T $(IMPORTDIR)/obi_terms.txt --copy-ontology-annotations true --force true \
-		    --individuals include --method BOT \
-		remove --term OBI:0100026 --select "descendants" --exclude-term NCBITaxon:9606 \
-		remove -T $(IMPORTDIR)/obi_terms_to_remove.txt --select "self instances descendants" \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-		$(ANNOTATE_CONVERT_FILE); fi
+# We remove the NCBITaxon intermediates between UBERON:Anatomical entity and NCBITaxon:Homo Sapiens.
 
+$(IMPORTDIR)/obi_import.owl: $(IMPORTDIR)/obi_terms.txt $(IMPORTSEED) | all_robot_plugins
+	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) \
+    annotate --input $(MIRRORDIR)/obi.owl --remove-annotations \
+         odk:normalize --add-source true \
+         extract --term-file $(IMPORTDIR)/obi_terms.txt $(T_IMPORTSEED) \
+                 --force true --copy-ontology-annotations true \
+                 --individuals include \
+                 --method BOT \
+         remove -T $(IMPORTDIR)/obi_remove_list.txt --select "self descendants instances" --signature true \
+         remove --term UBERON:0001062 --select "self descendants" --exclude-term NCBITaxon:9606 \
+         remove --term COB:0000502 --select "self" \
+         odk:normalize --base-iri http://purl.obolibrary.org/obo/obi.owl \
+                --subset-decls true --synonym-decls true \
+         repair --merge-axiom-annotations true \
+         $(ANNOTATE_CONVERT_FILE); fi 
+
+## Module for ontology: cob
+
+$(IMPORTDIR)/cob_import.owl: $(IMPORTDIR)/cob_terms.txt $(IMPORTSEED) | all_robot_plugins
+	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) \
+	annotate --input $(MIRRORDIR)/cob.owl --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/cob_terms.txt $(T_IMPORTSEED) \
+		         --force true --copy-ontology-annotations true \
+		         --individuals exclude \
+		         --method BOT \
+		 remove -T $(IMPORTDIR)/cob_remove_list.txt --select "self descendants instances" --signature true \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo/cob.owl \
+                --subset-decls true --synonym-decls true \
+         repair --merge-axiom-annotations true \
+         $(ANNOTATE_CONVERT_FILE); fi 
+
+
+## Module for ontology: iao
+# This is basically the default SLME-BOT code from ODK with an additional 
+# remove steps. This second remove step removes currently unused IAO terms,
+# which would otherwise be pulled in by the ROBOT extract step.
+
+$(IMPORTDIR)/iao_import.owl: $(IMPORTDIR)/iao_terms.txt $(IMPORTSEED) | all_robot_plugins
+	if [ $(IMP) = true ]; then $(ROBOT) annotate --input $(MIRRORDIR)/iao.owl --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/iao_terms.txt $(T_IMPORTSEED) \
+		         --force true --copy-ontology-annotations true \
+		         --individuals exclude \
+		         --method BOT \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term-file $(IMPORTDIR)/iao_terms.txt $(T_IMPORTSEED) \
+		        --select complement --select annotation-properties \
+		 remove -T $(IMPORTDIR)/iao_remove_list.txt --select "self descendants instances" --signature true \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo/iao.owl \
+		               --subset-decls true --synonym-decls true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE); fi 

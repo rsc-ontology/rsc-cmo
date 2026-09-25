@@ -33,7 +33,7 @@ robot_java_args: '-Xmx16G'  # max RAM to be used by Robot in ODK
 import_group:
   products:
     - id: bfo
-      module_type: mirror
+      module_type: custom
     - id: ro
       use_base: true
       slme_individuals: exclude
@@ -41,6 +41,7 @@ import_group:
       module_type: mirror
     - id: iao
       make_base: true
+      module_type: custom
     - id: obi
         # As yet, there is no reasoned base release (see: https://github.com/obi-ontology/obi/issues/1815). We currently 
         # refrain from using 'make_base: true' as it would cause alot of indirect dependencies 
@@ -65,6 +66,7 @@ import_group:
       use_base: true
     - id: cob
       use_base: true
+      module_type: custom
 
 sssom_mappingset_group:
   products:

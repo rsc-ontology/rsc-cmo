@@ -1,0 +1,13 @@
+http://purl.obolibrary.org/obo/BFO_0000006 # spatial region
+http://purl.obolibrary.org/obo/BFO_0000024 # fiat object part
+http://purl.obolibrary.org/obo/BFO_0000027 # object aggregate
+http://purl.obolibrary.org/obo/BFO_0000029 # site
+http://purl.obolibrary.org/obo/BFO_0000030 # object
+http://purl.obolibrary.org/obo/BFO_0000038 # one-dimensional temporal region
+http://purl.obolibrary.org/obo/BFO_0000142 # one-dimensional continuant fiat boundary
+http://purl.obolibrary.org/obo/BFO_0000144 # process profile
+http://purl.obolibrary.org/obo/BFO_0000145 # relational quality
+http://purl.obolibrary.org/obo/BFO_0000146 # two-dimensional continuant fiat boundary
+http://purl.obolibrary.org/obo/BFO_0000147 # zero-dimensional continuant fiat boundary
+http://purl.obolibrary.org/obo/BFO_0000148 # zero-dimensional temporal region
+http://purl.obolibrary.org/obo/BFO_0000182 # history
