@@ -27932,7 +27932,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002202 "matrix assisted l
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002202 "CHMO:0002202")
 AnnotationAssertion(rdfs:label obo:CHMO_0002202 "matrix assisted laser desorption-ionisation mass spectrometer")
 SubClassOf(obo:CHMO_0002202 obo:CHMO_0000982)
-SubClassOf(obo:CHMO_0002202 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002203))
+SubClassOf(obo:CHMO_0002202 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CHMO_0002203))
 
 # Class: obo:CHMO_0002203 (matrix assisted laser desorption-ionisation plate)
 
