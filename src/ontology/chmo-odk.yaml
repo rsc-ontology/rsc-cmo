@@ -11,7 +11,7 @@ license: https://creativecommons.org/licenses/by/4.0/
 ## general ODK Settings ##
 
 repo: rsc-cmo
-git_main_branch: master
+git_main_branch: main
 github_org: rsc-ontologies
 ci:
   - github_actions
