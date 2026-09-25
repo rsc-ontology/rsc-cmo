@@ -17,7 +17,7 @@
 #  Gupta and reviewed by Philip Strömert & Colin Batchelor. The intended use case of
 #  this mapping set is the data integration of RDF knowledge graphs (KGs) that use
 #  Wikidata and are to be transformed into RDF KGs that use CHMO or vice versa.
-#mapping_set_id: https://github.com/NFDI4Chem/rsc-cmo/blob/Add-definition-sources-and-mappings/src/mappings/rex-mappings.tsv
+#mapping_set_id: http://purl.obolibrary.org/obo/chmo/mappings/rex-mappings.sssom.tsv
 #mapping_set_title: Mapping CHMO to REX
 #mapping_set_version: '1.0'
 #object_source: obo:rex
