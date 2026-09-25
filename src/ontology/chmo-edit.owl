@@ -3004,8 +3004,6 @@ Declaration(ObjectProperty(obo:CHMO_0002883))
 Declaration(ObjectProperty(obo:CHMO_0002922))
 Declaration(ObjectProperty(obo:CHMO_0010016))
 Declaration(ObjectProperty(obo:CHMO_0010017))
-Declaration(AnnotationProperty(obo:BFO_0000179))
-Declaration(AnnotationProperty(obo:BFO_0000180))
 Declaration(AnnotationProperty(chmo:isDefinedBy))
 Declaration(AnnotationProperty(chmo:non-mining_synonym))
 Declaration(AnnotationProperty(dcterms:bibliographicCitation))
@@ -3034,11 +3032,6 @@ AnnotationAssertion(rdfs:label dcterms:description "description")
 ############################
 #   Object Properties
 ############################
-
-# Object Property: obo:BFO_0000054 (realized in)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000054 "BFO:0000054")
-AnnotationAssertion(rdfs:label obo:BFO_0000054 "realized in")
 
 # Object Property: obo:BFO_0000056 (participates in at some time)
 
