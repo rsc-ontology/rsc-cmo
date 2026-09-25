@@ -2994,6 +2994,8 @@ Declaration(ObjectProperty(obo:BFO_0000054))
 Declaration(ObjectProperty(obo:BFO_0000056))
 Declaration(ObjectProperty(obo:BFO_0000057))
 Declaration(ObjectProperty(obo:BFO_0000063))
+Declaration(ObjectProperty(obo:BFO_0000068))
+Declaration(ObjectProperty(obo:BFO_0000069))
 Declaration(ObjectProperty(obo:BFO_0000085))
 Declaration(ObjectProperty(obo:BFO_0000087))
 Declaration(ObjectProperty(obo:BFO_0000110))
@@ -34927,7 +34929,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002786 "CHMO:0002786")
 AnnotationAssertion(rdfs:label obo:CHMO_0002786 "filter cake")
 SubClassOf(obo:CHMO_0002786 obo:CHMO_0000993)
-SubClassOf(obo:CHMO_0002786 ObjectSomeValuesFrom(obo:RO_0002488 obo:CHMO_0001640))
+SubClassOf(obo:CHMO_0002786 ObjectSomeValuesFrom(obo:BFO_0000068 obo:CHMO_0001640))
 
 # Class: obo:CHMO_0002787 (syringe pump)
 
