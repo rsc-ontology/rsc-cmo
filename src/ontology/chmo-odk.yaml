@@ -17,6 +17,7 @@ ci:
   - github_actions
 documentation:
   documentation_system: mkdocs
+use_mappings: true
 export_formats:
   - owl
   - obo
@@ -64,3 +65,13 @@ import_group:
       use_base: true
     - id: cob
       use_base: true
+
+sssom_mappingset_group:
+  products:
+    - id: rex-mappings
+      maintenance: manual
+      release_mappings: true
+components:
+  products:
+    - filename: rex-mappings.owl
+      use_mappings: true

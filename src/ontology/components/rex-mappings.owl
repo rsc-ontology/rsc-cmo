@@ -1,0 +1,41 @@
+Prefix(:=<http://purl.obolibrary.org/obo/chmo/components/rex-mappings.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(sssom:=<https://w3id.org/sssom/>)
+Prefix(semapv:=<http://w3id.org/semapv/vocab/>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/chmo/components/rex-mappings.owl>
+<http://purl.obolibrary.org/obo/chmo/releases/2026-09-25/components/rex-mappings.owl>
+Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-5985-7429>)
+Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-1595-3213>)
+Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0009-0009-1663-1003>)
+Annotation(<http://purl.org/dc/terms/description> "This file contains the mappings between the Chemical Methods Ontology (CHMO) and REX. These mappings were manually created/curated by Ambika Gupta and reviewed by Philip Strömert & Colin Batchelor. The intended use case of this mapping set is the data integration of RDF knowledge graphs (KGs) that use Wikidata and are to be transformed into RDF KGs that use CHMO or vice versa.")
+Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI)
+Annotation(<http://purl.org/dc/terms/title> "Mapping CHMO to REX")
+Annotation(owl:versionInfo "1.0")
+Annotation(owl:versionInfo "2026-09-25")
+
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<http://purl.org/pav/authoredBy>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#exactMatch>))
+Declaration(AnnotationProperty(sssom:confidence))
+Declaration(AnnotationProperty(sssom:mapping_justification))
+Declaration(AnnotationProperty(sssom:mapping_provider))
+Declaration(AnnotationProperty(sssom:object_label))
+Declaration(AnnotationProperty(sssom:object_source))
+Declaration(AnnotationProperty(sssom:reviewer_id))
+Declaration(AnnotationProperty(sssom:subject_label))
+Declaration(AnnotationProperty(sssom:subject_source))
+Declaration(Datatype(xsd:date))
+
+
+AnnotationAssertion(Annotation(<http://purl.org/dc/terms/created> "2025-05-01"^^xsd:date) Annotation(<http://purl.org/pav/authoredBy> <https://orcid.org/0009-0009-1663-1003>) Annotation(sssom:confidence "0.8"^^xsd:double) Annotation(sssom:mapping_justification <https://w3id.org/semapv/vocab/ManualMappingCuration>) Annotation(sssom:mapping_provider "http://purl.obolibrary.org/obo/chmo.owl"^^xsd:anyURI) Annotation(sssom:object_label "absorption of material") Annotation(sssom:object_source <http://purl.obolibrary.org/obo/rex>) Annotation(sssom:reviewer_id <https://orcid.org/0000-0003-4423-4370>) Annotation(sssom:subject_label "absorption of material") Annotation(sssom:subject_source <http://purl.obolibrary.org/obo/chmo>) <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.obolibrary.org/obo/CHMO_0002914> <http://purl.obolibrary.org/obo/REX_0000188>)
+)
