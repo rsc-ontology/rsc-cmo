@@ -2989,15 +2989,10 @@ Declaration(Class(obo:CHMO_0010024))
 Declaration(Class(obo:CHMO_0010025))
 Declaration(Class(obo:OBCS_0000058))
 Declaration(Class(obo:OBCS_0000059))
-Declaration(ObjectProperty(obo:BFO_0000052))
 Declaration(ObjectProperty(obo:BFO_0000054))
 Declaration(ObjectProperty(obo:BFO_0000056))
-Declaration(ObjectProperty(obo:BFO_0000057))
 Declaration(ObjectProperty(obo:BFO_0000063))
-Declaration(ObjectProperty(obo:BFO_0000068))
-Declaration(ObjectProperty(obo:BFO_0000069))
 Declaration(ObjectProperty(obo:BFO_0000085))
-Declaration(ObjectProperty(obo:BFO_0000087))
 Declaration(ObjectProperty(obo:BFO_0000110))
 Declaration(ObjectProperty(obo:BFO_0000118))
 Declaration(ObjectProperty(obo:BFO_0000137))
@@ -3009,8 +3004,6 @@ Declaration(ObjectProperty(obo:CHMO_0002883))
 Declaration(ObjectProperty(obo:CHMO_0002922))
 Declaration(ObjectProperty(obo:CHMO_0010016))
 Declaration(ObjectProperty(obo:CHMO_0010017))
-Declaration(AnnotationProperty(obo:BFO_0000179))
-Declaration(AnnotationProperty(obo:BFO_0000180))
 Declaration(AnnotationProperty(chmo:isDefinedBy))
 Declaration(AnnotationProperty(chmo:non-mining_synonym))
 Declaration(AnnotationProperty(dcterms:bibliographicCitation))
@@ -3040,47 +3033,15 @@ AnnotationAssertion(rdfs:label dcterms:description "description")
 #   Object Properties
 ############################
 
-# Object Property: obo:BFO_0000052 (inheres_in)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000052 "BFO:0000052")
-AnnotationAssertion(rdfs:label obo:BFO_0000052 "inheres_in")
-
-# Object Property: obo:BFO_0000054 (realized in)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000054 "BFO:0000054")
-AnnotationAssertion(rdfs:label obo:BFO_0000054 "realized in")
-
 # Object Property: obo:BFO_0000056 (participates in at some time)
 
 AnnotationAssertion(oboInOwl:id obo:BFO_0000056 "BFO:0000056")
 AnnotationAssertion(rdfs:label obo:BFO_0000056 "participates in at some time")
 
-# Object Property: obo:BFO_0000057 (has participant)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000057 "BFO:0000057")
-AnnotationAssertion(rdfs:label obo:BFO_0000057 "has participant")
-
-# Object Property: obo:BFO_0000068 (begins to exist during)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000068 "BFO:0000068")
-AnnotationAssertion(rdfs:label obo:BFO_0000068 "begins to exist during")
-SubObjectPropertyOf(obo:BFO_0000068 obo:BFO_0000056)
-
-# Object Property: obo:BFO_0000069 (ceases to exist during)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000069 "BFO:0000069")
-AnnotationAssertion(rdfs:label obo:BFO_0000069 "ceases to exist during")
-SubObjectPropertyOf(obo:BFO_0000069 obo:BFO_0000056)
-
 # Object Property: obo:BFO_0000085 (has function at some time)
 
 AnnotationAssertion(oboInOwl:id obo:BFO_0000085 "BFO:0000085")
 AnnotationAssertion(rdfs:label obo:BFO_0000085 "has function at some time")
-
-# Object Property: obo:BFO_0000087 (has role)
-
-AnnotationAssertion(oboInOwl:id obo:BFO_0000087 "BFO:0000087")
-AnnotationAssertion(rdfs:label obo:BFO_0000087 "has role")
 
 # Object Property: obo:BFO_0000110 (has continuant part at all times)
 
@@ -3117,7 +3078,7 @@ AnnotationAssertion(rdfs:label obo:BFO_0000178 "has continuant part at some time
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002748 "CHMO:0002748")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002748 "p has_participant e o e has_role analyte_role. Don't know how to do this in OBO format.")
 AnnotationAssertion(rdfs:label obo:CHMO_0002748 "has analyte")
-SubObjectPropertyOf(obo:CHMO_0002748 obo:BFO_0000057)
+SubObjectPropertyOf(obo:CHMO_0002748 obo:RO_0000057)
 ObjectPropertyDomain(obo:CHMO_0002748 obo:BFO_0000015)
 ObjectPropertyRange(obo:CHMO_0002748 obo:BFO_0000040)
 
@@ -3126,7 +3087,7 @@ ObjectPropertyRange(obo:CHMO_0002748 obo:BFO_0000040)
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002883 "CHMO:0002883")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002883 "p has_participant e o e has_role matrix_role. Don't know how to do this in OBO format.")
 AnnotationAssertion(rdfs:label obo:CHMO_0002883 "has matrix")
-SubObjectPropertyOf(obo:CHMO_0002883 obo:BFO_0000057)
+SubObjectPropertyOf(obo:CHMO_0002883 obo:RO_0000057)
 ObjectPropertyDomain(obo:CHMO_0002883 obo:BFO_0000015)
 ObjectPropertyRange(obo:CHMO_0002883 obo:BFO_0000040)
 
@@ -3850,7 +3811,7 @@ AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000067 "FIX:0000005")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000067 "CHMO:0000067")
 AnnotationAssertion(rdfs:label obo:CHMO_0000067 "microscopy")
 SubClassOf(obo:CHMO_0000067 obo:OBI_0000185)
-SubClassOf(obo:CHMO_0000067 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000953))
+SubClassOf(obo:CHMO_0000067 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000953))
 
 # Class: obo:CHMO_0000068 (electron microscopy)
 
@@ -3860,7 +3821,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasSynonymType obo:OMO_0003012) oboInOwl
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000068 "CHMO:0000068")
 AnnotationAssertion(rdfs:label obo:CHMO_0000068 "electron microscopy")
 SubClassOf(obo:CHMO_0000068 obo:CHMO_0000067)
-SubClassOf(obo:CHMO_0000068 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0001088))
+SubClassOf(obo:CHMO_0000068 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001088))
 
 # Class: obo:CHMO_0000069 (field-emission electron microscopy)
 
@@ -4565,7 +4526,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000131 "scanning-thermal 
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000131 "CHMO:0000131")
 AnnotationAssertion(rdfs:label obo:CHMO_0000131 "scanning thermal microscopy")
 SubClassOf(obo:CHMO_0000131 obo:CHMO_0000112)
-SubClassOf(obo:CHMO_0000131 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0001098))
+SubClassOf(obo:CHMO_0000131 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001098))
 
 # Class: obo:CHMO_0000132 (scanning tunnelling microscopy)
 
@@ -4588,8 +4549,8 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000133 "thermal-lens micr
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000133 "CHMO:0000133")
 AnnotationAssertion(rdfs:label obo:CHMO_0000133 "thermal lens microscopy")
 SubClassOf(obo:CHMO_0000133 obo:CHMO_0000067)
-SubClassOf(obo:CHMO_0000133 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002894))
-SubClassOf(obo:CHMO_0000133 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002895))
+SubClassOf(obo:CHMO_0000133 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002894))
+SubClassOf(obo:CHMO_0000133 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002895))
 
 # Class: obo:CHMO_0000134 (ultra-violet thermal lens microscopy)
 
@@ -5916,9 +5877,9 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000256 "glow discharge op
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000256 "glow discharge optical emission spectroscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000256 "CHMO:0000256")
 AnnotationAssertion(rdfs:label obo:CHMO_0000256 "glow discharge atomic emission spectroscopy")
-EquivalentClasses(obo:CHMO_0000256 ObjectIntersectionOf(obo:CHMO_0000251 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0001130)))
+EquivalentClasses(obo:CHMO_0000256 ObjectIntersectionOf(obo:CHMO_0000251 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001130)))
 SubClassOf(obo:CHMO_0000256 obo:CHMO_0000251)
-SubClassOf(obo:CHMO_0000256 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0001130))
+SubClassOf(obo:CHMO_0000256 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001130))
 
 # Class: obo:CHMO_0000257 (laser-induced atomic emission spectroscopy)
 
@@ -6318,7 +6279,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasSynonymType chmo:non-mining_synonym) 
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000291 "CHMO:0000291")
 AnnotationAssertion(rdfs:label obo:CHMO_0000291 "spectrophotometry")
 SubClassOf(obo:CHMO_0000291 obo:CHMO_0000232)
-SubClassOf(obo:CHMO_0000291 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002232))
+SubClassOf(obo:CHMO_0000291 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002232))
 
 # Class: obo:CHMO_0000292 (ultraviolet-visible spectrophotometry)
 
@@ -9255,7 +9216,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000519 "matrix-assisted l
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000519 "CHMO:0000519")
 AnnotationAssertion(rdfs:label obo:CHMO_0000519 "matrix-assisted laser desorption-ionisation mass spectrometry")
 SubClassOf(obo:CHMO_0000519 obo:CHMO_0000515)
-SubClassOf(obo:CHMO_0000519 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002202))
+SubClassOf(obo:CHMO_0000519 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002202))
 
 # Class: obo:CHMO_0000520 (matrix-assisted laser desorption-ionisation time-of-flight mass spectrometry)
 
@@ -9500,9 +9461,9 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000537 "glow discharge io
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000537 "glow-discharge mass spectroscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000537 "CHMO:0000537")
 AnnotationAssertion(rdfs:label obo:CHMO_0000537 "glow-discharge mass spectrometry")
-EquivalentClasses(obo:CHMO_0000537 ObjectIntersectionOf(obo:CHMO_0000470 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0001130)))
+EquivalentClasses(obo:CHMO_0000537 ObjectIntersectionOf(obo:CHMO_0000470 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001130)))
 SubClassOf(obo:CHMO_0000537 obo:CHMO_0000741)
-SubClassOf(obo:CHMO_0000537 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0001130))
+SubClassOf(obo:CHMO_0000537 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001130))
 
 # Class: obo:CHMO_0000538 (inductively coupled plasma mass spectrometry)
 
@@ -10589,7 +10550,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000620 "infrared photoaco
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000620 "CHMO:0000620")
 AnnotationAssertion(rdfs:label obo:CHMO_0000620 "infrared photoacoustic spectroscopy")
 SubClassOf(obo:CHMO_0000620 obo:CHMO_0000619)
-SubClassOf(obo:CHMO_0000620 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002885))
+SubClassOf(obo:CHMO_0000620 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002885))
 
 # Class: obo:CHMO_0000621 (Fourier transform infrared photoacoustic spectroscopy)
 
@@ -10897,7 +10858,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000642 "transient infrare
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000642 "CHMO:0000642")
 AnnotationAssertion(rdfs:label obo:CHMO_0000642 "transient infrared spectroscopy")
 SubClassOf(obo:CHMO_0000642 obo:CHMO_0000630)
-SubClassOf(obo:CHMO_0000642 ObjectSomeValuesFrom(obo:BFO_0000057 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0000642 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0400064))
 
 # Class: obo:CHMO_0000643 (infrared reflectance spectroscopy)
 
@@ -14704,9 +14665,9 @@ AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'column chromatogr
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0001001 "CHMO:0002118")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001001 "CHMO:0001001")
 AnnotationAssertion(rdfs:label obo:CHMO_0001001 "column chromatography")
-EquivalentClasses(obo:CHMO_0001001 ObjectIntersectionOf(obo:CHMO_0001000 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000997)))
+EquivalentClasses(obo:CHMO_0001001 ObjectIntersectionOf(obo:CHMO_0001000 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000997)))
 SubClassOf(obo:CHMO_0001001 obo:CHMO_0001000)
-SubClassOf(obo:CHMO_0001001 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000997))
+SubClassOf(obo:CHMO_0001001 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000997))
 
 # Class: obo:CHMO_0001002 (gas chromatography)
 
@@ -14715,9 +14676,9 @@ AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0001002 "FIX:0000098")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001002 "CHMO:0001002")
 AnnotationAssertion(rdfs:label obo:CHMO_0001002 "gas chromatography")
-EquivalentClasses(obo:CHMO_0001002 ObjectIntersectionOf(obo:CHMO_0001001 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000996)))
+EquivalentClasses(obo:CHMO_0001002 ObjectIntersectionOf(obo:CHMO_0001001 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000996)))
 SubClassOf(obo:CHMO_0001002 obo:CHMO_0001001)
-SubClassOf(obo:CHMO_0001002 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000996))
+SubClassOf(obo:CHMO_0001002 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000996))
 
 # Class: obo:CHMO_0001003 (supercritical-fluid chromatography)
 
@@ -14725,9 +14686,9 @@ AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'supercritical flu
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.S06139>) obo:OMO_0003012 obo:CHMO_0001003 "SFC")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001003 "CHMO:0001003")
 AnnotationAssertion(rdfs:label obo:CHMO_0001003 "supercritical-fluid chromatography")
-EquivalentClasses(obo:CHMO_0001003 ObjectIntersectionOf(obo:CHMO_0001001 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000992)))
+EquivalentClasses(obo:CHMO_0001003 ObjectIntersectionOf(obo:CHMO_0001001 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000992)))
 SubClassOf(obo:CHMO_0001003 obo:CHMO_0001001)
-SubClassOf(obo:CHMO_0001003 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000992))
+SubClassOf(obo:CHMO_0001003 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000992))
 
 # Class: obo:CHMO_0001004 (liquid chromatography)
 
@@ -14735,9 +14696,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000608") Annotation(oboI
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001004 "LC")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001004 "CHMO:0001004")
 AnnotationAssertion(rdfs:label obo:CHMO_0001004 "liquid chromatography")
-EquivalentClasses(obo:CHMO_0001004 ObjectIntersectionOf(obo:CHMO_0001001 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000991)))
+EquivalentClasses(obo:CHMO_0001004 ObjectIntersectionOf(obo:CHMO_0001001 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000991)))
 SubClassOf(obo:CHMO_0001004 obo:CHMO_0001001)
-SubClassOf(obo:CHMO_0001004 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000991))
+SubClassOf(obo:CHMO_0001004 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000991))
 
 # Class: obo:CHMO_0001005 (planar chromatography)
 
@@ -14747,9 +14708,9 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001005 "open bed chromato
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001005 "open-bed chromatography")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001005 "CHMO:0001005")
 AnnotationAssertion(rdfs:label obo:CHMO_0001005 "planar chromatography")
-EquivalentClasses(obo:CHMO_0001005 ObjectIntersectionOf(obo:CHMO_0001000 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000990)))
+EquivalentClasses(obo:CHMO_0001005 ObjectIntersectionOf(obo:CHMO_0001000 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000990)))
 SubClassOf(obo:CHMO_0001005 obo:CHMO_0001000)
-SubClassOf(obo:CHMO_0001005 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000990))
+SubClassOf(obo:CHMO_0001005 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000990))
 
 # Class: obo:CHMO_0001006 (affinity chromatography)
 
@@ -14765,18 +14726,18 @@ AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#hadPrimarySource> <htt
 AnnotationAssertion(Annotation(oboInOwl:hasSynonymType obo:OMO_0003012) oboInOwl:hasExactSynonym obo:CHMO_0001007 "TLC")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001007 "CHMO:0001007")
 AnnotationAssertion(rdfs:label obo:CHMO_0001007 "thin-layer chromatography")
-EquivalentClasses(obo:CHMO_0001007 ObjectIntersectionOf(obo:CHMO_0001005 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000989)))
+EquivalentClasses(obo:CHMO_0001007 ObjectIntersectionOf(obo:CHMO_0001005 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000989)))
 SubClassOf(obo:CHMO_0001007 obo:CHMO_0001005)
-SubClassOf(obo:CHMO_0001007 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000989))
+SubClassOf(obo:CHMO_0001007 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000989))
 
 # Class: obo:CHMO_0001008 (paper chromatography)
 
 AnnotationAssertion(obo:IAO_0000115 obo:CHMO_0001008 "A planar chromatography in which the stationary phase is impregnated in a sheet of paper.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001008 "CHMO:0001008")
 AnnotationAssertion(rdfs:label obo:CHMO_0001008 "paper chromatography")
-EquivalentClasses(obo:CHMO_0001008 ObjectIntersectionOf(obo:CHMO_0001005 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000988)))
+EquivalentClasses(obo:CHMO_0001008 ObjectIntersectionOf(obo:CHMO_0001005 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000988)))
 SubClassOf(obo:CHMO_0001008 obo:CHMO_0001005)
-SubClassOf(obo:CHMO_0001008 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000988))
+SubClassOf(obo:CHMO_0001008 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000988))
 
 # Class: obo:CHMO_0001009 (high-performance liquid chromatography)
 
@@ -14846,9 +14807,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000632") Annotation(oboI
 AnnotationAssertion(Annotation(oboInOwl:hasSynonymType obo:OMO_0003012) oboInOwl:hasExactSynonym obo:CHMO_0001015 "GSC")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001015 "CHMO:0001015")
 AnnotationAssertion(rdfs:label obo:CHMO_0001015 "gas-solid chromatography")
-EquivalentClasses(obo:CHMO_0001015 ObjectIntersectionOf(obo:CHMO_0001002 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000985)))
+EquivalentClasses(obo:CHMO_0001015 ObjectIntersectionOf(obo:CHMO_0001002 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000985)))
 SubClassOf(obo:CHMO_0001015 obo:CHMO_0001002)
-SubClassOf(obo:CHMO_0001015 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000985))
+SubClassOf(obo:CHMO_0001015 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000985))
 
 # Class: obo:CHMO_0001016 (gas-liquid chromatography)
 
@@ -14857,9 +14818,9 @@ AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0001016 "FIX:0000631")
 AnnotationAssertion(Annotation(oboInOwl:hasSynonymType obo:OMO_0003012) oboInOwl:hasExactSynonym obo:CHMO_0001016 "GLC")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001016 "CHMO:0001016")
 AnnotationAssertion(rdfs:label obo:CHMO_0001016 "gas-liquid chromatography")
-EquivalentClasses(obo:CHMO_0001016 ObjectIntersectionOf(obo:CHMO_0001002 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000984)))
+EquivalentClasses(obo:CHMO_0001016 ObjectIntersectionOf(obo:CHMO_0001002 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000984)))
 SubClassOf(obo:CHMO_0001016 obo:CHMO_0001002)
-SubClassOf(obo:CHMO_0001016 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000984))
+SubClassOf(obo:CHMO_0001016 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000984))
 
 # Class: obo:CHMO_0001017 (two-dimensional separation method)
 
@@ -14933,9 +14894,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasSynonymType obo:OMO_0003012) oboInOwl
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001024 "capillary zone electrophoresis")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001024 "CHMO:0001024")
 AnnotationAssertion(rdfs:label obo:CHMO_0001024 "capillary electrophoresis")
-EquivalentClasses(obo:CHMO_0001024 ObjectIntersectionOf(obo:CHMO_0001019 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983)))
+EquivalentClasses(obo:CHMO_0001024 ObjectIntersectionOf(obo:CHMO_0001019 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983)))
 SubClassOf(obo:CHMO_0001024 obo:CHMO_0001019)
-SubClassOf(obo:CHMO_0001024 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983))
+SubClassOf(obo:CHMO_0001024 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983))
 
 # Class: obo:CHMO_0001025 (isotachophoresis)
 
@@ -15002,10 +14963,10 @@ AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'capillary sieving
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09917>) obo:OMO_0003012 obo:CHMO_0001031 "CSE")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001031 "CHMO:0001031")
 AnnotationAssertion(rdfs:label obo:CHMO_0001031 "capillary sieving electrophoresis")
-EquivalentClasses(obo:CHMO_0001031 ObjectIntersectionOf(obo:CHMO_0001030 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983)))
+EquivalentClasses(obo:CHMO_0001031 ObjectIntersectionOf(obo:CHMO_0001030 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983)))
 SubClassOf(obo:CHMO_0001031 obo:CHMO_0001024)
 SubClassOf(obo:CHMO_0001031 obo:CHMO_0001030)
-SubClassOf(obo:CHMO_0001031 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983))
+SubClassOf(obo:CHMO_0001031 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983))
 
 # Class: obo:CHMO_0001032 (capillary gel electrophoresis)
 
@@ -15014,10 +14975,10 @@ AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001032 "gel CE")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001032 "CHMO:0001032")
 AnnotationAssertion(rdfs:label obo:CHMO_0001032 "capillary gel electrophoresis")
-EquivalentClasses(obo:CHMO_0001032 ObjectIntersectionOf(obo:CHMO_0001021 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983)))
+EquivalentClasses(obo:CHMO_0001032 ObjectIntersectionOf(obo:CHMO_0001021 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983)))
 SubClassOf(obo:CHMO_0001032 obo:CHMO_0001021)
 SubClassOf(obo:CHMO_0001032 obo:CHMO_0001031)
-SubClassOf(obo:CHMO_0001032 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983))
+SubClassOf(obo:CHMO_0001032 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983))
 
 # Class: obo:CHMO_0001033 (capillary isoelectric focusing)
 
@@ -15026,10 +14987,10 @@ AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001033 "capillary isoelectric focussing")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001033 "CHMO:0001033")
 AnnotationAssertion(rdfs:label obo:CHMO_0001033 "capillary isoelectric focusing")
-EquivalentClasses(obo:CHMO_0001033 ObjectIntersectionOf(obo:CHMO_0001026 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983)))
+EquivalentClasses(obo:CHMO_0001033 ObjectIntersectionOf(obo:CHMO_0001026 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983)))
 SubClassOf(obo:CHMO_0001033 obo:CHMO_0001024)
 SubClassOf(obo:CHMO_0001033 obo:CHMO_0001026)
-SubClassOf(obo:CHMO_0001033 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983))
+SubClassOf(obo:CHMO_0001033 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983))
 
 # Class: obo:CHMO_0001034 (capillary isotachophoresis)
 
@@ -15037,10 +14998,10 @@ AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'capillary isotach
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09916>) obo:OMO_0003012 obo:CHMO_0001034 "CITP")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001034 "CHMO:0001034")
 AnnotationAssertion(rdfs:label obo:CHMO_0001034 "capillary isotachophoresis")
-EquivalentClasses(obo:CHMO_0001034 ObjectIntersectionOf(obo:CHMO_0001025 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983)))
+EquivalentClasses(obo:CHMO_0001034 ObjectIntersectionOf(obo:CHMO_0001025 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983)))
 SubClassOf(obo:CHMO_0001034 obo:CHMO_0001024)
 SubClassOf(obo:CHMO_0001034 obo:CHMO_0001025)
-SubClassOf(obo:CHMO_0001034 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983))
+SubClassOf(obo:CHMO_0001034 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983))
 
 # Class: obo:CHMO_0001035 (electrokinetic chromatography)
 
@@ -15051,7 +15012,7 @@ AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001035 "CHMO:0001035")
 AnnotationAssertion(rdfs:label obo:CHMO_0001035 "electrokinetic chromatography")
 SubClassOf(obo:CHMO_0001035 obo:CHMO_0000999)
-SubClassOf(obo:CHMO_0001035 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983))
+SubClassOf(obo:CHMO_0001035 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983))
 
 # Class: obo:CHMO_0001036 (micellar electrokinetic chromatography)
 
@@ -15089,10 +15050,10 @@ AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.09911>) oboInOwl:hasExactSynonym obo:CHMO_0001039 "affinity capillary electrophoresis")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001039 "CHMO:0001039")
 AnnotationAssertion(rdfs:label obo:CHMO_0001039 "capillary affinity electrophoresis")
-EquivalentClasses(obo:CHMO_0001039 ObjectIntersectionOf(obo:CHMO_0001040 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983)))
+EquivalentClasses(obo:CHMO_0001039 ObjectIntersectionOf(obo:CHMO_0001040 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983)))
 SubClassOf(obo:CHMO_0001039 obo:CHMO_0001024)
 SubClassOf(obo:CHMO_0001039 obo:CHMO_0001040)
-SubClassOf(obo:CHMO_0001039 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983))
+SubClassOf(obo:CHMO_0001039 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983))
 
 # Class: obo:CHMO_0001040 (affinity electrophoresis)
 
@@ -15168,10 +15129,10 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001049 "cap-LC")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001049 "capLC")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001049 "CHMO:0001049")
 AnnotationAssertion(rdfs:label obo:CHMO_0001049 "capillary liquid chromatography")
-EquivalentClasses(obo:CHMO_0001049 ObjectIntersectionOf(obo:CHMO_0001000 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983) ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000991)))
+EquivalentClasses(obo:CHMO_0001049 ObjectIntersectionOf(obo:CHMO_0001000 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983) ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000991)))
 SubClassOf(obo:CHMO_0001049 obo:CHMO_0001000)
-SubClassOf(obo:CHMO_0001049 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000983))
-SubClassOf(obo:CHMO_0001049 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000991))
+SubClassOf(obo:CHMO_0001049 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000983))
+SubClassOf(obo:CHMO_0001049 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000991))
 
 # Class: obo:CHMO_0001050 (reversed-phase liquid chromatography)
 
@@ -15979,7 +15940,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001132 "2009-03-06T05:23:07
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001132 "CHMO:0001132")
 AnnotationAssertion(rdfs:label obo:CHMO_0001132 "laser ablation")
 SubClassOf(obo:CHMO_0001132 obo:COB_0000110)
-SubClassOf(obo:CHMO_0001132 ObjectSomeValuesFrom(obo:BFO_0000057 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0001132 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0400064))
 
 # Class: obo:CHMO_0001133 (obo:CHMO_0001133)
 
@@ -16063,7 +16024,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001141 "207Pb-NMR")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001141 "CHMO:0001141")
 AnnotationAssertion(rdfs:label obo:CHMO_0001141 "207Pb nuclear magnetic resonance spectroscopy")
 SubClassOf(obo:CHMO_0001141 obo:CHMO_0000613)
-SubClassOf(obo:CHMO_0001141 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_52455))
+SubClassOf(obo:CHMO_0001141 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_52455))
 
 # Class: obo:CHMO_0001142 (207Pb magic angle spinning nuclear magnetic resonance spectroscopy)
 
@@ -18328,7 +18289,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001321 "laser-induced che
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001321 "CHMO:0001321")
 AnnotationAssertion(rdfs:label obo:CHMO_0001321 "laser chemical vapour deposition")
 SubClassOf(obo:CHMO_0001321 obo:CHMO_0001314)
-SubClassOf(obo:CHMO_0001321 ObjectSomeValuesFrom(obo:BFO_0000057 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0001321 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0400064))
 
 # Class: obo:CHMO_0001322 (low-pressure chemical vapour deposition)
 
@@ -18834,7 +18795,7 @@ AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0001367 "IBS")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001367 "CHMO:0001367")
 AnnotationAssertion(rdfs:label obo:CHMO_0001367 "ion-beam sputter deposition")
 SubClassOf(obo:CHMO_0001367 obo:CHMO_0001364)
-SubClassOf(obo:CHMO_0001367 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000960))
+SubClassOf(obo:CHMO_0001367 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000960))
 
 # Class: obo:CHMO_0001368 (magnetron sputter deposition)
 
@@ -18842,9 +18803,9 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001368 "magnetron sputtering")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001368 "CHMO:0001368")
 AnnotationAssertion(rdfs:label obo:CHMO_0001368 "magnetron sputter deposition")
-EquivalentClasses(obo:CHMO_0001368 ObjectIntersectionOf(obo:CHMO_0001364 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002896)))
+EquivalentClasses(obo:CHMO_0001368 ObjectIntersectionOf(obo:CHMO_0001364 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002896)))
 SubClassOf(obo:CHMO_0001368 obo:CHMO_0001364)
-SubClassOf(obo:CHMO_0001368 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002896))
+SubClassOf(obo:CHMO_0001368 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002896))
 
 # Class: obo:CHMO_0001369 (high power impulse magnetron sputter deposition)
 
@@ -19797,7 +19758,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001475 "CHMO:0001475")
 AnnotationAssertion(rdfs:label obo:CHMO_0001475 "laser cooling")
 SubClassOf(obo:CHMO_0001475 obo:CHMO_0001474)
-SubClassOf(obo:CHMO_0001475 ObjectSomeValuesFrom(obo:BFO_0000057 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0001475 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0400064))
 
 # Class: obo:CHMO_0001476 (melt cooling)
 
@@ -20067,7 +20028,7 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0001508 "CHMO:0001508")
 AnnotationAssertion(rdfs:comment obo:CHMO_0001508 "try to find a located_in relationship")
 AnnotationAssertion(rdfs:label obo:CHMO_0001508 "ion-source pyrolysis")
 SubClassOf(obo:CHMO_0001508 obo:CHMO_0001502)
-SubClassOf(obo:CHMO_0001508 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000960))
+SubClassOf(obo:CHMO_0001508 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000960))
 
 # Class: obo:CHMO_0001509 (isothermal pyrolysis)
 
@@ -20082,7 +20043,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:3527303022") obo:IAO_000
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001510 "CHMO:0001510")
 AnnotationAssertion(rdfs:label obo:CHMO_0001510 "laser pyrolysis")
 SubClassOf(obo:CHMO_0001510 obo:CHMO_0001502)
-SubClassOf(obo:CHMO_0001510 ObjectSomeValuesFrom(obo:BFO_0000057 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0001510 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0400064))
 
 # Class: obo:CHMO_0001511 (off-line pyrolysis)
 
@@ -20235,7 +20196,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001530 "laser microdissec
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001530 "CHMO:0001530")
 AnnotationAssertion(rdfs:label obo:CHMO_0001530 "laser micro-dissection")
 SubClassOf(obo:CHMO_0001530 obo:CHMO_0001529)
-SubClassOf(obo:CHMO_0001530 ObjectSomeValuesFrom(obo:BFO_0000057 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0001530 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0400064))
 
 # Class: obo:CHMO_0001531 (laser capture micro-dissection)
 
@@ -20766,7 +20727,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001591 "stir-bar sorptive
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001591 "CHMO:0001591")
 AnnotationAssertion(rdfs:label obo:CHMO_0001591 "stir-bar solid-phase extraction")
 SubClassOf(obo:CHMO_0001591 obo:CHMO_0001583)
-SubClassOf(obo:CHMO_0001591 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002776))
+SubClassOf(obo:CHMO_0001591 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002776))
 
 # Class: obo:CHMO_0001592 (magnetic bead extraction)
 
@@ -21403,7 +21364,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001661 "laser desorption 
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001661 "CHMO:0001661")
 AnnotationAssertion(rdfs:label obo:CHMO_0001661 "laser desorption electrospray ionisation")
 SubClassOf(obo:CHMO_0001661 obo:CHMO_0001659)
-SubClassOf(obo:CHMO_0001661 ObjectSomeValuesFrom(obo:BFO_0000057 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0001661 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0400064))
 
 # Class: obo:CHMO_0001662 (matrix-assisted laser desorption electrospray ionisation)
 
@@ -21769,7 +21730,7 @@ AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0001705 "SLS")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001705 "CHMO:0001705")
 AnnotationAssertion(rdfs:label obo:CHMO_0001705 "selective laser sintering")
 SubClassOf(obo:CHMO_0001705 obo:CHMO_0001703)
-SubClassOf(obo:CHMO_0001705 ObjectSomeValuesFrom(obo:BFO_0000057 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0001705 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0400064))
 
 # Class: obo:CHMO_0001706 (spark plasma sintering)
 
@@ -21922,7 +21883,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001722 "laser induced flu
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001722 "CHMO:0001722")
 AnnotationAssertion(rdfs:label obo:CHMO_0001722 "laser-induced fluorescence detection")
 SubClassOf(obo:CHMO_0001722 obo:CHMO_0000060)
-SubClassOf(obo:CHMO_0001722 ObjectSomeValuesFrom(obo:BFO_0000057 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0001722 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0400064))
 
 # Class: obo:CHMO_0001723 (helium ionisation detection)
 
@@ -22445,7 +22406,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001769 "optical tweezing"
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001769 "CHMO:0001769")
 AnnotationAssertion(rdfs:label obo:CHMO_0001769 "laser trapping")
 SubClassOf(obo:CHMO_0001769 obo:CHMO_0001768)
-SubClassOf(obo:CHMO_0001769 ObjectSomeValuesFrom(obo:BFO_0000057 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0001769 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0400064))
 
 # Class: obo:CHMO_0001770 (deep-level transient spectroscopy)
 
@@ -22669,7 +22630,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasSynonymType chmo:non-mining_synonym) 
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001787 "CHMO:0001787")
 AnnotationAssertion(rdfs:label obo:CHMO_0001787 "laser sintering")
 SubClassOf(obo:CHMO_0001787 obo:CHMO_0001703)
-SubClassOf(obo:CHMO_0001787 ObjectSomeValuesFrom(obo:BFO_0000057 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0001787 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0400064))
 
 # Class: obo:CHMO_0001788 (argon plasma sintering)
 
@@ -27970,7 +27931,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002202 "matrix assisted l
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002202 "CHMO:0002202")
 AnnotationAssertion(rdfs:label obo:CHMO_0002202 "matrix assisted laser desorption-ionisation mass spectrometer")
 SubClassOf(obo:CHMO_0002202 obo:CHMO_0000982)
-SubClassOf(obo:CHMO_0002202 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002203))
+SubClassOf(obo:CHMO_0002202 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002203))
 
 # Class: obo:CHMO_0002203 (matrix assisted laser desorption-ionisation plate)
 
@@ -28258,7 +28219,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002227 "EDX spectrum")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002227 "CHMO:0002227")
 AnnotationAssertion(rdfs:label obo:CHMO_0002227 "energy-dispersive X-ray spectrum")
 SubClassOf(obo:CHMO_0002227 obo:CHMO_0000830)
-SubClassOf(obo:CHMO_0002227 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0001809))
+SubClassOf(obo:CHMO_0002227 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001809))
 SubClassOf(obo:CHMO_0002227 ObjectSomeValuesFrom(obo:OBI_0000312 obo:CHMO_0000309))
 SubClassOf(obo:CHMO_0002227 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001809))
 
@@ -28269,9 +28230,9 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002228 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002228 "2009-07-29T09:37:53Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002228 "CHMO:0002228")
 AnnotationAssertion(rdfs:label obo:CHMO_0002228 "cone calorimetry")
-EquivalentClasses(obo:CHMO_0002228 ObjectIntersectionOf(obo:CHMO_0000682 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002229)))
+EquivalentClasses(obo:CHMO_0002228 ObjectIntersectionOf(obo:CHMO_0000682 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002229)))
 SubClassOf(obo:CHMO_0002228 obo:CHMO_0000682)
-SubClassOf(obo:CHMO_0002228 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002229))
+SubClassOf(obo:CHMO_0002228 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002229))
 
 # Class: obo:CHMO_0002229 (cone calorimeter)
 
@@ -28633,7 +28594,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002258 "SAX chromatograph
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002258 "CHMO:0002258")
 AnnotationAssertion(rdfs:label obo:CHMO_0002258 "strong-anion-exchange chromatography")
 SubClassOf(obo:CHMO_0002258 obo:CHMO_0001209)
-SubClassOf(obo:CHMO_0002258 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002268))
+SubClassOf(obo:CHMO_0002258 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002268))
 
 # Class: obo:CHMO_0002259 (weak-anion-exchange chromatography)
 
@@ -28644,7 +28605,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002259 "WAX chromatograph
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002259 "CHMO:0002259")
 AnnotationAssertion(rdfs:label obo:CHMO_0002259 "weak-anion-exchange chromatography")
 SubClassOf(obo:CHMO_0002259 obo:CHMO_0001209)
-SubClassOf(obo:CHMO_0002259 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002269))
+SubClassOf(obo:CHMO_0002259 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002269))
 
 # Class: obo:CHMO_0002260 (strong-cation-exchange chromatography)
 
@@ -28654,7 +28615,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002260 "2009-08-10T03:00:45
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002260 "CHMO:0002260")
 AnnotationAssertion(rdfs:label obo:CHMO_0002260 "strong-cation-exchange chromatography")
 SubClassOf(obo:CHMO_0002260 obo:CHMO_0001210)
-SubClassOf(obo:CHMO_0002260 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002266))
+SubClassOf(obo:CHMO_0002260 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002266))
 
 # Class: obo:CHMO_0002261 (weak-cation-exchange chromatography)
 
@@ -28664,7 +28625,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002261 "2009-08-10T03:02:20
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002261 "CHMO:0002261")
 AnnotationAssertion(rdfs:label obo:CHMO_0002261 "weak-cation-exchange chromatography")
 SubClassOf(obo:CHMO_0002261 obo:CHMO_0001210)
-SubClassOf(obo:CHMO_0002261 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002267))
+SubClassOf(obo:CHMO_0002261 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002267))
 
 # Class: obo:CHMO_0002262 (hydrophilic interaction chromatography)
 
@@ -31153,9 +31114,9 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002467 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002467 "2009-09-29T11:58:40Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002467 "CHMO:0002467")
 AnnotationAssertion(rdfs:label obo:CHMO_0002467 "analyte")
-EquivalentClasses(obo:CHMO_0002467 ObjectIntersectionOf(obo:CHMO_0000993 ObjectSomeValuesFrom(obo:BFO_0000087 obo:CHMO_0002740)))
+EquivalentClasses(obo:CHMO_0002467 ObjectIntersectionOf(obo:CHMO_0000993 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002740)))
 SubClassOf(obo:CHMO_0002467 obo:CHMO_0000993)
-SubClassOf(obo:CHMO_0002467 ObjectSomeValuesFrom(obo:BFO_0000087 obo:CHMO_0002740))
+SubClassOf(obo:CHMO_0002467 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002740))
 
 # Class: obo:CHMO_0002468 (obo:CHMO_0002468)
 
@@ -34308,9 +34269,9 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002719 "QTOF-MS")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002719 "CHMO:0002719")
 AnnotationAssertion(rdfs:label obo:CHMO_0002719 "quadrupole time-of-flight mass spectrometry")
 SubClassOf(obo:CHMO_0002719 obo:CHMO_0000504)
-SubClassOf(obo:CHMO_0002719 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000961))
-SubClassOf(obo:CHMO_0002719 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000962))
-SubClassOf(obo:CHMO_0002719 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0000963))
+SubClassOf(obo:CHMO_0002719 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000961))
+SubClassOf(obo:CHMO_0002719 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000962))
+SubClassOf(obo:CHMO_0002719 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000963))
 
 # Class: obo:CHMO_0002720 (microwave induced plasma atomic emission detection)
 
@@ -34594,9 +34555,9 @@ SubClassOf(obo:CHMO_0002742 obo:CHMO_0001577)
 AnnotationAssertion(Annotation(dcterms:bibliographicCitation "'matrix' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M03758") Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>) Annotation(dcterms:rightsHolder <https://ror.org/03ne2zw20>) Annotation(dcterms:source <https://doi.org/10.1351/goldbook.M03758>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0001-5985-7429>) obo:IAO_0000115 obo:CHMO_0002743 "A portion of material representing \"those components of a sample\" that are not measured by an experiment.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002743 "CHMO:0002743")
 AnnotationAssertion(rdfs:label obo:CHMO_0002743 "matrix")
-EquivalentClasses(obo:CHMO_0002743 ObjectIntersectionOf(obo:CHMO_0000993 ObjectSomeValuesFrom(obo:BFO_0000087 obo:CHMO_0002744)))
+EquivalentClasses(obo:CHMO_0002743 ObjectIntersectionOf(obo:CHMO_0000993 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002744)))
 SubClassOf(obo:CHMO_0002743 obo:CHMO_0000993)
-SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:BFO_0000087 obo:CHMO_0002744))
+SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002744))
 SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_0002746))
 SubClassOf(obo:CHMO_0002743 ObjectSomeValuesFrom(obo:RO_0000087 obo:CHMO_0002744))
 
@@ -34929,7 +34890,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002786 "CHMO:0002786")
 AnnotationAssertion(rdfs:label obo:CHMO_0002786 "filter cake")
 SubClassOf(obo:CHMO_0002786 obo:CHMO_0000993)
-SubClassOf(obo:CHMO_0002786 ObjectSomeValuesFrom(obo:BFO_0000068 obo:CHMO_0001640))
+SubClassOf(obo:CHMO_0002786 ObjectSomeValuesFrom(obo:RO_0002488 obo:CHMO_0001640))
 
 # Class: obo:CHMO_0002787 (syringe pump)
 
@@ -35003,7 +34964,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/97818
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002796 "CHMO:0002796")
 AnnotationAssertion(rdfs:label obo:CHMO_0002796 "dosimetry")
 SubClassOf(obo:CHMO_0002796 obo:OBI_0000070)
-SubClassOf(obo:CHMO_0002796 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002797))
+SubClassOf(obo:CHMO_0002796 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002797))
 
 # Class: obo:CHMO_0002797 (dosimeter)
 
@@ -35018,7 +34979,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/97818
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002798 "CHMO:0002798")
 AnnotationAssertion(rdfs:label obo:CHMO_0002798 "chemodosimetry")
 SubClassOf(obo:CHMO_0002798 obo:CHMO_0002796)
-SubClassOf(obo:CHMO_0002798 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002799))
+SubClassOf(obo:CHMO_0002798 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002799))
 
 # Class: obo:CHMO_0002799 (chemodosimeter)
 
@@ -35268,7 +35229,7 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0002829 "CHMO:0002829")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002829 "CHEBI:28262 here is a placeholder - really there should be a portion of material descendant like 'buffer solution'")
 AnnotationAssertion(rdfs:label obo:CHMO_0002829 "storage in dimethyl sulfoxide")
 SubClassOf(obo:CHMO_0002829 obo:OBI_0302893)
-SubClassOf(obo:CHMO_0002829 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_28262))
+SubClassOf(obo:CHMO_0002829 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_28262))
 
 # Class: obo:CHMO_0002830 (experimental plan revision)
 
@@ -35398,7 +35359,7 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0002846 "CHMO:0002846")
 AnnotationAssertion(rdfs:comment obo:CHMO_0002846 "does every autoclaving happen as part of waste management?")
 AnnotationAssertion(rdfs:label obo:CHMO_0002846 "autoclaving")
 SubClassOf(obo:CHMO_0002846 obo:COB_0000110)
-SubClassOf(obo:CHMO_0002846 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002166))
+SubClassOf(obo:CHMO_0002846 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002166))
 
 # Class: obo:CHMO_0002847 (limit of linearity)
 
@@ -35726,7 +35687,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002892 "CHMO:0002892")
 AnnotationAssertion(rdfs:label obo:CHMO_0002892 "excitation laser function")
 SubClassOf(obo:CHMO_0002892 obo:BFO_0000034)
-SubClassOf(obo:CHMO_0002892 ObjectSomeValuesFrom(obo:BFO_0000052 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0002892 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0400064))
 
 # Class: obo:CHMO_0002893 (probe laser function)
 
@@ -35734,7 +35695,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002893 "CHMO:0002893")
 AnnotationAssertion(rdfs:label obo:CHMO_0002893 "probe laser function")
 SubClassOf(obo:CHMO_0002893 obo:BFO_0000034)
-SubClassOf(obo:CHMO_0002893 ObjectSomeValuesFrom(obo:BFO_0000052 obo:OBI_0400064))
+SubClassOf(obo:CHMO_0002893 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0400064))
 
 # Class: obo:CHMO_0002894 (excitation laser)
 
@@ -35772,7 +35733,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002898 "CHMO:0002898")
 AnnotationAssertion(rdfs:label obo:CHMO_0002898 "polarimetry of sample dissolved in chloroform")
 SubClassOf(obo:CHMO_0002898 obo:CHMO_0000779)
-SubClassOf(obo:CHMO_0002898 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_35255))
+SubClassOf(obo:CHMO_0002898 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_35255))
 
 # Class: obo:CHMO_0002899 (polarimetry of sample dissolved in dimethyl sulfoxide)
 
@@ -35780,7 +35741,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002899 "CHMO:0002899")
 AnnotationAssertion(rdfs:label obo:CHMO_0002899 "polarimetry of sample dissolved in dimethyl sulfoxide")
 SubClassOf(obo:CHMO_0002899 obo:CHMO_0000779)
-SubClassOf(obo:CHMO_0002899 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHEBI_28262))
+SubClassOf(obo:CHMO_0002899 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHEBI_28262))
 
 # Class: obo:CHMO_0002900 (angle of optical rotation in chloroform)
 
@@ -35845,7 +35806,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002906 "CHMO:0002906")
 AnnotationAssertion(rdfs:label obo:CHMO_0002906 "microwave-assisted hydrothermal synthesis")
 SubClassOf(obo:CHMO_0002906 obo:CHMO_0001377)
-SubClassOf(obo:CHMO_0002906 ObjectSomeValuesFrom(obo:BFO_0000057 obo:OBI_0001061))
+SubClassOf(obo:CHMO_0002906 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0001061))
 
 # Class: obo:CHMO_0002907 (temperature-programmed oxidation)
 
@@ -35895,7 +35856,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002912 "CHMO:0002912")
 AnnotationAssertion(rdfs:label obo:CHMO_0002912 "figure-of-merit determination")
 SubClassOf(obo:CHMO_0002912 obo:OBI_0000070)
-SubClassOf(obo:CHMO_0002912 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0002913))
+SubClassOf(obo:CHMO_0002912 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002913))
 SubClassOf(obo:CHMO_0002912 ObjectSomeValuesFrom(obo:OBI_0000299 obo:CHMO_0002803))
 SubClassOf(obo:CHMO_0002912 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002913))
 
@@ -36220,7 +36181,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:id obo:CHMO_0010013 "CHMO:0010013")
 AnnotationAssertion(rdfs:label obo:CHMO_0010013 "penetration of personal protective equipment")
 SubClassOf(obo:CHMO_0010013 obo:CHMO_0010009)
-SubClassOf(obo:CHMO_0010013 ObjectSomeValuesFrom(obo:BFO_0000057 obo:CHMO_0010011))
+SubClassOf(obo:CHMO_0010013 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0010011))
 
 # Class: obo:CHMO_0010014 (laboratory safety function)
 
