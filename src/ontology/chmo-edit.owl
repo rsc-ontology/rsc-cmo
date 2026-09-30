@@ -2989,6 +2989,11 @@ Declaration(Class(obo:CHMO_0010024))
 Declaration(Class(obo:CHMO_0010025))
 Declaration(Class(obo:OBCS_0000058))
 Declaration(Class(obo:OBCS_0000059))
+Declaration(Class(obo:OBI_0003854))
+Declaration(Class(obo:OBI_0003855))
+Declaration(Class(obo:OBI_0003856))
+Declaration(Class(obo:OBI_0003857))
+Declaration(Class(obo:OBI_0003930))
 Declaration(ObjectProperty(obo:BFO_0000054))
 Declaration(ObjectProperty(obo:BFO_0000056))
 Declaration(ObjectProperty(obo:BFO_0000063))
@@ -3804,24 +3809,28 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000066 "CHMO:0000066")
 AnnotationAssertion(rdfs:label obo:CHMO_0000066 "time-resolved fluorescence quenching")
 SubClassOf(obo:CHMO_0000066 obo:CHMO_0002406)
 
-# Class: obo:CHMO_0000067 (microscopy)
+# Class: obo:CHMO_0000067 (obsolete microscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000067 "Any technique where a microscope is used to view a small object (or specimen) by producing a magnified image.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000067 "OBSOLETE. Any technique where a microscope is used to view a small object (or specimen) by producing a magnified image.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0000067 "As part of the re-harmonization of CHMO with OBI (see https://github.com/obi-ontology/obi/issues/1952) this term was deprecated in favor of OBI:0002119 (microscopy assay).")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0000067 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0000067 obo:OBI_0002119)
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000067 "FIX:0000005")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000067 "CHMO:0000067")
-AnnotationAssertion(rdfs:label obo:CHMO_0000067 "microscopy")
-SubClassOf(obo:CHMO_0000067 obo:OBI_0000185)
-SubClassOf(obo:CHMO_0000067 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000953))
+AnnotationAssertion(rdfs:label obo:CHMO_0000067 "obsolete microscopy")
+AnnotationAssertion(owl:deprecated obo:CHMO_0000067 "true"^^xsd:boolean)
 
-# Class: obo:CHMO_0000068 (electron microscopy)
+# Class: obo:CHMO_0000068 (obsolete electron microscopy)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.E02002>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.S05484>) obo:IAO_0000115 obo:CHMO_0000068 "A microscopy in which the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50-150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.E02002>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.S05484>) obo:IAO_0000115 obo:CHMO_0000068 "OBSOLETE. A microscopy in which the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50-150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0000068 "As part of the re-harmonization of CHMO with OBI (see https://github.com/obi-ontology/obi/issues/1952) this term was deprecated in favor of OBI:0001631 (electron microscopy imaging assay).")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0000068 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0000068 obo:OBI_0001631)
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000068 "FIX:0000051")
 AnnotationAssertion(Annotation(oboInOwl:hasSynonymType obo:OMO_0003012) oboInOwl:hasExactSynonym obo:CHMO_0000068 "EM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000068 "CHMO:0000068")
-AnnotationAssertion(rdfs:label obo:CHMO_0000068 "electron microscopy")
-SubClassOf(obo:CHMO_0000068 obo:CHMO_0000067)
-SubClassOf(obo:CHMO_0000068 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001088))
+AnnotationAssertion(rdfs:label obo:CHMO_0000068 "obsolete electron microscopy")
+AnnotationAssertion(owl:deprecated obo:CHMO_0000068 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0000069 (field-emission electron microscopy)
 
@@ -3833,7 +3842,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000069 "field emission mi
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000069 "field-emission microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000069 "CHMO:0000069")
 AnnotationAssertion(rdfs:label obo:CHMO_0000069 "field-emission electron microscopy")
-SubClassOf(obo:CHMO_0000069 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0000069 obo:OBI_0001631)
 
 # Class: obo:CHMO_0000070 (low-energy electron microscopy)
 
@@ -3845,7 +3854,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000070 "low energy electr
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000070 "low-energy EM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000070 "CHMO:0000070")
 AnnotationAssertion(rdfs:label obo:CHMO_0000070 "low-energy electron microscopy")
-SubClassOf(obo:CHMO_0000070 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0000070 obo:OBI_0001631)
 
 # Class: obo:CHMO_0000071 (spin-polarised low energy electron microscopy)
 
@@ -3869,7 +3878,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000072 "REM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000072 "reflection EM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000072 "CHMO:0000072")
 AnnotationAssertion(rdfs:label obo:CHMO_0000072 "reflection electron microscopy")
-SubClassOf(obo:CHMO_0000072 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0000072 obo:OBI_0001631)
 
 # Class: obo:CHMO_0000073 (scanning electron microscopy)
 
@@ -3879,7 +3888,7 @@ AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000073 "FIX:0000124")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000073 "scanning electronic microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000073 "CHMO:0000073")
 AnnotationAssertion(rdfs:label obo:CHMO_0000073 "scanning electron microscopy")
-SubClassOf(obo:CHMO_0000073 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0000073 obo:OBI_0001631)
 
 # Class: obo:CHMO_0000074 (field-emission scanning electron microscopy)
 
@@ -3965,7 +3974,7 @@ AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000080 "FIX:0000126")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000080 "CHMO:0000080")
 AnnotationAssertion(rdfs:label obo:CHMO_0000080 "transmission electron microscopy")
-SubClassOf(obo:CHMO_0000080 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0000080 obo:OBI_0001631)
 
 # Class: obo:CHMO_0000081 (cryogenic transmission electron microscopy)
 
@@ -4051,31 +4060,40 @@ AnnotationAssertion(rdfs:label obo:CHMO_0000086 "scanning transmission electron 
 SubClassOf(obo:CHMO_0000086 obo:CHMO_0000073)
 SubClassOf(obo:CHMO_0000086 obo:CHMO_0000080)
 
-# Class: obo:CHMO_0000087 (fluorescence microscopy assay)
+# Class: obo:CHMO_0000087 (obsolete fluorescence microscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000087 "Any type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with light of specific wavelengths. These specimens are called fluorophores.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000087 "OBSOLETE. Any type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with light of specific wavelengths. These specimens are called fluorophores.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0000087 "Historically, OBI adopted this term from CHMO, by adding it to its assay template TSV instead of importing it. While CHMO (as an OBI extension) also merged external terms into its OWL file instead of using owl:imports this was not caught as a problem. But, when CHMO switched to an ODK edit workflow (properly using owl:import) this circular dependency got surfaced. To resolve this and establish clear ownership, the term was migrated as is to OBI with a new IRI (OBI:0003855). See also this corresponding issue: https://github.com/obi-ontology/obi/issues/1952")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0000087 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0000087 obo:OBI_0003855)
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000087 "FIX:0000123")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000087 "FM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000087 "fluorescence imaging")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000087 "fluorescence microscopic imaging")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000087 "CHMO:0000087")
-AnnotationAssertion(rdfs:label obo:CHMO_0000087 "fluorescence microscopy")
-SubClassOf(obo:CHMO_0000087 obo:CHMO_0000067)
+AnnotationAssertion(rdfs:label obo:CHMO_0000087 "obsolete fluorescence microscopy")
+AnnotationAssertion(owl:deprecated obo:CHMO_0000087 "true"^^xsd:boolean)
 
-# Class: obo:CHMO_0000088 (fluorescence laser scanning microscopy)
+# Class: obo:CHMO_0000088 (obsolete fluorescence laser scanning microscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000380") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000088 "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a laser spot of specific wavelength over its surface.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000380") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000088 "OBSOLETE. Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a laser spot of specific wavelength over its surface.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0000088 "Historically, OBI adopted this term from CHMO, by adding it to its assay template TSV instead of importing it. While CHMO (as an OBI extension) also merged external terms into its OWL file instead of using owl:imports this was not caught as a problem. But, when CHMO switched to an ODK edit workflow (properly using owl:import) this circular dependency got surfaced. To resolve this and establish clear ownership, the term was migrated as is to OBI with a new IRI (OBI:0003856). See also this corresponding issue: https://github.com/obi-ontology/obi/issues/1952")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0000088 obo:OMO_0001002)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0000088 obo:OBI_0003856)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000088 "FLSM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000088 "LSM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000088 "laser scanning fluorescence microscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000088 "laser scanning microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000088 "CHMO:0000088")
-AnnotationAssertion(rdfs:label obo:CHMO_0000088 "fluorescence laser scanning microscopy")
-SubClassOf(obo:CHMO_0000088 obo:CHMO_0000087)
+AnnotationAssertion(rdfs:label obo:CHMO_0000088 "obsolete fluorescence laser scanning microscopy")
+AnnotationAssertion(owl:deprecated obo:CHMO_0000088 "true"^^xsd:boolean)
 
-# Class: obo:CHMO_0000089 (confocal fluorescence microscopy assay)
+# Class: obo:CHMO_0000089 (obsolete confocal laser scanning microscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/b807581f") obo:IAO_0000115 obo:CHMO_0000089 "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a gas (Ar or Kr) laser spot of specific wavelength over its surface and using a spatial pinhole to eliminate out-of-focus fluorescence.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/b807581f") obo:IAO_0000115 obo:CHMO_0000089 "OBSOLETE. Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a gas (Ar or Kr) laser spot of specific wavelength over its surface and using a spatial pinhole to eliminate out-of-focus fluorescence.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0000089 "Historically, OBI adopted this term from CHMO, by adding it to its assay template TSV instead of importing it. While CHMO (as an OBI extension) also merged external terms into its OWL file instead of using owl:imports this was not caught as a problem. But, when CHMO switched to an ODK edit workflow (properly using owl:import) this circular dependency got surfaced. To resolve this and establish clear ownership, the term was migrated as is to OBI with a new IRI (OBI:0003857). See also this corresponding issue: https://github.com/obi-ontology/obi/issues/1952")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0000089 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0000089 obo:OBI_0003857)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000089 "CLSM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000089 "LSCM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000089 "confocal fluorescence imaging")
@@ -4086,8 +4104,8 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000089 "fluorescence conf
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000089 "fluorescence confocal scanning laser microscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000089 "scanning confocal fluorescence microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000089 "CHMO:0000089")
-AnnotationAssertion(rdfs:label obo:CHMO_0000089 "confocal laser scanning microscopy")
-SubClassOf(obo:CHMO_0000089 obo:CHMO_0000088)
+AnnotationAssertion(rdfs:label obo:CHMO_0000089 "obsolete confocal laser scanning microscopy")
+AnnotationAssertion(owl:deprecated obo:CHMO_0000089 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0000090 (multi-photon laser scanning microscopy)
 
@@ -4098,7 +4116,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000090 "multi photon lase
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000090 "multiphoton laser scanning microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000090 "CHMO:0000090")
 AnnotationAssertion(rdfs:label obo:CHMO_0000090 "multi-photon laser scanning microscopy")
-SubClassOf(obo:CHMO_0000090 obo:CHMO_0000088)
+SubClassOf(obo:CHMO_0000090 obo:OBI_0003856)
 
 # Class: obo:CHMO_0000091 (fluorescence lifetime imaging microscopy)
 
@@ -4107,7 +4125,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000091 "FLIM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000091 "fluorescence-lifetime imaging microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000091 "CHMO:0000091")
 AnnotationAssertion(rdfs:label obo:CHMO_0000091 "fluorescence lifetime imaging microscopy")
-SubClassOf(obo:CHMO_0000091 obo:CHMO_0000087)
+SubClassOf(obo:CHMO_0000091 obo:OBI_0003855)
 
 # Class: obo:CHMO_0000092 (infrared fluorescence microscopy)
 
@@ -4116,7 +4134,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000092 "IR fluorescence m
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000092 "infra-red fluorescence microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000092 "CHMO:0000092")
 AnnotationAssertion(rdfs:label obo:CHMO_0000092 "infrared fluorescence microscopy")
-SubClassOf(obo:CHMO_0000092 obo:CHMO_0000087)
+SubClassOf(obo:CHMO_0000092 obo:OBI_0003855)
 
 # Class: obo:CHMO_0000093 (near-infrared fluorescence microscopy)
 
@@ -4136,7 +4154,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000094 "TIRF microscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000094 "TIRFM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000094 "CHMO:0000094")
 AnnotationAssertion(rdfs:label obo:CHMO_0000094 "total internal reflection fluorescence microscopy")
-SubClassOf(obo:CHMO_0000094 obo:CHMO_0000087)
+SubClassOf(obo:CHMO_0000094 obo:OBI_0003855)
 
 # Class: obo:CHMO_0000095 (ultraviolet fluorescence microscopy)
 
@@ -4148,14 +4166,14 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000095 "ultra-violet fluo
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000095 "ultraviolet fluorescence microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000095 "CHMO:0000095")
 AnnotationAssertion(rdfs:label obo:CHMO_0000095 "ultraviolet fluorescence microscopy")
-SubClassOf(obo:CHMO_0000095 obo:CHMO_0000087)
+SubClassOf(obo:CHMO_0000095 obo:OBI_0003855)
 
 # Class: obo:CHMO_0000096 (visible fluorescence microscopy)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000096 "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with radiation in the visible region (380–750 nm).")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000096 "CHMO:0000096")
 AnnotationAssertion(rdfs:label obo:CHMO_0000096 "visible fluorescence microscopy")
-SubClassOf(obo:CHMO_0000096 obo:CHMO_0000087)
+SubClassOf(obo:CHMO_0000096 obo:OBI_0003855)
 
 # Class: obo:CHMO_0000097 (ion microscopy)
 
@@ -4165,7 +4183,7 @@ AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000097 "FIX:0000962")
 AnnotationAssertion(Annotation(oboInOwl:hasSynonymType obo:OMO_0003012) oboInOwl:hasExactSynonym obo:CHMO_0000097 "IM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000097 "CHMO:0000097")
 AnnotationAssertion(rdfs:label obo:CHMO_0000097 "ion microscopy")
-SubClassOf(obo:CHMO_0000097 obo:CHMO_0000067)
+SubClassOf(obo:CHMO_0000097 obo:OBI_0002119)
 
 # Class: obo:CHMO_0000098 (field ion microscopy)
 
@@ -4218,22 +4236,25 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000101 "CHMO:0000101")
 AnnotationAssertion(rdfs:label obo:CHMO_0000101 "scanning ion microscopy")
 SubClassOf(obo:CHMO_0000101 obo:CHMO_0000097)
 
-# Class: obo:CHMO_0000102 (light microscopy assay)
+# Class: obo:CHMO_0000102 (obsolete optical microscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000102 "Microscopy where the specimen is illuminated with visible light and a system of lenses is used to produce an image.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000102 "OBSOLETE. Microscopy where the specimen is illuminated with visible light and a system of lenses is used to produce an image.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0000102 "Historically, OBI adopted this term from CHMO, by adding it to its assay template TSV instead of importing it. While CHMO (as an OBI extension) also merged external terms into its OWL file instead of using owl:imports this was not caught as a problem. But, when CHMO switched to an ODK edit workflow (properly using owl:import) this circular dependency got surfaced. To resolve this and establish clear ownership, the term was migrated as is to OBI with a new IRI (OBI:0003854). See also this corresponding issue: https://github.com/obi-ontology/obi/issues/1952")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0000102 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0000102 obo:OBI_0003854)
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000102 "FIX:0000113")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000102 "OM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000102 "light microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000102 "CHMO:0000102")
-AnnotationAssertion(rdfs:label obo:CHMO_0000102 "optical microscopy")
-SubClassOf(obo:CHMO_0000102 obo:CHMO_0000067)
+AnnotationAssertion(rdfs:label obo:CHMO_0000102 "obsolete optical microscopy")
+AnnotationAssertion(owl:deprecated obo:CHMO_0000102 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0000103 (confocal microscopy)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:978-3-540-74597-6") obo:IAO_0000115 obo:CHMO_0000103 "Microscopy where visible light coming from the specimen is collected and guided through a pinhole before it is detected. The pinhole allows only light from the focal point to pass to the detector, reducing background interference.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000103 "CHMO:0000103")
 AnnotationAssertion(rdfs:label obo:CHMO_0000103 "confocal microscopy")
-SubClassOf(obo:CHMO_0000103 obo:CHMO_0000102)
+SubClassOf(obo:CHMO_0000103 obo:OBI_0003854)
 
 # Class: obo:CHMO_0000104 (bright-field microscopy)
 
@@ -4244,14 +4265,14 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000104 "transmitted light
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000104 "transmitted-light microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000104 "CHMO:0000104")
 AnnotationAssertion(rdfs:label obo:CHMO_0000104 "bright-field microscopy")
-SubClassOf(obo:CHMO_0000104 obo:CHMO_0000102)
+SubClassOf(obo:CHMO_0000104 obo:OBI_0003854)
 
 # Class: obo:CHMO_0000105 (comparison light microscopy)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0-85404-539-2") obo:IAO_0000115 obo:CHMO_0000105 "Microscopy where two specimens can be compared by illuminating them with visible light using two identical sets of microscope lenses which are linked by an optical bridge.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000105 "CHMO:0000105")
 AnnotationAssertion(rdfs:label obo:CHMO_0000105 "comparison light microscopy")
-SubClassOf(obo:CHMO_0000105 obo:CHMO_0000102)
+SubClassOf(obo:CHMO_0000105 obo:OBI_0003854)
 
 # Class: obo:CHMO_0000106 (optical interference microscopy)
 
@@ -4261,7 +4282,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000106 "OIM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000106 "interference optical microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000106 "CHMO:0000106")
 AnnotationAssertion(rdfs:label obo:CHMO_0000106 "optical interference microscopy")
-SubClassOf(obo:CHMO_0000106 obo:CHMO_0000102)
+SubClassOf(obo:CHMO_0000106 obo:OBI_0003854)
 
 # Class: obo:CHMO_0000107 (differential interference contrast microscopy)
 
@@ -4300,7 +4321,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000110 "PCM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000110 "phase-contrast microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000110 "CHMO:0000110")
 AnnotationAssertion(rdfs:label obo:CHMO_0000110 "phase contrast microscopy")
-SubClassOf(obo:CHMO_0000110 obo:CHMO_0000102)
+SubClassOf(obo:CHMO_0000110 obo:OBI_0003854)
 
 # Class: obo:CHMO_0000111 (polarising light microscopy)
 
@@ -4319,7 +4340,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000111 "polarizing light 
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000111 "polarizing optical microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000111 "CHMO:0000111")
 AnnotationAssertion(rdfs:label obo:CHMO_0000111 "polarising light microscopy")
-SubClassOf(obo:CHMO_0000111 obo:CHMO_0000102)
+SubClassOf(obo:CHMO_0000111 obo:OBI_0003854)
 
 # Class: obo:CHMO_0000112 (scanning probe microscopy)
 
@@ -4328,7 +4349,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000112 "SPM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000112 "scanning-probe microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000112 "CHMO:0000112")
 AnnotationAssertion(rdfs:label obo:CHMO_0000112 "scanning probe microscopy")
-SubClassOf(obo:CHMO_0000112 obo:CHMO_0000067)
+SubClassOf(obo:CHMO_0000112 obo:OBI_0002119)
 
 # Class: obo:CHMO_0000113 (atomic force microscopy)
 
@@ -4548,7 +4569,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000133 "TLM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000133 "thermal-lens microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000133 "CHMO:0000133")
 AnnotationAssertion(rdfs:label obo:CHMO_0000133 "thermal lens microscopy")
-SubClassOf(obo:CHMO_0000133 obo:CHMO_0000067)
+SubClassOf(obo:CHMO_0000133 obo:OBI_0002119)
 SubClassOf(obo:CHMO_0000133 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002894))
 SubClassOf(obo:CHMO_0000133 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0002895))
 
@@ -11482,9 +11503,12 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000700 "CHMO:0000700")
 AnnotationAssertion(rdfs:label obo:CHMO_0000700 "X-ray–ultraviolet photoelectron spectroscopy")
 SubClassOf(obo:CHMO_0000700 obo:CHMO_0000387)
 
-# Class: obo:CHMO_0000701 (liquid chromatography-tandem mass spectrometry)
+# Class: obo:CHMO_0000701 (obsolete liquid chromatography-tandem mass spectrometry)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000701 "A method where a sample mixture is first separated by liquid chromatography before being ionised and characterised by mass-to-charge ratio and relative abundance using two mass spectrometers in series.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000701 "OBSOLETE. A method where a sample mixture is first separated by liquid chromatography before being ionised and characterised by mass-to-charge ratio and relative abundance using two mass spectrometers in series.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0000701 "Historically, OBI adopted this term from CHMO, by adding it to its assay template TSV instead of importing it. While CHMO (as an OBI extension) also merged external terms into its OWL file instead of using owl:imports this was not caught as a problem. But, when CHMO switched to an ODK edit workflow (properly using owl:import) this circular dependency got surfaced. To resolve this and establish clear ownership, the term was migrated as is to OBI with a new IRI (OBI:0003930). See also this corresponding issue: https://github.com/obi-ontology/obi/issues/1952")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0000701 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0000701 obo:OBI_0003930)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000701 "LC-MS-MS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000701 "LC-MS/MS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000701 "LC-MS2")
@@ -11495,11 +11519,8 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000701 "liquid chromatogr
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000701 "liquid chromatography tandem mass spectroscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000701 "liquid chromatography-tandem mass spectroscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000701 "CHMO:0000701")
-AnnotationAssertion(rdfs:label obo:CHMO_0000701 "liquid chromatography-tandem mass spectrometry")
-EquivalentClasses(obo:CHMO_0000701 ObjectIntersectionOf(obo:CHMO_0000575 ObjectSomeValuesFrom(obo:BFO_0000118 obo:CHMO_0001004)))
-SubClassOf(obo:CHMO_0000701 obo:CHMO_0000524)
-SubClassOf(obo:CHMO_0000701 obo:CHMO_0000575)
-SubClassOf(obo:CHMO_0000701 ObjectSomeValuesFrom(obo:BFO_0000118 obo:CHMO_0001004))
+AnnotationAssertion(rdfs:label obo:CHMO_0000701 "obsolete liquid chromatography-tandem mass spectrometry")
+AnnotationAssertion(owl:deprecated obo:CHMO_0000701 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0000702 (capillary electrophoresis-mass spectrometry)
 
@@ -11927,7 +11948,7 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000738 "CHMO:0000738")
 AnnotationAssertion(rdfs:label obo:CHMO_0000738 "reversed-phase liquid chromatography-electrospray ionisation tandem mass spectrometry")
 EquivalentClasses(obo:CHMO_0000738 ObjectIntersectionOf(obo:CHMO_0000577 ObjectSomeValuesFrom(obo:BFO_0000118 obo:CHMO_0001050)))
 SubClassOf(obo:CHMO_0000738 obo:CHMO_0000577)
-SubClassOf(obo:CHMO_0000738 obo:CHMO_0000701)
+SubClassOf(obo:CHMO_0000738 obo:OBI_0003930)
 SubClassOf(obo:CHMO_0000738 ObjectSomeValuesFrom(obo:BFO_0000118 obo:CHMO_0001050))
 
 # Class: obo:CHMO_0000739 (31P nuclear magnetic resonance spectroscopy)
@@ -12268,7 +12289,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000768 "negative stain el
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000768 "negative-stain EM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000768 "CHMO:0000768")
 AnnotationAssertion(rdfs:label obo:CHMO_0000768 "negative-stain electron microscopy")
-SubClassOf(obo:CHMO_0000768 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0000768 obo:OBI_0001631)
 
 # Class: obo:CHMO_0000769 (high resolution scanning electron microscopy)
 
@@ -12311,7 +12332,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000771 "multiphoton fluor
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000771 "multiphoton fluorescence microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000771 "CHMO:0000771")
 AnnotationAssertion(rdfs:label obo:CHMO_0000771 "multiphoton fluorescence microscopy")
-SubClassOf(obo:CHMO_0000771 obo:CHMO_0000087)
+SubClassOf(obo:CHMO_0000771 obo:OBI_0003855)
 
 # Class: obo:CHMO_0000772 (two photon fluorescence microscopy)
 
@@ -14141,7 +14162,7 @@ AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <http
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.S05484>) obo:OMO_0003012 obo:CHMO_0000941 "SEM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000941 "CHMO:0000941")
 AnnotationAssertion(rdfs:label obo:CHMO_0000941 "scanning electron microscope")
-SubClassOf(obo:CHMO_0000941 obo:CHMO_0001088)
+SubClassOf(obo:CHMO_0000941 obo:OBI_0000990)
 
 # Class: obo:CHMO_0000942 (field-emission scanning electron microscope)
 
@@ -14161,7 +14182,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "CHMO:0000112") obo:IAO_000011
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0000943 "SPM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000943 "CHMO:0000943")
 AnnotationAssertion(rdfs:label obo:CHMO_0000943 "scanning probe microscope")
-SubClassOf(obo:CHMO_0000943 obo:CHMO_0000953)
+SubClassOf(obo:CHMO_0000943 obo:OBI_0400169)
 
 # Class: obo:CHMO_0000944 (obo:CHMO_0000944)
 
@@ -14188,13 +14209,16 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000946 "CHMO:0000946")
 AnnotationAssertion(rdfs:label obo:CHMO_0000946 "optical tweezers")
 SubClassOf(obo:CHMO_0000946 obo:COB_0001300)
 
-# Class: obo:CHMO_0000947 (optical microscope)
+# Class: obo:CHMO_0000947 (obsolete optical microscope)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000947 "A piece of apparatus, consisting of an eyepiece, an objective lens, object turret, stage, and light source, which collects electromagnetic radiation in the visible range.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000947 "OBSOLETE. A piece of apparatus, consisting of an eyepiece, an objective lens, object turret, stage, and light source, which collects electromagnetic radiation in the visible range.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0000947 "As part of the re-harmonization of CHMO with OBI (see https://github.com/obi-ontology/obi/issues/1952) this term was deprecated in favor of OBI:0000940 (optical microscope).")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0000947 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0000947 obo:OBI_0000940)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000947 "light microscope")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000947 "CHMO:0000947")
-AnnotationAssertion(rdfs:label obo:CHMO_0000947 "optical microscope")
-SubClassOf(obo:CHMO_0000947 obo:CHMO_0000953)
+AnnotationAssertion(rdfs:label obo:CHMO_0000947 "obsolete optical microscope")
+AnnotationAssertion(owl:deprecated obo:CHMO_0000947 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0000948 (charge-coupled device)
 
@@ -14244,12 +14268,15 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000952 "CHMO:0000952")
 AnnotationAssertion(rdfs:label obo:CHMO_0000952 "atomic force microscopy cantilever")
 SubClassOf(obo:CHMO_0000952 obo:COB_0001300)
 
-# Class: obo:CHMO_0000953 (microscope)
+# Class: obo:CHMO_0000953 (obsolete microscope)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000953 "A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000953 "OBSOLETE. A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0000953 "As part of the re-harmonization of CHMO with OBI (see https://github.com/obi-ontology/obi/issues/1952) this term was deprecated in favor of OBI:0400169 (microscope).")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0000953 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0000953 obo:OBI_0400169)
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000953 "CHMO:0000953")
-AnnotationAssertion(rdfs:label obo:CHMO_0000953 "microscope")
-SubClassOf(obo:CHMO_0000953 obo:COB_0001300)
+AnnotationAssertion(rdfs:label obo:CHMO_0000953 "obsolete microscope")
+AnnotationAssertion(owl:deprecated obo:CHMO_0000953 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0000954 (atomic force microscope)
 
@@ -14257,7 +14284,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "CHMO:0000113") obo:IAO_000011
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0000954 "AFM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000954 "CHMO:0000954")
 AnnotationAssertion(rdfs:label obo:CHMO_0000954 "atomic force microscope")
-SubClassOf(obo:CHMO_0000954 obo:CHMO_0000953)
+SubClassOf(obo:CHMO_0000954 obo:OBI_0400169)
 SubClassOf(obo:CHMO_0000954 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_0000951))
 SubClassOf(obo:CHMO_0000954 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_0000952))
 
@@ -15382,7 +15409,7 @@ SubClassOf(obo:CHMO_0001073 obo:CHMO_0001070)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0001074 "Microscopy in which the same object (e.g., a cell) is imaged at regular time intervals over several hours.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001074 "CHMO:0001074")
 AnnotationAssertion(rdfs:label obo:CHMO_0001074 "time-lapse microscopy")
-SubClassOf(obo:CHMO_0001074 obo:CHMO_0000067)
+SubClassOf(obo:CHMO_0001074 obo:OBI_0002119)
 
 # Class: obo:CHMO_0001075 (elemental analysis)
 
@@ -15476,8 +15503,8 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001084 "time-lapse fluorescence imaging")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001084 "CHMO:0001084")
 AnnotationAssertion(rdfs:label obo:CHMO_0001084 "time-lapse fluorescence microscopy")
-SubClassOf(obo:CHMO_0001084 obo:CHMO_0000087)
 SubClassOf(obo:CHMO_0001084 obo:CHMO_0001074)
+SubClassOf(obo:CHMO_0001084 obo:OBI_0003855)
 
 # Class: obo:CHMO_0001085 (fluorescence-activated cell sorting)
 
@@ -15498,7 +15525,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001086 "photo-emission mi
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001086 "photoelectron microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001086 "CHMO:0001086")
 AnnotationAssertion(rdfs:label obo:CHMO_0001086 "photoemission electron microscopy")
-SubClassOf(obo:CHMO_0001086 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0001086 obo:OBI_0001631)
 
 # Class: obo:CHMO_0001087 (X-ray photoemission electron microscopy)
 
@@ -15510,12 +15537,15 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0001087 "CHMO:0001087")
 AnnotationAssertion(rdfs:label obo:CHMO_0001087 "X-ray photoemission electron microscopy")
 SubClassOf(obo:CHMO_0001087 obo:CHMO_0001086)
 
-# Class: obo:CHMO_0001088 (electron microscope)
+# Class: obo:CHMO_0001088 (obsolete electron microscope)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001088 "A piece of apparatus which is used to produce an enlarged image of a specimen using a finely focused (<10 nm diameter) electron beam with an acceleration voltage of 50–150 kV under vacuum and measuring the interaction of the electrons with the specimen.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001088 "OBSOLETE. A piece of apparatus which is used to produce an enlarged image of a specimen using a finely focused (<10 nm diameter) electron beam with an acceleration voltage of 50–150 kV under vacuum and measuring the interaction of the electrons with the specimen.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0001088 "As part of the re-harmonization of CHMO with OBI (see https://github.com/obi-ontology/obi/issues/1952) this term was deprecated in favor of OBI:0000990 (electron microscope).")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0001088 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0001088 obo:OBI_0000990)
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001088 "CHMO:0001088")
-AnnotationAssertion(rdfs:label obo:CHMO_0001088 "electron microscope")
-SubClassOf(obo:CHMO_0001088 obo:CHMO_0000953)
+AnnotationAssertion(rdfs:label obo:CHMO_0001088 "obsolete electron microscope")
+AnnotationAssertion(owl:deprecated obo:CHMO_0001088 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0001089 (spectroscopic photoemission and low energy electron microscope)
 
@@ -15523,7 +15553,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1002/sia.2
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001089 "SPELEEM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001089 "CHMO:0001089")
 AnnotationAssertion(rdfs:label obo:CHMO_0001089 "spectroscopic photoemission and low energy electron microscope")
-SubClassOf(obo:CHMO_0001089 obo:CHMO_0001088)
+SubClassOf(obo:CHMO_0001089 obo:OBI_0000990)
 
 # Class: obo:CHMO_0001090 (kinetic spectroscopy)
 
@@ -15581,7 +15611,7 @@ SubClassOf(obo:CHMO_0001094 obo:CHMO_0000254)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://www.microscopyu.com/articles/fluorescence/fluorescenceintro.html") obo:IAO_0000115 obo:CHMO_0001095 "A microscope that uses an excitation source to produce light which is passed through an excitation filter, reflects off the surface of a dichroic mirror onto the specimen which fluoresces, producing light that passes through an emission filter to select only the required wavelengths onto the collector lens.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001095 "CHMO:0001095")
 AnnotationAssertion(rdfs:label obo:CHMO_0001095 "fluorescence microscope")
-SubClassOf(obo:CHMO_0001095 obo:CHMO_0000947)
+SubClassOf(obo:CHMO_0001095 obo:OBI_0000940)
 
 # Class: obo:CHMO_0001096 (epifluorescence microscope)
 
@@ -15612,7 +15642,7 @@ AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0001099 "TEM")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0001099 "transmission EM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001099 "CHMO:0001099")
 AnnotationAssertion(rdfs:label obo:CHMO_0001099 "transmission electron microscope")
-SubClassOf(obo:CHMO_0001099 obo:CHMO_0001088)
+SubClassOf(obo:CHMO_0001099 obo:OBI_0000990)
 
 # Class: obo:CHMO_0001100 (field-emission transmission electron microscope)
 
@@ -15879,7 +15909,7 @@ SubClassOf(obo:CHMO_0001124 obo:CHMO_0000799)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://www.microscopyu.com/articles/confocal/confocalintrobasics.html") obo:IAO_0000115 obo:CHMO_0001125 "An optical microscope that works by scanning one or more focussed beams of light across the specimen.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001125 "CHMO:0001125")
 AnnotationAssertion(rdfs:label obo:CHMO_0001125 "confocal microscope")
-SubClassOf(obo:CHMO_0001125 obo:CHMO_0000947)
+SubClassOf(obo:CHMO_0001125 obo:OBI_0000940)
 
 # Class: obo:CHMO_0001126 (laser-scanning confocal microscope)
 
@@ -22989,7 +23019,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001813 "2009-05-26T12:36:47
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001813 "IR microscope")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001813 "CHMO:0001813")
 AnnotationAssertion(rdfs:label obo:CHMO_0001813 "infrared microscope")
-SubClassOf(obo:CHMO_0001813 obo:CHMO_0000953)
+SubClassOf(obo:CHMO_0001813 obo:OBI_0400169)
 
 # Class: obo:CHMO_0001814 (Raman microscope)
 
@@ -23000,8 +23030,8 @@ AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0001814 "CHMO:0001236")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001814 "Raman microspectrometer")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001814 "CHMO:0001814")
 AnnotationAssertion(rdfs:label obo:CHMO_0001814 "Raman microscope")
-SubClassOf(obo:CHMO_0001814 obo:CHMO_0000953)
 SubClassOf(obo:CHMO_0001814 obo:CHMO_0001235)
+SubClassOf(obo:CHMO_0001814 obo:OBI_0400169)
 
 # Class: obo:CHMO_0001815 (electrochemical quartz crystal microbalance)
 
@@ -23307,7 +23337,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001834 "nanoLCMSMS")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001834 "nanoflow liquid chromatography tandem mass spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001834 "CHMO:0001834")
 AnnotationAssertion(rdfs:label obo:CHMO_0001834 "nanoflow liquid chromatography-tandem mass spectrometry")
-SubClassOf(obo:CHMO_0001834 obo:CHMO_0000701)
+SubClassOf(obo:CHMO_0001834 obo:OBI_0003930)
 SubClassOf(obo:CHMO_0001834 ObjectSomeValuesFrom(obo:BFO_0000118 obo:CHMO_0000575))
 SubClassOf(obo:CHMO_0001834 ObjectSomeValuesFrom(obo:BFO_0000118 obo:CHMO_0001004))
 
@@ -23343,8 +23373,8 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001836 "two-dimensional c
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001836 "two-dimensional liquid chromatography tandem mass spectrometry")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001836 "CHMO:0001836")
 AnnotationAssertion(rdfs:label obo:CHMO_0001836 "two-dimensional liquid chromatography-tandem mass spectrometry")
-SubClassOf(obo:CHMO_0001836 obo:CHMO_0000701)
 SubClassOf(obo:CHMO_0001836 obo:CHMO_0002007)
+SubClassOf(obo:CHMO_0001836 obo:OBI_0003930)
 SubClassOf(obo:CHMO_0001836 ObjectSomeValuesFrom(obo:BFO_0000118 obo:CHMO_0000575))
 SubClassOf(obo:CHMO_0001836 ObjectSomeValuesFrom(obo:BFO_0000118 obo:CHMO_0001004))
 
@@ -24515,7 +24545,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001925 "2009-06-04T04:46:13
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001925 "TIRM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001925 "CHMO:0001925")
 AnnotationAssertion(rdfs:label obo:CHMO_0001925 "total internal reflection microscopy")
-SubClassOf(obo:CHMO_0001925 obo:CHMO_0000102)
+SubClassOf(obo:CHMO_0001925 obo:OBI_0003854)
 
 # Class: obo:CHMO_0001926 (electronic circular dichroism spectroscopy)
 
@@ -27637,7 +27667,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002177 "darkfield microsc
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002177 "darkfield optical microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002177 "CHMO:0002177")
 AnnotationAssertion(rdfs:label obo:CHMO_0002177 "dark-field microscopy")
-SubClassOf(obo:CHMO_0002177 obo:CHMO_0000102)
+SubClassOf(obo:CHMO_0002177 obo:OBI_0003854)
 
 # Class: obo:CHMO_0002178 (dark-field optical micrograph)
 
@@ -27671,7 +27701,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002180 "2009-07-17T04:06:13
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002180 "inverted optical microscope")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002180 "CHMO:0002180")
 AnnotationAssertion(rdfs:label obo:CHMO_0002180 "inverted microscope")
-SubClassOf(obo:CHMO_0002180 obo:CHMO_0000947)
+SubClassOf(obo:CHMO_0002180 obo:OBI_0000940)
 
 # Class: obo:CHMO_0002181 (charge-coupled-device camera)
 
@@ -27832,7 +27862,7 @@ AnnotationAssertion(oboInOwl:created_by obo:CHMO_0002194 "https://orcid.org/0000
 AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002194 "2009-07-21T10:34:34Z")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002194 "CHMO:0002194")
 AnnotationAssertion(rdfs:label obo:CHMO_0002194 "epifluorescence microscopy")
-SubClassOf(obo:CHMO_0002194 obo:CHMO_0000087)
+SubClassOf(obo:CHMO_0002194 obo:OBI_0003855)
 
 # Class: obo:CHMO_0002195 (negative-stained transmission electron micrograph)
 
@@ -28315,7 +28345,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002236 "dark field optica
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002236 "dark-field optical microscope")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002236 "CHMO:0002236")
 AnnotationAssertion(rdfs:label obo:CHMO_0002236 "dark-field microscope")
-SubClassOf(obo:CHMO_0002236 obo:CHMO_0000947)
+SubClassOf(obo:CHMO_0002236 obo:OBI_0000940)
 
 # Class: obo:CHMO_0002237 (transmission electron microscope with an energy dispersive X-ray analyser)
 
@@ -29244,7 +29274,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002312 "XM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002312 "XRM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002312 "CHMO:0002312")
 AnnotationAssertion(rdfs:label obo:CHMO_0002312 "X-ray microscopy")
-SubClassOf(obo:CHMO_0002312 obo:CHMO_0000067)
+SubClassOf(obo:CHMO_0002312 obo:OBI_0002119)
 
 # Class: obo:CHMO_0002313 (transmission X-ray microscopy)
 
@@ -29449,7 +29479,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002329 "high resolution e
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002329 "high-resolution EM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002329 "CHMO:0002329")
 AnnotationAssertion(rdfs:label obo:CHMO_0002329 "high-resolution electron microscopy")
-SubClassOf(obo:CHMO_0002329 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0002329 obo:OBI_0001631)
 
 # Class: obo:CHMO_0002330 (thermal chemical vapour deposition)
 
@@ -30483,7 +30513,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002413 "cryogenic-electro
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002413 "low-temperature electron microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002413 "CHMO:0002413")
 AnnotationAssertion(rdfs:label obo:CHMO_0002413 "cryogenic electron microscopy")
-SubClassOf(obo:CHMO_0002413 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0002413 obo:OBI_0001631)
 
 # Class: obo:CHMO_0002414 (scattering spectroscopy)
 
@@ -30748,8 +30778,8 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002437 "reflection interf
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002437 "reflection interference contrast (RIC-) microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002437 "CHMO:0002437")
 AnnotationAssertion(rdfs:label obo:CHMO_0002437 "reflection interference contrast microscopy")
-SubClassOf(obo:CHMO_0002437 obo:CHMO_0000087)
 SubClassOf(obo:CHMO_0002437 obo:CHMO_0000106)
+SubClassOf(obo:CHMO_0002437 obo:OBI_0003855)
 
 # Class: obo:CHMO_0002438 (Hank's balanced salt solution)
 
@@ -31764,7 +31794,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002520 "single photon las
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002520 "single-photon LSM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002520 "CHMO:0002520")
 AnnotationAssertion(rdfs:label obo:CHMO_0002520 "single-photon laser scanning microscopy")
-SubClassOf(obo:CHMO_0002520 obo:CHMO_0000088)
+SubClassOf(obo:CHMO_0002520 obo:OBI_0003856)
 
 # Class: obo:CHMO_0002521 (atomic absorption spectrometer)
 
@@ -31864,7 +31894,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002527 "polarizing light 
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002527 "polarizing microscope")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002527 "CHMO:0002527")
 AnnotationAssertion(rdfs:label obo:CHMO_0002527 "polarising microscope")
-SubClassOf(obo:CHMO_0002527 obo:CHMO_0000947)
+SubClassOf(obo:CHMO_0002527 obo:OBI_0000940)
 
 # Class: obo:CHMO_0002528 (transmitting polarising microscope)
 
@@ -31889,7 +31919,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002529 "transmitted light
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002529 "transmitted-light microscope")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002529 "CHMO:0002529")
 AnnotationAssertion(rdfs:label obo:CHMO_0002529 "bright-field microscope")
-SubClassOf(obo:CHMO_0002529 obo:CHMO_0000947)
+SubClassOf(obo:CHMO_0002529 obo:OBI_0000940)
 
 # Class: obo:CHMO_0002530 (spray coating)
 
@@ -32899,7 +32929,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002614 "weak beam dark fi
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002614 "weak-beam dark-field (WBDF) electron microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002614 "CHMO:0002614")
 AnnotationAssertion(rdfs:label obo:CHMO_0002614 "weak-beam dark-field electron microscopy")
-SubClassOf(obo:CHMO_0002614 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0002614 obo:OBI_0001631)
 
 # Class: obo:CHMO_0002615 (weak-beam dark-field transmission electron microscopy)
 
@@ -34042,7 +34072,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002703 "fluorescent speck
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0002703 "FSM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002703 "CHMO:0002703")
 AnnotationAssertion(rdfs:label obo:CHMO_0002703 "fluorescence speckle microscopy")
-SubClassOf(obo:CHMO_0002703 obo:CHMO_0000087)
+SubClassOf(obo:CHMO_0002703 obo:OBI_0003855)
 
 # Class: obo:CHMO_0002704 (force spectroscopy mapping)
 
