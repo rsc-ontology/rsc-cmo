@@ -14209,13 +14209,16 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000946 "CHMO:0000946")
 AnnotationAssertion(rdfs:label obo:CHMO_0000946 "optical tweezers")
 SubClassOf(obo:CHMO_0000946 obo:COB_0001300)
 
-# Class: obo:CHMO_0000947 (optical microscope)
+# Class: obo:CHMO_0000947 (obsolete optical microscope)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000947 "A piece of apparatus, consisting of an eyepiece, an objective lens, object turret, stage, and light source, which collects electromagnetic radiation in the visible range.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000947 "OBSOLETE. A piece of apparatus, consisting of an eyepiece, an objective lens, object turret, stage, and light source, which collects electromagnetic radiation in the visible range.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0000947 "As part of the re-harmonization of CHMO with OBI (see https://github.com/obi-ontology/obi/issues/1952) this term was deprecated in favor of OBI:0000940 (optical microscope).")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0000947 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0000947 obo:OBI_0000940)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000947 "light microscope")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000947 "CHMO:0000947")
-AnnotationAssertion(rdfs:label obo:CHMO_0000947 "optical microscope")
-SubClassOf(obo:CHMO_0000947 obo:OBI_0400169)
+AnnotationAssertion(rdfs:label obo:CHMO_0000947 "obsolete optical microscope")
+AnnotationAssertion(owl:deprecated obo:CHMO_0000947 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0000948 (charge-coupled device)
 
@@ -15608,7 +15611,7 @@ SubClassOf(obo:CHMO_0001094 obo:CHMO_0000254)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://www.microscopyu.com/articles/fluorescence/fluorescenceintro.html") obo:IAO_0000115 obo:CHMO_0001095 "A microscope that uses an excitation source to produce light which is passed through an excitation filter, reflects off the surface of a dichroic mirror onto the specimen which fluoresces, producing light that passes through an emission filter to select only the required wavelengths onto the collector lens.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001095 "CHMO:0001095")
 AnnotationAssertion(rdfs:label obo:CHMO_0001095 "fluorescence microscope")
-SubClassOf(obo:CHMO_0001095 obo:CHMO_0000947)
+SubClassOf(obo:CHMO_0001095 obo:OBI_0000940)
 
 # Class: obo:CHMO_0001096 (epifluorescence microscope)
 
@@ -15906,7 +15909,7 @@ SubClassOf(obo:CHMO_0001124 obo:CHMO_0000799)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://www.microscopyu.com/articles/confocal/confocalintrobasics.html") obo:IAO_0000115 obo:CHMO_0001125 "An optical microscope that works by scanning one or more focussed beams of light across the specimen.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001125 "CHMO:0001125")
 AnnotationAssertion(rdfs:label obo:CHMO_0001125 "confocal microscope")
-SubClassOf(obo:CHMO_0001125 obo:CHMO_0000947)
+SubClassOf(obo:CHMO_0001125 obo:OBI_0000940)
 
 # Class: obo:CHMO_0001126 (laser-scanning confocal microscope)
 
@@ -27698,7 +27701,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0002180 "2009-07-17T04:06:13
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002180 "inverted optical microscope")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002180 "CHMO:0002180")
 AnnotationAssertion(rdfs:label obo:CHMO_0002180 "inverted microscope")
-SubClassOf(obo:CHMO_0002180 obo:CHMO_0000947)
+SubClassOf(obo:CHMO_0002180 obo:OBI_0000940)
 
 # Class: obo:CHMO_0002181 (charge-coupled-device camera)
 
@@ -28342,7 +28345,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002236 "dark field optica
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002236 "dark-field optical microscope")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002236 "CHMO:0002236")
 AnnotationAssertion(rdfs:label obo:CHMO_0002236 "dark-field microscope")
-SubClassOf(obo:CHMO_0002236 obo:CHMO_0000947)
+SubClassOf(obo:CHMO_0002236 obo:OBI_0000940)
 
 # Class: obo:CHMO_0002237 (transmission electron microscope with an energy dispersive X-ray analyser)
 
@@ -31891,7 +31894,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002527 "polarizing light 
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002527 "polarizing microscope")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002527 "CHMO:0002527")
 AnnotationAssertion(rdfs:label obo:CHMO_0002527 "polarising microscope")
-SubClassOf(obo:CHMO_0002527 obo:CHMO_0000947)
+SubClassOf(obo:CHMO_0002527 obo:OBI_0000940)
 
 # Class: obo:CHMO_0002528 (transmitting polarising microscope)
 
@@ -31916,7 +31919,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002529 "transmitted light
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002529 "transmitted-light microscope")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002529 "CHMO:0002529")
 AnnotationAssertion(rdfs:label obo:CHMO_0002529 "bright-field microscope")
-SubClassOf(obo:CHMO_0002529 obo:CHMO_0000947)
+SubClassOf(obo:CHMO_0002529 obo:OBI_0000940)
 
 # Class: obo:CHMO_0002530 (spray coating)
 

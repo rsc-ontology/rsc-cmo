@@ -118,6 +118,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000832>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000835>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000838>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000932>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000940>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000947>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000967>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))
@@ -1976,6 +1977,15 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000932> "material separation device")
 EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000932> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/COB_0001300> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000085> <http://purl.obolibrary.org/obo/OBI_0000372>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000932> <http://purl.obolibrary.org/obo/COB_0001300>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000940> (optical microscope)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000940> "optical microscope")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000940> <http://purl.obolibrary.org/obo/IAO_0000120>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000940> "A microscope that produces an image of an object by targeting it with an electro-magnetic beam in the visible frequency range"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000940> "PERSON:Bjoern Peters")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000940> "optical microscope")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000940> <http://purl.obolibrary.org/obo/OBI_0400169>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000947> (service provider role)
 
