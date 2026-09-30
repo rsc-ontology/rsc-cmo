@@ -3820,15 +3820,17 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000067 "CHMO:0000067")
 AnnotationAssertion(rdfs:label obo:CHMO_0000067 "obsolete microscopy")
 AnnotationAssertion(owl:deprecated obo:CHMO_0000067 "true"^^xsd:boolean)
 
-# Class: obo:CHMO_0000068 (electron microscopy)
+# Class: obo:CHMO_0000068 (obsolete electron microscopy)
 
-AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.E02002>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.S05484>) obo:IAO_0000115 obo:CHMO_0000068 "A microscopy in which the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50-150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected.")
+AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.E02002>) Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <https://doi.org/10.1351/goldbook.S05484>) obo:IAO_0000115 obo:CHMO_0000068 "OBSOLETE. A microscopy in which the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50-150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0000068 "As part of the re-harmonization of CHMO with OBI (see https://github.com/obi-ontology/obi/issues/1952) this term was deprecated in favor of OBI:0001631 (electron microscopy imaging assay).")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0000068 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0000068 obo:OBI_0001631)
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000068 "FIX:0000051")
 AnnotationAssertion(Annotation(oboInOwl:hasSynonymType obo:OMO_0003012) oboInOwl:hasExactSynonym obo:CHMO_0000068 "EM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000068 "CHMO:0000068")
-AnnotationAssertion(rdfs:label obo:CHMO_0000068 "electron microscopy")
-SubClassOf(obo:CHMO_0000068 obo:OBI_0002119)
-SubClassOf(obo:CHMO_0000068 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0000990))
+AnnotationAssertion(rdfs:label obo:CHMO_0000068 "obsolete electron microscopy")
+AnnotationAssertion(owl:deprecated obo:CHMO_0000068 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0000069 (field-emission electron microscopy)
 
@@ -3840,7 +3842,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000069 "field emission mi
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000069 "field-emission microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000069 "CHMO:0000069")
 AnnotationAssertion(rdfs:label obo:CHMO_0000069 "field-emission electron microscopy")
-SubClassOf(obo:CHMO_0000069 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0000069 obo:OBI_0001631)
 
 # Class: obo:CHMO_0000070 (low-energy electron microscopy)
 
@@ -3852,7 +3854,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000070 "low energy electr
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000070 "low-energy EM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000070 "CHMO:0000070")
 AnnotationAssertion(rdfs:label obo:CHMO_0000070 "low-energy electron microscopy")
-SubClassOf(obo:CHMO_0000070 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0000070 obo:OBI_0001631)
 
 # Class: obo:CHMO_0000071 (spin-polarised low energy electron microscopy)
 
@@ -3876,7 +3878,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000072 "REM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000072 "reflection EM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000072 "CHMO:0000072")
 AnnotationAssertion(rdfs:label obo:CHMO_0000072 "reflection electron microscopy")
-SubClassOf(obo:CHMO_0000072 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0000072 obo:OBI_0001631)
 
 # Class: obo:CHMO_0000073 (scanning electron microscopy)
 
@@ -3886,7 +3888,7 @@ AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000073 "FIX:0000124")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000073 "scanning electronic microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000073 "CHMO:0000073")
 AnnotationAssertion(rdfs:label obo:CHMO_0000073 "scanning electron microscopy")
-SubClassOf(obo:CHMO_0000073 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0000073 obo:OBI_0001631)
 
 # Class: obo:CHMO_0000074 (field-emission scanning electron microscopy)
 
@@ -3972,7 +3974,7 @@ AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000080 "FIX:0000126")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000080 "CHMO:0000080")
 AnnotationAssertion(rdfs:label obo:CHMO_0000080 "transmission electron microscopy")
-SubClassOf(obo:CHMO_0000080 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0000080 obo:OBI_0001631)
 
 # Class: obo:CHMO_0000081 (cryogenic transmission electron microscopy)
 
@@ -12287,7 +12289,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000768 "negative stain el
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000768 "negative-stain EM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000768 "CHMO:0000768")
 AnnotationAssertion(rdfs:label obo:CHMO_0000768 "negative-stain electron microscopy")
-SubClassOf(obo:CHMO_0000768 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0000768 obo:OBI_0001631)
 
 # Class: obo:CHMO_0000769 (high resolution scanning electron microscopy)
 
@@ -15520,7 +15522,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001086 "photo-emission mi
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001086 "photoelectron microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001086 "CHMO:0001086")
 AnnotationAssertion(rdfs:label obo:CHMO_0001086 "photoemission electron microscopy")
-SubClassOf(obo:CHMO_0001086 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0001086 obo:OBI_0001631)
 
 # Class: obo:CHMO_0001087 (X-ray photoemission electron microscopy)
 
@@ -29474,7 +29476,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002329 "high resolution e
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002329 "high-resolution EM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002329 "CHMO:0002329")
 AnnotationAssertion(rdfs:label obo:CHMO_0002329 "high-resolution electron microscopy")
-SubClassOf(obo:CHMO_0002329 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0002329 obo:OBI_0001631)
 
 # Class: obo:CHMO_0002330 (thermal chemical vapour deposition)
 
@@ -30508,7 +30510,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002413 "cryogenic-electro
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002413 "low-temperature electron microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002413 "CHMO:0002413")
 AnnotationAssertion(rdfs:label obo:CHMO_0002413 "cryogenic electron microscopy")
-SubClassOf(obo:CHMO_0002413 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0002413 obo:OBI_0001631)
 
 # Class: obo:CHMO_0002414 (scattering spectroscopy)
 
@@ -32924,7 +32926,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002614 "weak beam dark fi
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002614 "weak-beam dark-field (WBDF) electron microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002614 "CHMO:0002614")
 AnnotationAssertion(rdfs:label obo:CHMO_0002614 "weak-beam dark-field electron microscopy")
-SubClassOf(obo:CHMO_0002614 obo:CHMO_0000068)
+SubClassOf(obo:CHMO_0002614 obo:OBI_0001631)
 
 # Class: obo:CHMO_0002615 (weak-beam dark-field transmission electron microscopy)
 
