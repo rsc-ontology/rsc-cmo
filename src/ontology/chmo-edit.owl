@@ -3811,7 +3811,7 @@ AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000067 "FIX:0000005")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000067 "CHMO:0000067")
 AnnotationAssertion(rdfs:label obo:CHMO_0000067 "microscopy")
 SubClassOf(obo:CHMO_0000067 obo:OBI_0000185)
-SubClassOf(obo:CHMO_0000067 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0000953))
+SubClassOf(obo:CHMO_0000067 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0400169))
 
 # Class: obo:CHMO_0000068 (electron microscopy)
 
@@ -14161,7 +14161,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "CHMO:0000112") obo:IAO_000011
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0000943 "SPM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000943 "CHMO:0000943")
 AnnotationAssertion(rdfs:label obo:CHMO_0000943 "scanning probe microscope")
-SubClassOf(obo:CHMO_0000943 obo:CHMO_0000953)
+SubClassOf(obo:CHMO_0000943 obo:OBI_0400169)
 
 # Class: obo:CHMO_0000944 (obo:CHMO_0000944)
 
@@ -14194,7 +14194,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000947 "light microscope")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000947 "CHMO:0000947")
 AnnotationAssertion(rdfs:label obo:CHMO_0000947 "optical microscope")
-SubClassOf(obo:CHMO_0000947 obo:CHMO_0000953)
+SubClassOf(obo:CHMO_0000947 obo:OBI_0400169)
 
 # Class: obo:CHMO_0000948 (charge-coupled device)
 
@@ -14244,12 +14244,15 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000952 "CHMO:0000952")
 AnnotationAssertion(rdfs:label obo:CHMO_0000952 "atomic force microscopy cantilever")
 SubClassOf(obo:CHMO_0000952 obo:COB_0001300)
 
-# Class: obo:CHMO_0000953 (microscope)
+# Class: obo:CHMO_0000953 (obsolete microscope)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000953 "A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0000953 "OBSOLETE. A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0000953 "As part of the re-harmonization of CHMO with OBI (see https://github.com/obi-ontology/obi/issues/1952) this term was deprecated in favor of OBI:0400169 (microscope).")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0000953 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0000953 obo:OBI_0400169)
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000953 "CHMO:0000953")
-AnnotationAssertion(rdfs:label obo:CHMO_0000953 "microscope")
-SubClassOf(obo:CHMO_0000953 obo:COB_0001300)
+AnnotationAssertion(rdfs:label obo:CHMO_0000953 "obsolete microscope")
+AnnotationAssertion(owl:deprecated obo:CHMO_0000953 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0000954 (atomic force microscope)
 
@@ -14257,7 +14260,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "CHMO:0000113") obo:IAO_000011
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0000954 "AFM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000954 "CHMO:0000954")
 AnnotationAssertion(rdfs:label obo:CHMO_0000954 "atomic force microscope")
-SubClassOf(obo:CHMO_0000954 obo:CHMO_0000953)
+SubClassOf(obo:CHMO_0000954 obo:OBI_0400169)
 SubClassOf(obo:CHMO_0000954 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_0000951))
 SubClassOf(obo:CHMO_0000954 ObjectSomeValuesFrom(obo:BFO_0000174 obo:CHMO_0000952))
 
@@ -15515,7 +15518,7 @@ SubClassOf(obo:CHMO_0001087 obo:CHMO_0001086)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001088 "A piece of apparatus which is used to produce an enlarged image of a specimen using a finely focused (<10 nm diameter) electron beam with an acceleration voltage of 50–150 kV under vacuum and measuring the interaction of the electrons with the specimen.")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001088 "CHMO:0001088")
 AnnotationAssertion(rdfs:label obo:CHMO_0001088 "electron microscope")
-SubClassOf(obo:CHMO_0001088 obo:CHMO_0000953)
+SubClassOf(obo:CHMO_0001088 obo:OBI_0400169)
 
 # Class: obo:CHMO_0001089 (spectroscopic photoemission and low energy electron microscope)
 
@@ -22989,7 +22992,7 @@ AnnotationAssertion(oboInOwl:creation_date obo:CHMO_0001813 "2009-05-26T12:36:47
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001813 "IR microscope")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001813 "CHMO:0001813")
 AnnotationAssertion(rdfs:label obo:CHMO_0001813 "infrared microscope")
-SubClassOf(obo:CHMO_0001813 obo:CHMO_0000953)
+SubClassOf(obo:CHMO_0001813 obo:OBI_0400169)
 
 # Class: obo:CHMO_0001814 (Raman microscope)
 
@@ -23000,8 +23003,8 @@ AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0001814 "CHMO:0001236")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001814 "Raman microspectrometer")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001814 "CHMO:0001814")
 AnnotationAssertion(rdfs:label obo:CHMO_0001814 "Raman microscope")
-SubClassOf(obo:CHMO_0001814 obo:CHMO_0000953)
 SubClassOf(obo:CHMO_0001814 obo:CHMO_0001235)
+SubClassOf(obo:CHMO_0001814 obo:OBI_0400169)
 
 # Class: obo:CHMO_0001815 (electrochemical quartz crystal microbalance)
 
