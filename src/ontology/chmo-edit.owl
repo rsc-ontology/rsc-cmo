@@ -3828,7 +3828,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasSynonymType obo:OMO_0003012) oboInOwl
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000068 "CHMO:0000068")
 AnnotationAssertion(rdfs:label obo:CHMO_0000068 "electron microscopy")
 SubClassOf(obo:CHMO_0000068 obo:OBI_0002119)
-SubClassOf(obo:CHMO_0000068 ObjectSomeValuesFrom(obo:RO_0000057 obo:CHMO_0001088))
+SubClassOf(obo:CHMO_0000068 ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0000990))
 
 # Class: obo:CHMO_0000069 (field-emission electron microscopy)
 
@@ -14160,7 +14160,7 @@ AnnotationAssertion(Annotation(<http://www.w3.org/ns/prov#wasInfluencedBy> <http
 AnnotationAssertion(Annotation(dcterms:source <https://doi.org/10.1351/goldbook.S05484>) obo:OMO_0003012 obo:CHMO_0000941 "SEM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000941 "CHMO:0000941")
 AnnotationAssertion(rdfs:label obo:CHMO_0000941 "scanning electron microscope")
-SubClassOf(obo:CHMO_0000941 obo:CHMO_0001088)
+SubClassOf(obo:CHMO_0000941 obo:OBI_0000990)
 
 # Class: obo:CHMO_0000942 (field-emission scanning electron microscope)
 
@@ -15532,12 +15532,15 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0001087 "CHMO:0001087")
 AnnotationAssertion(rdfs:label obo:CHMO_0001087 "X-ray photoemission electron microscopy")
 SubClassOf(obo:CHMO_0001087 obo:CHMO_0001086)
 
-# Class: obo:CHMO_0001088 (electron microscope)
+# Class: obo:CHMO_0001088 (obsolete electron microscope)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001088 "A piece of apparatus which is used to produce an enlarged image of a specimen using a finely focused (<10 nm diameter) electron beam with an acceleration voltage of 50–150 kV under vacuum and measuring the interaction of the electrons with the specimen.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0001-5985-7429") obo:IAO_0000115 obo:CHMO_0001088 "OBSOLETE. A piece of apparatus which is used to produce an enlarged image of a specimen using a finely focused (<10 nm diameter) electron beam with an acceleration voltage of 50–150 kV under vacuum and measuring the interaction of the electrons with the specimen.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0001088 "As part of the re-harmonization of CHMO with OBI (see https://github.com/obi-ontology/obi/issues/1952) this term was deprecated in favor of OBI:0000990 (electron microscope).")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0001088 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0001088 obo:OBI_0000990)
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001088 "CHMO:0001088")
-AnnotationAssertion(rdfs:label obo:CHMO_0001088 "electron microscope")
-SubClassOf(obo:CHMO_0001088 obo:OBI_0400169)
+AnnotationAssertion(rdfs:label obo:CHMO_0001088 "obsolete electron microscope")
+AnnotationAssertion(owl:deprecated obo:CHMO_0001088 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0001089 (spectroscopic photoemission and low energy electron microscope)
 
@@ -15545,7 +15548,7 @@ AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1002/sia.2
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0001089 "SPELEEM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001089 "CHMO:0001089")
 AnnotationAssertion(rdfs:label obo:CHMO_0001089 "spectroscopic photoemission and low energy electron microscope")
-SubClassOf(obo:CHMO_0001089 obo:CHMO_0001088)
+SubClassOf(obo:CHMO_0001089 obo:OBI_0000990)
 
 # Class: obo:CHMO_0001090 (kinetic spectroscopy)
 
@@ -15634,7 +15637,7 @@ AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0001099 "TEM")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CHMO_0001099 "transmission EM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0001099 "CHMO:0001099")
 AnnotationAssertion(rdfs:label obo:CHMO_0001099 "transmission electron microscope")
-SubClassOf(obo:CHMO_0001099 obo:CHMO_0001088)
+SubClassOf(obo:CHMO_0001099 obo:OBI_0000990)
 
 # Class: obo:CHMO_0001100 (field-emission transmission electron microscope)
 

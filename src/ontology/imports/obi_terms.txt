@@ -8,10 +8,12 @@ http://purl.obolibrary.org/obo/OBI_0000443   # analyte assay
 http://purl.obolibrary.org/obo/OBI_0000661   # enzyme-linked immunosorbent assay
 http://purl.obolibrary.org/obo/OBI_0000796   # purification objective
 http://purl.obolibrary.org/obo/OBI_0000838   # material maintenance
+http://purl.obolibrary.org/obo/OBI_0000990   # electron microscope
 http://purl.obolibrary.org/obo/OBI_0001032   # light emission device
 http://purl.obolibrary.org/obo/OBI_0001042   # pump function
 http://purl.obolibrary.org/obo/OBI_0001061   # microwave synthesis system
 http://purl.obolibrary.org/obo/OBI_0001138   # X-ray source
+http://purl.obolibrary.org/obo/OBI_0001631   # electron microscopy imaging assay
 http://purl.obolibrary.org/obo/OBI_0003097   # liquid chromatography mass spectrometry assay --> uses as def source CHMO_0000524 
 http://purl.obolibrary.org/obo/OBI_0302886   # centrifugation
 http://purl.obolibrary.org/obo/OBI_0302888   # washing
