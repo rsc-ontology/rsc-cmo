@@ -2991,6 +2991,7 @@ Declaration(Class(obo:OBCS_0000058))
 Declaration(Class(obo:OBCS_0000059))
 Declaration(Class(obo:OBI_0003854))
 Declaration(Class(obo:OBI_0003855))
+Declaration(Class(obo:OBI_0003856))
 Declaration(ObjectProperty(obo:BFO_0000054))
 Declaration(ObjectProperty(obo:BFO_0000056))
 Declaration(ObjectProperty(obo:BFO_0000063))
@@ -4069,16 +4070,19 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000087 "CHMO:0000087")
 AnnotationAssertion(rdfs:label obo:CHMO_0000087 "obsolete fluorescence microscopy")
 AnnotationAssertion(owl:deprecated obo:CHMO_0000087 "true"^^xsd:boolean)
 
-# Class: obo:CHMO_0000088 (fluorescence laser scanning microscopy)
+# Class: obo:CHMO_0000088 (obsolete fluorescence laser scanning microscopy)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000380") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000088 "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a laser spot of specific wavelength over its surface.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "FIX:0000380") Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000088 "OBSOLETE. Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a laser spot of specific wavelength over its surface.")
+AnnotationAssertion(obo:IAO_0000116 obo:CHMO_0000088 "Historically, OBI adopted this term from CHMO, by adding it to its assay template TSV instead of importing it. While CHMO (as an OBI extension) also merged external terms into its OWL file instead of using owl:imports this was not caught as a problem. But, when CHMO switched to an ODK edit workflow (properly using owl:import) this circular dependency got surfaced. To resolve this and establish clear ownership, the term was migrated as is to OBI with a new IRI (OBI:0003856). See also this corresponding issue: https://github.com/obi-ontology/obi/issues/1952")
+AnnotationAssertion(obo:IAO_0000231 obo:CHMO_0000088 obo:OMO_0001002)
+AnnotationAssertion(obo:IAO_0100001 obo:CHMO_0000088 obo:OBI_0003856)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000088 "FLSM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000088 "LSM")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000088 "laser scanning fluorescence microscopy")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000088 "laser scanning microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000088 "CHMO:0000088")
-AnnotationAssertion(rdfs:label obo:CHMO_0000088 "fluorescence laser scanning microscopy")
-SubClassOf(obo:CHMO_0000088 obo:OBI_0003855)
+AnnotationAssertion(rdfs:label obo:CHMO_0000088 "obsolete fluorescence laser scanning microscopy")
+AnnotationAssertion(owl:deprecated obo:CHMO_0000088 "true"^^xsd:boolean)
 
 # Class: obo:CHMO_0000089 (confocal fluorescence microscopy assay)
 
@@ -4094,7 +4098,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000089 "fluorescence conf
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000089 "scanning confocal fluorescence microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000089 "CHMO:0000089")
 AnnotationAssertion(rdfs:label obo:CHMO_0000089 "confocal laser scanning microscopy")
-SubClassOf(obo:CHMO_0000089 obo:CHMO_0000088)
+SubClassOf(obo:CHMO_0000089 obo:OBI_0003856)
 
 # Class: obo:CHMO_0000090 (multi-photon laser scanning microscopy)
 
@@ -4105,7 +4109,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000090 "multi photon lase
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000090 "multiphoton laser scanning microscopy")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0000090 "CHMO:0000090")
 AnnotationAssertion(rdfs:label obo:CHMO_0000090 "multi-photon laser scanning microscopy")
-SubClassOf(obo:CHMO_0000090 obo:CHMO_0000088)
+SubClassOf(obo:CHMO_0000090 obo:OBI_0003856)
 
 # Class: obo:CHMO_0000091 (fluorescence lifetime imaging microscopy)
 
@@ -31777,7 +31781,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002520 "single photon las
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0002520 "single-photon LSM")
 AnnotationAssertion(oboInOwl:id obo:CHMO_0002520 "CHMO:0002520")
 AnnotationAssertion(rdfs:label obo:CHMO_0002520 "single-photon laser scanning microscopy")
-SubClassOf(obo:CHMO_0002520 obo:CHMO_0000088)
+SubClassOf(obo:CHMO_0002520 obo:OBI_0003856)
 
 # Class: obo:CHMO_0002521 (atomic absorption spectrometer)
 
