@@ -1,9 +1,11 @@
 format-version: 1.2
-data-version: chmo/releases/2026-05-28/chmo-base.owl
+data-version: chmo/releases/2026-10-26/chmo-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: prov http://www.w3.org/ns/prov# 
+idspace: skos http://www.w3.org/2004/02/skos/core# 
+idspace: sssom https://w3id.org/sssom/ 
 ontology: chmo/chmo-base
 property_value: dce:creator "Royal Society of Chemistry" xsd:string
 property_value: dce:type IAO:8000001
@@ -11,7 +13,7 @@ property_value: dcterms:contributor https://orcid.org/0000-0002-1595-3213
 property_value: dcterms:description "CHMO, the chemical methods ontology, describes methods used to collect data in chemical experiments, such as mass spectrometry and electron microscopy prepare and separate material for further analysis, such as sample ionisation, chromatography, and electrophoresis synthesise materials, such as epitaxy and continuous vapour deposition It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns. It is intended to be complementary to the Ontology for Biomedical Investigations (OBI)." xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/by/4.0/
 property_value: dcterms:title "Chemical Methods Ontology" xsd:string
-property_value: owl:versionInfo "2026-05-28" xsd:string
+property_value: owl:versionInfo "2026-10-26" xsd:string
 
 [Term]
 id: CHMO:0000001
@@ -605,7 +607,7 @@ name: microscopy
 alt_id: FIX:0000005
 def: "Any technique where a microscope is used to view a small object (or specimen) by producing a magnified image." [https://orcid.org/0000-0002-0640-0422]
 is_a: OBI:0000185
-relationship: BFO:0000057 CHMO:0000953 ! microscope
+relationship: RO:0000057 CHMO:0000953 ! microscope
 
 [Term]
 id: CHMO:0000068
@@ -614,7 +616,7 @@ alt_id: FIX:0000051
 def: "A microscopy in which the specimen is bombarded with a finely focused (<10 nm diameter) electron beam with an acceleration voltage 50-150 kV under vacuum. The interaction of the electrons with the specimen produces transmitted, secondary, backscattered and diffracted electrons and characteristic X-rays which are detected." [] {prov:wasInfluencedBy="https://doi.org/10.1351/goldbook.E02002", prov:wasInfluencedBy="https://doi.org/10.1351/goldbook.S05484"}
 synonym: "EM" EXACT OMO:0003012 []
 is_a: CHMO:0000067 ! microscopy
-relationship: BFO:0000057 CHMO:0001088 ! electron microscope
+relationship: RO:0000057 CHMO:0001088 ! electron microscope
 
 [Term]
 id: CHMO:0000069
@@ -1276,7 +1278,7 @@ def: "Microscopy where an Wollaston wire probe is scanned over the surface of th
 synonym: "scanning-thermal microscopy" EXACT []
 synonym: "SThM" EXACT []
 is_a: CHMO:0000112 ! scanning probe microscopy
-relationship: BFO:0000057 CHMO:0001098 ! Wollaston wire
+relationship: RO:0000057 CHMO:0001098 ! Wollaston wire
 
 [Term]
 id: CHMO:0000132
@@ -1297,8 +1299,8 @@ def: "Microscopy where an excitation laser and a probe laser are focused onto a 
 synonym: "thermal-lens microscopy" EXACT []
 synonym: "TLM" EXACT []
 is_a: CHMO:0000067 ! microscopy
-relationship: BFO:0000057 CHMO:0002894 ! excitation laser
-relationship: BFO:0000057 CHMO:0002895 ! probe laser
+relationship: RO:0000057 CHMO:0002894 ! excitation laser
+relationship: RO:0000057 CHMO:0002895 ! probe laser
 
 [Term]
 id: CHMO:0000134
@@ -2500,8 +2502,8 @@ synonym: "glow discharge optical emission spectrometry" EXACT []
 synonym: "glow discharge optical emission spectroscopy" EXACT []
 is_a: CHMO:0000251 ! atomic emission spectroscopy
 intersection_of: CHMO:0000251 ! atomic emission spectroscopy
-intersection_of: BFO:0000057 CHMO:0001130 ! glow discharge ion source
-relationship: BFO:0000057 CHMO:0001130 ! glow discharge ion source
+intersection_of: RO:0000057 CHMO:0001130 ! glow discharge ion source
+relationship: RO:0000057 CHMO:0001130 ! glow discharge ion source
 
 [Term]
 id: CHMO:0000257
@@ -2867,7 +2869,7 @@ synonym: "MAS" RELATED non-mining_synonym []
 synonym: "molecular absorption spectrophotometry" EXACT []
 synonym: "molecular electronic absorption spectroscopy" EXACT []
 is_a: CHMO:0000232 ! electronic spectroscopy
-relationship: BFO:0000057 CHMO:0002232 ! spectrophotometer
+relationship: RO:0000057 CHMO:0002232 ! spectrophotometer
 
 [Term]
 id: CHMO:0000292
@@ -3146,6 +3148,7 @@ synonym: "energy-dispersive X-ray emission analysis" EXACT []
 synonym: "X-ray energy dispersive spectroscopy" EXACT []
 synonym: "X-ray energy-dispersive spectroscopy" EXACT []
 is_a: CHMO:0000307 ! X-ray emission spectroscopy
+relationship: RO:0000057 CHMO:0001809 ! energy dispersive X-ray spectrometer
 
 [Term]
 id: CHMO:0000310
@@ -4926,18 +4929,17 @@ property_value: OMO:0003012 "AMS" xsd:string {dcterms:source="https://doi.org/10
 [Term]
 id: CHMO:0000472
 name: chemical ionisation mass spectrometry
-def: "Mass spectrometry where the sample is ionised by interaction (electron or proton transfer) with reagent (N2, O2, H2O) gaseous ions at low pressure. Reagent ions are produced by electron ionisation." [FIX:0000088, https://doi.org/10.1351/goldbook.C01026]
-synonym: "chemical ionisation mass spectroscopy" EXACT []
+def: "A mass spectrometry in which the sample is ionised by interaction (electron or proton transfer) with reagent (N2, O2, H2O) gaseous ions at low pressure. Reagent ions are produced by electron ionisation." [FIX:0000088] {prov:wasInfluencedBy="https://doi.org/10.1351/goldbook.C01026"}
 synonym: "chemical ionization mass spectrometry" EXACT []
 synonym: "chemical ionization mass spectroscopy" EXACT []
-synonym: "CI-MS" EXACT []
-synonym: "LCPIMS" EXACT []
+synonym: "CI-MS" EXACT OMO:0003012 []
+synonym: "LCPIMS" EXACT OMO:0003012 []
 synonym: "low pressure chemical ionisation mass spectrometry" EXACT []
 synonym: "low pressure chemical ionisation mass spectroscopy" EXACT []
 synonym: "low pressure chemical ionization mass spectrometry" EXACT []
 synonym: "low pressure chemical ionization mass spectroscopy" EXACT []
-synonym: "LP-CI-MS" EXACT []
-synonym: "LPCI-MS" EXACT []
+synonym: "LP-CI-MS" EXACT OMO:0003012 []
+synonym: "LPCI-MS" EXACT OMO:0003012 []
 is_a: CHMO:0000470 ! mass spectrometry
 relationship: OBI:0000299 CHMO:0000807 ! chemical ionisation mass spectrum
 
@@ -5579,7 +5581,7 @@ synonym: "matrix-assisted laser desorption ionization (MALDI) MS" EXACT []
 synonym: "matrix-assisted laser desorption-ionisation mass spectroscopy" EXACT []
 synonym: "matrix-assisted laser desorption-ionization mass spectroscopy" EXACT []
 is_a: CHMO:0000515 ! laser desorption-ionisation mass spectrometry
-relationship: BFO:0000057 CHMO:0002202 ! matrix assisted laser desorption-ionisation mass spectrometer
+relationship: RO:0000057 CHMO:0002202 ! matrix assisted laser desorption-ionisation mass spectrometer
 
 [Term]
 id: CHMO:0000520
@@ -5809,8 +5811,8 @@ synonym: "glow discharge ionization mass spectroscopy" EXACT []
 synonym: "glow-discharge mass spectroscopy" EXACT []
 is_a: CHMO:0000741 ! discharge mass spectrometry
 intersection_of: CHMO:0000470 ! mass spectrometry
-intersection_of: BFO:0000057 CHMO:0001130 ! glow discharge ion source
-relationship: BFO:0000057 CHMO:0001130 ! glow discharge ion source
+intersection_of: RO:0000057 CHMO:0001130 ! glow discharge ion source
+relationship: RO:0000057 CHMO:0001130 ! glow discharge ion source
 
 [Term]
 id: CHMO:0000538
@@ -6808,7 +6810,7 @@ synonym: "IR-PAS" EXACT []
 synonym: "IROAS" EXACT []
 synonym: "IRPAS" EXACT []
 is_a: CHMO:0000619 ! photoacoustic spectroscopy
-relationship: BFO:0000057 CHMO:0002885 ! slotted disc
+relationship: RO:0000057 CHMO:0002885 ! slotted disc
 
 [Term]
 id: CHMO:0000621
@@ -7094,7 +7096,7 @@ synonym: "TIRS" EXACT []
 synonym: "transient infrared spectrometry" EXACT []
 synonym: "transient infrared spectroscopy" EXACT []
 is_a: CHMO:0000630 ! infrared absorption spectroscopy
-relationship: BFO:0000057 OBI:0400064
+relationship: RO:0000057 OBI:0400064
 
 [Term]
 id: CHMO:0000643
@@ -9011,7 +9013,7 @@ property_value: OMO:0003004 "conversion spectra" xsd:string
 [Term]
 id: CHMO:0000833
 name: excitation spectrum
-def: "A plot of the spectral radiant exitance or of the spectral photon exitance against the frequency (or wavenumber, or wavelength) of excitation." [https://doi.org/10.1351/goldbook.E02253]
+def: "A spectrum plotting \"the spectral radiant exitance or of the spectral photon exitance against the frequency (or wavenumber, or wavelength) of excitation.\"" [] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.E02253", dcterms:bibliographicCitation="'excitation spectrum' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.E02253"}
 synonym: "excitation spectra" EXACT []
 is_a: CHMO:0000800 ! spectrum
 
@@ -10116,7 +10118,7 @@ id: CHMO:0000945
 name: dynamic reaction cell
 def: "A piece of apparatus that contains a reagent gas that reacts preferentially with certain species in order to allow only the analyte ions into the mass-to-charge analyser and the detector." [http://rock.esc.cam.ac.uk/icpms/drc.html]
 synonym: "DRC" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 relationship: BFO:0000175 CHMO:0000955 ! inductively coupled plasma mass spectrometer
 
 [Term]
@@ -10126,7 +10128,7 @@ def: "A piece of apparatus, consisting of a laser, an optical microscope, a cond
 synonym: "optical trap" EXACT []
 synonym: "optical tweezer" EXACT []
 synonym: "single-beam gradient force optical trap" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0000947
@@ -10141,7 +10143,7 @@ name: charge-coupled device
 def: "A device, based on a semiconductor chip, which converts the intensity of light falling onto its surface at different points into a charge. When a photon is absorbed by the chip, a single electron is released. Electrodes covering the chip surface hold these electrons in place in an array of wells, or pixels, so that during exposure of the chip to light, a pattern of charge builds up that corresponds to the pattern of light." [https://orcid.org/0000-0001-5985-7429] {prov:wasInfluencedBy="https://doi.org/10.1351/goldbook.08230"}
 synonym: "CCD array" EXACT []
 synonym: "charge coupled device" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 relationship: BFO:0000175 CHMO:0002181 ! charge-coupled-device camera
 property_value: OMO:0003012 "CCD" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.08230"}
 
@@ -10168,7 +10170,7 @@ def: "A sharp spike which is mounted on the end of a cantilever and used to scan
 synonym: "AFM tip" EXACT []
 synonym: "atomic force microscope (AFM) tip" EXACT []
 synonym: "atomic force microscope tip" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0000952
@@ -10177,13 +10179,13 @@ def: "A cantilever used in atomic force microscopy to transmit force from the ti
 synonym: "AFM cantilever" EXACT []
 synonym: "AFM lever" EXACT []
 synonym: "atomic force microscope cantilever" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0000953
 name: microscope
 def: "A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0000954
@@ -10245,7 +10247,7 @@ is_a: CHMO:0000960 ! ion source
 id: CHMO:0000960
 name: ion source
 def: "A device that takes an analyte and generates ions which are passed to the rest of a mass spectrometer for analysis." [] {prov:wasInfluencedBy="ISBN:9780470516348", prov:wasInfluencedBy="https://doi.org/10.1351/goldbook.I03247"}
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0000961
@@ -10283,7 +10285,7 @@ relationship: BFO:0000174 CHMO:0000966 ! quadrupole mass-to-charge analyser
 id: CHMO:0000964
 name: ion cyclotron resonance cell
 def: "A piece of apparatus consisting of paired trapping plates, receiver plates and transmitter plates which provides a magnetic field that coherently excites ions according to their cyclotron frequencies which depend on their mass-to-charge ratio." [ISBN:9780470516348]
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0000965
@@ -10406,13 +10408,13 @@ relationship: BFO:0000174 CHMO:0000979 ! reflectron
 id: CHMO:0000978
 name: mass-to-charge analyser
 def: "A piece of apparatus which separates ions according to their mass-to-charge ratio." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0000979
 name: reflectron
 def: "A device that produces an electric field that accelerates ions in a mass-to-charge analyser in a direction opposite to their direction of travel, acting as an ion mirror to separate ions of the same mass-to-charge ratio that have different kinetic energy." [] {prov:wasInfluencedBy="ISBN:9780470516348", prov:hadPrimarySource="https://doi.org/10.1351/goldbook.11544"}
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0000980
@@ -10441,7 +10443,7 @@ is_a: CHMO:0001234 ! spectrometer
 id: CHMO:0000983
 name: separation capillary
 def: "A piece of apparatus that has the form of a tube with an internal diameter of 20–100 micrometres and hosts the separation medium in capillary electrophoresis." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0000984
@@ -10465,7 +10467,7 @@ is_a: CHMO:0000994 ! chromatographic phase
 id: CHMO:0000987
 name: capillary column
 def: "A device that has the form of a tube with a diameter of less than a millimetre and hosts the stationary bed in chromatography." [https://orcid.org/0000-0001-5985-7429] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.C00793"}
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0000988
@@ -10484,7 +10486,7 @@ is_a: CHMO:0000990 ! open chromatographic bed
 id: CHMO:0000990
 name: open chromatographic bed
 def: "A piece of apparatus that is planar and is or hosts the stationary bed in chromatography." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0000991
@@ -10531,7 +10533,7 @@ is_a: CHMO:0000995 ! mobile phase
 id: CHMO:0000997
 name: chromatography column
 def: "A piece of apparatus that has the form of a tube with a diameter between 5 to 50 mm and hosts the stationary bed in chromatography." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0000999
@@ -10539,7 +10541,7 @@ name: separation method
 alt_id: FIX:0000002
 def: "A method that results in the separation of two or more components according to some property." [https://orcid.org/0000-0001-5985-7429]
 synonym: "partition" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001000
@@ -10557,8 +10559,8 @@ alt_id: CHMO:0002118
 def: "A chromatography \"in which the stationary bed is within a tube [(of standard length 25 cm)]. The particles of the solid stationary phase or support coated with a liquid stationary phase may fill the whole inside volume of the tube (packed column) or be concentrated on or along the inside tube wall leaving an open, unrestricted path for the mobile phase in the middle part of the tube (open-tubular column).\"" [https://doi.org/10.1021/ac971247q] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:bibliographicCitation="'column chromatography' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.C01182", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.C01182"}
 is_a: CHMO:0001000 ! chromatography
 intersection_of: CHMO:0001000 ! chromatography
-intersection_of: BFO:0000057 CHMO:0000997 ! chromatography column
-relationship: BFO:0000057 CHMO:0000997 ! chromatography column
+intersection_of: RO:0000057 CHMO:0000997 ! chromatography column
+relationship: RO:0000057 CHMO:0000997 ! chromatography column
 
 [Term]
 id: CHMO:0001002
@@ -10567,8 +10569,8 @@ alt_id: FIX:0000098
 def: "A column chromatography \"in which the mobile phase is a gas.\"" [https://orcid.org/0000-0001-5985-7429] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:source="https://doi.org/10.1351/goldbook.G02578", dcterms:bibliographicCitation="'gas chromatography' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.G02578", dcterms:rightsHolder="https://ror.org/03ne2zw20"}
 is_a: CHMO:0001001 ! column chromatography
 intersection_of: CHMO:0001001 ! column chromatography
-intersection_of: BFO:0000057 CHMO:0000996 ! gaseous mobile phase
-relationship: BFO:0000057 CHMO:0000996 ! gaseous mobile phase
+intersection_of: RO:0000057 CHMO:0000996 ! gaseous mobile phase
+relationship: RO:0000057 CHMO:0000996 ! gaseous mobile phase
 property_value: OMO:0003012 "GC" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.G02578"}
 
 [Term]
@@ -10577,8 +10579,8 @@ name: supercritical-fluid chromatography
 def: "A column chromatography \"in which the mobile phase is a fluid above and relatively close to its critical temperature and pressure.\"" [FIX:0000609, https://orcid.org/0000-0001-5985-7429] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:source="https://doi.org/10.1351/goldbook.S06139", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:bibliographicCitation="'supercritical fluid chromatography' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.S06139"}
 is_a: CHMO:0001001 ! column chromatography
 intersection_of: CHMO:0001001 ! column chromatography
-intersection_of: BFO:0000057 CHMO:0000992 ! supercritical mobile phase
-relationship: BFO:0000057 CHMO:0000992 ! supercritical mobile phase
+intersection_of: RO:0000057 CHMO:0000992 ! supercritical mobile phase
+relationship: RO:0000057 CHMO:0000992 ! supercritical mobile phase
 property_value: OMO:0003012 "SFC" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.S06139"}
 
 [Term]
@@ -10588,8 +10590,8 @@ def: "Column chromatography where the mobile phase is a liquid." [FIX:0000608, h
 synonym: "LC" EXACT []
 is_a: CHMO:0001001 ! column chromatography
 intersection_of: CHMO:0001001 ! column chromatography
-intersection_of: BFO:0000057 CHMO:0000991 ! liquid mobile phase
-relationship: BFO:0000057 CHMO:0000991 ! liquid mobile phase
+intersection_of: RO:0000057 CHMO:0000991 ! liquid mobile phase
+relationship: RO:0000057 CHMO:0000991 ! liquid mobile phase
 
 [Term]
 id: CHMO:0001005
@@ -10599,8 +10601,8 @@ synonym: "open bed chromatography" EXACT []
 synonym: "open-bed chromatography" EXACT []
 is_a: CHMO:0001000 ! chromatography
 intersection_of: CHMO:0001000 ! chromatography
-intersection_of: BFO:0000057 CHMO:0000990 ! open chromatographic bed
-relationship: BFO:0000057 CHMO:0000990 ! open chromatographic bed
+intersection_of: RO:0000057 CHMO:0000990 ! open chromatographic bed
+relationship: RO:0000057 CHMO:0000990 ! open chromatographic bed
 property_value: OMO:0003012 "PC" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.P04682"}
 
 [Term]
@@ -10617,8 +10619,8 @@ def: "A planar chromatography in which the stationary phase is a thin (0.10 to 0
 synonym: "TLC" EXACT OMO:0003012 []
 is_a: CHMO:0001005 ! planar chromatography
 intersection_of: CHMO:0001005 ! planar chromatography
-intersection_of: BFO:0000057 CHMO:0000989 ! thin-layer chromatography plate
-relationship: BFO:0000057 CHMO:0000989 ! thin-layer chromatography plate
+intersection_of: RO:0000057 CHMO:0000989 ! thin-layer chromatography plate
+relationship: RO:0000057 CHMO:0000989 ! thin-layer chromatography plate
 
 [Term]
 id: CHMO:0001008
@@ -10626,8 +10628,8 @@ name: paper chromatography
 def: "A planar chromatography in which the stationary phase is impregnated in a sheet of paper." []
 is_a: CHMO:0001005 ! planar chromatography
 intersection_of: CHMO:0001005 ! planar chromatography
-intersection_of: BFO:0000057 CHMO:0000988 ! chromatography paper
-relationship: BFO:0000057 CHMO:0000988 ! chromatography paper
+intersection_of: RO:0000057 CHMO:0000988 ! chromatography paper
+relationship: RO:0000057 CHMO:0000988 ! chromatography paper
 
 [Term]
 id: CHMO:0001009
@@ -10669,7 +10671,7 @@ is_a: CHMO:0001010 ! exclusion chromatography
 [Term]
 id: CHMO:0001013
 name: size-exclusion chromatography
-def: "An \"exclusion chromatography in which separation is based mainly on differences in molecular size.\"" [FIX:0000626, https://doi.org/10.1351/goldbook.S05705] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:bibliographicCitation="'size-exclusion chromatography' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.S05705", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.S05705"}
+def: "An \"exclusion chromatography in which separation is based mainly on differences in molecular size.\"" [FIX:0000626] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:bibliographicCitation="'size-exclusion chromatography' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.S05705", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.S05705"}
 synonym: "size exclusion chromatography" EXACT []
 is_a: CHMO:0001010 ! exclusion chromatography
 property_value: OMO:0003012 "SEC" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.S05705"}
@@ -10692,8 +10694,8 @@ def: "A gas chromatography in which the stationary phase is a solid." [FIX:00006
 synonym: "GSC" EXACT OMO:0003012 []
 is_a: CHMO:0001002 ! gas chromatography
 intersection_of: CHMO:0001002 ! gas chromatography
-intersection_of: BFO:0000057 CHMO:0000985 ! solid stationary phase
-relationship: BFO:0000057 CHMO:0000985 ! solid stationary phase
+intersection_of: RO:0000057 CHMO:0000985 ! solid stationary phase
+relationship: RO:0000057 CHMO:0000985 ! solid stationary phase
 
 [Term]
 id: CHMO:0001016
@@ -10703,8 +10705,8 @@ def: "A gas chromatography \"in which the stationary phase is a liquid.\"" [http
 synonym: "GLC" EXACT OMO:0003012 []
 is_a: CHMO:0001002 ! gas chromatography
 intersection_of: CHMO:0001002 ! gas chromatography
-intersection_of: BFO:0000057 CHMO:0000984 ! liquid stationary phase
-relationship: BFO:0000057 CHMO:0000984 ! liquid stationary phase
+intersection_of: RO:0000057 CHMO:0000984 ! liquid stationary phase
+relationship: RO:0000057 CHMO:0000984 ! liquid stationary phase
 
 [Term]
 id: CHMO:0001017
@@ -10771,8 +10773,8 @@ synonym: "capillary zone electrophoresis" EXACT []
 synonym: "CZE" EXACT OMO:0003012 []
 is_a: CHMO:0001019 ! electrophoresis
 intersection_of: CHMO:0001019 ! electrophoresis
-intersection_of: BFO:0000057 CHMO:0000983 ! separation capillary
-relationship: BFO:0000057 CHMO:0000983 ! separation capillary
+intersection_of: RO:0000057 CHMO:0000983 ! separation capillary
+relationship: RO:0000057 CHMO:0000983 ! separation capillary
 property_value: OMO:0003012 "CE" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.09913"}
 
 [Term]
@@ -10835,7 +10837,7 @@ def: "A sieving electrophoresis \"which takes place in a capillary.\"" [] {dcter
 is_a: CHMO:0001024 ! capillary electrophoresis
 is_a: CHMO:0001030 ! sieving electrophoresis
 intersection_of: CHMO:0001030 ! sieving electrophoresis
-intersection_of: BFO:0000057 CHMO:0000983 ! separation capillary
+intersection_of: RO:0000057 CHMO:0000983 ! separation capillary
 property_value: OMO:0003012 "CSE" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.09917"}
 
 [Term]
@@ -10846,7 +10848,7 @@ synonym: "gel CE" EXACT []
 is_a: CHMO:0001021 ! gel electrophoresis
 is_a: CHMO:0001031 ! capillary sieving electrophoresis
 intersection_of: CHMO:0001021 ! gel electrophoresis
-intersection_of: BFO:0000057 CHMO:0000983 ! separation capillary
+intersection_of: RO:0000057 CHMO:0000983 ! separation capillary
 property_value: OMO:0003012 "CGE" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.09914"}
 
 [Term]
@@ -10857,7 +10859,7 @@ synonym: "capillary isoelectric focussing" EXACT []
 is_a: CHMO:0001024 ! capillary electrophoresis
 is_a: CHMO:0001026 ! isoelectric focusing
 intersection_of: CHMO:0001026 ! isoelectric focusing
-intersection_of: BFO:0000057 CHMO:0000983 ! separation capillary
+intersection_of: RO:0000057 CHMO:0000983 ! separation capillary
 property_value: OMO:0003012 "CIEF" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.09915"}
 
 [Term]
@@ -10867,7 +10869,7 @@ def: "An isotachophoresis in a capillary containing a \"discontinuous buffer sys
 is_a: CHMO:0001024 ! capillary electrophoresis
 is_a: CHMO:0001025 ! isotachophoresis
 intersection_of: CHMO:0001025 ! isotachophoresis
-intersection_of: BFO:0000057 CHMO:0000983 ! separation capillary
+intersection_of: RO:0000057 CHMO:0000983 ! separation capillary
 property_value: OMO:0003012 "CITP" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.09916"}
 
 [Term]
@@ -10876,7 +10878,7 @@ name: electrokinetic chromatography
 def: "A \"separation method based on a combination of electrophoresis and interactions of the analytes with additives [...], which form a dispersed phase moving at a different speed (velocity).\"" [https://doi.org/10.1351/pac200476020443] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.09919", dcterms:bibliographicCitation="'electrokinetic chromatography' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.09919"}
 synonym: "electrokinetic capillary chromatography" EXACT [] {dcterms:source="https://doi.org/10.1351/goldbook.09919"}
 is_a: CHMO:0000999 ! separation method
-relationship: BFO:0000057 CHMO:0000983 ! separation capillary
+relationship: RO:0000057 CHMO:0000983 ! separation capillary
 property_value: OMO:0003012 "ECC" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.09919"}
 property_value: OMO:0003012 "EKC" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.09919"}
 
@@ -10913,7 +10915,7 @@ synonym: "affinity capillary electrophoresis" EXACT [] {dcterms:source="https://
 is_a: CHMO:0001024 ! capillary electrophoresis
 is_a: CHMO:0001040 ! affinity electrophoresis
 intersection_of: CHMO:0001040 ! affinity electrophoresis
-intersection_of: BFO:0000057 CHMO:0000983 ! separation capillary
+intersection_of: RO:0000057 CHMO:0000983 ! separation capillary
 property_value: OMO:0003012 "ACE" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.09911"}
 property_value: OMO:0003012 "CAE" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.09911"}
 
@@ -10978,10 +10980,10 @@ synonym: "cap-LC" EXACT []
 synonym: "capLC" EXACT []
 is_a: CHMO:0001000 ! chromatography
 intersection_of: CHMO:0001000 ! chromatography
-intersection_of: BFO:0000057 CHMO:0000983 ! separation capillary
-intersection_of: BFO:0000057 CHMO:0000991 ! liquid mobile phase
-relationship: BFO:0000057 CHMO:0000983 ! separation capillary
-relationship: BFO:0000057 CHMO:0000991 ! liquid mobile phase
+intersection_of: RO:0000057 CHMO:0000983 ! separation capillary
+intersection_of: RO:0000057 CHMO:0000991 ! liquid mobile phase
+relationship: RO:0000057 CHMO:0000983 ! separation capillary
+relationship: RO:0000057 CHMO:0000991 ! liquid mobile phase
 
 [Term]
 id: CHMO:0001050
@@ -11013,13 +11015,13 @@ relationship: BFO:0000174 CHMO:0001053 ! magnetic sector
 id: CHMO:0001053
 name: magnetic sector
 def: "A device consisting of a magnet that is used to separate an ion beam into discrete ion beams according to the mass-to-charge ratio of the ions." [] {prov:wasInfluencedBy="ISBN:9780470516348", prov:hadPrimarySource="https://doi.org/10.1351/goldbook.12473"}
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0001054
 name: electric sector
 def: "A device that applies an electric field in order to select ions that have the same kinetic energy from an ion beam." [] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.E01938", prov:wasInfluencedBy="ISBN:9780470516348"}
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0001055
@@ -11066,7 +11068,7 @@ is_a: CHMO:0002244 ! detector
 id: CHMO:0001060
 name: electron multiplier
 def: "A device that on contact with a charged particle of sufficient energy emits a greater number electrons." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0001061
@@ -11105,7 +11107,7 @@ name: atomic force microscopy probe
 def: "A sharp spike mounted on the end of a cantilever which is used to scan the surface of a specimen in atomic force microscopy." [https://orcid.org/0000-0002-0640-0422]
 synonym: "AFM probe" EXACT []
 synonym: "atomic force microscope probe" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0001066
@@ -11230,7 +11232,7 @@ id: CHMO:0001077
 name: quartz crystal microbalance
 def: "A piece of apparatus used to measure the mass per unit area (1 μg per cm2) by measuring the change in frequency of a quartz crystal resonator (a quartz crystal sandwiched between a pair of electrodes) as a function of mass change." [https://orcid.org/0000-0002-0640-0422]
 synonym: "QCM" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0001078
@@ -11397,13 +11399,13 @@ is_a: CHMO:0001095 ! fluorescence microscope
 id: CHMO:0001097
 name: thermocouple
 def: "A device that generates electrical current when it experiences a thermal gradient." [https://orcid.org/0000-0001-5985-7429] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.T06313"}
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0001098
 name: Wollaston wire
 def: "A composite wire consisting of a fine platinum core with a silver coating." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0001099
@@ -11699,8 +11701,8 @@ creation_date: 2009-03-06T04:58:01Z
 id: CHMO:0001132
 name: laser ablation
 def: "A material processing in which material is removed from a specimen by illuminating it with a laser beam." [https://orcid.org/0000-0001-5985-7429] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.08499"}
-is_a: OBI:0000094
-relationship: BFO:0000057 OBI:0400064
+is_a: COB:0000110
+relationship: RO:0000057 OBI:0400064
 created_by: batchelorc
 creation_date: 2009-03-06T05:23:07Z
 
@@ -11770,7 +11772,7 @@ synonym: "207Pb NMR" EXACT []
 synonym: "207Pb NMR spectroscopy" EXACT []
 synonym: "207Pb-NMR" EXACT []
 is_a: CHMO:0000613 ! pulsed nuclear magnetic resonance spectroscopy
-relationship: BFO:0000057 CHEBI:52455
+relationship: RO:0000057 CHEBI:52455
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-03-11T04:49:20Z
 
@@ -12788,7 +12790,7 @@ creation_date: 2009-03-25T01:30:44Z
 [Term]
 id: CHMO:0001232
 name: continuous-flow calorimetry
-def: "A term used to describe methods wherein a reagent is continuously fed into a flowing analyte stream and the temperature difference is measured before and after a reactor (mixing chamber). Alternatively, the temperature may be measured in a differential manner between a reference and a reactor chamber. The analyte concentration is directly proportional to the measured temperature difference." [https://doi.org/10.1351/goldbook.C0130]
+def: "A calorimetry in which a reagent is continuously fed into a flowing analyte stream and the temperature difference is measured before and after a reactor (mixing chamber). Alternatively, the temperature may be measured in a differential manner between a reference and a reactor chamber. The analyte concentration is directly proportional to the measured temperature difference." []
 synonym: "continuous flow enthalpimetric analysis" EXACT []
 synonym: "continuous flow enthalpimetry" EXACT []
 synonym: "continuous-flow calorimetry" EXACT []
@@ -12821,7 +12823,7 @@ creation_date: 2009-03-25T01:54:09Z
 [Term]
 id: CHMO:0001235
 name: Raman spectrometer
-def: "A piece of apparatus that consists of a laser, a beam splitter, an interferometer and a detector and is used to measure Raman spectra." [https://orcid.org/0000-0002-0640-0422]
+def: "A spectrometer that is used to measure Raman spectra. It consists of a light source, a beam splitter, an interferometer and a detector. The light source is typically a laser." [https://orcid.org/0000-0002-0640-0422]
 is_a: CHMO:0001234 ! spectrometer
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-03-25T01:55:39Z
@@ -12829,7 +12831,7 @@ creation_date: 2009-03-25T01:55:39Z
 [Term]
 id: CHMO:0001237
 name: confocal Raman microscope
-def: "A piece of apparatus, consisting of a laser beam (<10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample." [https://orcid.org/0000-0002-0640-0422]
+def: "A Raman microscope that is used to discriminate between the Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample, using an aperture." [https://orcid.org/0000-0002-0640-0422]
 synonym: "confocal Raman microspectrometer" EXACT []
 synonym: "Raman confocal microscope" EXACT []
 is_a: CHMO:0001814 ! Raman microscope
@@ -13205,7 +13207,7 @@ creation_date: 2009-04-16T04:01:41Z
 [Term]
 id: CHMO:0001269
 name: short-column chromatography
-def: "A chromatography method where the stationary bed is within a tube (of less than the standard length of 25 cm). The particles of the solid stationary phase or support coated with a liquid stationary phase may fill the whole inside volume of the tube (packed column) or be concentrated on or along the inside tube wall leaving an open, unrestricted path for the mobile phase in the middle part of the tube (open-tubular column)." [https://doi.org/10.1021/ac971247q, https://doi.org/10.1351/goldbook.C01182]
+def: "A column chromatography in which the stationary bed tube is less than the standard length of 25 cm." [] {prov:wasInfluencedBy="https://doi.org/10.1021/ac971247q"}
 synonym: "short column chromatography" EXACT []
 is_a: CHMO:0001001 ! column chromatography
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -13633,7 +13635,7 @@ creation_date: 2009-05-14T12:47:35Z
 id: CHMO:0001301
 name: synthesis method
 def: "A method used to synthesise a sample." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001302
@@ -13851,7 +13853,7 @@ synonym: "laser-induced chemical vapour deposition" EXACT []
 synonym: "laser-induced CVD" EXACT []
 synonym: "LCVD" EXACT []
 is_a: CHMO:0001314 ! chemical vapour deposition
-relationship: BFO:0000057 OBI:0400064
+relationship: RO:0000057 OBI:0400064
 
 [Term]
 id: CHMO:0001322
@@ -14311,7 +14313,7 @@ synonym: "ion-assisted sputtering" EXACT []
 synonym: "ion-beam sputtering" EXACT []
 synonym: "ion-beam-assisted sputtering" EXACT []
 is_a: CHMO:0001364 ! sputter deposition
-relationship: BFO:0000057 CHMO:0000960 ! ion source
+relationship: RO:0000057 CHMO:0000960 ! ion source
 
 [Term]
 id: CHMO:0001368
@@ -14320,8 +14322,8 @@ def: "Sputter deposition where the ion source is a magnetron. The ejected atoms 
 synonym: "magnetron sputtering" EXACT []
 is_a: CHMO:0001364 ! sputter deposition
 intersection_of: CHMO:0001364 ! sputter deposition
-intersection_of: BFO:0000057 CHMO:0002896 ! magnetron
-relationship: BFO:0000057 CHMO:0002896 ! magnetron
+intersection_of: RO:0000057 CHMO:0002896 ! magnetron
+relationship: RO:0000057 CHMO:0002896 ! magnetron
 
 [Term]
 id: CHMO:0001369
@@ -15051,7 +15053,7 @@ name: peptisation
 def: "Reversal of coagulation or flocculation, i.e., the dispersion of aggregates to form a colloidally stable suspension or emulsion" [https://doi.org/10.1351/pac200779101801]
 synonym: "deflocculation" EXACT []
 synonym: "peptization" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-18T09:45:58Z
 
@@ -15080,7 +15082,7 @@ synonym: "age hardening" EXACT []
 synonym: "dispersion hardening" EXACT []
 synonym: "precipitate ageing" EXACT []
 synonym: "precipitation hardening" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001465
@@ -15093,7 +15095,7 @@ id: CHMO:0001466
 name: atomisation
 def: "The conversion of a vaporized sample into atomic components." [https://orcid.org/0000-0002-0640-0422]
 synonym: "atomization" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001467
@@ -15108,20 +15110,20 @@ name: carbo-reduction
 def: "A material processing \"in which a metal oxide is reduced in the presence of carbon or a carbon-containing compound.\"" [https://orcid.org/0000-0002-0640-0422] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:bibliographicCitation="'carbo-reduction' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.CT07609", dcterms:source="https://doi.org/10.1351/goldbook.CT07609", dcterms:rightsHolder="https://ror.org/03ne2zw20"}
 synonym: "carbo reduction" EXACT []
 synonym: "carboreduction" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001469
 name: ceramisation
 def: "A process in which a ceramic precursor is converted into a ceramic." [https://orcid.org/0000-0002-0640-0422]
 synonym: "ceramization" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001470
 name: coating method
 def: "The application of a thin cover to a sample." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001471
@@ -15144,20 +15146,20 @@ id: CHMO:0001473
 name: combustion
 def: "An exothermic chemical reaction between a fuel (usually a hydrocarbon) and an oxidant (usually oxygen) which is sometimes accompanied by the production of light." [https://orcid.org/0000-0002-0640-0422]
 synonym: "burning" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001474
 name: sample cooling
 def: "The transfer of thermal energy from a sample to its surrounding environment." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001475
 name: laser cooling
 def: "A technique for cooling atoms by directing two laser beams (with energy just below an electronic transition) at the sample from opposite directions. Scattering of the laser photons by the atoms in the sample reduces their kinetic energy." [https://orcid.org/0000-0002-0640-0422]
 is_a: CHMO:0001474 ! sample cooling
-relationship: BFO:0000057 OBI:0400064
+relationship: RO:0000057 OBI:0400064
 
 [Term]
 id: CHMO:0001476
@@ -15195,7 +15197,7 @@ is_a: CHMO:0001477 ! crystallisation
 id: CHMO:0001480
 name: curing
 def: "A chemical material processing that converts \"a prepolymer or polymer into a polymer of higher molar mass and then into a network.\"" [https://orcid.org/0000-0001-5985-7429] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.CT07137", dcterms:bibliographicCitation="'curing' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.CT07137"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001481
@@ -15227,14 +15229,14 @@ is_a: CHMO:0001480 ! curing
 id: CHMO:0001484
 name: densification
 def: "A material processing that is the \"the removal of impurities and the elimination of pores from a xerogel\" (a gel that has been dried with unhindered shrinkage)." [https://orcid.org/0000-0001-5985-7429] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:bibliographicCitation="'densification' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.DT07618", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.DT07618"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001485
 name: derivatisation
 def: "The transformation of a chemical compound (the 'educt') into another similar compound (the 'derivative') by altering one or more of its functional groups. Derivatisation is generally perfomed to alter reactivity or change a physical property such as solubility, boiling point, melting point, thermal stability etc." [https://orcid.org/0000-0002-0640-0422]
 synonym: "derivatization" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001486
@@ -15249,7 +15251,7 @@ is_a: CHMO:0001485 ! derivatisation
 id: CHMO:0001487
 name: decomposition
 def: "A material processing that is the \"breakdown of a single phase into two or more phases\" by heating or treatment with acid, alkali or enzymes." [] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:bibliographicCitation="'decomposition' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.D01547", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.D01547"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001488
@@ -15394,7 +15396,7 @@ name: ion-source pyrolysis
 def: "The chemical degradation of a sample by thermal energy in which the reactor is located within the ion source of a mass spectrometer." [OrangeBook:5.3]
 comment: try to find a located_in relationship
 is_a: CHMO:0001502 ! pyrolysis
-relationship: BFO:0000057 CHMO:0000960 ! ion source
+relationship: RO:0000057 CHMO:0000960 ! ion source
 
 [Term]
 id: CHMO:0001509
@@ -15407,7 +15409,7 @@ id: CHMO:0001510
 name: laser pyrolysis
 def: "A technique used to synthesize ultrafine powders by heating a mixture of reactant vapour and inert gas with a laser." [ISBN:3527303022]
 is_a: CHMO:0001502 ! pyrolysis
-relationship: BFO:0000057 OBI:0400064
+relationship: RO:0000057 OBI:0400064
 
 [Term]
 id: CHMO:0001511
@@ -15485,7 +15487,7 @@ property_value: OMO:0003012 "FVP" xsd:string {dcterms:source="https://doi.org/10
 id: CHMO:0001522
 name: dialysis
 def: "A material processing in which molecules in solution are separated by the difference in their rates of diffusion through a semipermeable membrane." [https://orcid.org/0000-0002-0640-0422] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.D01666"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001523
@@ -15505,7 +15507,7 @@ is_a: CHMO:0001522 ! dialysis
 id: CHMO:0001525
 name: sample dispersion
 def: "The distribution of particles of one phase in a continuous phase of a different nature." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001526
@@ -15525,7 +15527,7 @@ id: CHMO:0001528
 name: dissection
 def: "The disassembly of an object to determine its internal structure." [https://orcid.org/0000-0002-0640-0422]
 synonym: "anatomization" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001529
@@ -15540,7 +15542,7 @@ name: laser micro-dissection
 def: "A type of dissection where a laser is coupled to a microscope and focused onto a biological sample (e.g. tissue) on the slide." [https://orcid.org/0000-0002-0640-0422]
 synonym: "laser microdissection" EXACT []
 is_a: CHMO:0001529 ! micro-dissection
-relationship: BFO:0000057 OBI:0400064
+relationship: RO:0000057 OBI:0400064
 
 [Term]
 id: CHMO:0001531
@@ -15556,7 +15558,7 @@ is_a: CHMO:0001530 ! laser micro-dissection
 id: CHMO:0001532
 name: distillation
 def: "A method of separating mixtures based on differences in their volatilities in a boiling liquid mixture. The components in a sample mixture are vaporised by the application of heat and then cooled by the action of cold water in a condenser." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001533
@@ -15632,7 +15634,7 @@ id: CHMO:0001544
 name: droplet dispensing
 def: "The controlled dropwise release of a liquid." [https://orcid.org/0000-0002-0640-0422]
 synonym: "drop dispensing" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001545
@@ -15670,7 +15672,7 @@ id: CHMO:0001549
 name: sample drying
 def: "The process of removing a solvent from a substance." [https://orcid.org/0000-0002-0640-0422]
 synonym: "drying" RELATED non-mining_synonym []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001550
@@ -15731,7 +15733,7 @@ is_a: CHMO:0001549 ! sample drying
 id: CHMO:0001558
 name: etching
 def: "The process of chemically removing a thin layer from a sample surface, usually to leave behind a pattern." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001559
@@ -15844,7 +15846,7 @@ is_a: CHMO:0001571 ! wet etching
 id: CHMO:0001574
 name: evaporation
 def: "A material processing \"by which a liquid substance is converted to a gas or vapour. This may occur at or below the normal boiling point of the liquid (the temperature at which a liquid boils at 1 atmosphere pressure) and the process is endothermic.\"" [] {dcterms:bibliographicCitation="'evaporation' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.E02227", dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:source="https://doi.org/10.1351/goldbook.E02227", dcterms:rightsHolder="https://ror.org/03ne2zw20"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001575
@@ -15862,7 +15864,7 @@ is_a: CHMO:0002208 ! solvent evaporation
 id: CHMO:0001577
 name: extraction
 def: "A material processing in which a solute is transferred from a liquid phase to another immiscible or partially-miscible liquid phase in contact with it." [] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.E02302"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001578
@@ -16005,7 +16007,7 @@ synonym: "stir bar sorptive extraction" EXACT []
 synonym: "stir-bar solid phase extraction" EXACT []
 synonym: "stir-bar sorptive extraction" EXACT []
 is_a: CHMO:0001583 ! liquid-solid extraction
-relationship: BFO:0000057 CHMO:0002776 ! stir bar
+relationship: RO:0000057 CHMO:0002776 ! stir bar
 
 [Term]
 id: CHMO:0001592
@@ -16207,7 +16209,7 @@ name: extrusion
 def: "A process used to create objects of a fixed cross-sectional profile by forcing or drawing a material through a die." [https://orcid.org/0000-0002-0640-0422]
 synonym: "extrusion molding" EXACT []
 synonym: "extrusion moulding" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001614
@@ -16278,13 +16280,13 @@ is_a: CHMO:0001618 ! spinning
 id: CHMO:0001624
 name: fermentation
 def: "A material processing \"in which cells (microorganisms, plant or animal cells) are cultured in a bioreactor in liquid or solid medium to convert organic substances into biomass (growth) or into products.\"" [] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:bibliographicCitation="'fermentation' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.F02337", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.F02337"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001625
 name: fractionation
 def: "A material processing in which a sample mixture is divided up into smaller quantities \"according to physical (e.g. size, solubility) or chemical (e.g. bonding, reactivity) properties.\"" [https://orcid.org/0000-0002-0640-0422] {dcterms:source="https://doi.org/10.1351/goldbook.FT06825", dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:bibliographicCitation="'fractionation' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.FT06825"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001626
@@ -16458,7 +16460,7 @@ is_a: CHMO:0001640 ! filtration
 id: CHMO:0001646
 name: gelation
 def: "The formation of a gel or solidification of a gelatin solution caused by a change in conditions (such as temperature or pH)." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001647
@@ -16499,7 +16501,7 @@ synonym: "dry grinding" EXACT []
 synonym: "milling" EXACT [] {dcterms:source="https://doi.org/10.1351/goldbook.M03928"}
 synonym: "solid-state grinding" EXACT []
 synonym: "solvent-free grinding" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001653
@@ -16542,7 +16544,7 @@ id: CHMO:0001658
 name: ionisation method
 def: "The physical process of converting an atom or molecule into an ion by removing electrons." [https://orcid.org/0000-0002-0640-0422]
 synonym: "ionization method" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001659
@@ -16572,7 +16574,7 @@ synonym: "electrospray-assisted laser desorption–ionization" EXACT []
 synonym: "laser desorption electrospray ionisation" EXACT []
 synonym: "laser desorption electrospray ionization" EXACT []
 is_a: CHMO:0001659 ! electrospray ionisation
-relationship: BFO:0000057 OBI:0400064
+relationship: RO:0000057 OBI:0400064
 
 [Term]
 id: CHMO:0001662
@@ -16668,7 +16670,7 @@ property_value: OMO:0003012 "DART" xsd:string {dcterms:source="https://doi.org/1
 id: CHMO:0001673
 name: isostatic pressing
 def: "A material processing in which a powder is pressed under a gas or liquid so that pressure is transmitted equally in all directions." [https://orcid.org/0000-0002-0640-0422] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.IT07625"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001674
@@ -16684,7 +16686,7 @@ id: CHMO:0001675
 name: labelling
 def: "A material processing in which a label is attached onto a substance. Labels are molecular entities that facilitate the detection (through fluorescence, radioactivity, etc.) of the species to which they are attached." [https://orcid.org/0000-0002-0640-0422] {seeAlso="CHEBI:35209", prov:hadPrimarySource="https://doi.org/10.1351/goldbook.L03425"}
 synonym: "labeling" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001676
@@ -16735,13 +16737,13 @@ is_a: CHMO:0001675 ! labelling
 id: CHMO:0001681
 name: leaching
 def: "A material processing dissoluting material \"from a solid [phase into] a liquid in which  the solid phase is not wholly soluble.\"" [] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.10179", dcterms:bibliographicCitation="'leaching' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.10179"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001682
 name: sample melting
 def: "The process of heating a substance to cause the solid–liquid phase change." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001683
@@ -16762,21 +16764,21 @@ is_a: CHMO:0001683 ! skull melting
 id: CHMO:0001685
 name: mixing
 def: "A material processing in which \"components, particles or layers [are combined] into a more homogeneous state. The mixing may be achieved manually or mechanically by shifting the material with stirrers or pumps or by revolving or shaking the container. The process must not permit segregation of particles of different size or properties. Homogeneity may be considered to have been achieved in a practical sense when the sampling error of the processed portion is negligible compared to the total error of the measurement system.\"" [] {dcterms:source="https://doi.org/10.1351/goldbook.M03945", dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:bibliographicCitation="'mixing' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M03945"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001686
 name: Ostwald ripening
 def: "A material processing in which larger crystals grow from those of smaller size, which have a higher solubility than the larger ones." [] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.O04348"}
 synonym: "Ostwald-ripening" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001687
 name: photodegradation
 def: "A material processing that is \"the photochemical transformation of a molecule into lower molecular weight fragments, usually in an oxidation process.\"" [] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:bibliographicCitation="'photodegradation' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.P04595", dcterms:source="https://doi.org/10.1351/goldbook.P04595", dcterms:rightsHolder="https://ror.org/03ne2zw20"}
 synonym: "photo-degradation" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001688
@@ -16848,7 +16850,7 @@ is_a: CHMO:0001688 ! precipitation
 id: CHMO:0001698
 name: radiolysis
 def: "A material processing that is \"the cleavage of one or several bonds resulting from exposure to high-energy radiation.\"" [] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.R05112", dcterms:bibliographicCitation="'radiolysis' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.R05112"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001699
@@ -16866,7 +16868,7 @@ is_a: CHMO:0001698 ! radiolysis
 id: CHMO:0001701
 name: sintering
 def: "A material processing in which small particles are fused together by heating the sample below its melting point until its particles adhere to each other." [https://orcid.org/0000-0002-0640-0422] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.S05704"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001702
@@ -16894,7 +16896,7 @@ name: selective laser sintering
 def: "The fusing together of small particles by heating the sample below its melting point, using a high-energy laser, until its particles adhere to each other." [https://orcid.org/0000-0002-0640-0422]
 synonym: "SLS" RELATED []
 is_a: CHMO:0001703 ! solid-state sintering
-relationship: BFO:0000057 OBI:0400064
+relationship: RO:0000057 OBI:0400064
 
 [Term]
 id: CHMO:0001706
@@ -16912,7 +16914,7 @@ is_a: CHMO:0001703 ! solid-state sintering
 id: CHMO:0001707
 name: sonication
 def: "A material processing in which a liquid sample is irradiated with sound (20 Hz-20 kHz) waves resulting in agitation. Sound waves propagate into the liquid media result in alternating high-pressure (compression) and low-pressure (rarefaction) cycles. During rarefaction, high-intensity sonic waves create small vacuum bubbles or voids in the liquid, which then collapse violently (cavitation) during compression, creating very high local temperatures." [] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.S05766"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0001708
@@ -17030,7 +17032,7 @@ def: "A detection method which is sensitive to naturally fluorescent or tagged c
 synonym: "laser induced fluorescence detection" EXACT []
 synonym: "LIF" EXACT []
 is_a: CHMO:0000060 ! fluorescence detection
-relationship: BFO:0000057 OBI:0400064
+relationship: RO:0000057 OBI:0400064
 
 [Term]
 id: CHMO:0001723
@@ -17495,7 +17497,7 @@ creation_date: 2009-05-20T10:18:22Z
 id: CHMO:0001768
 name: trapping method
 def: "Any method used to trap a sample for further analysis." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000011
+is_a: COB:0000082
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-20T10:29:44Z
 
@@ -17507,7 +17509,7 @@ synonym: "laser tweezing" EXACT []
 synonym: "optical trapping" EXACT []
 synonym: "optical tweezing" EXACT []
 is_a: CHMO:0001768 ! trapping method
-relationship: BFO:0000057 OBI:0400064
+relationship: RO:0000057 OBI:0400064
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-20T10:35:42Z
 
@@ -17713,7 +17715,7 @@ name: laser sintering
 def: "The fusing together of small particles by heating the sample with a laser (e.g. a CO2 laser) below its melting point until its particles adhere to each other." [https://doi.org/10.1039/b823329b]
 synonym: "LS" RELATED non-mining_synonym []
 is_a: CHMO:0001703 ! solid-state sintering
-relationship: BFO:0000057 OBI:0400064
+relationship: RO:0000057 OBI:0400064
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-20T02:16:41Z
 
@@ -18020,7 +18022,7 @@ id: CHMO:0001810
 name: synchrotron
 def: "A large-scale particle accelerator in which a magnetic field is used to create the particle orbits. Synchrotrons produce X-ray, vacuum ultraviolet and broadband infrared radiation." [ISBN:0306474530]
 synonym: "synchrotrons" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-26T10:20:04Z
 
@@ -18054,7 +18056,7 @@ creation_date: 2009-05-26T12:36:47Z
 id: CHMO:0001814
 name: Raman microscope
 alt_id: CHMO:0001236
-def: "A piece of apparatus, consisting of a laser beam (<10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra." [https://orcid.org/0000-0002-0640-0422]
+def: "A combination of a Raman spectrometer and an optical microscope, in which the latter is coupled to a monochromator to produce an enlarged image of a specimen via detection of the Raman scattered light, using a light beam (typically from a laser) with a diameter of <10 μm." [https://orcid.org/0000-0002-0640-0422]
 synonym: "Raman microspectrometer" EXACT []
 is_a: CHMO:0000953 ! microscope
 is_a: CHMO:0001235 ! Raman spectrometer
@@ -18436,7 +18438,7 @@ name: nuclear magnetic resonance pulse sequence
 def: "A series of short (microsecond) bursts (pulses) of rf radiation separated by delays (of defined duration) designed to interact with, and manipulate the magnetic moments of spin-active nuclei during NMR spectroscopy." [rsc:pr]
 synonym: "NMR pulse sequence" EXACT []
 synonym: "pulse sequence" EXACT []
-is_a: OBI:0000011
+is_a: COB:0000082
 relationship: BFO:0000118 CHMO:0001842 ! radio frequency pulse
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-29T01:41:59Z
@@ -18445,7 +18447,7 @@ creation_date: 2009-05-29T01:41:59Z
 id: CHMO:0001842
 name: radio frequency pulse
 def: "A short (microsecond) period of radio frequency wavelength radiation." [rsc:pr]
-is_a: OBI:0000011
+is_a: COB:0000082
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-05-29T01:44:50Z
 
@@ -19161,7 +19163,7 @@ creation_date: 2009-06-03T09:34:21Z
 id: CHMO:0001904
 name: supercritical fluid method
 def: "Any material processing method that uses a supercritical fluid." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000094
+is_a: COB:0000110
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-03T09:36:47Z
 
@@ -19231,7 +19233,7 @@ synonym: "FPA" EXACT []
 synonym: "staring array" EXACT []
 synonym: "staring plane array" EXACT []
 synonym: "staring-plane array" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-03T10:26:20Z
 
@@ -19642,7 +19644,7 @@ synonym: "collision induced dissociation" EXACT []
 synonym: "collision-activated dissociation" EXACT []
 synonym: "collisionally activated dissociation" EXACT []
 synonym: "collisionally-activated dissociation" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-08T04:07:29Z
 
@@ -19870,7 +19872,7 @@ creation_date: 2009-06-11T02:15:58Z
 id: CHMO:0001957
 name: flow cytometer
 def: "A piece of apparatus, consisting of a flow cell, a laser and a detector, which detects the fluorescence and light scattering of individual particles (e.g. cells)." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-11T02:20:37Z
 
@@ -20348,7 +20350,7 @@ name: profilometer
 def: "A piece of apparatus that measures surface profiles by dragging a (diamond) stylus across the sample surface. A feedback loop is used to maintain a fixed relationship between the stylus and surface during scanning." [https://orcid.org/0000-0002-0640-0422]
 synonym: "stylus profilometer" EXACT []
 synonym: "surface profilometer" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-06-18T03:13:06Z
 
@@ -21643,7 +21645,7 @@ creation_date: 2009-07-08T09:57:28Z
 id: CHMO:0002120
 name: monochromator
 def: "A device that transmits a \"narrow band of wavelengths [of light or other radiation (e.g. X-rays)] chosen from a wider range of wavelengths available at the input\"." [https://orcid.org/0000-0002-0640-0422] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:source="https://doi.org/10.1351/goldbook.M04009", dcterms:bibliographicCitation="'monochromator' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M04009", dcterms:rightsHolder="https://ror.org/03ne2zw20"}
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-08T10:17:24Z
 
@@ -21667,7 +21669,7 @@ creation_date: 2009-07-08T10:19:18Z
 id: CHMO:0002122
 name: sputter coater
 def: "A piece of apparatus, consisting of an anode (the specimen) a cathode (the source of sputter atoms or 'target') and a magnet, all held inside a vacuum chamber, which is used to coat specimens with a thin layer of atoms (e.g. Au) prior to microscopy." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-08T10:37:10Z
 
@@ -21717,7 +21719,7 @@ creation_date: 2009-07-08T04:08:57Z
 id: CHMO:0002126
 name: amplifier
 def: "A piece of apparatus that can increase the power of a signal." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-08T04:13:06Z
 
@@ -22000,7 +22002,7 @@ creation_date: 2009-07-11T03:52:20Z
 id: CHMO:0002151
 name: passivation
 def: "A material processing that makes one sample unreactive to another, prior to using the samples together." [https://orcid.org/0000-0002-0640-0422] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.P04443"}
-is_a: OBI:0000094
+is_a: COB:0000110
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-11T04:28:44Z
 
@@ -22061,7 +22063,7 @@ id: CHMO:0002157
 name: deionisation method
 def: "The removal of ions from a solution using an ion-exchange method." [https://orcid.org/0000-0002-0640-0422]
 synonym: "deionization" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-13T01:17:32Z
 
@@ -22148,7 +22150,7 @@ creation_date: 2009-07-14T10:12:49Z
 id: CHMO:0002166
 name: autoclave
 def: "A thick-walled steel vessel used during synthesis methods that require both high pressures and high temperatures." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-15T01:19:11Z
 
@@ -22335,7 +22337,7 @@ synonym: "CCD camera" EXACT []
 synonym: "charge coupled device (CCD) camera" EXACT []
 synonym: "charge coupled device camera" EXACT []
 synonym: "charge-coupled device (CCD) digital camera" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-17T04:14:40Z
 
@@ -22496,7 +22498,7 @@ creation_date: 2009-07-21T01:15:45Z
 id: CHMO:0002196
 name: activation
 def: "A material processing that involves preparing or exciting a sample for a subsequent reaction." [https://orcid.org/0000-0002-0640-0422] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.A00093"}
-is_a: OBI:0000094
+is_a: COB:0000110
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-21T03:00:23Z
 
@@ -22527,7 +22529,7 @@ name: rotary evaporator
 def: "A piece of apparatus consisting of a motor unit that rotates the evaporation flask, a vacuum system, a heated water bath and a condenser, which is used to remove solvents from samples under reduced pressure." [https://orcid.org/0000-0002-0640-0422]
 synonym: "rotavap" EXACT []
 synonym: "Rotavapor" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-22T09:35:05Z
 
@@ -22562,7 +22564,7 @@ def: "A mass spectrometer that uses a plate to hold the sample in a matrix (such
 synonym: "MALDI mass spectrometer" EXACT []
 synonym: "matrix assisted laser desorption-ionisation mass spectrometer" EXACT []
 is_a: CHMO:0000982 ! mass spectrometer
-relationship: BFO:0000057 CHMO:0002203 ! matrix assisted laser desorption-ionisation plate
+relationship: BFO:0000051 CHMO:0002203 ! matrix assisted laser desorption-ionisation plate
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-23T03:47:52Z
 
@@ -22571,7 +22573,7 @@ id: CHMO:0002203
 name: matrix assisted laser desorption-ionisation plate
 def: "A extremely flat surface that holds the sample during a mass spectrometry experiment where the sample is vaporised and ionised using a high-energy pulsed laser whilst being held in a matrix to protect it from direct laser illumination and to separate the sample molecules. The surface of the plate may be chemically functionalised for a specific sample." [https://orcid.org/0000-0002-0640-0422]
 synonym: "MALDI plate" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-23T03:48:32Z
 
@@ -22825,7 +22827,6 @@ synonym: "EDX pattern" EXACT []
 synonym: "EDX spectra" EXACT []
 synonym: "EDX spectrum" EXACT []
 is_a: CHMO:0000830 ! X-ray spectrum
-relationship: BFO:0000057 CHMO:0001809 ! energy dispersive X-ray spectrometer
 relationship: OBI:0000312 CHMO:0000309 ! energy-dispersive X-ray emission spectroscopy
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-28T05:21:13Z
@@ -22836,8 +22837,8 @@ name: cone calorimetry
 def: "The measurement of thermodynamic parameters such as heat release rate, heat of combustion, ignitability, and the evolution of toxic gases, smoke and soot, for flame retarding materials using a cone calorimeter." [https://orcid.org/0000-0002-0640-0422]
 is_a: CHMO:0000682 ! calorimetry
 intersection_of: CHMO:0000682 ! calorimetry
-intersection_of: BFO:0000057 CHMO:0002229 ! cone calorimeter
-relationship: BFO:0000057 CHMO:0002229 ! cone calorimeter
+intersection_of: RO:0000057 CHMO:0002229 ! cone calorimeter
+relationship: RO:0000057 CHMO:0002229 ! cone calorimeter
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-07-29T09:37:53Z
 
@@ -22945,7 +22946,7 @@ id: CHMO:0002239
 name: carbon nanotube synthesis method
 def: "Any method used to synthesise carbon nanotubes." [https://orcid.org/0000-0002-0640-0422]
 is_a: CHMO:0002838 ! nanostructure synthesis
-intersection_of: OBI:0000094
+intersection_of: COB:0000110
 intersection_of: OBI:0000299 CHEBI:50594
 relationship: OBI:0000299 CHEBI:50594
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -23011,7 +23012,7 @@ creation_date: 2009-08-05T11:24:17Z
 id: CHMO:0002244
 name: detector
 def: "A device used to detect an analyte." [https://orcid.org/0000-0002-0640-0422] {prov:wasInfluencedBy="https://books.rsc.org/view-large/6381939"}
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-08-05T11:58:48Z
 
@@ -23170,7 +23171,7 @@ name: strong-anion-exchange chromatography
 def: "Column chromatography where anions are retained by positively charged functional groups that have a permanent positive charge in aqueous solution, such as quaternary ammonium groups, in the stationary phase." [https://orcid.org/0000-0001-5985-7429]
 synonym: "SAX chromatography" EXACT []
 is_a: CHMO:0001209 ! anion-exchange chromatography
-relationship: BFO:0000057 CHMO:0002268 ! strong anion-exchange column
+relationship: RO:0000057 CHMO:0002268 ! strong anion-exchange column
 created_by: batchelorc
 creation_date: 2009-08-10T02:43:38Z
 
@@ -23180,7 +23181,7 @@ name: weak-anion-exchange chromatography
 def: "Column chromatography where anions are retained by positively charged functional groups that have a positive charge only at high pH, such as amine groups, in the stationary phase." [https://orcid.org/0000-0001-5985-7429]
 synonym: "WAX chromatography" EXACT []
 is_a: CHMO:0001209 ! anion-exchange chromatography
-relationship: BFO:0000057 CHMO:0002269 ! weak anion-exchange column
+relationship: RO:0000057 CHMO:0002269 ! weak anion-exchange column
 created_by: batchelorc
 creation_date: 2009-08-10T02:56:33Z
 
@@ -23189,7 +23190,7 @@ id: CHMO:0002260
 name: strong-cation-exchange chromatography
 def: "Column chromatography where cations are retained by functional groups that are permanently negatively charged in aqueous conditions, for example aliphatic sulfonic acid groups, in the stationary phase." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0001210 ! cation-exchange chromatography
-relationship: BFO:0000057 CHMO:0002266 ! strong cation-exchange column
+relationship: RO:0000057 CHMO:0002266 ! strong cation-exchange column
 created_by: batchelorc
 creation_date: 2009-08-10T03:00:45Z
 
@@ -23198,7 +23199,7 @@ id: CHMO:0002261
 name: weak-cation-exchange chromatography
 def: "Column chromatography where cations are retained by functional groups that are  negatively charged at low pH, for example aliphatic carboxylic acid groups, in the stationary phase." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0001210 ! cation-exchange chromatography
-relationship: BFO:0000057 CHMO:0002267 ! weak cation-exchange column
+relationship: RO:0000057 CHMO:0002267 ! weak cation-exchange column
 created_by: batchelorc
 creation_date: 2009-08-10T03:02:20Z
 
@@ -24116,7 +24117,7 @@ creation_date: 2009-09-04T04:27:29Z
 id: CHMO:0002344
 name: electrode
 def: "An electrically-conducting device that exchanges electrons with an electrolyte as part of an electrical circuit." [https://orcid.org/0000-0001-5985-7429] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.09060"}
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: batchelorc
 creation_date: 2009-09-11T10:48:45Z
 
@@ -24180,7 +24181,7 @@ creation_date: 2009-09-11T11:16:35Z
 id: CHMO:0002351
 name: electrochemical cell
 def: "A device in which a current causes chemical reactions or chemical reactions cause a current to flow." [https://orcid.org/0000-0001-5985-7429] {prov:wasInfluencedBy="https://doi.org/10.1351/goldbook.09058"}
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: batchelorc
 creation_date: 2009-09-11T11:22:34Z
 
@@ -24711,7 +24712,7 @@ id: CHMO:0002396
 name: electrostatic detection apparatus
 def: "A piece of apparatus which is used to detect footwear marks and indented impressions of handwriting in paper. The sample sheet of paper is placed on a sintered copper plate, a vacuum is applied and a thin mylar plastic film is rolled over the sample. An electrostatic charge is then applied to the plastic by means of a corona discharge and the subsequent pattern of charging is then visualised using photocopier toner. The toner adheres to those areas corresponding to indentations." [ISBN:0-85404-539-2]
 synonym: "ESDA" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-16T11:14:24Z
 
@@ -25034,7 +25035,7 @@ id: CHMO:0002426
 name: galvanostat
 def: "A device that maintains the current through an electrochemical cell at a preset value." [https://orcid.org/0000-0002-0640-0422] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.09076"}
 synonym: "amperostat" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-21T04:28:28Z
 
@@ -25042,7 +25043,7 @@ creation_date: 2009-09-21T04:28:28Z
 id: CHMO:0002427
 name: potentiostat
 def: "A device that maintains the potential through an electrochemical cell at a preset value." [https://orcid.org/0000-0002-0640-0422] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.09079"}
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-21T04:31:40Z
 
@@ -25200,7 +25201,7 @@ creation_date: 2009-09-23T02:33:29Z
 id: CHMO:0002444
 name: microwave oven
 def: "A piece of apparatus, consisting of a high- voltage transformer, a cavity magnetron, a waveguide and a sample chamber, that is used to heat samples by irradiation with microwave (2 GHz) radiation." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-23T02:43:52Z
 
@@ -25470,8 +25471,8 @@ name: analyte
 def: "A portion of material that is \"the component of a system to be analysed\"." [] {dcterms:bibliographicCitation="'analyte' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00331", dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.A00331"}
 is_a: CHMO:0000993 ! portion of material
 intersection_of: CHMO:0000993 ! portion of material
-intersection_of: BFO:0000087 CHMO:0002740 ! analyte role
-relationship: BFO:0000087 CHMO:0002740 ! analyte role
+intersection_of: RO:0000087 CHMO:0002740 ! analyte role
+relationship: RO:0000087 CHMO:0002740 ! analyte role
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-29T11:58:40Z
 
@@ -25518,7 +25519,7 @@ creation_date: 2009-09-29T06:34:10Z
 id: CHMO:0002473
 name: Knudsen cell
 def: "A piece of apparatus, consisting of a crucible (made of pyrolytic boron nitride, quartz, tungsten or graphite), heating filaments, a water cooling system, which is used to measure very low vapor pressures by measuring the mass of vapor which escapes when the vessel contains a liquid in equilibrium with its vapor. It is also used as a source evaporator during crystal growth e.g. during molecular-beam epitaxy." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-29T06:39:36Z
 
@@ -25526,7 +25527,7 @@ creation_date: 2009-09-29T06:39:36Z
 id: CHMO:0002474
 name: magnetic tweezers
 def: "A piece of apparatus, consisting of an electromagnet containing a paramagnetic core material with a tip-shaped end, that is used to trap and manipulate magnetic particles." [https://doi.org/10.1016/S0006-3495(02)75672-5]
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-09-29T06:44:09Z
 
@@ -26292,7 +26293,7 @@ synonym: "programmed temperature vaporization" EXACT []
 synonym: "programmed-temperature vaporisation" EXACT []
 synonym: "programmed-temperature vaporization" EXACT []
 synonym: "PTV" RELATED []
-is_a: OBI:0000094
+is_a: COB:0000110
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-10-21T06:16:02Z
 
@@ -26388,9 +26389,8 @@ creation_date: 2009-10-23T02:02:34Z
 id: CHMO:0002548
 name: polymer preparation method
 def: "Any experimental method used to prepare polymer samples." [https://orcid.org/0000-0002-0640-0422]
-is_a: COB:0000035
-is_a: OBI:0000094
-intersection_of: OBI:0000094
+is_a: COB:0000110
+intersection_of: COB:0000110
 intersection_of: OBI:0000299 CHEBI:60027
 relationship: OBI:0000299 CHEBI:60027
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -26635,7 +26635,7 @@ def: "A piece of apparatus, consisting of a gas manifold with a series of tubes 
 synonym: "Sieverts apparatus" EXACT []
 synonym: "Sieverts' apparatus" EXACT []
 synonym: "volumetric hydrogen storage capacity apparatus" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-10-27T09:19:33Z
 
@@ -26654,7 +26654,7 @@ id: CHMO:0002572
 name: Schlenk tube
 def: "A piece of apparatus used as a reaction vessel in air-sensitive chemistry. It is made of glass and has a side arm fitted with a PTFE or ground glass stopcock which allows the vessel to be evacuated or filled with gas (e.g. nitrogen or argon)." [https://orcid.org/0000-0002-0640-0422]
 synonym: "Schlenk flask" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-10-28T09:17:43Z
 
@@ -26727,7 +26727,7 @@ creation_date: 2009-11-03T05:26:56Z
 id: CHMO:0002579
 name: autosampler
 def: "A piece of apparatus, consisting of a rotating circular tray containing a number of sealed vials, that is used for the automatic injection of samples during a mass spectrometry experiment." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-11-03T05:37:59Z
 
@@ -26849,7 +26849,7 @@ id: CHMO:0002591
 name: scanning mobility particle sizer
 def: "A piece of apparatus that measures the size distribution of particles in an aerosol by neutralising the particles, passing them through a differential mobility analyser in order to control the size of the particles and then counting the particles of that size with a condensation particle counter." [http://cloudbase.phy.umist.ac.uk/field/instruments/smps.htm]
 synonym: "SMPS" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: batchelorc
 creation_date: 2009-11-10T12:09:23Z
 
@@ -26909,7 +26909,7 @@ creation_date: 2009-11-13T01:16:15Z
 id: CHMO:0002598
 name: glow discharge synthesis
 def: "A synthesis method where an electrical discharge is passed under reduced pressure between two electrodes." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000094
+is_a: COB:0000110
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-11-14T11:00:18Z
 
@@ -27013,7 +27013,7 @@ creation_date: 2009-11-18T09:13:41Z
 id: CHMO:0002607
 name: micromanipulator
 def: "A piece of apparatus which is used to physically interact with a sample under a microscope." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-11-19T02:01:02Z
 
@@ -27031,9 +27031,8 @@ id: CHMO:0002609
 name: graphitisation
 def: "The conversion of an organic material in an inert atmosphere at temperatures in excess of 1800 °C to produce a graphite crystal structure." [https://orcid.org/0000-0002-0640-0422]
 synonym: "graphitization" EXACT []
-is_a: COB:0000035
-is_a: OBI:0000094
-intersection_of: OBI:0000094
+is_a: COB:0000110
+intersection_of: COB:0000110
 intersection_of: OBI:0000299 CHEBI:33418
 relationship: OBI:0000299 CHEBI:33418
 created_by: https://orcid.org/0000-0001-5985-7429
@@ -27046,7 +27045,7 @@ def: "A thin film of micrometre thickness which is used as a support for specime
 synonym: "TEM micro-grid" EXACT []
 synonym: "TEM microgrid" EXACT []
 synonym: "transmission electron microscope microgrid" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-11-19T02:12:30Z
 
@@ -27336,7 +27335,7 @@ creation_date: 2009-12-07T05:40:30Z
 id: CHMO:0002635
 name: magnetometer
 def: "A piece of apparatus used to measure the strength and/or direction of a magnetic field." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000968
+is_a: COB:0001300
 created_by: https://orcid.org/0000-0001-5985-7429
 creation_date: 2009-12-07T06:13:43Z
 
@@ -28355,9 +28354,9 @@ synonym: "QTOF MS" EXACT []
 synonym: "QTOF-MS" EXACT []
 xref: FIX:0000958
 is_a: CHMO:0000504 ! quadrupole mass spectrometry
-relationship: BFO:0000057 CHMO:0000961 ! orthogonal-acceleration ion source
-relationship: BFO:0000057 CHMO:0000962 ! orthogonal-acceleration time-of-flight mass spectrometer
-relationship: BFO:0000057 CHMO:0000963 ! quadrupole mass spectrometer
+relationship: RO:0000057 CHMO:0000961 ! orthogonal-acceleration ion source
+relationship: RO:0000057 CHMO:0000962 ! orthogonal-acceleration time-of-flight mass spectrometer
+relationship: RO:0000057 CHMO:0000963 ! quadrupole mass spectrometer
 created_by: Hils
 creation_date: 2010-07-25T05:22:22Z
 
@@ -28621,9 +28620,9 @@ name: matrix
 def: "A portion of material representing \"those components of a sample\" that are not measured by an experiment." [https://orcid.org/0000-0001-5985-7429] {dcterms:source="https://doi.org/10.1351/goldbook.M03758", dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:bibliographicCitation="'matrix' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.M03758", dcterms:rightsHolder="https://ror.org/03ne2zw20"}
 is_a: CHMO:0000993 ! portion of material
 intersection_of: CHMO:0000993 ! portion of material
-intersection_of: BFO:0000087 CHMO:0002744 ! matrix role
-relationship: BFO:0000087 CHMO:0002744 ! matrix role
+intersection_of: RO:0000087 CHMO:0002744 ! matrix role
 relationship: BFO:0000174 CHMO:0002746 ! experimental sample
+relationship: RO:0000087 CHMO:0002744 ! matrix role
 
 [Term]
 id: CHMO:0002744
@@ -28672,8 +28671,7 @@ relationship: IAO:0000136 CHMO:0000960 ! ion source
 [Term]
 id: CHMO:0002751
 name: carrier gas flow rate
-def: "The volume of carrier gas passing through a chromatography column in unit time." [https://orcid.org/0000-0001-5985-7429]
-xref: http://goldbook.iupac.org/F02439.html
+def: "A setting datum or an assay output expressing \"the volume of [carrier gas] passing through [a chromatography] column in unit time.\"" [https://orcid.org/0000-0001-5985-7429] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:bibliographicCitation="'flow rate' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.F02439", dcterms:source="https://doi.org/10.1351/goldbook.F02439", dcterms:rightsHolder="https://ror.org/03ne2zw20"}
 is_a: CHMO:0000793 ! assay output
 is_a: IAO:0000140
 
@@ -28797,7 +28795,7 @@ is_a: CHMO:0000976 ! high-performance liquid chromatography column
 id: CHMO:0002768
 name: gas chromatograph-mass spectrometer transfer line
 def: "A piece of apparatus connecting a gas chromatograph to a mass spectrometer." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0002769
@@ -28812,13 +28810,13 @@ id: CHMO:0002770
 name: sample heating
 def: "A sample preparation step involving the increase in temperature of a sample." [https://orcid.org/0000-0001-5985-7429]
 comment: ought to be in OBI. Will put here pro tem.
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0002771
 name: concentrating
 def: "A preparative step where the concentration of one component is increased." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0002772
@@ -28826,7 +28824,7 @@ name: degassing
 def: "A preparative step involving the removal of dissolved gases from a sample." [https://orcid.org/0000-0001-5985-7429]
 synonym: "degasification" EXACT []
 xref: http://en.wikipedia.org/wiki/Degasification
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0002773
@@ -28849,7 +28847,7 @@ is_a: CHMO:0002774 ! stirring
 [Term]
 id: CHMO:0002776
 name: stir bar
-is_a: OBI:0000968
+is_a: COB:0001300
 relationship: BFO:0000056 CHMO:0002774 ! stirring
 
 [Term]
@@ -28857,7 +28855,7 @@ id: CHMO:0002777
 name: Kugelrohr condenser
 def: "A short-path vacuum distillation apparatus consisting of an electric heater and two or more glass bulbs. The compound to be distilled is placed in the last bulb." [http://en.wikipedia.org/wiki/Kugelrohr]
 synonym: "Kugelrohr apparatus" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 relationship: BFO:0000056 CHMO:0001540 ! vacuum distillation
 
 [Term]
@@ -28915,13 +28913,13 @@ id: CHMO:0002786
 name: filter cake
 def: "The material left behind in the filter as a result of filtration." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0000993 ! portion of material
-relationship: BFO:0000068 CHMO:0001640 ! filtration
+relationship: RO:0002488 CHMO:0001640 ! filtration
 
 [Term]
 id: CHMO:0002787
 name: syringe pump
 def: "A syringe which has the function of pumping material into an experiment." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000968
+is_a: COB:0001300
 relationship: BFO:0000085 OBI:0001042
 
 [Term]
@@ -28935,7 +28933,7 @@ id: CHMO:0002789
 name: hydrogenator
 def: "A piece of apparatus for carrying out hydrogenation reactions, usually under high pressure." [https://orcid.org/0000-0001-5985-7429]
 comment: See for example http://www.parrinst.com/products/hydrogenation/3926-hydrogenator/
-is_a: OBI:0000968
+is_a: COB:0001300
 relationship: BFO:0000178 CHMO:0002788 ! hydrogen atmosphere
 
 [Term]
@@ -28960,7 +28958,7 @@ is_a: IAO:0000140
 id: CHMO:0002793
 name: sensor
 def: "A device that is used to measure a physical quantity." [https://orcid.org/0000-0001-5985-7429] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.08872", prov:wasInfluencedBy="https://books.rsc.org/view-large/6381967"}
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0002794
@@ -28979,7 +28977,7 @@ id: CHMO:0002796
 name: dosimetry
 def: "Measurement of the dose of a substance taken up by an object." [https://doi.org/10.1039/9781847559753-00013]
 is_a: OBI:0000070
-relationship: BFO:0000057 CHMO:0002797 ! dosimeter
+relationship: RO:0000057 CHMO:0002797 ! dosimeter
 
 [Term]
 id: CHMO:0002797
@@ -28992,7 +28990,7 @@ id: CHMO:0002798
 name: chemodosimetry
 def: "Measurement of the dose of ions or small molecules taken up by an object." [https://doi.org/10.1039/9781847559753-00013]
 is_a: CHMO:0002796 ! dosimetry
-relationship: BFO:0000057 CHMO:0002799 ! chemodosimeter
+relationship: RO:0000057 CHMO:0002799 ! chemodosimeter
 
 [Term]
 id: CHMO:0002799
@@ -29005,7 +29003,7 @@ id: CHMO:0002800
 name: muffle furnace
 def: "A device for heating substances to high temperatures where the material is kept separate from the fuel." [http://en.wikipedia.org/wiki/Muffle_furnace]
 synonym: "retort furnace" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0002801
@@ -29066,7 +29064,7 @@ is_a: CHMO:0002809 ! piece of heating apparatus
 id: CHMO:0002809
 name: piece of heating apparatus
 def: "A piece of apparatus that is used to raise the temperature of a sample." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0002810
@@ -29075,7 +29073,7 @@ def: "A device that consists of an oven, and apparatus to mix carrier gas contai
 synonym: "FID" EXACT OMO:0003012 []
 synonym: "FID detector" EXACT []
 synonym: "flame ionization detector" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0002811
@@ -29087,7 +29085,7 @@ is_a: OBI:0001138
 [Term]
 id: CHMO:0002812
 name: glass-like carbon electrode
-def: "An electrode consisting of agranular non-graphitizable carbon with high isotropy and low permeability for liquids and gases." [https://doi.org/10.1351/goldbook.G02639]
+def: "An electrode consisting of \"agranular non-graphitizable carbon with a very high isotropy [and] low permeability for liquids and gases.\"" [] {dcterms:bibliographicCitation="'glass-like carbon' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.G02639", dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.G02639"}
 synonym: "glassy carbon electrode" EXACT []
 synonym: "vitreous carbon electrode" EXACT []
 is_a: CHMO:0002592 ! carbon electrode
@@ -29183,7 +29181,7 @@ is_a: CHMO:0002820 ! concentration
 [Term]
 id: CHMO:0002825
 name: solubility in water
-def: "The concentration of a solute in a saturated solution of water and the solute." [https://doi.org/10.1351/goldbook.S05740]
+def: "A solubility in which the solution is water." []
 is_a: CHMO:0002815 ! solubility
 
 [Term]
@@ -29191,7 +29189,7 @@ id: CHMO:0002826
 name: Dean-Stark apparatus
 synonym: "Dean-Stark condenser" EXACT []
 synonym: "Dean-Stark trap" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0002827
@@ -29212,7 +29210,7 @@ def: "Storage of a sample that has been dissolved in dimethyl sulfoxide." [https
 comment: CHEBI:28262 here is a placeholder - really there should be a portion of material descendant like 'buffer solution'
 synonym: "storage in DMSO" EXACT []
 is_a: OBI:0302893
-relationship: BFO:0000057 CHEBI:28262
+relationship: RO:0000057 CHEBI:28262
 
 [Term]
 id: CHMO:0002830
@@ -29227,7 +29225,7 @@ relationship: OBI:0000299 IAO:0000104
 id: CHMO:0002831
 name: material acquisition
 def: "A planned process in which materials for an experiment are acquired from an external supplier." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000011
+is_a: COB:0000082
 
 [Term]
 id: CHMO:0002832
@@ -29259,14 +29257,14 @@ is_a: CHMO:0002739 ! quantitative determination method
 id: CHMO:0002836
 name: Stöber process
 def: "A material processing process that produces monodisperse particles of silica by adding tetraethyl silicate to an excess of water containing a low-molar-mass alcohol and stirring." [http://en.wikipedia.org/wiki/St%C3%B6ber_process]
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0002837
 name: nanoparticle synthesis
 def: "A material processing process that is intended to produce nanoparticles." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0002838 ! nanostructure synthesis
-intersection_of: OBI:0000094
+intersection_of: COB:0000110
 intersection_of: OBI:0000299 CHEBI:50803
 relationship: OBI:0000299 CHEBI:50803
 
@@ -29274,9 +29272,8 @@ relationship: OBI:0000299 CHEBI:50803
 id: CHMO:0002838
 name: nanostructure synthesis
 def: "A material processing process that is intended to produce nanostructures." [https://orcid.org/0000-0001-5985-7429]
-is_a: COB:0000035
-is_a: OBI:0000094
-intersection_of: OBI:0000094
+is_a: COB:0000110
+intersection_of: COB:0000110
 intersection_of: OBI:0000299 CHEBI:50795
 relationship: OBI:0000299 CHEBI:50795
 
@@ -29284,13 +29281,13 @@ relationship: OBI:0000299 CHEBI:50795
 id: CHMO:0002839
 name: planned process setup
 def: "A planned process involving setting up the equipment for another planned process." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000011
+is_a: COB:0000082
 
 [Term]
 id: CHMO:0002840
 name: planned process startup
 def: "Part of a planned process where the equipment has been set up and human intervention is required to set the subprocesses going." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000011
+is_a: COB:0000082
 
 [Term]
 id: CHMO:0002841
@@ -29322,15 +29319,15 @@ is_a: CHMO:0002830 ! experimental plan revision
 id: CHMO:0002845
 name: waste management
 def: "A planned process that involves all aspects of dealing with the waste produced in experiments." [https://orcid.org/0000-0001-5985-7429] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.13964"}
-is_a: OBI:0000011
+is_a: COB:0000082
 
 [Term]
 id: CHMO:0002846
 name: autoclaving
 def: "A material processing step that involves heating apparatus in an autoclave." [https://orcid.org/0000-0001-5985-7429]
 comment: does every autoclaving happen as part of waste management?
-is_a: OBI:0000094
-relationship: BFO:0000057 CHMO:0002166 ! autoclave
+is_a: COB:0000110
+relationship: RO:0000057 CHMO:0002166 ! autoclave
 
 [Term]
 id: CHMO:0002847
@@ -29370,7 +29367,7 @@ relationship: OBI:0000312 CHMO:0002852 ! spiking
 id: CHMO:0002852
 name: spiking
 def: "A material processing step that involves taking a test material with an adequately low background level of the intended analyte and mixing it with a known amount of analyte." [http://iupac.org/publications/analytical_compendium/Cha18sec61.pdf]
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0002853
@@ -29403,7 +29400,7 @@ property_value: OMO:0003000 "e.e." xsd:string {dcterms:source="https://doi.org/1
 [Term]
 id: CHMO:0002857
 name: percentage enantiomer excess
-def: "The absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer multiplied by 100%." [https://doi.org/10.1359/goldbook.E02070]
+def: "An assay output expressing the absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer multiplied by 100%." [] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.E02070"}
 is_a: CHMO:0000793 ! assay output
 
 [Term]
@@ -29428,7 +29425,7 @@ is_a: CHMO:0000793 ! assay output
 [Term]
 id: CHMO:0002861
 name: percentage diastereomeric excess
-def: "An assay output that is the absolute value of the mole fraction for one diastereomer in a mixture minus the mole fraction for the other multiplied by 100%." [https://orcid.org/0000-0001-5985-7429] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.D01675"}
+def: "An assay output expressing the absolute value of the mole fraction for one diastereomer in a mixture minus the mole fraction for the other multiplied by 100%." [https://orcid.org/0000-0001-5985-7429] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.D01675"}
 is_a: CHMO:0000793 ! assay output
 
 [Term]
@@ -29570,7 +29567,7 @@ name: slotted disc
 def: "A disc with a slot in it." [https://orcid.org/0000-0001-5985-7429]
 comment: This is used in photoacoustic spectroscopy to break a continuous laser beam into a pulsed one.
 synonym: "slotted disk" EXACT []
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0002886
@@ -29613,14 +29610,14 @@ id: CHMO:0002892
 name: excitation laser function
 def: "Function of a laser realized by it exciting some internal state of a sample." [https://orcid.org/0000-0001-5985-7429]
 is_a: BFO:0000034
-relationship: BFO:0000052 OBI:0400064
+relationship: RO:0000052 OBI:0400064
 
 [Term]
 id: CHMO:0002893
 name: probe laser function
 def: "Function of a laser realized by its interactions with internal state of a sample being measured." [https://orcid.org/0000-0001-5985-7429]
 is_a: BFO:0000034
-relationship: BFO:0000052 OBI:0400064
+relationship: RO:0000052 OBI:0400064
 
 [Term]
 id: CHMO:0002894
@@ -29640,27 +29637,27 @@ relationship: BFO:0000085 CHMO:0002893 ! probe laser function
 id: CHMO:0002896
 name: magnetron
 def: "A device that uses electrical and magnetic fields to generate heat." [https://orcid.org/0000-0002-0640-0422]
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0002897
 name: polarimeter
 def: "A device that measures the angle of optical rotation of a sample." [https://orcid.org/0000-0001-5985-7429]
-is_a: OBI:0000968
+is_a: COB:0001300
 
 [Term]
 id: CHMO:0002898
 name: polarimetry of sample dissolved in chloroform
 def: "Polarimetry of a sample that has been dissolved in chloroform." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0000779 ! polarimetry
-relationship: BFO:0000057 CHEBI:35255
+relationship: RO:0000057 CHEBI:35255
 
 [Term]
 id: CHMO:0002899
 name: polarimetry of sample dissolved in dimethyl sulfoxide
 def: "Polarimetry of a sample that has been dissolved in dimethyl sulfoxide." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0000779 ! polarimetry
-relationship: BFO:0000057 CHEBI:28262
+relationship: RO:0000057 CHEBI:28262
 
 [Term]
 id: CHMO:0002900
@@ -29720,7 +29717,7 @@ id: CHMO:0002906
 name: microwave-assisted hydrothermal synthesis
 def: "Hydrothermal synthesis that makes use of microwave radiation to affect the course of reaction." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0001377 ! hydrothermal synthesis
-relationship: BFO:0000057 OBI:0001061
+relationship: RO:0000057 OBI:0001061
 
 [Term]
 id: CHMO:0002907
@@ -29756,7 +29753,6 @@ id: CHMO:0002911
 name: magic angle spinning
 def: "A planned process that includes spinning a sample very rapidly at the magic angle (54.74 deg with respect to the direction of the magnetic field) in order to average anisotropic interactions between nuclei, which are usually averaged by Brownian motion in liquid samples, to zero." [] {prov:hadPrimarySource="https://doi.org/10.1351/goldbook.08377"}
 is_a: COB:0000035
-is_a: OBI:0000011
 relationship: OBI:0000417 CHMO:0002884 ! anisotropic nucleus-nucleus interaction line broadening minimization objective
 property_value: OMO:0003012 "MAS" xsd:string {dcterms:source="https://doi.org/10.1351/goldbook.08377"}
 
@@ -29765,8 +29761,8 @@ id: CHMO:0002912
 name: figure-of-merit determination
 def: "An assay that determines a figure of merit for a given technique, analyte and matrix. This will consist of multiple assays of a reference material." [https://orcid.org/0000-0001-5985-7429]
 is_a: OBI:0000070
-relationship: BFO:0000057 CHMO:0002913 ! reference material
 relationship: OBI:0000299 CHMO:0002803 ! figure of merit
+relationship: RO:0000057 CHMO:0002913 ! reference material
 
 [Term]
 id: CHMO:0002913
@@ -29781,6 +29777,7 @@ alt_id: REX:0000188
 def: "A \"process of one material (absorbate) being retained by another (absorbent).\"" [] {dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:rightsHolder="https://ror.org/03ne2zw20", dcterms:source="https://doi.org/10.1351/goldbook.A00036", dcterms:bibliographicCitation="'absorption' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.A00036"}
 comment: Gold Book, somewhat modified. It goes on "The process of one material (absorbate) being retained by another (absorbent); this may be the physical solution of a gas, liquid, or solid in a liquid, attachment of molecules of a gas, vapour, liquid, or dissolved substance to a solid surface by physical forces, etc."
 is_a: BFO:0000015
+property_value: skos:exactMatch REX:0000188 {sssom:author_id="https://orcid.org/0009-0009-1663-1003", sssom:confidence="0.8", sssom:mapping_date="2025-05-01", sssom:mapping_justification="https://w3id.org/semapv/vocab/ManualMappingCuration", sssom:mapping_provider="http://purl.obolibrary.org/obo/chmo.owl", sssom:object_label="absorption of material", sssom:object_source="http://purl.obolibrary.org/obo/rex", sssom:reviewer_id="https://orcid.org/0000-0003-4423-4370", sssom:subject_label="absorption of material", sssom:subject_source="http://purl.obolibrary.org/obo/chmo"}
 
 [Term]
 id: CHMO:0002915
@@ -29792,26 +29789,26 @@ is_a: BFO:0000015
 id: CHMO:0002916
 name: sample solidification
 def: "A material processing that transitions \"a liquid or gas into a solid.\"" [] {dcterms:bibliographicCitation="'solidification' in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.S05733", dcterms:license="https://creativecommons.org/licenses/by-sa/4.0/", dcterms:source="https://doi.org/10.1351/goldbook.S05733", dcterms:rightsHolder="https://ror.org/03ne2zw20"}
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0002917
 name: sample quenching
 def: "Material processing in which a sample is cooled by immersion in a fluid." [https://www.britannica.com/technology/quenching-materials-processing]
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0002918
 name: Smith degradation
 def: "Selective degradation of polysaccharides by periodate oxidation." [https://orcid.org/0000-0002-5865-8994]
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0002919
 name: hydrazine treatment
 def: "Treatment of a sample with hydrazine. This can be used to prepare samples for glycomics." [https://orcid.org/0000-0002-5865-8994]
 synonym: "hydrazinolysis" EXACT []
-is_a: OBI:0000094
+is_a: COB:0000110
 
 [Term]
 id: CHMO:0002920
@@ -29991,7 +29988,7 @@ relationship: CHMO:0010017 CHMO:0010009 ! mitigates adverse laboratory event
 [Term]
 id: CHMO:0010002
 name: material handling technique
-is_a: OBI:0000011
+is_a: COB:0000082
 
 [Term]
 id: CHMO:0010003
@@ -30055,7 +30052,7 @@ id: CHMO:0010013
 name: penetration of personal protective equipment
 def: "An event where a poisonous substance penetrates personal protective equipment, endangering the experimenter." [https://orcid.org/0000-0001-5985-7429]
 is_a: CHMO:0010009 ! adverse laboratory event
-relationship: BFO:0000057 CHMO:0010011 ! personal protective equipment
+relationship: RO:0000057 CHMO:0010011 ! personal protective equipment
 
 [Term]
 id: CHMO:0010014
@@ -30153,7 +30150,7 @@ name: has analyte
 comment: p has_participant e o e has_role analyte_role. Don't know how to do this in OBO format.
 domain: BFO:0000015
 range: BFO:0000040
-is_a: BFO:0000057
+is_a: RO:0000057
 
 [Typedef]
 id: CHMO:0002883
@@ -30161,7 +30158,7 @@ name: has matrix
 comment: p has_participant e o e has_role matrix_role. Don't know how to do this in OBO format.
 domain: BFO:0000015
 range: BFO:0000040
-is_a: BFO:0000057
+is_a: RO:0000057
 
 [Typedef]
 id: CHMO:0002922
