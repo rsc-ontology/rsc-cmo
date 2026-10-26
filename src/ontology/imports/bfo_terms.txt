@@ -1,1 +1,3 @@
 http://purl.obolibrary.org/obo/BFO_0000031 # generically dependent continuant 
+http://purl.obolibrary.org/obo/BFO_0000179 # BFO OWL specification label
+http://purl.obolibrary.org/obo/BFO_0000180 # BFO CLIF specification label
