@@ -10,17 +10,19 @@
      xmlns:chmo="http://purl.obolibrary.org/obo/chmo#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:sssom="https://w3id.org/sssom/"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/chmo/chmo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2026-05-28/chmo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2026-10-26/chmo-base.owl"/>
         <dce:creator>Royal Society of Chemistry</dce:creator>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
         <dcterms:description>CHMO, the chemical methods ontology, describes methods used to collect data in chemical experiments, such as mass spectrometry and electron microscopy prepare and separate material for further analysis, such as sample ionisation, chromatography, and electrophoresis synthesise materials, such as epitaxy and continuous vapour deposition It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns. It is intended to be complementary to the Ontology for Biomedical Investigations (OBI).</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>Chemical Methods Ontology</dcterms:title>
-        <owl:versionInfo>2026-05-28</owl:versionInfo>
+        <owl:versionInfo>2026-10-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -222,6 +224,12 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
     <!-- http://www.w3.org/ns/prov#hadPrimarySource -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#hadPrimarySource"/>
@@ -231,6 +239,83 @@
     <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+    
+
+
+    <!-- https://w3id.org/sssom/author_id -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/author_id"/>
+    
+
+
+    <!-- https://w3id.org/sssom/confidence -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/confidence"/>
+    
+
+
+    <!-- https://w3id.org/sssom/mapping_date -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_date"/>
+    
+
+
+    <!-- https://w3id.org/sssom/mapping_justification -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justification"/>
+    
+
+
+    <!-- https://w3id.org/sssom/mapping_provider -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_provider"/>
+    
+
+
+    <!-- https://w3id.org/sssom/object_label -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/object_label"/>
+    
+
+
+    <!-- https://w3id.org/sssom/object_source -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/object_source"/>
+    
+
+
+    <!-- https://w3id.org/sssom/reviewer_id -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/reviewer_id"/>
+    
+
+
+    <!-- https://w3id.org/sssom/subject_label -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/subject_label"/>
+    
+
+
+    <!-- https://w3id.org/sssom/subject_source -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/sssom/subject_source"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -245,9 +330,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
     
 
 
@@ -263,27 +348,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000068 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000068"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000085 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000085"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000087 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000087"/>
     
 
 
@@ -326,7 +393,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002748 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CHMO_0002748">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <oboInOwl:id>CHMO:0002748</oboInOwl:id>
@@ -339,7 +406,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002883 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CHMO_0002883">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <oboInOwl:id>CHMO:0002883</oboInOwl:id>
@@ -420,9 +487,33 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002411 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002411"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002488 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002488"/>
     
 
 
@@ -2094,7 +2185,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000185"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000953"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2118,7 +2209,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001088"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3583,7 +3674,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000112"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001098"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3631,13 +3722,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000067"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002894"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002895"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6557,7 +6648,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0000251"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001130"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -6566,7 +6657,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000251"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001130"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7368,7 +7459,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000232"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002232"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7920,6 +8011,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000309">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000307"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001809"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An X-ray emission spectroscopy in which the energy spectrum of the X-rays emitted due to core-to-core transitions is measured using a semiconductor detector.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>FIX:0000104</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>FIX:0000677</oboInOwl:hasAlternativeId>
@@ -12036,12 +12133,11 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000807"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Mass spectrometry where the sample is ionised by interaction (electron or proton transfer) with reagent (N2, O2, H2O) gaseous ions at low pressure. Reagent ions are produced by electron ionisation.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mass spectrometry in which the sample is ionised by interaction (electron or proton transfer) with reagent (N2, O2, H2O) gaseous ions at low pressure. Reagent ions are produced by electron ionisation.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>CI-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>LCPIMS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>LP-CI-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>LPCI-MS</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>chemical ionisation mass spectroscopy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>chemical ionization mass spectrometry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>chemical ionization mass spectroscopy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>low pressure chemical ionisation mass spectrometry</oboInOwl:hasExactSynonym>
@@ -12054,9 +12150,33 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000472"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Mass spectrometry where the sample is ionised by interaction (electron or proton transfer) with reagent (N2, O2, H2O) gaseous ions at low pressure. Reagent ions are produced by electron ionisation.</owl:annotatedTarget>
+        <owl:annotatedTarget>A mass spectrometry in which the sample is ionised by interaction (electron or proton transfer) with reagent (N2, O2, H2O) gaseous ions at low pressure. Reagent ions are produced by electron ionisation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FIX:0000088</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://doi.org/10.1351/goldbook.C01026</oboInOwl:hasDbXref>
+        <prov:wasInfluencedBy rdf:resource="https://doi.org/10.1351/goldbook.C01026"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000472"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>CI-MS</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003012"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000472"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>LCPIMS</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003012"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000472"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>LP-CI-MS</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003012"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000472"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>LPCI-MS</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003012"/>
     </owl:Axiom>
     
 
@@ -13562,7 +13682,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000515"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002202"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -14051,7 +14171,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0000470"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001130"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -14060,7 +14180,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000741"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001130"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16384,7 +16504,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000619"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002885"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16953,7 +17073,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000630"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -21525,7 +21645,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000833">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000800"/>
-        <obo:IAO_0000115>A plot of the spectral radiant exitance or of the spectral photon exitance against the frequency (or wavenumber, or wavelength) of excitation.</obo:IAO_0000115>
+        <obo:IAO_0000115>A spectrum plotting &quot;the spectral radiant exitance or of the spectral photon exitance against the frequency (or wavenumber, or wavelength) of excitation.&quot;</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>excitation spectra</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0000833</oboInOwl:id>
         <rdfs:label>excitation spectrum</rdfs:label>
@@ -21533,8 +21653,11 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000833"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A plot of the spectral radiant exitance or of the spectral photon exitance against the frequency (or wavenumber, or wavelength) of excitation.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://doi.org/10.1351/goldbook.E02253</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A spectrum plotting &quot;the spectral radiant exitance or of the spectral photon exitance against the frequency (or wavenumber, or wavelength) of excitation.&quot;</owl:annotatedTarget>
+        <dcterms:bibliographicCitation>&apos;excitation spectrum&apos; in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.E02253</dcterms:bibliographicCitation>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <dcterms:rightsHolder rdf:resource="https://ror.org/03ne2zw20"/>
+        <dcterms:source rdf:resource="https://doi.org/10.1351/goldbook.E02253"/>
     </owl:Axiom>
     
 
@@ -23975,7 +24098,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000945 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000945">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000175"/>
@@ -23999,7 +24122,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000946 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000946">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus, consisting of a laser, an optical microscope, a condenser and a CCD camera, that is used to manipulate microscopic particles.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>optical trap</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>optical tweezer</oboInOwl:hasExactSynonym>
@@ -24037,7 +24160,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000948 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000948">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000175"/>
@@ -24122,7 +24245,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000951 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000951">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A sharp spike which is mounted on the end of a cantilever and used to scan the surface of a specimen in atomic force microscopy.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>AFM tip</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>atomic force microscope (AFM) tip</oboInOwl:hasExactSynonym>
@@ -24142,7 +24265,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000952 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000952">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A cantilever used in atomic force microscopy to transmit force from the tip to a recording device.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>AFM cantilever</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>AFM lever</oboInOwl:hasExactSynonym>
@@ -24162,7 +24285,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000953 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000953">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus which is used to generate an image of the surface of a specimen, whether by focusing reflected light onto where it can be collected or by scanning a given area of the surface.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0000953</oboInOwl:id>
         <rdfs:label>microscope</rdfs:label>
@@ -24340,7 +24463,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000960 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000960">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device that takes an analyte and generates ions which are passed to the rest of a mass spectrometer for analysis.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0000960</oboInOwl:id>
         <rdfs:label>ion source</rdfs:label>
@@ -24464,7 +24587,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000964 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000964">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus consisting of paired trapping plates, receiver plates and transmitter plates which provides a magnetic field that coherently excites ions according to their cyclotron frequencies which depend on their mass-to-charge ratio.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0000964</oboInOwl:id>
         <rdfs:label>ion cyclotron resonance cell</rdfs:label>
@@ -24851,7 +24974,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000978 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000978">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus which separates ions according to their mass-to-charge ratio.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0000978</oboInOwl:id>
         <rdfs:label>mass-to-charge analyser</rdfs:label>
@@ -24868,7 +24991,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000979 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000979">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device that produces an electric field that accelerates ions in a mass-to-charge analyser in a direction opposite to their direction of travel, acting as an ion mirror to separate ions of the same mass-to-charge ratio that have different kinetic energy.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0000979</oboInOwl:id>
         <rdfs:label>reflectron</rdfs:label>
@@ -24969,7 +25092,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000983 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000983">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus that has the form of a tube with an internal diameter of 20–100 micrometres and hosts the separation medium in capillary electrophoresis.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0000983</oboInOwl:id>
         <rdfs:label>separation capillary</rdfs:label>
@@ -25040,7 +25163,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000987 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000987">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device that has the form of a tube with a diameter of less than a millimetre and hosts the stationary bed in chromatography.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0000987</oboInOwl:id>
         <rdfs:label>capillary column</rdfs:label>
@@ -25093,7 +25216,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000990 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000990">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus that is planar and is or hosts the stationary bed in chromatography.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0000990</oboInOwl:id>
         <rdfs:label>open chromatographic bed</rdfs:label>
@@ -25234,7 +25357,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000997 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000997">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus that has the form of a tube with a diameter between 5 to 50 mm and hosts the stationary bed in chromatography.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0000997</oboInOwl:id>
         <rdfs:label>chromatography column</rdfs:label>
@@ -25261,7 +25384,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000999 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000999">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A method that results in the separation of two or more components according to some property.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>FIX:0000002</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>partition</oboInOwl:hasExactSynonym>
@@ -25308,7 +25431,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001000"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000997"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -25317,7 +25440,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000997"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -25347,7 +25470,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001001"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000996"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -25356,7 +25479,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000996"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -25393,7 +25516,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001001"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000992"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -25402,7 +25525,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000992"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -25439,7 +25562,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001001"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000991"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -25448,7 +25571,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000991"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -25475,7 +25598,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001000"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000990"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -25484,7 +25607,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000990"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -25542,7 +25665,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001005"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000989"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -25551,7 +25674,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000989"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -25584,7 +25707,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001005"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000988"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -25593,7 +25716,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000988"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -25738,7 +25861,6 @@
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dcterms:rightsHolder rdf:resource="https://ror.org/03ne2zw20"/>
         <dcterms:source rdf:resource="https://doi.org/10.1351/goldbook.S05705"/>
-        <oboInOwl:hasDbXref rdf:resource="https://doi.org/10.1351/goldbook.S05705"/>
         <oboInOwl:hasDbXref>FIX:0000626</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -25796,7 +25918,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001002"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000985"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -25805,7 +25927,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000985"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -25839,7 +25961,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001002"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000984"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -25848,7 +25970,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000984"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -26029,7 +26151,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001019"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000983"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -26038,7 +26160,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000983"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -26201,7 +26323,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001030"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000983"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -26240,7 +26362,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001021"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000983"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -26279,7 +26401,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001026"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000983"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -26317,7 +26439,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001025"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000983"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -26355,7 +26477,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000999"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000983"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -26514,7 +26636,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001040"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000983"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -26715,11 +26837,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001000"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000983"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000991"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -26728,13 +26850,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000983"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000991"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -26829,7 +26951,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001053 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001053">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device consisting of a magnet that is used to separate an ion beam into discrete ion beams according to the mass-to-charge ratio of the ions.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001053</oboInOwl:id>
         <rdfs:label>magnetic sector</rdfs:label>
@@ -26847,7 +26969,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001054 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001054">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device that applies an electric field in order to select ions that have the same kinetic energy from an ion beam.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001054</oboInOwl:id>
         <rdfs:label>electric sector</rdfs:label>
@@ -26963,7 +27085,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device that on contact with a charged particle of sufficient energy emits a greater number electrons.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001060</oboInOwl:id>
         <rdfs:label>electron multiplier</rdfs:label>
@@ -27056,7 +27178,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001065 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001065">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A sharp spike mounted on the end of a cantilever which is used to scan the surface of a specimen in atomic force microscopy.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>AFM probe</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>atomic force microscope probe</oboInOwl:hasExactSynonym>
@@ -27340,7 +27462,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001077 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001077">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus used to measure the mass per unit area (1 μg per cm2) by measuring the change in frequency of a quartz crystal resonator (a quartz crystal sandwiched between a pair of electrodes) as a function of mass change.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>QCM</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0001077</oboInOwl:id>
@@ -27732,7 +27854,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001097 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001097">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device that generates electrical current when it experiences a thermal gradient.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001097</oboInOwl:id>
         <rdfs:label>thermocouple</rdfs:label>
@@ -27750,7 +27872,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001098 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001098">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A composite wire consisting of a fine platinum core with a silver coating.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001098</oboInOwl:id>
         <rdfs:label>Wollaston wire</rdfs:label>
@@ -28460,10 +28582,10 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001132 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001132">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -28634,7 +28756,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000613"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52455"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -30893,7 +31015,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001232">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000682"/>
-        <obo:IAO_0000115>A term used to describe methods wherein a reagent is continuously fed into a flowing analyte stream and the temperature difference is measured before and after a reactor (mixing chamber). Alternatively, the temperature may be measured in a differential manner between a reference and a reactor chamber. The analyte concentration is directly proportional to the measured temperature difference.</obo:IAO_0000115>
+        <obo:IAO_0000115>A calorimetry in which a reagent is continuously fed into a flowing analyte stream and the temperature difference is measured before and after a reactor (mixing chamber). Alternatively, the temperature may be measured in a differential manner between a reference and a reactor chamber. The analyte concentration is directly proportional to the measured temperature difference.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-03-25T01:36:55Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>continuous flow enthalpimetric analysis</oboInOwl:hasExactSynonym>
@@ -30903,12 +31025,6 @@
         <oboInOwl:id>CHMO:0001232</oboInOwl:id>
         <rdfs:label>continuous-flow calorimetry</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001232"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A term used to describe methods wherein a reagent is continuously fed into a flowing analyte stream and the temperature difference is measured before and after a reactor (mixing chamber). Alternatively, the temperature may be measured in a differential manner between a reference and a reactor chamber. The analyte concentration is directly proportional to the measured temperature difference.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://doi.org/10.1351/goldbook.C0130</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -30960,7 +31076,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001235">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001234"/>
-        <obo:IAO_0000115>A piece of apparatus that consists of a laser, a beam splitter, an interferometer and a detector and is used to measure Raman spectra.</obo:IAO_0000115>
+        <obo:IAO_0000115>A spectrometer that is used to measure Raman spectra. It consists of a light source, a beam splitter, an interferometer and a detector. The light source is typically a laser.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-03-25T01:55:39Z</oboInOwl:creation_date>
         <oboInOwl:id>CHMO:0001235</oboInOwl:id>
@@ -30969,7 +31085,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001235"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A piece of apparatus that consists of a laser, a beam splitter, an interferometer and a detector and is used to measure Raman spectra.</owl:annotatedTarget>
+        <owl:annotatedTarget>A spectrometer that is used to measure Raman spectra. It consists of a light source, a beam splitter, an interferometer and a detector. The light source is typically a laser.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -30989,7 +31105,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001237">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001814"/>
-        <obo:IAO_0000115>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample.</obo:IAO_0000115>
+        <obo:IAO_0000115>A Raman microscope that is used to discriminate between the Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample, using an aperture.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-03-25T02:05:53Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>Raman confocal microscope</oboInOwl:hasExactSynonym>
@@ -31000,7 +31116,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001237"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra. An aperture is used to discriminate between Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample.</owl:annotatedTarget>
+        <owl:annotatedTarget>A Raman microscope that is used to discriminate between the Raman signal coming from the laser spot and that coming from the out-of-focus region of the sample, using an aperture.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -31822,7 +31938,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001269">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001001"/>
-        <obo:IAO_0000115>A chromatography method where the stationary bed is within a tube (of less than the standard length of 25 cm). The particles of the solid stationary phase or support coated with a liquid stationary phase may fill the whole inside volume of the tube (packed column) or be concentrated on or along the inside tube wall leaving an open, unrestricted path for the mobile phase in the middle part of the tube (open-tubular column).</obo:IAO_0000115>
+        <obo:IAO_0000115>A column chromatography in which the stationary bed tube is less than the standard length of 25 cm.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-04-20T03:57:43Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>short column chromatography</oboInOwl:hasExactSynonym>
@@ -31832,9 +31948,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001269"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A chromatography method where the stationary bed is within a tube (of less than the standard length of 25 cm). The particles of the solid stationary phase or support coated with a liquid stationary phase may fill the whole inside volume of the tube (packed column) or be concentrated on or along the inside tube wall leaving an open, unrestricted path for the mobile phase in the middle part of the tube (open-tubular column).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://doi.org/10.1021/ac971247q</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://doi.org/10.1351/goldbook.C01182</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A column chromatography in which the stationary bed tube is less than the standard length of 25 cm.</owl:annotatedTarget>
+        <prov:wasInfluencedBy rdf:resource="https://doi.org/10.1021/ac971247q"/>
     </owl:Axiom>
     
 
@@ -32666,7 +32781,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001301 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001301">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A method used to synthesise a sample.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001301</oboInOwl:id>
         <rdfs:label>synthesis method</rdfs:label>
@@ -33099,7 +33214,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -34087,7 +34202,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001364"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000960"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -34116,7 +34231,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0001364"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002896"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -34125,7 +34240,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001364"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002896"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -35904,7 +36019,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001460 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001460">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>Reversal of coagulation or flocculation, i.e., the dispersion of aggregates to form a colloidally stable suspension or emulsion</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-05-18T09:45:58Z</oboInOwl:creation_date>
@@ -35975,7 +36090,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001464 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001464">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing that is a &quot;time-dependent change of the properties of a precipitate e.g. loss of water or growth of crystals&quot; as a result of prolonged heat treatment.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>age hardening</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>dispersion hardening</oboInOwl:hasExactSynonym>
@@ -36016,7 +36131,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001466 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001466">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>The conversion of a vaporized sample into atomic components.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>atomization</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0001466</oboInOwl:id>
@@ -36056,7 +36171,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001468 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001468">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing &quot;in which a metal oxide is reduced in the presence of carbon or a carbon-containing compound.&quot;</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>carbo reduction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>carboreduction</oboInOwl:hasExactSynonym>
@@ -36079,7 +36194,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001469 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001469">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A process in which a ceramic precursor is converted into a ceramic.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ceramization</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0001469</oboInOwl:id>
@@ -36097,7 +36212,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001470 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001470">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>The application of a thin cover to a sample.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001470</oboInOwl:id>
         <rdfs:label>coating method</rdfs:label>
@@ -36153,7 +36268,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001473 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001473">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>An exothermic chemical reaction between a fuel (usually a hydrocarbon) and an oxidant (usually oxygen) which is sometimes accompanied by the production of light.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>burning</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0001473</oboInOwl:id>
@@ -36171,7 +36286,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001474 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001474">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>The transfer of thermal energy from a sample to its surrounding environment.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001474</oboInOwl:id>
         <rdfs:label>sample cooling</rdfs:label>
@@ -36191,7 +36306,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001474"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -36297,7 +36412,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001480 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001480">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A chemical material processing that converts &quot;a prepolymer or polymer into a polymer of higher molar mass and then into a network.&quot;</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001480</oboInOwl:id>
         <rdfs:label>curing</rdfs:label>
@@ -36398,7 +36513,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001484 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001484">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing that is the &quot;the removal of impurities and the elimination of pores from a xerogel&quot; (a gel that has been dried with unhindered shrinkage).</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001484</oboInOwl:id>
         <rdfs:label>densification</rdfs:label>
@@ -36419,7 +36534,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001485 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001485">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>The transformation of a chemical compound (the &apos;educt&apos;) into another similar compound (the &apos;derivative&apos;) by altering one or more of its functional groups. Derivatisation is generally perfomed to alter reactivity or change a physical property such as solubility, boiling point, melting point, thermal stability etc.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>derivatization</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0001485</oboInOwl:id>
@@ -36457,7 +36572,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001487 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001487">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing that is the &quot;breakdown of a single phase into two or more phases&quot; by heating or treatment with acid, alkali or enzymes.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001487</oboInOwl:id>
         <rdfs:label>decomposition</rdfs:label>
@@ -36858,7 +36973,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001502"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000960"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -36899,7 +37014,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001502"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -37136,7 +37251,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001522 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001522">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing in which molecules in solution are separated by the difference in their rates of diffusion through a semipermeable membrane.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001522</oboInOwl:id>
         <rdfs:label>dialysis</rdfs:label>
@@ -37207,7 +37322,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001525 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001525">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>The distribution of particles of one phase in a continuous phase of a different nature.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001525</oboInOwl:id>
         <rdfs:label>sample dispersion</rdfs:label>
@@ -37262,7 +37377,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001528 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001528">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>The disassembly of an object to determine its internal structure.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>anatomization</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0001528</oboInOwl:id>
@@ -37301,7 +37416,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001529"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -37343,7 +37458,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001532 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001532">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A method of separating mixtures based on differences in their volatilities in a boiling liquid mixture. The components in a sample mixture are vaporised by the application of heat and then cooled by the action of cold water in a condenser.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001532</oboInOwl:id>
         <rdfs:label>distillation</rdfs:label>
@@ -37551,7 +37666,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001544 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001544">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>The controlled dropwise release of a liquid.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>drop dispensing</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0001544</oboInOwl:id>
@@ -37644,7 +37759,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001549 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001549">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>The process of removing a solvent from a substance.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym>drying</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHMO:0001549</oboInOwl:id>
@@ -37811,7 +37926,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001558 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001558">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>The process of chemically removing a thin layer from a sample surface, usually to leave behind a pattern.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001558</oboInOwl:id>
         <rdfs:label>etching</rdfs:label>
@@ -38105,7 +38220,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001574 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001574">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing &quot;by which a liquid substance is converted to a gas or vapour. This may occur at or below the normal boiling point of the liquid (the temperature at which a liquid boils at 1 atmosphere pressure) and the process is endothermic.&quot;</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001574</oboInOwl:id>
         <rdfs:label>evaporation</rdfs:label>
@@ -38159,7 +38274,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001577">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing in which a solute is transferred from a liquid phase to another immiscible or partially-miscible liquid phase in contact with it.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001577</oboInOwl:id>
         <rdfs:label>extraction</rdfs:label>
@@ -38473,7 +38588,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001583"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002776"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -39014,7 +39129,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001613 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001613">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A process used to create objects of a fixed cross-sectional profile by forcing or drawing a material through a die.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>extrusion molding</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>extrusion moulding</oboInOwl:hasExactSynonym>
@@ -39208,7 +39323,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001624 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001624">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing &quot;in which cells (microorganisms, plant or animal cells) are cultured in a bioreactor in liquid or solid medium to convert organic substances into biomass (growth) or into products.&quot;</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001624</oboInOwl:id>
         <rdfs:label>fermentation</rdfs:label>
@@ -39228,7 +39343,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001625 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001625">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing in which a sample mixture is divided up into smaller quantities &quot;according to physical (e.g. size, solubility) or chemical (e.g. bonding, reactivity) properties.&quot;</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001625</oboInOwl:id>
         <rdfs:label>fractionation</rdfs:label>
@@ -39763,7 +39878,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001646 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001646">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>The formation of a gel or solidification of a gelatin solution caused by a change in conditions (such as temperature or pH).</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001646</oboInOwl:id>
         <rdfs:label>gelation</rdfs:label>
@@ -39866,7 +39981,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001652 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001652">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing that reduces &quot;the particle size of a sample by attribution (friction), impact or cutting.&quot;</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>dry grinding</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>milling</oboInOwl:hasExactSynonym>
@@ -39987,7 +40102,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001658 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001658">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>The physical process of converting an atom or molecule into an ion by removing electrons.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ionization method</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0001658</oboInOwl:id>
@@ -40053,7 +40168,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001659"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -40348,7 +40463,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001673 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001673">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing in which a powder is pressed under a gas or liquid so that pressure is transmitted equally in all directions.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001673</oboInOwl:id>
         <rdfs:label>isostatic pressing</rdfs:label>
@@ -40386,7 +40501,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001675 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001675">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing in which a label is attached onto a substance. Labels are molecular entities that facilitate the detection (through fluorescence, radioactivity, etc.) of the species to which they are attached.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>labeling</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0001675</oboInOwl:id>
@@ -40508,7 +40623,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001681 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001681">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing dissoluting material &quot;from a solid [phase into] a liquid in which  the solid phase is not wholly soluble.&quot;</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001681</oboInOwl:id>
         <rdfs:label>leaching</rdfs:label>
@@ -40528,7 +40643,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001682 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001682">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>The process of heating a substance to cause the solid–liquid phase change.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001682</oboInOwl:id>
         <rdfs:label>sample melting</rdfs:label>
@@ -40582,7 +40697,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001685 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001685">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing in which &quot;components, particles or layers [are combined] into a more homogeneous state. The mixing may be achieved manually or mechanically by shifting the material with stirrers or pumps or by revolving or shaking the container. The process must not permit segregation of particles of different size or properties. Homogeneity may be considered to have been achieved in a practical sense when the sampling error of the processed portion is negligible compared to the total error of the measurement system.&quot;</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001685</oboInOwl:id>
         <rdfs:label>mixing</rdfs:label>
@@ -40602,7 +40717,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001686 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001686">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing in which larger crystals grow from those of smaller size, which have a higher solubility than the larger ones.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>Ostwald-ripening</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0001686</oboInOwl:id>
@@ -40620,7 +40735,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001687 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001687">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing that is &quot;the photochemical transformation of a molecule into lower molecular weight fragments, usually in an oxidation process.&quot;</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>photo-degradation</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0001687</oboInOwl:id>
@@ -40849,7 +40964,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001698 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001698">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing that is &quot;the cleavage of one or several bonds resulting from exposure to high-energy radiation.&quot;</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001698</oboInOwl:id>
         <rdfs:label>radiolysis</rdfs:label>
@@ -40906,7 +41021,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001701 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001701">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing in which small particles are fused together by heating the sample below its melting point until its particles adhere to each other.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001701</oboInOwl:id>
         <rdfs:label>sintering</rdfs:label>
@@ -40980,7 +41095,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001703"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -41024,7 +41139,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001707 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001707">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing in which a liquid sample is irradiated with sound (20 Hz-20 kHz) waves resulting in agitation. Sound waves propagate into the liquid media result in alternating high-pressure (compression) and low-pressure (rarefaction) cycles. During rarefaction, high-intensity sonic waves create small vacuum bubbles or voids in the liquid, which then collapse violently (cavitation) during compression, creating very high local temperatures.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0001707</oboInOwl:id>
         <rdfs:label>sonication</rdfs:label>
@@ -41319,7 +41434,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -42439,7 +42554,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001768 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001768">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000115>Any method used to trap a sample for further analysis.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-05-20T10:29:44Z</oboInOwl:creation_date>
@@ -42461,7 +42576,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001768"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -42879,7 +42994,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001703"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -43464,7 +43579,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001810 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001810">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A large-scale particle accelerator in which a magnetic field is used to create the particle orbits. Synchrotrons produce X-ray, vacuum ultraviolet and broadband infrared radiation.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-05-26T10:20:04Z</oboInOwl:creation_date>
@@ -43545,7 +43660,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001814">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000953"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001235"/>
-        <obo:IAO_0000115>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra.</obo:IAO_0000115>
+        <obo:IAO_0000115>A combination of a Raman spectrometer and an optical microscope, in which the latter is coupled to a monochromator to produce an enlarged image of a specimen via detection of the Raman scattered light, using a light beam (typically from a laser) with a diameter of &lt;10 μm.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-05-26T01:03:35Z</oboInOwl:creation_date>
         <oboInOwl:hasAlternativeId>CHMO:0001236</oboInOwl:hasAlternativeId>
@@ -43556,7 +43671,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001814"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A piece of apparatus, consisting of a laser beam (&lt;10 μm diameter), a monochromator and a detector coupled to an optical microscope, which is used to measure Raman spectra.</owl:annotatedTarget>
+        <owl:annotatedTarget>A combination of a Raman spectrometer and an optical microscope, in which the latter is coupled to a monochromator to produce an enlarged image of a specimen via detection of the Raman scattered light, using a light beam (typically from a laser) with a diameter of &lt;10 μm.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -44243,7 +44358,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001841 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001841">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000118"/>
@@ -44270,7 +44385,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001842 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001842">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000115>A short (microsecond) period of radio frequency wavelength radiation.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-05-29T01:44:50Z</oboInOwl:creation_date>
@@ -45712,7 +45827,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001904 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001904">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>Any material processing method that uses a supercritical fluid.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-06-03T09:36:47Z</oboInOwl:creation_date>
@@ -45832,7 +45947,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001909 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001909">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A sensing device, consisting of an array of light-sensing pixels at the focal plane of a lens, that is sensitive to infrared radiation. The device operates by converting infrared photons to an electrical signal, and using it to construct an image of the sample.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-06-03T10:26:20Z</oboInOwl:creation_date>
@@ -46575,7 +46690,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001938 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001938">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing in which the sample is ionised, and selected ions are allowed to collide with neutral gas molecules, resulting in fragmentation.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-06-08T04:07:29Z</oboInOwl:creation_date>
@@ -47039,7 +47154,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001957 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001957">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus, consisting of a flow cell, a laser and a detector, which detects the fluorescence and light scattering of individual particles (e.g. cells).</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-06-11T02:20:37Z</oboInOwl:creation_date>
@@ -47982,7 +48097,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0001994 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0001994">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus that measures surface profiles by dragging a (diamond) stylus across the sample surface. A feedback loop is used to maintain a fixed relationship between the stylus and surface during scanning.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-06-18T03:13:06Z</oboInOwl:creation_date>
@@ -50732,7 +50847,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002120 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002120">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device that transmits a &quot;narrow band of wavelengths [of light or other radiation (e.g. X-rays)] chosen from a wider range of wavelengths available at the input&quot;.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-08T10:17:24Z</oboInOwl:creation_date>
@@ -50801,7 +50916,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002122 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002122">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus, consisting of an anode (the specimen) a cathode (the source of sputter atoms or &apos;target&apos;) and a magnet, all held inside a vacuum chamber, which is used to coat specimens with a thin layer of atoms (e.g. Au) prior to microscopy.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-08T10:37:10Z</oboInOwl:creation_date>
@@ -50895,7 +51010,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002126 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002126">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus that can increase the power of a signal.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-08T04:13:06Z</oboInOwl:creation_date>
@@ -51461,7 +51576,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002151 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002151">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing that makes one sample unreactive to another, prior to using the samples together.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-11T04:28:44Z</oboInOwl:creation_date>
@@ -51588,7 +51703,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002157 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002157">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>The removal of ions from a solution using an ion-exchange method.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-13T01:17:32Z</oboInOwl:creation_date>
@@ -51776,7 +51891,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002166 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002166">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A thick-walled steel vessel used during synthesis methods that require both high pressures and high temperatures.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-15T01:19:11Z</oboInOwl:creation_date>
@@ -52124,7 +52239,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002181 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002181">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus that converts optical brightness into an electrical signal using a CCD (a semiconductor chip, which converts the intensity of light falling onto its surface at different points into a charge) and then reproduces an image of the specimen.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-17T04:14:40Z</oboInOwl:creation_date>
@@ -52459,7 +52574,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002196 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002196">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing that involves preparing or exciting a sample for a subsequent reaction.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-21T03:00:23Z</oboInOwl:creation_date>
@@ -52529,7 +52644,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002199 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002199">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus consisting of a motor unit that rotates the evaporation flask, a vacuum system, a heated water bath and a condenser, which is used to remove solvents from samples under reduced pressure.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-22T09:35:05Z</oboInOwl:creation_date>
@@ -52611,7 +52726,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000982"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -52635,7 +52750,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002203 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002203">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A extremely flat surface that holds the sample during a mass spectrometry experiment where the sample is vaporised and ionised using a high-energy pulsed laser whilst being held in a matrix to protect it from direct laser illumination and to separate the sample molecules. The surface of the plate may be chemically functionalised for a specific sample.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-07-23T03:48:32Z</oboInOwl:creation_date>
@@ -53150,12 +53265,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000830"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001809"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000309"/>
             </owl:Restriction>
@@ -53189,7 +53298,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0000682"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002229"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -53198,7 +53307,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000682"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002229"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -53432,7 +53541,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000094"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000110"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50594"/>
@@ -53566,7 +53675,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002244 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002244">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device used to detect an analyte.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-08-05T11:58:48Z</oboInOwl:creation_date>
@@ -53883,7 +53992,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001209"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002268"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -53909,7 +54018,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001209"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002269"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -53935,7 +54044,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001210"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002266"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -53960,7 +54069,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001210"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002267"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -55905,7 +56014,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002344 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002344">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>An electrically-conducting device that exchanges electrons with an electrolyte as part of an electrical circuit.</obo:IAO_0000115>
         <oboInOwl:created_by>batchelorc</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-09-11T10:48:45Z</oboInOwl:creation_date>
@@ -56070,7 +56179,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002351 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002351">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device in which a current causes chemical reactions or chemical reactions cause a current to flow.</obo:IAO_0000115>
         <oboInOwl:created_by>batchelorc</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-09-11T11:22:34Z</oboInOwl:creation_date>
@@ -57191,7 +57300,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002396 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002396">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus which is used to detect footwear marks and indented impressions of handwriting in paper. The sample sheet of paper is placed on a sintered copper plate, a vacuum is applied and a thin mylar plastic film is rolled over the sample. An electrostatic charge is then applied to the plastic by means of a corona discharge and the subsequent pattern of charging is then visualised using photocopier toner. The toner adheres to those areas corresponding to indentations.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-09-16T11:14:24Z</oboInOwl:creation_date>
@@ -57859,7 +57968,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002426 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002426">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device that maintains the current through an electrochemical cell at a preset value.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-09-21T04:28:28Z</oboInOwl:creation_date>
@@ -57880,7 +57989,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002427 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002427">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device that maintains the potential through an electrochemical cell at a preset value.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-09-21T04:31:40Z</oboInOwl:creation_date>
@@ -58237,7 +58346,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002444 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002444">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus, consisting of a high- voltage transformer, a cavity magnetron, a waveguide and a sample chamber, that is used to heat samples by irradiation with microwave (2 GHz) radiation.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-09-23T02:43:52Z</oboInOwl:creation_date>
@@ -58760,7 +58869,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0000993"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002740"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -58769,7 +58878,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002740"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -58890,7 +58999,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002473 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002473">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus, consisting of a crucible (made of pyrolytic boron nitride, quartz, tungsten or graphite), heating filaments, a water cooling system, which is used to measure very low vapor pressures by measuring the mass of vapor which escapes when the vessel contains a liquid in equilibrium with its vapor. It is also used as a source evaporator during crystal growth e.g. during molecular-beam epitaxy.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-09-29T06:39:36Z</oboInOwl:creation_date>
@@ -58909,7 +59018,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002474 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002474">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus, consisting of an electromagnet containing a paramagnetic core material with a tip-shaped end, that is used to trap and manipulate magnetic particles.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-09-29T06:44:09Z</oboInOwl:creation_date>
@@ -60461,7 +60570,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002540 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002540">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A sample preparation method for gas chromatography in which the sample is deposited into the inlet of the chromatograph at a low temperature, then the inlet temperature is rapidly raised to vaporise the desired components and cause their transfer onto the column.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-10-21T06:16:02Z</oboInOwl:creation_date>
@@ -60652,7 +60761,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000094"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000110"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60027"/>
@@ -60660,8 +60769,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
@@ -61181,7 +61289,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002570 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002570">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus, consisting of a gas manifold with a series of tubes and valves connecting the sample chamber to one or more pressure reservoirs of known volume, used for measuring the thermodynamics of hydrogen sorption onto metal samples.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-10-27T09:19:33Z</oboInOwl:creation_date>
@@ -61224,7 +61332,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002572 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002572">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus used as a reaction vessel in air-sensitive chemistry. It is made of glass and has a side arm fitted with a PTFE or ground glass stopcock which allows the vessel to be evacuated or filled with gas (e.g. nitrogen or argon).</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-10-28T09:17:43Z</oboInOwl:creation_date>
@@ -61375,7 +61483,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002579 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002579">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus, consisting of a rotating circular tray containing a number of sealed vials, that is used for the automatic injection of samples during a mass spectrometry experiment.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-11-03T05:37:59Z</oboInOwl:creation_date>
@@ -61633,7 +61741,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002591 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002591">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus that measures the size distribution of particles in an aerosol by neutralising the particles, passing them through a differential mobility analyser in order to control the size of the particles and then counting the particles of that size with a condensation particle counter.</obo:IAO_0000115>
         <oboInOwl:created_by>batchelorc</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-11-10T12:09:23Z</oboInOwl:creation_date>
@@ -61777,7 +61885,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002598 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002598">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A synthesis method where an electrical discharge is passed under reduced pressure between two electrodes.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-11-14T11:00:18Z</oboInOwl:creation_date>
@@ -61980,7 +62088,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002607 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002607">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus which is used to physically interact with a sample under a microscope.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-11-19T02:01:02Z</oboInOwl:creation_date>
@@ -62022,7 +62130,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000094"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000110"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33418"/>
@@ -62030,8 +62138,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
@@ -62057,7 +62164,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002610 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002610">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A thin film of micrometre thickness which is used as a support for specimens during transmission electron microscopy.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-11-19T02:12:30Z</oboInOwl:creation_date>
@@ -62647,7 +62754,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002635 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002635">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus used to measure the strength and/or direction of a magnetic field.</obo:IAO_0000115>
         <oboInOwl:created_by>https://orcid.org/0000-0001-5985-7429</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-12-07T06:13:43Z</oboInOwl:creation_date>
@@ -64662,19 +64769,19 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000504"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000961"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000962"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000963"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -65243,7 +65350,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0000993"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002744"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -65252,14 +65359,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002744"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002746"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002746"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002744"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A portion of material representing &quot;those components of a sample&quot; that are not measured by an experiment.</obo:IAO_0000115>
@@ -65437,15 +65544,18 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002751">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000793"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
-        <obo:IAO_0000115>The volume of carrier gas passing through a chromatography column in unit time.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>http://goldbook.iupac.org/F02439.html</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>A setting datum or an assay output expressing &quot;the volume of [carrier gas] passing through [a chromatography] column in unit time.&quot;</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002751</oboInOwl:id>
         <rdfs:label>carrier gas flow rate</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002751"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The volume of carrier gas passing through a chromatography column in unit time.</owl:annotatedTarget>
+        <owl:annotatedTarget>A setting datum or an assay output expressing &quot;the volume of [carrier gas] passing through [a chromatography] column in unit time.&quot;</owl:annotatedTarget>
+        <dcterms:bibliographicCitation>&apos;flow rate&apos; in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.F02439</dcterms:bibliographicCitation>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <dcterms:rightsHolder rdf:resource="https://ror.org/03ne2zw20"/>
+        <dcterms:source rdf:resource="https://doi.org/10.1351/goldbook.F02439"/>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -65774,7 +65884,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002768 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002768">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus connecting a gas chromatograph to a mass spectrometer.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002768</oboInOwl:id>
         <rdfs:label>gas chromatograph-mass spectrometer transfer line</rdfs:label>
@@ -65820,7 +65930,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002770 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002770">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A sample preparation step involving the increase in temperature of a sample.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002770</oboInOwl:id>
         <rdfs:comment>ought to be in OBI. Will put here pro tem.</rdfs:comment>
@@ -65838,7 +65948,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002771 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002771">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A preparative step where the concentration of one component is increased.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002771</oboInOwl:id>
         <rdfs:label>concentrating</rdfs:label>
@@ -65855,7 +65965,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002772 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002772">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A preparative step involving the removal of dissolved gases from a sample.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Degasification</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>degasification</oboInOwl:hasExactSynonym>
@@ -65925,7 +66035,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002776 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002776">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
@@ -65941,7 +66051,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002777 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002777">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
@@ -66111,7 +66221,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000068"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001640"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -66131,7 +66241,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002787 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002787">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000085"/>
@@ -66171,7 +66281,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002789 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002789">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
@@ -66246,7 +66356,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002793 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002793">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device that is used to measure a physical quantity.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002793</oboInOwl:id>
         <rdfs:label>sensor</rdfs:label>
@@ -66303,7 +66413,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002797"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -66343,7 +66453,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002796"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002799"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -66381,7 +66491,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002800 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002800">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device for heating substances to high temperatures where the material is kept separate from the fuel.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>retort furnace</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0002800</oboInOwl:id>
@@ -66564,7 +66674,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002809 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002809">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A piece of apparatus that is used to raise the temperature of a sample.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002809</oboInOwl:id>
         <rdfs:label>piece of heating apparatus</rdfs:label>
@@ -66581,7 +66691,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002810 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002810">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device that consists of an oven, and apparatus to mix carrier gas containing the sample with hydrogen and air, then ignite it and collect the resulting positively-charged radicals at a cathode.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>FID</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>FID detector</oboInOwl:hasExactSynonym>
@@ -66627,7 +66737,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002812">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002592"/>
-        <obo:IAO_0000115>An electrode consisting of agranular non-graphitizable carbon with high isotropy and low permeability for liquids and gases.</obo:IAO_0000115>
+        <obo:IAO_0000115>An electrode consisting of &quot;agranular non-graphitizable carbon with a very high isotropy [and] low permeability for liquids and gases.&quot;</obo:IAO_0000115>
         <oboInOwl:created_by>batchelorc</oboInOwl:created_by>
         <oboInOwl:creation_date>2014-04-17T15:00:00Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>glassy carbon electrode</oboInOwl:hasExactSynonym>
@@ -66638,8 +66748,11 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002812"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An electrode consisting of agranular non-graphitizable carbon with high isotropy and low permeability for liquids and gases.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://doi.org/10.1351/goldbook.G02639</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>An electrode consisting of &quot;agranular non-graphitizable carbon with a very high isotropy [and] low permeability for liquids and gases.&quot;</owl:annotatedTarget>
+        <dcterms:bibliographicCitation>&apos;glass-like carbon&apos; in IUPAC Compendium of Chemical Terminology, 5th ed. International Union of Pure and Applied Chemistry; 2025. Online version 5.0.0, 2025. https://doi.org/10.1351/goldbook.G02639</dcterms:bibliographicCitation>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <dcterms:rightsHolder rdf:resource="https://ror.org/03ne2zw20"/>
+        <dcterms:source rdf:resource="https://doi.org/10.1351/goldbook.G02639"/>
     </owl:Axiom>
     
 
@@ -66937,23 +67050,17 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002825">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002815"/>
-        <obo:IAO_0000115>The concentration of a solute in a saturated solution of water and the solute.</obo:IAO_0000115>
+        <obo:IAO_0000115>A solubility in which the solution is water.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002825</oboInOwl:id>
         <rdfs:label>solubility in water</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002825"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The concentration of a solute in a saturated solution of water and the solute.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://doi.org/10.1351/goldbook.S05740</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHMO_0002826 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002826">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <oboInOwl:hasExactSynonym>Dean-Stark condenser</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Dean-Stark trap</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0002826</oboInOwl:id>
@@ -67002,7 +67109,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0302893"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28262"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -67054,7 +67161,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002831 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002831">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000115>A planned process in which materials for an experiment are acquired from an external supplier.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002831</oboInOwl:id>
         <rdfs:label>material acquisition</rdfs:label>
@@ -67141,7 +67248,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002836 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002836">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing process that produces monodisperse particles of silica by adding tetraethyl silicate to an excess of water containing a low-molar-mass alcohol and stirring.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002836</oboInOwl:id>
         <rdfs:label>Stöber process</rdfs:label>
@@ -67161,7 +67268,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000094"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000110"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50803"/>
@@ -67195,7 +67302,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000094"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000110"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50795"/>
@@ -67203,8 +67310,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
@@ -67227,7 +67333,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002839 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002839">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000115>A planned process involving setting up the equipment for another planned process.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002839</oboInOwl:id>
         <rdfs:label>planned process setup</rdfs:label>
@@ -67244,7 +67350,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002840 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002840">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000115>Part of a planned process where the equipment has been set up and human intervention is required to set the subprocesses going.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002840</oboInOwl:id>
         <rdfs:label>planned process startup</rdfs:label>
@@ -67331,7 +67437,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002845 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002845">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000115>A planned process that involves all aspects of dealing with the waste produced in experiments.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002845</oboInOwl:id>
         <rdfs:label>waste management</rdfs:label>
@@ -67349,10 +67455,10 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002846 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002846">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002166"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -67470,7 +67576,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002852 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002852">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing step that involves taking a test material with an adequately low background level of the intended analyte and mixing it with a known amount of analyte.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002852</oboInOwl:id>
         <rdfs:label>spiking</rdfs:label>
@@ -67581,15 +67687,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002857">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000793"/>
-        <obo:IAO_0000115>The absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer multiplied by 100%.</obo:IAO_0000115>
+        <obo:IAO_0000115>An assay output expressing the absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer multiplied by 100%.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002857</oboInOwl:id>
         <rdfs:label>percentage enantiomer excess</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002857"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer multiplied by 100%.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://doi.org/10.1359/goldbook.E02070</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>An assay output expressing the absolute value of the mole fraction for one enantiomer in a mixture minus the mole fraction for the other enantiomer multiplied by 100%.</owl:annotatedTarget>
+        <prov:hadPrimarySource rdf:resource="https://doi.org/10.1351/goldbook.E02070"/>
     </owl:Axiom>
     
 
@@ -67664,14 +67770,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002861">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000793"/>
-        <obo:IAO_0000115>An assay output that is the absolute value of the mole fraction for one diastereomer in a mixture minus the mole fraction for the other multiplied by 100%.</obo:IAO_0000115>
+        <obo:IAO_0000115>An assay output expressing the absolute value of the mole fraction for one diastereomer in a mixture minus the mole fraction for the other multiplied by 100%.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002861</oboInOwl:id>
         <rdfs:label>percentage diastereomeric excess</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002861"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An assay output that is the absolute value of the mole fraction for one diastereomer in a mixture minus the mole fraction for the other multiplied by 100%.</owl:annotatedTarget>
+        <owl:annotatedTarget>An assay output expressing the absolute value of the mole fraction for one diastereomer in a mixture minus the mole fraction for the other multiplied by 100%.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
         <prov:hadPrimarySource rdf:resource="https://doi.org/10.1351/goldbook.D01675"/>
     </owl:Axiom>
@@ -68021,7 +68127,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002885 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002885">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A disc with a slot in it.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>slotted disk</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0002885</oboInOwl:id>
@@ -68142,7 +68248,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -68165,7 +68271,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -68231,7 +68337,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002896 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002896">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device that uses electrical and magnetic fields to generate heat.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002896</oboInOwl:id>
         <rdfs:label>magnetron</rdfs:label>
@@ -68248,7 +68354,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002897 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002897">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000115>A device that measures the angle of optical rotation of a sample.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002897</oboInOwl:id>
         <rdfs:label>polarimeter</rdfs:label>
@@ -68268,7 +68374,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000779"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35255"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -68291,7 +68397,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000779"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28262"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -68461,7 +68567,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0001377"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -68572,7 +68678,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002911">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
@@ -68605,14 +68710,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002913"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002803"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002803"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002913"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An assay that determines a figure of merit for a given technique, analyte and matrix. This will consist of multiple assays of a reference material.</obo:IAO_0000115>
@@ -68657,6 +68762,7 @@
         <oboInOwl:id>CHMO:0002914</oboInOwl:id>
         <rdfs:comment>Gold Book, somewhat modified. It goes on &quot;The process of one material (absorbate) being retained by another (absorbent); this may be the physical solution of a gas, liquid, or solid in a liquid, attachment of molecules of a gas, vapour, liquid, or dissolved substance to a solid surface by physical forces, etc.&quot;</rdfs:comment>
         <rdfs:label>absorption of material</rdfs:label>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/REX_0000188"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002914"/>
@@ -68666,6 +68772,21 @@
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dcterms:rightsHolder rdf:resource="https://ror.org/03ne2zw20"/>
         <dcterms:source rdf:resource="https://doi.org/10.1351/goldbook.A00036"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002914"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/REX_0000188"/>
+        <sssom:author_id rdf:resource="https://orcid.org/0009-0009-1663-1003"/>
+        <sssom:confidence rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</sssom:confidence>
+        <sssom:mapping_date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</sssom:mapping_date>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:mapping_provider rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/chmo.owl</sssom:mapping_provider>
+        <sssom:object_label>absorption of material</sssom:object_label>
+        <sssom:object_source rdf:resource="http://purl.obolibrary.org/obo/rex"/>
+        <sssom:reviewer_id rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <sssom:subject_label>absorption of material</sssom:subject_label>
+        <sssom:subject_source rdf:resource="http://purl.obolibrary.org/obo/chmo"/>
     </owl:Axiom>
     
 
@@ -68693,7 +68814,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002916 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002916">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>A material processing that transitions &quot;a liquid or gas into a solid.&quot;</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002916</oboInOwl:id>
         <rdfs:label>sample solidification</rdfs:label>
@@ -68713,7 +68834,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002917 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002917">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>Material processing in which a sample is cooled by immersion in a fluid.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002917</oboInOwl:id>
         <rdfs:label>sample quenching</rdfs:label>
@@ -68730,7 +68851,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002918 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002918">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>Selective degradation of polysaccharides by periodate oxidation.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0002918</oboInOwl:id>
         <rdfs:label>Smith degradation</rdfs:label>
@@ -68747,7 +68868,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002919 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002919">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000110"/>
         <obo:IAO_0000115>Treatment of a sample with hydrazine. This can be used to prepare samples for glycomics.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>hydrazinolysis</oboInOwl:hasExactSynonym>
         <oboInOwl:id>CHMO:0002919</oboInOwl:id>
@@ -69173,7 +69294,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0010002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0010002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <oboInOwl:id>CHMO:0010002</oboInOwl:id>
         <rdfs:label>material handling technique</rdfs:label>
     </owl:Class>
@@ -69328,7 +69449,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0010009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0010011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -69511,6 +69632,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000110"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0001300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001300"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005"/>
@@ -69547,12 +69686,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
@@ -69565,12 +69698,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000185 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000185"/>
@@ -69580,12 +69707,6 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000443 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000443"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
     
 
 

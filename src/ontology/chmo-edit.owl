@@ -24,7 +24,10 @@ Import(<http://purl.obolibrary.org/obo/chmo/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/chmo/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/chmo/imports/ro_import.owl>)
 Annotation(dce:creator "Royal Society of Chemistry")
+Annotation(dcterms:contributor <https://orcid.org/0000-0001-5985-7429>)
 Annotation(dcterms:contributor <https://orcid.org/0000-0002-1595-3213>)
+Annotation(dcterms:contributor <https://orcid.org/0000-0003-4423-4370>)
+Annotation(dcterms:contributor <https://orcid.org/0009-0001-5998-5030>)
 Annotation(dcterms:description "CHMO, the chemical methods ontology, describes methods used to collect data in chemical experiments, such as mass spectrometry and electron microscopy prepare and separate material for further analysis, such as sample ionisation, chromatography, and electrophoresis synthesise materials, such as epitaxy and continuous vapour deposition It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns. It is intended to be complementary to the Ontology for Biomedical Investigations (OBI).")
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Chemical Methods Ontology")
@@ -3004,6 +3007,10 @@ Declaration(ObjectProperty(obo:CHMO_0002883))
 Declaration(ObjectProperty(obo:CHMO_0002922))
 Declaration(ObjectProperty(obo:CHMO_0010016))
 Declaration(ObjectProperty(obo:CHMO_0010017))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-5985-7429>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-1595-3213>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0003-4423-4370>))
+Declaration(NamedIndividual(<https://orcid.org/0009-0001-5998-5030>))
 Declaration(AnnotationProperty(chmo:isDefinedBy))
 Declaration(AnnotationProperty(chmo:non-mining_synonym))
 Declaration(AnnotationProperty(dcterms:bibliographicCitation))
@@ -4051,7 +4058,7 @@ AnnotationAssertion(rdfs:label obo:CHMO_0000086 "scanning transmission electron 
 SubClassOf(obo:CHMO_0000086 obo:CHMO_0000073)
 SubClassOf(obo:CHMO_0000086 obo:CHMO_0000080)
 
-# Class: obo:CHMO_0000087 (fluorescence microscopy assay)
+# Class: obo:CHMO_0000087 (fluorescence microscopy)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000087 "Any type of microscopy where the specimen can be made to fluoresce (emit energy as visible light) by illuminating it with light of specific wavelengths. These specimens are called fluorophores.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000087 "FIX:0000123")
@@ -4073,7 +4080,7 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000088 "CHMO:0000088")
 AnnotationAssertion(rdfs:label obo:CHMO_0000088 "fluorescence laser scanning microscopy")
 SubClassOf(obo:CHMO_0000088 obo:CHMO_0000087)
 
-# Class: obo:CHMO_0000089 (confocal fluorescence microscopy assay)
+# Class: obo:CHMO_0000089 (confocal laser scanning microscopy)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://doi.org/10.1039/b807581f") obo:IAO_0000115 obo:CHMO_0000089 "Microscopy where the specimen can be made to fluoresce (emit energy as visible light) by scanning a gas (Ar or Kr) laser spot of specific wavelength over its surface and using a spatial pinhole to eliminate out-of-focus fluorescence.")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHMO_0000089 "CLSM")
@@ -4218,7 +4225,7 @@ AnnotationAssertion(oboInOwl:id obo:CHMO_0000101 "CHMO:0000101")
 AnnotationAssertion(rdfs:label obo:CHMO_0000101 "scanning ion microscopy")
 SubClassOf(obo:CHMO_0000101 obo:CHMO_0000097)
 
-# Class: obo:CHMO_0000102 (light microscopy assay)
+# Class: obo:CHMO_0000102 (optical microscopy)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "https://orcid.org/0000-0002-0640-0422") obo:IAO_0000115 obo:CHMO_0000102 "Microscopy where the specimen is illuminated with visible light and a system of lenses is used to produce an image.")
 AnnotationAssertion(oboInOwl:hasAlternativeId obo:CHMO_0000102 "FIX:0000113")
@@ -36247,6 +36254,27 @@ SubClassOf(obo:CHMO_0010025 obo:CHMO_0010000)
 # Class: obo:MS_1000073 (electrospray ionization)
 
 SubClassOf(Annotation(obo:IAO_0000116 "This alignment was done in CHMO and is currently not present in the source ontology MS") obo:MS_1000073 obo:COB_0000082)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://orcid.org/0000-0001-5985-7429> (Colin Batchelor)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-5985-7429> "Colin Batchelor")
+
+# Individual: <https://orcid.org/0000-0002-1595-3213> (Philip Strömert)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1595-3213> "Philip Strömert")
+
+# Individual: <https://orcid.org/0000-0003-4423-4370> (Charles Tapley Hoyt)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-4423-4370> "Charles Tapley Hoyt")
+
+# Individual: <https://orcid.org/0009-0001-5998-5030> (Noura Rayya)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0009-0001-5998-5030> "Noura Rayya")
 
 
 AnnotationAssertion(obo:IAO_0000116 obo:COB_0000011 "There are currently two atom classes in CHMO, namely COB:0000011 and CHEBI:33250.
